@@ -1,0 +1,32 @@
+﻿{
+  "platform": "string",
+  "last_checked": "ISO-8601 timestamp",
+  "official_pricing_url": "string",
+  "plans": [
+    {
+      "name": "string",
+      "monthly_price_usd": "number or null",
+      "annual_price_usd_per_month": "number or null",
+      "credits_or_minutes": "number or null",
+      "unit": "credits | minutes | seconds",
+      "free_tier": {
+        "videos_or_minutes": "number or null",
+        "max_length_seconds": "number or null",
+        "watermark": "boolean",
+        "resolution": "string"
+      },
+      "promotions": "string or null",
+      "max_resolution": "string",
+      "watermark": "boolean",
+      "models_included": ["string"]
+    }
+  ],
+  "calculated": {
+    "cost_per_credit": "number or null",
+    "cost_per_finished_minute": "number or null",
+    "cost_per_10s_clip": "number or null",
+    "cost_per_30s_clip": "number or null"
+  },
+  "notes": "string or null"
+}
+

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luma - GenCost</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
+  body { 
+    margin:0; 
+    font-family:'Inter',sans-serif; 
+    color:#e0e0e0; 
+    background: 
+      radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
+      linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+  }
+  .overlay { min-height:100vh; padding:20px 12px; }
+  .card { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); backdrop-filter:blur(10px); max-width:100%; margin:0 auto; padding:18px; border-radius:14px; box-shadow:0 6px 24px rgba(0,0,0,0.3); }
+  @media (min-width: 700px) {
+    .card { max-width:780px; padding:32px; }
+    .overlay { padding:40px 20px; }
+  }
+  a { color:#00d4ff; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .back { margin-bottom:16px; font-size:0.9em; }
+  h1 { margin-top:0; font-family:'Orbitron',sans-serif; letter-spacing:1px; font-size:1.6em; }
+  .summary { background:rgba(255,255,255,0.05); padding:14px 16px; border-radius:10px; margin:16px 0; line-height:1.5; font-size:0.95em; }
+  ul { padding-left:18px; }
+  li { margin:6px 0; }
+  .section { margin-top:20px; }
+  h3 { font-family:'Orbitron',sans-serif; font-size:1.05em; }
+</style>
+</head>
+<body>
+<div class="overlay">
+  <div class="card">
+    <div class="back"><a href="../index.html">← Back to GenCost</a></div>
+    <h1>Luma</h1>
+    <p><a href="https://lumalabs.ai/dream-machine/pricing" target="_blank">Official pricing page →</a></p>
+    <div class="summary">Luma’s Dream Machine is known for high-quality generative video with good prompt adherence and visual consistency. It is a solid choice for creative text-to-video work.</div>
+    <div class="section">
+      <h3>Key Features</h3>
+      <ul><li>Dream Machine video model</li><li>Strong visual quality and consistency</li><li>Good prompt following</li><li>Text-to-video and image-to-video</li><li>Creative control options</li></ul>
+    </div>
+    <div class="section">
+      <h3>Current Plans</h3>
+      <div id="plans"></div>
+    </div>
+  </div>
+</div>
+<script>
+const data = {
+  "platform": "luma",
+  "plans": [
+    {
+      "name": "Plus",
+      "monthly_price_usd": 30,
+      "credits_or_minutes": 10000,
+      "unit": "credits",
+      "offer": "Save up to 20% with yearly"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 90,
+      "credits_or_minutes": 40000,
+      "unit": "credits",
+      "offer": "Save up to 20% with yearly"
+    },
+    {
+      "name": "Ultra",
+      "monthly_price_usd": 300,
+      "credits_or_minutes": 150000,
+      "unit": "credits",
+      "offer": "Save up to 20% with yearly"
+    }
+  ]
+};
+let html = '';
+for (const plan of data.plans || []) {
+  const price = plan.monthly_price_usd ?? 0;
+  const credits = plan.credits_or_minutes ?? '-';
+  const unit = plan.unit || '';
+  html += <p><strong>${plan.name}</strong>: $/mo · ${credits} ${unit}</p>;
+}
+document.getElementById('plans').innerHTML = html || '<p>No plans found.</p>';
+</script>
+</body>
+</html>

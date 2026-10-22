@@ -1,0 +1,253 @@
+Pricing | Viggle
+Skip to content
+Products
+Meme Maker
+Make a meme video
+Swap single character
+Add motion to character
+Swap multiple characters
+Swap characters in real-time
+Use it in your AI agent
+PINOC
+Capture Motion
+Connect an agent
+Games
+Play & create games
+API
+Build with the API
+Research
+API
+Docs
+Pricing
+Learn
+Company
+About
+Careers
+Resource
+Tools
+Blog
+Community
+Create now
+Products
++
+Meme Maker
+Make a meme video
+Swap single character
+Add motion to character
+Swap multiple characters
+Swap characters in real-time
+Use it in your AI agent
+PINOC
+Capture Motion
+Connect an agent
+Games
+Play & create games
+API
+Build with the API
+Research
+→
+API
+→
+Docs
+→
+Pricing
+→
+Learn
++
+Company
+About
+Careers
+Resource
+Tools
+Blog
+Community
+Create now
+Pricing
+Choose the plan that keeps up with your creativity.
+Trusted by 50M+ creators, developers, and animators at leading brands and studios.
+Plans
+Viggle AI
+Swap characters into video, one at a time, many at once, or live.
+From
+$7.99
+/month
+Plans below
+PINOC
+Rigged 3D characters from photos, and motion you export as FBX or GLB.
+From
+$10.39
+/month
+See plans
+API
+Pay as you go. New accounts get 100 free credits.
+Per credit
+$0.01
+API pricing
+Viggle AI plans
+Billed separately from PINOC.
+Monthly
+Yearly
+-20%
+Free
+$0.00
+/month
+Start creating for free.
+Start free
+5 free videos/day
+1 video generation at a time
+Limited multi-track sessions
+Limited Real-Time Swap
+7-day asset & generation storage
+Pro
+Was
+$9.99
+$7.99
+/month
+For creators who make more.
+Upgrade
+80 credits/month
+Faster video generation
+Up to 4 video generations at once
+Limited Real-Time Swap sessions
+Permanent asset storage
+No watermark
+Unlimited Multi-Track sessions
+Larger motion video uploads
+All models except Seedance
+Live
+Popular
+Was
+$19.99
+$15.99
+/month
+For faster workflows.
+Upgrade
+200 credits/month
+Faster video generation
+Up to 6 video generations at once
+Stream 6+ hours in Real-Time Swap
+Permanent asset storage
+No watermark
+Unlimited Multi-Track sessions
+Larger motion video uploads
+Access to all models
+Max
+Best value
+Was
+$79.99
+$63.99
+/month
+For video production at scale.
+Upgrade
+800 credits/month
+Faster video generation
+Up to 10 video generations at once
+Unlimited Real-Time Swap sessions
+Permanent asset storage
+No watermark
+Unlimited Multi-Track sessions
+Larger motion video uploads
+Access to all models
+Models
+Seedance
+Live+
+Kling
+Veo
+Wan
+Happy Horse
+ChatGPT
+Nano Banana
+Compare Viggle AI plans
+Feature
+Free
+Pro
+Live
+Max
+Monthly credits
+0 credits
+80 credits
+200 credits
+800 credits
+Free videos per day
+5 videos
+Unlimited videos
+Unlimited videos
+Unlimited videos
+No watermark
+—
+Yes
+Yes
+Yes
+Simultaneous generations
+1 at a time
+4 at a time
+6 at a time
+10 at a time
+Real-Time Swap sessions
+5 min
+30 min
+6 hours
+Unlimited
+Maximum video upload
+1 min
+10 min
+10 min
+10 min
+Multi-character sessions
+Limited
+Unlimited
+Unlimited
+Unlimited
+Asset storage
+7 days
+Permanent
+Permanent
+Permanent
+Seedance
+—
+—
+Yes
+Yes
+FAQs
+How do Viggle credits work?
+Credits are used across Viggle’s generation tools and models. Each feature may use a different number of credits, depending on the model and output.
+Do credits expire?
+Monthly plan credits expire on your billing date. Purchased credits do not expire, but they can only be used when you are subscribed to a Viggle plan.
+Can I cancel anytime?
+You can cancel your subscription at any time. However, the cancellation will take effect at the end of the current billing cycle. If you change your mind, you can restore the subscription before the cycle ends.
+Does Viggle provide API services?
+Yes! Our API powers character swaps, avatar experiences, social apps, game workflows, and branded campaigns at scale.
+Check out our API page to learn more
+Are Viggle AI and PINOC billed separately?
+Yes. PINOC is billed separately from Viggle AI, so each product has its own plan.
+Turn your imagination into the next viral video.
+Start creating
+Spatial GenAI platform.
+Get App
+Products
+Meme Maker
+PINOC
+Games
+API
+API
+About API
+API portal
+API doc
+Company
+About
+Careers
+Resources
+Tools
+GameDev
+Blog
+Research
+Community
+Don't miss out!
+Features, offers and the best of Viggle, by email. Unsubscribe anytime.
+Subscribe
+Terms of Service
+Community Rules
+Privacy Policy
+© 2026 Viggle. All rights reserved.
+English
+简体中文

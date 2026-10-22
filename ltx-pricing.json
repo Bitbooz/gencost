@@ -1,0 +1,33 @@
+{
+  "platform": "ltx",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 800,
+      "unit": "credits",
+      "offer": "800 credits one time"
+    },
+    {
+      "name": "Lite",
+      "monthly_price_usd": 15,
+      "credits_or_minutes": 8000,
+      "unit": "credits",
+      "offer": "Save 50% for Cyber Monday, Billed yearly $144, UNLIMITED FLUX.2 GENERATIONS, Exclusive limited time offer"
+    },
+    {
+      "name": "Standard",
+      "monthly_price_usd": 35,
+      "credits_or_minutes": 28000,
+      "unit": "credits",
+      "offer": "Save 50% for Cyber Monday, Billed yearly $336, 28,800 additional Computing Seconds / month for the first 3 months, Exclusive limited time offer"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 125,
+      "credits_or_minutes": 110000,
+      "unit": "credits",
+      "offer": "Save 50% for Cyber Monday, Billed yearly $1,200, Exclusive limited time offer"
+    }
+  ]
+}

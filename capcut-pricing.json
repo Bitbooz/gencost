@@ -1,0 +1,26 @@
+{
+  "platform": "capcut",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "credits",
+      "offer": "up to 40% off"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 399,
+      "credits_or_minutes": 1200,
+      "unit": "credits",
+      "offer": "up to 40% off, yearly 3990 NOK"
+    },
+    {
+      "name": "Ultra",
+      "monthly_price_usd": 750,
+      "credits_or_minutes": 8645,
+      "unit": "credits",
+      "offer": "up to 40% off, yearly 8590 NOK"
+    }
+  ]
+}

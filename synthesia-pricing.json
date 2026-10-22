@@ -1,0 +1,26 @@
+{
+  "platform": "synthesia",
+  "plans": [
+    {
+      "name": "Basic",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 500,
+      "unit": "credits",
+      "offer": "Save up to 4 months with yearly"
+    },
+    {
+      "name": "Starter",
+      "monthly_price_usd": 29,
+      "credits_or_minutes": 1250,
+      "unit": "credits",
+      "offer": "Save up to 4 months with yearly"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 89,
+      "credits_or_minutes": 6000,
+      "unit": "credits",
+      "offer": "Save up to 4 months with yearly"
+    }
+  ]
+}

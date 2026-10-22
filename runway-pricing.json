@@ -1,0 +1,33 @@
+{
+  "platform": "runway",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 125,
+      "unit": "credits",
+      "offer": "Free forever"
+    },
+    {
+      "name": "Standard",
+      "monthly_price_usd": 12,
+      "credits_or_minutes": 625,
+      "unit": "credits",
+      "offer": "Save $36/year"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 28,
+      "credits_or_minutes": 2250,
+      "unit": "credits",
+      "offer": "Save $84/year"
+    },
+    {
+      "name": "Max",
+      "monthly_price_usd": 76,
+      "credits_or_minutes": 9500,
+      "unit": "credits",
+      "offer": "Save $228/year"
+    }
+  ]
+}

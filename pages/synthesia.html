@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synthesia - GenCost</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
+  body { 
+    margin:0; 
+    font-family:'Inter',sans-serif; 
+    color:#e0e0e0; 
+    background: 
+      radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
+      radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
+      linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+  }
+  .overlay { min-height:100vh; padding:20px 12px; }
+  .card { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); backdrop-filter:blur(10px); max-width:100%; margin:0 auto; padding:18px; border-radius:14px; box-shadow:0 6px 24px rgba(0,0,0,0.3); }
+  @media (min-width: 700px) {
+    .card { max-width:780px; padding:32px; }
+    .overlay { padding:40px 20px; }
+  }
+  a { color:#00d4ff; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .back { margin-bottom:16px; font-size:0.9em; }
+  h1 { margin-top:0; font-family:'Orbitron',sans-serif; letter-spacing:1px; font-size:1.6em; }
+  .summary { background:rgba(255,255,255,0.05); padding:14px 16px; border-radius:10px; margin:16px 0; line-height:1.5; font-size:0.95em; }
+  ul { padding-left:18px; }
+  li { margin:6px 0; }
+  .section { margin-top:20px; }
+  h3 { font-family:'Orbitron',sans-serif; font-size:1.05em; }
+</style>
+</head>
+<body>
+<div class="overlay">
+  <div class="card">
+    <div class="back"><a href="../index.html">← Back to GenCost</a></div>
+    <h1>Synthesia</h1>
+    <p><a href="https://www.synthesia.io/pricing" target="_blank">Official pricing page →</a></p>
+    <div class="summary">Synthesia is built for professional and enterprise use. It focuses on reliable talking avatars, strong localization, and tools needed for training, education, and corporate communication.</div>
+    <div class="section">
+      <h3>Key Features</h3>
+      <ul><li>High-quality professional avatars</li><li>Excellent multi-language localization</li><li>Team workspaces and collaboration</li><li>SCORM export and LMS integrations</li><li>Brand kit and asset library</li><li>Strong for training and corporate videos</li></ul>
+    </div>
+    <div class="section">
+      <h3>Current Plans</h3>
+      <div id="plans"></div>
+    </div>
+  </div>
+</div>
+<script>
+const data = {
+  "platform": "synthesia",
+  "plans": [
+    {
+      "name": "Basic",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 500,
+      "unit": "credits",
+      "offer": "Save up to 4 months with yearly"
+    },
+    {
+      "name": "Starter",
+      "monthly_price_usd": 29,
+      "credits_or_minutes": 1250,
+      "unit": "credits",
+      "offer": "Save up to 4 months with yearly"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 89,
+      "credits_or_minutes": 6000,
+      "unit": "credits",
+      "offer": "Save up to 4 months with yearly"
+    }
+  ]
+};
+let html = '';
+for (const plan of data.plans || []) {
+  const price = plan.monthly_price_usd ?? 0;
+  const credits = plan.credits_or_minutes ?? '-';
+  const unit = plan.unit || '';
+  html += <p><strong>${plan.name}</strong>: $/mo · ${credits} ${unit}</p>;
+}
+document.getElementById('plans').innerHTML = html || '<p>No plans found.</p>';
+</script>
+</body>
+</html>
