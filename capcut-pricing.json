@@ -13,14 +13,14 @@
       "monthly_price_usd": 399,
       "credits_or_minutes": 1200,
       "unit": "credits",
-      "offer": "up to 40% off, yearly 3990 NOK"
+      "offer": "2 months free on yearly"
     },
     {
       "name": "Ultra",
       "monthly_price_usd": 750,
       "credits_or_minutes": 8645,
       "unit": "credits",
-      "offer": "up to 40% off, yearly 8590 NOK"
+      "offer": "up to 40% off"
     }
   ]
 }
