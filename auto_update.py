@@ -1,9 +1,10 @@
+import os
 import requests
 from bs4 import BeautifulSoup
 import json
 from openai import OpenAI
 
-API_KEY = "YOUR_API_KEY_HERE"
+API_KEY = os.getenv("XAI_API_KEY")
 
 client = OpenAI(api_key=API_KEY, base_url="https://api.x.ai/v1")
 
@@ -122,3 +123,4 @@ print("Forced good data for Higgsfield and Kling AI")
 
 import subprocess
 subprocess.run(["python", "regenerate_html.py"])
+

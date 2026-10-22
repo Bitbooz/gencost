@@ -1,3 +1,9 @@
 @echo off
-cd /d "C:\Users\frode\Desktop\AI-Video-Price-Comparison-Project"
-"C:\Users\frode\python-projects\myenv\Scripts\python.exe" auto_update.py
+cd /d "%~dp0"
+echo Starting price update...
+python auto_update.py
+git add *-pricing.json
+git commit -m "Auto-update prices %date% %time%"
+git push
+echo Done. Site will update automatically on Netlify.
+pause
