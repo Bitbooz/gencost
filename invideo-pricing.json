@@ -6,21 +6,21 @@
       "monthly_price_usd": 10,
       "credits_or_minutes": 400,
       "unit": "credits",
-      "offer": "50% off on annual, unlimited images for 30 days"
+      "offer": "50% off on annual + unlimited images for 30 days"
     },
     {
       "name": "Plus",
       "monthly_price_usd": 30,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "50% off on annual, unlimited images for 30 days"
+      "offer": "50% off on annual + unlimited images for 30 days"
     },
     {
       "name": "Max",
       "monthly_price_usd": 75,
       "credits_or_minutes": 5000,
       "unit": "credits",
-      "offer": "50% off on annual, unlimited images for 30 days"
+      "offer": "50% off on annual + unlimited images for 30 days"
     }
   ]
 }

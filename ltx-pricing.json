@@ -13,21 +13,21 @@
       "monthly_price_usd": 15,
       "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday, billed yearly $144"
+      "offer": "Save 50% for Cyber Monday, billed yearly $144, unlimited FLUX.2 generations, exclusive limited time offer"
     },
     {
       "name": "Standard",
       "monthly_price_usd": 35,
       "credits_or_minutes": 28000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday, 28800 additional Computing Seconds/month for first 3 months, billed yearly $336"
+      "offer": "Save 50% for Cyber Monday, billed yearly $336, 28800 additional Computing Seconds per month for first 3 months, Save 40% with Black Friday"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 125,
       "credits_or_minutes": 110000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday, billed yearly $1200"
+      "offer": "Save 50% for Cyber Monday, billed yearly $1200, Save 40% with Black Friday"
     }
   ]
 }
