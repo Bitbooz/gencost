@@ -1,261 +1,90 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GenCost</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: #e0e0e0;
-    background: 
-      radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
-      radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
-      linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-    background-attachment: fixed;
-  }
-  .overlay {
-    min-height: 100vh;
-    padding: 40px 20px 60px;
-  }
-  h1 {
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3.2em;
-    letter-spacing: 4px;
-    margin: 0;
-    background: linear-gradient(90deg, #00d4ff, #7b68ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 30px rgba(0,212,255,0.3);
-  }
-  .subtitle {
-    text-align: center;
-    margin: 8px 0 4px 0;
-    font-size: 1.1em;
-    opacity: 0.8;
-    letter-spacing: 1px;
-  }
-  .timestamp {
-    text-align: center;
-    font-size: 0.8em;
-    opacity: 0.5;
-    margin-bottom: 30px;
-    letter-spacing: 0.5px;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  .card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding: 22px;
-    border-radius: 16px;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-    position: relative;
-    overflow: hidden;
-  }
-  .card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(0,212,255,0.3);
-    box-shadow: 0 12px 40px rgba(0,212,255,0.15);
-  }
-  .card h2 {
-    margin: 0 0 16px 0;
-    font-size: 1.5em;
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 1px;
-  }
-  .card h2 a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .card h2 a:hover {
-    color: #00d4ff;
-  }
-  .plan {
-    margin: 8px 0;
-    padding: 6px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
-  .plan:last-child { border-bottom: none; }
-  .cost {
-    font-size: 0.82em;
-    opacity: 0.7;
-    margin-left: 6px;
-    color: #00d4ff;
-  }
-  .particle {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: #00d4ff;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 10;
-  }
-  .footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 0.8em;
-    opacity: 0.55;
-    letter-spacing: 0.6px;
-  }
-  .footer-sub {
-    text-align: center;
-    font-size: 0.7em;
-    opacity: 0.35;
-    margin-top: 4px;
-  }
-  .contact {
-    text-align: center;
-    font-size: 0.75em;
-    opacity: 0.5;
-    margin-top: 10px;
-  }
-  .contact a {
-    color: #00d4ff;
-    text-decoration: none;
-  }
-  @media (max-width: 700px) {
-    .overlay { padding: 24px 12px 50px; }
-    h1 { font-size: 2.2em; letter-spacing: 2px; }
-    .grid { grid-template-columns: 1fr; gap: 16px; }
-    .card { padding: 16px; }
-    .card h2 { font-size: 1.3em; }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenCost – AI Video Price Comparison</title>
+  <meta name="description" content="AI Video Price Comparison – Compare costs across different AI video generation tools.">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6DHTT2ZTBK');
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.4rem;
+      color: #a0a0a0;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    .info {
+      font-size: 0.95rem;
+      color: #777;
+      margin-top: 50px;
+    }
+
+    .info a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    .info a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.4rem;
+      }
+      .subtitle {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="overlay">
   <h1>GENCOST</h1>
   <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-10-23 01:07</div>
-  <div class="grid" id="content"></div>
-  <div class="footer">Created by Grok & Bitbooz · 22.10.2026</div>
-  <div class="footer-sub">Prices update automatically · Always double-check before buying</div>
-  <div class="contact">Contact: <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></div>
-</div>
 
-<script>
-const allData = {"heygen-pricing.json": {"platform": "heygen", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 3, "unit": "videos", "offer": "2 months free on yearly"}, {"name": "Creator", "monthly_price_usd": 29, "credits_or_minutes": 600, "unit": "credits", "offer": "2 months free on yearly"}, {"name": "Pro", "monthly_price_usd": 49, "credits_or_minutes": 1000, "unit": "credits", "offer": "2 months free on yearly"}]}, "higgsfield-pricing.json": {"platform": "Higgsfield", "plans": [{"name": "Starter", "monthly_price_usd": 19, "credits_or_minutes": 270, "unit": "credits"}, {"name": "Plus", "monthly_price_usd": 59, "credits_or_minutes": 1200, "unit": "credits"}, {"name": "Ultra", "monthly_price_usd": 129, "credits_or_minutes": 3000, "unit": "credits"}]}, "runway-pricing.json": {"platform": "runway", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 125, "unit": "credits", "offer": "Free forever"}, {"name": "Standard", "monthly_price_usd": 12, "credits_or_minutes": 625, "unit": "credits", "offer": "Save $36/year"}, {"name": "Pro", "monthly_price_usd": 28, "credits_or_minutes": 2250, "unit": "credits", "offer": "Save $84/year"}, {"name": "Max", "monthly_price_usd": 76, "credits_or_minutes": 9500, "unit": "credits", "offer": "Save $228/year"}]}, "kling-pricing.json": {"platform": "Kling AI", "plans": [{"name": "Standard", "monthly_price_usd": 10, "credits_or_minutes": 660, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 37, "credits_or_minutes": 3000, "unit": "credits"}, {"name": "Premier", "monthly_price_usd": 92, "credits_or_minutes": 8000, "unit": "credits"}]}, "synthesia-pricing.json": {"platform": "synthesia", "plans": [{"name": "Basic", "monthly_price_usd": 0, "credits_or_minutes": 500, "unit": "credits", "offer": "Save up to 4 months with yearly"}, {"name": "Starter", "monthly_price_usd": 29, "credits_or_minutes": 1250, "unit": "credits", "offer": "Save up to 4 months with yearly"}, {"name": "Pro", "monthly_price_usd": 89, "credits_or_minutes": 6000, "unit": "credits", "offer": "Save up to 4 months with yearly"}]}, "pika-pricing.json": {"platform": "pika", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits", "offer": "Save 20% on yearly"}, {"name": "Starter", "monthly_price_usd": 10, "credits_or_minutes": 900, "unit": "credits", "offer": "Save 20% on yearly"}, {"name": "Creator", "monthly_price_usd": 35, "credits_or_minutes": 3150, "unit": "credits", "offer": "Save 20% on yearly"}, {"name": "Fancy", "monthly_price_usd": 95, "credits_or_minutes": 8550, "unit": "credits", "offer": "Save 20% on yearly"}]}, "luma-pricing.json": {"platform": "luma", "plans": [{"name": "Plus", "monthly_price_usd": 30, "credits_or_minutes": 10000, "unit": "credits", "offer": "Save up to 20% with yearly"}, {"name": "Pro", "monthly_price_usd": 90, "credits_or_minutes": 40000, "unit": "credits", "offer": "Save up to 20% with yearly"}, {"name": "Ultra", "monthly_price_usd": 300, "credits_or_minutes": 150000, "unit": "credits", "offer": "Save up to 20% with yearly"}]}, "viggle-pricing.json": {"platform": "viggle", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits", "offer": "-20% on yearly"}, {"name": "Pro", "monthly_price_usd": 7.99, "credits_or_minutes": 80, "unit": "credits", "offer": "-20% on yearly"}, {"name": "Live", "monthly_price_usd": 15.99, "credits_or_minutes": 200, "unit": "credits", "offer": "-20% on yearly"}, {"name": "Max", "monthly_price_usd": 63.99, "credits_or_minutes": 800, "unit": "credits", "offer": "-20% on yearly"}]}, "invideo-pricing.json": {"platform": "invideo", "plans": [{"name": "Starter", "monthly_price_usd": 10, "credits_or_minutes": 400, "unit": "credits", "offer": "50% off on annual, unlimited images for 30 days, extra discount after signup"}, {"name": "Plus", "monthly_price_usd": 30, "credits_or_minutes": 2000, "unit": "credits", "offer": "50% off on annual, unlimited images for 30 days, extra discount after signup"}, {"name": "Max", "monthly_price_usd": 75, "credits_or_minutes": 5000, "unit": "credits", "offer": "50% off on annual, unlimited images for 30 days, extra discount after signup"}]}, "capcut-pricing.json": {"platform": "capcut", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits", "offer": "up to 40% off"}, {"name": "Pro", "monthly_price_usd": 399, "credits_or_minutes": 1200, "unit": "credits", "offer": "up to 40% off, yearly 3990 NOK"}, {"name": "Ultra", "monthly_price_usd": 750, "credits_or_minutes": 8645, "unit": "credits", "offer": "up to 40% off, yearly 8590 NOK"}]}, "ltx-pricing.json": {"platform": "ltx", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 800, "unit": "credits", "offer": "800 credits one time"}, {"name": "Lite", "monthly_price_usd": 15, "credits_or_minutes": 8000, "unit": "credits", "offer": "Save 50% for Cyber Monday, Billed yearly $144, UNLIMITED FLUX.2 GENERATIONS, Exclusive limited time offer"}, {"name": "Standard", "monthly_price_usd": 35, "credits_or_minutes": 28000, "unit": "credits", "offer": "Save 50% for Cyber Monday, Billed yearly $336, 28,800 additional Computing Seconds / month for the first 3 months, Exclusive limited time offer"}, {"name": "Pro", "monthly_price_usd": 125, "credits_or_minutes": 110000, "unit": "credits", "offer": "Save 50% for Cyber Monday, Billed yearly $1,200, Exclusive limited time offer"}]}};
-
-function cleanName(name) {
-  const n = (name || "").toLowerCase();
-  if (n.includes("heygen")) return "HeyGen";
-  if (n.includes("kling")) return "Kling AI";
-  if (n.includes("ltx")) return "LTX Studio";
-  if (n.includes("invideo")) return "InVideo";
-  if (n.includes("capcut")) return "CapCut";
-  if (n.includes("higgs")) return "Higgsfield";
-  if (n.includes("runway")) return "Runway";
-  if (n.includes("synth")) return "Synthesia";
-  if (n.includes("pika")) return "Pika";
-  if (n.includes("luma")) return "Luma";
-  if (n.includes("viggle")) return "Viggle";
-  return name;
-}
-
-function getPage(name) {
-  const map = {
-    "HeyGen": "pages/heygen.html",
-    "Higgsfield": "pages/higgsfield.html",
-    "Runway": "pages/runway.html",
-    "Kling AI": "pages/kling.html",
-    "Synthesia": "pages/synthesia.html",
-    "Pika": "pages/pika.html",
-    "Luma": "pages/luma.html",
-    "Viggle": "pages/viggle.html",
-    "InVideo": "pages/invideo.html",
-    "CapCut": "pages/capcut.html",
-    "LTX Studio": "pages/ltx.html"
-  };
-  return map[name] || "#";
-}
-
-function estimateCost(plan) {
-  const price = plan.monthly_price_usd || 0;
-  const credits = plan.credits_or_minutes || 0;
-  if (!price || !credits || credits <= 0) return "";
-  const costPer10s = (price / credits) * 10;
-  if (costPer10s < 0.01) return "";
-  return ` (~$${costPer10s.toFixed(2)} / 10s)`;
-}
-
-function createParticles(e) {
-  e.preventDefault();
-  const link = e.currentTarget;
-  const card = link.closest('.card');
-  const rect = card.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  for (let i = 0; i < 22; i++) {
-    const p = document.createElement('div');
-    p.className = 'particle';
-    p.style.left = x + 'px';
-    p.style.top = y + 'px';
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 1.5 + Math.random() * 5;
-    const dx = Math.cos(angle) * speed;
-    const dy = Math.sin(angle) * speed;
-    card.appendChild(p);
-    let px = x, py = y, life = 1;
-    function anim() {
-      life -= 0.018;
-      if (life <= 0) { p.remove(); return; }
-      px += dx;
-      py += dy;
-      p.style.left = px + 'px';
-      p.style.top = py + 'px';
-      p.style.opacity = life;
-      requestAnimationFrame(anim);
-    }
-    anim();
-  }
-  setTimeout(() => { window.location.href = link.href; }, 280);
-}
-
-const order = ["HeyGen", "Higgsfield", "Runway", "Kling AI", "Synthesia", "Pika", "Luma", "Viggle", "InVideo", "CapCut", "LTX Studio"];
-const content = document.getElementById("content");
-
-const platforms = [];
-for (const [file, data] of Object.entries(allData)) {
-  if (!data) continue;
-  const raw = data.platform || file.replace("-pricing.json","");
-  const name = cleanName(raw);
-  platforms.push({ name, data });
-}
-
-platforms.sort((a, b) => {
-  const ai = order.indexOf(a.name);
-  const bi = order.indexOf(b.name);
-  if (ai === -1 && bi === -1) return a.name.localeCompare(b.name);
-  if (ai === -1) return 1;
-  if (bi === -1) return -1;
-  return ai - bi;
-});
-
-for (const { name, data } of platforms) {
-  const page = getPage(name);
-  let html = `<div class="card"><h2><a href="${page}" onclick="createParticles(event)">${name}</a></h2>`;
-  for (const plan of data.plans || []) {
-    const price = plan.monthly_price_usd ?? 0;
-    const credits = plan.credits_or_minutes ?? "-";
-    const unit = plan.unit || "";
-    const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${plan.name}</strong>: $${price}/mo · ${credits} ${unit}<span class="cost">${est}</span></div>`;
-  }
-  html += "</div>";
-  content.innerHTML += html;
-}
-</script>
+  <div class="info">
+    <p>LAST UPDATED · 2026-10-23 01:07</p>
+    <p style="margin-top: 12px;">Created by Grok & Bitbooz · 22.10.2026</p>
+    <p style="margin-top: 12px;">
+      Contact: <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a>
+    </p>
+  </div>
 </body>
 </html>
