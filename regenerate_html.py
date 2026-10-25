@@ -14,7 +14,13 @@ json_files = [
     "viggle-pricing.json",
     "invideo-pricing.json",
     "capcut-pricing.json",
-    "ltx-pricing.json"
+    "ltx-pricing.json",
+    "hailuo-pricing.json",
+    "veo-pricing.json",
+    "hedra-pricing.json",
+    "sora-pricing.json",
+    "vidu-pricing.json",
+    "krea-pricing.json"
 ]
 
 data = {}
@@ -49,7 +55,7 @@ html = f'''<!DOCTYPE html>
     margin: 0;
     font-family: 'Inter', sans-serif;
     color: #e0e0e0;
-    background: 
+    background:
       radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
       radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
       linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
@@ -172,13 +178,35 @@ html = f'''<!DOCTYPE html>
     .card h2 {{ font-size: 1.3em; }}
   }}
 </style>
+<style>
+  body {{
+    background-image: url('/Background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }}
+  .overlay {{
+    background: rgba(10, 10, 15, 0.75);
+  }}
+</style>
 </head>
 <body>
+<div style="background:#1a1a2e; border:1px solid #00d4ff; border-radius:8px; padding:1rem; margin:1rem 0; color:#e0e0e0;">
+  <strong>Best value right now</strong><br>
+  <span>Kling AI Standard is often among the lowest entry prices (~$8–10/mo). Check the table for latest.</span>
+</div>
+<p style="color:#aaa; font-size:0.9rem; margin-bottom:1.5rem;">
+  <strong>Last updated:</strong> <span id="last-updated">{timestamp}</span><br>
+  Prices change often — always confirm inside the tool before generating.<br>
+  Prices are checked regularly against official pages.
+</p>
 <div class="overlay">
   <h1>GENCOST</h1>
   <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
   <div class="timestamp">LAST UPDATED · {timestamp}</div>
   <div class="grid" id="content"></div>
+  <h2 style="margin-top:2rem;">Free tiers available</h2>
+  <p style="color:#aaa; font-size:0.9rem;">HeyGen, Runway, Pika, Synthesia and others still offer free plans or free credits. See the cards above for details.</p>
   <div class="footer">Created by Grok & Bitbooz · 22.10.2026</div>
   <div class="footer-sub">Prices update automatically · Always double-check before buying</div>
   <div class="contact">Contact: <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></div>
@@ -200,6 +228,12 @@ function cleanName(name) {{
   if (n.includes("pika")) return "Pika";
   if (n.includes("luma")) return "Luma";
   if (n.includes("viggle")) return "Viggle";
+  if (n.includes("hailuo")) return "Hailuo AI";
+  if (n.includes("veo")) return "Google Veo";
+  if (n.includes("hedra")) return "Hedra";
+  if (n.includes("sora")) return "Sora";
+  if (n.includes("vidu")) return "Vidu";
+  if (n.includes("krea")) return "Krea";
   return name;
 }}
 
@@ -215,7 +249,13 @@ function getPage(name) {{
     "Viggle": "pages/viggle.html",
     "InVideo": "pages/invideo.html",
     "CapCut": "pages/capcut.html",
-    "LTX Studio": "pages/ltx.html"
+    "LTX Studio": "pages/ltx.html",
+    "Hailuo AI": "pages/hailuo.html",
+    "Google Veo": "pages/veo.html",
+    "Hedra": "pages/hedra.html",
+    "Sora": "pages/sora.html",
+    "Vidu": "pages/vidu.html",
+    "Krea": "pages/krea.html"
   }};
   return map[name] || "#";
 }}
@@ -262,7 +302,7 @@ function createParticles(e) {{
   setTimeout(() => {{ window.location.href = link.href; }}, 280);
 }}
 
-const order = ["HeyGen", "Higgsfield", "Runway", "Kling AI", "Synthesia", "Pika", "Luma", "Viggle", "InVideo", "CapCut", "LTX Studio"];
+const order = ["HeyGen", "Higgsfield", "Runway", "Kling AI", "Synthesia", "Pika", "Luma", "Viggle", "InVideo", "CapCut", "LTX Studio", "Hailuo AI", "Google Veo", "Hedra", "Sora", "Vidu", "Krea"];
 const content = document.getElementById("content");
 
 const platforms = [];
@@ -296,10 +336,17 @@ for (const {{ name, data }} of platforms) {{
   content.innerHTML += html;
 }}
 </script>
+
+<h2 style="margin-top:2rem;">FAQ</h2>
+<p><strong>What is the cheapest AI video tool right now?</strong><br>Check the list above — prices are updated regularly.</p>
+<p><strong>Why do these tools use credits?</strong><br>Credits hide the real cost. This page shows approximate dollar prices so you can compare.</p>
+<p><strong>Do higher resolution or audio cost more?</strong><br>Yes. Always check the exact settings in the tool.</p>
+<p><strong>How often is this updated?</strong><br>The page is updated regularly. See the timestamp above.</p>
+
 </body>
 </html>'''
 
 with open(os.path.join(folder, "index.html"), "w", encoding="utf-8") as f:
     f.write(html)
 
-print("index.html regenerated with contact email.")
+print("index.html regenerated cleanly.")
