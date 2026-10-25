@@ -1,0 +1,1 @@
+{"platform": "Vidu", "plans": [{"name": "Starter", "monthly_price_usd": 10, "credits_or_minutes": 800, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 35, "credits_or_minutes": 4000, "unit": "credits"}]}

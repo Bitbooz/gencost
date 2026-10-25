@@ -6,21 +6,21 @@
       "monthly_price_usd": 10,
       "credits_or_minutes": 400,
       "unit": "credits",
-      "offer": "50% off on annual plans, save \u20ac120 per seat, unlimited images for 30 days, extra discount after sign up"
+      "offer": "50% off billed annually, unlimited images for 30 days, extra discount after sign up"
     },
     {
       "name": "Plus",
       "monthly_price_usd": 30,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "50% off on annual plans, save \u20ac360 per seat, unlimited images for 30 days, extra discount after sign up"
+      "offer": "50% off billed annually, unlimited images for 30 days, extra discount after sign up"
     },
     {
       "name": "Max",
       "monthly_price_usd": 75,
       "credits_or_minutes": 5000,
       "unit": "credits",
-      "offer": "50% off on annual plans, save \u20ac885 per seat, unlimited images for 30 days, extra discount after sign up"
+      "offer": "50% off billed annually, unlimited images for 30 days, extra discount after sign up, 60% cheaper"
     }
   ]
 }
