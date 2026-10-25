@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -145,7 +145,7 @@
 </style>
 <style>
   body {
-    background-image: url('/Background.jpg');
+    background-image: url('/Background.jpg?v=2');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -158,22 +158,22 @@
 <body>
 <div style="background:#1a1a2e; border:1px solid #00d4ff; border-radius:8px; padding:1rem; margin:1rem 0; color:#e0e0e0;">
   <strong>Best value right now</strong><br>
-  <span>Kling AI Standard is often among the lowest entry prices (~$8–10/mo). Check the table for latest.</span>
+  <span>Kling AI Standard is often among the lowest entry prices (~$8â€“10/mo). Check the table for latest.</span>
 </div>
 <p style="color:#aaa; font-size:0.9rem; margin-bottom:1.5rem;">
-  <strong>Last updated:</strong> <span id="last-updated">2026-10-25 20:39</span><br>
-  Prices change often — always confirm inside the tool before generating.<br>
+  <strong>Last updated:</strong> <span id="last-updated">2026-10-25 20:41</span><br>
+  Prices change often â€” always confirm inside the tool before generating.<br>
   Prices are checked regularly against official pages.
 </p>
 <div class="overlay">
   <h1>GENCOST</h1>
   <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-10-25 20:39</div>
+  <div class="timestamp">LAST UPDATED Â· 2026-10-25 20:41</div>
   <div class="grid" id="content"></div>
   <h2 style="margin-top:2rem;">Free tiers available</h2>
   <p style="color:#aaa; font-size:0.9rem;">HeyGen, Runway, Pika, Synthesia and others still offer free plans or free credits. See the cards above for details.</p>
-  <div class="footer">Created by Grok & Bitbooz · 22.10.2026</div>
-  <div class="footer-sub">Prices update automatically · Always double-check before buying</div>
+  <div class="footer">Created by Grok & Bitbooz Â· 22.10.2026</div>
+  <div class="footer-sub">Prices update automatically Â· Always double-check before buying</div>
   <div class="contact">Contact: <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></div>
 </div>
 
@@ -295,7 +295,7 @@ for (const { name, data } of platforms) {
     const credits = plan.credits_or_minutes ?? "-";
     const unit = plan.unit || "";
     const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${plan.name}</strong>: $${price}/mo · ${credits} ${unit}<span class="cost">${est}</span></div>`;
+    html += `<div class="plan"><strong>${plan.name}</strong>: $${price}/mo Â· ${credits} ${unit}<span class="cost">${est}</span></div>`;
   }
   html += "</div>";
   content.innerHTML += html;
@@ -303,7 +303,7 @@ for (const { name, data } of platforms) {
 </script>
 
 <h2 style="margin-top:2rem;">FAQ</h2>
-<p><strong>What is the cheapest AI video tool right now?</strong><br>Check the list above — prices are updated regularly.</p>
+<p><strong>What is the cheapest AI video tool right now?</strong><br>Check the list above â€” prices are updated regularly.</p>
 <p><strong>Why do these tools use credits?</strong><br>Credits hide the real cost. This page shows approximate dollar prices so you can compare.</p>
 <p><strong>Do higher resolution or audio cost more?</strong><br>Yes. Always check the exact settings in the tool.</p>
 <p><strong>How often is this updated?</strong><br>The page is updated regularly. See the timestamp above.</p>
