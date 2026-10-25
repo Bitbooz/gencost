@@ -23,12 +23,16 @@
     background:
       radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
       radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
+      url('/Background.jpg'),
       linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
   }
   .overlay {
     min-height: 100vh;
     padding: 40px 20px 60px;
+    background: rgba(10, 10, 15, 0.75);
   }
   h1 {
     text-align: center;
@@ -143,17 +147,6 @@
     .card h2 { font-size: 1.3em; }
   }
 </style>
-<style>
-  body {
-    background-image: url('/Background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  .overlay {
-    background: rgba(10, 10, 15, 0.75);
-  }
-</style>
 </head>
 <body>
 <div style="background:#1a1a2e; border:1px solid #00d4ff; border-radius:8px; padding:1rem; margin:1rem 0; color:#e0e0e0;">
@@ -161,14 +154,14 @@
   <span>Kling AI Standard is often among the lowest entry prices (~$8–10/mo). Check the table for latest.</span>
 </div>
 <p style="color:#aaa; font-size:0.9rem; margin-bottom:1.5rem;">
-  <strong>Last updated:</strong> <span id="last-updated">2026-10-25 20:45</span><br>
+  <strong>Last updated:</strong> <span id="last-updated">2026-10-25 20:51</span><br>
   Prices change often — always confirm inside the tool before generating.<br>
   Prices are checked regularly against official pages.
 </p>
 <div class="overlay">
   <h1>GENCOST</h1>
   <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-10-25 20:45</div>
+  <div class="timestamp">LAST UPDATED · 2026-10-25 20:51</div>
   <div class="grid" id="content"></div>
   <h2 style="margin-top:2rem;">Free tiers available</h2>
   <p style="color:#aaa; font-size:0.9rem;">HeyGen, Runway, Pika, Synthesia and others still offer free plans or free credits. See the cards above for details.</p>

@@ -1,4 +1,5 @@
-﻿import json
+﻿
+import json
 import os
 from datetime import datetime
 
@@ -58,12 +59,16 @@ html = f'''<!DOCTYPE html>
     background:
       radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
       radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
+      url('/Background.jpg'),
       linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
   }}
   .overlay {{
     min-height: 100vh;
     padding: 40px 20px 60px;
+    background: rgba(10, 10, 15, 0.75);
   }}
   h1 {{
     text-align: center;
@@ -176,17 +181,6 @@ html = f'''<!DOCTYPE html>
     .grid {{ grid-template-columns: 1fr; gap: 16px; }}
     .card {{ padding: 16px; }}
     .card h2 {{ font-size: 1.3em; }}
-  }}
-</style>
-<style>
-  body {{
-    background-image: url('/Background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }}
-  .overlay {{
-    background: rgba(10, 10, 15, 0.75);
   }}
 </style>
 </head>
