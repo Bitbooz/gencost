@@ -305,7 +305,8 @@ platforms.sort((a, b) => {{
   return ai - bi;
 }});
 for (const {{ name, data }} of platforms) {{
-  let html = `<div class="card"><h2>${{name}}</h2>`;
+  const page = getPage(name);
+  let html = `<div class="card"><h2><a href="${{page}}">${{name}}</a></h2>`;
   for (const plan of data.plans || []) {{
     const price = plan.monthly_price_usd ?? 0;
     const credits = plan.credits_or_minutes ?? "-";
