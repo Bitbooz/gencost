@@ -277,7 +277,21 @@ function cleanName(name) {{
   if (n.includes("cartesia")) return "Cartesia";
   if (n.includes("speechify")) return "Speechify";
   if (n.includes("descript")) return "Descript";
+  if (n.includes("playht") || n.includes("play.ht")) return "PlayHT";
+  if (n.includes("wellsaid")) return "WellSaid Labs";
   return name;
+}}
+function getPage(name) {{
+  const map = {{
+    "ElevenLabs":"pages/voice/elevenlabs.html",
+    "Murf AI":"pages/voice/murf.html",
+    "Cartesia":"pages/voice/cartesia.html",
+    "Speechify":"pages/voice/speechify.html",
+    "Descript":"pages/voice/descript.html",
+    "PlayHT":"pages/voice/playht.html",
+    "WellSaid Labs":"pages/voice/wellsaid.html"
+  }};
+  return map[name] || "#";
 }}
 function estimateCost(plan) {{
   const price = plan.monthly_price_usd || 0;
@@ -324,3 +338,5 @@ for (const {{ name, data }} of platforms) {{
 with open(os.path.join(folder, "voice.html"), "w", encoding="utf-8") as f:
     f.write(voice_html)
 print("voice.html regenerated.")
+
+
