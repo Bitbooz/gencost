@@ -1,0 +1,19 @@
+﻿{
+    "plans":  [
+                  {
+                      "monthly_price_usd":  19,
+                      "name":  "Basic",
+                      "offer":  "",
+                      "unit":  "hours",
+                      "credits_or_minutes":  24
+                  },
+                  {
+                      "monthly_price_usd":  26,
+                      "name":  "Pro",
+                      "offer":  "",
+                      "unit":  "hours",
+                      "credits_or_minutes":  48
+                  }
+              ],
+    "platform":  "Murf AI"
+}

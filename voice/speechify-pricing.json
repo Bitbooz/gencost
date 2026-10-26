@@ -1,0 +1,12 @@
+﻿{
+    "plans":  [
+                  {
+                      "monthly_price_usd":  29,
+                      "name":  "Premium",
+                      "offer":  "",
+                      "unit":  "unlimited",
+                      "credits_or_minutes":  0
+                  }
+              ],
+    "platform":  "Speechify"
+}

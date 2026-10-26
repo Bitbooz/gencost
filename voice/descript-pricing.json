@@ -1,0 +1,19 @@
+﻿{
+    "plans":  [
+                  {
+                      "monthly_price_usd":  16,
+                      "name":  "Hobbyist",
+                      "offer":  "",
+                      "unit":  "hours",
+                      "credits_or_minutes":  10
+                  },
+                  {
+                      "monthly_price_usd":  24,
+                      "name":  "Creator",
+                      "offer":  "",
+                      "unit":  "hours",
+                      "credits_or_minutes":  30
+                  }
+              ],
+    "platform":  "Descript"
+}

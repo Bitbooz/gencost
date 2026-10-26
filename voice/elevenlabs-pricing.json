@@ -1,0 +1,19 @@
+﻿{
+    "plans":  [
+                  {
+                      "monthly_price_usd":  6,
+                      "name":  "Starter",
+                      "offer":  "",
+                      "unit":  "characters",
+                      "credits_or_minutes":  30000
+                  },
+                  {
+                      "monthly_price_usd":  22,
+                      "name":  "Creator",
+                      "offer":  "",
+                      "unit":  "characters",
+                      "credits_or_minutes":  100000
+                  }
+              ],
+    "platform":  "ElevenLabs"
+}
