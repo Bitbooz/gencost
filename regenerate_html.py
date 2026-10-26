@@ -1,4 +1,6 @@
-﻿import json
+﻿
+
+import json
 import os
 from datetime import datetime
 
@@ -100,7 +102,10 @@ html = f'''<!DOCTYPE html>
   <h2 style="margin-top:2rem;">Free tiers available</h2>
   <p style="color:#aaa;">HeyGen, Runway, Pika, Synthesia and others still offer free plans.</p>
   <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    <a href="/voice.html" style="color:#00d4ff;">AI Voice Comparison →</a><br><br>
+    <div style="margin: 30px 0; padding: 16px; background: rgba(0,212,255,0.08); border: 1px solid #00d4ff; border-radius: 10px; text-align: center;">
+      <a href="/voice.html" style="color:#00d4ff; font-size: 1.15em; font-weight: 500; text-decoration: none;">AI Voice Price Comparison →</a>
+      <p style="margin: 8px 0 0 0; font-size: 0.85em; opacity: 0.8;">Compare ElevenLabs, PlayHT, Cartesia and more in real dollars.</p>
+    </div>
     Created by Grok & Bitbooz · Contact: bitbooz@protonmail.com
   </div>
 </div>
@@ -338,5 +343,3 @@ for (const {{ name, data }} of platforms) {{
 with open(os.path.join(folder, "voice.html"), "w", encoding="utf-8") as f:
     f.write(voice_html)
 print("voice.html regenerated.")
-
-
