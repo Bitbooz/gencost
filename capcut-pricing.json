@@ -6,21 +6,21 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 0,
       "unit": "credits",
-      "offer": "up to 40% off"
+      "offer": ""
     },
     {
       "name": "Pro",
       "monthly_price_usd": 399,
       "credits_or_minutes": 1200,
       "unit": "credits",
-      "offer": "up to 40% off monthly, 2 months free on yearly"
+      "offer": "2 months free on yearly"
     },
     {
       "name": "Ultra",
       "monthly_price_usd": 750,
       "credits_or_minutes": 8645,
       "unit": "credits",
-      "offer": "up to 40% off monthly, best value"
+      "offer": "first month discount on AI features"
     }
   ]
 }
