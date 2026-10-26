@@ -1,0 +1,17 @@
+{
+    "plans":  [
+                  {
+                      "monthly_price_usd":  39,
+                      "name":  "Creator",
+                      "unit":  "characters",
+                      "credits_or_minutes":  200000
+                  },
+                  {
+                      "monthly_price_usd":  99,
+                      "name":  "Unlimited",
+                      "unit":  "unlimited",
+                      "credits_or_minutes":  0
+                  }
+              ],
+    "platform":  "PlayHT"
+}

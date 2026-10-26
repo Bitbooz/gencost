@@ -1,0 +1,11 @@
+{
+    "plans":  [
+                  {
+                      "monthly_price_usd":  44,
+                      "name":  "Maker",
+                      "unit":  "unlimited",
+                      "credits_or_minutes":  0
+                  }
+              ],
+    "platform":  "WellSaid Labs"
+}
