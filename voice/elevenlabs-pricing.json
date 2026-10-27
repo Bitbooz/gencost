@@ -19,5 +19,7 @@
                       "credits_or_minutes":  500000
                   }
               ],
-    "platform":  "ElevenLabs"
+    "platform":  "ElevenLabs",
+    "last_checked":  "2026-10-27",
+    "source":  "https://elevenlabs.io/pricing"
 }
