@@ -1,33 +1,35 @@
-{
-  "platform": "ltx",
-  "plans": [
-    {
-      "name": "Free",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 800,
-      "unit": "credits",
-      "offer": "800 credits one time"
-    },
-    {
-      "name": "Lite",
-      "monthly_price_usd": 15,
-      "credits_or_minutes": 8000,
-      "unit": "credits",
-      "offer": "Save 50% for Cyber Monday, billed yearly $144"
-    },
-    {
-      "name": "Standard",
-      "monthly_price_usd": 35,
-      "credits_or_minutes": 28000,
-      "unit": "credits",
-      "offer": "Save 50% for Cyber Monday, 28800 additional Computing Seconds per month for first 3 months, billed yearly $336"
-    },
-    {
-      "name": "Pro",
-      "monthly_price_usd": 125,
-      "credits_or_minutes": 110000,
-      "unit": "credits",
-      "offer": "Save 50% for Cyber Monday, billed yearly $1200"
-    }
-  ]
+﻿{
+    "platform":  "ltx",
+    "plans":  [
+                  {
+                      "name":  "Free",
+                      "monthly_price_usd":  0,
+                      "credits_or_minutes":  800,
+                      "unit":  "credits",
+                      "offer":  "800 credits one time"
+                  },
+                  {
+                      "name":  "Lite",
+                      "monthly_price_usd":  15,
+                      "credits_or_minutes":  8000,
+                      "unit":  "credits",
+                      "offer":  "Save 50% for Cyber Monday, billed yearly $144"
+                  },
+                  {
+                      "name":  "Standard",
+                      "monthly_price_usd":  35,
+                      "credits_or_minutes":  28000,
+                      "unit":  "credits",
+                      "offer":  "Save 50% for Cyber Monday, 28800 additional Computing Seconds per month for first 3 months, billed yearly $336"
+                  },
+                  {
+                      "name":  "Pro",
+                      "monthly_price_usd":  125,
+                      "credits_or_minutes":  110000,
+                      "unit":  "credits",
+                      "offer":  "Save 50% for Cyber Monday, billed yearly $1200"
+                  }
+              ],
+    "last_checked":  "2026-10-27",
+    "source":  "https://ltx.io/studio/pricing"
 }

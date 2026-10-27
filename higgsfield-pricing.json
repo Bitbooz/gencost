@@ -1,23 +1,25 @@
-{
-  "platform": "Higgsfield",
-  "plans": [
-    {
-      "name": "Starter",
-      "monthly_price_usd": 19,
-      "credits_or_minutes": 270,
-      "unit": "credits"
-    },
-    {
-      "name": "Plus",
-      "monthly_price_usd": 59,
-      "credits_or_minutes": 1200,
-      "unit": "credits"
-    },
-    {
-      "name": "Ultra",
-      "monthly_price_usd": 129,
-      "credits_or_minutes": 3000,
-      "unit": "credits"
-    }
-  ]
+﻿{
+    "platform":  "Higgsfield",
+    "plans":  [
+                  {
+                      "name":  "Starter",
+                      "monthly_price_usd":  19,
+                      "credits_or_minutes":  270,
+                      "unit":  "credits"
+                  },
+                  {
+                      "name":  "Plus",
+                      "monthly_price_usd":  59,
+                      "credits_or_minutes":  1200,
+                      "unit":  "credits"
+                  },
+                  {
+                      "name":  "Ultra",
+                      "monthly_price_usd":  129,
+                      "credits_or_minutes":  3000,
+                      "unit":  "credits"
+                  }
+              ],
+    "last_checked":  "2026-10-27",
+    "source":  "https://higgsfield.ai/pricing"
 }

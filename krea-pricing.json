@@ -1,1 +1,19 @@
-{"platform": "Krea", "plans": [{"name": "Basic", "monthly_price_usd": 5.25, "credits_or_minutes": 1000, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 30, "credits_or_minutes": 5000, "unit": "credits"}]}
+﻿{
+    "platform":  "Krea",
+    "plans":  [
+                  {
+                      "name":  "Basic",
+                      "monthly_price_usd":  5.25,
+                      "credits_or_minutes":  1000,
+                      "unit":  "credits"
+                  },
+                  {
+                      "name":  "Pro",
+                      "monthly_price_usd":  30,
+                      "credits_or_minutes":  5000,
+                      "unit":  "credits"
+                  }
+              ],
+    "last_checked":  "2026-10-27",
+    "source":  "https://www.krea.ai/pricing"
+}
