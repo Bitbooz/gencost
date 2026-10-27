@@ -1,4 +1,4 @@
-﻿import json
+import json
 import os
 from datetime import datetime
 
@@ -174,6 +174,28 @@ function estimateCost(plan) {{
   return costPer10s >= 0.01 ? ` (~$${{costPer10s.toFixed(2)}} / 10s)` : "";
 }}
 const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Hedra","Sora","Vidu","Krea"];
+function createParticles(e) {{
+  const x = e.clientX, y = e.clientY;
+  for (let i = 0; i < 12; i++) {{
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed; width:6px; height:6px; background:#00d4ff; border-radius:50%; pointer-events:none; z-index:9999;";
+    p.style.left = x + "px";
+    p.style.top = y + "px";
+    document.body.appendChild(p);
+    const angle = Math.random() * Math.PI * 2;
+    const speed = 2 + Math.random() * 4;
+    const vx = Math.cos(angle) * speed;
+    const vy = Math.sin(angle) * speed;
+    let px = x, py = y, life = 30;
+    const anim = setInterval(() => {{
+      px += vx; py += vy; life--;
+      p.style.left = px + "px";
+      p.style.top = py + "px";
+      p.style.opacity = life / 30;
+      if (life <= 0) {{ clearInterval(anim); p.remove(); }}
+    }}, 16);
+  }}
+}}
 const content = document.getElementById("content");
 const platforms = [];
 for (const [file, data] of Object.entries(allData)) {{
@@ -339,6 +361,28 @@ function estimateCost(plan) {{
   return "";
 }}
 const order = ["ElevenLabs","Murf AI","Cartesia","Speechify","Descript"];
+function createParticles(e) {{
+  const x = e.clientX, y = e.clientY;
+  for (let i = 0; i < 12; i++) {{
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed; width:6px; height:6px; background:#00d4ff; border-radius:50%; pointer-events:none; z-index:9999;";
+    p.style.left = x + "px";
+    p.style.top = y + "px";
+    document.body.appendChild(p);
+    const angle = Math.random() * Math.PI * 2;
+    const speed = 2 + Math.random() * 4;
+    const vx = Math.cos(angle) * speed;
+    const vy = Math.sin(angle) * speed;
+    let px = x, py = y, life = 30;
+    const anim = setInterval(() => {{
+      px += vx; py += vy; life--;
+      p.style.left = px + "px";
+      p.style.top = py + "px";
+      p.style.opacity = life / 30;
+      if (life <= 0) {{ clearInterval(anim); p.remove(); }}
+    }}, 16);
+  }}
+}}
 const content = document.getElementById("content");
 const platforms = [];
 for (const [file, data] of Object.entries(allData)) {{
@@ -498,6 +542,28 @@ function estimateCost(plan) {{
   return costPerSong >= 0.01 ? ` (~$${{costPerSong.toFixed(2)}} / song)` : "";
 }}
 const order = ["Suno","Udio","Soundraw","AIVA","Boomy"];
+function createParticles(e) {{
+  const x = e.clientX, y = e.clientY;
+  for (let i = 0; i < 12; i++) {{
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed; width:6px; height:6px; background:#00d4ff; border-radius:50%; pointer-events:none; z-index:9999;";
+    p.style.left = x + "px";
+    p.style.top = y + "px";
+    document.body.appendChild(p);
+    const angle = Math.random() * Math.PI * 2;
+    const speed = 2 + Math.random() * 4;
+    const vx = Math.cos(angle) * speed;
+    const vy = Math.sin(angle) * speed;
+    let px = x, py = y, life = 30;
+    const anim = setInterval(() => {{
+      px += vx; py += vy; life--;
+      p.style.left = px + "px";
+      p.style.top = py + "px";
+      p.style.opacity = life / 30;
+      if (life <= 0) {{ clearInterval(anim); p.remove(); }}
+    }}, 16);
+  }}
+}}
 const content = document.getElementById("content");
 const platforms = [];
 for (const [file, data] of Object.entries(allData)) {{
