@@ -28,12 +28,40 @@ html = f'''<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GenCost</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK">function createParticles(e) {
+  for (let i = 0; i < 10; i++) {
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
+    document.body.appendChild(p);
+    const a = Math.random()*6.28, s = 2+Math.random()*4;
+    let x = e.clientX, y = e.clientY, l = 20;
+    const t = setInterval(() => {
+      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
+      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
+      if (l<=0) { clearInterval(t); p.remove(); }
+    }, 20);
+  }
+}
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){{dataLayer.push(arguments);}}
   gtag('js', new Date());
   gtag('config', 'G-6DHTT2ZTBK');
+function createParticles(e) {
+  for (let i = 0; i < 10; i++) {
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
+    document.body.appendChild(p);
+    const a = Math.random()*6.28, s = 2+Math.random()*4;
+    let x = e.clientX, y = e.clientY, l = 20;
+    const t = setInterval(() => {
+      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
+      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
+      if (l<=0) { clearInterval(t); p.remove(); }
+    }, 20);
+  }
+}
 </script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
@@ -95,23 +123,23 @@ html = f'''<!DOCTYPE html>
 <body>
 <div style="background:#1a1a2e; border:1px solid #00d4ff; border-radius:8px; padding:1rem; margin:1rem auto; max-width:1400px; color:#e0e0e0; text-align:center;">
   <strong>Best value right now</strong><br>
-  Kling AI Standard is often among the lowest entry prices (~$8–10/mo). Check the cards below for the latest.
+  Kling AI Standard is often among the lowest entry prices (~$8â€“10/mo). Check the cards below for the latest.
 </div>
 <p style="color:#aaa; font-size:0.9rem; text-align:center;">
   <strong>Last updated:</strong> {timestamp}<br>
-  Prices change often — always confirm inside the tool before generating.
+  Prices change often â€” always confirm inside the tool before generating.
 </p>
 <div class="overlay">
   <h1>GENCOST</h1>
   <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · {timestamp}</div>
+  <div class="timestamp">LAST UPDATED Â· {timestamp}</div>
   <div style="max-width:1400px; margin:20px auto 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:0 20px;">
     <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px; text-align:center;">
-      <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
+      <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison â†’</a>
       <p style="margin:10px 0 0 0; font-size:0.95em; color:#ddd;">Compare ElevenLabs, PlayHT, Cartesia and more in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
     </div>
     <div style="background:rgba(123,104,238,0.08); border:1px solid #7b68ee; border-radius:12px; padding:22px; text-align:center;">
-      <a href="/music.html" style="color:#7b68ee; font-size:1.3em; font-weight:600; text-decoration:none;">AI Music Price Comparison →</a>
+      <a href="/music.html" style="color:#7b68ee; font-size:1.3em; font-weight:600; text-decoration:none;">AI Music Price Comparison â†’</a>
       <p style="margin:10px 0 0 0; font-size:0.95em; color:#ddd;">Compare Suno, Udio, Soundraw, AIVA and Boomy in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
     </div>
   </div>
@@ -120,16 +148,16 @@ html = f'''<!DOCTYPE html>
   <p style="color:#aaa;">HeyGen, Runway, Pika, Synthesia and others still offer free plans.</p>
   <div style="max-width:1400px; margin:40px auto 20px; display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:0 20px;">
     <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px; text-align:center;">
-      <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
+      <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison â†’</a>
       <p style="margin:10px 0 0 0; font-size:0.95em; color:#ddd;">Compare ElevenLabs, PlayHT, Cartesia and more in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
     </div>
     <div style="background:rgba(123,104,238,0.08); border:1px solid #7b68ee; border-radius:12px; padding:22px; text-align:center;">
-      <a href="/music.html" style="color:#7b68ee; font-size:1.3em; font-weight:600; text-decoration:none;">AI Music Price Comparison →</a>
+      <a href="/music.html" style="color:#7b68ee; font-size:1.3em; font-weight:600; text-decoration:none;">AI Music Price Comparison â†’</a>
       <p style="margin:10px 0 0 0; font-size:0.95em; color:#ddd;">Compare Suno, Udio, Soundraw, AIVA and Boomy in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
     </div>
   </div>
   <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    Created by Grok & Bitbooz · Contact: bitbooz@protonmail.com
+    Created by Grok & Bitbooz Â· Contact: bitbooz@protonmail.com
   </div>
 </div>
 <script>
@@ -278,7 +306,7 @@ for (const {{ name, data }} of platforms) {{
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${{page}}">${{name}}</a></h2>`;
   if (source) {{
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
+    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} Â· <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
   }} else {{
     html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}}</div>`;
   }}
@@ -287,11 +315,25 @@ for (const {{ name, data }} of platforms) {{
     const credits = plan.credits_or_minutes ?? "-";
     const unit = plan.unit || "";
     const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${{plan.name}}</strong>: $${{price}}/mo · ${{credits}} ${{unit}}<span class="cost">${{est}}</span></div>`;
+    html += `<div class="plan"><strong>${{plan.name}}</strong>: $${{price}}/mo Â· ${{credits}} ${{unit}}<span class="cost">${{est}}</span></div>`;
   }}
   html += "</div>";
   content.innerHTML += html;
 }}
+function createParticles(e) {
+  for (let i = 0; i < 10; i++) {
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
+    document.body.appendChild(p);
+    const a = Math.random()*6.28, s = 2+Math.random()*4;
+    let x = e.clientX, y = e.clientY, l = 20;
+    const t = setInterval(() => {
+      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
+      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
+      if (l<=0) { clearInterval(t); p.remove(); }
+    }, 20);
+  }
+}
 </script>
 </body>
 </html>'''
@@ -322,12 +364,40 @@ voice_html = f'''<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Voice Price Comparison 2026 | GenCost</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK">function createParticles(e) {
+  for (let i = 0; i < 10; i++) {
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
+    document.body.appendChild(p);
+    const a = Math.random()*6.28, s = 2+Math.random()*4;
+    let x = e.clientX, y = e.clientY, l = 20;
+    const t = setInterval(() => {
+      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
+      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
+      if (l<=0) { clearInterval(t); p.remove(); }
+    }, 20);
+  }
+}
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){{dataLayer.push(arguments);}}
   gtag('js', new Date());
   gtag('config', 'G-6DHTT2ZTBK');
+function createParticles(e) {
+  for (let i = 0; i < 10; i++) {
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
+    document.body.appendChild(p);
+    const a = Math.random()*6.28, s = 2+Math.random()*4;
+    let x = e.clientX, y = e.clientY, l = 20;
+    const t = setInterval(() => {
+      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
+      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
+      if (l<=0) { clearInterval(t); p.remove(); }
+    }, 20);
+  }
+}
 </script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
@@ -380,11 +450,11 @@ voice_html = f'''<!DOCTYPE html>
 <div class="overlay">
   <h1>GENCOST VOICE</h1>
   <p class="subtitle">AI VOICE PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · {timestamp}</div>
+  <div class="timestamp">LAST UPDATED Â· {timestamp}</div>
   <div class="grid" id="content"></div>
   <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    <a href="/" style="color:#00d4ff;">← Back to video comparison</a><br><br>
-    Created by Grok & Bitbooz · Contact: bitbooz@protonmail.com
+    <a href="/" style="color:#00d4ff;">â† Back to video comparison</a><br><br>
+    Created by Grok & Bitbooz Â· Contact: bitbooz@protonmail.com
   </div>
 </div>
 <script>
@@ -527,7 +597,7 @@ for (const {{ name, data }} of platforms) {{
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${{page}}">${{name}}</a></h2>`;
   if (source) {{
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
+    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} Â· <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
   }} else {{
     html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}}</div>`;
   }}
@@ -536,11 +606,25 @@ for (const {{ name, data }} of platforms) {{
     const credits = plan.credits_or_minutes ?? "-";
     const unit = plan.unit || "";
     const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${{plan.name}}</strong>: $${{price}}/mo · ${{credits}} ${{unit}}<span class="cost">${{est}}</span></div>`;
+    html += `<div class="plan"><strong>${{plan.name}}</strong>: $${{price}}/mo Â· ${{credits}} ${{unit}}<span class="cost">${{est}}</span></div>`;
   }}
   html += "</div>";
   content.innerHTML += html;
 }}
+function createParticles(e) {
+  for (let i = 0; i < 10; i++) {
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
+    document.body.appendChild(p);
+    const a = Math.random()*6.28, s = 2+Math.random()*4;
+    let x = e.clientX, y = e.clientY, l = 20;
+    const t = setInterval(() => {
+      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
+      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
+      if (l<=0) { clearInterval(t); p.remove(); }
+    }, 20);
+  }
+}
 </script>
 </body>
 </html>'''
@@ -571,12 +655,40 @@ music_html = f'''<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Music Price Comparison 2026 | GenCost</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK">function createParticles(e) {
+  for (let i = 0; i < 10; i++) {
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
+    document.body.appendChild(p);
+    const a = Math.random()*6.28, s = 2+Math.random()*4;
+    let x = e.clientX, y = e.clientY, l = 20;
+    const t = setInterval(() => {
+      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
+      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
+      if (l<=0) { clearInterval(t); p.remove(); }
+    }, 20);
+  }
+}
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){{dataLayer.push(arguments);}}
   gtag('js', new Date());
   gtag('config', 'G-6DHTT2ZTBK');
+function createParticles(e) {
+  for (let i = 0; i < 10; i++) {
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
+    document.body.appendChild(p);
+    const a = Math.random()*6.28, s = 2+Math.random()*4;
+    let x = e.clientX, y = e.clientY, l = 20;
+    const t = setInterval(() => {
+      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
+      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
+      if (l<=0) { clearInterval(t); p.remove(); }
+    }, 20);
+  }
+}
 </script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
@@ -630,11 +742,11 @@ music_html = f'''<!DOCTYPE html>
 <div class="overlay">
   <h1>GENCOST MUSIC</h1>
   <p class="subtitle">AI MUSIC PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · {timestamp}</div>
+  <div class="timestamp">LAST UPDATED Â· {timestamp}</div>
   <div class="grid" id="content"></div>
   <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    <a href="/" style="color:#00d4ff;">← Back to video comparison</a><br><br>
-    Created by Grok & Bitbooz · Contact: bitbooz@protonmail.com
+    <a href="/" style="color:#00d4ff;">â† Back to video comparison</a><br><br>
+    Created by Grok & Bitbooz Â· Contact: bitbooz@protonmail.com
   </div>
 </div>
 <script>
@@ -770,7 +882,7 @@ for (const {{ name, data }} of platforms) {{
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${{page}}">${{name}}</a></h2>`;
   if (source) {{
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
+    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} Â· <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
   }} else {{
     html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}}</div>`;
   }}
@@ -779,11 +891,25 @@ for (const {{ name, data }} of platforms) {{
     const credits = plan.credits_or_minutes ?? "-";
     const unit = plan.unit || "";
     const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${{plan.name}}</strong>: $${{price}}/mo · ${{credits}} ${{unit}}<span class="cost">${{est}}</span></div>`;
+    html += `<div class="plan"><strong>${{plan.name}}</strong>: $${{price}}/mo Â· ${{credits}} ${{unit}}<span class="cost">${{est}}</span></div>`;
   }}
   html += "</div>";
   content.innerHTML += html;
 }}
+function createParticles(e) {
+  for (let i = 0; i < 10; i++) {
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
+    document.body.appendChild(p);
+    const a = Math.random()*6.28, s = 2+Math.random()*4;
+    let x = e.clientX, y = e.clientY, l = 20;
+    const t = setInterval(() => {
+      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
+      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
+      if (l<=0) { clearInterval(t); p.remove(); }
+    }, 20);
+  }
+}
 </script>
 </body>
 </html>'''
