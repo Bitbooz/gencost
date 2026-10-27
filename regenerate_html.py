@@ -1,6 +1,4 @@
-﻿
-
-import json
+﻿import json
 import os
 from datetime import datetime
 
@@ -105,6 +103,10 @@ html = f'''<!DOCTYPE html>
     <div style="margin: 30px 0; padding: 16px; background: rgba(0,212,255,0.08); border: 1px solid #00d4ff; border-radius: 10px; text-align: center;">
       <a href="/voice.html" style="color:#00d4ff; font-size: 1.15em; font-weight: 500; text-decoration: none;">AI Voice Price Comparison →</a>
       <p style="margin: 8px 0 0 0; font-size: 0.85em; opacity: 0.8;">Compare ElevenLabs, PlayHT, Cartesia and more in real dollars.</p>
+    </div>
+    <div style="margin: 20px 0; padding: 16px; background: rgba(123,104,238,0.08); border: 1px solid #7b68ee; border-radius: 10px; text-align: center;">
+      <a href="/music.html" style="color:#7b68ee; font-size: 1.15em; font-weight: 500; text-decoration: none;">AI Music Price Comparison →</a>
+      <p style="margin: 8px 0 0 0; font-size: 0.85em; opacity: 0.8;">Compare Suno, Udio, Soundraw, AIVA and Boomy in real dollars.</p>
     </div>
     Created by Grok & Bitbooz · Contact: bitbooz@protonmail.com
   </div>
@@ -343,6 +345,7 @@ for (const {{ name, data }} of platforms) {{
 with open(os.path.join(folder, "voice.html"), "w", encoding="utf-8") as f:
     f.write(voice_html)
 print("voice.html regenerated.")
+
 # === MUSIC PAGE ===
 music_folder = os.path.join(folder, "music")
 music_files = [
