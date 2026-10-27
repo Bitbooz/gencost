@@ -1,0 +1,8 @@
+{
+  "platform": "AIVA",
+  "plans": [
+    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 3, "unit": "songs"},
+    {"name": "Standard", "monthly_price_usd": 11, "credits_or_minutes": 15, "unit": "songs"},
+    {"name": "Pro", "monthly_price_usd": 33, "credits_or_minutes": 300, "unit": "songs"}
+  ]
+}

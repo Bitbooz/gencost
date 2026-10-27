@@ -343,3 +343,142 @@ for (const {{ name, data }} of platforms) {{
 with open(os.path.join(folder, "voice.html"), "w", encoding="utf-8") as f:
     f.write(voice_html)
 print("voice.html regenerated.")
+# === MUSIC PAGE ===
+music_folder = os.path.join(folder, "music")
+music_files = [
+    "suno-pricing.json", "udio-pricing.json", "soundraw-pricing.json",
+    "aiva-pricing.json", "boomy-pricing.json"
+]
+
+music_data = {}
+for file in music_files:
+    path = os.path.join(music_folder, file)
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            music_data[file] = json.load(f)
+
+music_json = json.dumps(music_data)
+
+music_html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Music Price Comparison 2026 | GenCost</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', 'G-6DHTT2ZTBK');
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
+  body {{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #e0e0e0;
+    background: url('/Background.jpg') center/cover fixed no-repeat,
+                radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
+                linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+  }}
+  .overlay {{
+    min-height: 100vh;
+    padding: 40px 20px 60px;
+    background: rgba(10, 10, 15, 0.75);
+  }}
+  h1 {{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.2em;
+    letter-spacing: 4px;
+    margin: 0;
+    background: linear-gradient(90deg, #00d4ff, #7b68ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }}
+  .subtitle {{ text-align: center; margin: 8px 0 4px 0; font-size: 1.1em; opacity: 0.8; }}
+  .timestamp {{ text-align: center; font-size: 0.8em; opacity: 0.5; margin-bottom: 30px; }}
+  .grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }}
+  .card {{
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 22px;
+    border-radius: 16px;
+  }}
+  .card h2 {{ margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }}
+  .plan {{ margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }}
+  .cost {{ font-size: 0.82em; opacity: 0.7; margin-left: 6px; color: #00d4ff; }}
+</style>
+</head>
+<body>
+<div class="overlay">
+  <h1>GENCOST MUSIC</h1>
+  <p class="subtitle">AI MUSIC PRICE COMPARISON</p>
+  <div class="timestamp">LAST UPDATED · {timestamp}</div>
+  <div class="grid" id="content"></div>
+  <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
+    <a href="/" style="color:#00d4ff;">← Back to video comparison</a><br><br>
+    Created by Grok & Bitbooz · Contact: bitbooz@protonmail.com
+  </div>
+</div>
+<script>
+const allData = {music_json};
+function cleanName(name) {{
+  const n = (name || "").toLowerCase();
+  if (n.includes("suno")) return "Suno";
+  if (n.includes("udio")) return "Udio";
+  if (n.includes("soundraw")) return "Soundraw";
+  if (n.includes("aiva")) return "AIVA";
+  if (n.includes("boomy")) return "Boomy";
+  return name;
+}}
+function estimateCost(plan) {{
+  const price = plan.monthly_price_usd || 0;
+  const credits = plan.credits_or_minutes || 0;
+  if (!price || !credits || credits <= 0) return "";
+  const costPerSong = price / credits;
+  return costPerSong >= 0.01 ? ` (~$${{costPerSong.toFixed(2)}} / song)` : "";
+}}
+const order = ["Suno","Udio","Soundraw","AIVA","Boomy"];
+const content = document.getElementById("content");
+const platforms = [];
+for (const [file, data] of Object.entries(allData)) {{
+  if (!data) continue;
+  const name = cleanName(data.platform || file.replace("-pricing.json",""));
+  platforms.push({{ name, data }});
+}}
+platforms.sort((a, b) => {{
+  const ai = order.indexOf(a.name), bi = order.indexOf(b.name);
+  if (ai === -1 && bi === -1) return a.name.localeCompare(b.name);
+  if (ai === -1) return 1;
+  if (bi === -1) return -1;
+  return ai - bi;
+}});
+for (const {{ name, data }} of platforms) {{
+  let html = `<div class="card"><h2>${{name}}</h2>`;
+  for (const plan of data.plans || []) {{
+    const price = plan.monthly_price_usd ?? 0;
+    const credits = plan.credits_or_minutes ?? "-";
+    const unit = plan.unit || "";
+    const est = estimateCost(plan);
+    html += `<div class="plan"><strong>${{plan.name}}</strong>: $${{price}}/mo · ${{credits}} ${{unit}}<span class="cost">${{est}}</span></div>`;
+  }}
+  html += "</div>";
+  content.innerHTML += html;
+}}
+</script>
+</body>
+</html>'''
+
+with open(os.path.join(folder, "music.html"), "w", encoding="utf-8") as f:
+    f.write(music_html)
+print("music.html regenerated.")

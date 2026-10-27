@@ -1,0 +1,8 @@
+{
+  "platform": "Suno",
+  "plans": [
+    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 50, "unit": "songs"},
+    {"name": "Pro", "monthly_price_usd": 10, "credits_or_minutes": 500, "unit": "songs"},
+    {"name": "Premier", "monthly_price_usd": 30, "credits_or_minutes": 2000, "unit": "songs"}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "platform": "Soundraw",
+  "plans": [
+    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 10, "unit": "songs"},
+    {"name": "Creator", "monthly_price_usd": 16.99, "credits_or_minutes": 0, "unit": "unlimited"},
+    {"name": "Artist", "monthly_price_usd": 29.99, "credits_or_minutes": 0, "unit": "unlimited"}
+  ]
+}
