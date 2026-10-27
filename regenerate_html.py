@@ -1,4 +1,4 @@
-﻿import json
+import json
 import os
 from datetime import datetime
 
@@ -81,6 +81,15 @@ html = f'''<!DOCTYPE html>
   .card h2 a {{ color: #fff; text-decoration: none; }}
   .plan {{ margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }}
   .cost {{ font-size: 0.82em; opacity: 0.7; margin-left: 6px; color: #00d4ff; }}
+  @media (max-width: 768px) {{
+    div[style*="grid-template-columns:1fr 1fr"] {{
+      grid-template-columns: 1fr !important;
+      max-width: 100% !important;
+      padding: 0 16px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }}
+  }}
 </style>
 </head>
 <body>
@@ -274,6 +283,15 @@ voice_html = f'''<!DOCTYPE html>
   .card h2 {{ margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }}
   .plan {{ margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }}
   .cost {{ font-size: 0.82em; opacity: 0.7; margin-left: 6px; color: #00d4ff; }}
+  @media (max-width: 768px) {{
+    div[style*="grid-template-columns:1fr 1fr"] {{
+      grid-template-columns: 1fr !important;
+      max-width: 100% !important;
+      padding: 0 16px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }}
+  }}
 </style>
 </head>
 <body>
@@ -433,6 +451,15 @@ music_html = f'''<!DOCTYPE html>
   .card h2 a {{ color: #fff; text-decoration: none; }}
   .plan {{ margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }}
   .cost {{ font-size: 0.82em; opacity: 0.7; margin-left: 6px; color: #00d4ff; }}
+  @media (max-width: 768px) {{
+    div[style*="grid-template-columns:1fr 1fr"] {{
+      grid-template-columns: 1fr !important;
+      max-width: 100% !important;
+      padding: 0 16px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }}
+  }}
 </style>
 </head>
 <body>
