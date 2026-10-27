@@ -63,7 +63,7 @@
 <div class="overlay">
   <h1>GENCOST MUSIC</h1>
   <p class="subtitle">AI MUSIC PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-10-27 12:46</div>
+  <div class="timestamp">LAST UPDATED · 2026-10-27 12:49</div>
   <div class="grid" id="content"></div>
   <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
     <a href="/" style="color:#00d4ff;">← Back to video comparison</a><br><br>
@@ -181,6 +181,20 @@ function createParticles(e) {
       p.style.opacity = life / 25;
       if (life <= 0) { clearInterval(id); p.remove(); }
     }, 16);
+  }
+}
+function createParticles(e) {
+  for (let i = 0; i < 10; i++) {
+    const p = document.createElement("div");
+    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
+    document.body.appendChild(p);
+    const a = Math.random()*6.28, s = 2+Math.random()*4;
+    let x = e.clientX, y = e.clientY, l = 20;
+    const t = setInterval(() => {
+      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
+      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
+      if (l<=0) { clearInterval(t); p.remove(); }
+    }, 20);
   }
 }
 const content = document.getElementById("content");
