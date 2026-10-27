@@ -447,11 +447,11 @@ function cleanName(name) {{
 }}
 function getPage(name) {{
   const map = {{
-    "Suno": "https://suno.com",
-    "Udio": "https://www.udio.com",
-    "Soundraw": "https://soundraw.io",
-    "AIVA": "https://www.aiva.ai",
-    "Boomy": "https://boomy.com"
+    "Suno": "pages/music/suno.html",
+    "Udio": "pages/music/udio.html",
+    "Soundraw": "pages/music/soundraw.html",
+    "AIVA": "pages/music/aiva.html",
+    "Boomy": "pages/music/boomy.html"
   }};
   return map[name] || "#";
 }}
@@ -479,7 +479,7 @@ platforms.sort((a, b) => {{
 }});
 for (const {{ name, data }} of platforms) {{
   const page = getPage(name);
-  let html = `<div class="card"><h2><a href="${{page}}" target="_blank" rel="noopener">${{name}}</a></h2>`;
+  let html = `<div class="card"><h2><a href="${{page}}">${{name}}</a></h2>`;
   for (const plan of data.plans || []) {{
     const price = plan.monthly_price_usd ?? 0;
     const credits = plan.credits_or_minutes ?? "-";
