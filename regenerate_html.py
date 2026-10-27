@@ -1,4 +1,4 @@
-import json
+﻿import json
 import os
 from datetime import datetime
 
@@ -173,7 +173,6 @@ function estimateCost(plan) {{
   const costPer10s = (price / credits) * 10;
   return costPer10s >= 0.01 ? ` (~$${{costPer10s.toFixed(2)}} / 10s)` : "";
 }}
-const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Hedra","Sora","Vidu","Krea"];
 function createParticles(e) {{
   const x = e.clientX, y = e.clientY;
   for (let i = 0; i < 12; i++) {{
@@ -196,82 +195,7 @@ function createParticles(e) {{
     }}, 16);
   }}
 }}
-function createParticles(e) {{
-  const x = e.clientX;
-  const y = e.clientY;
-  for (let i = 0; i < 14; i++) {{
-    const p = document.createElement("div");
-    p.style.position = "fixed";
-    p.style.width = "6px";
-    p.style.height = "6px";
-    p.style.background = "#00d4ff";
-    p.style.borderRadius = "50%";
-    p.style.pointerEvents = "none";
-    p.style.zIndex = "9999";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 3 + Math.random() * 5;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 25;
-    const id = setInterval(() => {{
-      px += vx;
-      py += vy;
-      life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 25;
-      if (life <= 0) {{ clearInterval(id); p.remove(); }}
-    }}, 16);
-  }}
-}}
-function createParticles(e) {{
-  const x = e.clientX;
-  const y = e.clientY;
-  for (let i = 0; i < 14; i++) {{
-    const p = document.createElement("div");
-    p.style.position = "fixed";
-    p.style.width = "6px";
-    p.style.height = "6px";
-    p.style.background = "#00d4ff";
-    p.style.borderRadius = "50%";
-    p.style.pointerEvents = "none";
-    p.style.zIndex = "9999";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 3 + Math.random() * 5;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 25;
-    const id = setInterval(() => {{
-      px += vx;
-      py += vy;
-      life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 25;
-      if (life <= 0) {{ clearInterval(id); p.remove(); }}
-    }}, 16);
-  }}
-}}
-function createParticles(e) {{
-  for (let i = 0; i < 10; i++) {{
-    const p = document.createElement("div");
-    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
-    document.body.appendChild(p);
-    const a = Math.random()*6.28, s = 2+Math.random()*4;
-    let x = e.clientX, y = e.clientY, l = 20;
-    const t = setInterval(() => {{
-      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
-      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
-      if (l<=0) {{ clearInterval(t); p.remove(); }}
-    }}, 20);
-  }}
-}}
+const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Hedra","Sora","Vidu","Krea"];
 const content = document.getElementById("content");
 const platforms = [];
 for (const [file, data] of Object.entries(allData)) {{
@@ -290,7 +214,7 @@ for (const {{ name, data }} of platforms) {{
   const page = getPage(name);
   const checked = data.last_checked || data.checked || "recently";
   const source = data.source || data.source_url || "";
-  let html = `<div class="card"><h2><a href="${{page}}">${{name}}</a></h2>`;
+  let html = `<div class="card"><h2><a href="${{page}}" onclick="createParticles(event)">${{name}}</a></h2>`;
   if (source) {{
     html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
   }} else {{
@@ -436,7 +360,6 @@ function estimateCost(plan) {{
   }}
   return "";
 }}
-const order = ["ElevenLabs","Murf AI","Cartesia","Speechify","Descript"];
 function createParticles(e) {{
   const x = e.clientX, y = e.clientY;
   for (let i = 0; i < 12; i++) {{
@@ -459,82 +382,7 @@ function createParticles(e) {{
     }}, 16);
   }}
 }}
-function createParticles(e) {{
-  const x = e.clientX;
-  const y = e.clientY;
-  for (let i = 0; i < 14; i++) {{
-    const p = document.createElement("div");
-    p.style.position = "fixed";
-    p.style.width = "6px";
-    p.style.height = "6px";
-    p.style.background = "#00d4ff";
-    p.style.borderRadius = "50%";
-    p.style.pointerEvents = "none";
-    p.style.zIndex = "9999";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 3 + Math.random() * 5;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 25;
-    const id = setInterval(() => {{
-      px += vx;
-      py += vy;
-      life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 25;
-      if (life <= 0) {{ clearInterval(id); p.remove(); }}
-    }}, 16);
-  }}
-}}
-function createParticles(e) {{
-  const x = e.clientX;
-  const y = e.clientY;
-  for (let i = 0; i < 14; i++) {{
-    const p = document.createElement("div");
-    p.style.position = "fixed";
-    p.style.width = "6px";
-    p.style.height = "6px";
-    p.style.background = "#00d4ff";
-    p.style.borderRadius = "50%";
-    p.style.pointerEvents = "none";
-    p.style.zIndex = "9999";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 3 + Math.random() * 5;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 25;
-    const id = setInterval(() => {{
-      px += vx;
-      py += vy;
-      life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 25;
-      if (life <= 0) {{ clearInterval(id); p.remove(); }}
-    }}, 16);
-  }}
-}}
-function createParticles(e) {{
-  for (let i = 0; i < 10; i++) {{
-    const p = document.createElement("div");
-    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
-    document.body.appendChild(p);
-    const a = Math.random()*6.28, s = 2+Math.random()*4;
-    let x = e.clientX, y = e.clientY, l = 20;
-    const t = setInterval(() => {{
-      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
-      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
-      if (l<=0) {{ clearInterval(t); p.remove(); }}
-    }}, 20);
-  }}
-}}
+const order = ["ElevenLabs","Murf AI","Cartesia","Speechify","Descript"];
 const content = document.getElementById("content");
 const platforms = [];
 for (const [file, data] of Object.entries(allData)) {{
@@ -553,7 +401,7 @@ for (const {{ name, data }} of platforms) {{
   const page = getPage(name);
   const checked = data.last_checked || data.checked || "recently";
   const source = data.source || data.source_url || "";
-  let html = `<div class="card"><h2><a href="${{page}}">${{name}}</a></h2>`;
+  let html = `<div class="card"><h2><a href="${{page}}" onclick="createParticles(event)">${{name}}</a></h2>`;
   if (source) {{
     html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
   }} else {{
@@ -693,7 +541,6 @@ function estimateCost(plan) {{
   const costPerSong = price / credits;
   return costPerSong >= 0.01 ? ` (~$${{costPerSong.toFixed(2)}} / song)` : "";
 }}
-const order = ["Suno","Udio","Soundraw","AIVA","Boomy"];
 function createParticles(e) {{
   const x = e.clientX, y = e.clientY;
   for (let i = 0; i < 12; i++) {{
@@ -716,82 +563,7 @@ function createParticles(e) {{
     }}, 16);
   }}
 }}
-function createParticles(e) {{
-  const x = e.clientX;
-  const y = e.clientY;
-  for (let i = 0; i < 14; i++) {{
-    const p = document.createElement("div");
-    p.style.position = "fixed";
-    p.style.width = "6px";
-    p.style.height = "6px";
-    p.style.background = "#00d4ff";
-    p.style.borderRadius = "50%";
-    p.style.pointerEvents = "none";
-    p.style.zIndex = "9999";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 3 + Math.random() * 5;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 25;
-    const id = setInterval(() => {{
-      px += vx;
-      py += vy;
-      life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 25;
-      if (life <= 0) {{ clearInterval(id); p.remove(); }}
-    }}, 16);
-  }}
-}}
-function createParticles(e) {{
-  const x = e.clientX;
-  const y = e.clientY;
-  for (let i = 0; i < 14; i++) {{
-    const p = document.createElement("div");
-    p.style.position = "fixed";
-    p.style.width = "6px";
-    p.style.height = "6px";
-    p.style.background = "#00d4ff";
-    p.style.borderRadius = "50%";
-    p.style.pointerEvents = "none";
-    p.style.zIndex = "9999";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 3 + Math.random() * 5;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 25;
-    const id = setInterval(() => {{
-      px += vx;
-      py += vy;
-      life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 25;
-      if (life <= 0) {{ clearInterval(id); p.remove(); }}
-    }}, 16);
-  }}
-}}
-function createParticles(e) {{
-  for (let i = 0; i < 10; i++) {{
-    const p = document.createElement("div");
-    p.style.cssText = "position:fixed;width:5px;height:5px;background:#00d4ff;border-radius:50%;pointer-events:none;z-index:99999;left:" + e.clientX + "px;top:" + e.clientY + "px;";
-    document.body.appendChild(p);
-    const a = Math.random()*6.28, s = 2+Math.random()*4;
-    let x = e.clientX, y = e.clientY, l = 20;
-    const t = setInterval(() => {{
-      x += Math.cos(a)*s; y += Math.sin(a)*s; l--;
-      p.style.left = x+"px"; p.style.top = y+"px"; p.style.opacity = l/20;
-      if (l<=0) {{ clearInterval(t); p.remove(); }}
-    }}, 20);
-  }}
-}}
+const order = ["Suno","Udio","Soundraw","AIVA","Boomy"];
 const content = document.getElementById("content");
 const platforms = [];
 for (const [file, data] of Object.entries(allData)) {{
@@ -810,7 +582,7 @@ for (const {{ name, data }} of platforms) {{
   const page = getPage(name);
   const checked = data.last_checked || data.checked || "recently";
   const source = data.source || data.source_url || "";
-  let html = `<div class="card"><h2><a href="${{page}}">${{name}}</a></h2>`;
+  let html = `<div class="card"><h2><a href="${{page}}" onclick="createParticles(event)">${{name}}</a></h2>`;
   if (source) {{
     html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
   }} else {{
