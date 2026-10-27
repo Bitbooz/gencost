@@ -1,4 +1,4 @@
-import json
+﻿import json
 import os
 from datetime import datetime
 
@@ -80,7 +80,7 @@ html = f'''<!DOCTYPE html>
   .card h2 {{ margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }}
   .card h2 a {{ color: #fff; text-decoration: none; }}
   .plan {{ margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }}
-  .cost {{ font-size: 0.82em; opacity: 0.7; margin-left: 6px; color: #00d4ff; }}
+  .cost {{ font-size: 0.82em; opacity: 0.7; margin-left: 6px; color: #00d4ff; font-weight:500; }}
   @media (max-width: 768px) {{
     div[style*="grid-template-columns:1fr 1fr"] {{
       grid-template-columns: 1fr !important;
@@ -93,11 +93,11 @@ html = f'''<!DOCTYPE html>
 </style>
 </head>
 <body>
-<div style="background:#1a1a2e; border:1px solid #00d4ff; border-radius:8px; padding:1rem; margin:1rem 0; color:#e0e0e0;">
+<div style="background:#1a1a2e; border:1px solid #00d4ff; border-radius:8px; padding:1rem; margin:1rem auto; max-width:1400px; color:#e0e0e0; text-align:center;">
   <strong>Best value right now</strong><br>
-  Kling AI Standard is often among the lowest entry prices (~$8–10/mo). Check the table for latest.
+  Kling AI Standard is often among the lowest entry prices (~$8–10/mo). Check the cards below for the latest.
 </div>
-<p style="color:#aaa; font-size:0.9rem;">
+<p style="color:#aaa; font-size:0.9rem; text-align:center;">
   <strong>Last updated:</strong> {timestamp}<br>
   Prices change often — always confirm inside the tool before generating.
 </p>
@@ -190,7 +190,14 @@ platforms.sort((a, b) => {{
 }});
 for (const {{ name, data }} of platforms) {{
   const page = getPage(name);
+  const checked = data.last_checked || data.checked || "recently";
+  const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${{page}}">${{name}}</a></h2>`;
+  if (source) {{
+    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
+  }} else {{
+    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}}</div>`;
+  }}
   for (const plan of data.plans || []) {{
     const price = plan.monthly_price_usd ?? 0;
     const credits = plan.credits_or_minutes ?? "-";
@@ -282,16 +289,7 @@ voice_html = f'''<!DOCTYPE html>
   }}
   .card h2 {{ margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }}
   .plan {{ margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }}
-  .cost {{ font-size: 0.82em; opacity: 0.7; margin-left: 6px; color: #00d4ff; }}
-  @media (max-width: 768px) {{
-    div[style*="grid-template-columns:1fr 1fr"] {{
-      grid-template-columns: 1fr !important;
-      max-width: 100% !important;
-      padding: 0 16px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }}
-  }}
+  .cost {{ font-size: 0.82em; opacity: 0.7; margin-left: 6px; color: #00d4ff; font-weight:500; }}
 </style>
 </head>
 <body>
@@ -357,7 +355,14 @@ platforms.sort((a, b) => {{
 }});
 for (const {{ name, data }} of platforms) {{
   const page = getPage(name);
+  const checked = data.last_checked || data.checked || "recently";
+  const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${{page}}">${{name}}</a></h2>`;
+  if (source) {{
+    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
+  }} else {{
+    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}}</div>`;
+  }}
   for (const plan of data.plans || []) {{
     const price = plan.monthly_price_usd ?? 0;
     const credits = plan.credits_or_minutes ?? "-";
@@ -450,16 +455,7 @@ music_html = f'''<!DOCTYPE html>
   .card h2 {{ margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }}
   .card h2 a {{ color: #fff; text-decoration: none; }}
   .plan {{ margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }}
-  .cost {{ font-size: 0.82em; opacity: 0.7; margin-left: 6px; color: #00d4ff; }}
-  @media (max-width: 768px) {{
-    div[style*="grid-template-columns:1fr 1fr"] {{
-      grid-template-columns: 1fr !important;
-      max-width: 100% !important;
-      padding: 0 16px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }}
-  }}
+  .cost {{ font-size: 0.82em; opacity: 0.7; margin-left: 6px; color: #00d4ff; font-weight:500; }}
 </style>
 </head>
 <body>
@@ -518,7 +514,14 @@ platforms.sort((a, b) => {{
 }});
 for (const {{ name, data }} of platforms) {{
   const page = getPage(name);
+  const checked = data.last_checked || data.checked || "recently";
+  const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${{page}}">${{name}}</a></h2>`;
+  if (source) {{
+    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
+  }} else {{
+    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}}</div>`;
+  }}
   for (const plan of data.plans || []) {{
     const price = plan.monthly_price_usd ?? 0;
     const credits = plan.credits_or_minutes ?? "-";
