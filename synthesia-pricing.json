@@ -10,17 +10,17 @@
     },
     {
       "name": "Starter",
-      "monthly_price_usd": 29,
+      "monthly_price_usd": 19,
       "credits_or_minutes": 1250,
       "unit": "credits",
-      "offer": "Save up to 4 months with yearly"
+      "offer": "First month for $9, save up to 4 months with yearly"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 89,
       "credits_or_minutes": 6000,
       "unit": "credits",
-      "offer": "Save up to 4 months with yearly"
+      "offer": "First month for $49, save up to 4 months with yearly"
     }
   ]
 }
