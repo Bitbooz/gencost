@@ -418,6 +418,7 @@ music_html = f'''<!DOCTYPE html>
     border-radius: 16px;
   }}
   .card h2 {{ margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }}
+  .card h2 a {{ color: #fff; text-decoration: none; }}
   .plan {{ margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }}
   .cost {{ font-size: 0.82em; opacity: 0.7; margin-left: 6px; color: #00d4ff; }}
 </style>
@@ -444,6 +445,16 @@ function cleanName(name) {{
   if (n.includes("boomy")) return "Boomy";
   return name;
 }}
+function getPage(name) {{
+  const map = {{
+    "Suno": "https://suno.com",
+    "Udio": "https://www.udio.com",
+    "Soundraw": "https://soundraw.io",
+    "AIVA": "https://www.aiva.ai",
+    "Boomy": "https://boomy.com"
+  }};
+  return map[name] || "#";
+}}
 function estimateCost(plan) {{
   const price = plan.monthly_price_usd || 0;
   const credits = plan.credits_or_minutes || 0;
@@ -467,7 +478,8 @@ platforms.sort((a, b) => {{
   return ai - bi;
 }});
 for (const {{ name, data }} of platforms) {{
-  let html = `<div class="card"><h2>${{name}}</h2>`;
+  const page = getPage(name);
+  let html = `<div class="card"><h2><a href="${{page}}" target="_blank" rel="noopener">${{name}}</a></h2>`;
   for (const plan of data.plans || []) {{
     const price = plan.monthly_price_usd ?? 0;
     const credits = plan.credits_or_minutes ?? "-";
