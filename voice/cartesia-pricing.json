@@ -1,19 +1,33 @@
 {
-    "plans":  [
-                  {
-                      "monthly_price_usd":  5,
-                      "name":  "Pro",
-                      "unit":  "characters",
-                      "credits_or_minutes":  100000
-                  },
-                  {
-                      "monthly_price_usd":  99,
-                      "name":  "Startup",
-                      "unit":  "characters",
-                      "credits_or_minutes":  1000000
-                  }
-              ],
-    "platform":  "Cartesia",
-    "last_checked":  "2026-10-27",
-    "source":  "https://cartesia.ai/pricing"
+  "platform": "cartesia",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": "20K",
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 5,
+      "credits_or_minutes": "100K",
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Startup",
+      "monthly_price_usd": 49,
+      "credits_or_minutes": "1.25M",
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Scale",
+      "monthly_price_usd": 299,
+      "credits_or_minutes": "8M",
+      "unit": "credits",
+      "offer": ""
+    }
+  ]
 }

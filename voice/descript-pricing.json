@@ -1,19 +1,33 @@
 {
-    "plans":  [
-                  {
-                      "monthly_price_usd":  16,
-                      "name":  "Hobbyist",
-                      "unit":  "hours",
-                      "credits_or_minutes":  10
-                  },
-                  {
-                      "monthly_price_usd":  24,
-                      "name":  "Creator",
-                      "unit":  "hours",
-                      "credits_or_minutes":  30
-                  }
-              ],
-    "platform":  "Descript",
-    "last_checked":  "2026-10-27",
-    "source":  "https://www.descript.com/pricing"
+  "platform": "descript",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 60,
+      "unit": "minutes",
+      "offer": "Saving up to 35% on annual"
+    },
+    {
+      "name": "Hobbyist",
+      "monthly_price_usd": 24,
+      "credits_or_minutes": 10,
+      "unit": "hours",
+      "offer": "Saving up to 35% on annual"
+    },
+    {
+      "name": "Creator",
+      "monthly_price_usd": 35,
+      "credits_or_minutes": 30,
+      "unit": "hours",
+      "offer": "Saving up to 35% on annual"
+    },
+    {
+      "name": "Business",
+      "monthly_price_usd": 65,
+      "credits_or_minutes": 40,
+      "unit": "hours",
+      "offer": "Saving up to 35% on annual"
+    }
+  ]
 }

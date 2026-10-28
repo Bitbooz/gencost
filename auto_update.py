@@ -9,6 +9,22 @@ API_KEY = os.getenv("XAI_API_KEY")
 client = OpenAI(api_key=API_KEY, base_url="https://api.x.ai/v1")
 
 platforms = {
+    "elevenlabs": "https://elevenlabs.io/pricing",
+    "murf": "https://murf.ai/pricing",
+    "cartesia": "https://cartesia.ai/pricing",
+    "speechify": "https://speechify.com/pricing",
+    "descript": "https://www.descript.com/pricing",
+    "suno": "https://suno.com/pricing",
+    "udio": "https://www.udio.com/pricing",
+    "soundraw": "https://soundraw.io/pricing",
+    "aiva": "https://www.aiva.ai/pricing",
+    "boomy": "https://boomy.com/pricing",
+    "hailuo": "https://hailuoai.video/pricing",
+    "veo": "https://deepmind.google/technologies/veo/",
+    "hedra": "https://www.hedra.com/pricing",
+    "sora": "https://openai.com/sora",
+    "vidu": "https://www.vidu.studio/pricing",
+    "krea": "https://www.krea.ai/pricing",
     "heygen": "https://www.heygen.com/pricing",
     "higgsfield": "https://higgsfield.ai/pricing",
     "runway": "https://runwayml.com/pricing",

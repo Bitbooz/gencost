@@ -1,19 +1,4 @@
 {
-    "platform":  "Hailuo AI",
-    "plans":  [
-                  {
-                      "name":  "Standard",
-                      "monthly_price_usd":  10.50,
-                      "credits_or_minutes":  1000,
-                      "unit":  "credits"
-                  },
-                  {
-                      "name":  "Pro",
-                      "monthly_price_usd":  30,
-                      "credits_or_minutes":  3500,
-                      "unit":  "credits"
-                  }
-              ],
-    "last_checked":  "2026-10-27",
-    "source":  "https://hailuoai.video/subscribe"
+  "platform": "hailuo",
+  "plans": []
 }

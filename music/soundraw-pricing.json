@@ -1,25 +1,33 @@
 {
-    "platform":  "Soundraw",
-    "plans":  [
-                  {
-                      "name":  "Free",
-                      "monthly_price_usd":  0,
-                      "credits_or_minutes":  10,
-                      "unit":  "songs"
-                  },
-                  {
-                      "name":  "Creator",
-                      "monthly_price_usd":  16.99,
-                      "credits_or_minutes":  0,
-                      "unit":  "unlimited"
-                  },
-                  {
-                      "name":  "Artist",
-                      "monthly_price_usd":  29.99,
-                      "credits_or_minutes":  0,
-                      "unit":  "unlimited"
-                  }
-              ],
-    "last_checked":  "2026-10-27",
-    "source":  "https://soundraw.io/pricing"
+  "platform": "soundraw",
+  "plans": [
+    {
+      "name": "Creator",
+      "monthly_price_usd": 5.99,
+      "credits_or_minutes": 10000,
+      "unit": "tracks",
+      "offer": ""
+    },
+    {
+      "name": "Artist Starter",
+      "monthly_price_usd": 10.49,
+      "credits_or_minutes": 10,
+      "unit": "tracks",
+      "offer": ""
+    },
+    {
+      "name": "Artist Pro",
+      "monthly_price_usd": 12.59,
+      "credits_or_minutes": 20,
+      "unit": "tracks",
+      "offer": ""
+    },
+    {
+      "name": "Artist Unlimited",
+      "monthly_price_usd": 17.49,
+      "credits_or_minutes": 10000,
+      "unit": "tracks",
+      "offer": ""
+    }
+  ]
 }

@@ -1,19 +1,4 @@
 {
-    "plans":  [
-                  {
-                      "monthly_price_usd":  19,
-                      "name":  "Basic",
-                      "unit":  "hours",
-                      "credits_or_minutes":  24
-                  },
-                  {
-                      "monthly_price_usd":  26,
-                      "name":  "Pro",
-                      "unit":  "hours",
-                      "credits_or_minutes":  48
-                  }
-              ],
-    "platform":  "Murf AI",
-    "last_checked":  "2026-10-27",
-    "source":  "https://murf.ai/pricing"
+  "platform": "murf",
+  "plans": []
 }
