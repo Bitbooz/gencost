@@ -1,4 +1,8 @@
 {
-  "platform": "murf",
-  "plans": []
+  "platform": "Murf AI",
+  "plans": [
+    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 10, "unit": "minutes"},
+    {"name": "Basic", "monthly_price_usd": 19, "credits_or_minutes": 120, "unit": "minutes"},
+    {"name": "Pro", "monthly_price_usd": 39, "credits_or_minutes": 240, "unit": "minutes"}
+  ]
 }
