@@ -1,4 +1,8 @@
-{
-  "platform": "boomy",
-  "plans": []
+﻿{
+  "platform": "Boomy",
+  "plans": [
+    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 10, "unit": "songs"},
+    {"name": "Creator", "monthly_price_usd": 9.99, "credits_or_minutes": 100, "unit": "songs"},
+    {"name": "Pro", "monthly_price_usd": 24.99, "credits_or_minutes": 500, "unit": "songs"}
+  ]
 }
