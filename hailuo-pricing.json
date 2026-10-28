@@ -1,4 +1,8 @@
 {
-  "platform": "hailuo",
-  "plans": []
+  "platform": "Hailuo AI",
+  "plans": [
+    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 50, "unit": "credits"},
+    {"name": "Standard", "monthly_price_usd": 10, "credits_or_minutes": 1000, "unit": "credits"},
+    {"name": "Pro", "monthly_price_usd": 30, "credits_or_minutes": 4000, "unit": "credits"}
+  ]
 }

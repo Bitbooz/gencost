@@ -1,4 +1,8 @@
 {
-  "platform": "hedra",
-  "plans": []
+  "platform": "Hedra",
+  "plans": [
+    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 30, "unit": "credits"},
+    {"name": "Studio Basic", "monthly_price_usd": 20, "credits_or_minutes": 500, "unit": "credits"},
+    {"name": "Studio Pro", "monthly_price_usd": 60, "credits_or_minutes": 2000, "unit": "credits"}
+  ]
 }

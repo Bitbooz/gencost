@@ -1,4 +1,8 @@
 {
-  "platform": "vidu",
-  "plans": []
+  "platform": "Vidu",
+  "plans": [
+    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 50, "unit": "credits"},
+    {"name": "Basic", "monthly_price_usd": 15, "credits_or_minutes": 1000, "unit": "credits"},
+    {"name": "Pro", "monthly_price_usd": 40, "credits_or_minutes": 4000, "unit": "credits"}
+  ]
 }
