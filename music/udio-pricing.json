@@ -1,4 +1,4 @@
-﻿{
+{
   "platform": "Udio",
   "plans": [
     {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 50, "unit": "credits"},
