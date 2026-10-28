@@ -1,25 +1,23 @@
 {
-    "platform":  "Kling AI",
-    "plans":  [
-                  {
-                      "name":  "Standard",
-                      "monthly_price_usd":  10,
-                      "credits_or_minutes":  660,
-                      "unit":  "credits"
-                  },
-                  {
-                      "name":  "Pro",
-                      "monthly_price_usd":  37,
-                      "credits_or_minutes":  3000,
-                      "unit":  "credits"
-                  },
-                  {
-                      "name":  "Premier",
-                      "monthly_price_usd":  92,
-                      "credits_or_minutes":  8000,
-                      "unit":  "credits"
-                  }
-              ],
-    "last_checked":  "2026-10-27",
-    "source":  "https://kling.ai/app/membership/membership-plan"
+  "platform": "Kling AI",
+  "plans": [
+    {
+      "name": "Standard",
+      "monthly_price_usd": 10,
+      "credits_or_minutes": 660,
+      "unit": "credits"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 37,
+      "credits_or_minutes": 3000,
+      "unit": "credits"
+    },
+    {
+      "name": "Premier",
+      "monthly_price_usd": 92,
+      "credits_or_minutes": 8000,
+      "unit": "credits"
+    }
+  ]
 }

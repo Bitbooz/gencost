@@ -1,35 +1,33 @@
 {
-    "platform":  "viggle",
-    "plans":  [
-                  {
-                      "name":  "Free",
-                      "monthly_price_usd":  0,
-                      "credits_or_minutes":  "5 videos/day",
-                      "unit":  "videos",
-                      "offer":  "Yearly -20%"
-                  },
-                  {
-                      "name":  "Pro",
-                      "monthly_price_usd":  7.99,
-                      "credits_or_minutes":  80,
-                      "unit":  "credits",
-                      "offer":  "Yearly -20%"
-                  },
-                  {
-                      "name":  "Live",
-                      "monthly_price_usd":  15.99,
-                      "credits_or_minutes":  200,
-                      "unit":  "credits",
-                      "offer":  "Yearly -20%"
-                  },
-                  {
-                      "name":  "Max",
-                      "monthly_price_usd":  63.99,
-                      "credits_or_minutes":  800,
-                      "unit":  "credits",
-                      "offer":  "Yearly -20%"
-                  }
-              ],
-    "last_checked":  "2026-10-27",
-    "source":  "https://viggle.ai/pricing"
+  "platform": "viggle",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "credits",
+      "offer": "20% off yearly"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 7.99,
+      "credits_or_minutes": 80,
+      "unit": "credits",
+      "offer": "20% off yearly"
+    },
+    {
+      "name": "Live",
+      "monthly_price_usd": 15.99,
+      "credits_or_minutes": 200,
+      "unit": "credits",
+      "offer": "20% off yearly"
+    },
+    {
+      "name": "Max",
+      "monthly_price_usd": 63.99,
+      "credits_or_minutes": 800,
+      "unit": "credits",
+      "offer": "20% off yearly"
+    }
+  ]
 }

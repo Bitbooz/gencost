@@ -1,35 +1,33 @@
 {
-    "platform":  "pika",
-    "plans":  [
-                  {
-                      "name":  "Free",
-                      "monthly_price_usd":  0,
-                      "credits_or_minutes":  0,
-                      "unit":  "credits",
-                      "offer":  "Save 20% on yearly"
-                  },
-                  {
-                      "name":  "Starter",
-                      "monthly_price_usd":  10,
-                      "credits_or_minutes":  900,
-                      "unit":  "credits",
-                      "offer":  "Save 20% on yearly"
-                  },
-                  {
-                      "name":  "Creator",
-                      "monthly_price_usd":  35,
-                      "credits_or_minutes":  3150,
-                      "unit":  "credits",
-                      "offer":  "Save 20% on yearly"
-                  },
-                  {
-                      "name":  "Fancy",
-                      "monthly_price_usd":  95,
-                      "credits_or_minutes":  8550,
-                      "unit":  "credits",
-                      "offer":  "Save 20% on yearly"
-                  }
-              ],
-    "last_checked":  "2026-10-27",
-    "source":  "https://pika.art/pricing"
+  "platform": "pika",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "credits",
+      "offer": "Save 20% on yearly"
+    },
+    {
+      "name": "Starter",
+      "monthly_price_usd": 10,
+      "credits_or_minutes": 900,
+      "unit": "credits",
+      "offer": "Save 20% on yearly"
+    },
+    {
+      "name": "Creator",
+      "monthly_price_usd": 35,
+      "credits_or_minutes": 3150,
+      "unit": "credits",
+      "offer": "Save 20% on yearly"
+    },
+    {
+      "name": "Fancy",
+      "monthly_price_usd": 95,
+      "credits_or_minutes": 8550,
+      "unit": "credits",
+      "offer": "Save 20% on yearly"
+    }
+  ]
 }
