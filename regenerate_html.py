@@ -1,4 +1,4 @@
-import json
+﻿import json
 import os
 from datetime import datetime
 
@@ -93,9 +93,9 @@ html = f'''<!DOCTYPE html>
 </style>
 </head>
 <body>
-<div style="background:#1a1a2e; border:1px solid #00d4ff; border-radius:8px; padding:1rem; margin:1rem auto; max-width:1400px; color:#e0e0e0; text-align:center;">
+<div id="best-value" style="background:#1a1a2e; border:1px solid #00d4ff; border-radius:8px; padding:1rem; margin:1rem auto; max-width:1400px; color:#e0e0e0; text-align:center;">
   <strong>Best value right now</strong><br>
-  Kling AI Standard is often among the lowest entry prices (~$8–10/mo). Check the cards below for the latest.
+  <span id="best-value-text">Calculating...</span>
 </div>
 <div style="max-width:1400px; margin:10px auto 20px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; padding:0 16px;">
   <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:10px; padding:14px; text-align:center;">
@@ -144,7 +144,7 @@ html = f'''<!DOCTYPE html>
     </div>
   </div>
   <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    Created by Grok & Bitbooz · Contact: bitbooz@protonmail.com
+    Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com" style="color:#00d4ff;">bitbooz@protonmail.com</a>
   </div>
 </div>
 <script>
@@ -225,6 +225,21 @@ platforms.sort((a, b) => {{
   if (bi === -1) return -1;
   return ai - bi;
 }});
+// Best value
+let cheapest = null;
+let cheapestPrice = Infinity;
+for (const {{ name, data }} of platforms) {{
+  for (const plan of data.plans || []) {{
+    const price = plan.monthly_price_usd || 0;
+    if (price > 0 && price < cheapestPrice) {{
+      cheapestPrice = price;
+      cheapest = `${{name}} ${{plan.name}} ($${{price}}/mo)`;
+    }}
+  }}
+}}
+const bestEl = document.getElementById("best-value-text");
+if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards below for details.";
+
 for (const {{ name, data }} of platforms) {{
   const page = getPage(name);
   const checked = data.last_checked || data.checked || "recently";
@@ -337,7 +352,7 @@ voice_html = f'''<!DOCTYPE html>
   <div class="grid" id="content"></div>
   <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
     <a href="/" style="color:#00d4ff;">← Back to video comparison</a><br><br>
-    Created by Grok & Bitbooz · Contact: bitbooz@protonmail.com
+    Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com" style="color:#00d4ff;">bitbooz@protonmail.com</a>
   </div>
 </div>
 <script>
@@ -525,7 +540,7 @@ music_html = f'''<!DOCTYPE html>
   <div class="grid" id="content"></div>
   <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
     <a href="/" style="color:#00d4ff;">← Back to video comparison</a><br><br>
-    Created by Grok & Bitbooz · Contact: bitbooz@protonmail.com
+    Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com" style="color:#00d4ff;">bitbooz@protonmail.com</a>
   </div>
 </div>
 <script>
