@@ -3,89 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>InVideo - GenCost</title>
+<title>InVideo Pricing 2026 – Real Dollar Cost | GenCost</title>
+<meta name="description" content="InVideo real dollar pricing 2026. Compare plans and free tier.">
+<link rel="canonical" href="https://getgencost.com/pages/invideo.html">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
-  body {
-    margin:0;
-    font-family:'Inter',sans-serif;
-    color:#e0e0e0;
-    background-image: url('/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-  .overlay { min-height:100vh; padding:20px 12px; background: rgba(10, 10, 15, 0.6); }
-  .overlay { min-height:100vh; padding:20px 12px; background: rgba(10, 10, 15, 0.6); }
-  .card { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); backdrop-filter:blur(10px); max-width:100%; margin:0 auto; padding:18px; border-radius:14px; box-shadow:0 6px 24px rgba(0,0,0,0.3); }
-  @media (min-width: 700px) {
-    .card { max-width:780px; padding:32px; }
-    .overlay { min-height:100vh; padding:20px 12px; background: rgba(10, 10, 15, 0.6); }
-  .overlay { min-height:100vh; padding:20px 12px; background: rgba(10, 10, 15, 0.6); }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Inter', sans-serif; color: #e0e0e0; background: #0a0a0f; }
+  .container { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
+  h1 { 
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 2.2em;
+    margin: 12px 0 8px 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(90deg, #00d4ff, #7b68ee); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
   }
-  a { color:#00d4ff; text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  .back { margin-bottom:16px; font-size:0.9em; }
-  h1 { margin-top:0; font-family:'Orbitron',sans-serif; letter-spacing:1px; font-size:1.6em; }
-  .summary { background:rgba(255,255,255,0.05); padding:14px 16px; border-radius:10px; margin:16px 0; line-height:1.5; font-size:0.95em; }
-  ul { padding-left:18px; }
-  li { margin:6px 0; }
-  .section { margin-top:20px; }
-  h3 { font-family:'Orbitron',sans-serif; font-size:1.05em; }
+  .card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 22px; margin: 20px 0; }
+  .plan { margin: 10px 0; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  a { color: #00d4ff; }
 </style>
 </head>
 <body>
-<div class="overlay">
+<div class="container">
+  <a href="/" style="color:#aaa;">← Back to comparison</a>
+  <h1>InVideo</h1>
+  <p>AI Pricing – Real Dollar Cost</p>
+
   <div class="card">
-    <div class="back"><a href="../index.html">← Back to GenCost</a></div>
-    <h1>InVideo</h1>
-    <p><a href="https://invideo.io/pricing" target="_blank">Official pricing page →</a></p>
-    <div class="summary">InVideo is an all-in-one video creation platform with strong AI tools and a large template library. It is geared toward marketing, social media, and fast content production.</div>
-    <div class="section">
-      <h3>Key Features</h3>
-      <ul><li>AI video generator</li><li>Large template library</li><li>Text-to-video capabilities</li><li>Stock media and effects</li><li>Marketing and social media focused</li><li>Easy editing tools</li></ul>
-    </div>
-    <div class="section">
-      <h3>Current Plans</h3>
-      <div id="plans"></div>
-    </div>
+    <h2>Plans</h2>
+    <div class='plan'><strong>Starter</strong>: $10/mo · 400 credits (~$0.25 / 10s)</div>
+<div class='plan'><strong>Plus</strong>: $30/mo · 2000 credits (~$0.15 / 10s)</div>
+<div class='plan'><strong>Max</strong>: $75/mo · 5000 credits (~$0.15 / 10s)</div>
+
+    <p style="font-size:0.85em; opacity:0.7;">Prices checked: 2026-10-28 · <a href="https://invideo.io/pricing" target="_blank">Official pricing</a></p>
   </div>
+
+  <div class="card">
+    <h2>Free tier</h2>
+    <p>Free plan available.</p>
+  </div>
+
+  <div class="card">
+    <h2>Notes</h2>
+    <p>AI video editing and generation.</p>
+  </div>
+
+  <p style="text-align:center; font-size:0.8em; opacity:0.6; margin-top:40px;">
+    Created by Grok & Bitbooz · Contact: bitbooz@protonmail.com
+  </p>
 </div>
-<script>
-const data = {
-  "platform": "invideo",
-  "plans": [
-    {
-      "name": "Starter",
-      "monthly_price_usd": 10,
-      "credits_or_minutes": 400,
-      "unit": "credits",
-      "offer": "50% off on annual, save \u20ac120 per seat"
-    },
-    {
-      "name": "Plus",
-      "monthly_price_usd": 30,
-      "credits_or_minutes": 2000,
-      "unit": "credits",
-      "offer": "50% off on annual, save \u20ac360 per seat"
-    },
-    {
-      "name": "Max",
-      "monthly_price_usd": 75,
-      "credits_or_minutes": 5000,
-      "unit": "credits",
-      "offer": "50% off on annual, save \u20ac885 per seat"
-    }
-  ]
-};
-let html = '';
-for (const plan of data.plans || []) {
-  const price = plan.monthly_price_usd ?? 0;
-  const credits = plan.credits_or_minutes ?? '-';
-  const unit = plan.unit || '';
-  html += <p><strong>${plan.name}</strong>: $/mo · ${credits} ${unit}</p>;
-}
-document.getElementById('plans').innerHTML = html || '<p>No plans found.</p>';
-</script>
 </body>
 </html>
