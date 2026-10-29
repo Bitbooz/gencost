@@ -2,8 +2,8 @@
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # Hver dag kl. 06:00 UTC
-  workflow_dispatch:       # Lar deg starte den manuelt også
+    - cron: '0 6 * * *'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install requests
 
       - name: Run price update
         run: python update_all.py
