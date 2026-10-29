@@ -65,9 +65,10 @@ Ray3.2
 SDR (base)
 HDR (2×)
 HDR+EXR (3×)
+No keyframes: plus 30 credits
 Text-to-Video
 Image-to-Video
-Draft
+360p
 -
 20 credits/5 sec
 60 credits/10 sec
@@ -84,7 +85,7 @@ Draft
 400 credits/5 sec
 1200 credits/10 sec
 Video-to-Video
-Draft
+360p
 -
 36 credits/sec
 540p
@@ -97,7 +98,7 @@ Draft
 -
 144 credits/sec
 Reframe
-Draft
+360p
 -
 10 credits/sec
 540p
@@ -111,36 +112,40 @@ Draft
 120 credits/sec
 Ray3.14
 SDR (base)
-HDR (4×)
+HDR (2×)
 Text-to-Video
 Image-to-Video
-Draft
+360p
 -
-4 credits/sec
+20 credits/5 sec
+60 credits/10 sec
 540p
 -
-10 credits/sec
+50 credits/5 sec
+150 credits/10 sec
 720p
 -
-20 credits/sec
+100 credits/5 sec
+300 credits/10 sec
 1080p
 -
-80 credits/sec
+400 credits/5 sec
+1200 credits/10 sec
 Video-to-Video
-Draft
+360p
 -
-12 credits/sec
+36 credits/sec
 540p
--
-24 credits/sec
-720p
 -
 48 credits/sec
+720p
+-
+72 credits/sec
 1080p
 -
-192 credits/sec
+144 credits/sec
 Extend Video (SDR)
-Draft
+360p
 -
 20 credits/5 sec
 540p
@@ -228,6 +233,31 @@ Yes
 720p
 Yes
 ~32 credits/sec
+Kling 4.0
+Text-to-Video
+Image-to-Video
+720p
+Yes
+53 credits/sec
+1080p
+Yes
+79 credits/sec
+Kling 4.0 Omni
+Text-to-Video
+Image-to-Video
+720p
+Yes
+53 credits/sec
+1080p
+Yes
+79 credits/sec
+Video-to-Video
+720p
+Yes
+~66 credits/sec
+1080p
+Yes
+~98 credits/sec
 Kling 3.0 Omni
 Text-to-Video Image-to-Video
 720p
@@ -283,28 +313,32 @@ Motion Control
 -
 59 credits/sec
 Veo 3.1
-Text-to-Video Image-to-Video
-720p
--
-140 credits/sec
+Text-to-Video
+Image-to-Video
 720p
 Yes
-280 credits/sec
-1080p
--
 140 credits/sec
 1080p
 Yes
-280 credits/sec
-Minimax H3
-Text-to-Video Image-to-Video
+140 credits/sec
+MiniMax H3
+Reference images: first 5 free, then 14 credits each
+Text-to-Video
+Image-to-Video
 768p
 Yes
 28 credits/sec
-1440p (2K)
+2K (1440p)
 Yes
 46 credits/sec
-Minimax H3 Max
+Video-to-Video
+768p
+Yes
+56 credits/sec
+2K (1440p)
+Yes
+92 credits/sec
+MiniMax H3 Max
 Reference images: first 2–4 free, then ~7–13 credits each
 Text-to-Video
 Image-to-Video
@@ -368,16 +402,16 @@ Lip Sync
 -
 45 credits/sec
 Gemini Omni Flash
-Credits reserved per video (3-10 sec).
+3–10 sec videos
 Text-to-Video
 Image-to-Video
 720p
 -
-up to 370 credits
-Video-to-Video
+Up to 370 credits
+Modify
 720p
 -
-Up to 385 credits
+39 credits/sec
 Cost Per Image Generation
 Model
 Action
@@ -501,6 +535,13 @@ Modify
 24 credits
 2K
 48 credits
+Seedream 5.0 Flash
+Create
+1K–2K
+6 credits
+Modify
+1K–2K
+6 credits
 SeedVR2
 Upscale
 1K
@@ -532,6 +573,24 @@ Medium
 21 credits
 High
 77 credits
+Ideogram Vector
+Create
+Low
+44 credits
+Medium
+54 credits
+High
+67 credits
+Modify
+Low
+44 credits
+Medium
+54 credits
+High
+107 credits
+Convert
+-
+34 credits
 Cost Per Audio Generation
 Model
 Type
@@ -565,9 +624,8 @@ Remove background
 Blend image
 1 credits/image
 Reframe image
-2 credits/image
-Reframe video
-32 credits/sec
+15 / 23 / 34 / 51 credits
+(512 / 1K / 2K / 4K)
 Upscale video with Luma to 1080p
 10 credits/sec
 Upscale video with Luma to 2K
@@ -579,9 +637,17 @@ Upscale video with Topaz to 1080p
 Upscale video with Topaz to 4K
 17 credits/sec
 Upscale video with Flux 3 (Precise)
-25 credits/megapixel
+52 credits/sec at 1080p
+207 credits/sec at 4K
 Upscale video with Flux 3 (Creative)
-35 credits/megapixel
+73 credits/sec at 1080p
+290 credits/sec at 4K
+Convert to HDR at 1080p
+10 credits/sec
+Convert to HDR at 1440p
+10 credits/sec
+Convert to HDR at 4K
+34 credits/sec
 Layers in 1K
 75 credits/image
 Layers in 2K
@@ -598,6 +664,7 @@ UNI-1
 API
 AI Video Generator
 AI Video Generator from Image
+About Luma
 Enterprise
 Join Us
 Case Studies

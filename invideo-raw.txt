@@ -42,11 +42,11 @@ For first-time AI creators
 ~
 15 Seedance 2 fast videos
 400 credits per seat/mo
-€20
-€10
+$20
+$10
 per seat/mo, billed annually
 Get Starter
-Save €120
+Save $120
 per seat compared to monthly
 −
 1 seat
@@ -109,11 +109,11 @@ For everyday AI creation
 ~
 52 Seedance 2 videos
 2,000 credits per seat/mo
-€60
-€30
+$60
+$30
 per seat/mo, billed annually
 Get Plus
-Save €360
+Save $360
 per seat compared to monthly
 −
 1 seat
@@ -183,11 +183,11 @@ For ambitious AI projects
 5,000
 10,000
 15,000
-€150
-€75
+$150
+$75
 per seat/mo, billed annually
 Get Max
-Save €885
+Save $885
 per seat compared to monthly
 −
 1 seat
@@ -407,12 +407,12 @@ For first-time AI creators
 ~
 45 Seedance 2 fast videos
 400 credits per seat/mo
-€20
-€10
+$20
+$10
 per seat/mo, billed annually
-€360 up front for 3 seats
+$360 up front for 3 seats
 Get Starter
-Save €360
+Save $360
 compared to monthly
 −
 3 seats
@@ -422,7 +422,7 @@ Covers your
 a month.
 The full timeline, multiplayer editing, colour, audio and 3D are on
 every
-plan, including Starter at €20 a seat.
+plan, including Starter at $20 a seat.
 40 hours of editing costs nothing.
 Regular quality uses Seedance 2.0 Fast
 Premium quality uses Seedance 2.5
@@ -433,16 +433,16 @@ Compare features
 See in detail what each plan gives you
 Annual
 Starter
-€10
+$10
 per seat/mo, billed annually
 Get Starter
 Plus
-€30
+$30
 per seat/mo, billed annually
 Get Plus
 Max
 Best value
-€75
+$75
 per seat/mo, billed annually
 Get Max
 Video

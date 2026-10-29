@@ -1,4 +1,4 @@
-Pricing — Pika
+Pika Pricing: Free, Starter, Creator & Fancy Plans
 Skip to main content
 AI Video
 AI Image
@@ -204,7 +204,7 @@ Included:
 2 video · 8 image + audio in parallel
 Included:
 No watermark
-Not included:
+Included:
 Commercial license
 Not included:
 Priority queue
@@ -313,6 +313,102 @@ Early access to new models (from $440/mo)
 Learn more
 about
 Fancy
+Find your plan
+Tell us what you make in a month. The card keeps a plan and a credit count in step with your answers.
+What do you want to make?
+Pick all that apply
+Social content
+Product ads
+Short films
+UGC ads
+Product photos
+YouTube
+Storyboards
+Exploring
+How much will you create?
+Videos
+Seedance 2.5 · 720p · 5s
+12
+122 credits each · about 1 minute of finished video
+Images
+Nano Banana 2 · 1K
+20
+8 credits each
+Leave room for extra takes
+Adds 25% so a reshoot does not blow the month.
+What matters to you?
+Commercial use
+For clients, brands, and paid work.
+Priority generation
+Shorter waits when the queue is long.
+Creator
+$
+35
+/mo
+2,030
+of
+3,150
+credits a month
+See plan
+Your match
+Recommended for you
+See why
+Creator
+Social content fits here, with room left over.
+$35
+$
+3
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+5
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+/mo
+Billed monthly
+3,150
+credits / month
+Your monthly estimate
+2,030
+credits
+Videos
+1,464
+credits
+Images
+160
+credits
+Takes
+406
+credits
+Spare
+1,120
+credits
+Included:
+All models
+Included:
+No watermark
+Included:
+Commercial license
+Not included:
+Priority queue
+Subscribe to
+Creator
+Compare plans
 For enterprise
 Need more credits?
 Talk to our team to create a custom solution at scale with dedicated support.
@@ -383,7 +479,7 @@ Yes
 Yes
 Commercial license
 No
-No
+Yes
 Yes
 Yes
 Priority queue
@@ -693,12 +789,15 @@ Research
 Blog
 Experiments
 Contact
+Referral Program
 Resources
-Help & Support
+Help Center
+Support
 Terms
 Privacy
 Cookies
 DMCA
+Your Privacy Choices
 ©
 2026
 Pika. All rights reserved.
