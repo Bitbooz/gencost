@@ -90,7 +90,7 @@ Careers
 Responsible AI
 AI Research
 Case study
-How Heineken embraces video transformation
+How the world's oldest pharma accelerates with AI video
 Pricing
 Enterprise
 en
@@ -120,21 +120,20 @@ Get started
 Book demo
 Get started
 Pricing that scales with your needs
-Video & Sessions
-API
 Monthly
 Yearly
-Save up to 4 months with yearly
-Save up to 3 months with yearly
+Save up to
+4
+months with yearly
 Basic
-$
-0
+$0
 per month
 500 credits / month
 Get started
 Get started on desktop
 Free allowance
-10 minutes of video creation or dubbing
+1 Syren video - limited promo
+10 minutes of Studio video creation or dubbing
 3 survey responses
 500 credits to spend on anything
 Syren
@@ -144,9 +143,14 @@ Pre-built libraries, templates, roleplays, surveys
 Videos carry a Synthesia watermark
 See all features
 Starter
-Billed monthly.
-$
-29
+First month for
+$9
+$19
+$9
+first month
+per month
+then
+$19
 per month
 1,250
 credits / month
@@ -166,15 +170,14 @@ Surveys
 up to
 3
 responses
+Syren
+up to
+~2
+videos
 On top of the free allowance
 10 minutes of Studio video creation or dubbing
 3 survey responses
 500 credits to spend on anything
-Roleplays
-Add learner seat
-1 learner seat costs
-$
-29
 Everything in Basic +
 Download your content
 Remove Synthesia logo
@@ -186,25 +189,35 @@ Chat/email support
 See all features
 Pro
 Most popular
-Billed monthly.
-$
-89
+First month for
+$49
+$89
+$49
+first month
+per month
+then
+$89
 per month
 6,000 credits / month
 6,000 / mo
 $89
+$49
 12,000 / mo
 -1.25%
 $176
+$95
 24,000 / mo
 -2.5%
 $347
+$179
 36,000 / mo
 -3.75%
 $514
+$259
 48,000 / mo
 -5%
 $676
+$329
 Get started
 CREDITS
 What are Credits?
@@ -221,15 +234,14 @@ Surveys
 up to
 17
 responses
+Syren
+up to
+~7
+videos
 On top of the free allowance
 10 minutes of Studio video creation or dubbing
 3 survey responses
 500 credits to spend on anything
-Roleplays
-Add learner seat
-1 learner seat costs
-$
-29
 Everything in Starter +
 5 Personal Avatars
 Branded video pages
@@ -242,7 +254,7 @@ Priority chat/email support
 See all features
 Enterprise
 Custom pricing
-Let’s talk.
+Let's talk.
 Custom credit volumes
 Book demo
 Everything in Pro +
@@ -260,13 +272,7 @@ Dedicated CSM
 Enterprise community
 Access to live events
 See all features
-Roleplay Training
-AI roleplay practice for your team. Assign scenarios, track completion and score progress. Add learner seats to any plan; no session limits for seated learners.
-$
-29
-/ learner / month
-Add learner seats to plan
-Need more than 100 seats? Book demo
+Trusted by over 90% of Fortune 100 companies
 See what plan best fits your needs
 Tell us roughly what you make each month, we’ll point you at the right plan.
 Video minutes
@@ -282,8 +288,7 @@ Estimates only. Actual credit use depends on what’s in your videos – avatars
 OUR RECOMMENDATION
 Basic
 The monthly allowance covers you
-$
-0
+$0
 /month
 10 min of video, 3 survey responses
 &
@@ -296,26 +301,40 @@ Upgrade any time
 learner seats included
 ($87/mo)
 OUR RECOMMENDATION
+First month for
+$9
 Starter
 1,250
-credits / month
-$
-29
+credits /month
+$19
+$9
+first month
+then
+$19
 /month, billed monthly
-6,000 credits / month included
+$19
+/month, billed monthly
+1,250 credits /month included
 Download videos, remove logo
 Cancel anytime
 0
 learner seats included
 ($87/mo)
 OUR RECOMMENDATION
+First month for
+$49
 Pro
 6,000
-credits / month
-$
-89
+credits /month
+$89
+$49
+first month
+then
+$89
 /month, billed monthly
-6,000 credits / month included
+$89
+/month, billed monthly
+6,000 credits /month included
 Everything in Starter + more
 Scale up or down anytime
 0
@@ -333,35 +352,31 @@ Tailored onboarding
 &
 implementation services
 Get started free
-Get started -
-$
-0
-/mo
-Start Starter -
-$
-29
-/mo
-Start Pro -
-$
-89
-/mo
+Get started
+Start Starter
+Start Pro
 Contact sales
 Compare plans
 Basic
-$
-0
+$0
 /mo
 try for free
 Get started
 Starter
-$
-29
+$9
+/mo
+first month
+then
+$19
 /mo
 billed monthly
 Get started
 Pro
-$
-89
+$49
+/mo
+first month
+then
+$89
 /mo
 billed monthly
 Get started
@@ -567,14 +582,14 @@ Building video into your product?
 Embed interactive avatars directly in your product, dub at scale, and generate video from your own data.
 DEV/API
 Basic
-$
-0
+$0
 per month
 500 credits / month
 Get started
 Get started on desktop
 Free allowance
-10 minutes of video creation or dubbing
+1 Syren video - limited promo
+10 minutes of Studio video creation or dubbing
 3 survey responses
 500 credits to spend on anything
 Syren
@@ -584,12 +599,13 @@ Pre-built libraries, templates, roleplays, surveys
 Videos carry a Synthesia watermark
 See all features
 Starter
-$
-29
-Billed yearly.
-$
-18
+3
+months free
+$19
+$14
 per month
+$168
+billed yearly
 15,000 credits / year
 Get started
 Try for FREE
@@ -610,15 +626,14 @@ Surveys
 up to
 42
 responses
+Syren
+up to
+~24
+videos
 On top of the free allowance
 10 minutes of Studio video creation or dubbing
 3 survey responses
 500 credits to spend on anything
-Roleplays
-Add learner seat
-1 learner seat costs
-$
-25
 Everything in Basic +
 Download your content
 Remove Synthesia logo
@@ -630,27 +645,28 @@ Chat/email support
 See all features
 Pro
 Most popular
-$
-89
-Billed yearly.
-$
-64
+4
+months free
+$89
+$59
 per month
+$708
+billed yearly
 72,000 credits / year
 72,000 / yr
-$64
+$59
 144,000 / yr
 -1.25%
-$126
+$117
 288,000 / yr
 -2.5%
-$250
+$230
 432,000 / yr
 -3.75%
-$370
+$341
 576,000 / yr
 -5%
-$486
+$448
 Get started
 Try for FREE
 or
@@ -670,15 +686,14 @@ Surveys
 up to
 205
 responses
+Syren
+up to
+~84
+videos
 On top of the free allowance
 10 minutes of Studio video creation or dubbing
 3 survey responses
 500 credits to spend on anything
-Roleplays
-Add learner seat
-1 learner seat costs
-$
-25
 Everything in Starter +
 5 Personal Avatars
 Branded video pages
@@ -690,8 +705,7 @@ On-brand Avatars
 Priority chat/email support
 See all features
 Enterprise
-Custom pricing
-Let’s talk.
+Let's talk.
 Custom credit volumes
 Book demo
 Everything in Pro +
@@ -710,13 +724,6 @@ Enterprise community
 Access to live events
 See all features
 Trusted by over 90% of Fortune 100 companies
-Roleplay Training
-AI roleplay practice for your team. Assign scenarios, track completion and score progress. Add learner seats to any plan; no session limits for seated learners.
-$
-25
-/ learner / month
-Add learner seats to plan
-Need more than 100 seats? Book demo
 See what plan best fits your needs
 Tell us roughly what you make each month, we’ll point you at the right plan.
 Video minutes
@@ -746,26 +753,32 @@ Upgrade any time
 learner seats included
 ($87/mo)
 OUR RECOMMENDATION
+3
+months free
 Starter
-1,250
-credits / year
-$
-29
-/month, billed yearly
-72,000 credits / year included
+15,000
+credits /year
+$14
+/month
+$168
+billed yearly
+15,000 credits /year included
 Download videos, remove logo
 Cancel anytime
 0
 learner seats included
 ($87/mo)
 OUR RECOMMENDATION
+4
+months free
 Pro
 72,000
-credits / year
-$
-64
-/month, billed yearly
-72,000 credits / year included
+credits /year
+$59
+/month
+$708
+billed yearly
+72,000 credits /year included
 Everything in Starter + more
 Scale up or down anytime
 0
@@ -783,37 +796,27 @@ Tailored onboarding
 &
 implementation services
 Get started free
-Get started -
-$
-0
-/mo
-Start Starter -
-$
-29
-/mo
-Start Pro -
-$
-64
-/mo
+Get started
+Start Starter
+Start Pro
 Contact sales
 Compare plans
 Basic
-$
-0
+$0
 /mo
 try for free
 Get started
 Starter
-$
-18
+$14
 /mo
-billed yearly
+$168
+/yr, billed yearly
 Get started
 Pro
-$
-64
+$59
 /mo
-billed yearly
+$708
+/yr, billed yearly
 Get started
 Enterprise
 Custom
@@ -1035,61 +1038,7 @@ Learn about pricing for your use case
 Desktop only
 Synthesia is available on desktop
 On mobile you can book a personalized Synthesia demo or try a free AI video below
-Book demo
 Create free AI video
-Interactive Avatars API
-Real-time avatars for any site or product – pick how much of the stack you want us to run.
-$
-0.10
-per minute
-Every paid plan includes:
-Just the real-time avatar layer; bring your own voice & LLM.
-$
-0.20
-per minute
-COMING SOON
-Full Stack
-Avatar + voice + LLM + LiveKit; add it with a code snippet.
-Get started
-Dubbing API
-Translate video into natural voices across languages.
-$
-0.40
-per minute
-Voice only
-$
-0.80
-per minute
-With Lip-Sync
-Get started
-Rate card
-Product
-Price
-Unit
-Interactive Avatars: Avatar tech only
-$
-0.10
-per minute
-Interactive Avatars: full stack
-$
-0.20
-per minute
-Dubbing: voice only
-$
-0.40
-per minute
-Dubbing: with lip-sync
-$
-0.80
-per minute
-API usage draws from the same credit balance as your subscription.
-Enterprise
-Custom solutions for teams building on the API at scale.
-Volume discounts
-SLAs & dedicated support
-Custom concurrency limits
-SSO, SCIM & audit logging
-Book demo
 Synthesia Enterprise
 Need to create a lot of videos and collaborate with your entire team?
 Book demo
@@ -1120,9 +1069,7 @@ Digital Learning Designer
 This is some textWBS Training inside of a div block.
 Frequently asked questions about AI video.
 Can I use Synthesia for free?
-Yes. The Basic plan is free and includes 10 minutes of video, 3 survey responses and 500 credits every month, renewing each month. You can easily create a video for free via the
-AI video generator page
-.
+The Basic plan is free and includes allowances for limited video creation, dubbing and survey responses.
 How can I test Synthesia?
 Free AI video:
 You can
@@ -1137,9 +1084,7 @@ Basic is free. Starter and Pro prices depend on whether you pay monthly or annua
 What happens if I go over my plan's monthly limit?
 Video creation and survey response collection pause until your plan renews. To keep going straight away, you can buy extra credits from Plan & billing, or move to a plan with more credits - on Pro you can simply choose a higher credit level.
 Do unused video minutes roll over into the next month?
-No. Your monthly allowance (10 minutes of video, 3 survey responses and 500 credits) and your plan's extra credits reset each billing period. On annual plans the year's credits are available upfront. Credits you buy separately are valid for 12 months.
-How many videos can I make with a Starter plan?
-Every plan includes 10 minutes of video each month. Starter adds 1,250 credits, which is roughly 12 more minutes of typical video, about ~22 minutes a month in total, or fewer if you spend some of your credits on dubbing, surveys or interactive avatars. How many videos that makes depends on their length: ten one-minute videos use the same as one ten-minute video.
+No. Your plan's monthly allowance and credits reset each billing period. On annual plans the year's credits are available upfront. Credits you buy separately are valid for 12 months.
 How and when are credits consumed?
 Credits are used when something is generated, never while you're editing or previewing. What each product uses:
 Video creation

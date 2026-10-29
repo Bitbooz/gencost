@@ -7,12 +7,15 @@ Audio
 MCP
 API
 Genjutsu
-top
-Katana
+New
+Content Factory
+New
+Playable
 New
 AI Influencer
 Academy
 New
+Katana
 ChatGPT Plugin
 Ads Studio
 Effects
