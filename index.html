@@ -89,13 +89,13 @@
   <span style="font-size:0.9em;">~$10: Kling Standard or Pika Starter &nbsp;|&nbsp; ~$30: Runway Pro, Luma Plus or HeyGen Creator</span>
 </div>
 <p style="color:#aaa; font-size:0.9rem; text-align:center;">
-  <strong>Last updated:</strong> 2026-10-29 15:32<br>
+  <strong>Last updated:</strong> 2026-10-29 15:39<br>
   Prices change often — always confirm inside the tool before generating.
 </p>
 <div class="overlay">
   <h1>GENCOST</h1>
   <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-10-29 15:32</div>
+  <div class="timestamp">LAST UPDATED · 2026-10-29 15:39</div>
   <div style="max-width:1400px; margin:20px auto 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:0 20px;">
     <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px; text-align:center;">
       <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
@@ -201,20 +201,6 @@ platforms.sort((a, b) => {
   if (bi === -1) return -1;
   return ai - bi;
 });
-// Best value calculator
-let cheapest = null;
-let cheapestPrice = Infinity;
-for (const { name, data } of platforms) {
-  for (const plan of data.plans || []) {
-    const price = plan.monthly_price_usd || 0;
-    if (price > 0 && price < cheapestPrice) {
-      cheapestPrice = price;
-      cheapest = `${name} ${plan.name} (${price}/mo)`;
-    }
-  }
-}
-const bestEl = document.getElementById("best-value-text");
-if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards below for details.";
 for (const { name, data } of platforms) {
   const page = getPage(name);
   const checked = data.last_checked || data.checked || "recently";
