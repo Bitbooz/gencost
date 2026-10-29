@@ -1,33 +1,34 @@
 {
-  "platform": "soundraw",
-  "plans": [
-    {
-      "name": "Creator",
-      "monthly_price_usd": 5.99,
-      "credits_or_minutes": 0,
-      "unit": "tracks",
-      "offer": ""
-    },
-    {
-      "name": "Artist Starter",
-      "monthly_price_usd": 10.49,
-      "credits_or_minutes": 10,
-      "unit": "tracks",
-      "offer": ""
-    },
-    {
-      "name": "Artist Pro",
-      "monthly_price_usd": 12.59,
-      "credits_or_minutes": 20,
-      "unit": "tracks",
-      "offer": ""
-    },
-    {
-      "name": "Artist Unlimited",
-      "monthly_price_usd": 17.49,
-      "credits_or_minutes": 0,
-      "unit": "tracks",
-      "offer": ""
-    }
-  ]
+    "platform":  "soundraw",
+    "plans":  [
+                  {
+                      "name":  "Creator",
+                      "monthly_price_usd":  5.99,
+                      "credits_or_minutes":  0,
+                      "unit":  "tracks",
+                      "offer":  ""
+                  },
+                  {
+                      "name":  "Artist Starter",
+                      "monthly_price_usd":  10.49,
+                      "credits_or_minutes":  10,
+                      "unit":  "tracks",
+                      "offer":  ""
+                  },
+                  {
+                      "name":  "Artist Pro",
+                      "monthly_price_usd":  12.59,
+                      "credits_or_minutes":  20,
+                      "unit":  "tracks",
+                      "offer":  ""
+                  },
+                  {
+                      "name":  "Artist Unlimited",
+                      "monthly_price_usd":  17.49,
+                      "credits_or_minutes":  0,
+                      "unit":  "tracks",
+                      "offer":  ""
+                  }
+              ],
+    "last_checked":  "2026-10-29"
 }

@@ -1,26 +1,27 @@
 {
-  "platform": "suno",
-  "plans": [
-    {
-      "name": "Free",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 50,
-      "unit": "credits",
-      "offer": ""
-    },
-    {
-      "name": "Pro",
-      "monthly_price_usd": 8,
-      "credits_or_minutes": 2500,
-      "unit": "credits",
-      "offer": "save 20% on annual"
-    },
-    {
-      "name": "Premier",
-      "monthly_price_usd": 24,
-      "credits_or_minutes": 10000,
-      "unit": "credits",
-      "offer": "save 20% on annual"
-    }
-  ]
+    "platform":  "suno",
+    "plans":  [
+                  {
+                      "name":  "Free",
+                      "monthly_price_usd":  0,
+                      "credits_or_minutes":  50,
+                      "unit":  "credits",
+                      "offer":  ""
+                  },
+                  {
+                      "name":  "Pro",
+                      "monthly_price_usd":  8,
+                      "credits_or_minutes":  2500,
+                      "unit":  "credits",
+                      "offer":  "save 20% on annual"
+                  },
+                  {
+                      "name":  "Premier",
+                      "monthly_price_usd":  24,
+                      "credits_or_minutes":  10000,
+                      "unit":  "credits",
+                      "offer":  "save 20% on annual"
+                  }
+              ],
+    "last_checked":  "2026-10-29"
 }

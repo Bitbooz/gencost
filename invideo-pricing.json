@@ -1,26 +1,28 @@
 {
-  "platform": "invideo",
-  "plans": [
-    {
-      "name": "Starter",
-      "monthly_price_usd": 10,
-      "credits_or_minutes": 400,
-      "unit": "credits",
-      "offer": "50% off on annual, Save \u20ac120 per seat, unlimited images for 30 days"
-    },
-    {
-      "name": "Plus",
-      "monthly_price_usd": 30,
-      "credits_or_minutes": 2000,
-      "unit": "credits",
-      "offer": "50% off on annual, Save \u20ac360 per seat, unlimited images for 30 days"
-    },
-    {
-      "name": "Max",
-      "monthly_price_usd": 75,
-      "credits_or_minutes": 5000,
-      "unit": "credits",
-      "offer": "50% off on annual, Save \u20ac885 per seat, 60% cheaper per credit, unlimited images for 30 days"
-    }
-  ]
+    "platform":  "invideo",
+    "plans":  [
+                  {
+                      "name":  "Starter",
+                      "monthly_price_usd":  10,
+                      "credits_or_minutes":  400,
+                      "unit":  "credits",
+                      "offer":  "50% off on annual, Save €120 per seat, unlimited images for 30 days"
+                  },
+                  {
+                      "name":  "Plus",
+                      "monthly_price_usd":  30,
+                      "credits_or_minutes":  2000,
+                      "unit":  "credits",
+                      "offer":  "50% off on annual, Save €360 per seat, unlimited images for 30 days"
+                  },
+                  {
+                      "name":  "Max",
+                      "monthly_price_usd":  75,
+                      "credits_or_minutes":  5000,
+                      "unit":  "credits",
+                      "offer":  "50% off on annual, Save €885 per seat, 60% cheaper per credit, unlimited images for 30 days"
+                  }
+              ],
+    "last_checked":  "2026-10-29",
+    "source":  "https://invideo.io/pricing"
 }

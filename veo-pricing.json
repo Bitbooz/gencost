@@ -1,4 +1,8 @@
 {
-  "platform": "veo",
-  "plans": []
+    "platform":  "veo",
+    "plans":  [
+
+              ],
+    "last_checked":  "2026-10-29",
+    "source":  "https://ai.google.dev/pricing"
 }

@@ -1,26 +1,28 @@
 {
-  "platform": "luma",
-  "plans": [
-    {
-      "name": "Plus",
-      "monthly_price_usd": 30,
-      "credits_or_minutes": 10000,
-      "unit": "credits",
-      "offer": "Save up to 20% with yearly"
-    },
-    {
-      "name": "Pro",
-      "monthly_price_usd": 90,
-      "credits_or_minutes": 40000,
-      "unit": "credits",
-      "offer": "Save up to 20% with yearly"
-    },
-    {
-      "name": "Ultra",
-      "monthly_price_usd": 300,
-      "credits_or_minutes": 150000,
-      "unit": "credits",
-      "offer": "Save up to 20% with yearly"
-    }
-  ]
+    "platform":  "luma",
+    "plans":  [
+                  {
+                      "name":  "Plus",
+                      "monthly_price_usd":  30,
+                      "credits_or_minutes":  10000,
+                      "unit":  "credits",
+                      "offer":  "Save up to 20% with yearly"
+                  },
+                  {
+                      "name":  "Pro",
+                      "monthly_price_usd":  90,
+                      "credits_or_minutes":  40000,
+                      "unit":  "credits",
+                      "offer":  "Save up to 20% with yearly"
+                  },
+                  {
+                      "name":  "Ultra",
+                      "monthly_price_usd":  300,
+                      "credits_or_minutes":  150000,
+                      "unit":  "credits",
+                      "offer":  "Save up to 20% with yearly"
+                  }
+              ],
+    "last_checked":  "2026-10-29",
+    "source":  "https://lumalabs.ai/pricing"
 }

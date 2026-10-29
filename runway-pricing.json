@@ -1,33 +1,35 @@
 {
-  "platform": "runway",
-  "plans": [
-    {
-      "name": "Free",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 125,
-      "unit": "credits",
-      "offer": "125 one-time credits"
-    },
-    {
-      "name": "Standard",
-      "monthly_price_usd": 12,
-      "credits_or_minutes": 625,
-      "unit": "credits",
-      "offer": "Billed annually save $36/year. 25% off Kling 4.0 until November 30"
-    },
-    {
-      "name": "Pro",
-      "monthly_price_usd": 28,
-      "credits_or_minutes": 2250,
-      "unit": "credits",
-      "offer": "Billed annually save $84/year. 25% off Kling 4.0 until November 30"
-    },
-    {
-      "name": "Max",
-      "monthly_price_usd": 76,
-      "credits_or_minutes": 9500,
-      "unit": "credits",
-      "offer": "Billed annually save $228/year. Credits roll over 1 mo. 25% off Kling 4.0 until November 30"
-    }
-  ]
+    "platform":  "runway",
+    "plans":  [
+                  {
+                      "name":  "Free",
+                      "monthly_price_usd":  0,
+                      "credits_or_minutes":  125,
+                      "unit":  "credits",
+                      "offer":  "125 one-time credits"
+                  },
+                  {
+                      "name":  "Standard",
+                      "monthly_price_usd":  12,
+                      "credits_or_minutes":  625,
+                      "unit":  "credits",
+                      "offer":  "Billed annually save $36/year. 25% off Kling 4.0 until November 30"
+                  },
+                  {
+                      "name":  "Pro",
+                      "monthly_price_usd":  28,
+                      "credits_or_minutes":  2250,
+                      "unit":  "credits",
+                      "offer":  "Billed annually save $84/year. 25% off Kling 4.0 until November 30"
+                  },
+                  {
+                      "name":  "Max",
+                      "monthly_price_usd":  76,
+                      "credits_or_minutes":  9500,
+                      "unit":  "credits",
+                      "offer":  "Billed annually save $228/year. Credits roll over 1 mo. 25% off Kling 4.0 until November 30"
+                  }
+              ],
+    "last_checked":  "2026-10-29",
+    "source":  "https://runwayml.com/pricing"
 }

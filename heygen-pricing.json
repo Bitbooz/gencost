@@ -1,26 +1,28 @@
 {
-  "platform": "heygen",
-  "plans": [
-    {
-      "name": "Free",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 3,
-      "unit": "videos",
-      "offer": "2 months free on yearly"
-    },
-    {
-      "name": "Creator",
-      "monthly_price_usd": 29,
-      "credits_or_minutes": 600,
-      "unit": "credits",
-      "offer": "2 months free on yearly"
-    },
-    {
-      "name": "Pro",
-      "monthly_price_usd": 49,
-      "credits_or_minutes": 1000,
-      "unit": "credits",
-      "offer": "2 months free on yearly"
-    }
-  ]
+    "platform":  "heygen",
+    "plans":  [
+                  {
+                      "name":  "Free",
+                      "monthly_price_usd":  0,
+                      "credits_or_minutes":  3,
+                      "unit":  "videos",
+                      "offer":  "2 months free on yearly"
+                  },
+                  {
+                      "name":  "Creator",
+                      "monthly_price_usd":  29,
+                      "credits_or_minutes":  600,
+                      "unit":  "credits",
+                      "offer":  "2 months free on yearly"
+                  },
+                  {
+                      "name":  "Pro",
+                      "monthly_price_usd":  49,
+                      "credits_or_minutes":  1000,
+                      "unit":  "credits",
+                      "offer":  "2 months free on yearly"
+                  }
+              ],
+    "last_checked":  "2026-10-29",
+    "source":  "https://www.heygen.com/pricing"
 }

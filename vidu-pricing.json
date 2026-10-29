@@ -1,4 +1,8 @@
 {
-  "platform": "vidu",
-  "plans": []
+    "platform":  "vidu",
+    "plans":  [
+
+              ],
+    "last_checked":  "2026-10-29",
+    "source":  "https://www.vidu.com/pricing"
 }

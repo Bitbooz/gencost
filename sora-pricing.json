@@ -1,4 +1,8 @@
 {
-  "platform": "sora",
-  "plans": []
+    "platform":  "sora",
+    "plans":  [
+
+              ],
+    "last_checked":  "2026-10-29",
+    "source":  "https://openai.com/sora"
 }
