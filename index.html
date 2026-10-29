@@ -201,6 +201,20 @@ platforms.sort((a, b) => {
   if (bi === -1) return -1;
   return ai - bi;
 });
+// Best value calculator
+let cheapest = null;
+let cheapestPrice = Infinity;
+for (const { name, data } of platforms) {
+  for (const plan of data.plans || []) {
+    const price = plan.monthly_price_usd || 0;
+    if (price > 0 && price < cheapestPrice) {
+      cheapestPrice = price;
+      cheapest = `${name} ${plan.name} (${price}/mo)`;
+    }
+  }
+}
+const bestEl = document.getElementById("best-value-text");
+if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards below for details.";
 for (const { name, data } of platforms) {
   const page = getPage(name);
   const checked = data.last_checked || data.checked || "recently";
