@@ -1,6 +1,4 @@
 {
-  "platform": "Google Veo",
-  "plans": [
-    {"name": "Via Gemini / Flow", "monthly_price_usd": 0, "credits_or_minutes": "limited", "unit": "access"}
-  ]
+  "platform": "veo",
+  "plans": []
 }

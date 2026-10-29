@@ -1,0 +1,47 @@
+{
+  "platform": "elevenlabs",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 10000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Starter",
+      "monthly_price_usd": 6,
+      "credits_or_minutes": 30000,
+      "unit": "credits",
+      "offer": "First month $1 (83% off) until Nov 1; 2 months free on yearly"
+    },
+    {
+      "name": "Creator",
+      "monthly_price_usd": 22,
+      "credits_or_minutes": 121000,
+      "unit": "credits",
+      "offer": "First month $11 (50% off); 2 months free on yearly"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 99,
+      "credits_or_minutes": 600000,
+      "unit": "credits",
+      "offer": "2 months free on yearly"
+    },
+    {
+      "name": "Scale",
+      "monthly_price_usd": 299,
+      "credits_or_minutes": 1800000,
+      "unit": "credits",
+      "offer": "2 months free on yearly"
+    },
+    {
+      "name": "Business",
+      "monthly_price_usd": 990,
+      "credits_or_minutes": 6000000,
+      "unit": "credits",
+      "offer": "2 months free on yearly"
+    }
+  ]
+}

@@ -4,8 +4,8 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
-      "credits_or_minutes": 0,
-      "unit": "credits",
+      "credits_or_minutes": 5,
+      "unit": "videos per day",
       "offer": ""
     },
     {

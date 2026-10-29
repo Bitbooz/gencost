@@ -1,0 +1,29 @@
+{
+  "platform": "cartesia",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 20000,
+      "unit": "credits"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 5,
+      "credits_or_minutes": 100000,
+      "unit": "credits"
+    },
+    {
+      "name": "Startup",
+      "monthly_price_usd": 49,
+      "credits_or_minutes": 1250000,
+      "unit": "credits"
+    },
+    {
+      "name": "Scale",
+      "monthly_price_usd": 299,
+      "credits_or_minutes": 8000000,
+      "unit": "credits"
+    }
+  ]
+}

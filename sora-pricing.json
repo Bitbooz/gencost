@@ -1,7 +1,4 @@
 {
-  "platform": "Sora",
-  "plans": [
-    {"name": "ChatGPT Plus", "monthly_price_usd": 20, "credits_or_minutes": "limited", "unit": "access"},
-    {"name": "ChatGPT Pro", "monthly_price_usd": 200, "credits_or_minutes": "higher limits", "unit": "access"}
-  ]
+  "platform": "sora",
+  "plans": []
 }
