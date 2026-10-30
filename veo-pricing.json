@@ -1,4 +1,9 @@
 {
   "platform": "veo",
-  "plans": []
+  "plans": [
+    {"name": "Via Gemini", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "usage-based"},
+    {"name": "API", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "per second"}
+  ],
+  "last_checked": "2026-10-30",
+  "source": "https://ai.google.dev/pricing"
 }

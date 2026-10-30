@@ -1,4 +1,9 @@
 {
   "platform": "sora",
-  "plans": []
+  "plans": [
+    {"name": "Via ChatGPT", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "included"},
+    {"name": "Plus", "monthly_price_usd": 20, "credits_or_minutes": 0, "unit": "included"}
+  ],
+  "last_checked": "2026-10-30",
+  "source": "https://openai.com/sora"
 }
