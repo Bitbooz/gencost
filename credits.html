@@ -38,64 +38,106 @@
     -webkit-text-fill-color: transparent;
   }
   .timestamp { text-align: center; font-size: 0.8em; opacity: 0.5; margin-bottom: 30px; }
-  .card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding: 22px;
-    border-radius: 16px;
-    max-width: 1100px;
-    margin: 0 auto 30px auto;
+  .container { max-width: 1100px; margin: 0 auto; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
   }
-  table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-  th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  th, td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
   th { color: #00d4ff; font-weight: 600; }
-  a { color: #00d4ff; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  ul { padding-left: 20px; }
-  li { margin: 8px 0; }
+  .tracker {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 30px 0;
+  }
+  .form-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  input, select, button {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(0,0,0,0.4);
+    color: #e0e0e0;
+    font-family: inherit;
+  }
+  button {
+    background: #00d4ff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  button:hover { opacity: 0.9; }
+  .entry {
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 14px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .value { color: #00d4ff; font-weight: 600; }
+  .warn { color: #ff6b6b; }
+  .ok { color: #4ade80; }
+  @media (max-width: 700px) {
+    .form-row { flex-direction: column; }
+    input, select, button { width: 100%; }
+  }
 </style>
 </head>
 <body>
 <div class="overlay">
-  <h1>Credits & residuals</h1>
-  <div class="timestamp">LAST UPDATED · 2026-10-29</div>
+  <div class="container">
+    <h1>Credits & residuals</h1>
+    <div class="timestamp">LAST UPDATED · 2026-10-30</div>
 
-  <div class="card">
     <p>Most AI video, voice, and music plans give you a monthly credit allowance. Unused credits often disappear at the next billing date. This page shows the current rollover rules so you can choose plans that match how you actually work and avoid wasting leftovers.</p>
-    <p>Prices and credit rules change often — always confirm inside the tool.</p>
-  </div>
+    <p style="color:#aaa;">Prices and credit rules change often — always confirm inside the tool.</p>
 
-  <div class="card">
     <h2>Why residuals matter</h2>
     <p>A cheap plan can become expensive if you regularly leave credits unused. Some platforms reset everything monthly. Others let you carry a limited amount forward or keep purchased top-ups for a long time. Knowing the difference helps you pick the right tier and use what you already paid for.</p>
-  </div>
 
-  <div class="card">
     <h2>Rollover rules by platform</h2>
     <table>
-      <tr>
-        <th>Platform</th>
-        <th>Category</th>
-        <th>Plan / monthly credits rollover?</th>
-        <th>Purchased / top-up credits</th>
-        <th>Notes</th>
-      </tr>
-      <tr><td>Kling AI</td><td>Video</td><td>No (valid ~31 days)</td><td>Last up to 2 years</td><td>Monthly credits expire; purchased last longer. Cannot transfer.</td></tr>
-      <tr><td>Runway</td><td>Video</td><td>Standard & Pro: No<br>Max: up to 1 month</td><td>Never expire</td><td>Purchased credits stay until used.</td></tr>
-      <tr><td>HeyGen</td><td>Video</td><td>Monthly: 1 extra month<br>Annual: until renewal</td><td>—</td><td>Credits lost if you cancel.</td></tr>
-      <tr><td>Luma</td><td>Video</td><td>Check current plan terms</td><td>Varies</td><td>Confirm on their site.</td></tr>
-      <tr><td>Pika</td><td>Video</td><td>No</td><td>Packs often last longer</td><td>Plan credits reset each cycle.</td></tr>
-      <tr><td>Synthesia</td><td>Video</td><td>Varies by plan</td><td>—</td><td>Confirm on their site.</td></tr>
-      <tr><td>ElevenLabs</td><td>Voice</td><td>Partial (up to 2× monthly, balance can reach ~3×)</td><td>PAYG expire after 12 months</td><td>Rollover only while staying on the same paid plan. Lost on cancel/downgrade.</td></tr>
-      <tr><td>Cartesia</td><td>Voice</td><td>Partial (up to 2×)</td><td>—</td><td>Confirm current details.</td></tr>
-      <tr><td>Suno</td><td>Music</td><td>No</td><td>Top-ups usually do not expire (need active plan)</td><td>Generation credits and monthly download allotments reset.</td></tr>
-      <tr><td>Udio</td><td>Music</td><td>No</td><td>A la carte purchases never expire</td><td>Subscription credits reset monthly.</td></tr>
-      <tr><td>Soundraw / AIVA / Boomy</td><td>Music</td><td>Mostly no or limited</td><td>Varies</td><td>Confirm on each site.</td></tr>
+      <thead>
+        <tr>
+          <th>Platform</th>
+          <th>Category</th>
+          <th>Plan / monthly credits rollover?</th>
+          <th>Purchased / top-up credits</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Kling AI</td><td>Video</td><td>No (valid ~31 days)</td><td>Last up to 2 years</td><td>Monthly credits expire; purchased last longer. Cannot transfer.</td></tr>
+        <tr><td>Runway</td><td>Video</td><td>Standard & Pro: No<br>Max: up to 1 month</td><td>Never expire</td><td>Purchased credits stay until used.</td></tr>
+        <tr><td>HeyGen</td><td>Video</td><td>Monthly: 1 extra month<br>Annual: until renewal</td><td>—</td><td>Credits lost if you cancel.</td></tr>
+        <tr><td>Luma</td><td>Video</td><td>Check current plan terms</td><td>Varies</td><td>Confirm on their site.</td></tr>
+        <tr><td>Pika</td><td>Video</td><td>No</td><td>Packs often last longer</td><td>Plan credits reset each cycle.</td></tr>
+        <tr><td>Synthesia</td><td>Video</td><td>Varies by plan</td><td>—</td><td>Confirm on their site.</td></tr>
+        <tr><td>ElevenLabs</td><td>Voice</td><td>Partial (up to 2× monthly, balance can reach ~3×)</td><td>PAYG expire after 12 months</td><td>Rollover only while staying on the same paid plan. Lost on cancel/downgrade.</td></tr>
+        <tr><td>Cartesia</td><td>Voice</td><td>Partial (up to 2×)</td><td>—</td><td>Confirm current details.</td></tr>
+        <tr><td>Suno</td><td>Music</td><td>No</td><td>Top-ups usually do not expire (need active plan)</td><td>Generation credits and monthly download allotments reset.</td></tr>
+        <tr><td>Udio</td><td>Music</td><td>No</td><td>A la carte purchases never expire</td><td>Subscription credits reset monthly.</td></tr>
+        <tr><td>Soundraw / AIVA / Boomy</td><td>Music</td><td>Mostly no or limited</td><td>Varies</td><td>Confirm on each site.</td></tr>
+      </tbody>
     </table>
-  </div>
 
-  <div class="card">
     <h2>Quick tips</h2>
     <ul>
       <li>Prefer platforms with partial rollover or long-lasting top-ups if your usage is uneven.</li>
@@ -103,22 +145,188 @@
       <li>Team or enterprise plans sometimes let admins allocate a shared pool — useful if you work with others.</li>
       <li>Always check the official pricing or credits page inside the tool. Rules can change without notice.</li>
     </ul>
-  </div>
 
-  <div class="card">
-    <h2>Coming soon</h2>
-    <p>A simple residual calculator is planned: enter your remaining credits and reset date to see estimated leftover value and suggested uses.</p>
-  </div>
+    <div class="tracker">
+      <h2 style="margin-top:0;">Residual Tracker</h2>
+      <p style="color:#aaa; margin-top:0;">Add your platforms. Data stays in your browser only.</p>
 
-  <p style="text-align:center; margin-top:30px;">
-    <a href="/">← Back to video comparison</a> · 
-    <a href="/voice.html">Voice comparison</a> · 
-    <a href="/music.html">Music comparison</a>
-  </p>
+      <div class="form-row">
+        <select id="platform">
+          <option value="">Select platform</option>
+          <option>Kling AI</option>
+          <option>Runway</option>
+          <option>HeyGen</option>
+          <option>Luma</option>
+          <option>Pika</option>
+          <option>Synthesia</option>
+          <option>ElevenLabs</option>
+          <option>Cartesia</option>
+          <option>Suno</option>
+          <option>Udio</option>
+          <option>Soundraw</option>
+          <option>AIVA</option>
+          <option>Boomy</option>
+          <option>Other</option>
+        </select>
+        <input type="text" id="plan" placeholder="Plan name (optional)">
+        <input type="number" id="credits" placeholder="Remaining credits" min="0" step="1">
+        <input type="number" id="pricePerCredit" placeholder="$ per credit (approx)" step="0.001" min="0">
+        <input type="date" id="resetDate">
+        <button onclick="addEntry()">Add</button>
+      </div>
 
-  <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a>
+      <div id="list"></div>
+
+      <div style="margin-top:20px;">
+        <strong>Total value at risk: <span id="total" class="value">$0.00</span></strong>
+      </div>
+
+      <div style="margin-top:16px;">
+        <button onclick="copySummary()">Copy summary</button>
+        <button onclick="clearAll()" style="background:#444; margin-left:10px;">Clear all</button>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px; font-size:0.9em;">
+      <a href="/" style="color:#00d4ff;">← Back to video comparison</a> · 
+      <a href="/voice.html" style="color:#00d4ff;">Voice comparison</a> · 
+      <a href="/music.html" style="color:#00d4ff;">Music comparison</a>
+    </div>
+
+    <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
+      Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com" style="color:#00d4ff;">bitbooz@protonmail.com</a>
+    </div>
   </div>
 </div>
+
+<script>
+const STORAGE_KEY = "gencost_residuals";
+
+function loadEntries() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+  } catch {
+    return [];
+  }
+}
+
+function saveEntries(entries) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+}
+
+function daysUntil(dateStr) {
+  if (!dateStr) return null;
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const reset = new Date(dateStr);
+  const diff = Math.ceil((reset - today) / (1000 * 60 * 60 * 24));
+  return diff;
+}
+
+function render() {
+  const entries = loadEntries();
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  let total = 0;
+
+  entries.sort((a, b) => {
+    const da = daysUntil(a.resetDate) ?? 9999;
+    const db = daysUntil(b.resetDate) ?? 9999;
+    return da - db;
+  });
+
+  entries.forEach((e, i) => {
+    const value = (e.credits || 0) * (e.pricePerCredit || 0);
+    total += value;
+    const days = daysUntil(e.resetDate);
+    let dayText = "";
+    let dayClass = "";
+    if (days === null) {
+      dayText = "No date";
+    } else if (days < 0) {
+      dayText = "Expired";
+      dayClass = "warn";
+    } else if (days <= 3) {
+      dayText = `${days} day${days !== 1 ? "s" : ""} left`;
+      dayClass = "warn";
+    } else {
+      dayText = `${days} days left`;
+      dayClass = "ok";
+    }
+
+    const suggestion = value > 0 && days !== null && days >= 0
+      ? `≈ $${value.toFixed(2)} left`
+      : "";
+
+    const div = document.createElement("div");
+    div.className = "entry";
+    div.innerHTML = `
+      <div>
+        <strong>${e.platform}</strong> ${e.plan ? `(${e.plan})` : ""}<br>
+        <span style="font-size:0.9em; opacity:0.8;">${e.credits} credits · ${suggestion}</span>
+      </div>
+      <div style="text-align:right;">
+        <div class="${dayClass}">${dayText}</div>
+        <button onclick="removeEntry(${i})" style="background:#ff6b6b; margin-top:6px; padding:4px 10px; font-size:0.85em;">Remove</button>
+      </div>
+    `;
+    list.appendChild(div);
+  });
+
+  document.getElementById("total").textContent = `$${total.toFixed(2)}`;
+}
+
+function addEntry() {
+  const platform = document.getElementById("platform").value;
+  if (!platform) return alert("Select a platform");
+  const credits = parseFloat(document.getElementById("credits").value) || 0;
+  const pricePerCredit = parseFloat(document.getElementById("pricePerCredit").value) || 0;
+  const resetDate = document.getElementById("resetDate").value;
+  const plan = document.getElementById("plan").value.trim();
+
+  const entries = loadEntries();
+  entries.push({ platform, plan, credits, pricePerCredit, resetDate });
+  saveEntries(entries);
+  render();
+
+  document.getElementById("credits").value = "";
+  document.getElementById("pricePerCredit").value = "";
+  document.getElementById("resetDate").value = "";
+  document.getElementById("plan").value = "";
+}
+
+function removeEntry(index) {
+  const entries = loadEntries();
+  entries.splice(index, 1);
+  saveEntries(entries);
+  render();
+}
+
+function clearAll() {
+  if (confirm("Clear all entries?")) {
+    localStorage.removeItem(STORAGE_KEY);
+    render();
+  }
+}
+
+function copySummary() {
+  const entries = loadEntries();
+  if (!entries.length) return alert("Nothing to copy");
+  let text = "Residual credits summary\n\n";
+  let total = 0;
+  entries.forEach(e => {
+    const value = (e.credits || 0) * (e.pricePerCredit || 0);
+    total += value;
+    const days = daysUntil(e.resetDate);
+    text += `${e.platform}${e.plan ? " (" + e.plan + ")" : ""}: ${e.credits} credits ≈ $${value.toFixed(2)}`;
+    if (days !== null) text += ` (${days} days)`;
+    text += "\n";
+  });
+  text += `\nTotal at risk: $${total.toFixed(2)}`;
+  navigator.clipboard.writeText(text).then(() => alert("Summary copied"));
+}
+
+render();
+</script>
 </body>
 </html>
