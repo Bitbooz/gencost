@@ -17,7 +17,10 @@ for file in json_files:
     path = os.path.join(folder, file)
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
-            data[file] = json.load(f)
+            loaded = json.load(f)
+            # Skip platforms with no plans
+            if loaded.get("plans"):
+                data[file] = loaded
 
 json_data = json.dumps(data)
 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -131,17 +134,25 @@ html = f'''<!DOCTYPE html>
     </div>
   </div>
   <div class="grid" id="content"></div>
-  <h2 style="margin-top:2rem;">Free tiers available</h2>
-  <p style="color:#aaa;">HeyGen, Runway, Pika, Synthesia and others still offer free plans.</p>
-  <div style="max-width:1400px; margin:40px auto 20px; display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:0 20px;">
-    <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px; text-align:center;">
-      <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
-      <p style="margin:10px 0 0 0; font-size:0.95em; color:#ddd;">Compare ElevenLabs, PlayHT, Cartesia and more in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
+
+  <div style="max-width:900px; margin:40px auto; padding:0 20px; text-align:center;">
+    <h2 style="margin-top:0;">Free tiers available</h2>
+    <p style="color:#aaa; margin-bottom:24px;">HeyGen, Runway, Pika, Synthesia and others still offer free plans.</p>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:800px; margin:0 auto;">
+      <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px;">
+        <a href="/voice.html" style="color:#00d4ff; font-size:1.2em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
+        <p style="margin:10px 0 0 0; font-size:0.9em; color:#ddd;">Compare ElevenLabs, PlayHT, Cartesia and more in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
+      </div>
+      <div style="background:rgba(123,104,238,0.08); border:1px solid #7b68ee; border-radius:12px; padding:22px;">
+        <a href="/music.html" style="color:#7b68ee; font-size:1.2em; font-weight:600; text-decoration:none;">AI Music Price Comparison →</a>
+        <p style="margin:10px 0 0 0; font-size:0.9em; color:#ddd;">Compare Suno, Udio, Soundraw, AIVA and Boomy in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
+      </div>
     </div>
-    <div style="background:rgba(123,104,238,0.08); border:1px solid #7b68ee; border-radius:12px; padding:22px; text-align:center;">
-      <a href="/music.html" style="color:#7b68ee; font-size:1.3em; font-weight:600; text-decoration:none;">AI Music Price Comparison →</a>
-      <p style="margin:10px 0 0 0; font-size:0.95em; color:#ddd;">Compare Suno, Udio, Soundraw, AIVA and Boomy in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
-    </div>
+  </div>
+
+  <div style="text-align:center; margin-top:30px;">
+    <p><a href="/changelog.html" style="color:#00d4ff;">Price changes log →</a></p>
+    <p><a href="/credits.html" style="color:#00d4ff;">Credits & residuals →</a></p>
   </div>
   <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
     Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com" style="color:#00d4ff;">bitbooz@protonmail.com</a>
@@ -280,7 +291,9 @@ for file in voice_files:
     path = os.path.join(voice_folder, file)
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
-            voice_data[file] = json.load(f)
+            loaded = json.load(f)
+            if loaded.get("plans"):
+                voice_data[file] = loaded
 
 voice_json = json.dumps(voice_data)
 
@@ -467,7 +480,9 @@ for file in music_files:
     path = os.path.join(music_folder, file)
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
-            music_data[file] = json.load(f)
+            loaded = json.load(f)
+            if loaded.get("plans"):
+                music_data[file] = loaded
 
 music_json = json.dumps(music_data)
 
