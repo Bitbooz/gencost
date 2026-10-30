@@ -39,11 +39,16 @@
   }
   .timestamp { text-align: center; font-size: 0.8em; opacity: 0.5; margin-bottom: 30px; }
   .container { max-width: 1100px; margin: 0 auto; }
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 20px 0;
+  }
   table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
     font-size: 0.95em;
+    min-width: 700px;
   }
   th, td {
     padding: 12px 10px;
@@ -71,6 +76,8 @@
     background: rgba(0,0,0,0.4);
     color: #e0e0e0;
     font-family: inherit;
+    font-size: 16px;
+    box-sizing: border-box;
   }
   button {
     background: #00d4ff;
@@ -94,9 +101,12 @@
   .value { color: #00d4ff; font-weight: 600; }
   .warn { color: #ff6b6b; }
   .ok { color: #4ade80; }
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
+    .overlay { padding: 20px 12px 40px; }
+    h1 { font-size: 2em; letter-spacing: 2px; }
     .form-row { flex-direction: column; }
     input, select, button { width: 100%; }
+    .tracker { padding: 16px; }
   }
 </style>
 </head>
@@ -113,30 +123,32 @@
     <p>A cheap plan can become expensive if you regularly leave credits unused. Some platforms reset everything monthly. Others let you carry a limited amount forward or keep purchased top-ups for a long time. Knowing the difference helps you pick the right tier and use what you already paid for.</p>
 
     <h2>Rollover rules by platform</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Platform</th>
-          <th>Category</th>
-          <th>Plan / monthly credits rollover?</th>
-          <th>Purchased / top-up credits</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Kling AI</td><td>Video</td><td>No (valid ~31 days)</td><td>Last up to 2 years</td><td>Monthly credits expire; purchased last longer. Cannot transfer.</td></tr>
-        <tr><td>Runway</td><td>Video</td><td>Standard & Pro: No<br>Max: up to 1 month</td><td>Never expire</td><td>Purchased credits stay until used.</td></tr>
-        <tr><td>HeyGen</td><td>Video</td><td>Monthly: 1 extra month<br>Annual: until renewal</td><td>—</td><td>Credits lost if you cancel.</td></tr>
-        <tr><td>Luma</td><td>Video</td><td>Check current plan terms</td><td>Varies</td><td>Confirm on their site.</td></tr>
-        <tr><td>Pika</td><td>Video</td><td>No</td><td>Packs often last longer</td><td>Plan credits reset each cycle.</td></tr>
-        <tr><td>Synthesia</td><td>Video</td><td>Varies by plan</td><td>—</td><td>Confirm on their site.</td></tr>
-        <tr><td>ElevenLabs</td><td>Voice</td><td>Partial (up to 2× monthly, balance can reach ~3×)</td><td>PAYG expire after 12 months</td><td>Rollover only while staying on the same paid plan. Lost on cancel/downgrade.</td></tr>
-        <tr><td>Cartesia</td><td>Voice</td><td>Partial (up to 2×)</td><td>—</td><td>Confirm current details.</td></tr>
-        <tr><td>Suno</td><td>Music</td><td>No</td><td>Top-ups usually do not expire (need active plan)</td><td>Generation credits and monthly download allotments reset.</td></tr>
-        <tr><td>Udio</td><td>Music</td><td>No</td><td>A la carte purchases never expire</td><td>Subscription credits reset monthly.</td></tr>
-        <tr><td>Soundraw / AIVA / Boomy</td><td>Music</td><td>Mostly no or limited</td><td>Varies</td><td>Confirm on each site.</td></tr>
-      </tbody>
-    </table>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Platform</th>
+            <th>Category</th>
+            <th>Plan / monthly credits rollover?</th>
+            <th>Purchased / top-up credits</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Kling AI</td><td>Video</td><td>No (valid ~31 days)</td><td>Last up to 2 years</td><td>Monthly credits expire; purchased last longer. Cannot transfer.</td></tr>
+          <tr><td>Runway</td><td>Video</td><td>Standard & Pro: No<br>Max: up to 1 month</td><td>Never expire</td><td>Purchased credits stay until used.</td></tr>
+          <tr><td>HeyGen</td><td>Video</td><td>Monthly: 1 extra month<br>Annual: until renewal</td><td>—</td><td>Credits lost if you cancel.</td></tr>
+          <tr><td>Luma</td><td>Video</td><td>Check current plan terms</td><td>Varies</td><td>Confirm on their site.</td></tr>
+          <tr><td>Pika</td><td>Video</td><td>No</td><td>Packs often last longer</td><td>Plan credits reset each cycle.</td></tr>
+          <tr><td>Synthesia</td><td>Video</td><td>Varies by plan</td><td>—</td><td>Confirm on their site.</td></tr>
+          <tr><td>ElevenLabs</td><td>Voice</td><td>Partial (up to 2× monthly, balance can reach ~3×)</td><td>PAYG expire after 12 months</td><td>Rollover only while staying on the same paid plan. Lost on cancel/downgrade.</td></tr>
+          <tr><td>Cartesia</td><td>Voice</td><td>Partial (up to 2×)</td><td>—</td><td>Confirm current details.</td></tr>
+          <tr><td>Suno</td><td>Music</td><td>No</td><td>Top-ups usually do not expire (need active plan)</td><td>Generation credits and monthly download allotments reset.</td></tr>
+          <tr><td>Udio</td><td>Music</td><td>No</td><td>A la carte purchases never expire</td><td>Subscription credits reset monthly.</td></tr>
+          <tr><td>Soundraw / AIVA / Boomy</td><td>Music</td><td>Mostly no or limited</td><td>Varies</td><td>Confirm on each site.</td></tr>
+        </tbody>
+      </table>
+    </div>
 
     <h2>Quick tips</h2>
     <ul>
