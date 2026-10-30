@@ -18,7 +18,6 @@ for file in json_files:
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
             loaded = json.load(f)
-            # Skip platforms with no plans
             if loaded.get("plans"):
                 data[file] = loaded
 
