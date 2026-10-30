@@ -1,28 +1,26 @@
 {
-    "platform":  "invideo",
-    "plans":  [
-                  {
-                      "name":  "Starter",
-                      "monthly_price_usd":  10,
-                      "credits_or_minutes":  400,
-                      "unit":  "credits",
-                      "offer":  "50% off on annual, Save €120 per seat, unlimited images for 30 days"
-                  },
-                  {
-                      "name":  "Plus",
-                      "monthly_price_usd":  30,
-                      "credits_or_minutes":  2000,
-                      "unit":  "credits",
-                      "offer":  "50% off on annual, Save €360 per seat, unlimited images for 30 days"
-                  },
-                  {
-                      "name":  "Max",
-                      "monthly_price_usd":  75,
-                      "credits_or_minutes":  5000,
-                      "unit":  "credits",
-                      "offer":  "50% off on annual, Save €885 per seat, 60% cheaper per credit, unlimited images for 30 days"
-                  }
-              ],
-    "last_checked":  "2026-10-29",
-    "source":  "https://invideo.io/pricing"
+  "platform": "invideo",
+  "plans": [
+    {
+      "name": "Starter",
+      "monthly_price_usd": 10,
+      "credits_or_minutes": 400,
+      "unit": "credits",
+      "offer": "50% off for first-time AI creators, save \u20ac120 per seat compared to monthly"
+    },
+    {
+      "name": "Plus",
+      "monthly_price_usd": 30,
+      "credits_or_minutes": 2000,
+      "unit": "credits",
+      "offer": "50% off, save \u20ac360 per seat compared to monthly"
+    },
+    {
+      "name": "Max",
+      "monthly_price_usd": 37.5,
+      "credits_or_minutes": 8000,
+      "unit": "credits",
+      "offer": "85% off limited offer, save \u20ac2,100 per seat compared to monthly"
+    }
+  ]
 }

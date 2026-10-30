@@ -1,27 +1,26 @@
 {
-    "platform":  "aiva",
-    "plans":  [
-                  {
-                      "name":  "Free",
-                      "monthly_price_usd":  0,
-                      "credits_or_minutes":  3,
-                      "unit":  "downloads",
-                      "offer":  ""
-                  },
-                  {
-                      "name":  "Standard",
-                      "monthly_price_usd":  11,
-                      "credits_or_minutes":  15,
-                      "unit":  "downloads",
-                      "offer":  "26% OFF! Billed Annually"
-                  },
-                  {
-                      "name":  "Pro",
-                      "monthly_price_usd":  33,
-                      "credits_or_minutes":  300,
-                      "unit":  "downloads",
-                      "offer":  "33% OFF! Billed Annually"
-                  }
-              ],
-    "last_checked":  "2026-10-29"
+  "platform": "aiva",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 3,
+      "unit": "downloads",
+      "offer": ""
+    },
+    {
+      "name": "Standard",
+      "monthly_price_usd": 11,
+      "credits_or_minutes": 15,
+      "unit": "downloads",
+      "offer": "26% OFF billed annually"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 33,
+      "credits_or_minutes": 300,
+      "unit": "downloads",
+      "offer": "33% OFF billed annually"
+    }
+  ]
 }

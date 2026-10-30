@@ -1,8 +1,4 @@
 {
-    "platform":  "hedra",
-    "plans":  [
-
-              ],
-    "last_checked":  "2026-10-29",
-    "source":  "https://hedra.com/pricing"
+  "platform": "hedra",
+  "plans": []
 }

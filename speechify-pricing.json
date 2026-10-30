@@ -1,20 +1,14 @@
 {
-    "platform":  "speechify",
-    "plans":  [
-                  {
-                      "name":  "Free",
-                      "monthly_price_usd":  0,
-                      "credits_or_minutes":  0,
-                      "unit":  "credits",
-                      "offer":  ""
-                  },
-                  {
-                      "name":  "Premium",
-                      "monthly_price_usd":  29,
-                      "credits_or_minutes":  0,
-                      "unit":  "credits",
-                      "offer":  "SAVE 60% on yearly"
-                  }
-              ],
-    "last_checked":  "2026-10-29"
+  "platform": "speechify",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0
+    },
+    {
+      "name": "Premium",
+      "monthly_price_usd": 29,
+      "offer": "SAVE 60%"
+    }
+  ]
 }

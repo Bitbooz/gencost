@@ -1,8 +1,4 @@
 {
-    "platform":  "hailuo",
-    "plans":  [
-
-              ],
-    "last_checked":  "2026-10-29",
-    "source":  "https://hailuoai.video"
+  "platform": "hailuo",
+  "plans": []
 }

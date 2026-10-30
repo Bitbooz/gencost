@@ -1,35 +1,33 @@
 {
-    "platform":  "ltx",
-    "plans":  [
-                  {
-                      "name":  "Free",
-                      "monthly_price_usd":  0,
-                      "credits_or_minutes":  800,
-                      "unit":  "credits",
-                      "offer":  "800 credits one time"
-                  },
-                  {
-                      "name":  "Lite",
-                      "monthly_price_usd":  15,
-                      "credits_or_minutes":  8000,
-                      "unit":  "credits",
-                      "offer":  "Save 50% for Cyber Monday, UNLIMITED FLUX.2 GENERATIONS, yearly $12/month billed $144"
-                  },
-                  {
-                      "name":  "Standard",
-                      "monthly_price_usd":  35,
-                      "credits_or_minutes":  28000,
-                      "unit":  "credits",
-                      "offer":  "Save 50% for Cyber Monday, 28800 additional Computing Seconds/month for first 3 months, yearly $28/month billed $336"
-                  },
-                  {
-                      "name":  "Pro",
-                      "monthly_price_usd":  125,
-                      "credits_or_minutes":  110000,
-                      "unit":  "credits",
-                      "offer":  "Save 50% for Cyber Monday, yearly $100/month billed $1200"
-                  }
-              ],
-    "last_checked":  "2026-10-29",
-    "source":  "https://ltx.studio/pricing"
+  "platform": "ltx",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 800,
+      "unit": "credits",
+      "offer": "800 credits one time"
+    },
+    {
+      "name": "Lite",
+      "monthly_price_usd": 15,
+      "credits_or_minutes": 8000,
+      "unit": "credits",
+      "offer": "Save 50% for Cyber Monday; $12/month billed yearly"
+    },
+    {
+      "name": "Standard",
+      "monthly_price_usd": 35,
+      "credits_or_minutes": 28000,
+      "unit": "credits",
+      "offer": "Save 50% for Cyber Monday; $28/month billed yearly; 28800 additional Computing Seconds/month for first 3 months"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 125,
+      "credits_or_minutes": 110000,
+      "unit": "credits",
+      "offer": "Save 50% for Cyber Monday; $100/month billed yearly"
+    }
+  ]
 }
