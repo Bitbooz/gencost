@@ -1,11 +1,11 @@
 CapCut Pricing | Choose the Right Plan
-01
+00
 :
-20
+16
 :
-03
+13
 :
-32
+24
 Claim your Black Friday deal on CapCut Desktop—limited spots!
 Products
 CapCut Desktop
@@ -462,6 +462,20 @@ All premium templates
 Access to Pro features for all seats
 Brand kit
 1 TB of space storage
+Frequently Asked Questions
+Which CapCut plan is right for me?
+The right CapCut plan depends on what you want to create. Free is a great place to start for everyday editing and exploring the platform. Pro is a strong choice for creators who want advanced editing tools, premium templates, and more AI-powered features for regular content production. Ultra may be a better fit for users with more demanding creative workflows who want access to a broader range of advanced features, templates, and AI models. Teams is designed for collaborative creation across multiple users with shared workflows. Plan availability and features may vary by region, platform, and current offering.
+Is there a free trial for CapCut Pro?
+Yes, new users can start a 7-day free trial of CapCut Pro. No credit card is required to begin the trial, and you can cancel anytime before it ends. Free trial availability for CapCut Pro may vary by region, platform, billing channel, and current promotional offer. Please check the latest subscription details shown at checkout.
+What is the difference between CapCut Pro and Ultra?
+CapCut Pro is a strong fit for creators who want premium tools for regular content creation. Ultra is generally better suited for users with heavier creative needs who want more advanced AI-powered capabilities and a more feature-rich workflow. If you create frequently and want broader AI video functionality, Ultra may offer a better match. If you want a balanced upgrade for everyday creation, CapCut Pro is often the more practical choice. The exact feature set may vary depending on the plan, platform, region, and current product offering.
+What is the difference between individual plans and Teams?
+Individual plans are ideal for solo creators managing their own editing and publishing workflow. Teams is built for collaborative use across multiple seats, making it a better fit for businesses, creative teams, and organizations that need shared access and a more consistent way of working. With features like Brand Kit, Teams helps everyone stay aligned on brand assets, visuals, and creative standards, so content remains consistent across contributors, reviewers, and editors. If your workflow involves multiple people, Teams makes it easier to centralize production while maintaining brand consistency at scale. Available collaboration features may vary depending on plan setup, region, and platform.
+Does CapCut Pro include AI video features?
+Yes. CapCut Pro is built to support AI-powered creation with features that help users create, edit, and improve video content more efficiently. For creators who want a faster workflow or want to do more with AI-assisted creation, this is one of the key reasons to choose a paid plan over a basic option. Please check the latest plan details for feature availability in your region.
+Give your next idea a look of its own
+Find the CapCut plan with the tools to shape the mood, refine the details, and make it yours.
+Explore plans
 Products
 CapCut Desktop
 CapCut Online

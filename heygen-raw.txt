@@ -199,7 +199,8 @@ Dedicated customer success manager and tailored onboarding
 Priority customer support
 Custom commercial terms and invoice billing
 Enterprise Community access
-Explore API pricing →
+Explore API pricing
+→
 Plan features
 Compare pricing plans and features
 For Individuals
@@ -958,6 +959,8 @@ Bella M. on Capterra
 "As a solo entrepreneur, HeyGen helps me create professional content without any production team. It`s very straightforward and effective."
 —
 Alexis N. on Product Hunt
+←
+→
 Start creating videos with AI
 See how businesses like yours scale content creation and drive growth with the most innovative AI video.
 Book a meeting

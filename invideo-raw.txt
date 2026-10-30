@@ -19,15 +19,21 @@ Resources
 Community
 Login
 Sign up
-Nano Banana 2.1, Ideogram 4.5
-& many more image models
-Unlimited for 30 days
-Applicable on all annual plans.
-Get 50% discount
+Unlimited Kling 4.0
+Halloween sale - 85% off
+Claim offer
+Valid till Nov 1
+Offer ends in
+--
+hours
+--
+minutes
+--
+seconds
 Pricing
 Monthly
 Annual
-50% off
+85% off
 Not sure which plan?
 Team plans
 Business plans
@@ -108,7 +114,8 @@ For everyday AI creation
 800 Nano Banana Pro generations
 ~
 52 Seedance 2 videos
-2,000 credits per seat/mo
+2,000
+5,000
 $60
 $30
 per seat/mo, billed annually
@@ -170,24 +177,24 @@ Early access to advanced AI features
 Not included:
 Lowest cost per credit
 Max
-50% off
-Best value
+85% off
+Limited offer
 For ambitious AI projects
-5,000 credits/mo.
+8,000 credits/mo.
 =
-5,000 credits per seat/mo
+8,000 credits per seat/mo
 =
-2,000 Nano Banana Pro generations
+3,200 Nano Banana Pro generations
 ~
-131 Seedance 2 videos
-5,000
+210 Seedance 2 videos
+8,000
 10,000
 15,000
-$150
-$75
-per seat/mo, billed annually
+$250
+$37.5
+per seat/mo, billed for 12+12 months
 Get Max
-Save $885
+Save $2,100
 per seat compared to monthly
 −
 1 seat
@@ -372,7 +379,7 @@ Add features
 2
 Timeline editing and multiplayer
 from Starter
-Your own footage, 4K export
+Your own footage, unlimited export
 from Starter
 Seedance 2.5
 from Plus
@@ -390,7 +397,7 @@ Starter
 Timeline editing and multiplayer
 ×
 Starter
-Your own footage, 4K export
+Your own footage, unlimited export
 ×
 We recommend
 Starter
@@ -450,34 +457,34 @@ Seedance 2.5 720p
 ~56 credits/5s
 ✕
 35 videos
-89 videos
+142 videos
 Seedance 2.5 1080p
 ~96 credits/5s
 ✕
 20 videos
-52 videos
+83 videos
 Seedance 2.5 Draft
 ~24.5 credits/5s
 ✕
 81 videos
-204 videos
+326 videos
 View more
 Image
 Nano Banana Pro
 ~2.5 credits/image
 160 images
 800 images
-2,000 images
+3,200 images
 Nano Banana Pro 4K
 ~4 credits/image
 100 images
 500 images
-1,250 images
+2,000 images
 GPT Image 2.5 Sunburst
 ~0.4 credits/image
 1,000 images
 5,000 images
-12,500 images
+20,000 images
 View more
 Invideo editor
 Agents & models
