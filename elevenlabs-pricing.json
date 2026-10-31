@@ -2,25 +2,18 @@
   "platform": "elevenlabs",
   "plans": [
     {
-      "name": "Free",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 10000,
-      "unit": "credits",
-      "offer": ""
-    },
-    {
       "name": "Starter",
       "monthly_price_usd": 6,
       "credits_or_minutes": 30000,
       "unit": "credits",
-      "offer": "First month $1 (83% off); 2 months free on yearly"
+      "offer": "First month 83% off, 30000 credits for $1 limited time"
     },
     {
       "name": "Creator",
       "monthly_price_usd": 22,
       "credits_or_minutes": 121000,
       "unit": "credits",
-      "offer": "First month $11 (50% off); 2 months free on yearly"
+      "offer": "First month 50% off, 2 months free on yearly"
     },
     {
       "name": "Pro",

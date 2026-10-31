@@ -6,21 +6,21 @@
       "monthly_price_usd": 10,
       "credits_or_minutes": 400,
       "unit": "credits",
-      "offer": "50% off for first-time AI creators, save \u20ac120 per seat compared to monthly"
+      "offer": "50% off, Save \u20ac120 per seat compared to monthly"
     },
     {
       "name": "Plus",
       "monthly_price_usd": 30,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "50% off, save \u20ac360 per seat compared to monthly"
+      "offer": "50% off, Save \u20ac360 per seat compared to monthly"
     },
     {
       "name": "Max",
       "monthly_price_usd": 37.5,
       "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": "85% off limited offer, save \u20ac2,100 per seat compared to monthly"
+      "offer": "85% off 2-year plan, Save \u20ac2,100 per seat compared to monthly, Halloween sale valid till Oct 31"
     }
   ]
 }

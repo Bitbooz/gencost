@@ -1,9 +1,4 @@
 {
   "platform": "hailuo",
-  "plans": [
-    {"name": "Standard", "monthly_price_usd": 10.5, "credits_or_minutes": 1000, "unit": "credits"},
-    {"name": "Pro", "monthly_price_usd": 30, "credits_or_minutes": 3500, "unit": "credits"}
-  ],
-  "last_checked": "2026-10-30",
-  "source": "https://hailuoai.video"
+  "plans": []
 }

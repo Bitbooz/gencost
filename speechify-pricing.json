@@ -3,12 +3,17 @@
   "plans": [
     {
       "name": "Free",
-      "monthly_price_usd": 0
+      "monthly_price_usd": 0,
+      "credits_or_minutes": "unlimited",
+      "unit": "minutes",
+      "offer": ""
     },
     {
       "name": "Premium",
       "monthly_price_usd": 29,
-      "offer": "SAVE 60%"
+      "credits_or_minutes": "unlimited",
+      "unit": "minutes",
+      "offer": "SAVE 60% on yearly"
     }
   ]
 }

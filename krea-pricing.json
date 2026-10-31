@@ -5,29 +5,29 @@
       "name": "Free",
       "monthly_price_usd": 0,
       "credits_or_minutes": 100,
-      "unit": "units",
-      "offer": "40% off yearly"
+      "unit": "units per day",
+      "offer": "No offer"
     },
     {
       "name": "Basic",
-      "monthly_price_usd": 5,
+      "monthly_price_usd": 9,
       "credits_or_minutes": 5000,
       "unit": "units",
-      "offer": "40% off yearly"
+      "offer": "40% off on yearly"
     },
     {
       "name": "Pro",
-      "monthly_price_usd": 21,
+      "monthly_price_usd": 35,
       "credits_or_minutes": 20000,
       "unit": "units",
-      "offer": "40% off yearly"
+      "offer": "40% off on yearly"
     },
     {
       "name": "Max",
-      "monthly_price_usd": 63,
+      "monthly_price_usd": 105,
       "credits_or_minutes": 60000,
       "unit": "units",
-      "offer": "40% off yearly"
+      "offer": "40% off on yearly"
     }
   ]
 }

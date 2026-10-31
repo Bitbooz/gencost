@@ -6,21 +6,21 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 50,
       "unit": "credits",
-      "offer": "save 20% on yearly"
+      "offer": ""
     },
     {
       "name": "Pro",
       "monthly_price_usd": 8,
       "credits_or_minutes": 2500,
       "unit": "credits",
-      "offer": "Saves $24 by billing yearly"
+      "offer": "save 20% on annual"
     },
     {
       "name": "Premier",
       "monthly_price_usd": 24,
       "credits_or_minutes": 10000,
       "unit": "credits",
-      "offer": "Saves $72 by billing yearly"
+      "offer": "save 20% on annual"
     }
   ]
 }

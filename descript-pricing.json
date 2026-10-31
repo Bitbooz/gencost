@@ -4,22 +4,22 @@
     {
       "name": "Hobbyist",
       "monthly_price_usd": 24,
-      "credits_or_minutes": 600,
-      "unit": "minutes",
+      "credits_or_minutes": 400,
+      "unit": "credits",
       "offer": "Saving up to 35% on annual"
     },
     {
       "name": "Creator",
       "monthly_price_usd": 35,
-      "credits_or_minutes": 1800,
-      "unit": "minutes",
+      "credits_or_minutes": 800,
+      "unit": "credits",
       "offer": "Saving up to 35% on annual"
     },
     {
       "name": "Business",
-      "monthly_price_usd": 65,
-      "credits_or_minutes": 2400,
-      "unit": "minutes",
+      "monthly_price_usd": 50,
+      "credits_or_minutes": 1500,
+      "unit": "credits",
       "offer": "Saving up to 35% on annual"
     }
   ]
