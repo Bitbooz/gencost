@@ -252,7 +252,7 @@ if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards be
 
 for (const {{ name, data }} of platforms) {{
   const page = getPage(name);
-  const checked = data.last_checked || data.checked || "recently";
+  const checked = data.last_checked || data.checked || "{timestamp}";
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${{page}}" onclick="createParticles(event)">${{name}}</a></h2>`;
   if (source) {{
@@ -441,7 +441,7 @@ platforms.sort((a, b) => {{
 }});
 for (const {{ name, data }} of platforms) {{
   const page = getPage(name);
-  const checked = data.last_checked || data.checked || "recently";
+  const checked = data.last_checked || data.checked || "{timestamp}";
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${{page}}" onclick="createParticles(event)">${{name}}</a></h2>`;
   if (source) {{
@@ -624,7 +624,7 @@ platforms.sort((a, b) => {{
 }});
 for (const {{ name, data }} of platforms) {{
   const page = getPage(name);
-  const checked = data.last_checked || data.checked || "recently";
+  const checked = data.last_checked || data.checked || "{timestamp}";
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${{page}}" onclick="createParticles(event)">${{name}}</a></h2>`;
   if (source) {{
@@ -649,3 +649,4 @@ for (const {{ name, data }} of platforms) {{
 with open(os.path.join(folder, "music.html"), "w", encoding="utf-8") as f:
     f.write(music_html)
 print("music.html regenerated.")
+Steps:
