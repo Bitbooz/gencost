@@ -6,21 +6,21 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 0,
       "unit": "credits",
-      "offer": "Black Friday deal limited time"
+      "offer": "Black Friday deal limited spots"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 399,
       "credits_or_minutes": 1200,
       "unit": "credits",
-      "offer": "first month special pricing, yearly discount available"
+      "offer": "2 months free on yearly, first month special pricing"
     },
     {
       "name": "Ultra",
       "monthly_price_usd": 750,
       "credits_or_minutes": 8645,
       "unit": "credits",
-      "offer": "first month special pricing, yearly discount available, Black Friday deal limited time"
+      "offer": "first month special pricing, Black Friday deal limited spots"
     }
   ]
 }
