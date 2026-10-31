@@ -649,4 +649,3 @@ for (const {{ name, data }} of platforms) {{
 with open(os.path.join(folder, "music.html"), "w", encoding="utf-8") as f:
     f.write(music_html)
 print("music.html regenerated.")
-Steps:
