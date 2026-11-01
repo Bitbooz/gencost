@@ -85,10 +85,16 @@
       <select id="platform">
         <option value="kling">Kling AI Standard</option>
         <option value="runway">Runway Standard</option>
+        <option value="runwaypro">Runway Pro</option>
         <option value="pika">Pika Starter</option>
         <option value="luma">Luma Plus</option>
         <option value="heygen">HeyGen Creator</option>
         <option value="synthesia">Synthesia Starter</option>
+        <option value="viggle">Viggle Pro</option>
+        <option value="invideo">InVideo Starter</option>
+        <option value="ltx">LTX Studio Lite</option>
+        <option value="krea">Krea Basic</option>
+        <option value="higgs">Higgsfield Starter</option>
       </select>
 
       <button onclick="calculate()">Calculate</button>
@@ -105,10 +111,16 @@
 const prices = {
   kling: { name: "Kling AI Standard", costPer10s: 0.15 },
   runway: { name: "Runway Standard", costPer10s: 0.19 },
+  runwaypro: { name: "Runway Pro", costPer10s: 0.12 },
   pika: { name: "Pika Starter", costPer10s: 0.11 },
   luma: { name: "Luma Plus", costPer10s: 0.03 },
   heygen: { name: "HeyGen Creator", costPer10s: 0.48 },
-  synthesia: { name: "Synthesia Starter", costPer10s: 0.15 }
+  synthesia: { name: "Synthesia Starter", costPer10s: 0.15 },
+  viggle: { name: "Viggle Pro", costPer10s: 1.00 },
+  invideo: { name: "InVideo Starter", costPer10s: 0.25 },
+  ltx: { name: "LTX Studio Lite", costPer10s: 0.02 },
+  krea: { name: "Krea Basic", costPer10s: 0.02 },
+  higgs: { name: "Higgsfield Starter", costPer10s: 0.70 }
 };
 
 function calculate() {
