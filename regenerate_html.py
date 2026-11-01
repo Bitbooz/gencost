@@ -195,8 +195,11 @@ function estimateCost(plan) {{
   const price = plan.monthly_price_usd || 0;
   const credits = plan.credits_or_minutes || 0;
   if (!price || !credits || credits <= 0) return "";
-  const costPer10s = (price / credits) * 10;
-  return costPer10s >= 0.01 ? ` (~$${{costPer10s.toFixed(2)}} / 10s)` : "";
+  const costPerSecond = price / credits;
+  const c5 = (costPerSecond * 5).toFixed(2);
+  const c10 = (costPerSecond * 10).toFixed(2);
+  const c30 = (costPerSecond * 30).toFixed(2);
+  return `<br><span class="cost">5s: $${{c5}} &nbsp;·&nbsp; 10s: $${{c10}} &nbsp;·&nbsp; 30s: $${{c30}}</span>`;
 }}
 function createParticles(e) {{
   const x = e.clientX, y = e.clientY;
