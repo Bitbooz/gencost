@@ -89,13 +89,13 @@
   <span style="font-size:0.9em;">~$10: Kling Standard or Pika Starter &nbsp;|&nbsp; ~$30: Runway Pro, Luma Plus or HeyGen Creator</span>
 </div>
 <p style="color:#aaa; font-size:0.9rem; text-align:center;">
-  <strong>Last updated:</strong> 2026-11-01 09:39<br>
+  <strong>Last updated:</strong> 2026-11-01 13:11<br>
   Prices change often — always confirm inside the tool before generating.
 </p>
 <div class="overlay">
   <h1>GENCOST</h1>
   <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-11-01 09:39</div>
+  <div class="timestamp">LAST UPDATED · 2026-11-01 13:11</div>
   <div style="max-width:1400px; margin:20px auto 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:0 20px;">
     <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px; text-align:center;">
       <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
@@ -169,8 +169,11 @@ function estimateCost(plan) {
   const price = plan.monthly_price_usd || 0;
   const credits = plan.credits_or_minutes || 0;
   if (!price || !credits || credits <= 0) return "";
-  const costPer10s = (price / credits) * 10;
-  return costPer10s >= 0.01 ? ` (~$${costPer10s.toFixed(2)} / 10s)` : "";
+  const costPerSecond = price / credits;
+  const c5 = (costPerSecond * 5).toFixed(2);
+  const c10 = (costPerSecond * 10).toFixed(2);
+  const c30 = (costPerSecond * 30).toFixed(2);
+  return `<br><span class="cost">5s: $${c5} &nbsp;·&nbsp; 10s: $${c10} &nbsp;·&nbsp; 30s: $${c30}</span>`;
 }
 function createParticles(e) {
   const x = e.clientX, y = e.clientY;
@@ -226,7 +229,7 @@ if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards be
 
 for (const { name, data } of platforms) {
   const page = getPage(name);
-  const checked = data.last_checked || data.checked || "2026-11-01 09:39";
+  const checked = data.last_checked || data.checked || "2026-11-01 13:11";
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${page}" onclick="createParticles(event)">${name}</a></h2>`;
   if (source) {
