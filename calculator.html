@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator | GenCost</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6DHTT2ZTBK');
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #e0e0e0;
+    background: url('/Background.jpg') center/cover fixed no-repeat,
+                radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
+                linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+  }
+  .overlay {
+    min-height: 100vh;
+    padding: 40px 20px 60px;
+    background: rgba(10, 10, 15, 0.75);
+  }
+  h1 {
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8em;
+    letter-spacing: 3px;
+    margin: 0 0 10px 0;
+    background: linear-gradient(90deg, #00d4ff, #7b68ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .container { max-width: 700px; margin: 0 auto; }
+  .box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 28px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+  }
+  label { display: block; margin: 12px 0 6px; font-weight: 500; }
+  input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    font-size: 1em;
+  }
+  button {
+    margin-top: 18px;
+    background: #00d4ff;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  #result { margin-top: 20px; font-size: 1.15em; line-height: 1.6; }
+  a { color: #00d4ff; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="overlay">
+  <h1>CALCULATOR</h1>
+  <p style="text-align:center; opacity:0.7; margin-bottom:30px;">How many seconds can I get for my budget?</p>
+
+  <div class="container">
+    <div class="box">
+      <label>Budget (USD)</label>
+      <input type="number" id="budget" value="20" min="1" step="1">
+
+      <label>Platform</label>
+      <select id="platform">
+        <option value="kling">Kling AI Standard</option>
+        <option value="runway">Runway Standard</option>
+        <option value="pika">Pika Starter</option>
+        <option value="luma">Luma Plus</option>
+        <option value="heygen">HeyGen Creator</option>
+        <option value="synthesia">Synthesia Starter</option>
+      </select>
+
+      <button onclick="calculate()">Calculate</button>
+      <div id="result"></div>
+    </div>
+
+    <div style="text-align:center;">
+      <a href="/">← Back to comparison</a>
+    </div>
+  </div>
+</div>
+
+<script>
+const prices = {
+  kling: { name: "Kling AI Standard", costPer10s: 0.15 },
+  runway: { name: "Runway Standard", costPer10s: 0.19 },
+  pika: { name: "Pika Starter", costPer10s: 0.11 },
+  luma: { name: "Luma Plus", costPer10s: 0.03 },
+  heygen: { name: "HeyGen Creator", costPer10s: 0.48 },
+  synthesia: { name: "Synthesia Starter", costPer10s: 0.15 }
+};
+
+function calculate() {
+  const budget = parseFloat(document.getElementById("budget").value) || 0;
+  const key = document.getElementById("platform").value;
+  const p = prices[key];
+  if (!budget || !p) return;
+
+  const seconds = (budget / p.costPer10s) * 10;
+  const clips10s = Math.floor(seconds / 10);
+
+  document.getElementById("result").innerHTML =
+    `<strong>${p.name}</strong><br>` +
+    `For <strong>$${budget}</strong> you get approximately:<br>` +
+    `<strong>${Math.round(seconds)} seconds</strong> of video<br>` +
+    `≈ <strong>${clips10s}</strong> clips of 10 seconds`;
+}
+calculate();
+</script>
+</body>
+</html>
