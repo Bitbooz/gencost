@@ -6,21 +6,21 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 3,
       "unit": "downloads",
-      "offer": "No special offer"
+      "offer": ""
     },
     {
       "name": "Standard",
       "monthly_price_usd": 11,
       "credits_or_minutes": 15,
       "unit": "downloads",
-      "offer": "26% OFF on yearly billing"
+      "offer": "26% OFF"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 33,
       "credits_or_minutes": 300,
       "unit": "downloads",
-      "offer": "33% OFF on yearly billing"
+      "offer": "33% OFF"
     }
   ]
 }

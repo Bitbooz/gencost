@@ -6,21 +6,21 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 0,
       "unit": "credits",
-      "offer": "Black Friday deal limited spots"
+      "offer": ""
     },
     {
       "name": "Pro",
       "monthly_price_usd": 399,
       "credits_or_minutes": 1200,
       "unit": "credits",
-      "offer": "2 months free on yearly, first month special pricing"
+      "offer": "2 months free on yearly, Seedance 2.5 from $0.12/sec first month, 58% fewer credits with Seedance 2.0 Mini"
     },
     {
       "name": "Ultra",
       "monthly_price_usd": 750,
       "credits_or_minutes": 8645,
       "unit": "credits",
-      "offer": "first month special pricing, Black Friday deal limited spots"
+      "offer": "Seedance 2.5 from $0.18/sec first month, 58% fewer credits with Seedance 2.0 Mini"
     }
   ]
 }

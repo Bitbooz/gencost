@@ -2,6 +2,13 @@
   "platform": "descript",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 60,
+      "unit": "minutes",
+      "offer": ""
+    },
+    {
       "name": "Hobbyist",
       "monthly_price_usd": 24,
       "credits_or_minutes": 400,
@@ -17,7 +24,7 @@
     },
     {
       "name": "Business",
-      "monthly_price_usd": 50,
+      "monthly_price_usd": 65,
       "credits_or_minutes": 1500,
       "unit": "credits",
       "offer": "Saving up to 35% on annual"
