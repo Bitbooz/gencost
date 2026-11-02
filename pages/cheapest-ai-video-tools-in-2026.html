@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cheapest AI Video Tools in 2026 | GenCost</title>
+<meta name="description" content="A 2026 pricing breakdown of Kling, Runway, Pika, and Luma — including free tiers and real cost-per-video estimates.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -14,34 +15,40 @@
     color: #e0e0e0;
     font-family: 'Inter', sans-serif;
     line-height: 1.65;
-    padding: 0 0 80px 0;
+    padding: 0 0 80px;
   }
 
   .container {
-    max-width: 1000px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 40px 24px 0;
   }
 
   .back-link {
     display: inline-block;
-    margin: 32px 0 16px 0;
     color: #00d4ff;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 500;
+    margin-bottom: 28px;
+    border: 1px solid rgba(0,212,255,0.3);
+    padding: 6px 14px;
+    border-radius: 999px;
+    transition: background 0.2s ease;
   }
-  .back-link:hover { text-decoration: underline; }
+
+  .back-link:hover {
+    background: rgba(0,212,255,0.1);
+  }
 
   h1, h2, h3 {
     font-family: 'Orbitron', sans-serif;
     color: #fff;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
   }
 
   h1 {
     font-size: 2.2rem;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     background: linear-gradient(90deg, #ffffff, #00d4ff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -49,77 +56,56 @@
   }
 
   .subtitle {
+    color: #9fb3bd;
     font-size: 1.05rem;
-    color: #a0a0ab;
-    max-width: 720px;
     margin-bottom: 36px;
+    max-width: 680px;
   }
 
   h2 {
-    font-size: 1.5rem;
-    margin: 48px 0 16px 0;
+    font-size: 1.4rem;
+    margin: 48px 0 18px;
     border-left: 3px solid #00d4ff;
     padding-left: 12px;
   }
 
   h3 {
-    font-size: 1.15rem;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    margin: 20px 0 10px;
     color: #00d4ff;
   }
 
-  p { margin-bottom: 14px; color: #c7c7cf; }
+  p {
+    margin-bottom: 14px;
+    color: #cfcfcf;
+  }
 
-  a { color: #00d4ff; }
+  a {
+    color: #00d4ff;
+  }
 
   .card {
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 14px;
-    padding: 24px;
-    margin-bottom: 20px;
-    backdrop-filter: blur(6px);
+    padding: 24px 28px;
+    margin-bottom: 24px;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 18px;
-    margin-bottom: 20px;
+  .highlight-card {
+    background: rgba(0,212,255,0.06);
+    border: 1px solid rgba(0,212,255,0.25);
+    border-radius: 14px;
+    padding: 20px 26px;
+    margin-bottom: 32px;
   }
 
-  .price-tag {
-    display: inline-block;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.4rem;
-    color: #00d4ff;
-    margin: 6px 0;
-  }
-
-  .price-tag small {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.8rem;
-    color: #8a8a92;
-  }
-
-  .badge {
-    display: inline-block;
-    background: rgba(0,212,255,0.12);
-    color: #00d4ff;
-    border: 1px solid rgba(0,212,255,0.35);
-    font-size: 0.72rem;
-    padding: 3px 10px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
+  .highlight-card strong { color: #00d4ff; }
 
   table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 10px;
+    margin: 16px 0 8px;
     font-size: 0.92rem;
   }
 
@@ -130,50 +116,72 @@
   }
 
   th {
-    background: rgba(255,255,255,0.05);
-    color: #fff;
     font-family: 'Orbitron', sans-serif;
     font-size: 0.78rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    color: #00d4ff;
+    background: rgba(0,212,255,0.05);
   }
 
-  tr:hover td { background: rgba(255,255,255,0.03); }
-
-  .table-wrap {
-    overflow-x: auto;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.08);
+  tr:hover td {
+    background: rgba(255,255,255,0.02);
   }
 
-  .highlight-row td { color: #00d4ff; font-weight: 600; }
-
-  .note {
-    font-size: 0.85rem;
-    color: #8a8a92;
-    margin-top: 10px;
+  .tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 2px 9px;
+    border-radius: 999px;
+    background: rgba(0,212,255,0.15);
+    color: #00d4ff;
+    margin-left: 6px;
   }
+
+  .tag.best {
+    background: rgba(0, 255, 140, 0.15);
+    color: #4dffb0;
+  }
+
+  .tag.pricey {
+    background: rgba(255, 90, 90, 0.15);
+    color: #ff8a8a;
+  }
+
+  .grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  @media (max-width: 680px) {
+    .grid-two { grid-template-columns: 1fr; }
+    table { font-size: 0.82rem; }
+    th, td { padding: 9px 8px; }
+  }
+
+  ul {
+    margin: 10px 0 14px 20px;
+    color: #cfcfcf;
+  }
+
+  li { margin-bottom: 6px; }
 
   .footer-note {
     margin-top: 60px;
     padding-top: 20px;
     border-top: 1px solid rgba(255,255,255,0.08);
     font-size: 0.85rem;
-    color: #7a7a82;
-    text-align: center;
+    color: #7d8a90;
   }
 
-  ul { margin: 0 0 14px 20px; color: #c7c7cf; }
-  li { margin-bottom: 6px; }
-
-  .two-col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  @media (max-width: 700px) {
-    .two-col { grid-template-columns: 1fr; }
+  .verdict-box {
+    background: rgba(255,255,255,0.04);
+    border-left: 3px solid #00d4ff;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 14px;
   }
 </style>
 </head>
@@ -185,110 +193,103 @@
 
   <h1>Cheapest AI Video Tools in 2026</h1>
   <p class="subtitle">
-    A real-dollar breakdown of what it actually costs to generate AI video in 2026 — covering Kling AI,
-    Runway, Pika, Luma Dream Machine, and the best remaining free tiers. Prices reflect published plans
-    as of early 2026 and are subject to change by each vendor.
+    A real-dollar breakdown of Kling, Runway, Pika, and Luma pricing — including free tiers, per-second generation costs,
+    and which tool actually gives you the most usable video for your money this year.
   </p>
 
-  <h2>Quick Comparison: Cheapest Paid Plans</h2>
+  <div class="highlight-card">
+    <strong>Quick take:</strong> Kling 2.5 remains the best value per second of generated video for most creators,
+    while Pika's free tier is the most generous for casual experimentation. Runway still leads on editing tools
+    and control, but costs roughly 2–3x more per clip than Kling or Luma at equivalent quality.
+  </div>
 
-  <div class="table-wrap">
+  <h2>At-a-Glance Pricing Comparison (2026)</h2>
+
+  <div class="card">
     <table>
       <thead>
         <tr>
           <th>Tool</th>
-          <th>Cheapest Paid Tier</th>
-          <th>Monthly Price</th>
-          <th>Approx. Cost / 5s Clip</th>
-          <th>Free Tier?</th>
+          <th>Free Tier</th>
+          <th>Cheapest Paid Plan</th>
+          <th>Est. Cost / 5s Clip</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="highlight-row">
-          <td>Pika Labs</td>
-          <td>Standard</td>
-          <td>$8/mo (annual)</td>
-          <td>~$0.06–0.10</td>
-          <td>Yes (limited credits)</td>
+        <tr>
+          <td>Kling AI 2.5</td>
+          <td>66 credits/day (~2–3 clips)</td>
+          <td>$10/mo (Standard)</td>
+          <td>~$0.10–$0.18 <span class="tag best">Best Value</span></td>
         </tr>
         <tr>
-          <td>Kling AI</td>
-          <td>Standard</td>
-          <td>$10/mo</td>
-          <td>~$0.08–0.15</td>
-          <td>Yes (daily credits)</td>
+          <td>Pika Labs 2.2</td>
+          <td>80 credits one-time + daily trickle</td>
+          <td>$10/mo (Standard)</td>
+          <td>~$0.15–$0.25</td>
         </tr>
         <tr>
           <td>Luma Dream Machine</td>
-          <td>Lite</td>
-          <td>$9.99/mo</td>
-          <td>~$0.10–0.18</td>
-          <td>Yes (very limited)</td>
+          <td>30 generations/month (watermarked)</td>
+          <td>$9.99/mo (Lite)</td>
+          <td>~$0.20–$0.35</td>
         </tr>
         <tr>
-          <td>Runway</td>
-          <td>Standard</td>
-          <td>$15/mo (annual)</td>
-          <td>~$0.20–0.35</td>
-          <td>Trial credits only</td>
+          <td>Runway Gen-4</td>
+          <td>~5 free gens (trial only)</td>
+          <td>$12/mo (Standard, billed yearly)</td>
+          <td>~$0.35–$0.60 <span class="tag pricey">Pricier</span></td>
         </tr>
       </tbody>
     </table>
+    <p style="font-size:0.85rem; color:#8a97a0; margin-top:6px;">
+      Estimates based on standard-tier credit usage for 720p–1080p, 5-second clips. Actual cost varies with resolution,
+      motion complexity, and upscaling add-ons.
+    </p>
   </div>
-  <p class="note">Per-clip costs are estimated from credit allocations divided by typical generation cost at base resolution/duration. Higher resolutions, longer durations, and upscaling cost more credits per clip.</p>
 
-  <h2>Tool-by-Tool Breakdown</h2>
-
+  <h2>Kling AI — Best Overall Value</h2>
   <div class="card">
-    <span class="badge">Best Value Overall</span>
-    <h3>Pika Labs</h3>
-    <p>Pika remains one of the most budget-friendly options in 2026, with an aggressive credit system that stretches further than competitors for short-form social clips.</p>
-    <div class="grid">
-      <div>
-        <div class="price-tag">$0 <small>/ Free</small></div>
-        <p class="note">~80 credits/month, watermarked exports, 720p cap.</p>
-      </div>
-      <div>
-        <div class="price-tag">$8 <small>/ mo (annual)</small></div>
-        <p class="note">700 credits/month, no watermark, 1080p generation.</p>
-      </div>
-      <div>
-        <div class="price-tag">$28 <small>/ mo (annual)</small></div>
-        <p class="note">Unlimited "slow" generations + 2000 fast credits.</p>
-      </div>
+    <p>
+      Kling has consistently undercut Runway and Pika on cost-per-generation since its global rollout, and 2026 pricing
+      keeps that trend going. The Standard plan at <strong>$10/month</strong> gives you 660 credits monthly, enough for
+      roughly 60–90 standard 5-second clips depending on mode (Standard vs Professional).
+    </p>
+    <h3>Plan Breakdown</h3>
+    <table>
+      <thead>
+        <tr><th>Plan</th><th>Price</th><th>Credits/Month</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Free</td><td>$0</td><td>66/day</td><td>Watermarked, daily reset</td></tr>
+        <tr><td>Standard</td><td>$10/mo</td><td>660</td><td>No watermark, 1080p</td></tr>
+        <tr><td>Pro</td><td>$25/mo</td><td>1,900</td><td>Priority queue, faster render</td></tr>
+        <tr><td>Premier</td><td>$65/mo</td><td>6,000</td><td>Commercial license included</td></tr>
+      </tbody>
+    </table>
+    <div class="verdict-box">
+      <strong>Verdict:</strong> If you're generating in bulk — social clips, B-roll, concept tests — Kling's Standard
+      tier is the cheapest way to get clean, watermark-free 1080p output in 2026.
     </div>
-    <p>A single 5-second 1080p clip typically costs 60–100 credits, putting effective cost around <strong>$0.06–$0.10 per clip</strong> on the Standard plan.</p>
   </div>
 
+  <h2>Pika Labs — Most Generous Free Tier</h2>
   <div class="card">
-    <span class="badge">Best for Volume</span>
-    <h3>Kling AI</h3>
-    <p>Kling (by Kuaishou) continues to undercut Western competitors on raw generation volume, especially for creators in need of longer clips (10s+) at lower per-second cost.</p>
-    <div class="grid">
-      <div>
-        <div class="price-tag">$0 <small>/ Free</small></div>
-        <p class="note">Daily refreshing credits, 720p, watermark on some modes.</p>
-      </div>
-      <div>
-        <div class="price-tag">$10 <small>/ mo</small></div>
-        <p class="note">660 credits/month, 1080p, faster queue priority.</p>
-      </div>
-      <div>
-        <div class="price-tag">$25 <small>/ mo</small></div>
-        <p class="note">~2000 credits/month, commercial license included.</p>
-      </div>
-    </div>
-    <p>A 5-second 1080p generation costs roughly 35–70 credits depending on model version (1.6 vs 2.x), landing around <strong>$0.08–$0.15 per clip</strong> on Standard.</p>
-  </div>
-
-  <div class="card">
-    <span class="badge">Most Cinematic Free Tier</span>
-    <h3>Luma Dream Machine</h3>
-    <p>Luma's free tier is thin in 2026, but its Lite paid plan is still priced competitively for creators who want stronger prompt adherence and physics without jumping to Runway pricing.</p>
-    <div class="grid">
-      <div>
-        <div class="price-tag">$0 <small>/ Free</small></div>
-        <p class="note">~30 generations/month, slow queue, watermarked.</p>
-      </div>
-      <div>
-        <div class="price-tag">$9.99 <small>/ mo</
+    <p>
+      Pika 2.2 leans into accessibility. The free plan's one-time credit grant plus small daily trickle makes it the
+      easiest tool to test without entering a card number. Paid tiers are competitively priced but burn credits faster
+      on longer or higher-res clips.
+    </p>
+    <table>
+      <thead>
+        <tr><th>Plan</th><th>Price</th><th>Credits/Month</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Free</td><td>$0</td><td>80 one-time + daily trickle</td><td>Watermarked</td></tr>
+        <tr><td>Standard</td><td>$10/mo</td><td>700</td><td>No watermark</td></tr>
+        <tr><td>Pro</td><td>$35/mo</td><td>2,500</td><td>Faster generation, 1080p</td></tr>
+        <tr><td>Fancy</td><td>$95/mo</td><td>10,000</td><td>Commercial use, priority rendering</td></tr>
+      </tbody>
+    </table>
+    <div class="verdict-box">
+      <strong>Verdict:</strong> Great for hobbyists and testers who want to try AI video without paying. Sc
