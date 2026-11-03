@@ -1,4 +1,9 @@
-{
+﻿{
   "platform": "hedra",
-  "plans": []
+  "plans": [
+    {"name": "Basic", "monthly_price_usd": 15, "credits_or_minutes": 1500, "unit": "credits", "offer": "or ~$12/mo yearly"},
+    {"name": "Creator", "monthly_price_usd": 30, "credits_or_minutes": 5400, "unit": "credits"},
+    {"name": "Professional", "monthly_price_usd": 75, "credits_or_minutes": 14400, "unit": "credits"},
+    {"name": "Team", "monthly_price_usd": 150, "credits_or_minutes": 28800, "unit": "credits"}
+  ]
 }
