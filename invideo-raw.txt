@@ -267,7 +267,6 @@ AI Animation Generator
 AI Ad Generator
 Video Models
 Google Veo 3.1
-Sora 2
 Kling AI
 Wan AI
 Pixverse AI

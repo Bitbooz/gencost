@@ -93,7 +93,7 @@ $0.00
 /month
 Start creating for free.
 Start free
-5 free videos/day
+5 free credits/day
 1 video generation at a time
 Limited multi-track sessions
 Limited Real-Time Swap
@@ -168,11 +168,16 @@ Monthly credits
 80 credits
 200 credits
 800 credits
-Free videos per day
-5 videos
-Unlimited videos
-Unlimited videos
-Unlimited videos
+Daily free credits
+5 credits
+5 credits
+5 credits
+5 credits
+Watermarked Mix videos
+Uses daily credits
+Unlimited
+Unlimited
+Unlimited
 No watermark
 —
 Yes

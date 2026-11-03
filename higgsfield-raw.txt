@@ -12,6 +12,8 @@ Content Factory
 New
 Playable
 New
+Mangaka
+New
 AI Influencer
 Academy
 New
@@ -21,7 +23,6 @@ Ads Studio
 Effects
 Cinema Studio
 Contests
-Contests
 Marketing Studio
 Supercomputer
 Edit
@@ -29,8 +30,8 @@ Community
 Plugins
 Canvas
 Originals
-Pricing
 Enterprise
+Pricing
 Login
 Sign up
 ©

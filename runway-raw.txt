@@ -12,6 +12,7 @@ Resources
 Enterprise
 Pricing
 Enterprise Sales
+Contact Sales
 Login
 Try Runway
 Enterprises get up to 2 months of usage free.
@@ -347,7 +348,7 @@ Gen:48
 Studios
 Creative Partners Program
 Runway Builders
-Affiliate Program
+Runway Rewards
 Talent Network
 ↗
 Company
