@@ -114,10 +114,10 @@
     </div>
   </div>
 
-  <!-- Articles + Sample Packages -->
-  <div style="max-width:1100px; margin:40px auto; padding:0 20px; display:flex; gap:24px; flex-wrap:wrap;">
-    <div style="flex:1; min-width:280px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
-      <h2 style="text-align:center; font-family:'Orbitron', sans-serif; margin-top:0;">Articles</h2>
+  <!-- Articles -->
+  <div style="max-width:900px; margin:40px auto; padding:0 20px;">
+    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Articles</h2>
+    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
       <ul style="list-style:none; padding:0; margin:0;">
         <li style="margin:10px 0;"><a href="/pages/cheapest-ai-video-tools-in-2026.html" style="color:#00d4ff; text-decoration:none;">Cheapest AI Video Tools in 2026</a></li>
         <li style="margin:10px 0;"><a href="/pages/cheapest-ai-voice-tools-in-2026.html" style="color:#00d4ff; text-decoration:none;">Cheapest AI Voice Tools in 2026</a></li>
@@ -128,18 +128,39 @@
         <li style="margin:10px 0;"><a href="/pages/best-cheap-ai-video-tools-for-youtube-2026.html" style="color:#00d4ff; text-decoration:none;">Best Cheap AI Video Tools for YouTube 2026</a></li>
       </ul>
     </div>
+  </div>
 
-    <div style="flex:1; min-width:280px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
-      <h2 style="text-align:center; font-family:'Orbitron', sans-serif; margin-top:0;">Sample Packages</h2>
-      <p style="margin:0 0 12px 0; color:#aaa; font-size:0.95em;">Examples of done-for-you packages (article + YouTube assets).</p>
-      <a href="/pages/samples/sample.html" style="color:#00d4ff; font-size:1.05em; text-decoration:none; display:block; margin-bottom:12px;">
-        Best Cheap AI Video Tools for YouTube 2026 — Sample Package
-      </a>
-      <a href="/pages/samples/voice-sample.html" style="color:#00d4ff; font-size:1.05em; text-decoration:none; display:block;">
-        Cheapest AI Voice Tools for YouTube 2026 — Sample Package
-      </a>
+  <!-- Sample Packages (automatic) -->
+  <div style="max-width:900px; margin:40px auto; padding:0 20px;">
+    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Sample Packages</h2>
+    <div id="packages-list" style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
+      Loading packages...
     </div>
   </div>
+
+  <script>
+  fetch('/pages/samples/packages.json')
+    .then(r => r.json())
+    .then(packages => {
+      const container = document.getElementById('packages-list');
+      if (!packages || packages.length === 0) {
+        container.innerHTML = '<p>No packages yet.</p>';
+        return;
+      }
+      let html = '<ul style="list-style:none; padding:0; margin:0;">';
+      packages.forEach(p => {
+        html += `<li style="margin:12px 0;">
+          <a href="${p.url}" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">${p.title}</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">${p.description || ''}</p>
+        </li>`;
+      });
+      html += '</ul>';
+      container.innerHTML = html;
+    })
+    .catch(() => {
+      document.getElementById('packages-list').innerHTML = '<p>Packages will appear here after the first one is generated.</p>';
+    });
+  </script>
 
   <div style="text-align:center; margin-top:30px;">
     <p><a href="/changelog.html" style="color:#00d4ff;">Price changes log →</a></p>
