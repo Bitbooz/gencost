@@ -13,14 +13,14 @@
       "monthly_price_usd": 399,
       "credits_or_minutes": 1200,
       "unit": "credits",
-      "offer": "Seedance 2.5 from $0.12/sec first month, Seedance 2.0 Mini at 480p from $0.007/sec first month"
+      "offer": "2 months free on yearly, first month Seedance 2.5 from $0.12/sec"
     },
     {
       "name": "Ultra",
       "monthly_price_usd": 750,
       "credits_or_minutes": 8645,
       "unit": "credits",
-      "offer": "Seedance 2.5 from $0.18/sec first month, Seedance 2.0 Mini at 480p from $0.009/sec first month"
+      "offer": "first month Seedance 2.5 from $0.18/sec"
     }
   ]
 }
