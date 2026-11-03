@@ -5,7 +5,7 @@
       "name": "Free",
       "monthly_price_usd": 0,
       "credits_or_minutes": 100,
-      "unit": "units",
+      "unit": "units/day",
       "offer": ""
     },
     {

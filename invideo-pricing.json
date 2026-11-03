@@ -6,21 +6,21 @@
       "monthly_price_usd": 10,
       "credits_or_minutes": 400,
       "unit": "credits",
-      "offer": "50% off on annual, save \u20ac120 per seat compared to monthly"
+      "offer": "50% off on annual"
     },
     {
       "name": "Plus",
       "monthly_price_usd": 30,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "50% off on annual, save \u20ac360 per seat compared to monthly"
+      "offer": "50% off on annual"
     },
     {
       "name": "Max",
       "monthly_price_usd": 250,
       "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": "Best value, 60% cheaper"
+      "offer": "50% off on annual"
     }
   ]
 }

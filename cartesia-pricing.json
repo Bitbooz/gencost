@@ -13,21 +13,21 @@
       "monthly_price_usd": 5,
       "credits_or_minutes": 100000,
       "unit": "credits",
-      "offer": "Evaluations free for limited time"
+      "offer": ""
     },
     {
       "name": "Startup",
       "monthly_price_usd": 49,
       "credits_or_minutes": 1250000,
       "unit": "credits",
-      "offer": "Evaluations free for limited time"
+      "offer": ""
     },
     {
       "name": "Scale",
       "monthly_price_usd": 299,
       "credits_or_minutes": 8000000,
       "unit": "credits",
-      "offer": "Evaluations free for limited time"
+      "offer": ""
     }
   ]
 }

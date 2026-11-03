@@ -5,14 +5,14 @@
       "name": "Free",
       "monthly_price_usd": 0,
       "credits_or_minutes": 0,
-      "unit": "",
+      "unit": "credits",
       "offer": ""
     },
     {
       "name": "Premium",
       "monthly_price_usd": 29,
       "credits_or_minutes": 0,
-      "unit": "",
+      "unit": "credits",
       "offer": "SAVE 60% on yearly"
     }
   ]

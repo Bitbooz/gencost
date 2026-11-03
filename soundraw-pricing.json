@@ -4,7 +4,7 @@
     {
       "name": "Creator",
       "monthly_price_usd": 5.99,
-      "credits_or_minutes": 0,
+      "credits_or_minutes": "unlimited",
       "unit": "tracks",
       "offer": ""
     },
@@ -25,7 +25,7 @@
     {
       "name": "Artist Unlimited",
       "monthly_price_usd": 17.49,
-      "credits_or_minutes": 0,
+      "credits_or_minutes": "unlimited",
       "unit": "tracks",
       "offer": ""
     }
