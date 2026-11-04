@@ -63,7 +63,7 @@
 <div class="overlay">
   <h1>GENCOST MUSIC</h1>
   <p class="subtitle">AI MUSIC PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-11-04 02:37</div>
+  <div class="timestamp">LAST UPDATED · 2026-11-04 09:24</div>
   <div class="grid" id="content"></div>
   <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
     <a href="/" style="color:#00d4ff;">← Back to video comparison</a><br><br>
@@ -137,7 +137,7 @@ platforms.sort((a, b) => {
 });
 for (const { name, data } of platforms) {
   const page = getPage(name);
-  const checked = data.last_checked || data.checked || "2026-11-04 02:37";
+  const checked = data.last_checked || data.checked || "2026-11-04 09:24";
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${page}" onclick="createParticles(event)">${name}</a></h2>`;
   if (source) {
