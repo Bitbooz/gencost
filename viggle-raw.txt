@@ -93,7 +93,7 @@ $0.00
 /month
 Start creating for free.
 Start free
-5 free credits/day
+Free credits refresh daily
 1 video generation at a time
 Limited multi-track sessions
 Limited Real-Time Swap
@@ -169,7 +169,7 @@ Monthly credits
 200 credits
 800 credits
 Daily free credits
-5 credits
+Refreshes daily
 5 credits
 5 credits
 5 credits
