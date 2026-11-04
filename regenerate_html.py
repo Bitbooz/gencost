@@ -16,7 +16,7 @@ data = {}
 for file in json_files:
     path = os.path.join(folder, file)
     if os.path.exists(path):
-        with open(path, encoding="utf-8") as f:
+        with open(path, encoding="utf-8-sig") as f:
             loaded = json.load(f)
             if loaded.get("plans"):
                 data[file] = loaded
@@ -291,7 +291,7 @@ voice_data = {}
 for file in voice_files:
     path = os.path.join(voice_folder, file)
     if os.path.exists(path):
-        with open(path, encoding="utf-8") as f:
+        with open(path, encoding="utf-8-sig") as f:
             loaded = json.load(f)
             if loaded.get("plans"):
                 voice_data[file] = loaded
@@ -480,7 +480,7 @@ music_data = {}
 for file in music_files:
     path = os.path.join(music_folder, file)
     if os.path.exists(path):
-        with open(path, encoding="utf-8") as f:
+        with open(path, encoding="utf-8-sig") as f:
             loaded = json.load(f)
             if loaded.get("plans"):
                 music_data[file] = loaded
