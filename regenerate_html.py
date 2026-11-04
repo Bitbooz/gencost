@@ -149,6 +149,70 @@ html = f'''<!DOCTYPE html>
     </div>
   </div>
 
+  <!-- Articles Section -->
+  <div style="max-width:900px; margin:40px auto; padding:0 20px;">
+    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Articles</h2>
+    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-video-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Video Tools in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Kling vs Runway vs Pika vs Luma — real dollar costs</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-voice-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Voice Tools in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">ElevenLabs, PlayHT, Cartesia and more</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-music-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Music Tools in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Suno vs Udio and others</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-avatar-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Avatar Tools in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">HeyGen, Synthesia and more</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-voice-cloning-tools-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Voice Cloning Tools 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Best free and paid options</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/suno-vs-udio-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Suno vs Udio Pricing 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Direct comparison</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/best-cheap-ai-video-tools-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Cheap AI Video Tools for YouTube 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Tools that work well for YouTube</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="max-width:900px; margin:20px auto; padding:0 20px;">
+    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Sample Packages</h2>
+    <p style="text-align:center; color:#aaa;">Examples of done-for-you packages (article + YouTube assets).</p>
+    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-music-generators-for-youtube-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Music Generators for YouTube in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar breakdown of the cheapest AI music tools for YouTube</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/best-cheap-ai-video-tools-for-youtube-2026-sample-package.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Cheap AI Video Tools for YouTube 2026 — Sample Package</a>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-voice-tools-for-youtube-2026-sample-package.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Voice Tools for YouTube 2026 — Sample Package</a>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/best-free-ai-voice-cloning-tools-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Voice Cloning Tools for YouTube 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar comparison of the best free AI voice cloning tools for YouTube</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-b-roll-generators-for-youtube-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI B-Roll Generators for YouTube in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar comparison package</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <div style="text-align:center; margin-top:30px;">
     <p><a href="/changelog.html" style="color:#00d4ff;">Price changes log →</a></p>
     <p><a href="/credits.html" style="color:#00d4ff;">Credits & residuals →</a></p>
