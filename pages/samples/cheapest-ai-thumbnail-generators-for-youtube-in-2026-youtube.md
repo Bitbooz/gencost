@@ -1,53 +1,55 @@
 # YouTube Package: Cheapest AI Thumbnail Generators for YouTube in 2026
 
-> **Pre-production note:** AI tool pricing changes constantly. Verify every price, credit limit, and free-tier rule on each tool's pricing page the day you record, and put the date on screen. Bracketed items like [$X] are placeholders for your verified numbers.
+> **Pre-publish note:** AI tool pricing changes constantly. All tool names below are candidates to test. Verify every price, credit limit, and free-tier rule on the day you record, and put the date on screen.
 
 ---
 
 ## Titles (5 options)
 
-1. **I Tested the Cheapest AI Thumbnail Generators for YouTube (2026 Cost Breakdown)**
-2. **Stop Overpaying: Best Budget AI Thumbnail Makers in 2026 (Cost Per Thumbnail)**
-3. **AI Thumbnails for Under $[X]/Month? I Compared 7 Tools So You Don't Have To**
-4. **Free vs Paid AI Thumbnail Generators in 2026: Which Is Actually Worth It?**
-5. **The REAL Cost of AI Thumbnails in 2026 (Cheapest Tools Ranked)**
+1. **I Tested 9 AI Thumbnail Generators: The Cheapest One Surprised Me (2026)**
+2. **Cheapest AI Thumbnail Makers in 2026 (Cost Per Thumbnail Revealed)**
+3. **Stop Overpaying for Thumbnails: Best Budget AI Tools for YouTube 2026**
+4. **$0 vs $10 vs $30: Which AI Thumbnail Generator Is Actually Worth It?**
+5. **Make Click-Worthy YouTube Thumbnails for Pennies (2026 AI Tools Ranked)**
 
-**Recommended title:** #1 or #5. Both pair a strong keyword with a clear promise. Pair with a thumbnail showing a price tag, a "$0" vs "$$$" split, and a before/after thumbnail.
+**Recommended pick:** #2. It leads with the keyword and the GenCost angle (cost per output), and "revealed" creates a curiosity gap.
+
+**Thumbnail concept for this video:** A split-screen with a big price tag ("$0.04?!") on one side and a polished thumbnail on the other. Use a shocked face, 3 words max of text ("CHEAPEST AI?"), and a high-contrast yellow and black palette.
 
 ---
 
 ## Description
 
-Want great YouTube thumbnails without a big monthly bill? In this video, GenCost breaks down the cheapest AI thumbnail generators in 2026, including real cost per thumbnail, free-tier limits, hidden fees, and which tool fits your channel size and budget.
+**Want great YouTube thumbnails without a designer or an expensive subscription?** In this video, GenCost tests the cheapest AI thumbnail generators of 2026 and breaks down the real **cost per thumbnail**, not just the monthly sticker price.
 
-**What we cover:**
-- The true cost per thumbnail, not just the sticker price
-- Free tiers that are actually usable vs. ones that are bait
-- Which tools are best for faces, text, and stylized art
-- A budget workflow that gets pro-looking results for close to $0
-- Our final ranking and picks for different creator types
+We compare free tiers, credit systems, and flat-rate plans, and look at which tools produce thumbnails that actually look good at small sizes on mobile.
 
-⏱ **Timestamps**
-0:00 – Why thumbnail costs add up
-0:45 – How we tested and scored each tool
-2:00 – Tool #1 to #7 breakdown
-11:00 – Cost-per-thumbnail comparison table
-12:30 – Best budget workflow
-14:00 – Final picks by creator type
-15:00 – Wrap-up
+⏱️ **Timestamps**
+00:00 – The hidden cost of thumbnails
+00:45 – How we tested (cost-per-thumbnail method)
+02:00 – Tier 1: Free and nearly free tools
+04:30 – Tier 2: Budget subscriptions
+07:00 – Tier 3: Pay-per-image and API options
+09:00 – Side-by-side results
+10:30 – Our cheapest pick by creator type
+12:00 – Final verdict and workflow tips
 
-🔗 **Tools mentioned** (verify and add links)
-- [Tool 1 link]
-- [Tool 2 link]
-- [Tool 3 link]
+💰 **Cost-per-thumbnail formula we use:**
+(Monthly price ÷ usable thumbnails per month) + the cost of failed generations and rerolls
 
-📊 **Free cost comparison spreadsheet:** [link]
+🔗 **Tools mentioned** (pricing checked [DATE]; verify on each site)
+- [Tool 1 – link]
+- [Tool 2 – link]
+- [Tool 3 – link]
+- [Tool 4 – link]
 
-*Disclosure: Some links may be affiliate links, which help support GenCost at no extra cost to you. Pricing was checked on [DATE] and may have changed.*
+📥 **Free download:** Our thumbnail prompt template and cost calculator → [link]
 
-👍 If this saved you money, like the video and subscribe to GenCost for more honest AI cost breakdowns.
+👍 If this saved you money, like the video and subscribe to **GenCost** for more honest AI cost breakdowns.
 
-💬 **Question for you:** What are you currently paying for thumbnails? Tell us in the comments and we'll help you find a cheaper setup.
+💬 **Question for you:** What are you paying for thumbnails right now? Tell us in the comments and we'll help you cut it.
+
+*Disclosure: Some links may be affiliate links. They never influence rankings, and all pricing and results are based on our own testing.*
 
 #YouTubeThumbnails #AITools #GenCost
 
@@ -56,32 +58,24 @@ Want great YouTube thumbnails without a big monthly bill? In this video, GenCost
 ## Script Outline
 
 ### 1. Hook (0:00–0:45)
-- Open with a stat or story: "A thumbnail designer can charge $[X] per thumbnail. If you post 3x a week, that's $[X] a year."
-- Promise: "I compared the cheapest AI thumbnail tools in 2026 and calculated the real cost per thumbnail."
-- Quick teaser of the winner and a surprising result, such as a free tool beating a paid one.
+- **Open on a pain point:** "A freelance thumbnail designer can cost $10–$50+ per thumbnail. Post 3 videos a week and that adds up fast. Can AI do it for pennies?" *(Confirm the range with current freelancer market data.)*
+- Show 3 thumbnails quickly and ask "Which one cost $0 and which cost $15?"
+- Promise: ranked tools, real cost per thumbnail, and one pick that beat expectations.
+- **Visual:** Fast cuts, price counter animation.
 
-### 2. Testing Method (0:45–2:00)
-- **Scoring criteria:**
-  - Monthly price and cost per usable thumbnail
-  - Free tier limits (credits, watermarks, resolution)
-  - Text rendering quality
-  - Face and expression quality
-  - Speed and number of retries needed
-  - Commercial usage rights
-- **Test prompt:** the same thumbnail concept in every tool (e.g., "shocked creator holding cash, bold text").
-- Explain the "cost per usable thumbnail" formula: monthly price ÷ number of thumbnails you'd actually keep.
+### 2. How We Tested (0:45–2:00)
+- Same brief for every tool: one tech-review thumbnail, one vlog, one tutorial.
+- Scoring criteria (on screen):
+  1. **Real cost per thumbnail** (including rerolls)
+  2. **Text rendering quality**
+  3. **Face and subject consistency**
+  4. **Mobile legibility** (test at tiny size)
+  5. **Speed and ease**
+  6. **Commercial use rights**
+- Explain the formula and the "hidden costs" (credits burned on bad outputs, watermarks, export limits).
 
-### 3. Tool Breakdowns (2:00–11:00)
-For each tool, spend about 75 seconds covering price, free tier, best use, weakness, and a sample output. Candidates to evaluate:
-
-| # | Category | Candidates |
-|---|----------|-----------|
-| 1 | Free / near-free general image AI | Microsoft Designer / Copilot, Google Gemini image generation |
-| 2 | Design-suite with AI | Canva, Adobe Express / Firefly |
-| 3 | Text-strong image generators | Ideogram |
-| 4 | Credit-based art generators | Leonardo AI, Midjourney |
-| 5 | Thumbnail-specific tools | Pikzels, Thumbnail.ai, VidIQ / TubeBuddy AI features |
-| 6 | Background and cutout helpers | Photoroom, remove.bg alternatives |
-| 7 | DIY / open source | Flux or Stable Diffusion run locally or via cheap cloud |
-
-- Swap in wh
+### 3. Tier 1: Free and Nearly Free (2:00–4:30)
+Candidates to test: free tiers of Canva, Adobe Express/Firefly, Leonardo, Ideogram, Microsoft Designer, and Gemini or ChatGPT image generation.
+- For each: free limits, watermark status, best use case, one weakness.
+- Show a live generation and the result.
+- **Key insight:** Free tools are often best for backgrounds and el
