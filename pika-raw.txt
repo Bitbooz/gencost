@@ -201,6 +201,9 @@ Billed monthly
 Subscribe
 to
 Creator
+Limited time
+Included:
+Free Pika H3 Flex generations every day
 Included:
 All models
 Included:
@@ -230,6 +233,9 @@ Billed monthly
 Subscribe
 to
 Fancy
+Limited time
+Included:
+Free Pika H3 Flex generations every day
 Included:
 All models
 Included:
@@ -245,6 +251,8 @@ Early access to new models (from $440/mo)
 Learn more
 about
 Fancy
+Limited time
+Creator and Fancy plans include free Pika H3 Flex generations every day.
 Find your plan
 Tell us what you make in a month. The card keeps a plan and a credit count in step with your answers.
 What do you want to make?
@@ -411,6 +419,7 @@ Creator
 Fancy
 Video
 Pika H3 Flex
+Free every day on Creator & Fancy
 768p · 5s
 10
 90
@@ -614,6 +623,8 @@ How much does Pika cost?
 Pika has a Free plan. Starter is $8/month billed annually or $10/month billed monthly; Creator is $28/month billed annually or $35/month billed monthly; Fancy is from $76/month billed annually or from $95/month billed monthly. Enterprise pricing is custom. Every plan includes all models.
 Does Pika’s Free plan have a watermark?
 No. Free plan exports have no watermark.
+Does Pika offer free generations?
+Yes, for a limited time. Creator and Fancy plans include free Pika H3 Flex generations every day. Sign in to see today's count.
 How much does a Seedance 2.5 video cost on Pika?
 Seedance 2.5 is included on every paid Pika plan from $10/month. A 5-second 720p clip costs about 122 credits, around $1.36 on Starter.
 Which Pika plans include commercial use?
@@ -634,6 +645,7 @@ Pika plans at a glance
 Free: $0; credit packs available; no watermark. Starter: $10/month billed monthly or $8/month billed annually ($96/year); 900 credits per month; no watermark; commercial license included. Creator: $35/month billed monthly or $28/month billed annually ($336/year); 3,150 credits per month; no watermark; commercial license included. Fancy: from $95/month billed monthly or from $76/month billed annually (from $912/year); 8,550+ credits per month; no watermark; commercial license included.
 Enterprise pricing is custom.
 All individual plans include access to all models. Generations use credits; annual plans are paid upfront and credits refresh monthly.
+Limited time: Creator and Fancy plans include free Pika H3 Flex generations every day.
 Basic, Standard, Pro and Unlimited are legacy individual plan names. Current individual plans are Free, Starter, Creator and Fancy; Enterprise has custom pricing. For an existing legacy subscription, check your account’s Subscription page for its terms.
 Last updated:
 October 28, 2026
