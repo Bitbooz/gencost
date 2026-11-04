@@ -182,6 +182,14 @@ html = f'''<!DOCTYPE html>
           <a href="/pages/best-cheap-ai-video-tools-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Cheap AI Video Tools for YouTube 2026</a>
           <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Tools that work well for YouTube</p>
         </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/best-free-ai-video-tools-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Video Tools 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Free tiers that are actually usable</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/runway-vs-kling-pricing-comparison-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Runway vs Kling Pricing Comparison 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Side-by-side cost breakdown</p>
+        </li>
       </ul>
     </div>
   </div>
@@ -192,22 +200,8 @@ html = f'''<!DOCTYPE html>
     <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
       <ul style="list-style:none; padding:0; margin:0;">
         <li style="margin:12px 0;">
-          <a href="/pages/cheapest-ai-music-generators-for-youtube-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Music Generators for YouTube in 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar breakdown of the cheapest AI music tools for YouTube</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/best-cheap-ai-video-tools-for-youtube-2026-sample-package.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Cheap AI Video Tools for YouTube 2026 — Sample Package</a>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/cheapest-ai-voice-tools-for-youtube-2026-sample-package.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Voice Tools for YouTube 2026 — Sample Package</a>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/best-free-ai-voice-cloning-tools-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Voice Cloning Tools for YouTube 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar comparison of the best free AI voice cloning tools for YouTube</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/cheapest-ai-b-roll-generators-for-youtube-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI B-Roll Generators for YouTube in 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar comparison package</p>
+          <a href="/pages/sample-package-youtube-ai-tools.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Sample Package — YouTube AI Tools</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Example done-for-you package</p>
         </li>
       </ul>
     </div>
