@@ -13,14 +13,14 @@
       "monthly_price_usd": 11,
       "credits_or_minutes": 15,
       "unit": "downloads",
-      "offer": "26% OFF! Billed Annually"
+      "offer": "26% OFF billed annually"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 33,
       "credits_or_minutes": 300,
       "unit": "downloads",
-      "offer": "33% OFF! Billed Annually"
+      "offer": "33% OFF billed annually"
     }
   ]
 }

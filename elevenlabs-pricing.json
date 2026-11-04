@@ -13,14 +13,14 @@
       "monthly_price_usd": 6,
       "credits_or_minutes": 30000,
       "unit": "credits",
-      "offer": "first month $1, 2 months free on yearly"
+      "offer": "$1 first month or 30,000 credits for $1; 2 months free on yearly"
     },
     {
       "name": "Creator",
       "monthly_price_usd": 22,
       "credits_or_minutes": 121000,
       "unit": "credits",
-      "offer": "first month $11, 2 months free on yearly"
+      "offer": "$11 first month; 2 months free on yearly"
     },
     {
       "name": "Pro",

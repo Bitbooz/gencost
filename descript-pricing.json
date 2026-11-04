@@ -2,24 +2,31 @@
   "platform": "descript",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 1,
+      "unit": "hours",
+      "offer": "Saving up to 35% on annual"
+    },
+    {
       "name": "Hobbyist",
       "monthly_price_usd": 24,
       "credits_or_minutes": 10,
-      "unit": "media hours",
+      "unit": "hours",
       "offer": "Saving up to 35% on annual"
     },
     {
       "name": "Creator",
       "monthly_price_usd": 35,
       "credits_or_minutes": 30,
-      "unit": "media hours",
+      "unit": "hours",
       "offer": "Saving up to 35% on annual"
     },
     {
       "name": "Business",
       "monthly_price_usd": 65,
       "credits_or_minutes": 40,
-      "unit": "media hours",
+      "unit": "hours",
       "offer": "Saving up to 35% on annual"
     }
   ]

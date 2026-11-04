@@ -4,30 +4,30 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
-      "credits_or_minutes": 0,
+      "credits_or_minutes": 5,
       "unit": "credits",
-      "offer": ""
+      "offer": "Free credits refresh daily"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 7.99,
       "credits_or_minutes": 80,
       "unit": "credits",
-      "offer": "20% off yearly"
+      "offer": "20% off on yearly"
     },
     {
       "name": "Live",
       "monthly_price_usd": 15.99,
       "credits_or_minutes": 200,
       "unit": "credits",
-      "offer": "20% off yearly"
+      "offer": "20% off on yearly"
     },
     {
       "name": "Max",
       "monthly_price_usd": 63.99,
       "credits_or_minutes": 800,
       "unit": "credits",
-      "offer": "20% off yearly"
+      "offer": "20% off on yearly"
     }
   ]
 }

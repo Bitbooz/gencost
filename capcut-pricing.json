@@ -13,14 +13,14 @@
       "monthly_price_usd": 399,
       "credits_or_minutes": 1200,
       "unit": "credits",
-      "offer": "2 months free on yearly, first month Seedance 2.5 from $0.12/sec"
+      "offer": "2 months free on yearly; Seedance 2.5 from $0.12/sec first month"
     },
     {
       "name": "Ultra",
       "monthly_price_usd": 750,
       "credits_or_minutes": 8645,
       "unit": "credits",
-      "offer": "first month Seedance 2.5 from $0.18/sec"
+      "offer": "Seedance 2.5 from $0.18/sec first month"
     }
   ]
 }
