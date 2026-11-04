@@ -8,7 +8,7 @@ json_files = [
     "kling-pricing.json", "synthesia-pricing.json", "pika-pricing.json",
     "luma-pricing.json", "viggle-pricing.json", "invideo-pricing.json",
     "capcut-pricing.json", "ltx-pricing.json", "hailuo-pricing.json",
-    "veo-pricing.json", "hedra-pricing.json", "sora-pricing.json",
+    "veo-pricing.json", "sora-pricing.json",
     "vidu-pricing.json", "krea-pricing.json"
 ]
 
@@ -174,7 +174,6 @@ function cleanName(name) {{
   if (n.includes("viggle")) return "Viggle";
   if (n.includes("hailuo")) return "Hailuo AI";
   if (n.includes("veo")) return "Google Veo";
-  if (n.includes("hedra")) return "Hedra";
   if (n.includes("sora")) return "Sora";
   if (n.includes("vidu")) return "Vidu";
   if (n.includes("krea")) return "Krea";
@@ -186,7 +185,7 @@ function getPage(name) {{
     "Kling AI":"pages/kling.html","Synthesia":"pages/synthesia.html","Pika":"pages/pika.html",
     "Luma":"pages/luma.html","Viggle":"pages/viggle.html","InVideo":"pages/invideo.html",
     "CapCut":"pages/capcut.html","LTX Studio":"pages/ltx.html","Hailuo AI":"pages/hailuo.html",
-    "Google Veo":"pages/veo.html","Hedra":"pages/hedra.html","Sora":"pages/sora.html",
+    "Google Veo":"pages/veo.html","Sora":"pages/sora.html",
     "Vidu":"pages/vidu.html","Krea":"pages/krea.html"
   }};
   return map[name] || "#";
@@ -223,7 +222,7 @@ function createParticles(e) {{
     }}, 16);
   }}
 }}
-const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Hedra","Sora","Vidu","Krea"];
+const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Sora","Vidu","Krea"];
 const content = document.getElementById("content");
 const platforms = [];
 for (const [file, data] of Object.entries(allData)) {{
