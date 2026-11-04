@@ -200,6 +200,24 @@ html = f'''<!DOCTYPE html>
     <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
       <ul style="list-style:none; padding:0; margin:0;">
         <li style="margin:12px 0;">
+          <a href="/pages/samples/cheapest-ai-music-generators-for-youtube-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Music Generators for YouTube in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar breakdown of the cheapest AI music tools for YouTube</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/samples/cheapest-ai-b-roll-generators-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI B-Roll Generators for YouTube in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar comparison package</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/samples/best-free-ai-voice-cloning-tools-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Voice Cloning Tools for YouTube 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar comparison of the best free AI voice cloning tools for YouTube</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/samples/best-free-ai-script-writers-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Script Writers for YouTube 2026</a>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Tools for YouTube Thumbnails 2026</a>
+        </li>
+        <li style="margin:12px 0;">
           <a href="/pages/sample-package-youtube-ai-tools.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Sample Package — YouTube AI Tools</a>
           <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Example done-for-you package</p>
         </li>
