@@ -1,4 +1,7 @@
-﻿import json
+﻿cd C:\Users\frode\Desktop\gencost
+
+@'
+import json
 import os
 from datetime import datetime
 
@@ -192,6 +195,15 @@ html = f'''<!DOCTYPE html>
           <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Side-by-side cost breakdown</p>
         </li>
       </ul>
+    </div>
+  </div>
+
+  <!-- Emerging Tools -->
+  <div style="max-width:900px; margin:40px auto; padding:0 20px;">
+    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Emerging Tools</h2>
+    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px; text-align:center;">
+      <p style="margin:0 0 12px 0; color:#ddd;">There are many smaller companies building AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find.</p>
+      <a href="/pages/emerging.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">See emerging tools →</a>
     </div>
   </div>
 
@@ -736,3 +748,9 @@ for (const {{ name, data }} of platforms) {{
 with open(os.path.join(folder, "music.html"), "w", encoding="utf-8") as f:
     f.write(music_html)
 print("music.html regenerated.")
+'@ | Set-Content -Path "regenerate_html.py" -Encoding UTF8
+
+python regenerate_html.py
+git add index.html regenerate_html.py
+git commit -m "Add Emerging Tools box"
+git push origin main
