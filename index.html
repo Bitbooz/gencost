@@ -89,13 +89,13 @@
   <span style="font-size:0.9em;">~$10: Kling Standard or Pika Starter &nbsp;|&nbsp; ~$30: Runway Pro, Luma Plus or HeyGen Creator</span>
 </div>
 <p style="color:#aaa; font-size:0.9rem; text-align:center;">
-  <strong>Last updated:</strong> 2026-11-05 16:21<br>
+  <strong>Last updated:</strong> 2026-11-05 16:34<br>
   Prices change often — always confirm inside the tool before generating.
 </p>
 <div class="overlay">
   <h1>GENCOST</h1>
   <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-11-05 16:21</div>
+  <div class="timestamp">LAST UPDATED · 2026-11-05 16:34</div>
   <div style="max-width:1400px; margin:20px auto 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:0 20px;">
     <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px; text-align:center;">
       <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
@@ -165,6 +165,15 @@
           <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Side-by-side cost breakdown</p>
         </li>
       </ul>
+    </div>
+  </div>
+
+  <!-- Emerging Tools -->
+  <div style="max-width:900px; margin:40px auto; padding:0 20px;">
+    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Emerging Tools</h2>
+    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px; text-align:center;">
+      <p style="margin:0 0 12px 0; color:#ddd;">There are many smaller companies building AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find.</p>
+      <a href="/pages/emerging.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">See emerging tools →</a>
     </div>
   </div>
 
@@ -293,7 +302,7 @@ if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards be
 
 for (const { name, data } of platforms) {
   const page = getPage(name);
-  const checked = data.last_checked || data.checked || "2026-11-05 16:21";
+  const checked = data.last_checked || data.checked || "2026-11-05 16:34";
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${page}" onclick="createParticles(event)">${name}</a></h2>`;
   if (source) {
