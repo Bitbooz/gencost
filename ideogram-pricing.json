@@ -1,0 +1,26 @@
+{
+  "platform": "Ideogram",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 25,
+      "unit": "prompts",
+      "offer": "daily"
+    },
+    {
+      "name": "Basic",
+      "monthly_price_usd": 7,
+      "credits_or_minutes": 1000,
+      "unit": "credits",
+      "offer": "approx"
+    },
+    {
+      "name": "Plus",
+      "monthly_price_usd": 20,
+      "credits_or_minutes": 3500,
+      "unit": "credits",
+      "offer": "approx"
+    }
+  ]
+}

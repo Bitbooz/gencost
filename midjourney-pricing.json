@@ -1,0 +1,103 @@
+{
+  "platform": "Midjourney",
+  "plans": [
+    {
+      "name": "Basic",
+      "monthly_price_usd": 10,
+      "credits_or_minutes": 200,
+      "unit": "fast hours",
+      "offer": "approx"
+    },
+    {
+      "name": "Standard",
+      "monthly_price_usd": 30,
+      "credits_or_minutes": 900,
+      "unit": "fast hours",
+      "offer": "approx"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 60,
+      "credits_or_minutes": 1800,
+      "unit": "fast hours",
+      "offer": "approx"
+    }
+  ]
+}
+Fil 2:
+
+powershell
+notepad leonardo-pricing.json
+Lim inn dette, lagre og lukk:
+
+json
+{
+  "platform": "Leonardo",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 150,
+      "unit": "tokens",
+      "offer": "daily"
+    },
+    {
+      "name": "Apprentice",
+      "monthly_price_usd": 12,
+      "credits_or_minutes": 8500,
+      "unit": "tokens",
+      "offer": "approx"
+    },
+    {
+      "name": "Artisan",
+      "monthly_price_usd": 24,
+      "credits_or_minutes": 25000,
+      "unit": "tokens",
+      "offer": "approx"
+    }
+  ]
+}
+Fil 3:
+
+powershell
+notepad ideogram-pricing.json
+Lim inn dette, lagre og lukk:
+
+json
+{
+  "platform": "Ideogram",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 25,
+      "unit": "prompts",
+      "offer": "daily"
+    },
+    {
+      "name": "Basic",
+      "monthly_price_usd": 7,
+      "credits_or_minutes": 1000,
+      "unit": "credits",
+      "offer": "approx"
+    },
+    {
+      "name": "Plus",
+      "monthly_price_usd": 20,
+      "credits_or_minutes": 3500,
+      "unit": "credits",
+      "offer": "approx"
+    }
+  ]
+}
+3. Oppdater siden og push
+powershell
+python regenerate_html.py
+git add .
+git pull origin main
+git commit -m "Add Midjourney, Leonardo, Ideogram pricing"
+git push origin main
+Filene skal ligge direkte i C:\Users\frode\Desktop\gencost\ (samme mappe som index.html og regenerate_html.py).
+
+Gjør det i denne rekkefølgen. Si ifra hvis noe feiler.
+
