@@ -89,13 +89,13 @@
   <span style="font-size:0.9em;">~$10: Kling Standard or Pika Starter &nbsp;|&nbsp; ~$30: Runway Pro, Luma Plus or HeyGen Creator</span>
 </div>
 <p style="color:#aaa; font-size:0.9rem; text-align:center;">
-  <strong>Last updated:</strong> 2026-11-05 08:12<br>
+  <strong>Last updated:</strong> 2026-11-05 08:16<br>
   Prices change often — always confirm inside the tool before generating.
 </p>
 <div class="overlay">
   <h1>GENCOST</h1>
   <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-11-05 08:12</div>
+  <div class="timestamp">LAST UPDATED · 2026-11-05 08:16</div>
   <div style="max-width:1400px; margin:20px auto 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:0 20px;">
     <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px; text-align:center;">
       <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
@@ -173,6 +173,15 @@
     <h2 style="text-align:center; font-family:'Orbitron', sans-serif; letter-spacing:2px; margin-bottom:8px;">Sample Packages</h2>
     <p style="text-align:center; opacity:0.7; margin-top:0; margin-bottom:24px;">Done-for-you SEO article + YouTube assets</p>
     <div id="packages-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px;"></div>
+  </div>
+
+  <!-- Order Packages -->
+  <div style="max-width:900px; margin:30px auto; padding:0 20px; text-align:center;">
+    <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:16px; padding:28px;">
+      <h2 style="margin:0 0 10px 0; font-family:'Orbitron', sans-serif; letter-spacing:1px;">Need a custom package?</h2>
+      <p style="margin:0 0 18px 0; opacity:0.85;">Done-for-you SEO article + YouTube assets based on real GenCost data.</p>
+      <a href="/order.html" style="display:inline-block; background:linear-gradient(90deg,#00d4ff,#7b68ee); color:#0a0a0f; font-weight:600; padding:12px 28px; border-radius:12px; text-decoration:none; font-size:1.05em;">Bestill pakke / Order Package</a>
+    </div>
   </div>
 
   <div style="text-align:center; margin-top:30px;">
@@ -280,7 +289,7 @@ if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards be
 
 for (const { name, data } of platforms) {
   const page = getPage(name);
-  const checked = data.last_checked || data.checked || "2026-11-05 08:12";
+  const checked = data.last_checked || data.checked || "2026-11-05 08:16";
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${page}" onclick="createParticles(event)">${name}</a></h2>`;
   if (source) {
