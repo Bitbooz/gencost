@@ -7,8 +7,6 @@ Audio
 MCP
 API
 Genjutsu
-Shorts
-New
 Content Factory
 Playable
 Mangaka
