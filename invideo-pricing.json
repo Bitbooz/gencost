@@ -3,24 +3,24 @@
   "plans": [
     {
       "name": "Starter",
-      "monthly_price_usd": 10,
+      "monthly_price_usd": 20,
       "credits_or_minutes": 400,
       "unit": "credits",
-      "offer": "50% off for first-time AI creators on annual billing, save \u20ac120 per seat, unlimited images for 30 days"
+      "offer": "50% off on annual, billed at \u20ac10 per seat/mo, Save \u20ac120 per seat, unlimited images 30 days, extra discount after signup"
     },
     {
       "name": "Plus",
-      "monthly_price_usd": 30,
+      "monthly_price_usd": 60,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "50% off on annual billing, save \u20ac360 per seat, unlimited images for 30 days"
+      "offer": "50% off on annual, billed at \u20ac30 per seat/mo, Save \u20ac360 per seat, unlimited images 30 days, extra discount after signup"
     },
     {
       "name": "Max",
       "monthly_price_usd": 250,
       "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": "Best value, unlimited images for 30 days on annual plans"
+      "offer": "60% cheaper, unlimited images 30 days, extra discount after signup"
     }
   ]
 }
