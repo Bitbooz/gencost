@@ -1,12 +1,13 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cheapest AI Music Tools in 2026 | GenCost</title>
-<meta name="description" content="A cost breakdown of Suno, Udio, AIVA, Soundraw and their free tiers — find the cheapest AI music generator for your budget in 2026.">
+<title>Cheapest AI Music Tools in 2026: Suno vs Udio vs AIVA vs Soundraw | GenCost</title>
+<meta name="description" content="A cost breakdown of the cheapest AI music generation tools in 2026 — Suno, Udio, AIVA, Soundraw, and the best free tiers compared.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#0a0a0f;
@@ -14,295 +15,321 @@
     --accent:#00d4ff;
     --card-bg:rgba(255,255,255,0.04);
     --card-border:rgba(255,255,255,0.1);
+    --muted:#9aa0a6;
   }
   *{box-sizing:border-box;}
   body{
+    margin:0;
     background:var(--bg);
     color:var(--text);
     font-family:'Inter', sans-serif;
-    margin:0;
-    padding:0;
-    line-height:1.65;
-  }
-  .wrap{
-    max-width:960px;
-    margin:0 auto;
-    padding:40px 20px 80px;
+    line-height:1.7;
+    padding-bottom:60px;
   }
   h1,h2,h3{
     font-family:'Orbitron', sans-serif;
     color:#fff;
-    letter-spacing:0.5px;
+    letter-spacing:0.3px;
   }
-  h1{
-    font-size:2.2rem;
-    margin-bottom:8px;
+  a{color:var(--accent); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  .container{
+    max-width:960px;
+    margin:0 auto;
+    padding:0 20px;
   }
-  h2{
-    font-size:1.5rem;
-    margin-top:50px;
-    border-left:4px solid var(--accent);
-    padding-left:14px;
-  }
-  h3{
-    font-size:1.15rem;
-    color:var(--accent);
-    margin-bottom:6px;
-  }
-  a{
-    color:var(--accent);
-    text-decoration:none;
-  }
-  a:hover{
-    text-decoration:underline;
-  }
+
   .back-link{
     display:inline-block;
-    margin-bottom:30px;
+    margin:24px 0;
     font-size:0.95rem;
     color:var(--accent);
-    border:1px solid var(--card-border);
-    padding:8px 16px;
-    border-radius:10px;
-    background:var(--card-bg);
   }
-  .intro{
+
+  header.hero{
+    padding:30px 0 20px;
+    border-bottom:1px solid var(--card-border);
+    margin-bottom:40px;
+  }
+
+  header.hero h1{
+    font-size:2.2rem;
+    margin-bottom:10px;
+    background:linear-gradient(90deg,#fff,var(--accent));
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+
+  header.hero p.subtitle{
+    color:var(--muted);
     font-size:1.05rem;
-    color:#c8c8c8;
-    max-width:720px;
+    max-width:700px;
   }
+
+  .meta-tags{
+    display:flex;
+    gap:10px;
+    margin-top:16px;
+    flex-wrap:wrap;
+  }
+  .tag{
+    background:rgba(0,212,255,0.1);
+    border:1px solid rgba(0,212,255,0.3);
+    color:var(--accent);
+    padding:4px 12px;
+    border-radius:20px;
+    font-size:0.8rem;
+    font-weight:600;
+  }
+
+  section{
+    margin-bottom:48px;
+  }
+
+  section h2{
+    font-size:1.5rem;
+    margin-bottom:16px;
+    padding-bottom:10px;
+    border-bottom:2px solid rgba(0,212,255,0.3);
+  }
+
+  section h3{
+    font-size:1.15rem;
+    color:var(--accent);
+    margin-top:28px;
+    margin-bottom:10px;
+  }
+
+  p{margin:0 0 14px;}
+
   .card{
     background:var(--card-bg);
     border:1px solid var(--card-border);
-    border-radius:16px;
-    padding:24px 28px;
-    margin:20px 0;
+    border-radius:14px;
+    padding:22px 24px;
+    margin-bottom:20px;
   }
-  .grid{
+
+  .card-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:16px;
+    margin-top:20px;
   }
-  @media (max-width:700px){
-    .grid{grid-template-columns:1fr;}
+
+  .tool-card{
+    background:var(--card-bg);
+    border:1px solid var(--card-border);
+    border-radius:14px;
+    padding:20px;
+    transition:transform 0.2s ease, border-color 0.2s ease;
   }
+  .tool-card:hover{
+    transform:translateY(-4px);
+    border-color:var(--accent);
+  }
+  .tool-card h3{
+    margin-top:0;
+    font-size:1.1rem;
+  }
+  .price-tag{
+    font-family:'Orbitron', sans-serif;
+    font-size:1.5rem;
+    color:var(--accent);
+    margin:8px 0;
+  }
+  .price-tag span{
+    font-size:0.85rem;
+    color:var(--muted);
+    font-family:'Inter', sans-serif;
+  }
+
   table{
     width:100%;
     border-collapse:collapse;
-    margin-top:14px;
-    font-size:0.95rem;
+    margin:20px 0;
+    background:var(--card-bg);
+    border:1px solid var(--card-border);
+    border-radius:12px;
+    overflow:hidden;
+  }
+  thead{
+    background:rgba(0,212,255,0.08);
   }
   th, td{
-    text-align:left;
     padding:12px 14px;
+    text-align:left;
     border-bottom:1px solid var(--card-border);
+    font-size:0.92rem;
   }
   th{
     color:var(--accent);
     font-family:'Orbitron', sans-serif;
-    font-weight:500;
-    font-size:0.85rem;
+    font-weight:600;
+    font-size:0.82rem;
     text-transform:uppercase;
     letter-spacing:0.5px;
   }
-  tr:hover td{
-    background:rgba(255,255,255,0.02);
+  tbody tr{
+    transition:background 0.15s ease;
   }
-  .price-tag{
-    display:inline-block;
-    background:rgba(0,212,255,0.1);
-    color:var(--accent);
-    border:1px solid rgba(0,212,255,0.3);
-    padding:3px 10px;
-    border-radius:8px;
-    font-size:0.85rem;
-    font-weight:600;
-    margin-top:4px;
-  }
-  .badge-free{
-    background:rgba(0,255,150,0.08);
-    color:#5fffb0;
-    border:1px solid rgba(0,255,150,0.25);
-  }
-  .verdict{
+  tbody tr:hover{
     background:rgba(0,212,255,0.06);
-    border:1px solid rgba(0,212,255,0.3);
   }
+  tbody tr:last-child td{
+    border-bottom:none;
+  }
+
+  .highlight{
+    border:1px solid rgba(0,212,255,0.5);
+    background:rgba(0,212,255,0.06);
+  }
+
+  .badge-best{
+    display:inline-block;
+    background:var(--accent);
+    color:#0a0a0f;
+    font-size:0.7rem;
+    font-weight:700;
+    padding:2px 8px;
+    border-radius:6px;
+    margin-left:8px;
+    vertical-align:middle;
+  }
+
+  .callout{
+    border-left:3px solid var(--accent);
+    background:rgba(0,212,255,0.05);
+    padding:16px 20px;
+    border-radius:0 10px 10px 0;
+    margin:20px 0;
+  }
+
   ul{
     padding-left:20px;
   }
   li{
-    margin-bottom:6px;
+    margin-bottom:8px;
   }
-  .updated{
-    margin-top:60px;
+
+  .verdict-box{
+    background:linear-gradient(145deg, rgba(0,212,255,0.08), rgba(255,255,255,0.03));
+    border:1px solid rgba(0,212,255,0.3);
+    border-radius:16px;
+    padding:28px;
+    margin-top:30px;
+  }
+  .verdict-box h2{
+    border:none;
+    margin-top:0;
+  }
+
+  footer.last-updated{
+    margin-top:50px;
     padding-top:20px;
     border-top:1px solid var(--card-border);
+    color:var(--muted);
     font-size:0.85rem;
-    color:#888;
     text-align:center;
   }
-  .small-note{
-    font-size:0.85rem;
-    color:#999;
-    margin-top:10px;
+
+  @media (max-width:600px){
+    header.hero h1{font-size:1.6rem;}
+    .card, section h2{font-size:1.1rem;}
   }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="container">
 
-  <a class="back-link" href="https://getgencost.com/">&larr; Back to GenCost</a>
+  <a class="back-link" href="https://getgencost.com/">&larr; Back to GenCost Home</a>
 
-  <h1>Cheapest AI Music Tools in 2026</h1>
-  <p class="intro">
-    AI music generation has moved fast — what cost real studio time in 2023 now costs
-    a few cents per track. We broke down the actual monthly and per-song costs of the
-    biggest players: <strong>Suno, Udio, AIVA, and Soundraw</strong>, plus their free tiers,
-    so you can figure out which one is cheapest for your actual use case.
-  </p>
+  <header class="hero">
+    <h1>Cheapest AI Music Tools in 2026</h1>
+    <p class="subtitle">Suno, Udio, AIVA, and Soundraw compared on real monthly pricing, free-tier limits, and cost-per-song — so you know exactly what a track actually costs before you generate it.</p>
+    <div class="meta-tags">
+      <span class="tag">AI Music</span>
+      <span class="tag">Pricing Guide</span>
+      <span class="tag">2026 Update</span>
+    </div>
+  </header>
 
-  <h2>Quick Comparison Table</h2>
-  <div class="card">
+  <section>
+    <h2>Quick Answer</h2>
+    <div class="card">
+      <p>If you just want to mess around and make a few songs a month, <strong>Suno's free tier</strong> and <strong>Udio's free tier</strong> are both genuinely usable at $0. If you're making music regularly, <strong>Soundraw's flat $19.99/mo</strong> plan is the cheapest way to get unlimited downloadable tracks without credit math. AIVA is the priciest of the four but the only one built around royalty-free licensing for commercial use from the ground up.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pricing Snapshot (2026)</h2>
+    <div class="card-grid">
+      <div class="tool-card highlight">
+        <h3>Suno</h3>
+        <div class="price-tag">$0 <span>free tier</span></div>
+        <p style="color:var(--muted); font-size:0.88rem;">50 credits/day (~10 songs). Pro from $10/mo for 2,500 credits/mo.</p>
+      </div>
+      <div class="tool-card">
+        <h3>Udio</h3>
+        <div class="price-tag">$0 <span>free tier</span></div>
+        <p style="color:var(--muted); font-size:0.88rem;">1,200 credits/mo free (~10 songs). Standard $10/mo for 10,800 credits.</p>
+      </div>
+      <div class="tool-card">
+        <h3>Soundraw</h3>
+        <div class="price-tag">$19.99 <span>/mo</span></div>
+        <p style="color:var(--muted); font-size:0.88rem;">No free download tier, but unlimited generations &amp; downloads on paid plan.</p>
+      </div>
+      <div class="tool-card">
+        <h3>AIVA</h3>
+        <div class="price-tag">$15 <span>/mo</span></div>
+        <p style="color:var(--muted); font-size:0.88rem;">Free tier exists but downloads are heavily restricted/watermarked.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Full Pricing Breakdown</h2>
     <table>
       <thead>
         <tr>
           <th>Tool</th>
           <th>Free Tier</th>
           <th>Cheapest Paid Plan</th>
-          <th>Approx. Cost / Song</th>
           <th>Commercial Use</th>
+          <th>Approx. Cost / Song</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Suno</td>
-          <td>50 credits/day (~10 songs)</td>
-          <td>$10/mo (Pro)</td>
-          <td>~$0.04–$0.10</td>
+          <td>50 credits/day, non-commercial</td>
+          <td>$10/mo (Pro, 2,500 credits)</td>
           <td>Paid plans only</td>
+          <td>~$0.20</td>
         </tr>
         <tr>
           <td>Udio</td>
-          <td>~10 songs/mo</td>
+          <td>1,200 credits/mo, non-commercial</td>
           <td>$10/mo (Standard)</td>
-          <td>~$0.08–$0.15</td>
           <td>Paid plans only</td>
-        </tr>
-        <tr>
-          <td>AIVA</td>
-          <td>3 downloads/mo (watermark-free limited)</td>
-          <td>$15/mo (Standard)</td>
-          <td>~$0.50–$1.00</td>
-          <td>Standard plan+</td>
+          <td>~$0.19</td>
         </tr>
         <tr>
           <td>Soundraw</td>
-          <td>Create free, pay to download</td>
-          <td>$16.99/mo (Creator)</td>
-          <td>~$0.60–$1.40</td>
-          <td>Creator plan+</td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="small-note">Prices reflect publicly listed 2026 plans at time of writing. Credit/song costs assume typical monthly usage, not burst usage.</p>
-  </div>
-
-  <h2>Tool Breakdowns</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>Suno</h3>
-      <span class="price-tag badge-free">Free: 50 credits/day</span>
-      <span class="price-tag">Pro: $10/mo</span>
-      <span class="price-tag">Premier: $30/mo</span>
-      <p>
-        Suno remains the cheapest way to get usable full songs with vocals. The free tier
-        gives roughly 10 songs/day for non-commercial use, which is generous for hobbyists.
-        The $10/mo Pro plan unlocks commercial rights and ~2,500 credits/month
-        (roughly 500 song generations), making the per-song cost among the lowest in the market.
-      </p>
-      <ul>
-        <li>Best for: budget creators, YouTube background music, quick demos</li>
-        <li>Free tier commercial use: <strong>No</strong></li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Udio</h3>
-      <span class="price-tag badge-free">Free: ~10 songs/mo</span>
-      <span class="price-tag">Standard: $10/mo</span>
-      <span class="price-tag">Pro: $30/mo</span>
-      <p>
-        Udio's free plan is more limited than Suno's but produces strong audio quality.
-        The $10/mo Standard plan gives around 1,200 credits monthly (roughly 120–150 full songs),
-        putting its per-song cost slightly higher than Suno but still extremely cheap compared
-        to licensing stock music.
-      </p>
-      <ul>
-        <li>Best for: higher-fidelity output on a similar budget to Suno</li>
-        <li>Free tier commercial use: <strong>No</strong></li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>AIVA</h3>
-      <span class="price-tag badge-free">Free: 3 downloads/mo</span>
-      <span class="price-tag">Standard: $15/mo</span>
-      <span class="price-tag">Pro: $49/mo</span>
-      <p>
-        AIVA focuses on instrumental and orchestral composition rather than full vocal tracks,
-        targeting game devs, filmmakers, and composers. The free plan is usable only for
-        non-commercial downloads with limits. The Standard plan at $15/mo allows 15 downloads
-        with commercial rights, which works out to roughly $1/track if you use the full quota.
-      </p>
-      <ul>
-        <li>Best for: instrumental scores, film/game composers</li>
-        <li>Free tier commercial use: <strong>No</strong></li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Soundraw</h3>
-      <span class="price-tag badge-free">Free: unlimited creation, no download</span>
-      <span class="price-tag">Creator: $16.99/mo</span>
-      <span class="price-tag">Artist: $23.99/mo</span>
-      <p>
-        Soundraw lets you generate and preview tracks for free indefinitely, but you must
-        subscribe to actually download. It's priced closer to a royalty-free stock music
-        subscription than a pay-per-generation tool — best value if you need consistent
-        monthly downloads rather than occasional one-off tracks.
-      </p>
-      <ul>
-        <li>Best for: content creators needing regular royalty-free background music</li>
-        <li>Free tier commercial use: <strong>No (preview only)</strong></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <h2>Free Tier Summary</h2>
-  <div class="card">
-    <table>
-      <thead>
-        <tr>
-          <th>Tool</th>
-          <th>What You Actually Get Free</th>
-          <th>Catch</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Suno</td>
-          <td>~10 full songs/day with vocals</td>
-          <td>No commercial rights, watermark-free but owned under Suno's free-tier terms</td>
-        </tr>
-        <tr>
-          <td>Udio</td>
-          <td>~10 songs/month</td>
-          <td>Lower monthly cap, no commercial use</td>
+          <td>Generate free, can't download</td>
+          <td>$19.99/mo (unlimited)</td>
+          <td>Included, paid tier</td>
+          <td>~$0.07 (at 300 songs/mo)</td>
         </tr>
         <tr>
           <td>AIVA</td>
-          <td>3 MP3 downlo
+          <td>3 downloads/mo, limited license</td>
+          <td>$15/mo (Standard)</td>
+          <td>Included, paid tier</td>
+          <td>~$0.50–$1 (typical use)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="color:var(--muted); font-size:0.85rem;">Cost-per-song is estimated based on typical
