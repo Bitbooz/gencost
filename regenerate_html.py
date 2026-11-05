@@ -194,35 +194,11 @@ html = f'''<!DOCTYPE html>
     </div>
   </div>
 
-  <div style="max-width:900px; margin:20px auto; padding:0 20px;">
-    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Sample Packages</h2>
-    <p style="text-align:center; color:#aaa;">Examples of done-for-you packages (article + YouTube assets).</p>
-    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
-      <ul style="list-style:none; padding:0; margin:0;">
-        <li style="margin:12px 0;">
-          <a href="/pages/samples/cheapest-ai-music-generators-for-youtube-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Music Generators for YouTube in 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar breakdown of the cheapest AI music tools for YouTube</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/samples/cheapest-ai-b-roll-generators-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI B-Roll Generators for YouTube in 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar comparison package</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/samples/best-free-ai-voice-cloning-tools-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Voice Cloning Tools for YouTube 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar comparison of the best free AI voice cloning tools for YouTube</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/samples/best-free-ai-script-writers-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Script Writers for YouTube 2026</a>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Tools for YouTube Thumbnails 2026</a>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/sample-package-youtube-ai-tools.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Sample Package — YouTube AI Tools</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Example done-for-you package</p>
-        </li>
-      </ul>
-    </div>
+  <!-- Sample Packages -->
+  <div style="max-width:900px; margin:50px auto 30px; padding:0 20px;">
+    <h2 style="text-align:center; font-family:'Orbitron', sans-serif; letter-spacing:2px; margin-bottom:8px;">Sample Packages</h2>
+    <p style="text-align:center; opacity:0.7; margin-top:0; margin-bottom:24px;">Done-for-you SEO article + YouTube assets</p>
+    <div id="packages-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px;"></div>
   </div>
 
   <div style="text-align:center; margin-top:30px;">
@@ -348,6 +324,25 @@ for (const {{ name, data }} of platforms) {{
   html += "</div>";
   content.innerHTML += html;
 }}
+
+// Load Sample Packages dynamically
+fetch('/pages/samples/packages.json')
+  .then(r => r.json())
+  .then(packages => {{
+    const grid = document.getElementById('packages-grid');
+    if (!grid || !packages.length) return;
+    packages.forEach(p => {{
+      grid.innerHTML += `
+        <a href="${{p.url}}" style="text-decoration:none; color:inherit;">
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:20px;">
+            <div style="font-size:0.75em; color:#00d4ff; margin-bottom:6px;">SAMPLE PACKAGE</div>
+            <div style="font-size:1.15em; font-weight:500; margin-bottom:8px;">${{p.title}}</div>
+            <div style="font-size:0.9em; opacity:0.7;">${{p.description || 'Real-dollar comparison package'}}</div>
+          </div>
+        </a>`;
+    }});
+  }})
+  .catch(() => {{}});
 </script>
 </body>
 </html>'''
