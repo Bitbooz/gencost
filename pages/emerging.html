@@ -1,106 +1,94 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emerging AI Tools | GenCost</title>
-<meta name="description" content="Lesser-known and emerging AI tools for video, voice and music — prices and notes as of early 2026.">
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
-  body { margin: 0; font-family: 'Inter', sans-serif; color: #e0e0e0; background: url('/Background.jpg') center/cover fixed no-repeat, linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%); }
-  .overlay { min-height: 100vh; padding: 40px 20px 60px; background: rgba(10, 10, 15, 0.75); }
-  h1 { font-family: 'Orbitron', sans-serif; text-align: center; background: linear-gradient(90deg, #00d4ff, #7b68ee); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px; }
-  .subtitle { text-align: center; max-width: 700px; margin: 0 auto 36px auto; opacity: 0.85; }
-  .section { max-width: 900px; margin: 40px auto 10px auto; font-family: 'Orbitron', sans-serif; font-size: 1.4em; color: #00d4ff; text-align: center; }
-  .card { max-width: 860px; margin: 16px auto; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px 24px; }
-  .card h2 { margin: 0 0 8px 0; font-size: 1.25em; }
-  .card h2 a { color: #00d4ff; text-decoration: none; }
-  .card h2 a:hover { text-decoration: underline; }
-  .price { color: #7b68ee; font-weight: 500; }
-  .note { font-size: 0.95em; opacity: 0.9; line-height: 1.45; }
-  a { color: #00d4ff; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .back { display: block; text-align: center; margin: 40px 0 10px 0; }
-  .updated { text-align: center; font-size: 0.85em; opacity: 0.6; margin-top: 10px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emerging AI Tools | GenCost</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<div class="overlay">
-  <h1>Emerging Tools</h1>
-  <p class="subtitle">Smaller and less known AI tools for video, voice and music. These are not always the biggest names, but they can be cheaper or better for specific use cases. Prices change often — always verify on the official site.</p>
+  <div class="container">
+    <a href="/" class="back">← Back to GenCost</a>
 
-  <div class="section">Video / Film</div>
-  <div class="card">
-    <h2><a href="https://seed.bytedance.com/" target="_blank">Seedance (ByteDance)</a></h2>
-    <div class="note">Long clips (up to 30s), multi-reference consistency, native audio. Strong physics and character consistency. <span class="price">~$14/mo</span> on some hosts.</div>
-  </div>
-  <div class="card">
-    <h2><a href="https://pixverse.ai/" target="_blank">PixVerse</a></h2>
-    <div class="note">Multi-shot, native audio, camera control. Good for social and cinematic work. <span class="price">~$8/mo</span> (Standard, yearly).</div>
-  </div>
-  <div class="card">
-    <h2><a href="https://wan.video/" target="_blank">Wan (Alibaba)</a></h2>
-    <div class="note">High-quality text/image-to-video. Competitive API pricing. Frequently praised for prompt adherence and value.</div>
-  </div>
-  <div class="card">
-    <h2><a href="https://openart.ai/" target="_blank">OpenArt</a></h2>
-    <div class="note">Multi-model platform (Seedance, Kling, etc.) + character tools. <span class="price">$14/mo</span> Starter.</div>
-  </div>
-  <div class="card">
-    <h2><a href="https://grok.com/" target="_blank">Grok Imagine Video</a></h2>
-    <div class="note">Fast drafts with lip-synced speech. Platform-dependent pricing.</div>
-  </div>
+    <h1>Emerging Tools</h1>
+    <p>Smaller and less known AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find. Prices change often — always confirm inside the tool.</p>
 
-  <div class="section">Sound / Voice</div>
-  <div class="card">
-    <h2><a href="https://fish.audio/" target="_blank">Fish Audio</a></h2>
-    <div class="note">Expressive TTS, emotion tags, voice design and cloning. Strong for characters and narration. <span class="price">~$15/mo</span> (Plus).</div>
-  </div>
-  <div class="card">
-    <h2><a href="https://www.hume.ai/" target="_blank">Hume AI</a></h2>
-    <div class="note">Emotion-aware voices and conversational speech. Free with credits; paid from ~$3/mo.</div>
-  </div>
-  <div class="card">
-    <h2><a href="https://www.resemble.ai/" target="_blank">Resemble AI</a></h2>
-    <div class="note">Voice cloning + watermarking/security features. Pay-as-you-go.</div>
-  </div>
-
-  <div class="section">Music</div>
-  <div class="card">
-    <h2><a href="https://www.mureka.ai/" target="_blank">Mureka</a></h2>
-    <div class="note">Full songs with vocals, stems, remix and studio. Free limited; Pro ~$8/mo (annual).</div>
-  </div>
-  <div class="card">
-    <h2><a href="https://stableaudio.com/" target="_blank">Stable Audio (Stability AI)</a></h2>
-    <div class="note">Instrumentals, SFX, multi-track. Free 50 credits/mo; Solo $12/mo. Commercially safer data.</div>
-  </div>
-  <div class="card">
-    <h2><a href="https://www.flowmusic.app/" target="_blank">Flow Music (formerly Riffusion)</a></h2>
-    <div class="note">Full songs, cheaper paid tier. ~$6/mo.</div>
-  </div>
-  <div class="card">
-    <h2><a href="https://treblo.com/" target="_blank">Treblo (formerly Sonauto)</a></h2>
-    <div class="note">Unlimited-style generation with free options.</div>
-  </div>
-  <div class="card">
-    <h2><a href="https://www.beatoven.ai/" target="_blank">Beatoven</a></h2>
-    <div class="note">Scene-matched background / soundtrack music. Freemium.</div>
-  </div>
-
-  <div class="section">Quick Recommendations</div>
-  <div class="card">
-    <div class="note">
-      <strong>Longer or more consistent cinematic clips:</strong> Seedance or PixVerse<br>
-      <strong>Cheapest strong video value:</strong> Wan or PixVerse<br>
-      <strong>Expressive or directed voice:</strong> Fish Audio or Hume<br>
-      <strong>Full original songs with vocals:</strong> Mureka<br>
-      <strong>Safe instrumental / SFX for video:</strong> Stable Audio<br>
-      <strong>Multi-model testing in one place:</strong> OpenArt
+    <h2>Video</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Seedance</h3>
+        <p>ByteDance model. Often one of the cheaper high-quality options depending on platform.</p>
+        <p><strong>From ~$14/mo</strong> (varies by host)</p>
+        <a href="https://www.seedance.tv" target="_blank" rel="noopener">Official site →</a>
+      </div>
+      <div class="card">
+        <h3>PixVerse</h3>
+        <p>Own models + access to others. Generous free tier and relatively low paid plans.</p>
+        <p><strong>Free + from ~$8–10/mo</strong></p>
+        <a href="https://pixverse.ai" target="_blank" rel="noopener">Official site →</a>
+      </div>
+      <div class="card">
+        <h3>Wan</h3>
+        <p>Alibaba’s open model. Available on several platforms, often competitive on price.</p>
+        <p><strong>Varies by host</strong></p>
+        <a href="https://wan.video" target="_blank" rel="noopener">Official site →</a>
+      </div>
+      <div class="card">
+        <h3>OpenArt</h3>
+        <p>Aggregator with many models including Seedance, Kling, and others.</p>
+        <p><strong>From ~$12–15/mo</strong></p>
+        <a href="https://openart.ai" target="_blank" rel="noopener">Official site →</a>
+      </div>
     </div>
-  </div>
 
-  <a href="/" class="back">← Back to GenCost</a>
-  <div class="updated">Last updated: early November 2026. Prices and features change frequently.</div>
-</div>
+    <h2>Voice</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Fish Audio</h3>
+        <p>Strong voice cloning and TTS. Often cheaper than the big names for similar quality.</p>
+        <p><strong>Free tier + low paid plans</strong></p>
+        <a href="https://fish.audio" target="_blank" rel="noopener">Official site →</a>
+      </div>
+      <div class="card">
+        <h3>Hume</h3>
+        <p>Emotion-focused voice. Interesting for more natural, expressive output.</p>
+        <p><strong>Free + paid tiers</strong></p>
+        <a href="https://www.hume.ai" target="_blank" rel="noopener">Official site →</a>
+      </div>
+      <div class="card">
+        <h3>Resemble AI</h3>
+        <p>Voice cloning specialist. Good for custom voices and real-time use cases.</p>
+        <p><strong>From ~$30/mo</strong></p>
+        <a href="https://www.resemble.ai" target="_blank" rel="noopener">Official site →</a>
+      </div>
+    </div>
+
+    <h2>Music</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mureka</h3>
+        <p>AI music generator with songwriting features.</p>
+        <p><strong>Free + paid</strong></p>
+        <a href="https://www.mureka.ai" target="_blank" rel="noopener">Official site →</a>
+      </div>
+      <div class="card">
+        <h3>Stable Audio</h3>
+        <p>From Stability AI. Good for instrumental and background tracks.</p>
+        <p><strong>Free + from ~$12/mo</strong></p>
+        <a href="https://stableaudio.com" target="_blank" rel="noopener">Official site →</a>
+      </div>
+      <div class="card">
+        <h3>Beatoven</h3>
+        <p>Royalty-free AI music, often used for video background tracks.</p>
+        <p><strong>Free + paid plans</strong></p>
+        <a href="https://www.beatoven.ai" target="_blank" rel="noopener">Official site →</a>
+      </div>
+    </div>
+
+    <p class="note">Prices and features change frequently. Always check the official site for current plans before signing up.</p>
+  </div>
 </body>
 </html>
+
+
+
