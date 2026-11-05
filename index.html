@@ -89,13 +89,13 @@
   <span style="font-size:0.9em;">~$10: Kling Standard or Pika Starter &nbsp;|&nbsp; ~$30: Runway Pro, Luma Plus or HeyGen Creator</span>
 </div>
 <p style="color:#aaa; font-size:0.9rem; text-align:center;">
-  <strong>Last updated:</strong> 2026-11-04 09:24<br>
+  <strong>Last updated:</strong> 2026-11-05 07:51<br>
   Prices change often — always confirm inside the tool before generating.
 </p>
 <div class="overlay">
   <h1>GENCOST</h1>
   <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-11-04 09:24</div>
+  <div class="timestamp">LAST UPDATED · 2026-11-05 07:51</div>
   <div style="max-width:1400px; margin:20px auto 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:0 20px;">
     <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px; text-align:center;">
       <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
@@ -168,19 +168,34 @@
     </div>
   </div>
 
-  <!-- Sample Packages -->
-  <div style="max-width:900px; margin:50px auto 30px; padding:0 20px;">
-    <h2 style="text-align:center; font-family:'Orbitron', sans-serif; letter-spacing:2px; margin-bottom:8px;">Sample Packages</h2>
-    <p style="text-align:center; opacity:0.7; margin-top:0; margin-bottom:24px;">Done-for-you SEO article + YouTube assets</p>
-    <div id="packages-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px;"></div>
-  </div>
-
-  <!-- Order Packages -->
-  <div style="max-width:900px; margin:30px auto; padding:0 20px; text-align:center;">
-    <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:16px; padding:28px;">
-      <h2 style="margin:0 0 10px 0; font-family:'Orbitron', sans-serif; letter-spacing:1px;">Need a custom package?</h2>
-      <p style="margin:0 0 18px 0; opacity:0.85;">Done-for-you SEO article + YouTube assets based on real GenCost data.</p>
-      <a href="/order.html" style="display:inline-block; background:linear-gradient(90deg,#00d4ff,#7b68ee); color:#0a0a0f; font-weight:600; padding:12px 28px; border-radius:12px; text-decoration:none; font-size:1.05em;">Bestill pakke / Order Package</a>
+  <div style="max-width:900px; margin:20px auto; padding:0 20px;">
+    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Sample Packages</h2>
+    <p style="text-align:center; color:#aaa;">Examples of done-for-you packages (article + YouTube assets).</p>
+    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li style="margin:12px 0;">
+          <a href="/pages/samples/cheapest-ai-music-generators-for-youtube-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Music Generators for YouTube in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar breakdown of the cheapest AI music tools for YouTube</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/samples/cheapest-ai-b-roll-generators-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI B-Roll Generators for YouTube in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar comparison package</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/samples/best-free-ai-voice-cloning-tools-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Voice Cloning Tools for YouTube 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Real-dollar comparison of the best free AI voice cloning tools for YouTube</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/samples/best-free-ai-script-writers-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Script Writers for YouTube 2026</a>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Tools for YouTube Thumbnails 2026</a>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/sample-package-youtube-ai-tools.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Sample Package — YouTube AI Tools</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Example done-for-you package</p>
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -289,7 +304,7 @@ if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards be
 
 for (const { name, data } of platforms) {
   const page = getPage(name);
-  const checked = data.last_checked || data.checked || "2026-11-04 09:24";
+  const checked = data.last_checked || data.checked || "2026-11-05 07:51";
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${page}" onclick="createParticles(event)">${name}</a></h2>`;
   if (source) {
@@ -307,25 +322,6 @@ for (const { name, data } of platforms) {
   html += "</div>";
   content.innerHTML += html;
 }
-
-// Load Sample Packages dynamically
-fetch('/pages/samples/packages.json')
-  .then(r => r.json())
-  .then(packages => {
-    const grid = document.getElementById('packages-grid');
-    if (!grid || !packages.length) return;
-    packages.forEach(p => {
-      grid.innerHTML += `
-        <a href="${p.url}" style="text-decoration:none; color:inherit;">
-          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:20px;">
-            <div style="font-size:0.75em; color:#00d4ff; margin-bottom:6px;">SAMPLE PACKAGE</div>
-            <div style="font-size:1.15em; font-weight:500; margin-bottom:8px;">${p.title}</div>
-            <div style="font-size:0.9em; opacity:0.7;">${p.description || 'Real-dollar comparison package'}</div>
-          </div>
-        </a>`;
-    });
-  })
-  .catch(() => {});
 </script>
 </body>
 </html>
