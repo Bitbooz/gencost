@@ -89,13 +89,13 @@
   <span style="font-size:0.9em;">~$10: Kling Standard or Pika Starter &nbsp;|&nbsp; ~$30: Runway Pro, Luma Plus or HeyGen Creator</span>
 </div>
 <p style="color:#aaa; font-size:0.9rem; text-align:center;">
-  <strong>Last updated:</strong> 2026-11-05 08:16<br>
+  <strong>Last updated:</strong> 2026-11-05 15:53<br>
   Prices change often — always confirm inside the tool before generating.
 </p>
 <div class="overlay">
   <h1>GENCOST</h1>
   <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-11-05 08:16</div>
+  <div class="timestamp">LAST UPDATED · 2026-11-05 15:53</div>
   <div style="max-width:1400px; margin:20px auto 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:0 20px;">
     <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px; text-align:center;">
       <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
@@ -212,6 +212,9 @@ function cleanName(name) {
   if (n.includes("sora")) return "Sora";
   if (n.includes("vidu")) return "Vidu";
   if (n.includes("krea")) return "Krea";
+  if (n.includes("midjourney")) return "Midjourney";
+  if (n.includes("leonardo")) return "Leonardo";
+  if (n.includes("ideogram")) return "Ideogram";
   return name;
 }
 function getPage(name) {
@@ -221,7 +224,8 @@ function getPage(name) {
     "Luma":"pages/luma.html","Viggle":"pages/viggle.html","InVideo":"pages/invideo.html",
     "CapCut":"pages/capcut.html","LTX Studio":"pages/ltx.html","Hailuo AI":"pages/hailuo.html",
     "Google Veo":"pages/veo.html","Sora":"pages/sora.html",
-    "Vidu":"pages/vidu.html","Krea":"pages/krea.html"
+    "Vidu":"pages/vidu.html","Krea":"pages/krea.html",
+    "Midjourney":"pages/midjourney.html","Leonardo":"pages/leonardo.html","Ideogram":"pages/ideogram.html"
   };
   return map[name] || "#";
 }
@@ -257,7 +261,7 @@ function createParticles(e) {
     }, 16);
   }
 }
-const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Sora","Vidu","Krea"];
+const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Sora","Vidu","Krea","Midjourney","Leonardo","Ideogram"];
 const content = document.getElementById("content");
 const platforms = [];
 for (const [file, data] of Object.entries(allData)) {
@@ -289,7 +293,7 @@ if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards be
 
 for (const { name, data } of platforms) {
   const page = getPage(name);
-  const checked = data.last_checked || data.checked || "2026-11-05 08:16";
+  const checked = data.last_checked || data.checked || "2026-11-05 15:53";
   const source = data.source || data.source_url || "";
   let html = `<div class="card"><h2><a href="${page}" onclick="createParticles(event)">${name}</a></h2>`;
   if (source) {

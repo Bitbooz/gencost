@@ -9,7 +9,8 @@ json_files = [
     "luma-pricing.json", "viggle-pricing.json", "invideo-pricing.json",
     "capcut-pricing.json", "ltx-pricing.json", "hailuo-pricing.json",
     "veo-pricing.json", "sora-pricing.json",
-    "vidu-pricing.json", "krea-pricing.json"
+    "vidu-pricing.json", "krea-pricing.json",
+    "midjourney-pricing.json", "leonardo-pricing.json", "ideogram-pricing.json"
 ]
 
 data = {}
@@ -238,6 +239,9 @@ function cleanName(name) {{
   if (n.includes("sora")) return "Sora";
   if (n.includes("vidu")) return "Vidu";
   if (n.includes("krea")) return "Krea";
+  if (n.includes("midjourney")) return "Midjourney";
+  if (n.includes("leonardo")) return "Leonardo";
+  if (n.includes("ideogram")) return "Ideogram";
   return name;
 }}
 function getPage(name) {{
@@ -247,7 +251,8 @@ function getPage(name) {{
     "Luma":"pages/luma.html","Viggle":"pages/viggle.html","InVideo":"pages/invideo.html",
     "CapCut":"pages/capcut.html","LTX Studio":"pages/ltx.html","Hailuo AI":"pages/hailuo.html",
     "Google Veo":"pages/veo.html","Sora":"pages/sora.html",
-    "Vidu":"pages/vidu.html","Krea":"pages/krea.html"
+    "Vidu":"pages/vidu.html","Krea":"pages/krea.html",
+    "Midjourney":"pages/midjourney.html","Leonardo":"pages/leonardo.html","Ideogram":"pages/ideogram.html"
   }};
   return map[name] || "#";
 }}
@@ -283,7 +288,7 @@ function createParticles(e) {{
     }}, 16);
   }}
 }}
-const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Sora","Vidu","Krea"];
+const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Sora","Vidu","Krea","Midjourney","Leonardo","Ideogram"];
 const content = document.getElementById("content");
 const platforms = [];
 for (const [file, data] of Object.entries(allData)) {{
