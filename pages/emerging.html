@@ -1,17 +1,86 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emerging AI Tools | GenCost</title>
-  <link rel="stylesheet" href="/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: #e0e0e0;
+      background: url('/Background.jpg') center/cover fixed no-repeat,
+                  radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
+                  radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
+                  linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+    }
+    .overlay {
+      min-height: 100vh;
+      padding: 40px 20px 60px;
+      background: rgba(10, 10, 15, 0.75);
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.6em;
+      letter-spacing: 3px;
+      margin: 0 0 10px 0;
+      background: linear-gradient(90deg, #00d4ff, #7b68ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .back {
+      color: #00d4ff;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 16px;
+    }
+    .card h3 {
+      margin: 0 0 10px 0;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.3em;
+    }
+    .card a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .note {
+      text-align: center;
+      opacity: 0.7;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
+<div class="overlay">
+  <div style="max-width:1100px; margin:0 auto;">
     <a href="/" class="back">← Back to GenCost</a>
 
     <h1>Emerging Tools</h1>
-    <p>Smaller and less known AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find. Prices change often — always confirm inside the tool.</p>
+    <p style="text-align:center; opacity:0.85; max-width:700px; margin:0 auto 30px;">Smaller and less known AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find. Prices change often — always confirm inside the tool.</p>
 
     <h2>Video</h2>
     <div class="cards">
@@ -87,8 +156,7 @@
 
     <p class="note">Prices and features change frequently. Always check the official site for current plans before signing up.</p>
   </div>
+</div>
 </body>
 </html>
-
-
 
