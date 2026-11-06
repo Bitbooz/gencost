@@ -3,24 +3,24 @@
   "plans": [
     {
       "name": "Starter",
-      "monthly_price_usd": 20,
+      "monthly_price_usd": 10,
       "credits_or_minutes": 400,
       "unit": "credits",
-      "offer": "50% off on annual, billed at \u20ac10 per seat/mo, Save \u20ac120 per seat, unlimited images 30 days, extra discount after signup"
+      "offer": "50% off on annual, save \u20ac120 per seat"
     },
     {
       "name": "Plus",
-      "monthly_price_usd": 60,
+      "monthly_price_usd": 30,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "50% off on annual, billed at \u20ac30 per seat/mo, Save \u20ac360 per seat, unlimited images 30 days, extra discount after signup"
+      "offer": "50% off on annual, save \u20ac360 per seat"
     },
     {
       "name": "Max",
       "monthly_price_usd": 250,
       "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": "60% cheaper, unlimited images 30 days, extra discount after signup"
+      "offer": "50% off on annual"
     }
   ]
 }
