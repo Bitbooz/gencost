@@ -7,8 +7,11 @@
 <style>
   body { font-family: system-ui, sans-serif; background:#0a0a0f; color:#e0e0e0; margin:0; padding:40px 20px; line-height:1.6; }
   .container { max-width:700px; margin:0 auto; }
-  a { color:#00d4ff; }
-  h1 { font-size:2em; margin-bottom:8px; }
+  a { color:#00d4ff; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  h1 { font-size:2.2em; margin-bottom:8px; }
+  .box { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:24px; margin:24px 0; }
+  .price { font-weight:600; color:#00d4ff; margin:12px 0; }
 </style>
 </head>
 <body>
@@ -16,12 +19,11 @@
   <a href="/">← Back to GenCost</a>
   <h1>Fish Audio</h1>
   <p>AI Voice Pricing – Real Dollar Cost</p>
-  <p>Strong voice cloning and TTS. Often cheaper than the big names for similar quality.</p>
-  <h2>Plans</h2>
-  <p><strong>Free</strong>: ~8,000 credits/mo (~7 min)</p>
-  <p><strong>Plus</strong>: $15/mo ($11/mo yearly) · ~200 min</p>
-  <p><strong>Pro</strong>: $100/mo ($75/mo yearly) · ~1,620 min</p>
-  <p>Prices checked: 2026-11-06 · <a href="https://fish.audio" target="_blank" rel="noopener">Official site</a></p>
+  <div class="box">
+    <p>Strong voice cloning and TTS. Often cheaper than the big names for similar quality. Good free tier.</p>
+    <p class="price">Free tier + low paid plans</p>
+    <p>Prices checked: 2026-11-06 · <a href="https://fish.audio" target="_blank" rel="noopener">Official site →</a></p>
+  </div>
   <p>Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></p>
 </div>
 </body>
