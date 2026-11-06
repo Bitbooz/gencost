@@ -1,345 +1,60 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suno vs Udio Pricing 2026 — Full Cost Comparison | GenCost</title>
-<meta name="description" content="A detailed 2026 pricing breakdown of Suno vs Udio AI music generators — plans, per-song costs, credit systems, commercial rights, and which is cheaper for your use case.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Suno vs Udio Pricing Comparison 2026 | GenCost</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-
-  body {
-    background-color: #0a0a0f;
-    color: #e0e0e0;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.7;
-    padding: 0 20px 60px;
-  }
-
-  .wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .back-link {
-    display: inline-block;
-    margin: 30px 0 10px;
-    color: #00d4ff;
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-  }
-
-  .back-link:hover {
-    text-decoration: underline;
-  }
-
-  header.hero {
-    padding: 30px 0 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    margin-bottom: 40px;
-  }
-
-  h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 700;
-    font-size: 2.2rem;
-    color: #ffffff;
-    line-height: 1.3;
-    margin-bottom: 14px;
-  }
-
-  .subtitle {
-    color: #a0a0a8;
-    font-size: 1.05rem;
-    max-width: 700px;
-  }
-
-  h2 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: #00d4ff;
-    margin: 50px 0 20px;
-  }
-
-  h3 {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 500;
-    font-size: 1.15rem;
-    color: #ffffff;
-    margin: 30px 0 14px;
-  }
-
-  p {
-    margin-bottom: 16px;
-    color: #c9c9d1;
-  }
-
-  .card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 14px;
-    padding: 24px 26px;
-    margin-bottom: 24px;
-  }
-
-  .card h3 {
-    margin-top: 0;
-  }
-
-  .grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  @media (max-width: 700px) {
-    .grid-2 { grid-template-columns: 1fr; }
-  }
-
-  .badge {
-    display: inline-block;
-    background: rgba(0,212,255,0.12);
-    color: #00d4ff;
-    font-size: 0.78rem;
-    font-weight: 600;
-    padding: 4px 10px;
-    border-radius: 20px;
-    margin-bottom: 12px;
-    letter-spacing: 0.3px;
-  }
-
-  .price-tag {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.8rem;
-    color: #ffffff;
-    margin: 6px 0 4px;
-  }
-
-  .price-tag span {
-    font-size: 0.95rem;
-    color: #a0a0a8;
-    font-family: 'Inter', sans-serif;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0 30px;
-    background: rgba(255,255,255,0.02);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  th, td {
-    text-align: left;
-    padding: 13px 16px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    font-size: 0.95rem;
-  }
-
-  th {
-    background: rgba(0,212,255,0.08);
-    color: #00d4ff;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    font-size: 0.82rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  tr:hover td {
-    background: rgba(255,255,255,0.03);
-  }
-
-  td strong {
-    color: #ffffff;
-  }
-
-  ul {
-    margin: 0 0 18px 20px;
-    color: #c9c9d1;
-  }
-
-  li {
-    margin-bottom: 8px;
-  }
-
-  .verdict-box {
-    background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(0,212,255,0.02));
-    border: 1px solid rgba(0,212,255,0.25);
-    border-radius: 14px;
-    padding: 26px;
-    margin: 30px 0;
-  }
-
-  .verdict-box h3 {
-    color: #00d4ff;
-    margin-top: 0;
-  }
-
-  .cost-highlight {
-    font-family: 'Orbitron', sans-serif;
-    color: #00d4ff;
-    font-weight: 600;
-  }
-
-  .note {
-    font-size: 0.85rem;
-    color: #8a8a92;
-    font-style: italic;
-  }
-
-  footer {
-    margin-top: 60px;
-    padding-top: 24px;
-    border-top: 1px solid rgba(255,255,255,0.08);
-    color: #8a8a92;
-    font-size: 0.85rem;
-    text-align: center;
-  }
-
-  footer a {
-    color: #00d4ff;
-    text-decoration: none;
-  }
+body { font-family: system-ui, sans-serif; background:#0a0a0f; color:#e0e0e0; margin:0; padding:40px 20px; line-height:1.6; }
+.container { max-width:900px; margin:0 auto; }
+a { color:#00d4ff; text-decoration:none; }
+a:hover { text-decoration:underline; }
+h1 { font-size:2.2em; margin-bottom:8px; }
+h2 { margin-top:40px; font-size:1.4em; color:#aaa; }
+.box { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:24px; margin:20px 0; }
+table { width:100%; border-collapse:collapse; margin:16px 0; }
+th, td { padding:12px; text-align:left; border-bottom:1px solid rgba(255,255,255,0.1); }
+th { color:#00d4ff; }
+.note { font-size:0.85em; opacity:0.7; margin-top:40px; }
 </style>
 </head>
 <body>
+<div class="container">
+<a href="/">â† Back to GenCost</a>
+<h1>Suno vs Udio Pricing Comparison 2026</h1>
+<p>Real dollar cost comparison for AI music generators.</p>
 
-<div class="wrapper">
+<div class="box">
+<strong>Quick summary</strong><br>
+Cheapest paid: Both start around $8â€“10/mo<br>
+Best free tier: Both offer free generations<br>
+Best for songs: Suno<br>
+Best for instrumentals: Udio<br>
+Last checked: 2026-11-06
+</div>
 
-  <a href="https://getgencost.com/" class="back-link">← Back to GenCost</a>
+<h2>Side-by-side pricing</h2>
+<table>
+<tr><th>Plan</th><th>Price</th><th>Songs / Credits</th><th>Notes</th></tr>
+<tr><td>Suno Pro</td><td>~$10/mo</td><td>~500 songs</td><td>Strong songwriting</td></tr>
+<tr><td>Udio Pro</td><td>~$10/mo</td><td>~600 songs</td><td>Good for instrumentals</td></tr>
+<tr><td>Suno Premier</td><td>~$30/mo</td><td>~2000 songs</td><td>Higher volume</td></tr>
+<tr><td>Udio Pro+</td><td>~$30/mo</td><td>~2000+ songs</td><td>Higher volume</td></tr>
+</table>
 
-  <header class="hero">
-    <h1>Suno vs Udio Pricing 2026: The Full Cost Breakdown</h1>
-    <p class="subtitle">Both platforms turn text prompts into full songs in under a minute. But their pricing models work very differently once you factor in credits, generations per song, and commercial usage rights. Here's what each song actually costs in 2026.</p>
-  </header>
+<div class="box">
+<strong>Real-world example</strong><br>
+50 full songs per month:<br>
+Both tools are in a similar price range. Test both free tiers first.
+</div>
 
-  <h2>Quick Summary</h2>
-  <div class="grid-2">
-    <div class="card">
-      <span class="badge">SUNO</span>
-      <h3>Pricing Model</h3>
-      <p>Monthly/annual subscription with credit allowances. Credits are spent per generation (2 clips per generation).</p>
-      <div class="price-tag">$10–$30<span>/month</span></div>
-      <p class="note">Pro and Premier tiers, billed monthly or annually with a discount.</p>
-    </div>
-    <div class="card">
-      <span class="badge">UDIO</span>
-      <h3>Pricing Model</h3>
-      <p>Monthly/annual subscription with credit allowances. Credits spent per generation (2 clips per generation, similar structure).</p>
-      <div class="price-tag">$10–$30<span>/month</span></div>
-      <p class="note">Standard and Pro tiers, billed monthly or annually with a discount.</p>
-    </div>
-  </div>
+<div class="box">
+<strong>Verdict</strong><br>
+Prices are close. Choose based on sound quality and style preference rather than cost.
+</div>
 
-  <h2>Suno Pricing Plans (2026)</h2>
-  <table>
-    <tr>
-      <th>Plan</th>
-      <th>Monthly Price</th>
-      <th>Annual Price (per mo)</th>
-      <th>Credits / Month</th>
-      <th>Commercial Use</th>
-    </tr>
-    <tr>
-      <td>Free</td>
-      <td>$0</td>
-      <td>—</td>
-      <td>50 credits (~10 songs)</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><strong>Pro</strong></td>
-      <td>$10</td>
-      <td>$8</td>
-      <td>2,500 credits (~500 songs)</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><strong>Premier</strong></td>
-      <td>$30</td>
-      <td>$24</td>
-      <td>10,000 credits (~2,000 songs)</td>
-      <td>Yes, with higher ownership %</td>
-    </tr>
-  </table>
-  <p class="note">Each "song" generation produces 2 clip variations and costs roughly 5 credits. Unused credits roll over up to a cap on paid plans.</p>
-
-  <h2>Udio Pricing Plans (2026)</h2>
-  <table>
-    <tr>
-      <th>Plan</th>
-      <th>Monthly Price</th>
-      <th>Annual Price (per mo)</th>
-      <th>Credits / Month</th>
-      <th>Commercial Use</th>
-    </tr>
-    <tr>
-      <td>Free</td>
-      <td>$0</td>
-      <td>—</td>
-      <td>1,200 credits (~10 songs)</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><strong>Standard</strong></td>
-      <td>$10</td>
-      <td>$8</td>
-      <td>12,000 credits (~400 songs)</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><strong>Pro</strong></td>
-      <td>$30</td>
-      <td>$24</td>
-      <td>48,000 credits (~1,600 songs)</td>
-      <td>Yes, high-quality downloads</td>
-    </tr>
-  </table>
-  <p class="note">Udio's credit numbers look larger but each generation consumes more credits (~30 per generation), so effective song output is comparable to Suno at similar price points.</p>
-
-  <h2>Real Cost Per Song</h2>
-  <p>Raw credit counts are misleading — what matters is cost per usable song output. Here's the effective math based on list pricing and typical credits-per-generation.</p>
-  <table>
-    <tr>
-      <th>Plan</th>
-      <th>Platform</th>
-      <th>Est. Songs / Month</th>
-      <th>Cost per Song</th>
-    </tr>
-    <tr>
-      <td>Entry Paid Tier</td>
-      <td>Suno Pro ($10)</td>
-      <td>~500</td>
-      <td><strong>$0.02</strong></td>
-    </tr>
-    <tr>
-      <td>Entry Paid Tier</td>
-      <td>Udio Standard ($10)</td>
-      <td>~400</td>
-      <td><strong>$0.025</strong></td>
-    </tr>
-    <tr>
-      <td>Top Tier</td>
-      <td>Suno Premier ($30)</td>
-      <td>~2,000</td>
-      <td><strong>$0.015</strong></td>
-    </tr>
-    <tr>
-      <td>Top Tier</td>
-      <td>Udio Pro ($30)</td>
-      <td>~1,600</td>
-      <td><strong>$0.019</strong></td>
-    </tr>
-  </table>
-  <p>In practice both platforms land in the <span class="cost-highlight">$0.015–$0.03 per song</span> range on paid plans — the difference is marginal unless you're generating at very high volume.</p>
-
-  <h2>Feature & Rights Comparison</h2>
-  <table>
-    <tr>
-      <th>
+<p><a href="/pages/suno.html">Suno pricing â†’</a> &nbsp;|&nbsp; <a href="/pages/udio.html">Udio pricing â†’</a></p>
+<p class="note">Prices change often. Always confirm on the official sites.</p>
+</div>
+</body>
+</html>
