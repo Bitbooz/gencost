@@ -168,7 +168,7 @@ Learn more
 about
 Free
 Starter
-900
+600
 credits / month
 $10
 /mo
@@ -193,7 +193,7 @@ about
 Starter
 Creator
 Best Value
-3,150
+2,600
 credits / month
 $35
 /mo
@@ -287,7 +287,7 @@ $
 /mo
 2,030
 of
-3,150
+2,600
 credits a month
 See plan
 Your match
@@ -298,7 +298,7 @@ Social content fits here, with room left over.
 $35
 /mo
 Billed monthly
-3,150
+2,600
 credits / month
 Your monthly estimate
 2,030
@@ -313,7 +313,7 @@ Takes
 406
 credits
 Spare
-1,120
+570
 credits
 Included:
 All models
@@ -376,8 +376,8 @@ $28
 $76–$704
 Monthly credits
 0 · credit packs only
-900
-3,150
+600
+2,600
 8,550 and up
 Parallel video generations
 2
@@ -422,108 +422,108 @@ Pika H3 Flex
 Free every day on Creator & Fancy
 768p · 5s
 10
-90
-315
+60
+260
 855
 +
 Pika 2.5
 720p · 5s
 20
-45
-157
+30
+130
 427
 +
 Seedance 2.5
 480p · 5s
 54
-16
-58
+11
+48
 158
 +
 Seedance 2.5
 720p · 5s
 122
-7
-25
+4
+21
 70
 +
 Seedance 2.5
 1080p · 5s
 299
-3
-10
+2
+8
 28
 +
 Seedance 2.0
 720p · 5s
 80
-11
-39
+7
+32
 106
 +
 Seedance 2.0 Mini
 720p · 5s
 40
-22
-78
+15
+65
 213
 +
 Kling 4.0
 1080p · 5s
 118
-7
-26
+5
+22
 72
 +
 Wan 3.0
 720p · 5s
 33
-27
-95
+18
+78
 259
 +
 Images
 Nano Banana 2.1
 1 image · 1K
 5
-180
-630
+120
+520
 1,710
 +
 GPT Image 2.5
 1 image · 1K
 2
-450
-1,575
+300
+1,300
 4,275
 +
 Seedream 5 Lite
 1 image · 1K
 3
-300
-1,050
+200
+866
 2,850
 +
 Ideogram 4.5
 1 image
 9
-100
-350
+66
+288
 950
 +
 Audio
 ElevenLabs v4
 1,000 characters
 9
-100
-350
+66
+288
 950
 +
 MiniMax Music 3.0
 1 song
 9
-100
-350
+66
+288
 950
 +
 Credit packs
@@ -626,7 +626,7 @@ No. Free plan exports have no watermark.
 Does Pika offer free generations?
 Yes, for a limited time. Creator and Fancy plans include free Pika H3 Flex generations every day. Sign in to see today's count.
 How much does a Seedance 2.5 video cost on Pika?
-Seedance 2.5 is included on every paid Pika plan from $10/month. A 5-second 720p clip costs about 122 credits, around $1.36 on Starter.
+Seedance 2.5 is included on every paid Pika plan from $10/month. A 5-second 720p clip costs about 122 credits, around $2.03 on Starter.
 Which Pika plans include commercial use?
 Starter, Creator, Fancy include a commercial license.
 How do I cancel?
@@ -642,7 +642,7 @@ Pika is an AI video, image and audio platform. It runs Pika’s own models, Pika
 What happened to Basic, Standard, Pro and Unlimited?
 Basic, Standard, Pro and Unlimited are legacy individual plan names. Current individual plans are Free, Starter, Creator and Fancy; Enterprise has custom pricing. For an existing legacy subscription, check your account’s Subscription page for its terms.
 Pika plans at a glance
-Free: $0; credit packs available; no watermark. Starter: $10/month billed monthly or $8/month billed annually ($96/year); 900 credits per month; no watermark; commercial license included. Creator: $35/month billed monthly or $28/month billed annually ($336/year); 3,150 credits per month; no watermark; commercial license included. Fancy: from $95/month billed monthly or from $76/month billed annually (from $912/year); 8,550+ credits per month; no watermark; commercial license included.
+Free: $0; credit packs available; no watermark. Starter: $10/month billed monthly or $8/month billed annually ($96/year); 600 credits per month; no watermark; commercial license included. Creator: $35/month billed monthly or $28/month billed annually ($336/year); 2,600 credits per month; no watermark; commercial license included. Fancy: from $95/month billed monthly or from $76/month billed annually (from $912/year); 8,550+ credits per month; no watermark; commercial license included.
 Enterprise pricing is custom.
 All individual plans include access to all models. Generations use credits; annual plans are paid upfront and credits refresh monthly.
 Limited time: Creator and Fancy plans include free Pika H3 Flex generations every day.

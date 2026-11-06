@@ -4,6 +4,7 @@ Product
 Pricing
 API
 Enterprise
+MCP
 News
 Join us
 Sign In

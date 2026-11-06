@@ -365,11 +365,11 @@ Free Syren-only credits for each user, valid for 1 month. After that, Syren uses
 1,500 credits, limited time only
 1,500 credits, limited time only
 2,000 credits per user, limited time only
-Video length
-Up to 3 minutes
-Up to 3 minutes
-Up to 3 minutes
-Up to 3 minutes
+Video generation
+Up to 1 video
+Up to ~2 videos / month
+Up to ~7 videos / month
+Custom
 Brand
 Your brand colors
 Your brand colors
@@ -729,11 +729,11 @@ Free Syren-only credits for each user, valid for 1 month. After that, Syren uses
 1,500 credits, limited time only
 1,500 credits, limited time only
 2,000 credits per user, limited time only
-Video length
-Up to 3 minutes
-Up to 3 minutes
-Up to 3 minutes
-Up to 3 minutes
+Video generation
+Up to 1 video
+Up to ~24 videos / year
+Up to ~84 videos / year
+Custom
 Brand
 Your brand colors
 Your brand colors
