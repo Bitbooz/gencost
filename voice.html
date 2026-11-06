@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Voice Price Comparison 2026 | GenCost</title>
+<meta name="description" content="Compare ElevenLabs, Cartesia, PlayHT, Murf, Speechify, Descript and more in real dollars. Plans, credits and approximate cost, updated automatically.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,156 +12,176 @@
   gtag('js', new Date());
   gtag('config', 'G-6DHTT2ZTBK');
 </script>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: #e0e0e0;
-    background: url('/Background.jpg') center/cover fixed no-repeat,
-                radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
-                linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-  }
-  .overlay {
-    min-height: 100vh;
-    padding: 40px 20px 60px;
-    background: rgba(10, 10, 15, 0.75);
-  }
-  h1 {
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3.2em;
-    letter-spacing: 4px;
-    margin: 0;
-    background: linear-gradient(90deg, #00d4ff, #7b68ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .subtitle { text-align: center; margin: 8px 0 4px 0; font-size: 1.1em; opacity: 0.8; }
-  .timestamp { text-align: center; font-size: 0.8em; opacity: 0.5; margin-bottom: 30px; }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  .card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding: 22px;
-    border-radius: 16px;
-  }
-  .card h2 { margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }
-  .plan { margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
-  .cost { font-size: 0.95em; opacity: 0.9; margin-left: 6px; color: #00d4ff; font-weight:600; }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/gencost.css">
+<script>document.documentElement.classList.add('js');</script>
+<script defer src="/assets/gencost.js"></script>
+<link rel="canonical" href="https://getgencost.com/voice.html">
 </head>
-<body>
-<div class="overlay">
-  <h1>GENCOST VOICE</h1>
-  <p class="subtitle">AI VOICE PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-11-06 08:00</div>
-  <div class="grid" id="content"></div>
-  <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    <a href="/" style="color:#00d4ff;">← Back to video comparison</a><br><br>
-    Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com" style="color:#00d4ff;">bitbooz@protonmail.com</a>
+<body data-prices="voice">
+<nav class="top">
+  <div class="wrap">
+    <a class="logo grad-text" href="/">GENCOST</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/#platforms">Video</a></li>
+      <li><a href="/voice.html" data-section="/voice,/pages/voice/">Voice</a></li>
+      <li><a href="/music.html" data-section="/music,/pages/music/">Music</a></li>
+      <li><a href="/calculator.html">Calculator</a></li>
+      <li><a href="/#articles">Articles</a></li>
+      <li><a href="/pages/emerging.html">Emerging</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn btn-primary" href="/order.html">Order package</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">AI voice price comparison</span>
+      <h1>What AI voice <span class="grad-text">really costs.</span></h1>
+      <p class="lead">GenCost tracks the plans of <span id="heroCount">7</span> AI voice and text-to-speech tools and puts them side by side in real dollars, so you can pick the cheapest one for your project.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#platforms">Compare prices <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="/music.html">Compare music tools</a>
+      </div>
+      <div class="updated"><span class="dot"></span>Prices updated <span class="js-updated"></span></div>
+    </div>
+    <div class="demo reveal" aria-live="polite">
+      <div class="demo-head">
+        <div>
+          <div class="demo-q">Ask GenCost</div>
+          <div class="demo-title">Which voice plan fits my budget?</div>
+        </div>
+        <div class="seg" id="budgetSeg"><button data-b="5">$5</button><button data-b="10" class="active">$10</button><button data-b="25">$25</button><button data-b="50">$50</button></div>
+      </div>
+      <div class="rows" id="budgetRows"><p class="loading">Loading prices…</p></div>
+      <div class="demo-foot">
+        <span>Monthly plans at or under your budget</span>
+        <a href="#platforms">See all plans →</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stats-grid reveal">
+      <div class="stat"><div class="num grad-text" id="statTools">–</div><div class="lbl">AI voice tools tracked</div></div>
+      <div class="stat"><div class="num grad-text" id="statPlans">–</div><div class="lbl">Plans compared</div></div>
+      <div class="stat"><div class="num grad-text" id="statCheapest">–</div><div class="lbl">Cheapest paid plan / month</div></div>
+      <div class="stat"><div class="num grad-text">Auto</div><div class="lbl">Updated with the latest prices</div></div>
+    </div>
   </div>
 </div>
-<script>
-const allData = {"elevenlabs-pricing.json": {"platform": "elevenlabs", "plans": [{"name": "Starter", "monthly_price_usd": 6, "credits_or_minutes": 30000, "unit": "credits", "offer": "First month $1 (83% off until Nov 1); 2 months free on yearly"}, {"name": "Creator", "monthly_price_usd": 22, "credits_or_minutes": 121000, "unit": "credits", "offer": "First month $11 (50% off); 2 months free on yearly"}, {"name": "Pro", "monthly_price_usd": 99, "credits_or_minutes": 600000, "unit": "credits", "offer": "2 months free on yearly"}, {"name": "Scale", "monthly_price_usd": 299, "credits_or_minutes": 1800000, "unit": "credits", "offer": "2 months free on yearly"}, {"name": "Business", "monthly_price_usd": 990, "credits_or_minutes": 6000000, "unit": "credits", "offer": "2 months free on yearly"}]}, "murf-pricing.json": {"platform": "Murf AI", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 10, "unit": "minutes"}, {"name": "Basic", "monthly_price_usd": 19, "credits_or_minutes": 120, "unit": "minutes"}, {"name": "Pro", "monthly_price_usd": 39, "credits_or_minutes": 240, "unit": "minutes"}]}, "cartesia-pricing.json": {"platform": "cartesia", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": "20K", "unit": "credits", "offer": ""}, {"name": "Pro", "monthly_price_usd": 5, "credits_or_minutes": "100K", "unit": "credits", "offer": ""}, {"name": "Startup", "monthly_price_usd": 49, "credits_or_minutes": "1.25M", "unit": "credits", "offer": ""}, {"name": "Scale", "monthly_price_usd": 299, "credits_or_minutes": "8M", "unit": "credits", "offer": ""}]}, "speechify-pricing.json": {"platform": "Speechify", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits"}, {"name": "Premium", "monthly_price_usd": 29, "credits_or_minutes": "unlimited", "unit": "words"}]}, "descript-pricing.json": {"platform": "descript", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 60, "unit": "minutes", "offer": "Saving up to 35% on annual"}, {"name": "Hobbyist", "monthly_price_usd": 24, "credits_or_minutes": 10, "unit": "hours", "offer": "Saving up to 35% on annual"}, {"name": "Creator", "monthly_price_usd": 35, "credits_or_minutes": 30, "unit": "hours", "offer": "Saving up to 35% on annual"}, {"name": "Business", "monthly_price_usd": 65, "credits_or_minutes": 40, "unit": "hours", "offer": "Saving up to 35% on annual"}]}};
-function cleanName(name) {
-  const n = (name || "").toLowerCase();
-  if (n.includes("eleven")) return "ElevenLabs";
-  if (n.includes("murf")) return "Murf AI";
-  if (n.includes("cartesia")) return "Cartesia";
-  if (n.includes("speechify")) return "Speechify";
-  if (n.includes("descript")) return "Descript";
-  if (n.includes("playht") || n.includes("play.ht")) return "PlayHT";
-  if (n.includes("wellsaid")) return "WellSaid Labs";
-  return name;
-}
-function getPage(name) {
-  const map = {
-    "ElevenLabs":"pages/voice/elevenlabs.html",
-    "Murf AI":"pages/voice/murf.html",
-    "Cartesia":"pages/voice/cartesia.html",
-    "Speechify":"pages/voice/speechify.html",
-    "Descript":"pages/voice/descript.html",
-    "PlayHT":"pages/voice/playht.html",
-    "WellSaid Labs":"pages/voice/wellsaid.html"
-  };
-  return map[name] || "#";
-}
-function estimateCost(plan) {
-  const price = plan.monthly_price_usd || 0;
-  const credits = plan.credits_or_minutes || 0;
-  if (!price || !credits || credits <= 0) return "";
-  if (plan.unit && plan.unit.toLowerCase().includes("character")) {
-    const costPer1k = (price / credits) * 1000;
-    return costPer1k >= 0.001 ? ` (~$${costPer1k.toFixed(3)} / 1k chars)` : "";
-  }
-  return "";
-}
-function createParticles(e) {
-  const x = e.clientX, y = e.clientY;
-  for (let i = 0; i < 12; i++) {
-    const p = document.createElement("div");
-    p.style.cssText = "position:fixed; width:6px; height:6px; background:#00d4ff; border-radius:50%; pointer-events:none; z-index:9999;";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 2 + Math.random() * 4;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 30;
-    const anim = setInterval(() => {
-      px += vx; py += vy; life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 30;
-      if (life <= 0) { clearInterval(anim); p.remove(); }
-    }, 16);
-  }
-}
-const order = ["ElevenLabs","Murf AI","Cartesia","Speechify","Descript"];
-const content = document.getElementById("content");
-const platforms = [];
-for (const [file, data] of Object.entries(allData)) {
-  if (!data) continue;
-  const name = cleanName(data.platform || file.replace("-pricing.json",""));
-  platforms.push({ name, data });
-}
-platforms.sort((a, b) => {
-  const ai = order.indexOf(a.name), bi = order.indexOf(b.name);
-  if (ai === -1 && bi === -1) return a.name.localeCompare(b.name);
-  if (ai === -1) return 1;
-  if (bi === -1) return -1;
-  return ai - bi;
-});
-for (const { name, data } of platforms) {
-  const page = getPage(name);
-  const checked = data.last_checked || data.checked || "2026-11-06 08:00";
-  const source = data.source || data.source_url || "";
-  let html = `<div class="card"><h2><a href="${page}" onclick="createParticles(event)">${name}</a></h2>`;
-  if (source) {
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${checked} · <a href="${source}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
-  } else {
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${checked}</div>`;
-  }
-  for (const plan of data.plans || []) {
-    const price = plan.monthly_price_usd ?? 0;
-    const credits = plan.credits_or_minutes ?? "-";
-    const unit = plan.unit || "";
-    const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${plan.name}</strong>: $${price}/mo · ${credits} ${unit}<span class="cost">${est}</span></div>`;
-  }
-  html += "</div>";
-  content.innerHTML += html;
-}
-</script>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Leaderboard</span>
+        <h2>Lowest paid plan, by tool</h2>
+        <p class="lead">The cheapest way to start paying for each AI voice tool, ranked.</p>
+      </div>
+      <a class="btn btn-ghost" href="/pages/cheapest-ai-voice-tools-in-2026.html">Read the guide <span class="arrow">→</span></a>
+    </div>
+    <div class="board reveal" id="board"></div>
+  </div>
+</section>
+
+<section class="band" id="platforms">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">All plans</span>
+        <h2>Every AI voice plan</h2>
+        <p class="lead">Monthly prices, what's included, and an approximate cost per 1,000 characters or per minute where the plan allows it.</p>
+      </div>
+    </div>
+    <div class="plat-grid" id="content"><p class="loading">Loading prices…</p></div>
+    <p class="small-note">Voice tools count in characters, credits, minutes or words, so estimates are approximate. Prices change often, so always confirm inside the tool.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Articles</span>
+        <h2>AI voice pricing guides</h2>
+      </div>
+      <a class="btn btn-ghost" href="/#articles">All articles <span class="arrow">→</span></a>
+    </div>
+    <ul class="art-grid">
+      <li class="reveal"><a class="art" href="/pages/cheapest-ai-voice-tools-in-2026.html"><span class="cat voice">Voice</span><h3>Cheapest AI Voice Tools in 2026</h3><p>ElevenLabs, PlayHT, Cartesia and more</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/cheapest-ai-voice-cloning-tools-2026.html"><span class="cat voice">Voice</span><h3>Cheapest AI Voice Cloning Tools 2026</h3><p>Best free and paid options</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/elevenlabs-vs-cartesia-pricing-2026.html"><span class="cat voice">Voice</span><h3>ElevenLabs vs Cartesia Pricing 2026</h3><p>Voice pricing comparison</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/playht-vs-elevenlabs-pricing-2026.html"><span class="cat voice">Voice</span><h3>PlayHT vs ElevenLabs Pricing 2026</h3><p>Voice tools comparison</p></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="cta reveal">
+      <span class="eyebrow">Stop guessing</span>
+      <h2>Pick the right AI tool <span class="grad-text">before you pay for it.</span></h2>
+      <div class="ctas">
+        <a class="btn btn-primary" href="/#platforms">Compare video tools <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="/voice.html">Voice</a>
+        <a class="btn btn-ghost" href="/music.html">Music</a>
+        <a class="btn btn-ghost" href="/calculator.html">Calculator</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo grad-text" href="/">GENCOST</a>
+        <p class="foot-about">Price comparison for AI video, avatar, voice and music tools, in real dollars and updated automatically.</p>
+      </div>
+      <div>
+        <h4>Compare</h4>
+        <ul>
+          <li><a href="/#platforms">Video &amp; avatar</a></li>
+          <li><a href="/voice.html">Voice</a></li>
+          <li><a href="/music.html">Music</a></li>
+          <li><a href="/pages/emerging.html">Emerging tools</a></li>
+          <li><a href="/calculator.html">Budget calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/pages/cheapest-ai-video-tools-in-2026.html">Cheapest video tools</a></li>
+          <li><a href="/pages/cheapest-ai-voice-tools-in-2026.html">Cheapest voice tools</a></li>
+          <li><a href="/pages/cheapest-ai-music-tools-in-2026.html">Cheapest music tools</a></li>
+          <li><a href="/pages/cheapest-ai-avatar-tools-in-2026.html">Cheapest avatar tools</a></li>
+          <li><a href="/credits.html">Credits &amp; residuals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>GenCost</h4>
+        <ul>
+          <li><a href="/order.html">Order a package</a></li>
+          <li><a href="/how-we-verify.html">How we verify prices</a></li>
+          <li><a href="/changelog.html">Price changes log</a></li>
+          <li><a href="mailto:bitbooz@protonmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Created by Grok &amp; Bitbooz · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span>
+      <span>Prices change often. Always confirm inside each tool before you pay.</span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

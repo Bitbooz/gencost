@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Music Price Comparison 2026 | GenCost</title>
+<meta name="description" content="Compare Suno, Udio, Soundraw, AIVA and Boomy in real dollars. Plans, credits and approximate cost per song, updated automatically.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,150 +12,175 @@
   gtag('js', new Date());
   gtag('config', 'G-6DHTT2ZTBK');
 </script>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: #e0e0e0;
-    background: url('/Background.jpg') center/cover fixed no-repeat,
-                radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
-                linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-  }
-  .overlay {
-    min-height: 100vh;
-    padding: 40px 20px 60px;
-    background: rgba(10, 10, 15, 0.75);
-  }
-  h1 {
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3.2em;
-    letter-spacing: 4px;
-    margin: 0;
-    background: linear-gradient(90deg, #00d4ff, #7b68ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .subtitle { text-align: center; margin: 8px 0 4px 0; font-size: 1.1em; opacity: 0.8; }
-  .timestamp { text-align: center; font-size: 0.8em; opacity: 0.5; margin-bottom: 30px; }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  .card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding: 22px;
-    border-radius: 16px;
-  }
-  .card h2 { margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }
-  .card h2 a { color: #fff; text-decoration: none; }
-  .plan { margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
-  .cost { font-size: 0.95em; opacity: 0.9; margin-left: 6px; color: #00d4ff; font-weight:600; }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/gencost.css">
+<script>document.documentElement.classList.add('js');</script>
+<script defer src="/assets/gencost.js"></script>
+<link rel="canonical" href="https://getgencost.com/music.html">
 </head>
-<body>
-<div class="overlay">
-  <h1>GENCOST MUSIC</h1>
-  <p class="subtitle">AI MUSIC PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-11-06 08:00</div>
-  <div class="grid" id="content"></div>
-  <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    <a href="/" style="color:#00d4ff;">← Back to video comparison</a><br><br>
-    Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com" style="color:#00d4ff;">bitbooz@protonmail.com</a>
+<body data-prices="music">
+<nav class="top">
+  <div class="wrap">
+    <a class="logo grad-text" href="/">GENCOST</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/#platforms">Video</a></li>
+      <li><a href="/voice.html" data-section="/voice,/pages/voice/">Voice</a></li>
+      <li><a href="/music.html" data-section="/music,/pages/music/">Music</a></li>
+      <li><a href="/calculator.html">Calculator</a></li>
+      <li><a href="/#articles">Articles</a></li>
+      <li><a href="/pages/emerging.html">Emerging</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn btn-primary" href="/order.html">Order package</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">AI music price comparison</span>
+      <h1>What AI music <span class="grad-text">really costs.</span></h1>
+      <p class="lead">GenCost tracks the plans of <span id="heroCount">5</span> AI music generators and turns their credits, downloads and song limits into real dollars you can compare.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#platforms">Compare prices <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="/voice.html">Compare voice tools</a>
+      </div>
+      <div class="updated"><span class="dot"></span>Prices updated <span class="js-updated"></span></div>
+    </div>
+    <div class="demo reveal" aria-live="polite">
+      <div class="demo-head">
+        <div>
+          <div class="demo-q">Ask GenCost</div>
+          <div class="demo-title">Which music plan fits my budget?</div>
+        </div>
+        <div class="seg" id="budgetSeg"><button data-b="5">$5</button><button data-b="10" class="active">$10</button><button data-b="20">$20</button><button data-b="35">$35</button></div>
+      </div>
+      <div class="rows" id="budgetRows"><p class="loading">Loading prices…</p></div>
+      <div class="demo-foot">
+        <span>Monthly plans at or under your budget</span>
+        <a href="#platforms">See all plans →</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stats-grid reveal">
+      <div class="stat"><div class="num grad-text" id="statTools">–</div><div class="lbl">AI music tools tracked</div></div>
+      <div class="stat"><div class="num grad-text" id="statPlans">–</div><div class="lbl">Plans compared</div></div>
+      <div class="stat"><div class="num grad-text" id="statCheapest">–</div><div class="lbl">Cheapest paid plan / month</div></div>
+      <div class="stat"><div class="num grad-text">Auto</div><div class="lbl">Updated with the latest prices</div></div>
+    </div>
   </div>
 </div>
-<script>
-const allData = {"suno-pricing.json": {"platform": "suno", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 50, "unit": "credits", "offer": ""}, {"name": "Pro", "monthly_price_usd": 8, "credits_or_minutes": 2500, "unit": "credits", "offer": "save 20%"}, {"name": "Premier", "monthly_price_usd": 24, "credits_or_minutes": 10000, "unit": "credits", "offer": "save 20%"}]}, "udio-pricing.json": {"platform": "Udio", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 50, "unit": "credits"}, {"name": "Standard", "monthly_price_usd": 10, "credits_or_minutes": 1200, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 30, "credits_or_minutes": 4800, "unit": "credits"}]}, "soundraw-pricing.json": {"platform": "soundraw", "plans": [{"name": "Creator", "monthly_price_usd": 5.99, "credits_or_minutes": 10000, "unit": "tracks", "offer": ""}, {"name": "Artist Starter", "monthly_price_usd": 10.49, "credits_or_minutes": 10, "unit": "tracks", "offer": ""}, {"name": "Artist Pro", "monthly_price_usd": 12.59, "credits_or_minutes": 20, "unit": "tracks", "offer": ""}, {"name": "Artist Unlimited", "monthly_price_usd": 17.49, "credits_or_minutes": 10000, "unit": "tracks", "offer": ""}]}, "aiva-pricing.json": {"platform": "aiva", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 3, "unit": "downloads", "offer": ""}, {"name": "Standard", "monthly_price_usd": 11, "credits_or_minutes": 15, "unit": "downloads", "offer": "26% OFF billed annually"}, {"name": "Pro", "monthly_price_usd": 33, "credits_or_minutes": 300, "unit": "downloads", "offer": "33% OFF billed annually"}]}, "boomy-pricing.json": {"platform": "Boomy", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 10, "unit": "songs"}, {"name": "Creator", "monthly_price_usd": 9.99, "credits_or_minutes": 100, "unit": "songs"}, {"name": "Pro", "monthly_price_usd": 24.99, "credits_or_minutes": 500, "unit": "songs"}]}};
-function cleanName(name) {
-  const n = (name || "").toLowerCase();
-  if (n.includes("suno")) return "Suno";
-  if (n.includes("udio")) return "Udio";
-  if (n.includes("soundraw")) return "Soundraw";
-  if (n.includes("aiva")) return "AIVA";
-  if (n.includes("boomy")) return "Boomy";
-  return name;
-}
-function getPage(name) {
-  const map = {
-    "Suno": "pages/music/suno.html",
-    "Udio": "pages/music/udio.html",
-    "Soundraw": "pages/music/soundraw.html",
-    "AIVA": "pages/music/aiva.html",
-    "Boomy": "pages/music/boomy.html"
-  };
-  return map[name] || "#";
-}
-function estimateCost(plan) {
-  const price = plan.monthly_price_usd || 0;
-  const credits = plan.credits_or_minutes || 0;
-  if (!price || !credits || credits <= 0) return "";
-  const costPerSong = price / credits;
-  return costPerSong >= 0.01 ? ` (~$${costPerSong.toFixed(2)} / song)` : "";
-}
-function createParticles(e) {
-  const x = e.clientX, y = e.clientY;
-  for (let i = 0; i < 12; i++) {
-    const p = document.createElement("div");
-    p.style.cssText = "position:fixed; width:6px; height:6px; background:#00d4ff; border-radius:50%; pointer-events:none; z-index:9999;";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 2 + Math.random() * 4;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 30;
-    const anim = setInterval(() => {
-      px += vx; py += vy; life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 30;
-      if (life <= 0) { clearInterval(anim); p.remove(); }
-    }, 16);
-  }
-}
-const order = ["Suno","Udio","Soundraw","AIVA","Boomy"];
-const content = document.getElementById("content");
-const platforms = [];
-for (const [file, data] of Object.entries(allData)) {
-  if (!data) continue;
-  const name = cleanName(data.platform || file.replace("-pricing.json",""));
-  platforms.push({ name, data });
-}
-platforms.sort((a, b) => {
-  const ai = order.indexOf(a.name), bi = order.indexOf(b.name);
-  if (ai === -1 && bi === -1) return a.name.localeCompare(b.name);
-  if (ai === -1) return 1;
-  if (bi === -1) return -1;
-  return ai - bi;
-});
-for (const { name, data } of platforms) {
-  const page = getPage(name);
-  const checked = data.last_checked || data.checked || "2026-11-06 08:00";
-  const source = data.source || data.source_url || "";
-  let html = `<div class="card"><h2><a href="${page}" onclick="createParticles(event)">${name}</a></h2>`;
-  if (source) {
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${checked} · <a href="${source}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
-  } else {
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${checked}</div>`;
-  }
-  for (const plan of data.plans || []) {
-    const price = plan.monthly_price_usd ?? 0;
-    const credits = plan.credits_or_minutes ?? "-";
-    const unit = plan.unit || "";
-    const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${plan.name}</strong>: $${price}/mo · ${credits} ${unit}<span class="cost">${est}</span></div>`;
-  }
-  html += "</div>";
-  content.innerHTML += html;
-}
-</script>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Leaderboard</span>
+        <h2>Lowest paid plan, by tool</h2>
+        <p class="lead">The cheapest way to start paying for each AI music tool, ranked.</p>
+      </div>
+      <a class="btn btn-ghost" href="/pages/cheapest-ai-music-tools-in-2026.html">Read the guide <span class="arrow">→</span></a>
+    </div>
+    <div class="board reveal" id="board"></div>
+  </div>
+</section>
+
+<section class="band" id="platforms">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">All plans</span>
+        <h2>Every AI music plan</h2>
+        <p class="lead">Monthly prices, what's included, and an approximate cost per song, track or download.</p>
+      </div>
+    </div>
+    <div class="plat-grid" id="content"><p class="loading">Loading prices…</p></div>
+    <p class="small-note">Music tools count in credits, songs, tracks or downloads, so estimates are approximate. Prices change often, so always confirm inside the tool.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Articles</span>
+        <h2>AI music pricing guides</h2>
+      </div>
+      <a class="btn btn-ghost" href="/#articles">All articles <span class="arrow">→</span></a>
+    </div>
+    <ul class="art-grid">
+      <li class="reveal"><a class="art" href="/pages/cheapest-ai-music-tools-in-2026.html"><span class="cat music">Music</span><h3>Cheapest AI Music Tools in 2026</h3><p>Suno vs Udio and others</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/suno-vs-udio-pricing-2026.html"><span class="cat music">Music</span><h3>Suno vs Udio Pricing 2026</h3><p>Music generator comparison</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/stable-audio-vs-beatoven-pricing-2026.html"><span class="cat music">Music</span><h3>Stable Audio vs Beatoven Pricing 2026</h3><p>Music tools comparison</p></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="cta reveal">
+      <span class="eyebrow">Stop guessing</span>
+      <h2>Pick the right AI tool <span class="grad-text">before you pay for it.</span></h2>
+      <div class="ctas">
+        <a class="btn btn-primary" href="/#platforms">Compare video tools <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="/voice.html">Voice</a>
+        <a class="btn btn-ghost" href="/music.html">Music</a>
+        <a class="btn btn-ghost" href="/calculator.html">Calculator</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo grad-text" href="/">GENCOST</a>
+        <p class="foot-about">Price comparison for AI video, avatar, voice and music tools, in real dollars and updated automatically.</p>
+      </div>
+      <div>
+        <h4>Compare</h4>
+        <ul>
+          <li><a href="/#platforms">Video &amp; avatar</a></li>
+          <li><a href="/voice.html">Voice</a></li>
+          <li><a href="/music.html">Music</a></li>
+          <li><a href="/pages/emerging.html">Emerging tools</a></li>
+          <li><a href="/calculator.html">Budget calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/pages/cheapest-ai-video-tools-in-2026.html">Cheapest video tools</a></li>
+          <li><a href="/pages/cheapest-ai-voice-tools-in-2026.html">Cheapest voice tools</a></li>
+          <li><a href="/pages/cheapest-ai-music-tools-in-2026.html">Cheapest music tools</a></li>
+          <li><a href="/pages/cheapest-ai-avatar-tools-in-2026.html">Cheapest avatar tools</a></li>
+          <li><a href="/credits.html">Credits &amp; residuals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>GenCost</h4>
+        <ul>
+          <li><a href="/order.html">Order a package</a></li>
+          <li><a href="/how-we-verify.html">How we verify prices</a></li>
+          <li><a href="/changelog.html">Price changes log</a></li>
+          <li><a href="mailto:bitbooz@protonmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Created by Grok &amp; Bitbooz · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span>
+      <span>Prices change often. Always confirm inside each tool before you pay.</span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

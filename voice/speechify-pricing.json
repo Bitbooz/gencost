@@ -1,7 +1,19 @@
 {
   "platform": "Speechify",
   "plans": [
-    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits"},
-    {"name": "Premium", "monthly_price_usd": 29, "credits_or_minutes": "unlimited", "unit": "words"}
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": "unlimited",
+      "unit": "access",
+      "offer": ""
+    },
+    {
+      "name": "Premium",
+      "monthly_price_usd": 29,
+      "credits_or_minutes": "unlimited",
+      "unit": "access",
+      "offer": "SAVE 60% on yearly ($139 billed yearly)"
+    }
   ]
 }

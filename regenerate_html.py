@@ -1,747 +1,144 @@
-﻿import json
+"""
+Builds the price data the website reads.
+
+This script NO LONGER writes index.html, voice.html or music.html.
+Those pages now have a fixed design and load their prices from:
+
+    data/video.json   (from the *-pricing.json files in this folder)
+    data/voice.json   (from voice/*-pricing.json)
+    data/music.json   (from music/*-pricing.json)
+
+So you can run it as often as you like without touching the design.
+It keeps the same name so auto_update.py and the .bat files keep working.
+
+The "updated" date only changes when a price actually changes.
+"""
+import glob
+import json
 import os
 from datetime import datetime
 
+try:  # show times in Norwegian time, also when GitHub (UTC) runs the update
+    from zoneinfo import ZoneInfo
+    TZ = ZoneInfo("Europe/Oslo")
+except Exception:
+    TZ = None
+
 folder = os.path.dirname(os.path.abspath(__file__))
-json_files = [
+data_dir = os.path.join(folder, "data")
+os.makedirs(data_dir, exist_ok=True)
+
+# ---------- Video / avatar / image tools (files in the main folder) ----------
+VIDEO_FILES = [
     "heygen-pricing.json", "higgsfield-pricing.json", "runway-pricing.json",
     "kling-pricing.json", "synthesia-pricing.json", "pika-pricing.json",
     "luma-pricing.json", "viggle-pricing.json", "invideo-pricing.json",
     "capcut-pricing.json", "ltx-pricing.json", "hailuo-pricing.json",
     "veo-pricing.json", "sora-pricing.json",
     "vidu-pricing.json", "krea-pricing.json",
-    "midjourney-pricing.json", "leonardo-pricing.json", "ideogram-pricing.json"
+    "midjourney-pricing.json", "leonardo-pricing.json", "ideogram-pricing.json",
 ]
 
-data = {}
-for file in json_files:
-    path = os.path.join(folder, file)
-    if os.path.exists(path):
-        with open(path, encoding="utf-8-sig") as f:
-            loaded = json.load(f)
-            if loaded.get("plans"):
-                data[file] = loaded
-
-json_data = json.dumps(data)
-timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
-
-html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GenCost</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){{dataLayer.push(arguments);}}
-  gtag('js', new Date());
-  gtag('config', 'G-6DHTT2ZTBK');
-</script>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
-  body {{
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: #e0e0e0;
-    background: url('/Background.jpg') center/cover fixed no-repeat,
-                radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
-                linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-  }}
-  .overlay {{
-    min-height: 100vh;
-    padding: 40px 20px 60px;
-    background: rgba(10, 10, 15, 0.75);
-  }}
-  h1 {{
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3.2em;
-    letter-spacing: 4px;
-    margin: 0;
-    background: linear-gradient(90deg, #00d4ff, #7b68ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }}
-  .subtitle {{ text-align: center; margin: 8px 0 4px 0; font-size: 1.1em; opacity: 0.8; }}
-  .timestamp {{ text-align: center; font-size: 0.8em; opacity: 0.5; margin-bottom: 30px; }}
-  .grid {{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
-  }}
-  .card {{
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding: 22px;
-    border-radius: 16px;
-  }}
-  .card h2 {{ margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }}
-  .card h2 a {{ color: #fff; text-decoration: none; }}
-  .plan {{ margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }}
-  .cost {{ font-size: 0.95em; opacity: 0.9; margin-left: 6px; color: #00d4ff; font-weight:600; }}
-  @media (max-width: 768px) {{
-    div[style*="grid-template-columns:1fr 1fr"] {{
-      grid-template-columns: 1fr !important;
-      max-width: 100% !important;
-      padding: 0 16px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }}
-  }}
-</style>
-</head>
-<body>
-<div id="best-value" style="background:#1a1a2e; border:1px solid #00d4ff; border-radius:8px; padding:1rem; margin:1rem auto; max-width:1400px; color:#e0e0e0; text-align:center;">
-  <strong>Best value right now</strong><br>
-  <span id="best-value-text">Calculating...</span>
-</div>
-<div style="max-width:1400px; margin:10px auto 20px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; padding:0 16px;">
-  <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:10px; padding:14px; text-align:center;">
-    <strong>Cheapest video</strong><br><span style="font-size:0.9em;">Kling AI Standard ~$8–10/mo</span>
-  </div>
-  <div style="background:rgba(123,104,238,0.08); border:1px solid #7b68ee; border-radius:10px; padding:14px; text-align:center;">
-    <strong>Cheapest avatar</strong><br><span style="font-size:0.9em;">Synthesia Starter ~$19/mo</span>
-  </div>
-  <div style="background:rgba(0,212,255,0.06); border:1px solid #00d4ff; border-radius:10px; padding:14px; text-align:center;">
-    <strong>Cheapest voice</strong><br><span style="font-size:0.9em;">Cartesia Pro ~$5/mo</span>
-  </div>
-</div>
-<div style="max-width:1400px; margin:0 auto 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:16px; text-align:center;">
-  <strong>Around $10 / $30</strong><br>
-  <span style="font-size:0.9em;">~$10: Kling Standard or Pika Starter &nbsp;|&nbsp; ~$30: Runway Pro, Luma Plus or HeyGen Creator</span>
-</div>
-<p style="color:#aaa; font-size:0.9rem; text-align:center;">
-  <strong>Last updated:</strong> {timestamp}<br>
-  Prices change often — always confirm inside the tool before generating.
-</p>
-<div class="overlay">
-  <h1>GENCOST</h1>
-  <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · {timestamp}</div>
-  <div style="max-width:1400px; margin:20px auto 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:0 20px;">
-    <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px; text-align:center;">
-      <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
-      <p style="margin:10px 0 0 0; font-size:0.95em; color:#ddd;">Compare ElevenLabs, PlayHT, Cartesia and more in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
-    </div>
-    <div style="background:rgba(123,104,238,0.08); border:1px solid #7b68ee; border-radius:12px; padding:22px; text-align:center;">
-      <a href="/music.html" style="color:#7b68ee; font-size:1.3em; font-weight:600; text-decoration:none;">AI Music Price Comparison →</a>
-      <p style="margin:10px 0 0 0; font-size:0.95em; color:#ddd;">Compare Suno, Udio, Soundraw, AIVA and Boomy in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
-    </div>
-  </div>
-  <div class="grid" id="content"></div>
-
-  <div style="max-width:900px; margin:40px auto; padding:0 20px; text-align:center;">
-    <h2 style="margin-top:0;">Free tiers available</h2>
-    <p style="color:#aaa; margin-bottom:24px;">HeyGen, Runway, Pika, Synthesia and others still offer free plans.</p>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:800px; margin:0 auto;">
-      <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px;">
-        <a href="/voice.html" style="color:#00d4ff; font-size:1.2em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
-        <p style="margin:10px 0 0 0; font-size:0.9em; color:#ddd;">Compare ElevenLabs, PlayHT, Cartesia and more in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
-      </div>
-      <div style="background:rgba(123,104,238,0.08); border:1px solid #7b68ee; border-radius:12px; padding:22px;">
-        <a href="/music.html" style="color:#7b68ee; font-size:1.2em; font-weight:600; text-decoration:none;">AI Music Price Comparison →</a>
-        <p style="margin:10px 0 0 0; font-size:0.9em; color:#ddd;">Compare Suno, Udio, Soundraw, AIVA and Boomy in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Articles Section -->
-  <div style="max-width:900px; margin:40px auto; padding:0 20px;">
-    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Articles</h2>
-    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
-      <ul style="list-style:none; padding:0; margin:0;">
-        <li style="margin:12px 0;">
-          <a href="/pages/cheapest-ai-video-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Video Tools in 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Kling vs Runway vs Pika vs Luma — real dollar costs</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/cheapest-ai-voice-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Voice Tools in 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">ElevenLabs, PlayHT, Cartesia and more</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/cheapest-ai-music-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Music Tools in 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Suno vs Udio and others</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/cheapest-ai-avatar-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Avatar Tools in 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">HeyGen, Synthesia and more</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/cheapest-ai-voice-cloning-tools-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Voice Cloning Tools 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Best free and paid options</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/suno-vs-udio-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Suno vs Udio Pricing 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Direct comparison</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/best-cheap-ai-video-tools-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Cheap AI Video Tools for YouTube 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Tools that work well for YouTube</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/best-free-ai-video-tools-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Video Tools 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Free tiers that are actually usable</p>
-        </li>
-        <li style="margin:12px 0;">
-          <a href="/pages/runway-vs-kling-pricing-comparison-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Runway vs Kling Pricing Comparison 2026</a>
-          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Side-by-side cost breakdown</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Emerging Tools -->
-  <div style="max-width:900px; margin:40px auto; padding:0 20px;">
-    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Emerging Tools</h2>
-    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px; text-align:center;">
-      <p style="margin:0 0 12px 0; color:#ddd;">There are many smaller companies building AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find.</p>
-      <a href="/pages/emerging.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">See emerging tools →</a>
-    </div>
-  </div>
-
-  <!-- Sample Packages -->
-  <div style="max-width:900px; margin:50px auto 30px; padding:0 20px;">
-    <h2 style="text-align:center; font-family:'Orbitron', sans-serif; letter-spacing:2px; margin-bottom:8px;">Sample Packages</h2>
-    <p style="text-align:center; opacity:0.7; margin-top:0; margin-bottom:24px;">Done-for-you SEO article + YouTube assets</p>
-    <div id="packages-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px;"></div>
-  </div>
-
-  <!-- Order Packages -->
-  <div style="max-width:900px; margin:30px auto; padding:0 20px; text-align:center;">
-    <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:16px; padding:28px;">
-      <h2 style="margin:0 0 10px 0; font-family:'Orbitron', sans-serif; letter-spacing:1px;">Need a custom package?</h2>
-      <p style="margin:0 0 18px 0; opacity:0.85;">Done-for-you SEO article + YouTube assets based on real GenCost data.</p>
-      <a href="/order.html" style="display:inline-block; background:linear-gradient(90deg,#00d4ff,#7b68ee); color:#0a0a0f; font-weight:600; padding:12px 28px; border-radius:12px; text-decoration:none; font-size:1.05em;">Bestill pakke / Order Package</a>
-    </div>
-  </div>
-
-  <div style="text-align:center; margin-top:30px;">
-    <p><a href="/changelog.html" style="color:#00d4ff;">Price changes log →</a></p>
-    <p><a href="/credits.html" style="color:#00d4ff;">Credits & residuals →</a></p>
-  </div>
-  <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com" style="color:#00d4ff;">bitbooz@protonmail.com</a>
-  </div>
-</div>
-<script>
-const allData = {json_data};
-function cleanName(name) {{
-  const n = (name || "").toLowerCase();
-  if (n.includes("heygen")) return "HeyGen";
-  if (n.includes("kling")) return "Kling AI";
-  if (n.includes("ltx")) return "LTX Studio";
-  if (n.includes("invideo")) return "InVideo";
-  if (n.includes("capcut")) return "CapCut";
-  if (n.includes("higgs")) return "Higgsfield";
-  if (n.includes("runway")) return "Runway";
-  if (n.includes("synth")) return "Synthesia";
-  if (n.includes("pika")) return "Pika";
-  if (n.includes("luma")) return "Luma";
-  if (n.includes("viggle")) return "Viggle";
-  if (n.includes("hailuo")) return "Hailuo AI";
-  if (n.includes("veo")) return "Google Veo";
-  if (n.includes("sora")) return "Sora";
-  if (n.includes("vidu")) return "Vidu";
-  if (n.includes("krea")) return "Krea";
-  if (n.includes("midjourney")) return "Midjourney";
-  if (n.includes("leonardo")) return "Leonardo";
-  if (n.includes("ideogram")) return "Ideogram";
-  return name;
-}}
-function getPage(name) {{
-  const map = {{
-    "HeyGen":"pages/heygen.html","Higgsfield":"pages/higgsfield.html","Runway":"pages/runway.html",
-    "Kling AI":"pages/kling.html","Synthesia":"pages/synthesia.html","Pika":"pages/pika.html",
-    "Luma":"pages/luma.html","Viggle":"pages/viggle.html","InVideo":"pages/invideo.html",
-    "CapCut":"pages/capcut.html","LTX Studio":"pages/ltx.html","Hailuo AI":"pages/hailuo.html",
-    "Google Veo":"pages/veo.html","Sora":"pages/sora.html",
-    "Vidu":"pages/vidu.html","Krea":"pages/krea.html",
-    "Midjourney":"pages/midjourney.html","Leonardo":"pages/leonardo.html","Ideogram":"pages/ideogram.html"
-  }};
-  return map[name] || "#";
-}}
-function estimateCost(plan) {{
-  const price = plan.monthly_price_usd || 0;
-  const credits = plan.credits_or_minutes || 0;
-  if (!price || !credits || credits <= 0) return "";
-  const costPerSecond = price / credits;
-  const c5 = (costPerSecond * 5).toFixed(2);
-  const c10 = (costPerSecond * 10).toFixed(2);
-  const c30 = (costPerSecond * 30).toFixed(2);
-  return `<br><span class="cost">5s: $${{c5}} &nbsp;·&nbsp; 10s: $${{c10}} &nbsp;·&nbsp; 30s: $${{c30}}</span>`;
-}}
-function createParticles(e) {{
-  const x = e.clientX, y = e.clientY;
-  for (let i = 0; i < 12; i++) {{
-    const p = document.createElement("div");
-    p.style.cssText = "position:fixed; width:6px; height:6px; background:#00d4ff; border-radius:50%; pointer-events:none; z-index:9999;";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 2 + Math.random() * 4;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 30;
-    const anim = setInterval(() => {{
-      px += vx; py += vy; life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 30;
-      if (life <= 0) {{ clearInterval(anim); p.remove(); }}
-    }}, 16);
-  }}
-}}
-const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Sora","Vidu","Krea","Midjourney","Leonardo","Ideogram"];
-const content = document.getElementById("content");
-const platforms = [];
-for (const [file, data] of Object.entries(allData)) {{
-  if (!data) continue;
-  const name = cleanName(data.platform || file.replace("-pricing.json",""));
-  platforms.push({{ name, data }});
-}}
-platforms.sort((a, b) => {{
-  const ai = order.indexOf(a.name), bi = order.indexOf(b.name);
-  if (ai === -1 && bi === -1) return a.name.localeCompare(b.name);
-  if (ai === -1) return 1;
-  if (bi === -1) return -1;
-  return ai - bi;
-}});
-// Best value
-let cheapest = null;
-let cheapestPrice = Infinity;
-for (const {{ name, data }} of platforms) {{
-  for (const plan of data.plans || []) {{
-    const price = plan.monthly_price_usd || 0;
-    if (price > 0 && price < cheapestPrice) {{
-      cheapestPrice = price;
-      cheapest = `${{name}} ${{plan.name}} ($${{price}}/mo)`;
-    }}
-  }}
-}}
-const bestEl = document.getElementById("best-value-text");
-if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards below for details.";
-
-for (const {{ name, data }} of platforms) {{
-  const page = getPage(name);
-  const checked = data.last_checked || data.checked || "{timestamp}";
-  const source = data.source || data.source_url || "";
-  let html = `<div class="card"><h2><a href="${{page}}" onclick="createParticles(event)">${{name}}</a></h2>`;
-  if (source) {{
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
-  }} else {{
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}}</div>`;
-  }}
-  for (const plan of data.plans || []) {{
-    const price = plan.monthly_price_usd ?? 0;
-    const credits = plan.credits_or_minutes ?? "-";
-    const unit = plan.unit || "";
-    const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${{plan.name}}</strong>: $${{price}}/mo · ${{credits}} ${{unit}}<span class="cost">${{est}}</span></div>`;
-  }}
-  html += "</div>";
-  content.innerHTML += html;
-}}
-
-// Load Sample Packages dynamically
-fetch('/pages/samples/packages.json')
-  .then(r => r.json())
-  .then(packages => {{
-    const grid = document.getElementById('packages-grid');
-    if (!grid || !packages.length) return;
-    packages.forEach(p => {{
-      grid.innerHTML += `
-        <a href="${{p.url}}" style="text-decoration:none; color:inherit;">
-          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:20px;">
-            <div style="font-size:0.75em; color:#00d4ff; margin-bottom:6px;">SAMPLE PACKAGE</div>
-            <div style="font-size:1.15em; font-weight:500; margin-bottom:8px;">${{p.title}}</div>
-            <div style="font-size:0.9em; opacity:0.7;">${{p.description || 'Real-dollar comparison package'}}</div>
-          </div>
-        </a>`;
-    }});
-  }})
-  .catch(() => {{}});
-</script>
-</body>
-</html>'''
-
-with open(os.path.join(folder, "index.html"), "w", encoding="utf-8") as f:
-    f.write(html)
-print("index.html regenerated cleanly.")
-
-# === VOICE PAGE ===
-voice_folder = os.path.join(folder, "voice")
-voice_files = [
-    "elevenlabs-pricing.json", "murf-pricing.json", "cartesia-pricing.json",
-    "speechify-pricing.json", "descript-pricing.json"
+# keyword in platform/file name -> (display name, page)
+VIDEO_NAMES = [
+    ("heygen", "HeyGen", "/pages/heygen.html"),
+    ("higgs", "Higgsfield", "/pages/higgsfield.html"),
+    ("runway", "Runway", "/pages/runway.html"),
+    ("kling", "Kling AI", "/pages/kling.html"),
+    ("synth", "Synthesia", "/pages/synthesia.html"),
+    ("pika", "Pika", "/pages/pika.html"),
+    ("luma", "Luma", "/pages/luma.html"),
+    ("viggle", "Viggle", "/pages/viggle.html"),
+    ("invideo", "InVideo", "/pages/invideo.html"),
+    ("capcut", "CapCut", "/pages/capcut.html"),
+    ("ltx", "LTX Studio", "/pages/ltx.html"),
+    ("hailuo", "Hailuo AI", "/pages/hailuo.html"),
+    ("veo", "Google Veo", "/pages/veo.html"),
+    ("sora", "Sora", "/pages/sora.html"),
+    ("vidu", "Vidu", "/pages/vidu.html"),
+    ("krea", "Krea", "/pages/krea.html"),
+    ("midjourney", "Midjourney", "/pages/midjourney.html"),
+    ("leonardo", "Leonardo", "/pages/leonardo.html"),
+    ("ideogram", "Ideogram", "/pages/ideogram.html"),
 ]
 
-voice_data = {}
-for file in voice_files:
-    path = os.path.join(voice_folder, file)
-    if os.path.exists(path):
-        with open(path, encoding="utf-8-sig") as f:
-            loaded = json.load(f)
-            if loaded.get("plans"):
-                voice_data[file] = loaded
-
-voice_json = json.dumps(voice_data)
-
-voice_html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Voice Price Comparison 2026 | GenCost</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){{dataLayer.push(arguments);}}
-  gtag('js', new Date());
-  gtag('config', 'G-6DHTT2ZTBK');
-</script>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
-  body {{
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: #e0e0e0;
-    background: url('/Background.jpg') center/cover fixed no-repeat,
-                radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
-                linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-  }}
-  .overlay {{
-    min-height: 100vh;
-    padding: 40px 20px 60px;
-    background: rgba(10, 10, 15, 0.75);
-  }}
-  h1 {{
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3.2em;
-    letter-spacing: 4px;
-    margin: 0;
-    background: linear-gradient(90deg, #00d4ff, #7b68ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }}
-  .subtitle {{ text-align: center; margin: 8px 0 4px 0; font-size: 1.1em; opacity: 0.8; }}
-  .timestamp {{ text-align: center; font-size: 0.8em; opacity: 0.5; margin-bottom: 30px; }}
-  .grid {{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
-  }}
-  .card {{
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding: 22px;
-    border-radius: 16px;
-  }}
-  .card h2 {{ margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }}
-  .plan {{ margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }}
-  .cost {{ font-size: 0.95em; opacity: 0.9; margin-left: 6px; color: #00d4ff; font-weight:600; }}
-</style>
-</head>
-<body>
-<div class="overlay">
-  <h1>GENCOST VOICE</h1>
-  <p class="subtitle">AI VOICE PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · {timestamp}</div>
-  <div class="grid" id="content"></div>
-  <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    <a href="/" style="color:#00d4ff;">← Back to video comparison</a><br><br>
-    Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com" style="color:#00d4ff;">bitbooz@protonmail.com</a>
-  </div>
-</div>
-<script>
-const allData = {voice_json};
-function cleanName(name) {{
-  const n = (name || "").toLowerCase();
-  if (n.includes("eleven")) return "ElevenLabs";
-  if (n.includes("murf")) return "Murf AI";
-  if (n.includes("cartesia")) return "Cartesia";
-  if (n.includes("speechify")) return "Speechify";
-  if (n.includes("descript")) return "Descript";
-  if (n.includes("playht") || n.includes("play.ht")) return "PlayHT";
-  if (n.includes("wellsaid")) return "WellSaid Labs";
-  return name;
-}}
-function getPage(name) {{
-  const map = {{
-    "ElevenLabs":"pages/voice/elevenlabs.html",
-    "Murf AI":"pages/voice/murf.html",
-    "Cartesia":"pages/voice/cartesia.html",
-    "Speechify":"pages/voice/speechify.html",
-    "Descript":"pages/voice/descript.html",
-    "PlayHT":"pages/voice/playht.html",
-    "WellSaid Labs":"pages/voice/wellsaid.html"
-  }};
-  return map[name] || "#";
-}}
-function estimateCost(plan) {{
-  const price = plan.monthly_price_usd || 0;
-  const credits = plan.credits_or_minutes || 0;
-  if (!price || !credits || credits <= 0) return "";
-  if (plan.unit && plan.unit.toLowerCase().includes("character")) {{
-    const costPer1k = (price / credits) * 1000;
-    return costPer1k >= 0.001 ? ` (~$${{costPer1k.toFixed(3)}} / 1k chars)` : "";
-  }}
-  return "";
-}}
-function createParticles(e) {{
-  const x = e.clientX, y = e.clientY;
-  for (let i = 0; i < 12; i++) {{
-    const p = document.createElement("div");
-    p.style.cssText = "position:fixed; width:6px; height:6px; background:#00d4ff; border-radius:50%; pointer-events:none; z-index:9999;";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 2 + Math.random() * 4;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 30;
-    const anim = setInterval(() => {{
-      px += vx; py += vy; life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 30;
-      if (life <= 0) {{ clearInterval(anim); p.remove(); }}
-    }}, 16);
-  }}
-}}
-const order = ["ElevenLabs","Murf AI","Cartesia","Speechify","Descript"];
-const content = document.getElementById("content");
-const platforms = [];
-for (const [file, data] of Object.entries(allData)) {{
-  if (!data) continue;
-  const name = cleanName(data.platform || file.replace("-pricing.json",""));
-  platforms.push({{ name, data }});
-}}
-platforms.sort((a, b) => {{
-  const ai = order.indexOf(a.name), bi = order.indexOf(b.name);
-  if (ai === -1 && bi === -1) return a.name.localeCompare(b.name);
-  if (ai === -1) return 1;
-  if (bi === -1) return -1;
-  return ai - bi;
-}});
-for (const {{ name, data }} of platforms) {{
-  const page = getPage(name);
-  const checked = data.last_checked || data.checked || "{timestamp}";
-  const source = data.source || data.source_url || "";
-  let html = `<div class="card"><h2><a href="${{page}}" onclick="createParticles(event)">${{name}}</a></h2>`;
-  if (source) {{
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
-  }} else {{
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}}</div>`;
-  }}
-  for (const plan of data.plans || []) {{
-    const price = plan.monthly_price_usd ?? 0;
-    const credits = plan.credits_or_minutes ?? "-";
-    const unit = plan.unit || "";
-    const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${{plan.name}}</strong>: $${{price}}/mo · ${{credits}} ${{unit}}<span class="cost">${{est}}</span></div>`;
-  }}
-  html += "</div>";
-  content.innerHTML += html;
-}}
-</script>
-</body>
-</html>'''
-
-with open(os.path.join(folder, "voice.html"), "w", encoding="utf-8") as f:
-    f.write(voice_html)
-print("voice.html regenerated.")
-
-# === MUSIC PAGE ===
-music_folder = os.path.join(folder, "music")
-music_files = [
-    "suno-pricing.json", "udio-pricing.json", "soundraw-pricing.json",
-    "aiva-pricing.json", "boomy-pricing.json"
+VOICE_NAMES = [
+    ("eleven", "ElevenLabs", "/pages/voice/elevenlabs.html"),
+    ("murf", "Murf AI", "/pages/voice/murf.html"),
+    ("cartesia", "Cartesia", "/pages/voice/cartesia.html"),
+    ("speechify", "Speechify", "/pages/voice/speechify.html"),
+    ("descript", "Descript", "/pages/voice/descript.html"),
+    ("playht", "PlayHT", "/pages/voice/playht.html"),
+    ("play.ht", "PlayHT", "/pages/voice/playht.html"),
+    ("wellsaid", "WellSaid Labs", "/pages/voice/wellsaid.html"),
+    ("fliki", "Fliki", "/pages/voice/fliki.html"),
 ]
 
-music_data = {}
-for file in music_files:
-    path = os.path.join(music_folder, file)
-    if os.path.exists(path):
+MUSIC_NAMES = [
+    ("suno", "Suno", "/pages/music/suno.html"),
+    ("udio", "Udio", "/pages/music/udio.html"),
+    ("soundraw", "Soundraw", "/pages/music/soundraw.html"),
+    ("aiva", "AIVA", "/pages/music/aiva.html"),
+    ("boomy", "Boomy", "/pages/music/boomy.html"),
+]
+
+
+def load(path):
+    try:
         with open(path, encoding="utf-8-sig") as f:
-            loaded = json.load(f)
-            if loaded.get("plans"):
-                music_data[file] = loaded
+            d = json.load(f)
+        return d if isinstance(d, dict) and d.get("plans") else None
+    except Exception as e:
+        print(f"  Skipped {os.path.basename(path)}: {e}")
+        return None
 
-music_json = json.dumps(music_data)
 
-music_html = f'''<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Music Price Comparison 2026 | GenCost</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){{dataLayer.push(arguments);}}
-  gtag('js', new Date());
-  gtag('config', 'G-6DHTT2ZTBK');
-</script>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
-  body {{
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: #e0e0e0;
-    background: url('/Background.jpg') center/cover fixed no-repeat,
-                radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
-                linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-  }}
-  .overlay {{
-    min-height: 100vh;
-    padding: 40px 20px 60px;
-    background: rgba(10, 10, 15, 0.75);
-  }}
-  h1 {{
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3.2em;
-    letter-spacing: 4px;
-    margin: 0;
-    background: linear-gradient(90deg, #00d4ff, #7b68ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }}
-  .subtitle {{ text-align: center; margin: 8px 0 4px 0; font-size: 1.1em; opacity: 0.8; }}
-  .timestamp {{ text-align: center; font-size: 0.8em; opacity: 0.5; margin-bottom: 30px; }}
-  .grid {{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
-  }}
-  .card {{
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding: 22px;
-    border-radius: 16px;
-  }}
-  .card h2 {{ margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }}
-  .card h2 a {{ color: #fff; text-decoration: none; }}
-  .plan {{ margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }}
-  .cost {{ font-size: 0.95em; opacity: 0.9; margin-left: 6px; color: #00d4ff; font-weight:600; }}
-</style>
-</head>
-<body>
-<div class="overlay">
-  <h1>GENCOST MUSIC</h1>
-  <p class="subtitle">AI MUSIC PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · {timestamp}</div>
-  <div class="grid" id="content"></div>
-  <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    <a href="/" style="color:#00d4ff;">← Back to video comparison</a><br><br>
-    Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com" style="color:#00d4ff;">bitbooz@protonmail.com</a>
-  </div>
-</div>
-<script>
-const allData = {music_json};
-function cleanName(name) {{
-  const n = (name || "").toLowerCase();
-  if (n.includes("suno")) return "Suno";
-  if (n.includes("udio")) return "Udio";
-  if (n.includes("soundraw")) return "Soundraw";
-  if (n.includes("aiva")) return "AIVA";
-  if (n.includes("boomy")) return "Boomy";
-  return name;
-}}
-function getPage(name) {{
-  const map = {{
-    "Suno": "pages/music/suno.html",
-    "Udio": "pages/music/udio.html",
-    "Soundraw": "pages/music/soundraw.html",
-    "AIVA": "pages/music/aiva.html",
-    "Boomy": "pages/music/boomy.html"
-  }};
-  return map[name] || "#";
-}}
-function estimateCost(plan) {{
-  const price = plan.monthly_price_usd || 0;
-  const credits = plan.credits_or_minutes || 0;
-  if (!price || !credits || credits <= 0) return "";
-  const costPerSong = price / credits;
-  return costPerSong >= 0.01 ? ` (~$${{costPerSong.toFixed(2)}} / song)` : "";
-}}
-function createParticles(e) {{
-  const x = e.clientX, y = e.clientY;
-  for (let i = 0; i < 12; i++) {{
-    const p = document.createElement("div");
-    p.style.cssText = "position:fixed; width:6px; height:6px; background:#00d4ff; border-radius:50%; pointer-events:none; z-index:9999;";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 2 + Math.random() * 4;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 30;
-    const anim = setInterval(() => {{
-      px += vx; py += vy; life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 30;
-      if (life <= 0) {{ clearInterval(anim); p.remove(); }}
-    }}, 16);
-  }}
-}}
-const order = ["Suno","Udio","Soundraw","AIVA","Boomy"];
-const content = document.getElementById("content");
-const platforms = [];
-for (const [file, data] of Object.entries(allData)) {{
-  if (!data) continue;
-  const name = cleanName(data.platform || file.replace("-pricing.json",""));
-  platforms.push({{ name, data }});
-}}
-platforms.sort((a, b) => {{
-  const ai = order.indexOf(a.name), bi = order.indexOf(b.name);
-  if (ai === -1 && bi === -1) return a.name.localeCompare(b.name);
-  if (ai === -1) return 1;
-  if (bi === -1) return -1;
-  return ai - bi;
-}});
-for (const {{ name, data }} of platforms) {{
-  const page = getPage(name);
-  const checked = data.last_checked || data.checked || "{timestamp}";
-  const source = data.source || data.source_url || "";
-  let html = `<div class="card"><h2><a href="${{page}}" onclick="createParticles(event)">${{name}}</a></h2>`;
-  if (source) {{
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}} · <a href="${{source}}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
-  }} else {{
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${{checked}}</div>`;
-  }}
-  for (const plan of data.plans || []) {{
-    const price = plan.monthly_price_usd ?? 0;
-    const credits = plan.credits_or_minutes ?? "-";
-    const unit = plan.unit || "";
-    const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${{plan.name}}</strong>: $${{price}}/mo · ${{credits}} ${{unit}}<span class="cost">${{est}}</span></div>`;
-  }}
-  html += "</div>";
-  content.innerHTML += html;
-}}
-</script>
-</body>
-</html>'''
+def build(category, paths, names):
+    platforms = []
+    for path in paths:
+        d = load(path)
+        if not d:
+            continue
+        key = (str(d.get("platform") or "") + " " + os.path.basename(path)).lower()
+        name, page = None, "#"
+        for kw, n, p in names:
+            if kw in key:
+                name, page = n, p
+                break
+        if not name:
+            name = str(d.get("platform") or os.path.basename(path).replace("-pricing.json", "")).title()
+        platforms.append({
+            "name": name,
+            "page": page,
+            "source": d.get("source") or d.get("source_url") or "",
+            "checked": d.get("last_checked") or d.get("checked") or "",
+            "plans": d["plans"],
+        })
+    order = [n for _, n, _ in names]
+    platforms.sort(key=lambda p: (order.index(p["name"]) if p["name"] in order else 999, p["name"]))
 
-with open(os.path.join(folder, "music.html"), "w", encoding="utf-8") as f:
-    f.write(music_html)
-print("music.html regenerated.")
+    out_path = os.path.join(data_dir, f"{category}.json")
+    now = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
+    updated = now
+    # Keep the old date if nothing changed, so "updated" means "prices changed"
+    if os.path.exists(out_path):
+        try:
+            with open(out_path, encoding="utf-8") as f:
+                old = json.load(f)
+            strip = lambda ps: [{k: v for k, v in p.items() if k != "checked"} for p in ps]
+            if old.get("updated") and strip(old.get("platforms", [])) == strip(platforms):
+                updated = old["updated"]
+        except Exception:
+            pass
+    for p in platforms:
+        if not p["checked"]:
+            p["checked"] = updated
+    data = {"category": category, "updated": updated, "platforms": platforms}
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=1, ensure_ascii=False)
+    print(f"data/{category}.json: {len(platforms)} tools, updated {updated}")
+
+
+build("video", [os.path.join(folder, f) for f in VIDEO_FILES], VIDEO_NAMES)
+build("voice", sorted(glob.glob(os.path.join(folder, "voice", "*-pricing.json"))), VOICE_NAMES)
+build("music", sorted(glob.glob(os.path.join(folder, "music", "*-pricing.json"))), MUSIC_NAMES)

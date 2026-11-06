@@ -1,5 +1,6 @@
 {
   "platform": "capcut",
+  "source": "https://www.capcut.com/pricing",
   "plans": [
     {
       "name": "Free",
@@ -10,17 +11,17 @@
     },
     {
       "name": "Pro",
-      "monthly_price_usd": 399,
+      "monthly_price_usd": 19.99,
       "credits_or_minutes": 1200,
       "unit": "credits",
-      "offer": "2 months free on yearly"
+      "offer": "$179.99/year on yearly billing"
     },
     {
       "name": "Ultra",
-      "monthly_price_usd": 750,
+      "monthly_price_usd": 79,
       "credits_or_minutes": 8645,
       "unit": "credits",
-      "offer": ""
+      "offer": "$900/year on yearly billing"
     }
   ]
 }

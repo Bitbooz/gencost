@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculator | GenCost</title>
+<title>AI Video Budget Calculator | GenCost</title>
+<meta name="description" content="How many seconds of AI video can you get for your budget? Estimate with current GenCost prices for Kling, Runway, Pika, Luma and more.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,134 +12,127 @@
   gtag('js', new Date());
   gtag('config', 'G-6DHTT2ZTBK');
 </script>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: #e0e0e0;
-    background: url('/Background.jpg') center/cover fixed no-repeat,
-                radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
-                linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-  }
-  .overlay {
-    min-height: 100vh;
-    padding: 40px 20px 60px;
-    background: rgba(10, 10, 15, 0.75);
-  }
-  h1 {
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.8em;
-    letter-spacing: 3px;
-    margin: 0 0 10px 0;
-    background: linear-gradient(90deg, #00d4ff, #7b68ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .container { max-width: 700px; margin: 0 auto; }
-  .box {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding: 28px;
-    border-radius: 16px;
-    margin-bottom: 24px;
-  }
-  label { display: block; margin: 12px 0 6px; font-weight: 500; }
-  input, select {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.15);
-    background: rgba(0,0,0,0.4);
-    color: #fff;
-    font-size: 1em;
-  }
-  button {
-    margin-top: 18px;
-    background: #00d4ff;
-    color: #000;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 1em;
-  }
-  #result { margin-top: 20px; font-size: 1.15em; line-height: 1.6; }
-  a { color: #00d4ff; text-decoration: none; }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/gencost.css">
+<script>document.documentElement.classList.add('js');</script>
+<script defer src="/assets/gencost.js"></script>
+<link rel="canonical" href="https://getgencost.com/calculator.html">
 </head>
-<body>
-<div class="overlay">
-  <h1>CALCULATOR</h1>
-  <p style="text-align:center; opacity:0.7; margin-bottom:30px;">How many seconds can I get for my budget?</p>
-
-  <div class="container">
-    <div class="box">
-      <label>Budget (USD)</label>
-      <input type="number" id="budget" value="20" min="1" step="1">
-
-      <label>Platform</label>
-      <select id="platform">
-        <option value="kling">Kling AI Standard</option>
-        <option value="runway">Runway Standard</option>
-        <option value="runwaypro">Runway Pro</option>
-        <option value="pika">Pika Starter</option>
-        <option value="luma">Luma Plus</option>
-        <option value="heygen">HeyGen Creator</option>
-        <option value="synthesia">Synthesia Starter</option>
-        <option value="viggle">Viggle Pro</option>
-        <option value="invideo">InVideo Starter</option>
-        <option value="ltx">LTX Studio Lite</option>
-        <option value="krea">Krea Basic</option>
-        <option value="higgs">Higgsfield Starter</option>
-      </select>
-
-      <button onclick="calculate()">Calculate</button>
-      <div id="result"></div>
-    </div>
-
-    <div style="text-align:center;">
-      <a href="/">← Back to comparison</a>
+<body class="page-util">
+<nav class="top">
+  <div class="wrap">
+    <a class="logo grad-text" href="/">GENCOST</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/#platforms">Video</a></li>
+      <li><a href="/voice.html" data-section="/voice,/pages/voice/">Voice</a></li>
+      <li><a href="/music.html" data-section="/music,/pages/music/">Music</a></li>
+      <li><a href="/calculator.html">Calculator</a></li>
+      <li><a href="/#articles">Articles</a></li>
+      <li><a href="/pages/emerging.html">Emerging</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn btn-primary" href="/order.html">Order package</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
   </div>
+</nav>
+<header class="page-head">
+  <div class="wrap narrow">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span><span>Calculator</span></nav>
+  </div>
+</header>
+<main class="page">
+  <div class="wrap narrow">
+    <article class="prose">
+<span class="eyebrow">Budget calculator</span>
+<h1>How much AI video can I get for my budget?</h1>
+<p class="lead">Pick a plan and a budget. GenCost uses the plan's current price and credits to estimate how many seconds and 10-second clips you get.</p>
+<div class="card">
+  <label for="budget">Budget (USD per month)</label>
+  <input type="number" id="budget" value="20" min="1" step="1">
+  <label for="platform">Plan</label>
+  <select id="platform"><option>Loading plans…</option></select>
+  <div id="result"></div>
 </div>
+<p class="note">Estimates assume one credit buys one second of video, which differs between tools and quality settings. Prices from GenCost data, updated <span class="js-updated"></span>. Always confirm inside the tool.</p>
+    </article>
 
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo grad-text" href="/">GENCOST</a>
+        <p class="foot-about">Price comparison for AI video, avatar, voice and music tools, in real dollars and updated automatically.</p>
+      </div>
+      <div>
+        <h4>Compare</h4>
+        <ul>
+          <li><a href="/#platforms">Video &amp; avatar</a></li>
+          <li><a href="/voice.html">Voice</a></li>
+          <li><a href="/music.html">Music</a></li>
+          <li><a href="/pages/emerging.html">Emerging tools</a></li>
+          <li><a href="/calculator.html">Budget calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/pages/cheapest-ai-video-tools-in-2026.html">Cheapest video tools</a></li>
+          <li><a href="/pages/cheapest-ai-voice-tools-in-2026.html">Cheapest voice tools</a></li>
+          <li><a href="/pages/cheapest-ai-music-tools-in-2026.html">Cheapest music tools</a></li>
+          <li><a href="/pages/cheapest-ai-avatar-tools-in-2026.html">Cheapest avatar tools</a></li>
+          <li><a href="/credits.html">Credits &amp; residuals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>GenCost</h4>
+        <ul>
+          <li><a href="/order.html">Order a package</a></li>
+          <li><a href="/how-we-verify.html">How we verify prices</a></li>
+          <li><a href="/changelog.html">Price changes log</a></li>
+          <li><a href="mailto:bitbooz@protonmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Created by Grok &amp; Bitbooz · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span>
+      <span>Prices change often. Always confirm inside each tool before you pay.</span>
+    </div>
+  </div>
+</footer>
 <script>
-const prices = {
-  kling: { name: "Kling AI Standard", costPer10s: 0.15 },
-  runway: { name: "Runway Standard", costPer10s: 0.19 },
-  runwaypro: { name: "Runway Pro", costPer10s: 0.12 },
-  pika: { name: "Pika Starter", costPer10s: 0.11 },
-  luma: { name: "Luma Plus", costPer10s: 0.03 },
-  heygen: { name: "HeyGen Creator", costPer10s: 0.48 },
-  synthesia: { name: "Synthesia Starter", costPer10s: 0.15 },
-  viggle: { name: "Viggle Pro", costPer10s: 1.00 },
-  invideo: { name: "InVideo Starter", costPer10s: 0.25 },
-  ltx: { name: "LTX Studio Lite", costPer10s: 0.02 },
-  krea: { name: "Krea Basic", costPer10s: 0.02 },
-  higgs: { name: "Higgsfield Starter", costPer10s: 0.70 }
-};
-
-function calculate() {
-  const budget = parseFloat(document.getElementById("budget").value) || 0;
-  const key = document.getElementById("platform").value;
-  const p = prices[key];
-  if (!budget || !p) return;
-
-  const seconds = (budget / p.costPer10s) * 10;
-  const clips10s = Math.floor(seconds / 10);
-
-  document.getElementById("result").innerHTML =
-    `<strong>${p.name}</strong><br>` +
-    `For <strong>$${budget}</strong> you get approximately:<br>` +
-    `<strong>${Math.round(seconds)} seconds</strong> of video<br>` +
-    `≈ <strong>${clips10s}</strong> clips of 10 seconds`;
-}
-calculate();
+document.addEventListener("DOMContentLoaded", function () {
+  var plans = [], sel = document.getElementById("platform"), budget = document.getElementById("budget"), out = document.getElementById("result");
+  function calculate() {
+    var p = plans[sel.value], b = parseFloat(budget.value) || 0;
+    if (!p || !b) { out.innerHTML = ""; return; }
+    var costPer10s = p.price / p.credits * 10;
+    var seconds = (b / costPer10s) * 10;
+    var note = b < p.price ? '<br><span class="note">This plan costs ' + GenCost.money(p.price) + '/mo, more than your budget.</span>' : "";
+    out.innerHTML = "<strong>" + GenCost.esc(p.label) + "</strong> · about " + GenCost.money(Number(costPer10s.toFixed(2))) + " per 10 seconds<br>" +
+      "For <strong>$" + b + "</strong> you get roughly <strong class='price'>" + Math.round(seconds).toLocaleString("en-US") + " seconds</strong> of video, " +
+      "≈ <strong>" + Math.floor(seconds / 10).toLocaleString("en-US") + "</strong> clips of 10 seconds." + note;
+  }
+  GenCost.load("video").then(function (data) {
+    document.querySelectorAll(".js-updated").forEach(function (el) { el.textContent = data.updated; });
+    (data.platforms || []).forEach(function (pf) {
+      (pf.plans || []).forEach(function (p) {
+        var price = GenCost.price(p), credits = typeof p.credits_or_minutes === "number" ? p.credits_or_minutes : 0;
+        if (price > 0 && credits > 0) plans.push({ label: pf.name + " " + p.name + " (" + GenCost.money(price) + "/mo)", price: price, credits: credits });
+      });
+    });
+    sel.innerHTML = plans.map(function (p, i) { return '<option value="' + i + '">' + GenCost.esc(p.label) + "</option>"; }).join("");
+    var kling = plans.findIndex(function (p) { return /^Kling AI Standard/.test(p.label); });
+    if (kling >= 0) sel.value = kling;
+    calculate();
+  }).catch(function () { out.innerHTML = "Prices could not be loaded right now. Please refresh the page."; });
+  sel.addEventListener("change", calculate);
+  budget.addEventListener("input", calculate);
+});
 </script>
 </body>
 </html>

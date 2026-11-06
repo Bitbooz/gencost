@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GenCost</title>
+<title>GenCost · AI Video Price Comparison</title>
+<meta name="description" content="GenCost compares the real cost of AI video, avatar, voice and music tools. Plans, credits and prices side by side, updated automatically.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,271 +12,329 @@
   gtag('js', new Date());
   gtag('config', 'G-6DHTT2ZTBK');
 </script>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
-  body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: #e0e0e0;
-    background: url('/Background.jpg') center/cover fixed no-repeat,
-                radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
-                linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-  }
-  .overlay {
-    min-height: 100vh;
-    padding: 40px 20px 60px;
-    background: rgba(10, 10, 15, 0.75);
-  }
-  h1 {
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3.2em;
-    letter-spacing: 4px;
-    margin: 0;
-    background: linear-gradient(90deg, #00d4ff, #7b68ee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .subtitle { text-align: center; margin: 8px 0 4px 0; font-size: 1.1em; opacity: 0.8; }
-  .timestamp { text-align: center; font-size: 0.8em; opacity: 0.5; margin-bottom: 30px; }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  .card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding: 22px;
-    border-radius: 16px;
-  }
-  .card h2 { margin: 0 0 16px 0; font-size: 1.5em; font-family: 'Orbitron', sans-serif; }
-  .card h2 a { color: #fff; text-decoration: none; }
-  .plan { margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
-  .cost { font-size: 0.95em; opacity: 0.9; margin-left: 6px; color: #00d4ff; font-weight:600; }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/gencost.css">
+<script>document.documentElement.classList.add('js');</script>
+<script defer src="/assets/gencost.js"></script>
+<link rel="canonical" href="https://getgencost.com/">
 </head>
-<body>
-<div id="best-value" style="background:#1a1a2e; border:1px solid #00d4ff; border-radius:8px; padding:1rem; margin:1rem auto; max-width:1400px; color:#e0e0e0; text-align:center;">
-  <strong>Best value right now</strong><br>
-  <span id="best-value-text">Calculating...</span>
-</div>
-<div style="max-width:1400px; margin:10px auto 20px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; padding:0 16px;">
-  <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:10px; padding:14px; text-align:center;">
-    <strong>Cheapest video</strong><br><span style="font-size:0.9em;">Kling AI Standard ~$8–10/mo</span>
-  </div>
-  <div style="background:rgba(123,104,238,0.08); border:1px solid #7b68ee; border-radius:10px; padding:14px; text-align:center;">
-    <strong>Cheapest avatar</strong><br><span style="font-size:0.9em;">Synthesia Starter ~$19/mo</span>
-  </div>
-  <div style="background:rgba(0,212,255,0.06); border:1px solid #00d4ff; border-radius:10px; padding:14px; text-align:center;">
-    <strong>Cheapest voice</strong><br><span style="font-size:0.9em;">Cartesia Pro ~$5/mo</span>
-  </div>
-</div>
-<div style="max-width:1400px; margin:0 auto 20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:16px; text-align:center;">
-  <strong>Around $10 / $30</strong><br>
-  <span style="font-size:0.9em;">~$10: Kling Standard or Pika Starter &nbsp;|&nbsp; ~$30: Runway Pro, Luma Plus or HeyGen Creator</span>
-</div>
-<p style="color:#aaa; font-size:0.9rem; text-align:center;">
-  <strong>Last updated:</strong> 2026-11-06 08:00<br>
-  Prices change often — always confirm inside the tool before generating.
-</p>
-<div class="overlay">
-  <h1>GENCOST</h1>
-  <p class="subtitle">AI VIDEO PRICE COMPARISON</p>
-  <div class="timestamp">LAST UPDATED · 2026-11-06 08:00</div>
-  <div style="max-width:1400px; margin:20px auto 40px; display:grid; grid-template-columns:1fr 1fr; gap:20px; padding:0 20px;">
-    <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px; text-align:center;">
-      <a href="/voice.html" style="color:#00d4ff; font-size:1.3em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
-      <p style="margin:10px 0 0 0; font-size:0.95em; color:#ddd;">Compare ElevenLabs, PlayHT, Cartesia and more in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
-    </div>
-    <div style="background:rgba(123,104,238,0.08); border:1px solid #7b68ee; border-radius:12px; padding:22px; text-align:center;">
-      <a href="/music.html" style="color:#7b68ee; font-size:1.3em; font-weight:600; text-decoration:none;">AI Music Price Comparison →</a>
-      <p style="margin:10px 0 0 0; font-size:0.95em; color:#ddd;">Compare Suno, Udio, Soundraw, AIVA and Boomy in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
+<body data-prices="video">
+<a class="announce" href="/music.html">
+  <span class="pill-new">NEW</span>AI music price comparison is live: Suno, Udio, Soundraw and more <span class="muted">→</span>
+</a>
+<nav class="top">
+  <div class="wrap">
+    <a class="logo grad-text" href="/">GENCOST</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/#platforms">Video</a></li>
+      <li><a href="/voice.html" data-section="/voice,/pages/voice/">Voice</a></li>
+      <li><a href="/music.html" data-section="/music,/pages/music/">Music</a></li>
+      <li><a href="/calculator.html">Calculator</a></li>
+      <li><a href="/#articles">Articles</a></li>
+      <li><a href="/pages/emerging.html">Emerging</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn btn-primary" href="/order.html">Order package</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
   </div>
-  <div class="grid" id="content"></div>
+</nav>
 
-  <!-- Articles Section -->
-  <div style="max-width:900px; margin:40px auto; padding:0 20px;">
-    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Articles</h2>
-    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
-      <ul style="list-style:none; padding:0; margin:0;">
-        <li style="margin:12px 0;"><a href="/pages/runway-vs-kling-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Runway vs Kling Pricing 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Side-by-side cost breakdown</p></li>
-        <li style="margin:12px 0;"><a href="/pages/pika-vs-luma-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Pika vs Luma Pricing 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Free tier and paid plan comparison</p></li>
-        <li style="margin:12px 0;"><a href="/pages/heygen-vs-synthesia-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">HeyGen vs Synthesia Pricing 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Avatar video cost comparison</p></li>
-        <li style="margin:12px 0;"><a href="/pages/elevenlabs-vs-cartesia-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">ElevenLabs vs Cartesia Pricing 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Voice pricing comparison</p></li>
-        <li style="margin:12px 0;"><a href="/pages/suno-vs-udio-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Suno vs Udio Pricing 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Music generator comparison</p></li>
-        <li style="margin:12px 0;"><a href="/pages/kling-vs-hailuo-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Kling vs Hailuo Pricing 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Emerging video tools</p></li>
-        <li style="margin:12px 0;"><a href="/pages/runway-vs-luma-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Runway vs Luma Pricing 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Quality vs volume</p></li>
-        <li style="margin:12px 0;"><a href="/pages/playht-vs-elevenlabs-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">PlayHT vs ElevenLabs Pricing 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Voice tools comparison</p></li>
-        <li style="margin:12px 0;"><a href="/pages/heygen-vs-capcut-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">HeyGen vs CapCut Pricing 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Avatar vs editor</p></li>
-        <li style="margin:12px 0;"><a href="/pages/stable-audio-vs-beatoven-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Stable Audio vs Beatoven Pricing 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Music tools comparison</p></li>
-        <li style="margin:12px 0;"><a href="/pages/cheapest-ai-video-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Video Tools in 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Kling vs Runway vs Pika vs Luma</p></li>
-        <li style="margin:12px 0;"><a href="/pages/cheapest-ai-voice-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Voice Tools in 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">ElevenLabs, PlayHT, Cartesia and more</p></li>
-        <li style="margin:12px 0;"><a href="/pages/cheapest-ai-music-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Music Tools in 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Suno vs Udio and others</p></li>
-        <li style="margin:12px 0;"><a href="/pages/cheapest-ai-avatar-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Avatar Tools in 2026</a><p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">HeyGen, Synthesia and more</p></li>
-      </ul>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">AI video price comparison</span>
+      <h1>Know what AI video <span class="grad-text">really costs.</span></h1>
+      <p class="lead">Every AI tool prices in its own credits. GenCost tracks the plans of <span id="heroCount">19</span> video, avatar and image tools, plus voice and music, and puts them side by side in real dollars.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#platforms">Compare prices <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="/calculator.html">Budget calculator</a>
+      </div>
+      <div class="updated"><span class="dot"></span>Prices updated <span class="js-updated"></span></div>
+    </div>
+    <div class="demo reveal" aria-live="polite">
+      <div class="demo-head">
+        <div>
+          <div class="demo-q">Ask GenCost</div>
+          <div class="demo-title">What can I get for my budget?</div>
+        </div>
+        <div class="seg" id="budgetSeg"><button data-b="10" class="active">$10</button><button data-b="30">$30</button><button data-b="60">$60</button><button data-b="100">$100</button></div>
+      </div>
+      <div class="rows" id="budgetRows"><p class="loading">Loading prices…</p></div>
+      <div class="demo-foot">
+        <span>Monthly plans at or under your budget</span>
+        <a href="#platforms">See all plans →</a>
+      </div>
     </div>
   </div>
+</header>
 
-  <!-- Emerging Tools -->
-  <div style="max-width:900px; margin:40px auto; padding:0 20px;">
-    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Emerging Tools</h2>
-    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px; text-align:center;">
-      <p style="margin:0 0 12px 0; color:#ddd;">There are many smaller companies building AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find.</p>
-      <a href="/pages/emerging.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">See emerging tools →</a>
+<div class="stats">
+  <div class="wrap">
+    <div class="stats-grid reveal">
+      <div class="stat"><div class="num grad-text" id="statTools">–</div><div class="lbl">Video, avatar &amp; image tools tracked</div></div>
+      <div class="stat"><div class="num grad-text" id="statPlans">–</div><div class="lbl">Plans compared</div></div>
+      <div class="stat"><div class="num grad-text" id="statCheapest">–</div><div class="lbl">Cheapest paid plan / month</div></div>
+      <div class="stat"><div class="num grad-text">3</div><div class="lbl">Categories: video, voice, music</div></div>
     </div>
-  </div>
-
-  <!-- Sample Packages -->
-  <div style="max-width:900px; margin:50px auto 30px; padding:0 20px;">
-    <h2 style="text-align:center; font-family:'Orbitron', sans-serif; letter-spacing:2px; margin-bottom:8px;">Sample Packages</h2>
-    <p style="text-align:center; opacity:0.7; margin-top:0; margin-bottom:24px;">Done-for-you SEO article + YouTube assets</p>
-    <div id="packages-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px;"></div>
-  </div>
-
-  <!-- Order Packages -->
-  <div style="max-width:900px; margin:30px auto; padding:0 20px; text-align:center;">
-    <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:16px; padding:28px;">
-      <h2 style="margin:0 0 10px 0; font-family:'Orbitron', sans-serif; letter-spacing:1px;">Need a custom package?</h2>
-      <p style="margin:0 0 18px 0; opacity:0.85;">Done-for-you SEO article + YouTube assets based on real GenCost data.</p>
-      <a href="/order.html" style="display:inline-block; background:linear-gradient(90deg,#00d4ff,#7b68ee); color:#0a0a0f; font-weight:600; padding:12px 28px; border-radius:12px; text-decoration:none; font-size:1.05em;">Bestill pakke / Order Package</a>
-    </div>
-  </div>
-
-  <div style="text-align:center; margin-top:30px;">
-    <p><a href="/changelog.html" style="color:#00d4ff;">Price changes log →</a></p>
-    <p><a href="/credits.html" style="color:#00d4ff;">Credits & residuals →</a></p>
-  </div>
-  <div style="text-align:center; margin-top:40px; font-size:0.8em; opacity:0.6;">
-    Created by Grok & Bitbooz · Contact: <a href="mailto:bitbooz@protonmail.com" style="color:#00d4ff;">bitbooz@protonmail.com</a>
   </div>
 </div>
+
+<section class="band">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Quick answers</span>
+      <h2>The cheapest way in, by category</h2>
+      <p class="lead" id="bestValue">Calculating the best value right now…</p>
+    </div>
+    <div class="quick-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <a class="quick reveal" id="qVideo" href="#platforms" style="text-decoration:none"><div class="k">Cheapest video</div><div class="v">–</div><div class="p"></div></a>
+      <a class="quick reveal" id="qAvatar" href="/pages/cheapest-ai-avatar-tools-in-2026.html" style="text-decoration:none"><div class="k">Cheapest avatar</div><div class="v">–</div><div class="p"></div></a>
+      <a class="quick reveal" id="qVoice" href="/voice.html" style="text-decoration:none"><div class="k">Cheapest voice</div><div class="v">–</div><div class="p"></div></a>
+      <a class="quick reveal" id="qMusic" href="/music.html" style="text-decoration:none"><div class="k">Cheapest music</div><div class="v">–</div><div class="p"></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Why GenCost</span>
+      <h2>From a dozen pricing pages<br>to one clear answer</h2>
+      <p class="lead">Credits, units, videos, units per day. Every tool counts differently, so comparing them yourself means opening a tab for each one and doing the maths by hand.</p>
+    </div>
+    <div class="ba-grid">
+      <div class="panel reveal">
+        <div class="tag-line">Without GenCost</div>
+        <h3>A tab for every tool, a currency for every tab</h3>
+        <div class="chips">
+          <span class="chip"><b>660</b> credits</span>
+          <span class="chip"><b>3</b> videos</span>
+          <span class="chip"><b>100</b> units/day</span>
+          <span class="chip"><b>2,250</b> credits</span>
+          <span class="chip"><b>270</b> credits</span>
+          <span class="chip"><b>10,000</b> credits</span>
+          <span class="chip"><b>5,000</b> units</span>
+          <span class="chip"><b>80</b> credits</span>
+          <span class="chip">billed yearly?</span>
+          <span class="chip">price changed?</span>
+        </div>
+      </div>
+      <div class="panel after reveal">
+        <div class="tag-line">With GenCost</div>
+        <h3>One table, in dollars</h3>
+        <table class="norm" id="normTable"></table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Leaderboard</span>
+        <h2>Lowest paid plan, by tool</h2>
+        <p class="lead">The cheapest way to start paying for each tool, ranked.</p>
+      </div>
+      <a class="btn btn-ghost" href="/pages/cheapest-ai-video-tools-in-2026.html">Read the full breakdown <span class="arrow">→</span></a>
+    </div>
+    <div class="board reveal" id="board" data-limit="8"></div>
+  </div>
+</section>
+
+<section class="band" id="platforms">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">All plans</span>
+        <h2>Every video, avatar &amp; image plan</h2>
+        <p class="lead">Monthly prices, what's included, and an estimated cost per clip length.</p>
+      </div>
+    </div>
+    <div class="plat-grid" id="content"><p class="loading">Loading prices…</p></div>
+    <p class="small-note">Clip estimates assume one credit per second of video, which differs between tools. Prices change often, so always confirm inside the tool before generating.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Beyond video</span>
+      <h2>Voice and music, compared the same way</h2>
+    </div>
+    <div class="explore-grid">
+      <a class="explore reveal" href="/voice.html">
+        <div class="wave" aria-hidden="true" data-k="0"></div>
+        <h3>AI Voice</h3>
+        <p>ElevenLabs, PlayHT, Cartesia and more, in real dollars.</p>
+        <span class="go">Compare voice tools <span class="arrow">→</span></span>
+        <div class="glow" style="background:#00d4ff"></div>
+      </a>
+      <a class="explore reveal" href="/music.html">
+        <div class="wave" aria-hidden="true" data-k="1"></div>
+        <h3>AI Music</h3>
+        <p>Suno, Udio, Soundraw, AIVA and Boomy, side by side.</p>
+        <span class="go">Compare music tools <span class="arrow">→</span></span>
+        <div class="glow" style="background:#7b68ee"></div>
+      </a>
+      <a class="explore reveal" href="/pages/emerging.html">
+        <div class="wave" aria-hidden="true" data-k="2"></div>
+        <h3>Emerging tools</h3>
+        <p>Smaller companies that are often cheaper or better for specific jobs, but harder to find.</p>
+        <span class="go">See emerging tools <span class="arrow">→</span></span>
+        <div class="glow" style="background:#3ddc97"></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Articles Section -->
+<section class="band" id="articles">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Articles</span>
+        <h2>Head-to-head pricing breakdowns</h2>
+      </div>
+      <a class="btn btn-ghost" href="/changelog.html">Price changes log <span class="arrow">→</span></a>
+    </div>
+    <ul class="art-grid">
+<!-- ARTICLES:START (new article cards are added just above ARTICLES:END) -->
+      <li class="reveal"><a class="art" href="/pages/cheapest-ai-video-tools-in-2026.html"><span class="cat video">Video</span><h3>Cheapest AI Video Tools in 2026</h3><p>Kling vs Runway vs Pika vs Luma</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/runway-vs-kling-pricing-2026.html"><span class="cat video">Video</span><h3>Runway vs Kling Pricing 2026</h3><p>Side-by-side cost breakdown</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/pika-vs-luma-pricing-2026.html"><span class="cat video">Video</span><h3>Pika vs Luma Pricing 2026</h3><p>Free tier and paid plan comparison</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/kling-vs-hailuo-pricing-2026.html"><span class="cat video">Video</span><h3>Kling vs Hailuo Pricing 2026</h3><p>Emerging video tools</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/runway-vs-luma-pricing-2026.html"><span class="cat video">Video</span><h3>Runway vs Luma Pricing 2026</h3><p>Quality vs volume</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/best-cheap-ai-video-tools-for-youtube-2026.html"><span class="cat video">Video</span><h3>Best Cheap AI Video Tools for YouTube 2026</h3><p>Tools that work well for YouTube</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/best-free-ai-video-tools-2026.html"><span class="cat video">Video</span><h3>Best Free AI Video Tools 2026</h3><p>Free tiers that are actually usable</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/runway-vs-kling-pricing-comparison-2026.html"><span class="cat video">Video</span><h3>Runway vs Kling: Full Pricing Comparison</h3><p>Plans, credits and cost per clip in depth</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/cheapest-ai-avatar-tools-in-2026.html"><span class="cat avatar">Avatar</span><h3>Cheapest AI Avatar Tools in 2026</h3><p>HeyGen, Synthesia and more</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/heygen-vs-synthesia-pricing-2026.html"><span class="cat avatar">Avatar</span><h3>HeyGen vs Synthesia Pricing 2026</h3><p>Avatar video cost comparison</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/heygen-vs-capcut-pricing-2026.html"><span class="cat avatar">Avatar</span><h3>HeyGen vs CapCut Pricing 2026</h3><p>Avatar vs editor</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/cheapest-ai-voice-tools-in-2026.html"><span class="cat voice">Voice</span><h3>Cheapest AI Voice Tools in 2026</h3><p>ElevenLabs, PlayHT, Cartesia and more</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/cheapest-ai-voice-cloning-tools-2026.html"><span class="cat voice">Voice</span><h3>Cheapest AI Voice Cloning Tools 2026</h3><p>Best free and paid options</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/elevenlabs-vs-cartesia-pricing-2026.html"><span class="cat voice">Voice</span><h3>ElevenLabs vs Cartesia Pricing 2026</h3><p>Voice pricing comparison</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/playht-vs-elevenlabs-pricing-2026.html"><span class="cat voice">Voice</span><h3>PlayHT vs ElevenLabs Pricing 2026</h3><p>Voice tools comparison</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/cheapest-ai-music-tools-in-2026.html"><span class="cat music">Music</span><h3>Cheapest AI Music Tools in 2026</h3><p>Suno vs Udio and others</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/suno-vs-udio-pricing-2026.html"><span class="cat music">Music</span><h3>Suno vs Udio Pricing 2026</h3><p>Music generator comparison</p></a></li>
+      <li class="reveal"><a class="art" href="/pages/stable-audio-vs-beatoven-pricing-2026.html"><span class="cat music">Music</span><h3>Stable Audio vs Beatoven Pricing 2026</h3><p>Music tools comparison</p></a></li>
+      <li class="reveal"><a class="art" href="/credits.html"><span class="cat guide">Guide</span><h3>Credits &amp; residuals</h3><p>Which tools let unused credits roll over</p></a></li>
+<!-- ARTICLES:END -->
+    </ul>
+  </div>
+</section>
+
+<!-- Sample Packages -->
+<section class="band" id="packages">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <span class="eyebrow">Done for you</span>
+        <h2 class="section-title">SEO articles and YouTube assets, built on GenCost data</h2>
+        <p class="lead">Get a ready-to-publish article plus YouTube assets comparing the tools your audience cares about, using the same up-to-date pricing you see here.</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="/order.html">Bestill pakke / Order package <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="card-lg reveal">
+        <h3>What's in a package</h3>
+        <p>A clean, SEO-friendly article with real-dollar pricing tables, plus YouTube title options, a script outline and thumbnail ideas. $49–99 per package.</p>
+        <a class="btn btn-ghost" href="#samples">See sample packages <span class="arrow">↓</span></a>
+      </div>
+    </div>
+    <div id="samples" class="pkg-grid"></div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="cta reveal">
+      <span class="eyebrow">Stop guessing</span>
+      <h2>Pick the right AI tool <span class="grad-text">before you pay for it.</span></h2>
+      <div class="ctas">
+        <a class="btn btn-primary" href="/#platforms">Compare video tools <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="/voice.html">Voice</a>
+        <a class="btn btn-ghost" href="/music.html">Music</a>
+        <a class="btn btn-ghost" href="/calculator.html">Calculator</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo grad-text" href="/">GENCOST</a>
+        <p class="foot-about">Price comparison for AI video, avatar, voice and music tools, in real dollars and updated automatically.</p>
+      </div>
+      <div>
+        <h4>Compare</h4>
+        <ul>
+          <li><a href="/#platforms">Video &amp; avatar</a></li>
+          <li><a href="/voice.html">Voice</a></li>
+          <li><a href="/music.html">Music</a></li>
+          <li><a href="/pages/emerging.html">Emerging tools</a></li>
+          <li><a href="/calculator.html">Budget calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="/pages/cheapest-ai-video-tools-in-2026.html">Cheapest video tools</a></li>
+          <li><a href="/pages/cheapest-ai-voice-tools-in-2026.html">Cheapest voice tools</a></li>
+          <li><a href="/pages/cheapest-ai-music-tools-in-2026.html">Cheapest music tools</a></li>
+          <li><a href="/pages/cheapest-ai-avatar-tools-in-2026.html">Cheapest avatar tools</a></li>
+          <li><a href="/credits.html">Credits &amp; residuals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>GenCost</h4>
+        <ul>
+          <li><a href="/order.html">Order a package</a></li>
+          <li><a href="/how-we-verify.html">How we verify prices</a></li>
+          <li><a href="/changelog.html">Price changes log</a></li>
+          <li><a href="mailto:bitbooz@protonmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Created by Grok &amp; Bitbooz · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span>
+      <span>Prices change often. Always confirm inside each tool before you pay.</span>
+    </div>
+  </div>
+</footer>
 <script>
-const allData = {"heygen-pricing.json": {"platform": "heygen", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 3, "unit": "videos"}, {"name": "Creator", "monthly_price_usd": 29, "credits_or_minutes": 600, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 49, "credits_or_minutes": 1000, "unit": "credits"}]}, "higgsfield-pricing.json": {"platform": "Higgsfield", "plans": [{"name": "Starter", "monthly_price_usd": 19, "credits_or_minutes": 270, "unit": "credits"}, {"name": "Plus", "monthly_price_usd": 59, "credits_or_minutes": 1200, "unit": "credits"}, {"name": "Ultra", "monthly_price_usd": 129, "credits_or_minutes": 3000, "unit": "credits"}]}, "runway-pricing.json": {"platform": "runway", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 125, "unit": "credits"}, {"name": "Standard", "monthly_price_usd": 12, "credits_or_minutes": 625, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 28, "credits_or_minutes": 2250, "unit": "credits"}, {"name": "Max", "monthly_price_usd": 76, "credits_or_minutes": 9500, "unit": "credits"}]}, "kling-pricing.json": {"platform": "Kling AI", "plans": [{"name": "Standard", "monthly_price_usd": 10, "credits_or_minutes": 660, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 37, "credits_or_minutes": 3000, "unit": "credits"}, {"name": "Premier", "monthly_price_usd": 92, "credits_or_minutes": 8000, "unit": "credits"}]}, "synthesia-pricing.json": {"platform": "synthesia", "plans": [{"name": "Basic", "monthly_price_usd": 0, "credits_or_minutes": 500, "unit": "credits"}, {"name": "Starter", "monthly_price_usd": 19, "credits_or_minutes": 1250, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 89, "credits_or_minutes": 6000, "unit": "credits"}]}, "pika-pricing.json": {"platform": "pika", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits"}, {"name": "Starter", "monthly_price_usd": 10, "credits_or_minutes": 600, "unit": "credits"}, {"name": "Creator", "monthly_price_usd": 35, "credits_or_minutes": 2600, "unit": "credits"}, {"name": "Fancy", "monthly_price_usd": 95, "credits_or_minutes": 8550, "unit": "credits"}]}, "luma-pricing.json": {"platform": "luma", "plans": [{"name": "Plus", "monthly_price_usd": 30, "credits_or_minutes": 10000, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 90, "credits_or_minutes": 40000, "unit": "credits"}, {"name": "Ultra", "monthly_price_usd": 300, "credits_or_minutes": 150000, "unit": "credits"}]}, "viggle-pricing.json": {"platform": "viggle", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 7.99, "credits_or_minutes": 80, "unit": "credits"}, {"name": "Live", "monthly_price_usd": 15.99, "credits_or_minutes": 200, "unit": "credits"}, {"name": "Max", "monthly_price_usd": 63.99, "credits_or_minutes": 800, "unit": "credits"}]}, "invideo-pricing.json": {"platform": "invideo", "plans": [{"name": "Starter", "monthly_price_usd": 10, "credits_or_minutes": 400, "unit": "credits"}, {"name": "Plus", "monthly_price_usd": 30, "credits_or_minutes": 2000, "unit": "credits"}, {"name": "Max", "monthly_price_usd": 250, "credits_or_minutes": 8000, "unit": "credits"}]}, "capcut-pricing.json": {"platform": "capcut", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 399, "credits_or_minutes": 1200, "unit": "credits"}, {"name": "Ultra", "monthly_price_usd": 750, "credits_or_minutes": 8645, "unit": "credits"}]}, "ltx-pricing.json": {"platform": "ltx", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 800, "unit": "credits"}, {"name": "Lite", "monthly_price_usd": 15, "credits_or_minutes": 8000, "unit": "credits"}, {"name": "Standard", "monthly_price_usd": 35, "credits_or_minutes": 28000, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 125, "credits_or_minutes": 110000, "unit": "credits"}]}, "krea-pricing.json": {"platform": "krea", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 100, "unit": "units/day"}, {"name": "Basic", "monthly_price_usd": 9, "credits_or_minutes": 5000, "unit": "units"}, {"name": "Pro", "monthly_price_usd": 35, "credits_or_minutes": 20000, "unit": "units"}]}};
-function cleanName(name) {
-  const n = (name || "").toLowerCase();
-  if (n.includes("heygen")) return "HeyGen";
-  if (n.includes("kling")) return "Kling AI";
-  if (n.includes("ltx")) return "LTX Studio";
-  if (n.includes("invideo")) return "InVideo";
-  if (n.includes("capcut")) return "CapCut";
-  if (n.includes("higgs")) return "Higgsfield";
-  if (n.includes("runway")) return "Runway";
-  if (n.includes("synth")) return "Synthesia";
-  if (n.includes("pika")) return "Pika";
-  if (n.includes("luma")) return "Luma";
-  if (n.includes("viggle")) return "Viggle";
-  if (n.includes("krea")) return "Krea";
-  return name;
-}
-function getPage(name) {
-  const map = {
-    "HeyGen":"pages/heygen.html","Higgsfield":"pages/higgsfield.html","Runway":"pages/runway.html",
-    "Kling AI":"pages/kling.html","Synthesia":"pages/synthesia.html","Pika":"pages/pika.html",
-    "Luma":"pages/luma.html","Viggle":"pages/viggle.html","InVideo":"pages/invideo.html",
-    "CapCut":"pages/capcut.html","LTX Studio":"pages/ltx.html","Krea":"pages/krea.html"
-  };
-  return map[name] || "#";
-}
-function estimateCost(plan) {
-  const price = plan.monthly_price_usd || 0;
-  const credits = plan.credits_or_minutes || 0;
-  if (!price || !credits || credits <= 0) return "";
-  const costPerSecond = price / credits;
-  const c5 = (costPerSecond * 5).toFixed(2);
-  const c10 = (costPerSecond * 10).toFixed(2);
-  const c30 = (costPerSecond * 30).toFixed(2);
-  return `<br><span class="cost">5s: $${c5} &nbsp;·&nbsp; 10s: $${c10} &nbsp;·&nbsp; 30s: $${c30}</span>`;
-}
-function createParticles(e) {
-  const x = e.clientX, y = e.clientY;
-  for (let i = 0; i < 12; i++) {
-    const p = document.createElement("div");
-    p.style.cssText = "position:fixed; width:6px; height:6px; background:#00d4ff; border-radius:50%; pointer-events:none; z-index:9999;";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-    document.body.appendChild(p);
-    const angle = Math.random() * Math.PI * 2;
-    const speed = 2 + Math.random() * 4;
-    const vx = Math.cos(angle) * speed;
-    const vy = Math.sin(angle) * speed;
-    let px = x, py = y, life = 30;
-    const anim = setInterval(() => {
-      px += vx; py += vy; life--;
-      p.style.left = px + "px";
-      p.style.top = py + "px";
-      p.style.opacity = life / 30;
-      if (life <= 0) { clearInterval(anim); p.remove(); }
-    }, 16);
-  }
-}
-const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Krea"];
-const content = document.getElementById("content");
-const platforms = [];
-for (const [file, data] of Object.entries(allData)) {
-  if (!data) continue;
-  const name = cleanName(data.platform || file.replace("-pricing.json",""));
-  platforms.push({ name, data });
-}
-platforms.sort((a, b) => {
-  const ai = order.indexOf(a.name), bi = order.indexOf(b.name);
-  if (ai === -1 && bi === -1) return a.name.localeCompare(b.name);
-  if (ai === -1) return 1;
-  if (bi === -1) return -1;
-  return ai - bi;
-});
-let cheapest = null;
-let cheapestPrice = Infinity;
-for (const { name, data } of platforms) {
-  for (const plan of data.plans || []) {
-    const price = plan.monthly_price_usd || 0;
-    if (price > 0 && price < cheapestPrice) {
-      cheapestPrice = price;
-      cheapest = `${name} ${plan.name} ($${price}/mo)`;
-    }
-  }
-}
-const bestEl = document.getElementById("best-value-text");
-if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards below for details.";
-
-for (const { name, data } of platforms) {
-  const page = getPage(name);
-  const checked = "2026-11-06 08:00";
-  let html = `<div class="card"><h2><a href="${page}" onclick="createParticles(event)">${name}</a></h2>`;
-  html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${checked}</div>`;
-  for (const plan of data.plans || []) {
-    const price = plan.monthly_price_usd ?? 0;
-    const credits = plan.credits_or_minutes ?? "-";
-    const unit = plan.unit || "";
-    const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${plan.name}</strong>: $${price}/mo · ${credits} ${unit}${est}</div>`;
-  }
-  html += "</div>";
-  content.innerHTML += html;
-}
-
-fetch('/pages/samples/packages.json')
-  .then(r => r.json())
-  .then(packages => {
-    const grid = document.getElementById('packages-grid');
-    if (!grid || !packages.length) return;
-    packages.forEach(p => {
-      grid.innerHTML += `
-        <a href="${p.url}" style="text-decoration:none; color:inherit; display:block; margin-bottom:16px;">
-          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px;">
-            <div style="font-size:0.75em; color:#00d4ff; margin-bottom:6px;">SAMPLE PACKAGE</div>
-            <div style="font-size:1.1em; font-weight:500; margin-bottom:8px;">${p.title}</div>
-            <div style="font-size:0.9em; opacity:0.75;">${p.description || ''}</div>
-          </div>
-        </a>`;
+/* Homepage extras: sample packages + cheapest per category */
+document.addEventListener("DOMContentLoaded", function () {
+  GenCost.loadPackages("samples", 9);
+  var AVATAR = ["HeyGen", "Synthesia"], IMAGE = ["Midjourney", "Leonardo", "Ideogram"];
+  function cheapest(data, filter) {
+    var best = null;
+    (data.platforms || []).forEach(function (pf) {
+      if (filter && !filter(pf.name)) return;
+      (pf.plans || []).forEach(function (p) {
+        var pr = GenCost.price(p);
+        if (pr > 0 && (!best || pr < best.price)) best = { tool: pf.name, plan: p.name, price: pr, page: pf.page };
+      });
     });
-  })
-  .catch(() => {});
+    return best;
+  }
+  function fill(id, b) {
+    var el = document.getElementById(id);
+    if (!el || !b) return;
+    el.querySelector(".v").textContent = b.tool;
+    el.querySelector(".p").textContent = b.plan + " · " + GenCost.money(b.price) + " / month";
+  }
+  GenCost.load("video").then(function (d) {
+    fill("qVideo", cheapest(d, function (n) { return AVATAR.indexOf(n) < 0 && IMAGE.indexOf(n) < 0; }));
+    fill("qAvatar", cheapest(d, function (n) { return AVATAR.indexOf(n) >= 0; }));
+  }).catch(function () {});
+  GenCost.load("voice").then(function (d) { fill("qVoice", cheapest(d)); }).catch(function () {});
+  GenCost.load("music").then(function (d) { fill("qMusic", cheapest(d)); }).catch(function () {});
+});
 </script>
 </body>
 </html>
