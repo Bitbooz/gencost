@@ -123,6 +123,32 @@
     </div>
   </div>
 
+  <div style="max-width:900px; margin:50px auto; padding:0 20px;">
+    <h2>Articles</h2>
+    <ul style="line-height:1.8;">
+      <li><a href="/pages/cheapest-ai-video-tools-in-2026" style="color:#00d4ff;">Cheapest AI Video Tools in 2026</a><br>Kling vs Runway vs Pika vs Luma — real dollar costs</li>
+      <li><a href="/pages/cheapest-ai-voice-tools-in-2026" style="color:#00d4ff;">Cheapest AI Voice Tools in 2026</a><br>ElevenLabs, PlayHT, Cartesia and more</li>
+      <li><a href="/pages/cheapest-ai-music-tools-in-2026" style="color:#00d4ff;">Cheapest AI Music Tools in 2026</a><br>Suno vs Udio and others</li>
+      <li><a href="/pages/cheapest-ai-avatar-tools-in-2026" style="color:#00d4ff;">Cheapest AI Avatar Tools in 2026</a><br>HeyGen, Synthesia and more</li>
+      <li><a href="/pages/cheapest-ai-voice-cloning-tools-2026" style="color:#00d4ff;">Cheapest AI Voice Cloning Tools 2026</a><br>Best free and paid options</li>
+      <li><a href="/pages/suno-vs-udio-pricing-2026" style="color:#00d4ff;">Suno vs Udio Pricing 2026</a><br>Direct comparison</li>
+      <li><a href="/pages/best-cheap-ai-video-tools-for-youtube-2026" style="color:#00d4ff;">Best Cheap AI Video Tools for YouTube 2026</a><br>Tools that work well for YouTube</li>
+      <li><a href="/pages/best-free-ai-video-tools-2026" style="color:#00d4ff;">Best Free AI Video Tools 2026</a><br>Free tiers that are actually usable</li>
+      <li><a href="/pages/runway-vs-kling-pricing-comparison-2026" style="color:#00d4ff;">Runway vs Kling Pricing Comparison 2026</a><br>Side-by-side cost breakdown</li>
+    </ul>
+
+    <h2>Emerging Tools</h2>
+    <p>There are many smaller companies building AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find.</p>
+    <p><a href="/pages/emerging" style="color:#00d4ff;">See emerging tools →</a></p>
+
+    <h2>Sample Packages</h2>
+    <p>Done-for-you SEO article + YouTube assets</p>
+    <div id="packages-grid"></div>
+
+    <h2>Need a custom package?</h2>
+    <p>Done-for-you SEO article + YouTube assets based on real GenCost data.</p>
+  </div>
+
   <div style="text-align:center; margin-top:30px;">
     <p><a href="/changelog.html" style="color:#00d4ff;">Price changes log →</a></p>
     <p><a href="/credits.html" style="color:#00d4ff;">Credits & residuals →</a></p>
@@ -247,6 +273,25 @@ for (const { name, data } of platforms) {
   html += "</div>";
   content.innerHTML += html;
 }
+
+// Load Sample Packages
+fetch('/pages/samples/packages.json')
+  .then(r => r.json())
+  .then(packages => {
+    const grid = document.getElementById('packages-grid');
+    if (!grid || !packages.length) return;
+    packages.forEach(p => {
+      grid.innerHTML += `
+        <a href="${p.url}" style="text-decoration:none; color:inherit; display:block; margin-bottom:16px;">
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:20px;">
+            <div style="font-size:0.75em; color:#00d4ff; margin-bottom:6px;">SAMPLE PACKAGE</div>
+            <div style="font-size:1.15em; font-weight:500; margin-bottom:8px;">${p.title}</div>
+            <div style="font-size:0.9em; opacity:0.7;">${p.description || 'Real-dollar comparison package'}</div>
+          </div>
+        </a>`;
+    });
+  })
+  .catch(() => {});
 </script>
 </body>
 </html>
