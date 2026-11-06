@@ -57,13 +57,17 @@
   .card h2 a { color: #fff; text-decoration: none; }
   .plan { margin: 8px 0; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
   .cost { font-size: 0.95em; opacity: 0.9; margin-left: 6px; color: #00d4ff; font-weight:600; }
+  .section-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 30px auto;
+    max-width: 900px;
+  }
   @media (max-width: 768px) {
     div[style*="grid-template-columns:1fr 1fr"] {
       grid-template-columns: 1fr !important;
-      max-width: 100% !important;
-      padding: 0 16px !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
     }
   }
 </style>
@@ -111,21 +115,11 @@
   <div style="max-width:900px; margin:40px auto; padding:0 20px; text-align:center;">
     <h2 style="margin-top:0;">Free tiers available</h2>
     <p style="color:#aaa; margin-bottom:24px;">HeyGen, Runway, Pika, Synthesia and others still offer free plans.</p>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:800px; margin:0 auto;">
-      <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:12px; padding:22px;">
-        <a href="/voice.html" style="color:#00d4ff; font-size:1.2em; font-weight:600; text-decoration:none;">AI Voice Price Comparison →</a>
-        <p style="margin:10px 0 0 0; font-size:0.9em; color:#ddd;">Compare ElevenLabs, PlayHT, Cartesia and more in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
-      </div>
-      <div style="background:rgba(123,104,238,0.08); border:1px solid #7b68ee; border-radius:12px; padding:22px;">
-        <a href="/music.html" style="color:#7b68ee; font-size:1.2em; font-weight:600; text-decoration:none;">AI Music Price Comparison →</a>
-        <p style="margin:10px 0 0 0; font-size:0.9em; color:#ddd;">Compare Suno, Udio, Soundraw, AIVA and Boomy in real dollars.<br><small>Updated automatically with the latest prices.</small></p>
-      </div>
-    </div>
   </div>
 
-  <div style="max-width:900px; margin:50px auto; padding:0 20px;">
+  <div class="section-box">
     <h2>Articles</h2>
-    <ul style="line-height:1.8;">
+    <ul style="line-height:1.8; padding-left:20px;">
       <li><a href="/pages/cheapest-ai-video-tools-in-2026" style="color:#00d4ff;">Cheapest AI Video Tools in 2026</a><br>Kling vs Runway vs Pika vs Luma — real dollar costs</li>
       <li><a href="/pages/cheapest-ai-voice-tools-in-2026" style="color:#00d4ff;">Cheapest AI Voice Tools in 2026</a><br>ElevenLabs, PlayHT, Cartesia and more</li>
       <li><a href="/pages/cheapest-ai-music-tools-in-2026" style="color:#00d4ff;">Cheapest AI Music Tools in 2026</a><br>Suno vs Udio and others</li>
@@ -136,15 +130,21 @@
       <li><a href="/pages/best-free-ai-video-tools-2026" style="color:#00d4ff;">Best Free AI Video Tools 2026</a><br>Free tiers that are actually usable</li>
       <li><a href="/pages/runway-vs-kling-pricing-comparison-2026" style="color:#00d4ff;">Runway vs Kling Pricing Comparison 2026</a><br>Side-by-side cost breakdown</li>
     </ul>
+  </div>
 
+  <div class="section-box">
     <h2>Emerging Tools</h2>
     <p>There are many smaller companies building AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find.</p>
-    <p><a href="/pages/emerging" style="color:#00d4ff;">See emerging tools →</a></p>
+    <p><a href="/pages/emerging" style="color:#00d4ff; font-weight:500;">See emerging tools →</a></p>
+  </div>
 
+  <div class="section-box">
     <h2>Sample Packages</h2>
-    <p>Done-for-you SEO article + YouTube assets</p>
+    <p style="margin-bottom:20px;">Done-for-you SEO article + YouTube assets</p>
     <div id="packages-grid"></div>
+  </div>
 
+  <div class="section-box" style="text-align:center;">
     <h2>Need a custom package?</h2>
     <p>Done-for-you SEO article + YouTube assets based on real GenCost data.</p>
   </div>
@@ -158,7 +158,8 @@
   </div>
 </div>
 <script>
-const allData = {"heygen-pricing.json": {"platform": "heygen", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 3, "unit": "videos", "offer": "2 months free on yearly"}, {"name": "Creator", "monthly_price_usd": 29, "credits_or_minutes": 600, "unit": "credits", "offer": "2 months free on yearly"}, {"name": "Pro", "monthly_price_usd": 49, "credits_or_minutes": 1000, "unit": "credits", "offer": "2 months free on yearly"}]}, "higgsfield-pricing.json": {"platform": "Higgsfield", "plans": [{"name": "Starter", "monthly_price_usd": 19, "credits_or_minutes": 270, "unit": "credits"}, {"name": "Plus", "monthly_price_usd": 59, "credits_or_minutes": 1200, "unit": "credits"}, {"name": "Ultra", "monthly_price_usd": 129, "credits_or_minutes": 3000, "unit": "credits"}]}, "runway-pricing.json": {"platform": "runway", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 125, "unit": "credits", "offer": "one-time credits"}, {"name": "Standard", "monthly_price_usd": 12, "credits_or_minutes": 625, "unit": "credits", "offer": "Save $36/year, 25% off Kling 4.0 until November 30"}, {"name": "Pro", "monthly_price_usd": 28, "credits_or_minutes": 2250, "unit": "credits", "offer": "Save $84/year, 25% off Kling 4.0 until November 30"}, {"name": "Max", "monthly_price_usd": 76, "credits_or_minutes": 9500, "unit": "credits", "offer": "Save $228/year, 25% off Kling 4.0 until November 30, credits roll over 1 mo"}]}, "kling-pricing.json": {"platform": "Kling AI", "plans": [{"name": "Standard", "monthly_price_usd": 10, "credits_or_minutes": 660, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 37, "credits_or_minutes": 3000, "unit": "credits"}, {"name": "Premier", "monthly_price_usd": 92, "credits_or_minutes": 8000, "unit": "credits"}]}, "synthesia-pricing.json": {"platform": "synthesia", "plans": [{"name": "Basic", "monthly_price_usd": 0, "credits_or_minutes": 500, "unit": "credits", "offer": "limited promo: 1 Syren video"}, {"name": "Starter", "monthly_price_usd": 19, "credits_or_minutes": 1250, "unit": "credits", "offer": "first month $9, save up to 4 months with yearly"}, {"name": "Pro", "monthly_price_usd": 89, "credits_or_minutes": 6000, "unit": "credits", "offer": "first month $49, save up to 4 months with yearly"}]}, "pika-pricing.json": {"platform": "pika", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits", "offer": ""}, {"name": "Starter", "monthly_price_usd": 10, "credits_or_minutes": 600, "unit": "credits", "offer": "Save 20% on yearly"}, {"name": "Creator", "monthly_price_usd": 35, "credits_or_minutes": 2600, "unit": "credits", "offer": "Save 20% on yearly; limited time free Pika H3 Flex generations every day"}, {"name": "Fancy", "monthly_price_usd": 95, "credits_or_minutes": 8550, "unit": "credits", "offer": "Save 20% on yearly; limited time free Pika H3 Flex generations every day"}]}, "luma-pricing.json": {"platform": "luma", "plans": [{"name": "Plus", "monthly_price_usd": 30, "credits_or_minutes": 10000, "unit": "credits", "offer": "Save up to 20% with yearly"}, {"name": "Pro", "monthly_price_usd": 90, "credits_or_minutes": 40000, "unit": "credits", "offer": "Save up to 20% with yearly"}, {"name": "Ultra", "monthly_price_usd": 300, "credits_or_minutes": 150000, "unit": "credits", "offer": "Save up to 20% with yearly"}]}, "viggle-pricing.json": {"platform": "viggle", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits", "offer": "20% off on yearly, free credits refresh daily"}, {"name": "Pro", "monthly_price_usd": 7.99, "credits_or_minutes": 80, "unit": "credits", "offer": "20% off on yearly"}, {"name": "Live", "monthly_price_usd": 15.99, "credits_or_minutes": 200, "unit": "credits", "offer": "20% off on yearly"}, {"name": "Max", "monthly_price_usd": 63.99, "credits_or_minutes": 800, "unit": "credits", "offer": "20% off on yearly"}]}, "invideo-pricing.json": {"platform": "invideo", "plans": [{"name": "Starter", "monthly_price_usd": 10, "credits_or_minutes": 400, "unit": "credits", "offer": "50% off on annual, save \u20ac120 per seat"}, {"name": "Plus", "monthly_price_usd": 30, "credits_or_minutes": 2000, "unit": "credits", "offer": "50% off on annual, save \u20ac360 per seat"}, {"name": "Max", "monthly_price_usd": 250, "credits_or_minutes": 8000, "unit": "credits", "offer": "50% off on annual"}]}, "capcut-pricing.json": {"platform": "capcut", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits", "offer": ""}, {"name": "Pro", "monthly_price_usd": 399, "credits_or_minutes": 1200, "unit": "credits", "offer": "2 months free on yearly"}, {"name": "Ultra", "monthly_price_usd": 750, "credits_or_minutes": 8645, "unit": "credits", "offer": ""}]}, "ltx-pricing.json": {"platform": "ltx", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 800, "unit": "credits", "offer": "800 credits one time"}, {"name": "Lite", "monthly_price_usd": 15, "credits_or_minutes": 8000, "unit": "credits", "offer": "Save 50% for Cyber Monday, 20% off yearly"}, {"name": "Standard", "monthly_price_usd": 35, "credits_or_minutes": 28000, "unit": "credits", "offer": "Save 50% for Cyber Monday, Save 40% with Black Friday, 28800 additional Computing Seconds per month for first 3 months, 20% off yearly"}, {"name": "Pro", "monthly_price_usd": 125, "credits_or_minutes": 110000, "unit": "credits", "offer": "Save 50% for Cyber Monday, Save 40% with Black Friday, 20% off yearly"}]}, "krea-pricing.json": {"platform": "krea", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 100, "unit": "units/day", "offer": ""}, {"name": "Basic", "monthly_price_usd": 9, "credits_or_minutes": 5000, "unit": "units", "offer": "40% off on yearly"}, {"name": "Pro", "monthly_price_usd": 35, "credits_or_minutes": 20000, "unit": "units", "offer": "40% off on yearly"}]}};
+const allData = {"heygen-pricing.json": {"platform": "heygen", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 3, "unit": "videos"}, {"name": "Creator", "monthly_price_usd": 29, "credits_or_minutes": 600, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 49, "credits_or_minutes": 1000, "unit": "credits"}]}, "higgsfield-pricing.json": {"platform": "Higgsfield", "plans": [{"name": "Starter", "monthly_price_usd": 19, "credits_or_minutes": 270, "unit": "credits"}, {"name": "Plus", "monthly_price_usd": 59, "credits_or_minutes": 1200, "unit": "credits"}, {"name": "Ultra", "monthly_price_usd": 129, "credits_or_minutes": 3000, "unit": "credits"}]}, "runway-pricing.json": {"platform": "runway", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 125, "unit": "credits"}, {"name": "Standard", "monthly_price_usd": 12, "credits_or_minutes": 625, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 28, "credits_or_minutes": 2250, "unit": "credits"}, {"name": "Max", "monthly_price_usd": 76, "credits_or_minutes": 9500, "unit": "credits"}]}, "kling-pricing.json": {"platform": "Kling AI", "plans": [{"name": "Standard", "monthly_price_usd": 10, "credits_or_minutes": 660, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 37, "credits_or_minutes": 3000, "unit": "credits"}, {"name": "Premier", "monthly_price_usd": 92, "credits_or_minutes": 8000, "unit": "credits"}]}, "synthesia-pricing.json": {"platform": "synthesia", "plans": [{"name": "Basic", "monthly_price_usd": 0, "credits_or_minutes": 500, "unit": "credits"}, {"name": "Starter", "monthly_price_usd": 19, "credits_or_minutes": 1250, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 89, "credits_or_minutes": 6000, "unit": "credits"}]}, "pika-pricing.json": {"platform": "pika", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits"}, {"name": "Starter", "monthly_price_usd": 10, "credits_or_minutes": 600, "unit": "credits"}, {"name": "Creator", "monthly_price_usd": 35, "credits_or_minutes": 2600, "unit": "credits"}, {"name": "Fancy", "monthly_price_usd": 95, "credits_or_minutes": 8550, "unit": "credits"}]}, "luma-pricing.json": {"platform": "luma", "plans": [{"name": "Plus", "monthly_price_usd": 30, "credits_or_minutes": 10000, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 90, "credits_or_minutes": 40000, "unit": "credits"}, {"name": "Ultra", "monthly_price_usd": 300, "credits_or_minutes": 150000, "unit": "credits"}]}, "viggle-pricing.json": {"platform": "viggle", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 7.99, "credits_or_minutes": 80, "unit": "credits"}, {"name": "Live", "monthly_price_usd": 15.99, "credits_or_minutes": 200, "unit": "credits"}, {"name": "Max", "monthly_price_usd": 63.99, "credits_or_minutes": 800, "unit": "credits"}]}, "invideo-pricing.json": {"platform": "invideo", "plans": [{"name": "Starter", "monthly_price_usd": 10, "credits_or_minutes": 400, "unit": "credits"}, {"name": "Plus", "monthly_price_usd": 30, "credits_or_minutes": 2000, "unit": "credits"}, {"name": "Max", "monthly_price_usd": 250, "credits_or_minutes": 8000, "unit": "credits"}]}, "capcut-pricing.json": {"platform": "capcut", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 399, "credits_or_minutes": 1200, "unit": "credits"}, {"name": "Ultra", "monthly_price_usd": 750, "credits_or_minutes": 8645, "unit": "credits"}]}, "ltx-pricing.json": {"platform": "ltx", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 800, "unit": "credits"}, {"name": "Lite", "monthly_price_usd": 15, "credits_or_minutes": 8000, "unit": "credits"}, {"name": "Standard", "monthly_price_usd": 35, "credits_or_minutes": 28000, "unit": "credits"}, {"name": "Pro", "monthly_price_usd": 125, "credits_or_minutes": 110000, "unit": "credits"}]}, "krea-pricing.json": {"platform": "krea", "plans": [{"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 100, "unit": "units/day"}, {"name": "Basic", "monthly_price_usd": 9, "credits_or_minutes": 5000, "unit": "units"}, {"name": "Pro", "monthly_price_usd": 35, "credits_or_minutes": 20000, "unit": "units"}]}};
+
 function cleanName(name) {
   const n = (name || "").toLowerCase();
   if (n.includes("heygen")) return "HeyGen";
@@ -174,9 +175,6 @@ function cleanName(name) {
   if (n.includes("viggle")) return "Viggle";
   if (n.includes("hailuo")) return "Hailuo AI";
   if (n.includes("veo")) return "Google Veo";
-  if (n.includes("hedra")) return "Hedra";
-  if (n.includes("sora")) return "Sora";
-  if (n.includes("vidu")) return "Vidu";
   if (n.includes("krea")) return "Krea";
   return name;
 }
@@ -185,9 +183,7 @@ function getPage(name) {
     "HeyGen":"pages/heygen.html","Higgsfield":"pages/higgsfield.html","Runway":"pages/runway.html",
     "Kling AI":"pages/kling.html","Synthesia":"pages/synthesia.html","Pika":"pages/pika.html",
     "Luma":"pages/luma.html","Viggle":"pages/viggle.html","InVideo":"pages/invideo.html",
-    "CapCut":"pages/capcut.html","LTX Studio":"pages/ltx.html","Hailuo AI":"pages/hailuo.html",
-    "Google Veo":"pages/veo.html","Hedra":"pages/hedra.html","Sora":"pages/sora.html",
-    "Vidu":"pages/vidu.html","Krea":"pages/krea.html"
+    "CapCut":"pages/capcut.html","LTX Studio":"pages/ltx.html","Krea":"pages/krea.html"
   };
   return map[name] || "#";
 }
@@ -223,7 +219,7 @@ function createParticles(e) {
     }, 16);
   }
 }
-const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Hedra","Sora","Vidu","Krea"];
+const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Krea"];
 const content = document.getElementById("content");
 const platforms = [];
 for (const [file, data] of Object.entries(allData)) {
@@ -238,7 +234,6 @@ platforms.sort((a, b) => {
   if (bi === -1) return -1;
   return ai - bi;
 });
-// Best value
 let cheapest = null;
 let cheapestPrice = Infinity;
 for (const { name, data } of platforms) {
@@ -255,26 +250,21 @@ if (bestEl && cheapest) bestEl.textContent = cheapest + " — check the cards be
 
 for (const { name, data } of platforms) {
   const page = getPage(name);
-  const checked = data.last_checked || data.checked || "2026-11-06 02:09";
-  const source = data.source || data.source_url || "";
+  const checked = "2026-11-06 02:09";
   let html = `<div class="card"><h2><a href="${page}" onclick="createParticles(event)">${name}</a></h2>`;
-  if (source) {
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${checked} · <a href="${source}" target="_blank" style="color:#00d4ff;">Source</a></div>`;
-  } else {
-    html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${checked}</div>`;
-  }
+  html += `<div style="font-size:0.75em; opacity:0.6; margin-bottom:8px;">Checked: ${checked}</div>`;
   for (const plan of data.plans || []) {
     const price = plan.monthly_price_usd ?? 0;
     const credits = plan.credits_or_minutes ?? "-";
     const unit = plan.unit || "";
     const est = estimateCost(plan);
-    html += `<div class="plan"><strong>${plan.name}</strong>: $${price}/mo · ${credits} ${unit}<span class="cost">${est}</span></div>`;
+    html += `<div class="plan"><strong>${plan.name}</strong>: $${price}/mo · ${credits} ${unit}${est}</div>`;
   }
   html += "</div>";
   content.innerHTML += html;
 }
 
-// Load Sample Packages
+// Load Sample Packages as cards
 fetch('/pages/samples/packages.json')
   .then(r => r.json())
   .then(packages => {
@@ -283,10 +273,10 @@ fetch('/pages/samples/packages.json')
     packages.forEach(p => {
       grid.innerHTML += `
         <a href="${p.url}" style="text-decoration:none; color:inherit; display:block; margin-bottom:16px;">
-          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:20px;">
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:18px;">
             <div style="font-size:0.75em; color:#00d4ff; margin-bottom:6px;">SAMPLE PACKAGE</div>
-            <div style="font-size:1.15em; font-weight:500; margin-bottom:8px;">${p.title}</div>
-            <div style="font-size:0.9em; opacity:0.7;">${p.description || 'Real-dollar comparison package'}</div>
+            <div style="font-size:1.1em; font-weight:500; margin-bottom:8px;">${p.title}</div>
+            <div style="font-size:0.9em; opacity:0.75;">${p.description || ''}</div>
           </div>
         </a>`;
     });
