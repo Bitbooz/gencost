@@ -1,162 +1,107 @@
 ﻿
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emerging AI Tools | GenCost</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500&display=swap');
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: #e0e0e0;
-      background: url('/Background.jpg') center/cover fixed no-repeat,
-                  radial-gradient(ellipse at 0% 50%, rgba(0,212,255,0.15) 0%, transparent 50%),
-                  radial-gradient(ellipse at 100% 50%, rgba(123,104,238,0.15) 0%, transparent 50%),
-                  linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-    }
-    .overlay {
-      min-height: 100vh;
-      padding: 40px 20px 60px;
-      background: rgba(10, 10, 15, 0.75);
-    }
-    h1 {
-      text-align: center;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2.6em;
-      letter-spacing: 3px;
-      margin: 0 0 10px 0;
-      background: linear-gradient(90deg, #00d4ff, #7b68ee);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .back {
-      color: #00d4ff;
-      text-decoration: none;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-    h2 {
-      font-family: 'Orbitron', sans-serif;
-      margin-top: 40px;
-      margin-bottom: 16px;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 18px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      backdrop-filter: blur(10px);
-      padding: 20px;
-      border-radius: 16px;
-    }
-    .card h3 {
-      margin: 0 0 10px 0;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.3em;
-    }
-    .card a {
-      color: #00d4ff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .note {
-      text-align: center;
-      opacity: 0.7;
-      margin-top: 40px;
-      font-size: 0.9em;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emerging AI Tools | GenCost</title>
+<style>
+  body { font-family: system-ui, sans-serif; background:#0a0a0f; color:#e0e0e0; margin:0; padding:40px 20px; line-height:1.6; }
+  .container { max-width:900px; margin:0 auto; }
+  a { color:#00d4ff; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  h1 { font-size:2.2em; margin-bottom:8px; }
+  h2 { margin-top:40px; font-size:1.4em; color:#aaa; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:20px; margin-top:20px; }
+  .card { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:20px; }
+  .card h3 { margin:0 0 8px 0; font-size:1.2em; }
+  .card p { margin:8px 0; font-size:0.95em; opacity:0.9; }
+  .price { font-weight:600; color:#00d4ff; }
+  .note { margin-top:40px; font-size:0.85em; opacity:0.7; }
+</style>
 </head>
 <body>
-<div class="overlay">
-  <div style="max-width:1100px; margin:0 auto;">
-    <a href="/" class="back">← Back to GenCost</a>
+<div class="container">
+  <a href="/" class="back">← Back to GenCost</a>
 
-    <h1>Emerging Tools</h1>
-    <p style="text-align:center; opacity:0.85; max-width:700px; margin:0 auto 30px;">Smaller and less known AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find. Prices change often — always confirm inside the tool.</p>
+  <h1>Emerging Tools</h1>
+  <p>Smaller and less known AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find. Prices change often — always confirm inside the tool.</p>
 
-    <h2>Video</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Seedance</h3>
-        <p>ByteDance model. Often one of the cheaper high-quality options depending on platform.</p>
-        <p><strong>From ~$14/mo</strong> (varies by host)</p>
-        <a href="https://www.seedance.tv" target="_blank" rel="noopener">Official site →</a>
-      </div>
-      <div class="card">
-        <h3>PixVerse</h3>
-        <p>Own models + access to others. Generous free tier and relatively low paid plans.</p>
-        <p><strong>Free + from ~$8–10/mo</strong></p>
-        <a href="https://pixverse.ai" target="_blank" rel="noopener">Official site →</a>
-      </div>
-      <div class="card">
-        <h3>Wan</h3>
-        <p>Alibaba’s open model. Available on several platforms, often competitive on price.</p>
-        <p><strong>Varies by host</strong></p>
-        <a href="https://wan.video" target="_blank" rel="noopener">Official site →</a>
-      </div>
-      <div class="card">
-        <h3>OpenArt</h3>
-        <p>Aggregator with many models including Seedance, Kling, and others.</p>
-        <p><strong>From ~$12–15/mo</strong></p>
-        <a href="https://openart.ai" target="_blank" rel="noopener">Official site →</a>
-      </div>
+  <h2>Video</h2>
+  <div class="cards">
+    <div class="card">
+      <h3><a href="/pages/seedance.html">Seedance</a></h3>
+      <p>ByteDance model. Often one of the cheaper high-quality options depending on platform. Available on multiple hosts.</p>
+      <p class="price">From ~$14/mo (varies by host)</p>
+      <a href="/pages/seedance.html">View pricing →</a>
     </div>
-
-    <h2>Voice</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Fish Audio</h3>
-        <p>Strong voice cloning and TTS. Often cheaper than the big names for similar quality.</p>
-        <p><strong>Free tier + low paid plans</strong></p>
-        <a href="https://fish.audio" target="_blank" rel="noopener">Official site →</a>
-      </div>
-      <div class="card">
-        <h3>Hume</h3>
-        <p>Emotion-focused voice. Interesting for more natural, expressive output.</p>
-        <p><strong>Free + paid tiers</strong></p>
-        <a href="https://www.hume.ai" target="_blank" rel="noopener">Official site →</a>
-      </div>
-      <div class="card">
-        <h3>Resemble AI</h3>
-        <p>Voice cloning specialist. Good for custom voices and real-time use cases.</p>
-        <p><strong>From ~$30/mo</strong></p>
-        <a href="https://www.resemble.ai" target="_blank" rel="noopener">Official site →</a>
-      </div>
+    <div class="card">
+      <h3><a href="/pages/pixverse.html">PixVerse</a></h3>
+      <p>Own models + access to others. Generous free tier and relatively low paid plans. Good for quick video generation.</p>
+      <p class="price">Free + from ~$8–10/mo</p>
+      <a href="/pages/pixverse.html">View pricing →</a>
     </div>
-
-    <h2>Music</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Mureka</h3>
-        <p>AI music generator with songwriting features.</p>
-        <p><strong>Free + paid</strong></p>
-        <a href="https://www.mureka.ai" target="_blank" rel="noopener">Official site →</a>
-      </div>
-      <div class="card">
-        <h3>Stable Audio</h3>
-        <p>From Stability AI. Good for instrumental and background tracks.</p>
-        <p><strong>Free + from ~$12/mo</strong></p>
-        <a href="https://stableaudio.com" target="_blank" rel="noopener">Official site →</a>
-      </div>
-      <div class="card">
-        <h3>Beatoven</h3>
-        <p>Royalty-free AI music, often used for video background tracks.</p>
-        <p><strong>Free + paid plans</strong></p>
-        <a href="https://www.beatoven.ai" target="_blank" rel="noopener">Official site →</a>
-      </div>
+    <div class="card">
+      <h3><a href="/pages/wan.html">Wan</a></h3>
+      <p>Alibaba’s open model. Available on several platforms, often competitive on price via API or hosts.</p>
+      <p class="price">Varies by host</p>
+      <a href="/pages/wan.html">View pricing →</a>
     </div>
-
-    <p class="note">Prices and features change frequently. Always check the official site for current plans before signing up.</p>
+    <div class="card">
+      <h3><a href="/pages/openart.html">OpenArt</a></h3>
+      <p>Aggregator with many models including Seedance, Kling, and others. Convenient if you want multiple options in one place.</p>
+      <p class="price">From ~$12–15/mo</p>
+      <a href="/pages/openart.html">View pricing →</a>
+    </div>
   </div>
+
+  <h2>Voice</h2>
+  <div class="cards">
+    <div class="card">
+      <h3><a href="/pages/fish-audio.html">Fish Audio</a></h3>
+      <p>Strong voice cloning and TTS. Often cheaper than the big names for similar quality. Good free tier.</p>
+      <p class="price">Free tier + low paid plans</p>
+      <a href="/pages/fish-audio.html">View pricing →</a>
+    </div>
+    <div class="card">
+      <h3><a href="/pages/hume.html">Hume</a></h3>
+      <p>Emotion-focused voice. Interesting for more natural, expressive output. Partly usage-based.</p>
+      <p class="price">Free + paid tiers</p>
+      <a href="/pages/hume.html">View pricing →</a>
+    </div>
+    <div class="card">
+      <h3><a href="/pages/resemble.html">Resemble AI</a></h3>
+      <p>Voice cloning specialist. Good for custom voices and real-time use cases. More enterprise-oriented pricing.</p>
+      <p class="price">From ~$30/mo (usage) / higher tiers</p>
+      <a href="/pages/resemble.html">View pricing →</a>
+    </div>
+  </div>
+
+  <h2>Music</h2>
+  <div class="cards">
+    <div class="card">
+      <h3><a href="/pages/mureka.html">Mureka</a></h3>
+      <p>AI music generator with songwriting features. Simple plans for creators.</p>
+      <p class="price">Free + paid</p>
+      <a href="/pages/mureka.html">View pricing →</a>
+    </div>
+    <div class="card">
+      <h3><a href="/pages/stable-audio.html">Stable Audio</a></h3>
+      <p>From Stability AI. Good for instrumental and background tracks. Credit-based system.</p>
+      <p class="price">Free + from ~$12/mo</p>
+      <a href="/pages/stable-audio.html">View pricing →</a>
+    </div>
+    <div class="card">
+      <h3><a href="/pages/beatoven.html">Beatoven</a></h3>
+      <p>Royalty-free AI music, often used for video background tracks. Straightforward creator plans.</p>
+      <p class="price">Free + paid plans</p>
+      <a href="/pages/beatoven.html">View pricing →</a>
+    </div>
+  </div>
+
+  <p class="note">Prices and features change frequently. Always check the official site for current plans before signing up.</p>
 </div>
 </body>
 </html>
-
