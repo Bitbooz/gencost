@@ -1,4 +1,9 @@
-{
+﻿{
   "platform": "vidu",
-  "plans": []
+  "plans": [
+    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits", "offer": "limited sign-in credits"},
+    {"name": "Standard", "monthly_price_usd": 10, "credits_or_minutes": 800, "unit": "credits"},
+    {"name": "Premium", "monthly_price_usd": 35, "credits_or_minutes": 3500, "unit": "credits"},
+    {"name": "Ultimate", "monthly_price_usd": 115, "credits_or_minutes": 8000, "unit": "credits", "offer": "includes off-peak mode"}
+  ]
 }

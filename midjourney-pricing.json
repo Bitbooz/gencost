@@ -1,0 +1,26 @@
+{
+  "platform": "Midjourney",
+  "plans": [
+    {
+      "name": "Basic",
+      "monthly_price_usd": 10,
+      "credits_or_minutes": 200,
+      "unit": "fast hours",
+      "offer": "approx"
+    },
+    {
+      "name": "Standard",
+      "monthly_price_usd": 30,
+      "credits_or_minutes": 900,
+      "unit": "fast hours",
+      "offer": "approx"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 60,
+      "credits_or_minutes": 1800,
+      "unit": "fast hours",
+      "offer": "approx"
+    }
+  ]
+}

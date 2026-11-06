@@ -1,4 +1,19 @@
-{
+﻿{
   "platform": "sora",
-  "plans": []
+  "plans": [
+    {
+      "name": "Sora 2 (API shut down)",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "",
+      "offer": "Official API closed 24 Sep 2026"
+    },
+    {
+      "name": "Reseller rate (approx)",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "sec",
+      "offer": "~$0.08–0.10 per second (720p)"
+    }
+  ]
 }

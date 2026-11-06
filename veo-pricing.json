@@ -1,4 +1,10 @@
-{
+﻿{
   "platform": "veo",
-  "plans": []
+  "plans": [
+    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 50, "unit": "credits/day", "offer": "limited daily Flow credits"},
+    {"name": "Google AI Plus", "monthly_price_usd": 4.99, "credits_or_minutes": 200, "unit": "credits"},
+    {"name": "Google AI Pro", "monthly_price_usd": 19.99, "credits_or_minutes": 1000, "unit": "credits"},
+    {"name": "Google AI Ultra", "monthly_price_usd": 99.99, "credits_or_minutes": 10000, "unit": "credits"},
+    {"name": "API (per second)", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "sec", "offer": "Veo 3.1 Lite ~$0.05/s, Fast ~$0.10/s"}
+  ]
 }

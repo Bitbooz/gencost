@@ -1,103 +1,114 @@
 CapCut Pricing | Choose the Right Plan
 Products
-CapCut Desktop
-Powerful editing tool
-CapCut Online
-Online video editor
-CapCut Pad
-Edit anywhere, anytime
-CapCut Mobile
-Unlimited templates
-Plugin
-CapCut × Codex
-Dreamina AI
-Image & video maker
-Pippit AI
-Smart creative agent
-Hypic
-AI photo editor
-Features
-AI creation
-AI Design
+Ways to create
+Edit what you have
+Polish the photos and clips you already have.
+Find inspiration
+Start with a look, a template, or an idea.
+Generate something new
+Create images and videos from a simple prompt.
+Download CapCut
+Features & Tools
 Video Studio
-AI video generator
-AI image generator
-AI image enhancer
-Dreamina Seedance 2.5
-Nano Banana Pro
-Gemini Omni
-Text & Audio
-Auto captions
-Caption templates
-Speech recognition
-Text to speech
-Custom voices
-Enhance voice
-Reduce noise
-Image
-Remove image BG
-Image merge
-Image Enhancer
-Resize Image
-Online Photo Editor
-Meme Generator
-AI Text Remover
-AI People Remover
-AI Inpainting
-Face Cutout
-Video
-Remove video BG
-Enhance quality
-Video Editor
-Trim Video
-Add Subtitles To Video
-Video Converter
-Seedream 5.0
-Blog
+Generate and shape videos in one workspace.
+Design Studio
+Turn your ideas into designs ready to use.
+Video editor
+Cut, arrange, and polish video on a timeline.
+Smart Insight
+Gather, organize, and build on your ideas.
+Inspiration
+Explore creative ideas you can make your own.
+EditPilot
+Turn your direction into edits on the timeline.
 Features
-AI tools
-Video editor & generator
-Image editor & generator
-Voice generator & editor
-More
-Use cases
-Social media
-Marketing
-Lifestyle & Vlogs
-Custom design
-More
+Video tools
+Video Studio
+EditPilot
+Background remover
+Video enhancer
+Video editor
+Video trimmer
+Auto captions
+Video converter
+Image tools
+Design Studio
+Background remover
+Image enhancer
+Combine images
+Image resizer
+Photo editor
+Meme generator
+Text remover
+People remover
+AI inpainting
+Face cutout
+Audio & Captions
+Auto captions
+Text to speech
+Caption templates
+Voice recognition
+Custom voices
+Voice enhancer
+Background noise remover
+AI models
+Video models
+Dreamina Seedance 2.0
+Dreamina Seedance 2.0 Mini
+Dreamina Seedance 2.5
+Sora 2
+Dreamontage 1.0 Pro Fast
+Image models
+GPT Image 2
+Seedream 5.0
+Integrations
+Plugins
+CapCut × Codex
+Solutions
+By project
+Social media videos
+Brand content
+Ad creative
+Marketing content
+Lifestyle videos
+Logo design
+Poster design
+By role
+Marketers
+Social media creators
+Designers
+Filmmakers and studios
+By occasion
+Holidays
+Birthdays
+Weddings
+Anniversaries
+Black Friday
 Resources
 How-to guides
-Market Trends
-Top Picks
-Template trends & tips
-More
-Templates
-Social media templates
-Holiday templates
-More
-Calendar templates
-Anniversary templates
-Effects templates
-Business templates
-Industry templates
-Recap templates
+Template tips
+Editor’s picks
+Creative trends
 Discover
 About
 Community
-Initiatives
-Affiliates
+Programs
+Affiliate program
 Pioneer Program
 Creative Partner Program
 CapCut Creative Campus
-Help
+Newsroom
+Terms of Service
+Dreamina Seedance 2.0 launch
+CapCut World Singapore
+CapCut World LA
+Trust & Safety
 Trust Center
 Help Center
-Newsroom
-About CapCut's Terms of Service
-Dreamina Seedance 2.0 Launch
-Capcut World Singapore
-CapCut World LA
+More creative platforms
+Dreamina AI
+Pippit
+Hypic
 Pricing
 English
 Try CapCut Online
@@ -480,8 +491,8 @@ Auto Caption Generator
 AI Art Generator
 AI Logo Generator
 Dreamina Seedance 2.0
-Nano Banana Pro
-Gemini Omni
+AI image generator
+AI video generator
 Image & Video
 Remove Background
 Transparent Background

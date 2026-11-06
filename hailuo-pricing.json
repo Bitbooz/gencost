@@ -1,4 +1,10 @@
-{
+﻿{
   "platform": "hailuo",
-  "plans": []
+  "plans": [
+    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 0, "unit": "credits", "offer": "one-time 150 credit pack, expires in 3 days"},
+    {"name": "Standard", "monthly_price_usd": 14.99, "credits_or_minutes": 1000, "unit": "credits", "offer": "limited-time ~$8–10"},
+    {"name": "Pro", "monthly_price_usd": 54.99, "credits_or_minutes": 4500, "unit": "credits"},
+    {"name": "Master", "monthly_price_usd": 94.99, "credits_or_minutes": 10500, "unit": "credits"},
+    {"name": "Max", "monthly_price_usd": 199.99, "credits_or_minutes": 27000, "unit": "credits"}
+  ]
 }

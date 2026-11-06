@@ -1,5 +1,5 @@
 @echo off
-cd /d C:\Users\frode\Documents\gencost
+cd /d C:\Users\frode\Desktop\gencost
 echo Starting update...
 python regenerate_html.py
 echo.

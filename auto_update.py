@@ -21,7 +21,6 @@ platforms = {
     "boomy": "https://boomy.com/pricing",
     "hailuo": "https://hailuoai.video/pricing",
     "veo": "https://deepmind.google/technologies/veo/",
-    "hedra": "https://www.hedra.com/pricing",
     "sora": "https://openai.com/sora",
     "vidu": "https://www.vidu.studio/pricing",
     "krea": "https://www.krea.ai/pricing",
@@ -139,4 +138,3 @@ print("Forced good data for Higgsfield and Kling AI")
 
 import subprocess
 subprocess.run(["python", "regenerate_html.py"])
-

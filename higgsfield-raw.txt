@@ -7,10 +7,9 @@ Audio
 MCP
 API
 Genjutsu
-New
 Content Factory
-New
 Playable
+Mangaka
 New
 AI Influencer
 Academy
@@ -21,7 +20,6 @@ Ads Studio
 Effects
 Cinema Studio
 Contests
-Contests
 Marketing Studio
 Supercomputer
 Edit
@@ -29,8 +27,8 @@ Community
 Plugins
 Canvas
 Originals
-Pricing
 Enterprise
+Pricing
 Login
 Sign up
 ©

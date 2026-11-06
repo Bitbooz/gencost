@@ -8,15 +8,16 @@ json_files = [
     "kling-pricing.json", "synthesia-pricing.json", "pika-pricing.json",
     "luma-pricing.json", "viggle-pricing.json", "invideo-pricing.json",
     "capcut-pricing.json", "ltx-pricing.json", "hailuo-pricing.json",
-    "veo-pricing.json", "hedra-pricing.json", "sora-pricing.json",
-    "vidu-pricing.json", "krea-pricing.json"
+    "veo-pricing.json", "sora-pricing.json",
+    "vidu-pricing.json", "krea-pricing.json",
+    "midjourney-pricing.json", "leonardo-pricing.json", "ideogram-pricing.json"
 ]
 
 data = {}
 for file in json_files:
     path = os.path.join(folder, file)
     if os.path.exists(path):
-        with open(path, encoding="utf-8") as f:
+        with open(path, encoding="utf-8-sig") as f:
             loaded = json.load(f)
             if loaded.get("plans"):
                 data[file] = loaded
@@ -149,6 +150,76 @@ html = f'''<!DOCTYPE html>
     </div>
   </div>
 
+  <!-- Articles Section -->
+  <div style="max-width:900px; margin:40px auto; padding:0 20px;">
+    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Articles</h2>
+    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px;">
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-video-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Video Tools in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Kling vs Runway vs Pika vs Luma — real dollar costs</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-voice-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Voice Tools in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">ElevenLabs, PlayHT, Cartesia and more</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-music-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Music Tools in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Suno vs Udio and others</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-avatar-tools-in-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Avatar Tools in 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">HeyGen, Synthesia and more</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/cheapest-ai-voice-cloning-tools-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Cheapest AI Voice Cloning Tools 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Best free and paid options</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/suno-vs-udio-pricing-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Suno vs Udio Pricing 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Direct comparison</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/best-cheap-ai-video-tools-for-youtube-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Cheap AI Video Tools for YouTube 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Tools that work well for YouTube</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/best-free-ai-video-tools-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Best Free AI Video Tools 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Free tiers that are actually usable</p>
+        </li>
+        <li style="margin:12px 0;">
+          <a href="/pages/runway-vs-kling-pricing-comparison-2026.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">Runway vs Kling Pricing Comparison 2026</a>
+          <p style="margin:4px 0 0 0; font-size:0.9em; color:#aaa;">Side-by-side cost breakdown</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Emerging Tools -->
+  <div style="max-width:900px; margin:40px auto; padding:0 20px;">
+    <h2 style="text-align:center; font-family:'Orbitron', sans-serif;">Emerging Tools</h2>
+    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:22px; text-align:center;">
+      <p style="margin:0 0 12px 0; color:#ddd;">There are many smaller companies building AI tools for video, voice and music. They are often cheaper or better for specific use cases, but harder to find.</p>
+      <a href="/pages/emerging.html" style="color:#00d4ff; font-size:1.1em; text-decoration:none;">See emerging tools →</a>
+    </div>
+  </div>
+
+  <!-- Sample Packages -->
+  <div style="max-width:900px; margin:50px auto 30px; padding:0 20px;">
+    <h2 style="text-align:center; font-family:'Orbitron', sans-serif; letter-spacing:2px; margin-bottom:8px;">Sample Packages</h2>
+    <p style="text-align:center; opacity:0.7; margin-top:0; margin-bottom:24px;">Done-for-you SEO article + YouTube assets</p>
+    <div id="packages-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px;"></div>
+  </div>
+
+  <!-- Order Packages -->
+  <div style="max-width:900px; margin:30px auto; padding:0 20px; text-align:center;">
+    <div style="background:rgba(0,212,255,0.08); border:1px solid #00d4ff; border-radius:16px; padding:28px;">
+      <h2 style="margin:0 0 10px 0; font-family:'Orbitron', sans-serif; letter-spacing:1px;">Need a custom package?</h2>
+      <p style="margin:0 0 18px 0; opacity:0.85;">Done-for-you SEO article + YouTube assets based on real GenCost data.</p>
+      <a href="/order.html" style="display:inline-block; background:linear-gradient(90deg,#00d4ff,#7b68ee); color:#0a0a0f; font-weight:600; padding:12px 28px; border-radius:12px; text-decoration:none; font-size:1.05em;">Bestill pakke / Order Package</a>
+    </div>
+  </div>
+
   <div style="text-align:center; margin-top:30px;">
     <p><a href="/changelog.html" style="color:#00d4ff;">Price changes log →</a></p>
     <p><a href="/credits.html" style="color:#00d4ff;">Credits & residuals →</a></p>
@@ -174,10 +245,12 @@ function cleanName(name) {{
   if (n.includes("viggle")) return "Viggle";
   if (n.includes("hailuo")) return "Hailuo AI";
   if (n.includes("veo")) return "Google Veo";
-  if (n.includes("hedra")) return "Hedra";
   if (n.includes("sora")) return "Sora";
   if (n.includes("vidu")) return "Vidu";
   if (n.includes("krea")) return "Krea";
+  if (n.includes("midjourney")) return "Midjourney";
+  if (n.includes("leonardo")) return "Leonardo";
+  if (n.includes("ideogram")) return "Ideogram";
   return name;
 }}
 function getPage(name) {{
@@ -186,8 +259,9 @@ function getPage(name) {{
     "Kling AI":"pages/kling.html","Synthesia":"pages/synthesia.html","Pika":"pages/pika.html",
     "Luma":"pages/luma.html","Viggle":"pages/viggle.html","InVideo":"pages/invideo.html",
     "CapCut":"pages/capcut.html","LTX Studio":"pages/ltx.html","Hailuo AI":"pages/hailuo.html",
-    "Google Veo":"pages/veo.html","Hedra":"pages/hedra.html","Sora":"pages/sora.html",
-    "Vidu":"pages/vidu.html","Krea":"pages/krea.html"
+    "Google Veo":"pages/veo.html","Sora":"pages/sora.html",
+    "Vidu":"pages/vidu.html","Krea":"pages/krea.html",
+    "Midjourney":"pages/midjourney.html","Leonardo":"pages/leonardo.html","Ideogram":"pages/ideogram.html"
   }};
   return map[name] || "#";
 }}
@@ -223,7 +297,7 @@ function createParticles(e) {{
     }}, 16);
   }}
 }}
-const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Hedra","Sora","Vidu","Krea"];
+const order = ["HeyGen","Higgsfield","Runway","Kling AI","Synthesia","Pika","Luma","Viggle","InVideo","CapCut","LTX Studio","Hailuo AI","Google Veo","Sora","Vidu","Krea","Midjourney","Leonardo","Ideogram"];
 const content = document.getElementById("content");
 const platforms = [];
 for (const [file, data] of Object.entries(allData)) {{
@@ -273,6 +347,25 @@ for (const {{ name, data }} of platforms) {{
   html += "</div>";
   content.innerHTML += html;
 }}
+
+// Load Sample Packages dynamically
+fetch('/pages/samples/packages.json')
+  .then(r => r.json())
+  .then(packages => {{
+    const grid = document.getElementById('packages-grid');
+    if (!grid || !packages.length) return;
+    packages.forEach(p => {{
+      grid.innerHTML += `
+        <a href="${{p.url}}" style="text-decoration:none; color:inherit;">
+          <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:20px;">
+            <div style="font-size:0.75em; color:#00d4ff; margin-bottom:6px;">SAMPLE PACKAGE</div>
+            <div style="font-size:1.15em; font-weight:500; margin-bottom:8px;">${{p.title}}</div>
+            <div style="font-size:0.9em; opacity:0.7;">${{p.description || 'Real-dollar comparison package'}}</div>
+          </div>
+        </a>`;
+    }});
+  }})
+  .catch(() => {{}});
 </script>
 </body>
 </html>'''
@@ -292,7 +385,7 @@ voice_data = {}
 for file in voice_files:
     path = os.path.join(voice_folder, file)
     if os.path.exists(path):
-        with open(path, encoding="utf-8") as f:
+        with open(path, encoding="utf-8-sig") as f:
             loaded = json.load(f)
             if loaded.get("plans"):
                 voice_data[file] = loaded
@@ -481,7 +574,7 @@ music_data = {}
 for file in music_files:
     path = os.path.join(music_folder, file)
     if os.path.exists(path):
-        with open(path, encoding="utf-8") as f:
+        with open(path, encoding="utf-8-sig") as f:
             loaded = json.load(f)
             if loaded.get("plans"):
                 music_data[file] = loaded
