@@ -147,6 +147,7 @@
   <div class="section-box" style="text-align:center;">
     <h2>Need a custom package?</h2>
     <p>Done-for-you SEO article + YouTube assets based on real GenCost data.</p>
+    <p><a href="/order.html" style="color:#00d4ff; font-weight:500; font-size:1.1em;">Order a package →</a></p>
   </div>
 
   <div style="text-align:center; margin-top:30px;">
@@ -173,8 +174,6 @@ function cleanName(name) {
   if (n.includes("pika")) return "Pika";
   if (n.includes("luma")) return "Luma";
   if (n.includes("viggle")) return "Viggle";
-  if (n.includes("hailuo")) return "Hailuo AI";
-  if (n.includes("veo")) return "Google Veo";
   if (n.includes("krea")) return "Krea";
   return name;
 }
@@ -264,7 +263,6 @@ for (const { name, data } of platforms) {
   content.innerHTML += html;
 }
 
-// Load Sample Packages as cards
 fetch('/pages/samples/packages.json')
   .then(r => r.json())
   .then(packages => {
