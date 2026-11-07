@@ -136,8 +136,39 @@ def load_existing(path):
         return None
 
 
+# Extra help for pages where the prices are easy to misread.
+# "focus": lines with these words (and the lines around them) are put first, so they are never cut off.
+HINTS = {
+    "veo": {
+        "focus": ["Monthly (", "Annual (", "Google Flow Credits", "Included in Pro"],
+        "note": "Google hides most plan prices in the page text. The Google AI Pro price is the 'Monthly ($X)' and "
+                "'Annual ($Y)' pair from the savings calculator (Annual is per year: divide by 12). "
+                "Never use YouTube Premium, Google Home, Google Health or Google Cloud prices. "
+                "Only include plans whose own price appears in the text. "
+                "credits_or_minutes = the plan's Google Flow Credits per month, unit 'Flow credits' "
+                "(the Flow credits row lists Plus, Pro, Ultra in that order).",
+    },
+}
+
+
+def focus_text(platform_name, raw_text):
+    h = HINTS.get(platform_name)
+    if not h:
+        return raw_text
+    lines = raw_text.splitlines()
+    keep = set()
+    for i, line in enumerate(lines):
+        if any(k in line for k in h["focus"]):
+            keep.update(range(max(0, i - 3), min(len(lines), i + 6)))
+    picked = "\n".join(lines[i] for i in sorted(keep))
+    return picked + "\n\n---\n\n" + raw_text
+
+
 def extract_pricing(platform_name, raw_text):
+    raw_text = focus_text(platform_name, raw_text)
+    extra = HINTS.get(platform_name, {}).get("note", "")
     prompt = f"""Extract the main individual subscription plans AND any special offers from this text.
+{("Important for this page: " + extra) if extra else ""}
 
 Rules:
 - Ignore Enterprise / Contact sales plans

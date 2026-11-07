@@ -505,8 +505,9 @@ def process(path, tools, matcher, updated):
         (anchor or h1 or art.contents[0]).insert_after(box)
 
     for gone, (when, link) in GONE.items():
-        if art.find(class_="gone-note", attrs={"data-gone": gone}) or os.path.basename(path) == os.path.basename(link):
-            continue
+        if (art.find(class_="gone-note", attrs={"data-gone": gone}) or os.path.basename(path) == os.path.basename(link)
+                or art.find("a", href=link)):
+            continue  # already noted, or the article already points readers to the alternatives
         if re.search(r"(?<![\w])" + re.escape(gone) + r"(?![\w])", art.get_text(" "), re.I):
             note = BeautifulSoup(f'<p class="gone-note" data-gone="{gone}"><strong>Update:</strong> {gone} {when}, so it is no longer in '
                                  f'our price lists. See the <a href="{link}">cheapest {gone} alternatives</a>.</p>', PARSER).find("p")
@@ -544,11 +545,17 @@ NOTE_FIXES = {
          '      <li class="reveal"><a class="art" href="/pages/cheapest-ai-video-tools-in-2026.html"><span class="cat video">Video</span><h3>Cheapest AI Video Tools in 2026</h3><p>Kling vs Runway vs Pika vs Luma</p></a></li>'),
         ('<li class="reveal"><a class="art" href="/pages/best-sora-alternatives-2026.html"><span class="cat video">Video</span><h3>Sora Is Shut Down: Cheapest Alternatives</h3><p>Veo vs Kling vs Runway, cost per clip</p></a></li>',
          '<li class="reveal"><a class="art" href="/pages/best-sora-alternatives-2026.html"><span class="cat video">Video</span><h3>Sora Is Shut Down: Cheapest Alternatives</h3><p>Veo vs Kling vs Runway, cost per clip</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/cheapest-way-to-use-seedance-2-5-2026.html"><span class="cat video">Video</span><h3>Where Is Seedance 2.5 Cheapest?</h3><p>CapCut vs Higgsfield vs Luma vs Pika</p></a></li>'),
+        ('<li class="reveal"><a class="art" href="/pages/cheapest-way-to-use-seedance-2-5-2026.html"><span class="cat video">Video</span><h3>Where Is Seedance 2.5 Cheapest?</h3><p>CapCut vs Higgsfield vs Luma vs Pika</p></a></li>',
+         '<li class="reveal"><a class="art" href="/pages/cheapest-way-to-use-seedance-2-5-2026.html"><span class="cat video">Video</span><h3>Where Is Seedance 2.5 Cheapest?</h3><p>CapCut vs Higgsfield vs Luma vs Pika</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/kling-vs-veo-pricing-2026.html"><span class="cat video">Video</span><h3>Kling vs Veo Pricing 2026</h3><p>Plans and real cost per video</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/cheapest-ai-video-cost-per-second-2026.html"><span class="cat video">Video</span><h3>AI Video Cost per Second</h3><p>11 tools, real cost per clip</p></a></li>'),
+        ('<li class="reveal"><a class="art" href="/pages/best-playht-alternatives-2026.html"><span class="cat voice">Voice</span><h3>PlayHT Is Shut Down: Cheapest Alternatives</h3><p>Cartesia vs ElevenLabs vs Murf</p></a></li>',
+         '<li class="reveal"><a class="art" href="/pages/best-playht-alternatives-2026.html"><span class="cat voice">Voice</span><h3>PlayHT Is Shut Down: Cheapest Alternatives</h3><p>Cartesia vs ElevenLabs vs Murf</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/best-elevenlabs-alternatives-2026.html"><span class="cat voice">Voice</span><h3>Cheaper ElevenLabs Alternatives</h3><p>Real cost per hour of speech</p></a></li>'),
         ("ElevenLabs, PlayHT, Cartesia and more", "ElevenLabs, Cartesia, Murf and more"),
         ("Clip estimates assume one credit per second of video, which differs between tools.",
          "Clip costs use each tool's own credits per clip for the model named (hover to see it). Tools without a known clip cost show none."),
     ],
     "voice.html": [
+        ('<li class="reveal"><a class="art" href="/pages/best-playht-alternatives-2026.html"><span class="cat voice">Voice</span><h3>PlayHT Is Shut Down: Cheapest Alternatives</h3><p>Cartesia vs ElevenLabs vs Murf</p></a></li>',
+         '<li class="reveal"><a class="art" href="/pages/best-playht-alternatives-2026.html"><span class="cat voice">Voice</span><h3>PlayHT Is Shut Down: Cheapest Alternatives</h3><p>Cartesia vs ElevenLabs vs Murf</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/best-elevenlabs-alternatives-2026.html"><span class="cat voice">Voice</span><h3>Cheaper ElevenLabs Alternatives</h3><p>Real cost per hour of speech</p></a></li>'),
         ('<li class="reveal"><a class="art" href="/pages/playht-vs-elevenlabs-pricing-2026.html"><span class="cat voice">Voice</span><h3>PlayHT vs ElevenLabs Pricing 2026</h3><p>Voice tools comparison</p></a></li>',
          '<li class="reveal"><a class="art" href="/pages/best-playht-alternatives-2026.html"><span class="cat voice">Voice</span><h3>PlayHT Is Shut Down: Cheapest Alternatives</h3><p>Cartesia vs ElevenLabs vs Murf</p></a></li>'),
         ("ElevenLabs, PlayHT, Cartesia and more", "ElevenLabs, Cartesia, Murf and more"),
@@ -559,6 +566,13 @@ NOTE_FIXES = {
          '<div class="entry">\n<div class="date">2026-11-07</div>\n<p>Removed Sora and PlayHT, which have both shut down, and added guides to their cheapest alternatives. '
          'Added the real cost per video clip, "Watch out" notes on hidden costs for 26 tools, and live prices inside articles.</p>\n</div>\n'
          '<div class="entry">\n<div class="date">2026-10-29</div>'),
+    ],
+    # Veo's real price is $19.99 (it was misread as $8.99), so Vidu is cheaper per clip than Veo
+    "pages/best-sora-alternatives-2026.html": [
+        ("Cheapest per clip: <strong>Google Veo</strong> (in Google Flow, part of Google AI Pro) and <strong>Vidu</strong>.",
+         "Cheapest per clip: <strong>Vidu</strong> and <strong>Google Veo</strong> (in Google Flow, part of Google AI Pro)."),
+        ("<h3>Google Veo: cheapest per clip, closest to Sora</h3>", "<h3>Google Veo: closest to Sora, and cheap per clip</h3>"),
+        ("Per clip it is the cheapest option in this list, and the plan", "Per clip it is one of the cheapest options in this list, and the plan"),
     ],
     # a right arrow that was saved with the wrong encoding when the articles were first written
     "pages/*.html": [("←’", "→")],
