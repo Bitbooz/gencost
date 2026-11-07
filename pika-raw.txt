@@ -11,12 +11,18 @@ Login
 Try Pika
 Video Apps
 Video Studio
+Dynamic Captions
+NEW
 Product Ad
 Swap Anything
 Motion Transfer
 Extend Video
 All Video Apps
-Video Models
+Top Models
+Pika H3 Flex
+NEW
+Kling 4.0
+NEW
 Seedance 2.5
 MiniMax H3
 Wan 3.0
@@ -26,10 +32,13 @@ Pikaframes
 All Video Models
 Image Apps
 Image Studio
+NEW
 Edit Image
 Character Studio
 All Image Apps
 Image Models
+Ideogram 4.5
+NEW
 GPT Image 2.5
 Nano Banana 2.1
 Seedream 5
@@ -68,12 +77,18 @@ Pricing
 AI Video
 Video Apps
 Video Studio
+Dynamic Captions
+NEW
 Product Ad
 Swap Anything
 Motion Transfer
 Extend Video
 All Video Apps
-Video Models
+Top Models
+Pika H3 Flex
+NEW
+Kling 4.0
+NEW
 Seedance 2.5
 MiniMax H3
 Wan 3.0
@@ -84,10 +99,13 @@ All Video Models
 AI Image
 Image Apps
 Image Studio
+NEW
 Edit Image
 Character Studio
 All Image Apps
 Image Models
+Ideogram 4.5
+NEW
 GPT Image 2.5
 Nano Banana 2.1
 Seedream 5

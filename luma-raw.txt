@@ -114,6 +114,9 @@ Reframe
 Ray3.14
 SDR (base)
 HDR (2×)
+HDR+EXR (3×)
+HDR: 5 sec, 720p–1080p
+10 sec: text-to-video only
 Text-to-Video
 Image-to-Video
 360p
@@ -175,16 +178,16 @@ Yes
 Video-to-Video
 480p
 Yes
-~30 credits/sec
+15 credits/sec of generated + reference video
 720p
 Yes
-~64 credits/sec
+32 credits/sec of generated + reference video
 1080p
 Yes
-~154 credits/sec
+77 credits/sec of generated + reference video
 4K
 Yes
-~314 credits/sec
+157 credits/sec of generated + reference video
 Seedance 2.5
 Text-to-Video Image-to-Video
 Draft (480p)
@@ -202,13 +205,13 @@ Yes
 Video-to-Video
 480p
 Yes
-~44 credits/sec
+22 credits/sec of generated + reference video
 720p
 Yes
-~94 credits/sec
+47 credits/sec of generated + reference video
 1080p
 Yes
-~230 credits/sec
+115 credits/sec of generated + reference video
 Modify
 480p
 Yes
@@ -230,10 +233,10 @@ Yes
 Video-to-Video
 480p
 Yes
-~16 credits/sec
+8 credits/sec of generated + reference video
 720p
 Yes
-~32 credits/sec
+16 credits/sec of generated + reference video
 Kling 4.0
 Text-to-Video
 Image-to-Video
@@ -255,10 +258,26 @@ Yes
 Video-to-Video
 720p
 Yes
-~66 credits/sec
+32 credits/sec of generated + reference video
 1080p
 Yes
-~98 credits/sec
+47 credits/sec of generated + reference video
+Kling 4.0 Flash
+Text-to-Video
+Image-to-Video
+720p
+Yes
+32 credits/sec
+Kling 4.0 Flash Omni
+Text-to-Video
+Image-to-Video
+720p
+Yes
+32 credits/sec
+Video-to-Video
+720p
+Yes
+21 credits/sec of generated + reference video
 Kling 3.0 Omni
 Text-to-Video Image-to-Video
 720p
@@ -335,10 +354,10 @@ Yes
 Video-to-Video
 768p
 Yes
-56 credits/sec
+28 credits/sec of generated + reference video
 2K (1440p)
 Yes
-92 credits/sec
+46 credits/sec of generated + reference video
 MiniMax H3 Max
 Reference images: first 2–4 free, then ~7–13 credits each
 Text-to-Video
@@ -358,26 +377,26 @@ Yes
 ~35 credits/sec
 768p
 Yes
-~73 credits/sec
+~82 credits/sec
 1080p
 Yes
-~101 credits/sec
+~110 credits/sec
 Flux 3
-Text-to-Video 
+Text-to-Video
 Image-to-Video
 HD
 Yes
-60 credits/sec
+50 credits/sec
 FHD
 Yes
-102 credits/sec
+80 credits/sec
 Video-to-Video
 HD
 Yes
-144 credits/sec
+70 credits/sec
 FHD
 Yes
-186 credits/sec
+90 credits/sec
 Kling 3.0 Turbo
 Text-to-Video
 Image-to-Video
@@ -418,7 +437,7 @@ Model
 Action
 Quality
 Cost per image
-Uni-1
+Uni-1.1
 Create/Modify
 -
 30 credits
@@ -528,14 +547,18 @@ Modify
 Seedream 5.0 Pro
 Create
 1K
-24 credits
+24–38 credits
+depending on reference images
 2K
-48 credits
+48–62 credits
+depending on reference images
 Modify
 1K
-24 credits
+24–38 credits
+depending on reference images
 2K
-48 credits
+48–62 credits
+depending on reference images
 Seedream 5.0 Flash
 Create
 1K–2K
@@ -582,7 +605,7 @@ Medium
 54 credits
 High
 67 credits
-Modify
+With reference images
 Low
 44 credits
 Medium
@@ -596,13 +619,13 @@ Cost Per Audio Generation
 Model
 Type
 Cost
-ElevenLabs v3
+ElevenLabs v4
 text-to-speech
 21 credits/1000 characters
 ElevenLabs SFX v2
 sound effects
 25 credits/min
-ElevenLabs Music v1
+ElevenLabs Music v2.5
 music generation
 98 credits/min
 Audio Isolation
@@ -616,14 +639,14 @@ transcription
 1 credit/min
 Seed Audio 1.0
 text-to-speech
-66 credits/min
+66 credits/min of generated audio
 Utilities
 Tool
 Cost
 Remove background
 1 credits/image
 Blend image
-1 credits/image
+1 credit per output image
 Reframe image
 15 / 23 / 34 / 51 credits
 (512 / 1K / 2K / 4K)
@@ -638,16 +661,14 @@ Upscale video with Topaz to 1080p
 Upscale video with Topaz to 4K
 17 credits/sec
 Upscale video with Flux 3 (Precise)
-52 credits/sec at 1080p
-207 credits/sec at 4K
+12 credits/sec per output megapixel
+1080p ≈ 2 MP, 4K ≈ 8 MP
 Upscale video with Flux 3 (Creative)
-73 credits/sec at 1080p
-290 credits/sec at 4K
-Convert to HDR at 1080p
+17 credits/sec per output megapixel
+1080p ≈ 2 MP, 4K ≈ 8 MP
+Convert to HDR (source up to 1440p)
 10 credits/sec
-Convert to HDR at 1440p
-10 credits/sec
-Convert to HDR at 4K
+Convert to HDR (4K source)
 34 credits/sec
 Layers in 1K
 75 credits/image

@@ -1,0 +1,2782 @@
+Krea
+Toggle Sidebar
+Krea
+Home
+Krea Agent
+Train Lora
+Node Editor
+Assets
+Tools
+Search
+Image
+More
+Video
+More
+Enhancer
+More
+Audio
+More
+Ad Studio
+More
+Seedance Studio
+More
+Nano Banana
+More
+Realtime
+More
+Edit
+More
+More
+Pricing
+40% off yearly
+Enterprise
+Sign in
+Toggle Sidebar
+Pick your plan
+Trusted by 40M+ creators, enterprises, agencies, and studios
+Pick your plan
+Trusted by 40M+ creators, enterprises, agencies, and studios
+Monthly
+Yearly
+40% off
+Model Licensing
+Looking for API?
+Free
+100 units / day
+$0
+/month
+Get Free
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+No credit card required
+Full access to real-time models
+Generate images in real-time as you type or draw. Perfect for rapid iteration and creative exploration.
+All image models
+All video models
+All 3D & lipsync models
+LoRA training
+Limited image upscaling
+Upscale images up to 2K resolution using our basic upscaling models.
+Krea Nodes
+Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
+App Builder
+Turn your workflows into reusable apps that can be run again or shared.
+Early access to new features
+Be among the first to try new models, tools, and features.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Bulk discounts on compute unit packs
+Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Expanded concurrency and queueing
+Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
+Promo placeholder
+Basic
+5,000 units / month
+~200 Nano Banana 2.1 generations
+~16 Seedance 2.5 videos
+$9
+$5
+/month
+Get Basic
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+All image models
+Selected video models
+Generate videos with selected models. Pro plan unlocks all video models.
+All 3D & lipsync models
+LoRA training (50 images)
+Train LoRA models using up to 50 images to personalize AI with your own characters, styles, or objects.
+Image upscaling up to 22K
+Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
+Krea Nodes
+Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
+App Builder
+Turn your workflows into reusable apps that can be run again or shared.
+Early access to new features
+Be among the first to try new models, tools, and features.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Bulk discounts on compute unit packs
+Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Expanded concurrency and queueing
+Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
+Promo placeholder
+Most popular
+Pro
+20,000 units / month
+~803 Nano Banana 2.1 generations
+~65 Seedance 2.5 videos
+$35
+$21
+/month
+Get Pro
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+All image models
+All video models
+Full access to all video models including Veo 3.1, Seedance, Kling, and more.
+All 3D & lipsync models
+LoRA training (50 images)
+Train LoRA models using up to 50 images to personalize AI with your own characters, styles, or objects.
+Image upscaling up to 22K
+Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
+Krea Nodes
+Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
+App Builder
+Turn your workflows into reusable apps that can be run again or shared.
+Early access to new features
+Be among the first to try new models, tools, and features.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Bulk discounts on compute unit packs
+Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Expanded concurrency and queueing
+Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
+Promo placeholder
+Max
+60,000 units / month
+~2,410 Nano Banana 2.1 generations
+~197 Seedance 2.5 videos
+40k
+60k
+80k
+100k
+$105
+$63
+/month
+Get Max
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+All image models
+All video models
+Full access to all video models including Veo 3.1, Seedance, Kling, and more.
+All 3D & lipsync models
+Unlimited LoRA training (2,000 images)
+Train LoRA models using up to 2,000 images to personalize AI with your own characters, styles, or objects.
+Image upscaling up to 22K
+Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
+Krea Nodes
+Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
+App Builder
+Turn your workflows into reusable apps that can be run again or shared.
+Early access to new features
+Be among the first to try new models, tools, and features.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Bulk discounts on compute unit packs
+Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Expanded concurrency and queueing
+Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
+Promo placeholder
+See all features
+For Teams and Enterprises
+Business
+80k units
+/month
+~3,214 Nano Banana 2.1 generations
+~262 Seedance 2.5 videos
+20k
+40k
+80k
+160k
+240k
+400k
+500k
+750k
+1M
+1.5M
+$200
+$160
+/month
+Try Business
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+Up to 50 seats included
+One flat price covers your entire workspace â up to 50 members get full Business benefits at no extra cost per seat.
+Business Terms of Service
+Comprehensive legal terms designed for businesses, including data protection and no-training clauses for your content.
+Share private Node Apps with your workspace
+Create and share custom Node App workflows privately within your workspace for collaborative projects and brand consistency.
+Custom user roles and permissions
+Define custom roles with specific permissions to control what each workspace member can access and do.
+Fine-grained controls for model access
+Restrict which AI models your workspace can use to manage costs and ensure compliance with your policies.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Unlimited LoRA training (2,000 images)
+Train LoRA models using up to 2,000 images to personalize AI with your own characters, styles, or objects.
+Custom Terms of Service
+Fully customizable legal agreement tailored to your organization's specific requirements and compliance needs.
+SAML Single Sign-On (SSO)
+Allow members to access Krea using their existing company credentials such as Google Workspace, Microsoft Azure AD, or Okta.
+Priority support with SLA
+Dedicated support team with guaranteed response times and service level agreements for mission-critical workflows.
+Per-member spend limits
+Set individual compute budgets for each workspace member to control costs and prevent overspending.
+Indemnification
+Enterprise customers are protected against intellectual property claims on AI-generated content, when usage follows the agreement terms.
+Image concurrency
+Unlimited
+Video concurrency
+Unlimited
+Images per LoRA
+2000
+Enterprise
+Custom pricing
+Contact Sales
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+Custom seat count
+Seat count is sized to your organization.
+Share private Node Apps with your workspace
+Create and share custom Node App workflows privately within your workspace for collaborative projects and brand consistency.
+Custom user roles and permissions
+Define custom roles with specific permissions to control what each workspace member can access and do.
+Fine-grained controls for model access
+Restrict which AI models your workspace can use to manage costs and ensure compliance with your policies.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Custom Terms of Service
+Fully customizable legal agreement tailored to your organization's specific requirements and compliance needs.
+SAML Single Sign-On (SSO)
+Allow members to access Krea using their existing company credentials such as Google Workspace, Microsoft Azure AD, or Okta.
+Priority support with SLA
+Dedicated support team with guaranteed response times and service level agreements for mission-critical workflows.
+Per-member spend limits
+Set individual compute budgets for each workspace member to control costs and prevent overspending.
+Indemnification
+Enterprise customers are protected against intellectual property claims on AI-generated content, when usage follows the agreement terms.
+Slack connect
+Direct Slack integration with our support team for faster issue resolution.
+Custom compute packages
+Tailored compute units based on your organization's specific needs.
+Audit logs
+Comprehensive activity logs for compliance, security monitoring, and tracking all user actions across your organization.
+SOON
+Image concurrency
+Unlimited
+Video concurrency
+Unlimited
+Images per LoRA
+Custom
+Free
+100 units / day
+$0
+/month
+Get Free
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+No credit card required
+Full access to real-time models
+Generate images in real-time as you type or draw. Perfect for rapid iteration and creative exploration.
+All image models
+All video models
+All 3D & lipsync models
+LoRA training
+Limited image upscaling
+Upscale images up to 2K resolution using our basic upscaling models.
+Krea Nodes
+Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
+App Builder
+Turn your workflows into reusable apps that can be run again or shared.
+Early access to new features
+Be among the first to try new models, tools, and features.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Bulk discounts on compute unit packs
+Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Expanded concurrency and queueing
+Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
+Promo placeholder
+Basic
+5,000 units / month
+~200 Nano Banana 2.1 generations
+~16 Seedance 2.5 videos
+$9
+$5
+/month
+Get Basic
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+All image models
+Selected video models
+Generate videos with selected models. Pro plan unlocks all video models.
+All 3D & lipsync models
+LoRA training (50 images)
+Train LoRA models using up to 50 images to personalize AI with your own characters, styles, or objects.
+Image upscaling up to 22K
+Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
+Krea Nodes
+Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
+App Builder
+Turn your workflows into reusable apps that can be run again or shared.
+Early access to new features
+Be among the first to try new models, tools, and features.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Bulk discounts on compute unit packs
+Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Expanded concurrency and queueing
+Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
+Promo placeholder
+Most popular
+Pro
+20,000 units / month
+~803 Nano Banana 2.1 generations
+~65 Seedance 2.5 videos
+$35
+$21
+/month
+Get Pro
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+All image models
+All video models
+Full access to all video models including Veo 3.1, Seedance, Kling, and more.
+All 3D & lipsync models
+LoRA training (50 images)
+Train LoRA models using up to 50 images to personalize AI with your own characters, styles, or objects.
+Image upscaling up to 22K
+Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
+Krea Nodes
+Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
+App Builder
+Turn your workflows into reusable apps that can be run again or shared.
+Early access to new features
+Be among the first to try new models, tools, and features.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Bulk discounts on compute unit packs
+Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Expanded concurrency and queueing
+Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
+Promo placeholder
+Max
+60,000 units / month
+~2,410 Nano Banana 2.1 generations
+~197 Seedance 2.5 videos
+40k
+60k
+80k
+100k
+$105
+$63
+/month
+Get Max
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+All image models
+All video models
+Full access to all video models including Veo 3.1, Seedance, Kling, and more.
+All 3D & lipsync models
+Unlimited LoRA training (2,000 images)
+Train LoRA models using up to 2,000 images to personalize AI with your own characters, styles, or objects.
+Image upscaling up to 22K
+Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
+Krea Nodes
+Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
+App Builder
+Turn your workflows into reusable apps that can be run again or shared.
+Early access to new features
+Be among the first to try new models, tools, and features.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Bulk discounts on compute unit packs
+Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Expanded concurrency and queueing
+Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
+Promo placeholder
+See all features
+For Teams and Enterprises
+Business
+Secure and collaborative workspace for growing teams
+80k units
+/month
+~3,214 Nano Banana 2.1 generations
+~262 Seedance 2.5 videos
+20k
+40k
+80k
+160k
+240k
+400k
+500k
+750k
+1M
+1.5M
+$200
+$160
+/month
+Try Business
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+Up to 50 seats included
+One flat price covers your entire workspace â up to 50 members get full Business benefits at no extra cost per seat.
+Business Terms of Service
+Comprehensive legal terms designed for businesses, including data protection and no-training clauses for your content.
+Share private Node Apps with your workspace
+Create and share custom Node App workflows privately within your workspace for collaborative projects and brand consistency.
+Custom user roles and permissions
+Define custom roles with specific permissions to control what each workspace member can access and do.
+Fine-grained controls for model access
+Restrict which AI models your workspace can use to manage costs and ensure compliance with your policies.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Unlimited LoRA training (2,000 images)
+Train LoRA models using up to 2,000 images to personalize AI with your own characters, styles, or objects.
+Custom Terms of Service
+Fully customizable legal agreement tailored to your organization's specific requirements and compliance needs.
+SAML Single Sign-On (SSO)
+Allow members to access Krea using their existing company credentials such as Google Workspace, Microsoft Azure AD, or Okta.
+Priority support with SLA
+Dedicated support team with guaranteed response times and service level agreements for mission-critical workflows.
+Per-member spend limits
+Set individual compute budgets for each workspace member to control costs and prevent overspending.
+Indemnification
+Enterprise customers are protected against intellectual property claims on AI-generated content, when usage follows the agreement terms.
+Image concurrency
+Unlimited
+Video concurrency
+Unlimited
+Images per LoRA
+2000
+Enterprise
+Enterprise-grade security with dedicated support, access to Krea's educational services and admin features for scale
+Custom pricing
+Contact Sales
+Krea 3
+Generate and edit images with our latest in-house model.
+NEW
+Krea Agent
+Brief the Agent once. It plans, generates, and iterates across models for you.
+NEW
+Custom seat count
+Seat count is sized to your organization.
+Share private Node Apps with your workspace
+Create and share custom Node App workflows privately within your workspace for collaborative projects and brand consistency.
+Custom user roles and permissions
+Define custom roles with specific permissions to control what each workspace member can access and do.
+Fine-grained controls for model access
+Restrict which AI models your workspace can use to manage costs and ensure compliance with your policies.
+Commercial license
+Use all generated content for commercial purposes including marketing, products, and client work.
+Unlimited relaxed generations
+Continue generating with supported in-house image models after exhausting your compute units.
+Custom Terms of Service
+Fully customizable legal agreement tailored to your organization's specific requirements and compliance needs.
+SAML Single Sign-On (SSO)
+Allow members to access Krea using their existing company credentials such as Google Workspace, Microsoft Azure AD, or Okta.
+Priority support with SLA
+Dedicated support team with guaranteed response times and service level agreements for mission-critical workflows.
+Per-member spend limits
+Set individual compute budgets for each workspace member to control costs and prevent overspending.
+Indemnification
+Enterprise customers are protected against intellectual property claims on AI-generated content, when usage follows the agreement terms.
+Slack connect
+Direct Slack integration with our support team for faster issue resolution.
+Custom compute packages
+Tailored compute units based on your organization's specific needs.
+Audit logs
+Comprehensive activity logs for compliance, security monitoring, and tracking all user actions across your organization.
+SOON
+Image concurrency
+Unlimited
+Video concurrency
+Unlimited
+Images per LoRA
+Custom
+Need More Compute?
+Purchase one-time compute packs for additional credits. Applied instantly and valid for 90
+					days. To get more credits out of your purchase, consider upgrading your plan.
+Valid for 90 days
+2000
+Units
+2000
+COMPUTE UNITS
+Sign in required
+Valid for 90 days
+5000
+Units
+5000
+COMPUTE UNITS
+Sign in required
+Valid for 90 days
+10000
+Units
+10000
+COMPUTE UNITS
+Sign in required
+Valid for 90 days
+24000
+Units
+24000
+COMPUTE UNITS
+Sign in required
+Valid for 90 days
+50000
+Units
+50000
+COMPUTE UNITS
+Sign in required
+Credits are added instantly after purchase and expire after 90 days.
+Compare Plans in Detail
+Navigate between feature categories to see detailed comparisons across different areas of our
+			platform.
+Compare plans
+Select plans to compare
+3 plans max
+Basic
+Pro
+Max
+Basic
+$5.25
+/mo
+Pro
+$21
+/mo
+Max
+$63
+/mo
+Features & License
+Access to Krea 3
+NEW
+Access to Krea Agent
+NEW
+Krea 3 Ultra mode
+Access to image models
+Access to video models
+Limited
+Access to LoRA Training
+Access to real-time models
+Access to 3D models
+Access to lipsync models
+Image concurrency
+4
+8
+Unlimited
+Video concurrency
+2
+4
+8
+Max images per LoRA
+50
+50
+2000
+Access to Krea Nodes
+Access to App Builder
+Early access to new features
+Commercial license
+Business Terms of Service
+Indemnification
+Usage & Compute Units
+Buy extra compute
+Discounts on extra compute
+Discounts on compute units
+Unlimited on selected models
+Rollovers on compute units
+High priority queues
+Unlimited LoRA trainings
+Priority support
+Workspace & Admin
+SAML Single Sign-On (SSO)
+Multiple Seats per workspace
+Collaboration Features
+Admin roles
+Model access control
+On-Demand Usage
+Advanced Usage Analytics
+Per-member spend limits
+Slack connect
+Audit logs
+Image Generation
+Generation counts. Settings are shown when relevant.
+Krea 3
+~277
+images
+~1,111
+images
+~2,222
+images
+Krea 1
+~900
+images
+~3,600
+images
+~7,200
+images
+Krea 2 Medium
+555
+images
+2,222
+images
+4,444
+images
+Krea 2 Large
+277
+images
+1,111
+images
+2,222
+images
+Krea 2 Turbo
+2,500
+images
+10,000
+images
+20,000
+images
+Flux.1 Dev
+~1,500
+images
+~6,000
+images
+~12,000
+images
+Flux 2
+270
+images
+1,080
+images
+2,160
+images
+Flux Kontext Dev
+337
+images
+1,350
+images
+2,700
+images
+Flux 1.1 Pro
+168
+images
+675
+images
+1,350
+images
+Flux 2 Pro
+~102
+images
+~409
+images
+~818
+images
+Flux 2 Max
+~70
+images
+~283
+images
+~566
+images
+Flux 3 Image
+768sq
+~164
+images
+~658
+images
+~1,317
+images
+Flux Kontext Pro
+168
+images
+675
+images
+1,350
+images
+Flux 1.1 Pro Ultra
+112
+images
+450
+images
+900
+images
+Flux 2 Klein
+~1,285
+images
+~5,142
+images
+~10,285
+images
+ChatGPT 1.5
+~39
+images
+~157
+images
+~314
+images
+ChatGPT 2
+~39
+images
+~157
+images
+~314
+images
+GPT Image 2.5 Flare
+~39
+images
+~157
+images
+~314
+images
+GPT Image 2.5 Sunburst
+~39
+images
+~157
+images
+~314
+images
+GPT Image 2.6 Flare
+~39
+images
+~157
+images
+~314
+images
+GPT Image 2.6 Sunburst
+~39
+images
+~157
+images
+~314
+images
+Grok Imagine 2.0
+1K, low quality, no reference images
+~168
+images
+~675
+images
+~1,350
+images
+Ideogram 3.0
+no character reference
+~112
+images
+~450
+images
+~900
+images
+Ideogram 4.5
+very_low quality, base image
+~843
+images
+~3,375
+images
+~6,750
+images
+Ideogram 4.0
+turbo speed
+~225
+images
+~900
+images
+~1,800
+images
+Kling o1 Image
+241
+images
+964
+images
+1,928
+images
+Luma UNI-1
+standard mode, no reference images
+~167
+images
+~668
+images
+~1,336
+images
+Luma UNI-1 Max
+standard mode, no reference images
+~167
+images
+~668
+images
+~1,336
+images
+Muse Image
+675
+images
+2,700
+images
+5,400
+images
+Nano Banana
+173
+images
+692
+images
+1,384
+images
+Nano Banana Pro
+1K
+~64
+images
+~257
+images
+~514
+images
+Nano Banana 2.1
+1K
+~200
+images
+~803
+images
+~1,607
+images
+Nano Banana 2
+1K
+~112
+images
+~450
+images
+~900
+images
+Nano Banana 2 Lite
+198
+images
+794
+images
+1,588
+images
+Qwen Image
+~562
+images
+~2,250
+images
+~4,500
+images
+Qwen Image 2512
+no LoRA
+~391
+images
+~1,565
+images
+~3,130
+images
+Qwen Image 2.1
+168
+images
+675
+images
+1,350
+images
+Qwen Image 3
+1K
+~168
+images
+~675
+images
+~1,350
+images
+Recraft V4
+standard mode
+~168
+images
+~675
+images
+~1,350
+images
+Recraft V4.1 Flash
+964
+images
+3,857
+images
+7,714
+images
+Runway Gen-4 Image
+~112
+images
+~450
+images
+~900
+images
+Seedream 4
+225
+images
+900
+images
+1,800
+images
+Seedream 4.5
+168
+images
+675
+images
+1,350
+images
+Seedream 5 Lite
+192
+images
+771
+images
+1,542
+images
+Seedream 5 Pro
+1.5K, no reference images
+~150
+images
+~600
+images
+~1,200
+images
+Wan 2.2 Image
+no LoRA
+~313
+images
+~1,252
+images
+~2,504
+images
+Z Image
+no LoRA
+~1,565
+images
+~6,260
+images
+~12,521
+images
+Video Generation
+Generation counts. Settings are shown when relevant.
+FLUX 3 Max
+5s, 720p
+~7
+videos
+~31
+videos
+~63
+videos
+Flux 3 Video
+5s, 720p, t2v mode
+~7
+videos
+~31
+videos
+~63
+videos
+Flux Video Edit
+5s source
+~45
+videos
+~180
+videos
+~360
+videos
+Gemini Omni Flash
+3s
+~17
+videos
+~69
+videos
+~138
+videos
+Gemini Omni Flash 1.1
+3s
+~17
+videos
+~69
+videos
+~138
+videos
+Gemini Omni Flash 1.2
+3s, 360p
+~112
+videos
+~450
+videos
+~900
+videos
+Grok Imagine
+1s, 480p
+~135
+videos
+~540
+videos
+~1,080
+videos
+Grok Imagine 1.5
+1s, 480p
+~84
+videos
+~337
+videos
+~675
+videos
+HappyHorse
+3s, 720p, no video reference
+~16
+videos
+~64
+videos
+~128
+videos
+Kling 2.5
+5s
+~19
+videos
+~77
+videos
+~154
+videos
+Kling 2.5 Turbo
+5s, HasEndImage: false
+~32
+videos
+~128
+videos
+~257
+videos
+Kling 2.6
+5s, audio off
+~19
+videos
+~77
+videos
+~154
+videos
+Kling 3.0
+3s, standard mode, audio off
+~26
+videos
+~107
+videos
+~214
+videos
+Kling 3.0 Turbo
+3s, 720p
+~20
+videos
+~80
+videos
+~160
+videos
+Kling 4.0
+3s, 720p
+~14
+videos
+~57
+videos
+~114
+videos
+Kling 4.0 Flash
+3s
+~23
+videos
+~95
+videos
+~191
+videos
+Kling o3
+3s, audio off, no video reference
+~26
+videos
+~107
+videos
+~214
+videos
+Kling o3 Pro
+3s, audio off, no video reference
+~20
+videos
+~80
+videos
+~160
+videos
+Kling o3 Edit
+3s
+~13
+videos
+~53
+videos
+~107
+videos
+Kling o3 Reference
+3s
+~13
+videos
+~53
+videos
+~107
+videos
+Kling o1
+3s, no video reference
+~20
+videos
+~80
+videos
+~160
+videos
+LTX-2 19B
+5s, 512p
+~148
+videos
+~592
+videos
+~1,184
+videos
+LTX-2.3 22B
+5s, no LoRA
+~37
+videos
+~150
+videos
+~300
+videos
+LTX-2.5 Fast
+6s, 720p
+~12
+videos
+~50
+videos
+~100
+videos
+LTX-2.5 Pro
+6s, 720p
+~9
+videos
+~37
+videos
+~75
+videos
+Hailuo
+5s
+15
+videos
+62
+videos
+125
+videos
+MiniMax H3 Max
+5s, 480p, no reference images, no reference video
+~38
+videos
+~154
+videos
+~308
+videos
+MiniMax H3 Max Turbo
+5s, 480p
+~54
+videos
+~216
+videos
+~432
+videos
+Hailuo 02
+6s, 512p
+~67
+videos
+~270
+videos
+~540
+videos
+Hailuo 2.3
+6s, 768p
+~24
+videos
+~96
+videos
+~192
+videos
+Hailuo 2.3 Fast
+6s, 768p
+~35
+videos
+~142
+videos
+~284
+videos
+MiniMax H3
+5s, no reference images
+~10
+videos
+~41
+videos
+~83
+videos
+MiniMax 01-Live
+5s
+15
+videos
+62
+videos
+125
+videos
+Ray 2
+5s
+16
+videos
+67
+videos
+135
+videos
+Runway Gen-3
+5s
+~27
+videos
+~108
+videos
+~216
+videos
+Runway Gen-4 Video
+5s
+~27
+videos
+~108
+videos
+~216
+videos
+Runway Gen-4.5
+2s
+~28
+videos
+~112
+videos
+~225
+videos
+Seedance 1.0 Pro
+5s, 720p
+~24
+videos
+~96
+videos
+~193
+videos
+Seedance 1.0 Pro Fast
+2s, 480p
+~319
+videos
+~1,278
+videos
+~2,556
+videos
+Seedance 2.0
+4s, 480p, video reference
+~20
+videos
+~83
+videos
+~166
+videos
+Seedance 2.5
+5s, 720p, no video reference
+~5
+videos
+~23
+videos
+~46
+videos
+Seedance 2.0 Fast
+4s, 480p, video reference
+~26
+videos
+~104
+videos
+~209
+videos
+Seedance 2.0 Mini
+4s, 480p, video reference
+~41
+videos
+~164
+videos
+~328
+videos
+Veo 3.1
+4s, 720p, audio off
+~33
+videos
+~67
+videos
+Veo 3.1 Fast
+4s, 720p, audio off
+~21
+videos
+~84
+videos
+~168
+videos
+Veo 3.1 Lite
+4s, 720p
+~56
+videos
+~225
+videos
+~450
+videos
+Vidu Q2
+1s, 720p
+~22
+videos
+~90
+videos
+~180
+videos
+Vidu Q3
+1s, 540p
+~96
+videos
+~385
+videos
+~771
+videos
+Wan 2.1
+no LoRA
+~19
+videos
+~78
+videos
+~156
+videos
+Wan 2.2
+22
+videos
+90
+videos
+180
+videos
+Wan 2.5
+5s, 480p
+~27
+videos
+~108
+videos
+~216
+videos
+Wan 2.6
+5s, 720p
+~13
+videos
+~54
+videos
+~108
+videos
+Wan 3.0
+2s, 480p
+~45
+videos
+~180
+videos
+~360
+videos
+Wan 3.0 Prime
+2s, 480p
+~49
+videos
+~198
+videos
+~397
+videos
+Other
+Realtime
+45,000
+images
+180,000
+images
+360,000
+images
+Enhancer
+625
+images
+2,500
+images
+5,000
+images
+Train LoRA
+5
+trainings
+21
+trainings
+43
+trainings
+Edit
+1,666
+images
+6,666
+images
+13,333
+images
+3D
+100
+models
+400
+models
+800
+models
+Get Basic
+Get Pro
+Get Max
+Annual
+Save 40% with annual
+Save 40% with annual
+Free
+$0
+/month
+Get Free
+Basic
+$5.25
+/month
+Upgrade
+Pro
+$21
+/month
+Upgrade
+Max
+$63
+/month
+Upgrade
+Business
+$160
+/month
+Try Business
+Enterprise
+Custom
+Contact us
+Features & License
+Access to Krea 3
+NEW
+Access to Krea Agent
+NEW
+Krea 3 Ultra mode
+Access to image models
+Limited
+Access to video models
+Limited
+Limited
+Access to LoRA Training
+Access to real-time models
+Limited
+Access to 3D models
+Limited
+Access to lipsync models
+Limited
+Image concurrency
+1
+4
+8
+Unlimited
+Unlimited
+Unlimited
+Video concurrency
+2
+4
+8
+Unlimited
+Unlimited
+Max images per LoRA
+50
+50
+2000
+2000
+Custom
+Access to Krea Nodes
+Access to App Builder
+Early access to new features
+Commercial license
+Business Terms of Service
+Indemnification
+Usage & Compute Units
+Buy extra compute
+Discounts on extra compute
+Discounts on compute units
+Unlimited on selected models
+Rollovers on compute units
+High priority queues
+Unlimited LoRA trainings
+Priority support
+Workspace & Admin
+SAML Single Sign-On (SSO)
+Multiple Seats per workspace
+Collaboration Features
+Admin roles
+Model access control
+On-Demand Usage
+Advanced Usage Analytics
+Per-member spend limits
+Slack connect
+Audit logs
+Image Generation
+Generation counts. Settings are shown when relevant.
+Krea 3
+~5
+images/day
+~277
+images
+~1,111
+images
+~2,222
+images
+~1,111
+images
+Custom
+Krea 1
+~18
+images/day
+~900
+images
+~3,600
+images
+~7,200
+images
+~3,600
+images
+Custom
+Krea 2 Medium
+11
+images/day
+555
+images
+2,222
+images
+4,444
+images
+2,222
+images
+Custom
+Krea 2 Large
+5
+images/day
+277
+images
+1,111
+images
+2,222
+images
+1,111
+images
+Custom
+Krea 2 Turbo
+50
+images/day
+2,500
+images
+10,000
+images
+20,000
+images
+10,000
+images
+Custom
+Flux.1 Dev
+~30
+images/day
+~1,500
+images
+~6,000
+images
+~12,000
+images
+~6,000
+images
+Custom
+Flux 2
+5
+images/day
+270
+images
+1,080
+images
+2,160
+images
+1,080
+images
+Custom
+Flux Kontext Dev
+6
+images/day
+337
+images
+1,350
+images
+2,700
+images
+1,350
+images
+Custom
+Flux 1.1 Pro
+168
+images
+675
+images
+1,350
+images
+675
+images
+Custom
+Flux 2 Pro
+~102
+images
+~409
+images
+~818
+images
+~409
+images
+Custom
+Flux 2 Max
+~70
+images
+~283
+images
+~566
+images
+~283
+images
+Custom
+Flux 3 Image
+768sq
+~164
+images
+~658
+images
+~1,317
+images
+~658
+images
+Custom
+Flux Kontext Pro
+168
+images
+675
+images
+1,350
+images
+675
+images
+Custom
+Flux 1.1 Pro Ultra
+112
+images
+450
+images
+900
+images
+450
+images
+Custom
+Flux 2 Klein
+~25
+images/day
+~1,285
+images
+~5,142
+images
+~10,285
+images
+~5,142
+images
+Custom
+ChatGPT 1.5
+~39
+images
+~157
+images
+~314
+images
+~157
+images
+Custom
+ChatGPT 2
+~39
+images
+~157
+images
+~314
+images
+~157
+images
+Custom
+GPT Image 2.5 Flare
+~39
+images
+~157
+images
+~314
+images
+~157
+images
+Custom
+GPT Image 2.5 Sunburst
+~39
+images
+~157
+images
+~314
+images
+~157
+images
+Custom
+GPT Image 2.6 Flare
+~39
+images
+~157
+images
+~314
+images
+~157
+images
+Custom
+GPT Image 2.6 Sunburst
+~39
+images
+~157
+images
+~314
+images
+~157
+images
+Custom
+Grok Imagine 2.0
+1K, low quality, no reference images
+~168
+images
+~675
+images
+~1,350
+images
+~675
+images
+Custom
+Ideogram 3.0
+no character reference
+~112
+images
+~450
+images
+~900
+images
+~450
+images
+Custom
+Ideogram 4.5
+very_low quality, base image
+~843
+images
+~3,375
+images
+~6,750
+images
+~3,375
+images
+Custom
+Ideogram 4.0
+turbo speed
+~225
+images
+~900
+images
+~1,800
+images
+~900
+images
+Custom
+Kling o1 Image
+241
+images
+964
+images
+1,928
+images
+964
+images
+Custom
+Luma UNI-1
+standard mode, no reference images
+~167
+images
+~668
+images
+~1,336
+images
+~668
+images
+Custom
+Luma UNI-1 Max
+standard mode, no reference images
+~167
+images
+~668
+images
+~1,336
+images
+~668
+images
+Custom
+Muse Image
+675
+images
+2,700
+images
+5,400
+images
+2,700
+images
+Custom
+Nano Banana
+173
+images
+692
+images
+1,384
+images
+692
+images
+Custom
+Nano Banana Pro
+1K
+~64
+images
+~257
+images
+~514
+images
+~257
+images
+Custom
+Nano Banana 2.1
+1K
+~200
+images
+~803
+images
+~1,607
+images
+~803
+images
+Custom
+Nano Banana 2
+1K
+~112
+images
+~450
+images
+~900
+images
+~450
+images
+Custom
+Nano Banana 2 Lite
+198
+images
+794
+images
+1,588
+images
+794
+images
+Custom
+Qwen Image
+~11
+images/day
+~562
+images
+~2,250
+images
+~4,500
+images
+~2,250
+images
+Custom
+Qwen Image 2512
+no LoRA
+~7
+images/day
+~391
+images
+~1,565
+images
+~3,130
+images
+~1,565
+images
+Custom
+Qwen Image 2.1
+168
+images
+675
+images
+1,350
+images
+675
+images
+Custom
+Qwen Image 3
+1K
+~168
+images
+~675
+images
+~1,350
+images
+~675
+images
+Custom
+Recraft V4
+standard mode
+~168
+images
+~675
+images
+~1,350
+images
+~675
+images
+Custom
+Recraft V4.1 Flash
+964
+images
+3,857
+images
+7,714
+images
+3,857
+images
+Custom
+Runway Gen-4 Image
+~112
+images
+~450
+images
+~900
+images
+~450
+images
+Custom
+Seedream 4
+225
+images
+900
+images
+1,800
+images
+900
+images
+Custom
+Seedream 4.5
+168
+images
+675
+images
+1,350
+images
+675
+images
+Custom
+Seedream 5 Lite
+192
+images
+771
+images
+1,542
+images
+771
+images
+Custom
+Seedream 5 Pro
+1.5K, no reference images
+~150
+images
+~600
+images
+~1,200
+images
+~600
+images
+Custom
+Wan 2.2 Image
+no LoRA
+~6
+images/day
+~313
+images
+~1,252
+images
+~2,504
+images
+~1,252
+images
+Custom
+Z Image
+no LoRA
+~31
+images/day
+~1,565
+images
+~6,260
+images
+~12,521
+images
+~6,260
+images
+Custom
+Video Generation
+Generation counts. Settings are shown when relevant.
+FLUX 3 Max
+5s, 720p
+~7
+videos
+~31
+videos
+~63
+videos
+~31
+videos
+Custom
+Flux 3 Video
+5s, 720p, t2v mode
+~7
+videos
+~31
+videos
+~63
+videos
+~31
+videos
+Custom
+Flux Video Edit
+5s source
+~45
+videos
+~180
+videos
+~360
+videos
+~180
+videos
+Custom
+Gemini Omni Flash
+3s
+~17
+videos
+~69
+videos
+~138
+videos
+~69
+videos
+Custom
+Gemini Omni Flash 1.1
+3s
+~17
+videos
+~69
+videos
+~138
+videos
+~69
+videos
+Custom
+Gemini Omni Flash 1.2
+3s, 360p
+~112
+videos
+~450
+videos
+~900
+videos
+~450
+videos
+Custom
+Grok Imagine
+1s, 480p
+~135
+videos
+~540
+videos
+~1,080
+videos
+~540
+videos
+Custom
+Grok Imagine 1.5
+1s, 480p
+~84
+videos
+~337
+videos
+~675
+videos
+~337
+videos
+Custom
+HappyHorse
+3s, 720p, no video reference
+~16
+videos
+~64
+videos
+~128
+videos
+~64
+videos
+Custom
+Kling 2.5
+5s
+~19
+videos
+~77
+videos
+~154
+videos
+~77
+videos
+Custom
+Kling 2.5 Turbo
+5s, HasEndImage: false
+~32
+videos
+~128
+videos
+~257
+videos
+~128
+videos
+Custom
+Kling 2.6
+5s, audio off
+~19
+videos
+~77
+videos
+~154
+videos
+~77
+videos
+Custom
+Kling 3.0
+3s, standard mode, audio off
+~26
+videos
+~107
+videos
+~214
+videos
+~107
+videos
+Custom
+Kling 3.0 Turbo
+3s, 720p
+~20
+videos
+~80
+videos
+~160
+videos
+~80
+videos
+Custom
+Kling 4.0
+3s, 720p
+~14
+videos
+~57
+videos
+~114
+videos
+~57
+videos
+Custom
+Kling 4.0 Flash
+3s
+~23
+videos
+~95
+videos
+~191
+videos
+~95
+videos
+Custom
+Kling o3
+3s, audio off, no video reference
+~26
+videos
+~107
+videos
+~214
+videos
+~107
+videos
+Custom
+Kling o3 Pro
+3s, audio off, no video reference
+~20
+videos
+~80
+videos
+~160
+videos
+~80
+videos
+Custom
+Kling o3 Edit
+3s
+~13
+videos
+~53
+videos
+~107
+videos
+~53
+videos
+Custom
+Kling o3 Reference
+3s
+~13
+videos
+~53
+videos
+~107
+videos
+~53
+videos
+Custom
+Kling o1
+3s, no video reference
+~20
+videos
+~80
+videos
+~160
+videos
+~80
+videos
+Custom
+LTX-2 19B
+5s, 512p
+~2
+videos/day
+~148
+videos
+~592
+videos
+~1,184
+videos
+~592
+videos
+Custom
+LTX-2.3 22B
+5s, no LoRA
+~37
+videos
+~150
+videos
+~300
+videos
+~150
+videos
+Custom
+LTX-2.5 Fast
+6s, 720p
+~12
+videos
+~50
+videos
+~100
+videos
+~50
+videos
+Custom
+LTX-2.5 Pro
+6s, 720p
+~9
+videos
+~37
+videos
+~75
+videos
+~37
+videos
+Custom
+Hailuo
+5s
+15
+videos
+62
+videos
+125
+videos
+62
+videos
+Custom
+MiniMax H3 Max
+5s, 480p, no reference images, no reference video
+~38
+videos
+~154
+videos
+~308
+videos
+~154
+videos
+Custom
+MiniMax H3 Max Turbo
+5s, 480p
+~54
+videos
+~216
+videos
+~432
+videos
+~216
+videos
+Custom
+Hailuo 02
+6s, 512p
+~67
+videos
+~270
+videos
+~540
+videos
+~270
+videos
+Custom
+Hailuo 2.3
+6s, 768p
+~24
+videos
+~96
+videos
+~192
+videos
+~96
+videos
+Custom
+Hailuo 2.3 Fast
+6s, 768p
+~35
+videos
+~142
+videos
+~284
+videos
+~142
+videos
+Custom
+MiniMax H3
+5s, no reference images
+~10
+videos
+~41
+videos
+~83
+videos
+~41
+videos
+Custom
+MiniMax 01-Live
+5s
+15
+videos
+62
+videos
+125
+videos
+62
+videos
+Custom
+Ray 2
+5s
+16
+videos
+67
+videos
+135
+videos
+67
+videos
+Custom
+Runway Gen-3
+5s
+~27
+videos
+~108
+videos
+~216
+videos
+~108
+videos
+Custom
+Runway Gen-4 Video
+5s
+~27
+videos
+~108
+videos
+~216
+videos
+~108
+videos
+Custom
+Runway Gen-4.5
+2s
+~28
+videos
+~112
+videos
+~225
+videos
+~112
+videos
+Custom
+Seedance 1.0 Pro
+5s, 720p
+~24
+videos
+~96
+videos
+~193
+videos
+~96
+videos
+Custom
+Seedance 1.0 Pro Fast
+2s, 480p
+~319
+videos
+~1,278
+videos
+~2,556
+videos
+~1,278
+videos
+Custom
+Seedance 2.0
+4s, 480p, video reference
+~20
+videos
+~83
+videos
+~166
+videos
+~83
+videos
+Custom
+Seedance 2.5
+5s, 720p, no video reference
+~5
+videos
+~23
+videos
+~46
+videos
+~23
+videos
+Custom
+Seedance 2.0 Fast
+4s, 480p, video reference
+~26
+videos
+~104
+videos
+~209
+videos
+~104
+videos
+Custom
+Seedance 2.0 Mini
+4s, 480p, video reference
+~41
+videos
+~164
+videos
+~328
+videos
+~164
+videos
+Custom
+Veo 3.1
+4s, 720p, audio off
+~33
+videos
+~67
+videos
+~33
+videos
+Custom
+Veo 3.1 Fast
+4s, 720p, audio off
+~21
+videos
+~84
+videos
+~168
+videos
+~84
+videos
+Custom
+Veo 3.1 Lite
+4s, 720p
+~56
+videos
+~225
+videos
+~450
+videos
+~225
+videos
+Custom
+Vidu Q2
+1s, 720p
+~22
+videos
+~90
+videos
+~180
+videos
+~90
+videos
+Custom
+Vidu Q3
+1s, 540p
+~96
+videos
+~385
+videos
+~771
+videos
+~385
+videos
+Custom
+Wan 2.1
+no LoRA
+~19
+videos
+~78
+videos
+~156
+videos
+~78
+videos
+Custom
+Wan 2.2
+22
+videos
+90
+videos
+180
+videos
+90
+videos
+Custom
+Wan 2.5
+5s, 480p
+~27
+videos
+~108
+videos
+~216
+videos
+~108
+videos
+Custom
+Wan 2.6
+5s, 720p
+~13
+videos
+~54
+videos
+~108
+videos
+~54
+videos
+Custom
+Wan 3.0
+2s, 480p
+~45
+videos
+~180
+videos
+~360
+videos
+~180
+videos
+Custom
+Wan 3.0 Prime
+2s, 480p
+~49
+videos
+~198
+videos
+~397
+videos
+~198
+videos
+Custom
+Other
+Realtime
+900
+images/day
+45,000
+images
+180,000
+images
+360,000
+images
+180,000
+images
+Custom
+Enhancer
+4
+images/day
+625
+images
+2,500
+images
+5,000
+images
+2,500
+images
+Custom
+Train LoRA
+1
+training/day
+5
+trainings
+21
+trainings
+43
+trainings
+21
+trainings
+Custom
+Edit
+33
+images/day
+1,666
+images
+6,666
+images
+13,333
+images
+6,666
+images
+Custom
+3D
+2
+models/day
+100
+models
+400
+models
+800
+models
+400
+models
+Custom
+Features
+Features & License
+Usage
+Usage
+Workspace
+Workspace
+Images
+Images
+Video
+Video
+Other
+Other
+Features
+Features & License
+Usage
+Usage
+Workspace
+Workspace
+Images
+Images
+Video
+Video
+Other
+Other
+Frequently Asked Questions
+What's the difference between plans?
+Free plan is for basic use with pay-as-you-go compute units. Basic, Pro, and Max are individual plans with increasing compute units, concurrency, and features like commercial license and priority jobs. Business is for teams: one flat price includes up to 50 members, and every member gets full benefits including usage analytics, commercial license, and priority email support. Enterprise offers custom seat counts with custom compute packages, dedicated support, SAML Single Sign-On (SSO), and advanced analytics.
+How do compute units work?
+Workspaces share a pool of compute units that can be allocated across all members. Business plans offer flexible packs from 20k to 1.5M units per month at discounted rates. Enterprise plans have custom packages with volume discounts. You can monitor usage per member and set individual limits in Business plans.
+How do credit rollovers work?
+Basic, Pro, and Max plans allocate compute units monthly and they do not roll over. Business and Enterprise plans allow unused compute credits to roll over to the next billing period with customizable rollover periods. Contact our sales team to learn more.
+What is SAML SSO and why do I need it?
+SAML Single Sign-On (SSO) allows members to access Krea using their existing company credentials (Google Workspace, Microsoft Azure AD, Okta, etc.). This improves security, simplifies user management, ensures compliance with corporate IT policies, and provides centralized access control. Available in Enterprise plans.
+How does billing work?
+Plans are billed monthly or yearly with centralized payment management. All members' usage is consolidated into a single invoice, and compute units are shared across the entire workspace. You can choose between different compute packs based on your needs, and unused units expire at the end of each billing cycle.
+What support options are available?
+Free includes community support via Discord. Business plans include priority email support with faster response times. Enterprise plans include dedicated support, a dedicated account manager, and custom onboarding.
+Do plans include a commercial license?
+Yes, Basic, Pro, Max, Business, and Enterprise plans include a commercial license that allows you to use all generated content for commercial purposes without restrictions. This includes images, videos, and other AI-generated assets for marketing, advertising, products, and client work.
+Can I switch between plans?
+Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately and billing is prorated. When upgrading, you'll only pay the difference for the remainder of your billing cycle. When downgrading, credits will be applied to future invoices.
+Is Business plan seat-based or team-based?
+Business plan is team-based. You pay for the compute pack you choose, and up to 50 members are included at no extra cost per member. Every member automatically receives all Business plan features and entitlements. All members share the workspace's compute units from your chosen pack. Teams that need more than 50 seats should talk to us about Enterprise.
+How do I add or remove members?
+Workspace administrators can add or remove members through the settings dashboard. New members receive an invitation email and gain immediate access once they accept. Removed members lose access to workspace resources but retain their personal accounts and any personal creations.
+What happens if we exceed our compute units?
+Free plan includes a daily compute allowance that refills every day â once it's used up, you'll need to wait for the next refill or upgrade to a paid plan. Business plans allow you to purchase additional compute packs or upgrade to a higher tier â adding more members doesn't increase your cost. Enterprise plans have auto top-ups that ensure uninterrupted service with volume discounts on additional usage.
+Still have questions?
+Our team is here to help you choose the right plan for your organization.
+Contact Sales
