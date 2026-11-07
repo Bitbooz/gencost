@@ -99,6 +99,19 @@ FALLBACK = {
     },
 }
 
+# Buttons or tabs the browser should click before reading, per tool
+# (e.g. Murf opens on its "API" tab; the normal plans are under "Studio").
+# Pages with a Monthly / Yearly switch where only one is shown at a time:
+# the browser reads the page once per tab and gives the AI both.
+TABS = {
+    "kling": ["Monthly", "Yearly"],
+}
+
+CLICKS = {
+    "murf": ["Studio"],
+    "hailuo": ["From", "Upgrade", "Subscribe", "Pricing"],
+}
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
     "Accept-Language": "en-US,en;q=0.9",
@@ -129,10 +142,14 @@ def extract_pricing(platform_name, raw_text):
 Rules:
 - Ignore Enterprise / Contact sales plans
 - Prices in US dollars exactly as written on the page (e.g. "USD 19.99" -> 19.99)
-- "monthly_price_usd" = the price per month when you pay MONTH BY MONTH
+- "monthly_price_usd" = the price per month when you pay MONTH BY MONTH, i.e. what you
+  actually pay every month after any first-month deal. Never use a crossed-out "was" price.
+  Example: "$6.99 / 1st mo  $10  Then $8.8/month" -> monthly_price_usd 8.8, offer "$6.99 first month"
 - "yearly_price_usd" = the price PER MONTH when you pay for a whole year upfront
   (if the page shows "$144 billed yearly", use 12). Use 0 if there is no yearly option.
 - Many pages show the yearly price first or by default. Read carefully which number is which.
+- The text may contain sections like "[Monthly tab]" and "[Yearly tab]": take the monthly price
+  from the Monthly section and the yearly price from the Yearly section.
 - If the page only shows the yearly-billing price for a plan, put it in BOTH fields
   and write "monthly price not shown" in "offer"
 - "offer": only special offers for THIS plan (e.g. "first month $9", "bonus credits"),
@@ -228,7 +245,24 @@ _pw = None
 _browser = None
 
 
-def browser_text(url):
+def click_first_visible(page, label):
+    """Click the first visible button / tab / link with this text. True if something was clicked."""
+    for loc in (page.get_by_role("button", name=label, exact=True),
+                page.get_by_role("tab", name=label, exact=True),
+                page.get_by_text(label, exact=True),
+                page.get_by_role("button", name=re.compile(re.escape(label)))):
+        try:
+            for el in loc.all()[:8]:
+                if el.is_visible():
+                    el.click(timeout=3000)
+                    page.wait_for_timeout(2000)
+                    return True
+        except Exception:
+            pass
+    return False
+
+
+def browser_text(url, clicks=(), tabs=()):
     """Open the page in a real (headless) Chrome, let JavaScript load the prices, return the visible text."""
     global _pw, _browser
     if _browser is None:
@@ -252,11 +286,20 @@ def browser_text(url):
                     break
             except Exception:
                 pass
+        for label in clicks:  # open the right tab / price popup
+            if click_first_visible(page, label):
+                break
         for _ in range(4):  # scroll so lazy-loaded price tables appear
             page.mouse.wheel(0, 2500)
             page.wait_for_timeout(700)
         page.wait_for_timeout(1500)
-        return page.inner_text("body")
+        if not tabs:
+            return page.inner_text("body")
+        parts = []
+        for label in tabs:
+            if click_first_visible(page, label):
+                parts.append(f"[{label} tab]\n" + page.inner_text("body"))
+        return "\n\n".join(parts) if parts else page.inner_text("body")
     finally:
         ctx.close()
 
@@ -296,13 +339,15 @@ def read_one(name, url):
         text, status = "", f"error: {str(e)[:120]}"
     if len(text) < 200:
         data, problems, notes = None, [f"pricing page returned almost no text (HTTP {status})"], []
+    elif name in TABS and BROWSER_OK:
+        data, problems, notes = None, ["needs the browser to open both tabs"], []
     else:
         data, problems, notes = extract_and_check(name, text)
     method = "download"
 
     if problems and BROWSER_OK:
         try:
-            btext = browser_text(url)
+            btext = browser_text(url, CLICKS.get(name, ()), TABS.get(name, ()))
         except Exception as e:
             btext = ""
             problems.append(f"browser could not open the page: {str(e).splitlines()[0][:150]}")
