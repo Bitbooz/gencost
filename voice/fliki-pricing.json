@@ -1,0 +1,14 @@
+{
+  "platform": "fliki",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 3,
+      "unit": "credits",
+      "offer": ""
+    }
+  ],
+  "source": "https://fliki.ai/pricing",
+  "last_checked": "2026-11-07 23:51"
+}

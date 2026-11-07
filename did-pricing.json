@@ -1,0 +1,31 @@
+{
+  "platform": "did",
+  "plans": [
+    {
+      "name": "Lite",
+      "monthly_price_usd": 4.7,
+      "yearly_price_usd": 4.67,
+      "credits_or_minutes": 40,
+      "unit": "credits",
+      "offer": "Unlimited videos for your first month"
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 16,
+      "yearly_price_usd": 15.92,
+      "credits_or_minutes": 60,
+      "unit": "credits",
+      "offer": "Unlimited videos for your first month"
+    },
+    {
+      "name": "Advanced",
+      "monthly_price_usd": 108,
+      "yearly_price_usd": 107.75,
+      "credits_or_minutes": 400,
+      "unit": "credits",
+      "offer": "Unlimited videos for your first month"
+    }
+  ],
+  "source": "https://www.d-id.com/pricing/studio/",
+  "last_checked": "2026-11-07 23:48"
+}

@@ -1,0 +1,185 @@
+Pricing & Plans - Fish Audio
+Fish Audio
+Products
+Solutions
+Resources
+Developers
+Enterprise
+Pricing
+Contact Sales
+Log in
+Sign Up Free
+Sign Up Free
+Choose Your Plan
+Unleash your creativity with unlimited generations
+Individual
+Team & Enterprise
+Billed Annually
+3 months off
+USD $
+USD $
+Free Tier
+Experience realistic AI voice technology.
+$
+0
+mo
+No credit card needed
+Sign Up for Free
+8,000
+credits monthly
+Up to 7 minutes generation
+Up to 500 characters per generation
+3 public voice slots
+Standard generation speed
+Enhanced voice cloning
+Commercial use
+Plus
+You save $48
+For creators and professionals.
+$
+11
+$
+15
+mo
+$132 billed annually
+Upgrade to Plus
+250,000
+credits monthly
+Up to 200 minutes generation
+Up to 15,000 characters per generation
+Unlimited public + 10 private voice slots
+Priority generation on our latest models
+Access to Voice Design
+1 professional voice slot
+Enhanced voice cloning
+Commercial use allowed
+Most Popular
+Pro
+You save $300
+For power users and businesses.
+$
+75
+$
+100
+mo
+$900 billed annually
+Upgrade to Pro
+2,000,000
+credits monthly
+Up to 1,620 minutes generation
+3 team seats included
+Up to 30,000 characters per generation
+Unlimited voice slots
+5 professional voice slots
+7 days money back guarantee
+And everything in Plus
+Looking for API pricing?
+Frequently Asked Questions
+How many credits does each minute of generation cost?
+Each minute of generation costs roughly 600 to 625 credits.
+What's the difference between Free and Premium plans?
+Free plan gives you free generations per month while Premium provides credits for up to 200 minutes of highest quality speech generation.
+Can I switch between monthly and yearly billing?
+Yes, you can switch between monthly and yearly billing at any time. When switching to yearly, you'll save at least 25% compared to monthly billing. Changes take effect at your next billing cycle.
+What payment methods do you accept?
+We accept all major credit cards (Visa, MasterCard, American Express), debit cards, and various regional payment methods through our secure payment processor.
+When do my credits reset?
+Credits get replenished and reset each month. See your remaining credits at
+text to speech
+page.
+What happens to my unused minutes?
+Monthly quotas reset at the beginning of each billing cycle. Unused minutes do not roll over to the next month. We recommend using your allocated minutes within your billing period.
+Do you offer API access?
+Yes, and you don't need a subscription for it. The API is billed separately from subscription plans, with pay-as-you-go API credit, and the S2.1 Pro Free model can be called without any credit. You can find documentation and pricing on our
+developers page
+.
+Can I use generated voices for commercial purposes?
+Premium subscribers can use verified voices (that you own) for commercial purposes. Free plan users can only use generated content for personal, non-commercial projects. Please review our terms of service for detailed usage rights.
+Products
+Text-to-Speech
+Speech-to-Text
+Voice Cloning
+Voice Changer
+Audiobooks
+Audio Separation
+Audio Translation
+Sound Effects
+AI Voice Generator
+AI Avatar Generator
+AI Video Generator
+AI Image Generator
+Dropline AI Dictation
+MCP
+Solutions
+For Startups
+For Students
+Voiceovers
+Character Voices
+Conversational Chatbots
+Research
+OpenAudio
+Fish Audio S2
+Fish Audio S1
+Fish Speech
+Fish Diffusion
+Resources
+Browse Voices
+Guide
+API Reference
+Voice Library
+Compare Us
+Affiliate
+Pricing
+Company
+GitHub
+Blog
+Support
+Products
+Text-to-Speech
+Speech-to-Text
+Voice Cloning
+Voice Changer
+Audiobooks
+Audio Separation
+Audio Translation
+Sound Effects
+AI Voice Generator
+AI Avatar Generator
+AI Video Generator
+AI Image Generator
+Dropline AI Dictation
+MCP
+Solutions
+For Startups
+For Students
+Voiceovers
+Character Voices
+Conversational Chatbots
+Research
+OpenAudio
+Fish Audio S2
+Fish Audio S1
+Fish Speech
+Fish Diffusion
+Resources
+Browse Voices
+Guide
+API Reference
+Voice Library
+Compare Us
+Affiliate
+Pricing
+Company
+GitHub
+Blog
+Support
+Fish Audio
+Â© 2026 Hanabi AI Inc. All rights reserved.
+Privacy Policy
+Terms of Service
+Report Abuse
+English
+GitHub
+Discord
+X
+YouTube

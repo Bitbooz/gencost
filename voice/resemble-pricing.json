@@ -1,0 +1,30 @@
+{
+  "platform": "resemble",
+  "plans": [
+    {
+      "name": "Flex",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "",
+      "offer": ""
+    },
+    {
+      "name": "Team",
+      "monthly_price_usd": 350,
+      "yearly_price_usd": 280,
+      "credits_or_minutes": 0,
+      "unit": "",
+      "offer": ""
+    },
+    {
+      "name": "Business",
+      "monthly_price_usd": 1000,
+      "yearly_price_usd": 800,
+      "credits_or_minutes": 0,
+      "unit": "",
+      "offer": ""
+    }
+  ],
+  "source": "https://www.resemble.ai/pricing/",
+  "last_checked": "2026-11-07 23:50"
+}

@@ -1,0 +1,18 @@
+{
+  "platform": "colossyan",
+  "plans": [
+    {
+      "name": "Starter",
+      "monthly_price_usd": 0,
+      "offer": ""
+    },
+    {
+      "name": "Professional",
+      "monthly_price_usd": 59,
+      "yearly_price_usd": 59,
+      "offer": "monthly price not shown"
+    }
+  ],
+  "source": "https://www.colossyan.com/pricing",
+  "last_checked": "2026-11-07 23:49"
+}

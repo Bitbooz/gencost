@@ -1,1 +1,21 @@
-2026-11-07 23:29  All tools were checked and confirmed. Nothing to review.
+2026-11-07 23:46  heygen  (https://www.heygen.com/pricing)
+    - Pro: yearly price 41 could not be confirmed, left out
+    -> saved the monthly prices
+
+2026-11-07 23:48  hedra  (https://www.hedra.com/plans)
+    - [https://www.hedra.com/plans] pricing page returned almost no text (HTTP 200)
+    - [https://www.hedra.com/plans] browser also got almost no text
+    - [https://www.hedra.com/pricing] download: no plans found
+    - [https://www.hedra.com/pricing] browser: no plans found
+    -> kept the previous prices
+
+2026-11-07 23:50  hume  (https://www.hume.ai/pricing)
+    - download: no plans found
+    - browser: no plans found
+    -> kept the previous prices
+
+2026-11-07 23:52  beatoven  (https://www.beatoven.ai/pricing)
+    - pricing page returned almost no text (HTTP 404)
+    - browser also got almost no text
+    -> kept the previous prices
+

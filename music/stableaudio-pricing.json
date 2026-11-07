@@ -1,0 +1,42 @@
+{
+  "platform": "stableaudio",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 50,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Solo",
+      "monthly_price_usd": 12,
+      "credits_or_minutes": 660,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Session",
+      "monthly_price_usd": 30,
+      "credits_or_minutes": 1800,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Producer",
+      "monthly_price_usd": 90,
+      "credits_or_minutes": 6000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Studio",
+      "monthly_price_usd": 199,
+      "credits_or_minutes": 14000,
+      "unit": "credits",
+      "offer": ""
+    }
+  ],
+  "source": "https://stableaudio.com/pricing",
+  "last_checked": "2026-11-07 23:52"
+}
