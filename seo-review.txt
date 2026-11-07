@@ -1,0 +1,26 @@
+SEO check 2026-11-07 19:54
+120 pages checked, 116 changed today, 91 in sitemap.xml, 18 marked noindex
+Made by this script: 82 canonical links, 29 descriptions; today: 6 links moved to the main page, 3 titles fixed
+
+Fixed today:
+  pages/best-free-ai-video-tools-2026.html: removed code fence / pasted <head> from the article
+  pages/cheapest-ai-music-tools-in-2026.html: removed code fence / pasted <head> from the article
+  pages/cheapest-ai-music-tools-in-2026.html: added the missing <h1>
+  pages/cheapest-ai-voice-cloning-tools-2026.html: added the missing <h1>
+  pages/cheapest-ai-voice-cloning-tools-2026.html: removed ' | GenCost' from the breadcrumb
+  pages/cheapest-ai-voice-tools-in-2026.html: added the missing <h1>
+  pages/cheapest-ai-voice-tools-in-2026.html: removed ' | GenCost' from the breadcrumb
+  pages/samples/best-free-ai-tools-for-youtube-thumbnails-short.html: added the missing <h1>
+  pages/samples/best-free-ai-tools-for-youtube-thumbnails-short.html: removed ' | GenCost' from the breadcrumb
+
+Needs a human:
+  pages/sample-package-youtube-ai-tools.html: empty file (delete it on GitHub, or leave it - it is marked noindex)
+  pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026-final.html: title is 75 characters (Google shows about 60)
+  pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026-test.html: no </head>, SEO tags not added
+  pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026.html: no </head>, SEO tags not added
+  pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026.html: 0 <h1> headings (should be exactly 1)
+  pages/samples/cheapest-ai-image-generators-in-2026-midjourney-vs-flux-vs-leonardo-vs-ideogram.html: title is 80 characters (Google shows about 60)
+  pages/samples/cheapest-ai-music-generators-for-youtube-in-2026.html: title is 71 characters (Google shows about 60)
+  pages/samples/cheapest-ai-music-generators-in-2026-suno-vs-udio-vs-soundraw-vs-aiva-vs-boomy.html: title is 79 characters (Google shows about 60)
+  pages/samples/cheapest-ai-video-upscaling-enhancement-tools-in-2026-topaz-vs-magnific-vs-runway-vs-capcut.html: title is 80 characters (Google shows about 60)
+  pages/samples/runway-vs-pika-vs-luma-cheapest-ai-video-generator-for-youtube-shorts-in-2026.html: title is 77 characters (Google shows about 60)

@@ -1,51 +1,34 @@
-Language
-English
-Login
+What to know about the Sora discontinuation | OpenAI Help Center
 All Collections
 ChatGPT
 What to know about the Sora discontinuation
 What to know about the Sora discontinuation
-
 Understand the Sora discontinuation, including content exports, data deletion, refunds, and credits.
-
-Updated: yesterday
+Updated: 2 days ago
 Sora discontinuation dates
-
 The Sora web and app experiences were discontinued on April 26, 2026.
-
 The Sora API was discontinued on September 24, 2026.
-
 Exporting your Sora data
-
-Yes, you can export your data following the steps below. If a final export window is offered, we’ll notify you by email before it begins. We recommend you export your Sora content as soon as possible.
-
+Yes, you can export your data following the steps
+below
+. If a final export window is offered, we’ll notify you by email before it begins.
+We recommend you export your Sora content as soon as possible.
 Data deletion after discontinuation
-
 After Sora is discontinued, and after the period of time of any final export window passes (if we are able to offer one), we will permanently delete any data associated with your use of Sora.
-
 Access and export your Sora content
-
-You can export content you created in Sora by going to sora.chatgpt.com/sunset and clicking on Export. You'll get an email when it's ready.
-
+You can export content you created in Sora by going to
+sora.chatgpt.com/sunset
+and clicking on
+Export
+. You'll get an email when it's ready.
 Refunds and credits
-
-For refund questions, please see How do I request a refund for my ChatGPT subscription? Note that any purchased ChatGPT/Sora credits can still be used for Codex, if you so choose.
-
-Need more help? Contact us for product questions, account support and general troubleshooting.
-AI Chat
-Chat now
-AI Phone Call
-1-888-GPT-0090
-
-Calls may be recorded to improve OpenAI services. If you wish to report content, please use the in-app reporting or the Report Content Form. Learn more.
-
+For refund questions, please see
+How do I request a refund for my ChatGPT subscription?
+Note that any purchased
+ChatGPT/Sora credits
+can still be used for Codex, if you so choose.
 Was this article helpful?
 Submit
-Sora discontinuation dates
-Exporting your Sora data
-Data deletion after discontinuation
-Access and export your Sora content
-Refunds and credits
 ChatGPT
 API
 Service Status

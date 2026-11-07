@@ -2,44 +2,278 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://getgencost.com/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/voice</loc>
-    <lastmod>2026-10-30</lastmod>
+    <loc>https://getgencost.com/calculator.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/music</loc>
-    <lastmod>2026-10-30</lastmod>
+    <loc>https://getgencost.com/changelog.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/compare.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/credits</loc>
-    <lastmod>2026-10-30</lastmod>
+    <loc>https://getgencost.com/credits.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/how-we-verify.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/music.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/order.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/voice.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/best-cheap-ai-video-tools-for-youtube-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/best-free-ai-video-tools-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/pages/aiva.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://getgencost.com/pages/cheapest-ai-avatar-tools-in-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/pages/boomy.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://getgencost.com/pages/cheapest-ai-music-tools-in-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/cheapest-ai-video-tools-in-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/cheapest-ai-voice-cloning-tools-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/cheapest-ai-voice-tools-in-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/elevenlabs-vs-cartesia-pricing-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/heygen-vs-capcut-pricing-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/heygen-vs-synthesia-pricing-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/kling-vs-hailuo-pricing-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/pika-vs-luma-pricing-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/playht-vs-elevenlabs-pricing-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/runway-vs-kling-pricing-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/runway-vs-kling-pricing-comparison-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/runway-vs-luma-pricing-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/best-free-ai-script-writers-for-youtube-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026-final.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/best-free-ai-voice-cloning-tools-for-youtube-2026-focus-on-free-tiers-of-elevenlabs-playht-resemble-ai-and-others.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/best-free-ai-voice-cloning-tools-for-youtube-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/cheapest-ai-avatar-video-tools-in-2026-heygen-vs-synthesia-vs-colossyan-vs-elai.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/cheapest-ai-b-roll-generators-for-youtube-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/cheapest-ai-image-generators-in-2026-midjourney-vs-flux-vs-leonardo-vs-ideogram.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/cheapest-ai-music-generators-for-youtube-in-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/cheapest-ai-music-generators-in-2026-suno-vs-udio-vs-soundraw-vs-aiva-vs-boomy.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/cheapest-ai-thumbnail-generators-for-youtube-in-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/cheapest-ai-tools-for-youtube-thumbnails-and-titles-in-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/cheapest-ai-video-translators-dubbing-tools-in-2026-elevenlabs-vs-heygen-vs-rask-vs-kapwing.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/cheapest-ai-video-upscaling-enhancement-tools-in-2026-topaz-vs-magnific-vs-runway-vs-capcut.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/cheapest-ai-voice-cloning-tools-in-2026-elevenlabs-vs-playht-vs-cartesia-vs-speechify.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/cheapest-kling-ai-plans-for-youtube.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/samples/runway-vs-pika-vs-luma-cheapest-ai-video-generator-for-youtube-shorts-in-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/stable-audio-vs-beatoven-pricing-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/suno-vs-udio-pricing-2026.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/beatoven.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/capcut.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
@@ -49,76 +283,88 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/pages/cartesia.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://getgencost.com/pages/emerging.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/pages/elevenlabs.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://getgencost.com/pages/fish-audio.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/hailuo.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getgencost.com/pages/hedra.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/heygen.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/higgsfield.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/hume.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/ideogram.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/invideo.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/kling.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/krea.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/leonardo.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/ltx.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/luma.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/midjourney.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/minimax.html</loc>
@@ -127,8 +373,44 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/pages/murf.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://getgencost.com/pages/mureka.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/music/aiva.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/music/boomy.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/music/soundraw.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/music/suno.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/music/udio.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/openart.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -140,9 +422,9 @@
   </url>
   <url>
     <loc>https://getgencost.com/pages/pika.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/pixverse.html</loc>
@@ -151,32 +433,32 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/pages/playht.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://getgencost.com/pages/resemble.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/runway.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/pages/sora.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://getgencost.com/pages/soundraw.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://getgencost.com/pages/seedance.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/pages/speechify.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://getgencost.com/pages/sora.html</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/stable-audio.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -187,87 +469,45 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getgencost.com/pages/suno.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://getgencost.com/pages/synthesia.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getgencost.com/pages/udio.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/veo.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/vidu.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/viggle.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getgencost.com/pages/music/aiva.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getgencost.com/pages/music/boomy.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getgencost.com/pages/music/soundraw.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getgencost.com/pages/music/suno.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getgencost.com/pages/music/udio.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/voice/cartesia.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/voice/descript.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/voice/elevenlabs.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
@@ -278,25 +518,31 @@
   </url>
   <url>
     <loc>https://getgencost.com/pages/voice/murf.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/voice/playht.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/voice/speechify.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://getgencost.com/pages/voice/wellsaid.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getgencost.com/pages/wan.html</loc>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -1,16 +1,16 @@
-Article prices updated 2026-11-07 19:20 (price data from 2026-11-07 19:20)
+Article prices updated 2026-11-07 19:54 (price data from 2026-11-07 19:54)
 
 pages/best-cheap-ai-video-tools-for-youtube-2026.html: 6 live prices (0 new, 0 changed today) · box: CapCut, Kling AI, ElevenLabs, Pika, Runway, Luma
 pages/best-free-ai-video-tools-2026.html: 0 live prices (0 new, 0 changed today) · box: Kling AI, Runway, Pika, Luma
 pages/cheapest-ai-avatar-tools-in-2026.html: 2 live prices (0 new, 0 changed today) · box: HeyGen, Synthesia
-pages/cheapest-ai-music-tools-in-2026.html: 4 live prices (0 new, 1 changed today) · box: Suno, Udio, AIVA, Soundraw
+pages/cheapest-ai-music-tools-in-2026.html: 4 live prices (0 new, 0 changed today) · box: Suno, Udio, AIVA, Soundraw
 pages/cheapest-ai-video-tools-in-2026.html: 8 live prices (0 new, 0 changed today) · box: Kling AI, Pika, Runway, Luma
 pages/cheapest-ai-voice-cloning-tools-2026.html: 7 live prices (0 new, 0 changed today) · box: ElevenLabs, Cartesia
 pages/cheapest-ai-voice-tools-in-2026.html: 9 live prices (0 new, 0 changed today) · box: PlayHT, Cartesia, ElevenLabs
 pages/elevenlabs-vs-cartesia-pricing-2026.html: 5 live prices (0 new, 0 changed today) · box: ElevenLabs, Cartesia
-pages/heygen-vs-capcut-pricing-2026.html: 3 live prices (0 new, 3 changed today) · box: HeyGen, CapCut
+pages/heygen-vs-capcut-pricing-2026.html: 3 live prices (0 new, 0 changed today) · box: HeyGen, CapCut
 pages/heygen-vs-synthesia-pricing-2026.html: 5 live prices (0 new, 0 changed today) · box: HeyGen, Synthesia
-pages/kling-vs-hailuo-pricing-2026.html: 5 live prices (0 new, 4 changed today) · box: Kling AI, Hailuo AI
+pages/kling-vs-hailuo-pricing-2026.html: 5 live prices (0 new, 0 changed today) · box: Kling AI, Hailuo AI
     - example 20 x 10s: Kling AI $16.00, Hailuo AI $20.99 -> cheapest today: Kling AI (check the verdict text agrees)
 pages/pika-vs-luma-pricing-2026.html: 7 live prices (0 new, 0 changed today) · box: Pika, Luma
     - example 20 x 10s: Pika $13.33, Luma $18.00 -> cheapest today: Pika (check the verdict text agrees)
@@ -21,4 +21,4 @@ pages/runway-vs-kling-pricing-comparison-2026.html: 5 live prices (0 new, 0 chan
 pages/runway-vs-luma-pricing-2026.html: 5 live prices (0 new, 0 changed today) · box: Runway, Luma
     - example 30 x 10s: Luma $27.00, Runway $86.40 -> cheapest today: Luma (check the verdict text agrees)
 pages/stable-audio-vs-beatoven-pricing-2026.html: 0 live prices (0 new, 0 changed today) · box: none
-pages/suno-vs-udio-pricing-2026.html: 4 live prices (0 new, 2 changed today) · box: Suno, Udio
+pages/suno-vs-udio-pricing-2026.html: 4 live prices (0 new, 0 changed today) · box: Suno, Udio
