@@ -34,7 +34,7 @@ from bs4 import BeautifulSoup
 FOLDER = os.path.dirname(os.path.abspath(__file__))
 os.chdir(FOLDER)
 
-API_KEY = os.getenv("XAI_API_KEY")
+API_KEY = (os.getenv("XAI_API_KEY") or "").strip()
 MODEL = "grok-3"
 
 VIDEO = {
