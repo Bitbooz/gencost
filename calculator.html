@@ -48,7 +48,7 @@
     <article class="prose">
 <span class="eyebrow">Budget calculator</span>
 <h1>How much AI video can I get for my budget?</h1>
-<p class="lead">Pick a plan and a budget. GenCost uses the plan's current price and credits to estimate how many seconds and 10-second clips you get.</p>
+<p class="lead">Pick a plan and a budget. GenCost uses the plan's current price and credits to work out how many video clips you really get, using each tool's own credits per clip.</p>
 <div class="card">
   <div data-billing-toggle></div>
   <label for="budget">Budget (USD per month)</label>
@@ -57,7 +57,7 @@
   <select id="platform"><option>Loading plans…</option></select>
   <div id="result"></div>
 </div>
-<p class="note">Estimates assume one credit buys one second of video, which differs between tools and quality settings. Prices from GenCost data, updated <span class="js-updated"></span>. Always confirm inside the tool.</p>
+<p class="note">Clip costs use the model shown for each tool; other models and higher resolutions cost more credits. Only tools with a known cost per clip are listed. Prices from GenCost data, updated <span class="js-updated"></span>. Always confirm inside the tool.</p>
     </article>
 
   </div>
@@ -112,19 +112,22 @@ document.addEventListener("DOMContentLoaded", function () {
   function calculate() {
     var p = plans[sel.value], b = parseFloat(budget.value) || 0;
     if (!p || !b) { out.innerHTML = ""; return; }
-    var costPer10s = p.price / p.credits * 10;
-    var seconds = (b / costPer10s) * 10;
+    var lens = GenCost.clipLengths(p.plan), secs = lens.indexOf(10) >= 0 ? 10 : lens[lens.length - 1];
+    var c = GenCost.clipCost(p.plan, secs);
+    if (!c) { out.innerHTML = ""; return; }
+    var clips = Math.floor(b / c.usd);
     var note = b < p.price ? '<br><span class="note">This plan costs ' + GenCost.money(p.price) + '/mo, more than your budget.</span>' : "";
-    out.innerHTML = "<strong>" + GenCost.esc(p.label) + "</strong> · about " + GenCost.money(Number(costPer10s.toFixed(2))) + " per 10 seconds<br>" +
-      "For <strong>$" + b + "</strong> you get roughly <strong class='price'>" + Math.round(seconds).toLocaleString("en-US") + " seconds</strong> of video, " +
-      "≈ <strong>" + Math.floor(seconds / 10).toLocaleString("en-US") + "</strong> clips of 10 seconds." + note;
+    var planClips = Math.floor(p.credits / c.credits);
+    out.innerHTML = "<strong>" + GenCost.esc(p.label) + "</strong> · one " + secs + "-second clip (" + GenCost.esc(c.model) + ") ≈ <strong>" + GenCost.money(Number(c.usd.toFixed(2))) + "</strong>" + (c.rough ? " (rough)" : "") + "<br>" +
+      "For <strong>$" + b + "</strong> you get roughly <strong class='price'>" + clips.toLocaleString("en-US") + " clips</strong> of " + secs + " seconds, " +
+      "≈ " + (clips * secs).toLocaleString("en-US") + " seconds of video. The plan itself covers about " + planClips.toLocaleString("en-US") + " such clips a month." + note;
   }
   function build(data, keepKey) {
     plans = [];
     (data.platforms || []).forEach(function (pf) {
       (pf.plans || []).forEach(function (p) {
         var price = GenCost.price(p), credits = typeof p.credits_or_minutes === "number" ? p.credits_or_minutes : 0;
-        if (price > 0 && credits > 0 && /credit|unit|token/i.test(p.unit || "")) plans.push({ key: pf.name + "|" + p.name, label: pf.name + " " + p.name + " (" + GenCost.money(price) + "/mo)", price: price, credits: credits });
+        if (price > 0 && credits > 0 && GenCost.clipLengths(p).length) plans.push({ key: pf.name + "|" + p.name, label: pf.name + " " + p.name + " (" + GenCost.money(price) + "/mo)", price: price, credits: credits, plan: p });
       });
     });
     sel.innerHTML = plans.map(function (p, i) { return '<option value="' + i + '">' + GenCost.esc(p.label) + "</option>"; }).join("");

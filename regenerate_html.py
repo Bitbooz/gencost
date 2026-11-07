@@ -93,7 +93,18 @@ def load(path):
         return None
 
 
+def load_clip_costs():
+    """data/clip-costs.json (kept by hand): credits per video clip for each tool."""
+    try:
+        with open(os.path.join(data_dir, "clip-costs.json"), encoding="utf-8-sig") as f:
+            return json.load(f).get("tools", {})
+    except Exception as e:
+        print(f"  No clip costs: {e}")
+        return {}
+
+
 def build(category, paths, names):
+    clip_costs = load_clip_costs() if category == "video" else {}
     platforms = []
     for path in paths:
         d = load(path)
@@ -114,6 +125,8 @@ def build(category, paths, names):
             "checked": d.get("last_checked") or d.get("checked") or "",
             "plans": d["plans"],
         })
+        if name in clip_costs:
+            platforms[-1]["clips"] = clip_costs[name]
     order = [n for _, n, _ in names]
     platforms.sort(key=lambda p: (order.index(p["name"]) if p["name"] in order else 999, p["name"]))
 
@@ -125,7 +138,7 @@ def build(category, paths, names):
         try:
             with open(out_path, encoding="utf-8") as f:
                 old = json.load(f)
-            strip = lambda ps: [{k: v for k, v in p.items() if k != "checked"} for p in ps]
+            strip = lambda ps: [{k: v for k, v in p.items() if k not in ("checked", "clips")} for p in ps]
             if old.get("updated") and strip(old.get("platforms", [])) == strip(platforms):
                 updated = old["updated"]
         except Exception:

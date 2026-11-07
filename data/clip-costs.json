@@ -1,0 +1,70 @@
+{
+ "about": "Credits one video clip costs on each tool. Kept by hand: the daily job does not change this file. Used for the 'per clip' cost on plan cards and for the 'Real-world example' boxes in articles. 'clips' maps clip length in seconds to credits. A tool that is not listed gets no clip estimate (better than a wrong one).",
+ "updated": "2026-11-07",
+ "tools": {
+  "Runway": {
+   "model": "Gen-4.5",
+   "clips": {"5": 60, "10": 120},
+   "source": "https://runwayml.com/pricing",
+   "checked": "2026-11-06",
+   "official": true
+  },
+  "Luma": {
+   "model": "Ray3.2, 720p",
+   "clips": {"5": 100, "10": 300},
+   "source": "https://lumalabs.ai/pricing",
+   "checked": "2026-11-06",
+   "official": true
+  },
+  "Pika": {
+   "model": "Pika 2.5, 720p",
+   "clips": {"5": 20},
+   "source": "https://pika.art/pricing",
+   "checked": "2026-11-06",
+   "official": true
+  },
+  "InVideo": {
+   "model": "Seedance 2.5, 720p",
+   "clips": {"5": 56},
+   "source": "https://invideo.io/pricing",
+   "checked": "2026-11-06",
+   "official": true
+  },
+  "Kling AI": {
+   "model": "Kling 3.0, 720p, no audio",
+   "clips": {"5": 30, "10": 60},
+   "source": "https://eesel.ai/blog/kling-ai-pricing",
+   "checked": "2026-06-15",
+   "official": false
+  },
+  "Hailuo AI": {
+   "model": "Hailuo 2.3, 768p",
+   "clips": {"6": 25, "10": 50},
+   "source": "https://aireiter.com/blog/hailuo-ai-pricing",
+   "checked": "2026-09-18",
+   "official": false
+  },
+  "Higgsfield": {
+   "model": "Kling 3.0, 720p",
+   "clips": {"5": 7},
+   "source": "https://www.hooked.so/compare/higgsfield-pricing",
+   "checked": "2026-09-25",
+   "official": false
+  },
+  "Google Veo": {
+   "model": "Veo Fast in Flow",
+   "clips": {"8": 20},
+   "source": "https://diyai.io/ai-tools/video-generation/google-veo-pricing/",
+   "checked": "2026-11-07",
+   "official": false
+  },
+  "Vidu": {
+   "model": "standard mode",
+   "clips": {"4": 5, "8": 8},
+   "source": "https://flowith.io/blog/vidu-pricing-2026-free-vs-pro-vs-enterprise-cost",
+   "checked": "2026-03-01",
+   "official": false,
+   "rough": true
+  }
+ }
+}

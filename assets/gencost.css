@@ -198,6 +198,7 @@ a.row:hover { border-color: rgba(0,212,255,0.35); }
 .plan-line .pr { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .plan-sub { font-size: 0.83rem; color: var(--muted); margin-top: 2px; }
 .plan-sub .cost { color: var(--cyan); }
+.plan-sub .cost .cost-model { color: var(--faint); }
 .plan-sub .offer { color: var(--green); }
 .free { color: var(--green); }
 .small-note { margin-top: 18px; font-size: 0.85rem; color: var(--faint); }
@@ -488,3 +489,4 @@ main.page { padding-bottom: 24px; }
 .prose .live-box td.num:nth-child(3) { color: var(--cyan); font-weight: 700; }
 .prose .live-box .note { margin: 0; }
 .prose .live-price { border-bottom: 1px dotted rgba(0,212,255,0.6); }
+.prose .est-basis { display: inline-block; margin-top: 6px; color: var(--muted); font-size: 0.82rem; line-height: 1.45; }

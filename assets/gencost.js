@@ -88,7 +88,33 @@
     return "";
   };
 
-  /* Cost estimate per category. Video assumes 1 credit = 1 second,
+  /* Real credits per video clip, from data/clip-costs.json (merged into
+     data/video.json as platform.clips). Returns null when the tool has no
+     known clip cost, so we show nothing rather than a wrong guess. */
+  GC.clipCost = function (plan, secs) {
+    const info = plan && plan.__clips;
+    const price = GC.price(plan);
+    const credits = num(plan && plan.credits_or_minutes);
+    if (!info || !info.clips || !price || !credits || credits <= 0) return null;
+    const known = Object.keys(info.clips).map(Number).sort((a, b) => a - b);
+    if (!known.length) return null;
+    let used = known.includes(secs) ? secs : null, scaled = false;
+    let cr;
+    if (used) cr = info.clips[String(used)];
+    else {
+      // not listed for this length: scale from the closest listed length
+      const near = known.reduce((a, b) => (Math.abs(b - secs) < Math.abs(a - secs) ? b : a));
+      cr = (info.clips[String(near)] / near) * secs;
+      scaled = true;
+    }
+    return { usd: (price / credits) * cr, credits: cr, secs, scaled, model: info.model || "", rough: !!info.rough || scaled };
+  };
+  GC.clipLengths = function (plan) {
+    const info = plan && plan.__clips;
+    return info && info.clips ? Object.keys(info.clips).map(Number).sort((a, b) => a - b) : [];
+  };
+
+  /* Cost estimate per category. Video uses the real clip costs above;
      voice per 1k characters / minute, music per unit. */
   GC.estimate = function (plan, category) {
     const price = GC.price(plan);
@@ -96,9 +122,15 @@
     if (!price || !credits || credits <= 0) return "";
     const unit = String(plan.unit || "").toLowerCase();
     if (category === "video") {
-      if (!/credit|unit|token/.test(unit)) return "";
-      const cps = price / credits;
-      return `est. 5s $${(cps * 5).toFixed(2)} · 10s $${(cps * 10).toFixed(2)} · 30s $${(cps * 30).toFixed(2)}`;
+      const lens = GC.clipLengths(plan);
+      if (!lens.length) return "";
+      const parts = lens.map((s) => {
+        const c = GC.clipCost(plan, s);
+        return c ? `${s}s clip ≈ $${c.usd.toFixed(2)}` : "";
+      }).filter(Boolean);
+      const info = plan.__clips;
+      const tip = `${info.model}: ${lens.map((s) => `${info.clips[s]} credits per ${s}s`).join(", ")}. Source checked ${info.checked || "?"}.`;
+      return `<span title="${esc(tip)}">${parts.join(" · ")} <span class="cost-model">(${esc(info.model)}${info.rough ? ", rough" : ""})</span></span>`;
     }
     if (category === "voice") {
       if (unit.includes("character")) return `~$${((price / credits) * 1000).toFixed(3)} / 1k chars`;
@@ -140,6 +172,12 @@
     loads[category] = loads[category] || fetch(`/data/${category}.json`, { cache: "no-cache" }).then((r) => {
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
+    }).then((data) => {
+      // give each plan its tool's clip costs (not enumerable, so it never shows up in copies)
+      (data.platforms || []).forEach((pf) => {
+        if (pf.clips) (pf.plans || []).forEach((p) => Object.defineProperty(p, "__clips", { value: pf.clips, enumerable: false }));
+      });
+      return data;
     });
     return loads[category];
   };

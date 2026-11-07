@@ -23,6 +23,12 @@ import os
 import re
 from datetime import datetime
 
+try:
+    from zoneinfo import ZoneInfo
+    TZ = ZoneInfo("Europe/Oslo")
+except Exception:
+    TZ = None
+
 from bs4 import BeautifulSoup, NavigableString
 
 try:
@@ -53,6 +59,9 @@ EXTRA_ALIASES = {
 }
 
 MONEY = r"[~≈]?\s?\$\d[\d,]*(?:\.\d{1,2})?(?:\s?/\s?(?:mo|month))?"
+# In tables a price can be a range like "$10–12/mo"; it becomes one live price
+MONEY_RANGE = r"[~≈]?\s?\$\d[\d,]*(?:\.\d{1,2})?(?:\s?[–-]\s?\$?\d[\d,]*(?:\.\d{1,2})?)?(?:\s?/\s?(?:mo|month))?"
+FREE_NAMES = re.compile(r"^(free|basic|trial|starter|hobby)\b", re.I)
 
 
 def load_tools():
@@ -120,6 +129,33 @@ def live_value(tool, plan, bill):
     return (price if price > 0 else None), p
 
 
+def cheapest_paid(tool, need_clips=False):
+    """Cheapest plan with a price (and credits, if clip costs are needed)."""
+    ps = [p for p in tool["plans"] if (num(p.get("monthly_price_usd")) or 0) > 0
+          and (not need_clips or (num(p.get("credits_or_minutes")) or 0) > 0)]
+    return min(ps, key=lambda p: p["monthly_price_usd"]) if ps else None
+
+
+def free_plan(tool):
+    return next((p for p in tool["plans"] if FREE_NAMES.match(p["name"]) and not (num(p.get("monthly_price_usd")) or 0)), None)
+
+
+def clip_cost(tool, plan, secs, bill="monthly"):
+    """(usd, credits, scaled) for one clip of `secs` seconds, from data/clip-costs.json. None if unknown."""
+    info = tool.get("clips") or {}
+    clips = {int(k): v for k, v in (info.get("clips") or {}).items()}
+    price, p = live_value(tool, plan["name"], bill) if plan else (None, None)
+    credits = num((p or {}).get("credits_or_minutes"))
+    if not clips or not price or not credits:
+        return None
+    if secs in clips:
+        cr, scaled = clips[secs], False
+    else:
+        near = min(clips, key=lambda k: abs(k - secs))
+        cr, scaled = clips[near] / near * secs, True
+    return price / credits * cr, cr, scaled
+
+
 def fmt_price(price, suffix, approx):
     return ("~" if approx else "") + money(price) + suffix
 
@@ -149,7 +185,7 @@ def mark_text(soup, node, tool, plan, money_match, bill):
 
 def in_live(node):
     for p in node.parents:
-        if getattr(p, "get", None) and ("live-box" in (p.get("class") or []) or "live-price" in (p.get("class") or [])):
+        if getattr(p, "get", None) and any(c in (p.get("class") or []) for c in ("live-box", "live-price", "est-basis")):
             return True
     return False
 
@@ -171,6 +207,8 @@ def mark_tables(soup, art, matcher):
             context_tool = matcher.tool_in(heading.get_text(" ", strip=True))
             if context_tool:
                 break
+        cheapest_col = price_col is not None and "cheapest" in head[price_col]
+        free_col = next((i for i, h in enumerate(head) if "free" in h and ("credit" in h or "limit" in h)), None)
         for tr in rows[1:]:
             cells = tr.find_all(["td", "th"])
             if not cells:
@@ -179,26 +217,45 @@ def mark_tables(soup, art, matcher):
             tool = matcher.tool_in(label) or context_tool
             if not tool:
                 continue
+            # free-tier credits ("One-time 125 credits") follow the tool's free plan
+            if free_col is not None and free_col < len(cells) and not cells[free_col].find(attrs={"data-live": True}):
+                fp = free_plan(tool)
+                fc = num((fp or {}).get("credits_or_minutes"))
+                if fp and fc and fc > 0:
+                    for node in cells[free_col].find_all(string=True):
+                        nm = re.search(r"(?<![\d~$.])(\d[\d,]*)(?=\s*credits?\b)", str(node), re.I)
+                        if nm and "/day" not in str(node)[nm.end():nm.end() + 14].replace(" ", ""):
+                            t = str(node)
+                            sp = soup.new_tag("span", attrs={"data-live": "credits", "data-tool": tool["name"], "data-plan": fp["name"],
+                                                             "title": "Updated automatically every day"})
+                            sp.string = nm.group(1)
+                            node.replace_with(*[x for x in (NavigableString(t[:nm.start()]), sp, NavigableString(t[nm.end():])) if str(x)])
+                            marked += 1
+                            break
             pc = price_col
             if pc is None:
                 pc = next((i for i, c in enumerate(cells) if re.search(r"\$\d", c.get_text())), None)
             if pc is None or pc >= len(cells) or cells[pc].find(class_="live-price"):
                 continue
             cell_text = cells[pc].get_text(" ", strip=True)
-            plan = find_plan(tool, label) or find_plan(tool, cell_text)
+            others = " | ".join(c.get_text(" ", strip=True) for i, c in enumerate(cells[1:], 1) if i != pc)
+            plan = find_plan(tool, label) or find_plan(tool, cell_text) or find_plan(tool, others)
+            if not plan and cheapest_col:
+                plan = cheapest_paid(tool)
             if not plan:
                 continue
-            bill = "yearly" if re.search(r"year|annual", cell_text, re.I) else "monthly"
+            row_text = label + " " + cell_text + " " + (cells[1].get_text(" ", strip=True) if len(cells) > 1 else "")
+            bill = "yearly" if re.search(r"year|annual", row_text, re.I) else "monthly"
             if live_value(tool, plan["name"], bill)[0] is None:
                 continue
             for node in cells[pc].find_all(string=True):
-                mm = re.search(MONEY, str(node))
+                mm = re.search(MONEY_RANGE, str(node))
                 if mm:
                     mark_text(soup, node, tool, plan, mm, bill)
                     marked += 1
                     break
             # credits and cost-per-clip columns follow the price
-            if credit_col is not None and credit_col < len(cells):
+            if credit_col is not None and credit_col < len(cells) and credit_col != free_col:
                 c = cells[credit_col]
                 if re.fullmatch(r"[\d,.]+[kK]?", c.get_text(strip=True)):
                     c["data-live"] = "credits"
@@ -247,6 +304,8 @@ def mark_lines(soup, art, matcher):
 def refresh(art, tools, report):
     changed = 0
     for s in art.find_all(class_="live-price"):
+        if "live-est" in (s.get("class") or []):
+            continue  # example totals, see refresh_examples
         tool = tools.get(s.get("data-tool"))
         if not tool:
             report.append(f"    - {s.get('data-tool')} {s.get('data-plan')}: tool no longer in the price data, left as is")
@@ -269,12 +328,104 @@ def refresh(art, tools, report):
         if kind == "credits" and credits:
             new = f"{credits:,}"
         elif kind.startswith("est") and price and credits:
-            new = f"~${price / credits * int(kind[3:]):.2f}"
+            cc = clip_cost(tool, p, int(kind[3:]), c.get("data-bill", "monthly"))
+            if not cc:
+                continue
+            new = f"~${cc[0]:.2f}"
         else:
             continue
         if c.get_text(strip=True) != new:
             c.string = new
             changed += 1
+    changed += refresh_examples(art, tools, report)
+    return changed
+
+
+EXAMPLE = re.compile(r"(\d+)\s?[×x]\s?(\d+)-second")
+
+
+def mark_examples(soup, art, matcher):
+    """'20 × 10-second videos: Kling ≈ $3.00 | Hailuo ≈ $2.80' -> live totals from real clip costs."""
+    marked = 0
+    for node in list(art.find_all(string=EXAMPLE)):
+        if in_live(node):
+            continue
+        m = EXAMPLE.search(str(node))
+        block = node.find_parent(["div", "p", "li"]) or node.parent
+        block["data-example-n"], block["data-example-secs"] = m.group(1), m.group(2)
+        while True:  # one span per pass, until no more "Tool ≈ $X" is left in the block
+            found = False
+            for t in list(block.find_all(string=True)):
+                if in_live(t):
+                    continue
+                text = str(t)
+                em = EXAMPLE.search(text)
+                for tm in matcher.rx.finditer(text, em.end() if em else 0):
+                    tool = matcher.tools[matcher.lookup[tm.group(1).lower()]]
+                    if not tool.get("clips"):
+                        continue
+                    pm = re.match(r"(\s+[\w+ ]{1,20}?)?\s*[≈~]\s*(\$\d[\d,]*(?:\.\d{1,2})?)", text[tm.end():])
+                    if not pm:
+                        continue
+                    plan = find_plan(tool, pm.group(1) or "")
+                    a, b = tm.end() + pm.start(2), tm.end() + pm.end(2)
+                    sp = soup.new_tag("span", attrs={"class": "live-price live-est", "data-tool": tool["name"],
+                                                     "data-plan": plan["name"] if plan else "", "title": "Updated automatically every day"})
+                    sp.string = text[a:b]
+                    t.replace_with(*[x for x in (NavigableString(text[:a]), sp, NavigableString(text[b:])) if str(x)])
+                    marked += 1
+                    found = True
+                    break
+                if found:
+                    break
+            if not found:
+                break
+    return marked
+
+
+def refresh_examples(art, tools, report):
+    changed = 0
+    for block in art.find_all(attrs={"data-example-n": True}):
+        n, secs = int(block["data-example-n"]), int(block["data-example-secs"])
+        basis, totals = [], []
+        for sp in block.find_all(class_="live-est"):
+            tool = tools.get(sp.get("data-tool"))
+            if not tool:
+                continue
+            plan = next((p for p in tool["plans"] if p["name"] == sp.get("data-plan")), None) if sp.get("data-plan") else cheapest_paid(tool, True)
+            cc = clip_cost(tool, plan, secs) if plan else None
+            if not cc:
+                report.append(f"    - example {tool['name']}: no clip cost, left as is")
+                continue
+            usd, cr, scaled = cc
+            new = f"${usd * n:,.2f}"
+            if sp.get_text() != new:
+                sp.string = new
+                changed += 1
+            totals.append((usd * n, tool["name"]))
+            info = tool["clips"]
+            have = num(plan.get("credits_or_minutes")) or 0
+            fits = int(have // cr) if cr else 0
+            extra = f"; the plan covers about {fits} such clips a month" if fits < n else ""
+            basis.append(f"{tool['name']} {plan['name']} {money(live_value(tool, plan['name'], 'monthly')[0])}/mo, "
+                         f"{info.get('model')}: {cr:g} credits per {secs}s{' (scaled)' if scaled else ''}{extra}")
+        if not basis:
+            continue
+        if len(totals) > 1:
+            totals.sort()
+            report.append(f"    - example {n} x {secs}s: " + ", ".join(f"{t} ${v:,.2f}" for v, t in totals)
+                          + f" -> cheapest today: {totals[0][1]} (check the verdict text agrees)")
+        text = "Today's prices and each tool's real credits per clip: " + " · ".join(basis) + "."
+        old = block.find(class_="est-basis")
+        if old:
+            if old.get_text() != text:
+                old.string = text
+        else:
+            soup = BeautifulSoup("", PARSER)
+            br, small = soup.new_tag("br"), soup.new_tag("small", attrs={"class": "est-basis"})
+            small.string = text
+            block.append(br)
+            block.append(small)
     return changed
 
 
@@ -321,7 +472,7 @@ def process(path, tools, matcher, updated):
     if not art:
         return None
     report = []
-    marked = mark_tables(soup, art, matcher) + mark_lines(soup, art, matcher)
+    marked = mark_tables(soup, art, matcher) + mark_examples(soup, art, matcher) + mark_lines(soup, art, matcher)
 
     # Which tools is this article about? Title first, then the most-mentioned names.
     h1 = art.find("h1")
@@ -356,13 +507,37 @@ def process(path, tools, matcher, updated):
     return marked, changed, names, report
 
 
+# Old sentences on other pages that are no longer true; replaced wherever they are found
+NOTE_FIXES = {
+    "index.html": [("Clip estimates assume one credit per second of video, which differs between tools.",
+                    "Clip costs use each tool's own credits per clip for the model named (hover to see it). Tools without a known clip cost show none.")],
+}
+
+
+def fix_notes():
+    for path, pairs in NOTE_FIXES.items():
+        try:
+            with open(path, encoding="utf-8") as f:
+                raw = f.read()
+        except FileNotFoundError:
+            continue
+        new = raw
+        for a, b in pairs:
+            new = new.replace(a, b)
+        if new != raw:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(new)
+            print(f"{path}: note updated")
+
+
 def main():
+    fix_notes()
     tools, updated = load_tools()
     if not tools:
         print("No price data found (run regenerate_html.py first).")
         return
     matcher = Matcher(tools)
-    lines = [f"Article prices updated {datetime.now().strftime('%Y-%m-%d %H:%M')} (price data from {updated})\n"]
+    lines = [f"Article prices updated {datetime.now(TZ).strftime('%Y-%m-%d %H:%M')} (price data from {updated})\n"]
     for path in ARTICLES:
         r = process(path, tools, matcher, updated)
         if r is None:
