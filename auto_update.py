@@ -105,6 +105,7 @@ FALLBACK = {
 # the browser reads the page once per tab and gives the AI both.
 TABS = {
     "kling": ["Monthly", "Yearly"],
+    "murf": ["Monthly", "Yearly", "Annually", "Annual"],  # after clicking the "Studio" tab
 }
 
 CLICKS = {
