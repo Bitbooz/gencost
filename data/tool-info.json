@@ -1,0 +1,175 @@
+{
+ "about": "Short texts for each tool page (what it is, who it is for, the free plan, how credits work). Kept by hand from each tool's pricing page; prices are never written here because they change - the page shows live prices. Used by update_articles.py.",
+ "updated": "2026-11-07",
+ "tools": {
+  "HeyGen": {
+   "about": "HeyGen makes videos with AI avatars: you type a script and a realistic presenter speaks it, in 175+ languages. It is used for marketing, sales and training videos.",
+   "best_for": "Talking-head and presenter videos without filming, and translating existing videos with lip-sync.",
+   "free": "The Free plan makes up to 3 videos a month, up to 1 minute each, with a HeyGen watermark.",
+   "credits": "Credits are HeyGen's single currency. How many a video uses depends on the AI model, the video length and how complex it is. Monthly subscribers' unused credits roll over for one month; on yearly plans they build up until renewal."
+  },
+  "Higgsfield": {
+   "about": "Higgsfield is a creative platform that gives you many top video and image models in one place, including Kling 3.0, Seedance 2.5 and Nano Banana Pro, with presets for cinematic shots and viral effects.",
+   "best_for": "Creators who want to try several leading models without paying for each one separately.",
+   "free": "There is a free option with limited use, so you can test it before paying.",
+   "credits": "Higgsfield estimates about 14 credits per Kling 3.0 video and 2 credits per image. Its pricing page also lists how many videos of each model a plan covers."
+  },
+  "Runway": {
+   "about": "Runway is an AI video studio known for its own Gen-4.5 model, strong editing tools and camera control. It also offers other models such as Kling and Seedance inside the same app.",
+   "best_for": "Filmmakers and agencies who need control over motion and camera, and are willing to pay more per clip.",
+   "free": "The Free plan gives a one-time 125 credits (they don't refill) to test the tools, with 5 GB of storage.",
+   "credits": "Gen-4.5 uses 12 credits per second of video, so a 10-second clip costs 120 credits. On Standard and Pro, credits reset every month; on Max, up to one month of unused credits rolls over. Extra credits are sold in packs of at least 1,000."
+  },
+  "Kling AI": {
+   "about": "Kling AI is Kuaishou's video generator. Its Kling 3.0 and newer models are known for realistic motion and good quality for the price, with 1080p and 4K output on paid plans.",
+   "best_for": "Anyone who wants high-quality AI video at a low monthly price, from short social clips to cinematic shots.",
+   "free": "Kling has a free tier with a small number of daily credits. Paid plans add watermark removal, commercial use and faster generation.",
+   "credits": "The credits a clip uses depend on the model, the length, the resolution and whether audio is on. As a guide, a 5-second Kling 3.0 clip at 720p without audio is about 30 credits. The first month of each plan is 30% off."
+  },
+  "Synthesia": {
+   "about": "Synthesia makes professional videos with AI avatars and voices, aimed at companies: training, onboarding, how-to and internal communication videos.",
+   "best_for": "Businesses that need many consistent presenter videos, in many languages, without a film crew.",
+   "free": "The Basic plan is free, but its videos carry a Synthesia watermark.",
+   "credits": "Each plan includes video minutes and credits that reset every billing period; unused minutes don't roll over. Extras cost credits, for example dubbing at 80 credits per minute with lip-sync (40 without)."
+  },
+  "Pika": {
+   "about": "Pika is an AI video app with its own Pika 2.5 and Pika H3 Flex models, plus other models such as Seedance 2.5 and Kling, all on one credit balance.",
+   "best_for": "Short, fun social clips and quick ideas, at a low entry price.",
+   "free": "The Free plan has no watermark, but no commercial license; you can buy credit packs. A commercial license comes with Starter and up.",
+   "credits": "A 5-second Pika 2.5 clip at 720p is 20 credits; the same length with Seedance 2.5 at 720p is about 122. Creator and Fancy include free Pika H3 Flex generations every day. Plan credits don't roll over; bought top-ups last 365 days. Payments are non-refundable."
+  },
+  "Luma": {
+   "about": "Luma makes video with its own Ray models (Ray3.2) and many third-party models such as Kling, Veo and Seedance, with HDR output and editing tools.",
+   "best_for": "Creators who want several top models and clear per-second pricing in one place.",
+   "free": "Luma has no free plan; the cheapest plan is Plus.",
+   "credits": "Ray3.2 at 720p costs 100 credits for 5 seconds and 300 for 10 seconds; 1080p costs four times as much. Every plan includes commercial use."
+  },
+  "Viggle": {
+   "about": "Viggle animates characters: you swap a person or character into a video, copy dance moves and make meme videos, even in real time.",
+   "best_for": "Meme, dance and character-swap videos for social media.",
+   "free": "The Free plan has credits that refresh daily, one video at a time, watermarked Mix videos and 7-day storage.",
+   "credits": "Each feature uses a different number of credits depending on the model and output. Monthly plan credits expire on your billing date; bought credits don't expire but only work while you have a plan."
+  },
+  "InVideo": {
+   "about": "InVideo AI turns a prompt or script into a finished video with scenes, voice-over and music, and gives access to generative models such as Seedance and Nano Banana Pro at their API prices.",
+   "best_for": "Marketers and YouTubers who want complete videos from a script, not just single clips.",
+   "credits": "Credits pay for video creation and generative models. Seedance 2.5 at 720p is about 56 credits per 5 seconds, and it is not included on Starter. Unused credits don't roll over, and InVideo says credit costs can change without notice."
+  },
+  "CapCut": {
+   "about": "CapCut is ByteDance's video editor for desktop, web and phone, with templates, captions and AI tools, including AI video generation with ByteDance's Seedance models.",
+   "best_for": "Editing social videos with captions and effects, plus some AI video generation in the same app.",
+   "free": "The Free plan includes basic editing tools and free templates.",
+   "credits": "Pro includes 1,200 AI credits a month, enough for up to 240 seconds of 720p video with Seedance 2.0 Mini (about 5 credits per second). The per-second Seedance 2.5 prices on CapCut's page are first-month offers."
+  },
+  "LTX Studio": {
+   "about": "LTX Studio is Lightricks' AI filmmaking tool: it turns a script into storyboards, shots and video with its own LTX-2.5 and LTX-2.3 models, with advanced camera controls.",
+   "best_for": "Planning and pitching films, ads and storyboards from a script.",
+   "free": "The Free plan gives a one-time 800 credits. Free and Lite are for personal use only; commercial use starts on Standard.",
+   "credits": "Credits pay for rendering video, images and edits, but LTX doesn't publish how many credits one clip uses. Refunds are usually granted within 14 days if you have used fewer than 1,200 credits."
+  },
+  "Hailuo AI": {
+   "about": "Hailuo AI is MiniMax's video generator, with the new MiniMax H3 model and the older Hailuo 2.3.",
+   "best_for": "Short, dynamic clips at a low cost per second, especially on the bigger plans.",
+   "credits": "MiniMax H3 at 768p uses about 7 credits per second, so 1,000 credits make about 143 seconds of video; 2K costs about 1.7 times more per second. Watermark removal needs a paid plan."
+  },
+  "Google Veo": {
+   "about": "Veo is Google's video model. You use it in Google Flow, which is included in the Google AI plans together with Gemini, storage and other Google AI tools. Veo makes realistic clips with sound.",
+   "best_for": "Realistic clips with sound, and anyone who would use Gemini and Google's other AI tools anyway.",
+   "free": "Students can get Google AI Pro free for one year.",
+   "credits": "Google AI Pro includes 1,000 Google Flow credits a month. Veo Fast uses about 20 credits per 8-second clip; the highest-quality setting uses about five times as many."
+  },
+  "Vidu": {
+   "about": "Vidu is ShengShu's AI video generator, with its Q4 model and support for 3 to 16-second clips and reference images.",
+   "best_for": "Cheap drafts, social clips and testing ideas before rendering them in a pricier tool.",
+   "free": "There is a free plan. Commercial use and watermark-free downloads need a paid plan.",
+   "credits": "The Q4 model at 540p uses 2 credits per second, so a 10-second clip is about 20 credits. Paid plans also include off-peak generations."
+  },
+  "Krea": {
+   "about": "Krea is a creative suite with real-time image generation, its own Krea 3 model and many third-party video models such as Kling, Veo and Seedance, plus upscaling and an agent that plans work for you.",
+   "best_for": "Designers who mix image and video work and want many models in one app.",
+   "free": "The Free plan gives 100 compute units a day, but no commercial license.",
+   "credits": "Everything uses compute units. Krea's own table shows about 19 five-second Kling 2.5 videos on the Basic plan's 5,000 units. Monthly units don't roll over; bought units expire after 90 days."
+  },
+  "Midjourney": {
+   "about": "Midjourney is one of the best-known AI image generators, used for art, concept design and illustrations.",
+   "best_for": "High-quality, artistic images and concept art.",
+   "credits": "Plans include fast GPU time; unused fast hours expire each month. Images are public unless you are on Pro or Mega (Stealth Mode), and companies earning over $1M a year must use Pro or Mega."
+  },
+  "Leonardo": {
+   "about": "Leonardo is an AI image and video platform with many fine-tuned models, aimed at game art, product shots and marketing images.",
+   "best_for": "Consistent image styles for games, products and marketing.",
+   "free": "There is a free plan, but your images are public and Leonardo holds the rights.",
+   "credits": "Everything uses tokens. Paid plans roll unused tokens over into a bank, up to a cap that depends on the plan."
+  },
+  "Ideogram": {
+   "about": "Ideogram is an AI image generator that is especially good at readable text inside images, such as logos, posters and thumbnails.",
+   "best_for": "Posters, thumbnails, logos and any image with text in it.",
+   "free": "There is a free plan, but its images are public. Private images start on the Plus plan.",
+   "credits": "Monthly credits don't roll over; credits you buy separately last 365 days and are used after your monthly credits."
+  },
+  "ElevenLabs": {
+   "about": "ElevenLabs is the best-known AI voice platform: text to speech, voice cloning, dubbing, sound effects and music, with a large library of voices in many languages.",
+   "best_for": "High-quality narration, voice cloning and dubbing, especially if you use several of its tools.",
+   "free": "The Free plan includes 10,000 credits a month, but no commercial license; that starts on Starter.",
+   "credits": "All tools share one monthly credit pool. Text to speech costs about 1 credit per character, so 30,000 credits is roughly 30 to 40 minutes of speech. Starter is $1 and Creator $11 for the first month."
+  },
+  "Murf AI": {
+   "about": "Murf AI is a voice-over studio with 200+ voices and an editor that lines speech up with your video or slides.",
+   "best_for": "Regular voice-overs for videos, e-learning and presentations.",
+   "free": "The Free plan has 10 minutes of voice generation, but no downloads and no commercial rights.",
+   "credits": "Murf sells voice generation time per year, for example 24 hours a year on Creator. Only the Business plan includes a business license."
+  },
+  "Cartesia": {
+   "about": "Cartesia makes very fast, low-latency AI voices (Sonic) and speech to text (Ink), built for developers and real-time voice agents.",
+   "best_for": "Apps and voice agents, and anyone who wants the most speech for the money.",
+   "free": "The Free plan includes 20,000 credits a month, but no commercial license; that starts on Pro.",
+   "credits": "Speech costs 1 credit per character, about 750 to 800 credits per minute of audio. Unused credits roll over, up to twice your monthly amount."
+  },
+  "Speechify": {
+   "about": "Speechify is a text-to-speech reader: it reads documents, web pages and books aloud with natural voices, on phone, computer and browser.",
+   "best_for": "Listening to text, studying and reading faster.",
+   "free": "The Free plan has 10 basic voices at up to 1.5x speed.",
+   "credits": "Premium unlocks 1,000+ natural voices in 60+ languages and speeds up to 5x. It can also be paid yearly, which is much cheaper per month."
+  },
+  "Descript": {
+   "about": "Descript is an audio and video editor where you edit by editing the text transcript, with AI tools for voices, filler-word removal and studio sound.",
+   "best_for": "Podcasters and YouTubers who edit a lot of talking content.",
+   "free": "There is a free plan to try text-based editing and the AI tools. Watermark-free export needs a paid plan.",
+   "credits": "Plans include media hours (how much audio and video you can upload and edit) and AI credits for the AI tools."
+  },
+  "WellSaid Labs": {
+   "about": "WellSaid Labs makes studio-quality AI voices for business content such as training, e-learning and product videos.",
+   "best_for": "Companies that need consistent, professional voice-overs.",
+   "credits": "Prices for WellSaid Labs are entered by hand on GenCost and are not checked automatically yet, so confirm them on WellSaid's site."
+  },
+  "Suno": {
+   "about": "Suno makes complete songs with vocals and instruments from a text prompt, and has Suno Studio for editing, MIDI and effects.",
+   "best_for": "Full songs with vocals, jingles and background music.",
+   "free": "The Free plan gives 50 credits a day with the free models, but no song downloads and no commercial rights.",
+   "credits": "Pro includes 2,500 credits and 20 song downloads a month, with commercial use. Plan credits don't carry over; top-up credits don't expire but need an active plan."
+  },
+  "Udio": {
+   "about": "Udio is an AI music generator that makes full songs from a prompt and lets you fine-tune and extend them.",
+   "best_for": "Experimenting with song ideas and styles.",
+   "free": "The Free plan gives 10 credits a day and 100 a month, with up to 3 full-length songs a day.",
+   "credits": "Standard includes 2,400 credits a month and removes the daily limit. Credits don't roll over."
+  },
+  "Soundraw": {
+   "about": "Soundraw makes royalty-free AI music that you can shape by mood, genre, length and instruments.",
+   "best_for": "Background music for videos, podcasts and ads.",
+   "credits": "Plans are priced by downloads rather than credits: Creator has unlimited mp3 downloads, Artist Starter 10 a month and Artist Pro 20, with wav and stems. Plans are for individuals and companies under 10 employees."
+  },
+  "AIVA": {
+   "about": "AIVA is an AI composer for instrumental music, popular for cinematic, classical and game soundtracks, with style models and MIDI editing.",
+   "best_for": "Instrumental soundtracks for games, films and videos.",
+   "free": "On the Free plan AIVA owns the copyright: you must credit AIVA and can't monetize the music.",
+   "credits": "Plans are priced by downloads. You own the full copyright of your compositions only on Pro."
+  },
+  "Boomy": {
+   "about": "Boomy makes simple songs in seconds and lets you release them to streaming services.",
+   "best_for": "Quick songs you want to publish on Spotify and other platforms.",
+   "free": "The Free plan saves up to 25 songs, but has no downloads and no commercial use.",
+   "credits": "Paid plans add WAV downloads each month, full commercial use and permission to distribute songs to streaming services."
+  }
+ }
+}

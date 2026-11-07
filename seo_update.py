@@ -106,6 +106,9 @@ TITLE_FIXES = {
         "Cheapest AI Music Tools 2026: Suno vs Udio vs AIVA | GenCost"),
 }
 
+FONTS = ('<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">\n'
+         '<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;text=GENCOSTExamples&amp;display=swap" rel="stylesheet">')
+
 ARTICLE = re.compile(r"^pages/(?:samples/)?[^/]*(-vs-|cheapest-|best-)[^/]*\.html$")
 START, END = "<!-- SEO:START (added by seo_update.py, rebuilt daily) -->", "<!-- SEO:END -->"
 BLOCK = re.compile(re.escape("<!-- SEO:START") + r".*?" + re.escape(END) + r"\n?", re.S)
@@ -247,6 +250,13 @@ def build_block(path, raw, canonical, noindex, desc):
             if when:
                 art["dateModified"] = when
             graph.append(art)
+        fq = re.search(r'<section class="card faq" data-auto="faq">(.*?)</section>', raw, re.S)
+        if fq:
+            pairs = re.findall(r"<h3>(.*?)</h3><p>(.*?)</p>", fq.group(1), re.S)
+            if pairs:
+                graph.append({"@type": "FAQPage", "mainEntity": [
+                    {"@type": "Question", "name": text_of(q), "acceptedAnswer": {"@type": "Answer", "text": text_of(a)}}
+                    for q, a in pairs]})
         cr = crumbs(raw)
         if len(cr) >= 2:
             graph.append({"@type": "BreadcrumbList", "itemListElement": [
@@ -258,6 +268,53 @@ def build_block(path, raw, canonical, noindex, desc):
                          + "</script>")
     lines.append(END)
     return "\n".join(lines) + "\n"
+
+
+def page_title(path):
+    try:
+        raw = open(path, encoding="utf-8").read()
+    except Exception:
+        return path
+    h1 = re.search(r"<h1[^>]*>(.*?)</h1>", raw, re.S)
+    if h1 and text_of(h1.group(1)):
+        return text_of(h1.group(1))
+    t = re.search(r"<title>([^<]*)</title>", raw)
+    return re.sub(r"\s*\|\s*GenCost$", "", html.unescape(t.group(1))) if t else path
+
+
+def write_llms_txt(sitemap):
+    """llms.txt: a plain map of the site for AI assistants (see llmstxt.org)."""
+    urls = [loc for loc, _, _, _ in sitemap]
+    def path_of(u):
+        p = u.replace(SITE + "/", "")
+        return p or "index.html"
+    guides = sorted((page_title(path_of(u)), u) for u in urls if ARTICLE.match(path_of(u)) and "/samples/" not in u)
+    tools = sorted((page_title(path_of(u)), u) for u in urls if path_of(u) in TOOLS)
+    lines = [
+        "# GenCost",
+        "",
+        "> GenCost compares the prices of AI video, avatar, image, voice and music tools in US dollars. "
+        "Every price is read from each tool's official pricing page every morning and checked before it goes live. "
+        "Pages also show the real cost of one video clip (from each tool's own credits per clip) and hidden costs "
+        "such as watermarks, expiring credits and commercial-use rules.",
+        "",
+        f"Prices last updated: {data_updated()}. How prices are checked: {SITE}/how-we-verify.html",
+        "",
+        "## Price lists",
+        f"- [AI video, avatar and image tools]({SITE}/): every plan, monthly and yearly, with cost per clip",
+        f"- [AI voice tools]({SITE}/voice.html): every plan in US dollars",
+        f"- [AI music tools]({SITE}/music.html): every plan in US dollars",
+        f"- [Compare any tools]({SITE}/compare.html): two or three tools side by side",
+        f"- [Budget calculator]({SITE}/calculator.html): how many clips a budget buys",
+        f"- [Machine-readable prices]({SITE}/data/video.json), [voice]({SITE}/data/voice.json), [music]({SITE}/data/music.json)",
+        "",
+        "## Guides",
+    ] + [f"- [{t}]({u})" for t, u in guides] + ["", "## Tool pricing pages"] + [f"- [{t}]({u})" for t, u in tools] + [""]
+    txt = "\n".join(lines)
+    old = open("llms.txt", encoding="utf-8").read() if os.path.exists("llms.txt") else ""
+    if txt != old:
+        with open("llms.txt", "w", encoding="utf-8", newline="") as f:
+            f.write(txt)
 
 
 def main():
@@ -305,6 +362,9 @@ def main():
             if t0 and t0.group(0) != f"<title>{html.escape(want_t, quote=False)}</title>":
                 new = new.replace(t0.group(0), f"<title>{html.escape(want_t, quote=False)}</title>", 1)
                 counts["titles"] += 1
+            cm = re.search(r'(<nav class="crumbs"[^>]*>.*<span>)([^<]*)(</span></nav>)', new)
+            if cm and cm.group(2) != name:
+                new = new[:cm.start(2)] + html.escape(name, quote=False) + new[cm.end(2):]
             d0 = re.search(r'<meta name="description" content="[^"]*">', BLOCK.sub("", new))
             want_meta = f'<meta name="description" content="{html.escape(want_d)}">'
             if d0 and d0.group(0) != want_meta:
@@ -329,6 +389,11 @@ def main():
                 if old_href in new:
                     counts["links"] += new.count(old_href)
                     new = new.replace(old_href, new_href)
+
+        # speed: Orbitron is only used for the logo (and one heading), so load just those letters
+        if FONTS not in new:
+            new = re.sub(r'<link href="https://fonts\.googleapis\.com/css2\?family=[^"]*Orbitron[^"]*" rel="stylesheet">',
+                         FONTS, new, count=1)
 
         bare = BLOCK.sub("", new)
         noindex = any(re.search(rx, path) for rx in NOINDEX) or path in MOVED
@@ -403,6 +468,8 @@ def main():
     if xml != old:
         with open("sitemap.xml", "w", encoding="utf-8", newline="") as f:
             f.write(xml)
+
+    write_llms_txt(sitemap)
 
     head = [f"SEO check {datetime.now(TZ).strftime('%Y-%m-%d %H:%M')}",
             f"{len(pages)} pages checked, {changed} changed today, {len(sitemap)} in sitemap.xml, {counts['noindex']} marked noindex",

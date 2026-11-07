@@ -674,10 +674,8 @@ def related_html(items, heading, extra=""):
 def put_related(art, section):
     old = art.find("section", attrs={"data-auto": "related"})
     if old:
-        if str(old) != str(section):
-            old.replace_with(section)
-    else:
-        art.append(section)
+        old.extract()
+    art.append(section)  # always last, after the FAQ
 
 
 def plan_line(tool, p):
@@ -693,6 +691,66 @@ def plan_line(tool, p):
         if cc:
             bits.append(f"{secs}s clip ≈ ${cc[0]:.2f}")
     return f'<div class="plan"><strong>{html.escape(p["name"])}</strong>: {html.escape(" · ".join(bits))}</div>'
+
+
+def load_tool_info():
+    try:
+        with open(os.path.join("data", "tool-info.json"), encoding="utf-8") as f:
+            return json.load(f).get("tools", {})
+    except Exception:
+        return {}
+
+
+def cents(v):
+    return money(round(v, 2))
+
+
+def faq_items(name, tool, info):
+    """Questions and answers for a tool page, built from today's prices (so they are never out of date)."""
+    qa = []
+    paid = sorted([p for p in tool["plans"] if (num(p.get("monthly_price_usd")) or 0) > 0], key=lambda p: p["monthly_price_usd"])
+    checked = (tool.get("checked") or "")[:10]
+    if paid:
+        lo, hi = paid[0], paid[-1]
+        y = num(lo.get("yearly_price_usd"))
+        a = f"The cheapest paid {name} plan is {lo['name']} at {cents(lo['monthly_price_usd'])} a month"
+        a += f" ({cents(y)} a month if you pay yearly)." if y and y < lo["monthly_price_usd"] else "."
+        if hi is not lo:
+            a += f" The biggest plan we track is {hi['name']} at {cents(hi['monthly_price_usd'])} a month."
+        a += f" Prices checked {checked}." if checked else " These prices are entered by hand, so confirm them on the official site."
+        qa.append((f"How much does {name} cost?", a))
+    free = free_plan(tool)
+    if free or info.get("free"):
+        a = ""
+        if free:
+            cr = num(free.get("credits_or_minutes"))
+            a = f"Yes. The {free['name']} plan costs $0" + (f" and includes {cr:,} {free.get('unit') or ''}".rstrip() + "." if cr else ".")
+        if info.get("free"):
+            a = (a + " " if a else "") + info["free"]
+        qa.append((f"Does {name} have a free plan?", a.strip()))
+    clips = tool.get("clips") or {}
+    lens = sorted(int(k) for k in (clips.get("clips") or {}))
+    if lens:
+        secs = 10 if 10 in lens else lens[-1]
+        best = None
+        for p in paid:
+            cc = clip_cost(tool, p, secs)
+            if cc:
+                best = (p, cc)
+                break
+        if best:
+            p, (usd, cr, scaled) = best
+            qa.append((f"How much does one video clip cost on {name}?",
+                       f"On the {p['name']} plan, one {secs}-second clip with {clips.get('model')} costs about ${usd:.2f}"
+                       f" ({cr:g} credits). We work this out from {name}'s own credits per clip and today's plan price;"
+                       " higher resolutions and premium models cost more."))
+    hidden = (tool.get("hidden") or {}).get("items") or []
+    if hidden:
+        qa.append((f"Are there hidden costs with {name}?", " ".join(h.rstrip(".") + "." for h in hidden)))
+    return qa
+
+
+INFO = load_tool_info()
 
 
 def link_pages(tools, names_by_article, report):
@@ -727,6 +785,44 @@ def link_pages(tools, names_by_article, report):
         art = soup.find("article", class_="prose")
         if not art:
             continue
+        info = INFO.get(name, {})
+        h1 = art.find("h1")
+        if h1 and h1.get_text(" ", strip=True) != f"{name} Pricing":
+            h1.string = f"{name} Pricing"
+        for p_old in art.find_all("p"):
+            if p_old.get_text(" ", strip=True) == "See approx. cost per 10s in the plans below.":
+                p_old.decompose()  # left over from the old design; voice and music have no 10s cost
+        if info:
+            for card in art.find_all("div", class_="card"):
+                h2 = card.find("h2")
+                if h2 and h2.get_text(strip=True) in ("Free tier", "Notes") and len(card.get_text(" ", strip=True)) < 200:
+                    card.decompose()
+            parts = [f"<h2>About {html.escape(name)}</h2><p>{html.escape(info.get('about', ''))}</p>"]
+            if info.get("best_for"):
+                parts.append(f"<h3>Who it's for</h3><p>{html.escape(info['best_for'])}</p>")
+            if info.get("free"):
+                parts.append(f"<h3>Free plan</h3><p>{html.escape(info['free'])}</p>")
+            if info.get("credits"):
+                parts.append(f"<h3>How the credits work</h3><p>{html.escape(info['credits'])}</p>")
+            about = BeautifulSoup(f'<section class="card" data-auto="about">{"".join(parts)}</section>', PARSER).find("section")
+            old_about = art.find("section", attrs={"data-auto": "about"})
+            if old_about:
+                if str(old_about) != str(about):
+                    old_about.replace_with(about)
+            else:
+                plans_card = art.find(class_="live-plans")
+                anchor = plans_card.find_parent("div", class_="card") if plans_card else None
+                (anchor or art.find("h1")).insert_after(about)
+        qa = faq_items(name, tool, info)
+        if qa:
+            body = "".join(f"<h3>{html.escape(q)}</h3><p>{html.escape(a)}</p>" for q, a in qa)
+            faq = BeautifulSoup(f'<section class="card faq" data-auto="faq"><h2>{html.escape(name)} pricing FAQ</h2>{body}</section>', PARSER).find("section")
+            old_faq = art.find("section", attrs={"data-auto": "faq"})
+            if old_faq:
+                if str(old_faq) != str(faq):
+                    old_faq.replace_with(faq)
+            else:
+                art.append(faq)
         box = art.find(class_="live-plans")
         if box and tool.get("plans"):
             fresh = BeautifulSoup("".join(plan_line(tool, p) for p in tool["plans"]), PARSER)
