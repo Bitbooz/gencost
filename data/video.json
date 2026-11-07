@@ -1,12 +1,12 @@
 {
  "category": "video",
- "updated": "2026-11-07 13:54",
+ "updated": "2026-11-07 14:22",
  "platforms": [
   {
    "name": "HeyGen",
    "page": "/pages/heygen.html",
    "source": "https://www.heygen.com/pricing",
-   "checked": "2026-11-07 13:50",
+   "checked": "2026-11-07 14:16",
    "plans": [
     {
      "name": "Free",
@@ -18,6 +18,7 @@
     {
      "name": "Creator",
      "monthly_price_usd": 29,
+     "yearly_price_usd": 24,
      "credits_or_minutes": 600,
      "unit": "credits",
      "offer": ""
@@ -34,26 +35,32 @@
   {
    "name": "Higgsfield",
    "page": "/pages/higgsfield.html",
-   "source": "",
-   "checked": "",
+   "source": "https://higgsfield.ai/pricing",
+   "checked": "2026-11-07 14:16",
    "plans": [
     {
      "name": "Starter",
      "monthly_price_usd": 19,
+     "yearly_price_usd": 19,
      "credits_or_minutes": 270,
-     "unit": "credits"
+     "unit": "credits",
+     "offer": "monthly price not shown"
     },
     {
      "name": "Plus",
      "monthly_price_usd": 59,
+     "yearly_price_usd": 47,
      "credits_or_minutes": 1200,
-     "unit": "credits"
+     "unit": "credits",
+     "offer": ""
     },
     {
      "name": "Ultra",
      "monthly_price_usd": 129,
+     "yearly_price_usd": 99,
      "credits_or_minutes": 3000,
-     "unit": "credits"
+     "unit": "credits",
+     "offer": "7 days unlimited GPT Image 2.6, Seedream 5.0 Pro & Nano Banana Pro"
     }
    ]
   },
@@ -61,14 +68,14 @@
    "name": "Runway",
    "page": "/pages/runway.html",
    "source": "https://runwayml.com/pricing",
-   "checked": "2026-11-07 13:51",
+   "checked": "2026-11-07 14:16",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 125,
      "unit": "credits",
-     "offer": "125 one-time credits to explore Runway's AI tools"
+     "offer": "125 one-time credits"
     },
     {
      "name": "Standard",
@@ -76,7 +83,7 @@
      "yearly_price_usd": 12,
      "credits_or_minutes": 625,
      "unit": "credits",
-     "offer": "25% off Kling 4.0 generations until November 30"
+     "offer": "25% off Kling 4.0 generations until November 30."
     },
     {
      "name": "Pro",
@@ -84,7 +91,7 @@
      "yearly_price_usd": 28,
      "credits_or_minutes": 2250,
      "unit": "credits",
-     "offer": "25% off Kling 4.0 generations until November 30"
+     "offer": "25% off Kling 4.0 generations until November 30."
     },
     {
      "name": "Max",
@@ -92,7 +99,7 @@
      "yearly_price_usd": 76,
      "credits_or_minutes": 9500,
      "unit": "credits",
-     "offer": "25% off Kling 4.0 generations until November 30"
+     "offer": "25% off Kling 4.0 generations until November 30."
     }
    ]
   },
@@ -126,28 +133,22 @@
    "name": "Synthesia",
    "page": "/pages/synthesia.html",
    "source": "https://www.synthesia.io/pricing",
-   "checked": "2026-11-07 13:51",
+   "checked": "2026-11-07 14:17",
    "plans": [
     {
      "name": "Basic",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 500,
-     "unit": "credits",
-     "offer": "1 Syren video - limited promo"
+     "offer": ""
     },
     {
      "name": "Starter",
      "monthly_price_usd": 19,
-     "credits_or_minutes": 1250,
-     "unit": "credits",
-     "offer": "first month $9"
+     "offer": "First month $9"
     },
     {
      "name": "Pro",
      "monthly_price_usd": 89,
-     "credits_or_minutes": 6000,
-     "unit": "credits",
-     "offer": "first month $49"
+     "offer": "First month $49"
     }
    ]
   },
@@ -155,7 +156,7 @@
    "name": "Pika",
    "page": "/pages/pika.html",
    "source": "https://pika.art/pricing",
-   "checked": "2026-11-07 13:51",
+   "checked": "2026-11-07 14:17",
    "plans": [
     {
      "name": "Free",
@@ -194,7 +195,7 @@
    "name": "Luma",
    "page": "/pages/luma.html",
    "source": "https://lumalabs.ai/pricing",
-   "checked": "2026-11-07 13:51",
+   "checked": "2026-11-07 14:17",
    "plans": [
     {
      "name": "Plus",
@@ -215,6 +216,7 @@
     {
      "name": "Ultra",
      "monthly_price_usd": 300,
+     "yearly_price_usd": 250,
      "credits_or_minutes": 150000,
      "unit": "credits",
      "offer": ""
@@ -225,7 +227,7 @@
    "name": "Viggle",
    "page": "/pages/viggle.html",
    "source": "https://viggle.ai/pricing",
-   "checked": "2026-11-07 13:51",
+   "checked": "2026-11-07 14:18",
    "plans": [
     {
      "name": "Free",
@@ -261,7 +263,7 @@
    "name": "InVideo",
    "page": "/pages/invideo.html",
    "source": "https://invideo.io/pricing",
-   "checked": "2026-11-07 13:52",
+   "checked": "2026-11-07 14:18",
    "plans": [
     {
      "name": "Starter",
@@ -269,7 +271,7 @@
      "yearly_price_usd": 10,
      "credits_or_minutes": 400,
      "unit": "credits",
-     "offer": ""
+     "offer": "50% off"
     },
     {
      "name": "Plus",
@@ -277,7 +279,7 @@
      "yearly_price_usd": 30,
      "credits_or_minutes": 2000,
      "unit": "credits",
-     "offer": ""
+     "offer": "50% off"
     },
     {
      "name": "Max",
@@ -293,7 +295,7 @@
    "name": "CapCut",
    "page": "/pages/capcut.html",
    "source": "https://www.capcut.com/pricing",
-   "checked": "2026-11-07 13:52",
+   "checked": "2026-11-07 14:19",
    "plans": [
     {
      "name": "Free",
@@ -305,7 +307,7 @@
     {
      "name": "Pro",
      "monthly_price_usd": 19.99,
-     "yearly_price_usd": 15,
+     "yearly_price_usd": 14.999,
      "credits_or_minutes": 1200,
      "unit": "credits",
      "offer": "Seedance 2.5 from $0.12/sec (first month)"
@@ -324,7 +326,7 @@
    "name": "LTX Studio",
    "page": "/pages/ltx.html",
    "source": "https://ltx.studio/pricing",
-   "checked": "2026-11-07 13:52",
+   "checked": "2026-11-07 14:19",
    "plans": [
     {
      "name": "Free",
@@ -347,7 +349,7 @@
      "yearly_price_usd": 28,
      "credits_or_minutes": 28000,
      "unit": "credits",
-     "offer": "Save 50% for Cyber Monday; 28800 additional Computing Seconds/month first 3 months"
+     "offer": "Save 50% for Cyber Monday; 28800 extra secs/mo first 3 months"
     },
     {
      "name": "Pro",
@@ -402,40 +404,15 @@
   {
    "name": "Google Veo",
    "page": "/pages/veo.html",
-   "source": "",
-   "checked": "",
+   "source": "https://one.google.com/about/google-ai-plans/",
+   "checked": "2026-11-07 14:14",
    "plans": [
     {
-     "name": "Free",
-     "monthly_price_usd": 0,
-     "credits_or_minutes": 50,
-     "unit": "credits/day",
-     "offer": "limited daily Flow credits"
-    },
-    {
-     "name": "Google AI Plus",
-     "monthly_price_usd": 4.99,
-     "credits_or_minutes": 200,
-     "unit": "credits"
-    },
-    {
      "name": "Google AI Pro",
-     "monthly_price_usd": 19.99,
-     "credits_or_minutes": 1000,
-     "unit": "credits"
-    },
-    {
-     "name": "Google AI Ultra",
-     "monthly_price_usd": 99.99,
-     "credits_or_minutes": 10000,
-     "unit": "credits"
-    },
-    {
-     "name": "API (per second)",
-     "monthly_price_usd": 0,
+     "monthly_price_usd": 8.99,
      "credits_or_minutes": 0,
-     "unit": "sec",
-     "offer": "Veo 3.1 Lite ~$0.05/s, Fast ~$0.10/s"
+     "unit": "",
+     "offer": "first year free for students; $8.99/mo with YouTube Premium"
     }
    ]
   },
@@ -499,13 +476,13 @@
    "name": "Krea",
    "page": "/pages/krea.html",
    "source": "https://www.krea.ai/pricing",
-   "checked": "2026-11-07 13:50",
+   "checked": "2026-11-07 14:15",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 100,
-     "unit": "units",
+     "unit": "units per day",
      "offer": ""
     },
     {

@@ -1,557 +1,1243 @@
-Veo 3.1 â Google DeepMind
+Google AI plans with Cloud Storage - Google One
+Students get Google AI Pro free for 1 year. Study smarter with higher access to Gemini, a 24/7 personal AI agent, and 5 TB of storage.
+See offers
+Close
 Skip to main content
-Explore our next generation AI systems
-Explore models
-Gemini
-Gemini
-Build intelligent agents
-Gemini Omni
-Create anything from anything
-Nano Banana
-Create and edit detailed images
-Gemini Audio
-Talk, create and control audio
-Specialized models
-Veo
-Generate cinematic video with audio
-Lyria
-Generate high fidelity music and audio
-Genie
-Generate and explore interactive worlds
-Gemini Robotics
-Perceive, reason, use tools and interact
-Open models
-Gemma
-Build responsible AI applications at scale
-Our latest AI breakthroughs and updates from the lab
-Explore research
-Breakthroughs
-SIMA
-An agent that plays, reasons, and learns with you
-Genie
-Generate and explore interactive worlds
-AlphaGo
-Mastering the game of Go
-Gemini Robotics
-Perceive, reason, use tools and interact
-Learn more
-Evals
-Publications
-Responsibility
-Frontier safety
-Unlocking a new era of discovery with AI
-Explore science
-Breakthroughs
-AlphaFold
-Predict protein structures with high accuracy
-AlphaGenome
-Using AI to understand the human genome
-WeatherNext
-Fast and accurate AI weather forecasting
-AlphaEarth
-Map our planet in unprecedented detail
-AlphaEvolve
-Design advanced algorithms for math and applications in computing
-Learn more
-Gemini for Science
-Experimental Tools
-Science on Antigravity
-Our mission is to build AI responsibly to benefit humanity
-About Google DeepMind
-Responsibility
-Ensuring AI safety through proactive security, even against evolving threats
-News
-Discover our latest AI breakthroughs, projects, and updates
-Careers
-Weâre looking for people who want to make a real, positive impact on the world
-Learn more
-Education
-Our National Partnerships for AI
-Accelerator programs
-The Podcast
-DeepMind Institute
-Models
-Explore our next generation AI systems
-Explore models
-Gemini
-Gemini
-Build intelligent agents
-Gemini Omni
-Create anything from anything
-Nano Banana
-Create and edit detailed images
-Gemini Audio
-Talk, create and control audio
-Specialized models
-Veo
-Generate cinematic video with audio
-Lyria
-Generate high fidelity music and audio
-Genie
-Generate and explore interactive worlds
-Gemini Robotics
-Perceive, reason, use tools and interact
-Open models
-Gemma
-Build responsible AI applications at scale
-Research
-Our latest AI breakthroughs and updates from the lab
-Explore research
-Breakthroughs
-SIMA
-An agent that plays, reasons, and learns with you
-Genie
-Generate and explore interactive worlds
-AlphaGo
-Mastering the game of Go
-Gemini Robotics
-Perceive, reason, use tools and interact
-Learn more
-Evals
-Publications
-Responsibility
-Frontier safety
-Science
-Unlocking a new era of discovery with AI
-Explore science
-Breakthroughs
-AlphaFold
-Predict protein structures with high accuracy
-AlphaGenome
-Using AI to understand the human genome
-WeatherNext
-Fast and accurate AI weather forecasting
-AlphaEarth
-Map our planet in unprecedented detail
-AlphaEvolve
-Design advanced algorithms for math and applications in computing
-Learn more
-Gemini for Science
-Experimental Tools
-Science on Antigravity
-About
-Our mission is to build AI responsibly to benefit humanity
-About Google DeepMind
-Learn more
-Education
-Our National Partnerships for AI
-Accelerator programs
-The Podcast
-DeepMind Institute
-Responsibility
-Ensuring AI safety through proactive security, even against evolving threats
-News
-Discover our latest AI breakthroughs, projects, and updates
-Careers
-Weâre looking for people who want to make a real, positive impact on the world
-Build with Gemini
-Try Gemini
-Google DeepMind
+One
+Overview
 Google AI
-Learn about all our AI
-Google DeepMind
-Explore the frontier of AI
-Google Labs
-Try our AI experiments
-Google Research
-Explore our research
-Products and apps
-Gemini app
-Chat with Gemini
-Google AI Studio
-Build with our next-gen models
-Google Antigravity
-Our agentic development platform
-Models
-Research
-Science
-About
-Build with Gemini
-Try Gemini
-Slide 1 of 3
-Veo
-Our leading video generation model
-Try in Gemini
-Try in Google Flow
-Build with Veo
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Veo 3.1
-Video, meet audio. Our leading video generation model, designed to empower filmmakers and storytellers.
-Try in Gemini
-Try in Google Flow
-Build with Veo
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-New capabilities
-Greater control, consistency, and creativity than ever before.
-Try in Flow
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Explore the latest
-Introducing Veo 3, our video generation model with expanded creative controls â including native audio and extended videos.
-Learn how to prompt
-Capabilities
-Performance
-Safety
-Showcase
-Try Veo
-Whatâs new
-Re-designed for greater realism
-Greater realism and fidelity, made possible by Veo 3âs real world physics and audio.
-Follows prompts like never before
-Improved prompt adherence, meaning more accurate responses to your instructions.
-Improved creative control
-Offers new levels of control, consistency, and creativity â now across audio.
-Introducing Veo 3.1
-Video, meet audio. Our leading video generation model, designed to empower filmmakers and storytellers.
-Learn how to prompt
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A medium shot opens on a seasoned, grey-bearded man in sunglasses and a paisley shirt, his gaze fixed off-camera with a contemplative expression. His gold chain glints subtly. Beside him, a younger man in a tank top, also looking forward, suggests a shared moment of observation or reflection. The camera slowly pushes in, subtly emphasizing their quiet focus. In the background, a vibrant mural splashes across a wall, hinting at an urban setting. Faint city murmurs and distant chatter drift in, accompanied by a mellow, soulful hip-hop beat that adds a contemplative yet grounded atmosphere. "The city always got a story," the older man murmurs, a slight nod of his head. "Just gotta listen."
-Veo 3 lets you add sound effects, ambient noise, and even dialogue to your creations â generating all audio natively. It also delivers high quality, excelling in physics, realism and prompt adherence.
-Slide 1 of 5
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A medium shot frames an old sailor, his knitted blue sailor hat casting a shadow over his eyes, a thick grey beard obscuring his chin. He holds his pipe in one hand, gesturing with it towards the churning, grey sea beyond the ship's railing. "This ocean, it's a force, a wild, untamed might. And she commands your awe, with every breaking light"
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A follow shot of a wise old owl high in the air, peeking through the clouds in a moonlit sky above a forest. The wise old owl carefully circles a clearing looking around to the forest floor. After a few moments, it dives down to a moonlit path and sits next to a badger. Audio: wings flapping, birdsong, loud and pleasant wind rustling and the sound of intermittent pleasant sounds buzzing, twigs snapping underfoot, croaking. A light orchestral score with woodwinds throughout with a cheerful, optimistic rhythm, full of innocent curiosity.
-A wise old owl and a nervous badger sit on a moonlit forest path. "They left behind a...a 'ball' today. It bounced higher than I can jump.â the badger stammered, trying to comprehend it. âWhat manner of magic is that?" the owl hooted thoughtfully. Audio: Owl hooting, badger's nervous chitters, rustling leaves, crickets.
-A wise old owl flies away out of the frame and a nervous young badger runs in a different direction out of the frame. In the background, you can see a squirrel hurrying past making noise of rustling dried autumn leaves as it goes. Audio: birdsong, loud and leaves rustling, and the sound of intermittent pleasant sounds buzzing, twigs snapping underfoot, and the sounds of squirrels scurrying through the dried autumn leaves. The sound of an owl hooting in the distance, badger's nervous chitters, rustling leaves, crickets, sounds that are full of innocent curiosity.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A medium shot, historical adventure setting: Warm lamplight illuminates a cartographer in a cluttered study, poring over an ancient, sprawling map spread across a large table. Cartographer: "According to this old sea chart, the lost island isn't myth! We must prepare an expedition immediately!"
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A detective interrogates a nervous-looking rubber duck. "Where were you on the night of the bubble bath?!" he quacks. Audio: Detective's stern quack, nervous squeaks from rubber duck.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A close up of spies exchanging information in a crowded train station with uniformed guards patrolling nearby "The microfilm is in your ticket" he murmured pretending to check his watch "They're watching the north exit" she warned casually adjusting her scarf "Use the service tunnel" Commuters rush past oblivious to the covert exchange happening amid announcements of arrivals and departures
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt:Â The scene explodes with the raw, visceral, and unpredictable energy of a hardcore off-road rally, captured with a dynamic, almost found-footage or embedded sports documentary aesthetic. The camera is often shaky, seemingly mounted inside one of the vehicles or held by a daring spectator very close to the action, frequently splattered with mud or water, catching unintentional lens flares from the natural, often harsh, sunlight filtering through trees or reflecting off wet surfaces. We are immersed in a challenging, untamed natural environment â perhaps a dense, muddy forest trail, a treacherous rocky incline littered with loose scree, or a series_of shallow, fast-flowing river crossings. Several heavily modified, entirely unidentifiable, and unbranded off-road vehicles are engaged in a frenetic, no-holds-barred race. These are not showroom models; they are custom-built, rugged machines â open-wheeled buggies with exposed engines and prominent roll cages, heavily armored pickup trucks with oversized, knobby tires and snorkel exhausts, their original forms and manufacturers completely obscured by extreme modifications, layers of caked-on mud, and a general air of brutal functionality. The dominant sounds are the deafening, guttural roar of powerful, untamed engines, the whine of transmissions, the percussive impact of suspension bottoming out, and the constant spray of mud and water. Within an 8-second sequence, one of the lead vehicles, a low-slung, open-cockpit buggy so caked in thick, brown mud that its original color is a mystery, approaches a wide, shallow river crossing at incredible speed. Without the slightest hesitation, its unseen driver powers straight into the water. The impact sends an enormous, almost solid, opaque sheet of muddy water, mixed with stones and debris from the riverbed, spectacularly high into the air, completely engulfing the small buggy for a terrifying moment, obscuring it from view as if it has been swallowed by the river itself. Right on its tail, a pursuing, equally mud-encrusted, custom-built truck â a hulking, high-clearance beast with a heavily reinforced external roll cage and no discernible badging â arrives at the river crossing just as this massive wall of airborne water reaches its peak. Instead of slowing or attempting to find a clearer path, the truck's driver, with unwavering aggression, plunges directly into and through this opaque, turbulent curtain of muddy spray at full throttle. A split second later, the truck bursts out from the other side of the deluge, water cascading from its roof and chassis, its oversized windshield wipers struggling frantically to clear the torrent of muddy water obscuring the driver's vision. It lands heavily on the far bank, suspension groaning, but still in hot pursuit of the now-reappearing buggy. This thrilling, messy, and visually spectacular sequence of one vehicle creating a massive environmental obstacle and the next immediately conquering it through sheer force, forms the core, immersive, attention-grabbing event of the 8-second sequence. The race continues with undiminished ferocity, the natural terrain itself an active participant in the conflict.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt:Â A meticulously detailed scene opens, displaying a small, pale yellow, humanoid figure crafted from wax. This figure stands centered in a warm, ethereal landscape composed entirely of molten wax, which forms gently undulating hills and reflective pools. In its raised hand, a delicate, bright flame flickers with a vibrant glow, casting soft, warm light on the figure's smooth, slightly reflective surface. To the left, a larger, partially melted candle drips viscous wax onto a nearby mound, its own blue-tinged flame barely visible. The atmosphere is serene, illuminated by the golden light of the small figure's flame, highlighting the glossy textures and subtle translucence of the wax environment. (0-1 seconds) The camera initiates a smooth, tracking shot, maintaining an eye-level perspective with the small wax person. As the figure begins to gently walk forward, its small feet creating subtle ripples in the viscous, pale yellow wax terrain, the camera gracefully follows its movement. The figure takes slow, deliberate steps across the shimmering, honey-colored landscape, its arm steadily raised to protect the precious, unwavering flame. Each step is deliberate, conveying a sense of purpose. The soft glow of the flame remains the primary light source, illuminating the path ahead and emphasizing the intricate, dripping textures of the surrounding wax formations. (1-7 seconds) The wax person continues its quiet journey, steadily progressing across the glowing, soft landscape. The camera holds its smooth, tracking motion, subtly receding slightly to reveal a broader view of the wax world, emphasizing the figure's determined, solitary walk through its unique environment. The flame continues to burn brightly, a beacon in the warm, diffused light. (7-8 seconds)
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt:Â The scene opens with a top-down or wide-angle shot showcasing a vast, perfectly flat, neutral-colored surface â perhaps the polished concrete floor of an enormous, empty aircraft hangar, or a giant, minimalist tabletop stretching beyond the frame, under bright, even, shadowless studio lighting. This surface is meticulously covered with thousands upon thousands of small, identical, brightly colored paper squares, arranged in a simple, orderly grid. Each square is a single, vibrant, uncreased sheet â a sea of reds, blues, yellows, greens, oranges, creating a stunning, static mosaic of pure potential. The atmosphere is one of quiet anticipation, a sense of immense latent energy waiting to be unleashed. There is no visible mechanism, no hint of how these papers might be manipulated. Within an 8-second sequence, initiated by an unseen cue â perhaps a subtle, almost inaudible, low-frequency hum that ripples almost invisibly across the surface, or a sudden, soft flash of diffused light â all the thousands of paper squares simultaneously, and with breathtaking precision, leap a few inches into the air as if startled into life. Then, in a mesmerizing, perfectly synchronized, and incredibly high-speed aerial ballet, they begin to fold themselves in mid-air. With impossible, almost magical celerity and accuracy, unseen forces guide each individual square through a complex series of sharp creases, neat tucks, and intricate folds. The swarm of fluttering, self-constructing papers is a blur of color and motion, a chaotic yet utterly controlled explosion of activity. Within a mere five to six seconds, this frenetic process of airborne origami completes. Each of the thousands of squares has transformed into an identical, perfectly formed, complex origami figure â perhaps graceful cranes with outstretched wings, delicate multi-petaled lotus flowers, or miniature, intricately detailed dragons. In the final two to three seconds of the sequence, these newly formed origami figures, still hovering in mid-air, then smoothly and rapidly arrange themselves, like a flock of perfectly trained birds or a sophisticated, self-organizing swarm of nanobots, into a stunning, larger, three-dimensional collective pattern or a recognizable mosaic image â perhaps a giant, hovering sphere composed of countless tiny birds, or a complex, flowing wave of flowers, or even a pixel-perfect, three-dimensional representation of a face or symbol. This collective sculpture holds its form for a beat before the individual origami figures begin to gently, gracefully, and silently settle back down onto the surface, now arranged in their magnificent new configuration. This entire rapid, impossible, and beautiful transformation â from simple squares to a synchronized swarm of self-folding forms creating a complex collective artwork â is the core, eye-popping, and meticulously detailed VFX spectacle of the 8-second sequence. The visual is one of magical precision, emergent complexity, and the beauty of mass synchronized action.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt:Â In rural Ireland, circa 1860s, two women, their long, modest dresses of homespun fabric whipping gently in the strong coastal wind, walk with determined strides across a windswept cliff top. The ground is carpeted with hardy wildflowers in muted hues. They move steadily towards the precipitous edge, where the vast, turbulent grey-green ocean roars and crashes against the sheer rock face far below, sending plumes of white spray into the air.
-Slide 1 of 9
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A breathtaking, painterly 2D animated continuous visual narrative, rendered with the lush, vibrant, and slightly surreal, almost dreamlike, infused with the intricate, delicate detail of traditional Japanese woodblock prints (Ukiyo-e), follows a young, adventurous, and kind-hearted girl (perhaps with bright, curious eyes and wearing simple, practical, beautifully patterned traditional Japanese farm attire) as she befriends a colossal, gentle, ancient Forest Spirit. The Spirit is a magnificent, awe-inspiring creature, its form a harmonious blend of animal and plant â perhaps with moss-covered, antler-like branches, fur like shimmering leaves that change color with its mood, and eyes like deep, tranquil forest pools. They meet in a sun-dappled, sacred grove deep within an ancient, primeval forest, where impossibly tall, gnarled trees form a living cathedral and tiny, glowing, friendly forest sprites (Kodama-like) peek from behind mossy rocks and giant, fantastical mushrooms. The girl, initially awestruck, offers the massive Spirit a small, carefully cultivated offering â perhaps a perfectly ripe persimmon or a handful of wild berries â her gesture one of pure, innocent respect and affection. The Forest Spirit responds with a slow, gentle inclination of its massive head, its leafy fur rustling like a thousand whispers, and perhaps causes a shower of magical, luminous flower petals to drift down from the canopy, or a tiny, new sapling to sprout at the girl's feet. The animation captures the incredible, detailed textures of the forest, the Spirit's majestic yet gentle presence, and the profound, unspoken emotional connection forming between the child and this ancient guardian of nature. The color palette is a rich symphony of deep forest greens, earthy browns, vibrant floral hues, and the soft, magical glow of the sprites and the Spirit's own subtle luminescence. This continuous, sweeping visual journey is a celebration of the profound, often mystical, bond between humanity and nature, the innocence and courage of childhood, and the power of kindness and respect to bridge even the most fantastical of divides, an affectionate, visually intoxicating ode to ecological harmony and interspecies understanding. The only implied sounds are the gentle rustling of leaves, the distant calls of unseen forest birds, the girl's soft, respectful breathing, the Spirit's deep, resonant, almost inaudible hum, and a soaring, emotionally resonant, orchestral score.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: The camera slowly pushes forward into a breathtaking ice cave, its jagged walls sculpted by nature into intricate patterns of blues and whites, reflecting the ethereal light from an opening ahead. The crunch of ice underfoot and the drip-drip of melting water create a serene, echoing soundscape. As the camera moves closer, a gentle, ambient melody begins, swelling with the light from the cave's exit. The camera emerges from the narrow opening into a vast, sun-drenched valley, revealing a group of polar bears playfully sliding down an ice slope, their roars echoing with joy.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Camping (Stop Motion): Camper: "I'm one with nature now!" Bear: "Nature would prefer some personal space."
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A handheld shot follows a wok as itâs expertly flicked, sending vibrant, sizzling vegetables tumbling over themselves in a flash of motion and steam. Audio: a metallic clank and a sharp whoosh.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A keyboard whose keys are made of different types of candy. Typing makes sweet, crunchy sounds. Audio: Crunchy, sugary typing sounds, delighted giggles.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: The camera begins with a slow, elegant track along the richly paneled walls of a dimly lit, sophisticated hallway, the warm glow of the ornate wall sconces casting inviting reflections on the polished floor. Soft jazz music plays in the background. As we approach an arched entryway, the camera performs a graceful push-in, revealing a grand mirror and flickering candles, then smoothly pivots to the right, opening up to a luxurious home bar. The clinking of ice and the murmur of conversation become audible. The camera settles on a close-up of a perfectly crafted cocktail. "Welcome," a smooth, baritone voice says. "Care for a taste?" Suddenly, a renowned mixologist, known for his eccentric creations, steps into frame, followed by a playful, mischievous cat that jumps onto the bar, batting at a cocktail stirrer.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A snow-covered plain of iridescent moon-dust under twilight skies. Thirty-foot crystalline flowers bloom, refracting light into slow-moving rainbows. A fur-cloaked figure walks between these colossal blossoms, leaving the only footprints in untouched dust.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A woman, classical violinist with intense focus plays a complex, rapid passage from a Vivaldi concerto in an ornate, sunlit baroque hall during a rehearsal. Their bow dances across the strings with virtuosic speed and precision. Audio: Bright, virtuosic violin playing, resonant acoustics of the hall, distant footsteps of crew, conductor's occasional soft count-in (muffled), rustling sheet music.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A close up in a smooth, slow pan focuses intently on diced onions hitting a scorching hot pan, instantly creating a dramatic sizzle. Audio: distinct sizzle.
-Greater control, consistency, and creativity than ever before.
-Your browser does not support the video tag.
-Add ingredients to your video
-Make sure videos align with your creative vision by giving Veo reference images of a scene, a character, or an object to guide its generation. Now includes audio.
-Slide 1 of 10
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Camera dramatically dollies around the subject in this striking cinematic scene. It captures a high-tension moment within a long, sterile, monochromatic green corridor. A lone woman, dressed in a dark, flowing trench coat and trousers that billow dramatically, is suspended mid-air in a powerful, graceful leap. Her arms are outstretched as if bracing for impact or propelling herself forward. Her sharp profile reveals an intense, focused expression, suggesting profound determination.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Fly through the window to find the kitchen and the cans of fizzy drink sitting on the kitchen table in this award winning commercial. Smooth seamless transitions and smooth sound.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: A medium shot of the emperor as he walks with his white tiger.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Documentary style, A raccoon manages a coffee shop. Dialogue.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Engaging film trailer based on these images.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Music video of model singing a love song in an abstract flower garden with floating macaroons.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: I'm walking on Mars in a spacesuit.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Latte art that animates into mini 3D castle made from latte.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Car with pattern drives in fantasy landscape made from patterns, cinematic trailer, dramatic music.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Picture a fashion show where model glide through a cathedral, fully constructed from shimmering crystal.
-Match your style
-Capture your desired aesthetic by providing a style reference image, and Veo will generate videos with the same visual style, from paintings to cinematic looks.
-Input image
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Rendered in an intricate origami art style using complex, angular folds and crisp creases. A multi-layered diorama depicts a cute neighborhood street entirely from folded paper â houses with sharp rooflines, precise white picket fences, and layered, geometric flowers and rose bushes in vibrant paper hues. Focused lighting enhances the dimensionality. A vibrant origami cat, its body segmented by distinct, sharp folds, moves with articulated, deliberate steps along the paper sidewalk. Its limbs shift segment by segment, maintaining crisp creases as it progresses. The viewpoint tracks smoothly alongside the cat, revealing successive layers of the detailed papercraft neighborhood scrolling past, enhancing the scene's geometric depth and dimensionality.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Rendered in an intricate origami art style using complex, angular folds and crisp creases within a detailed, multi-layered paper diorama featuring a sharply folded bus stop sign. Focused lighting enhances the geometric shapes. Five distinct origami children, constructed with precise folds defining summer clothes and angular backpacks, populate the scene. Two figures stand facing each other, their paper heads tilting slightly back and forth on sharp neck creases in articulated movements suggesting conversation. The remaining three figures execute a game: their folded leg sections bend sharply at distinct knee creases, then straighten abruptly, causing their entire forms to lift momentarily off the paper ground plane before settling back, repeating this crisp, angular jumping motion. Each movement is segmented and deliberate.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Rendered in an intricate origami art style using complex, angular folds and crisp creases within a multi-layered paper diorama. Focused lighting enhances geometric shapes and dimensionality. A vibrant yellow school bus, constructed with sharp, precise folds defining its iconic shape, moves with deliberate, segmented progression along a winding road represented by a crisply folded paper strip. As the bus navigates the road's angular turns, its distinct paper facets catch and reflect the focused light, showcasing its geometric form. Its angular wheels might rotate sectionally or simply slide along the paper path. Above, the sky is a flat blue paper layer, featuring sharply folded, geometric white clouds and a bright, faceted origami sun casting crisp shadows across the layered scene.
-Keep your characters consistent
-Ensure characters maintain their appearance across different scenes in your videos by giving Veo reference images of your character.
-Input image
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: a cute monster walking towards the camera
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: a cute monster swimming underwater
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: a cute monster walking in a candy wonderland
-Extend your scene
-Extend clips into longer, more dynamic videos. Use the last second of your first shot to continue the story âÂ while maintaining visual and audio consistency.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Input video
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt 1: Graceful dancer is slowly dancing to classical music.
-Prompt 2: A male dancer comes in, gracefully dancing with the woman as classical music plays.
-Prompt 3: More dancers show up on the stage.
-Prompt 4: The classical music continues, and the dancers continue to dance
-Camera controls
-Precisely control the framing and exact movement of shots in your video using camera controls.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Move back
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Zoom in
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Move up
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Move right
-First and last frame
-Create smooth, artful, and epic transitions between images provided for the first and last frame.
-First frame
-Last frame
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Outpainting
-Go beyond the original frame. Outpainting expands your video with new, matching parts that look real, helping it fit any screen size or shape.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Input video
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Output video
-Add object
-Reimagine videos by introducing new objects - from realistic details to fantastical elements. Veo considers scale, interactions, and shadows to create a natural, realistic-looking video.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Input video
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Add a man with a torch
-Remove object
-Seamlessly eliminate unwanted objects from videos - from distracting details to large items. Veo preserves the scene's natural composition, interactions, and shadows.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Input video
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Remove spaceship
-Character controls
-Bring characters to life, using your body, face and voice to animate them.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Input video
-Input image
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Prompt: Use your body to drive lifelike character movement and expressive actions that respond to your movementsInput video
-Motion controls
-Define the exact movement of objects in your video. Select an object and define their path, and Veo will bring them to life in motion.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Professional grade resolution
-Generate outputs in 1080p and 4K. 1080p resolution offers a sharper, cleaner video perfect for editing, while 4K captures rich textures and stunning clarityâideal for high-end productions.
-Slide 1 of 3
-Our partnership with Darren Aronofskyâs Primordial Soup
-Weâve teamed up with Primordial Soup, a new venture dedicated to storytelling innovation, founded by visionary director Darren Aronofsky. Together, weâre shaping Veoâs capabilities to open new possibilities for cinematic storytelling.
-Primordial Soup is using Veo to explore new filmmaking techniques â including how to integrate live-action footage with Veo-generated video. Through this partnership, Primordial Soup has produced three short films with emerging filmmakers.
-Slide 1 of 2
-Google Flow
-Built with creatives, for creatives. Google Flow enables you to create seamless cinematic clips, scenes, and stories using our most capable generative AI models.
-Create with Google Flow
-Your browser does not support the video tag.
-Your browser does not support the video tag.
-Performance
-Veo 3.1 is a new era for video generation. It delivers exceptional results in text-to-video, image-to-video, text-to-audio+video generation, and realistic physics.
-View model card
-View tech report
-Slide 1 of 9
-Text-to-video
-T2V Overall preference
-Participants viewed 1,003 prompts and respective videos on MovieGenBench, a benchmark dataset released by Meta. Veo 3.1 performs best on overall preference. Last updated October 2025.
-Text-to-video
-T2V Text alignment
-Participants viewed 1,003 prompts and respective videos on MovieGenBench, a benchmark dataset released by Meta. Veo 3.1 performs best on its capability to follow prompts accurately. Last updated October 2025.
-Text-to-video
-T2V Visual quality
-Participants viewed 1,003 prompts and respective videos on MovieGenBench, a benchmark dataset released by Meta. Participants rate the visual quality of Veoâs outputs more highly than other models. Last updated October 2025.
-Note: We were unable to compare image to video with Sora 2 Pro because it currently does not support realistic human images.
-Image-to-video
-I2V Overall preference
-When participants viewed 355 image and text pairs from the VBench I2V benchmark, Veo 3âs outputs were preferred overall compared to other models. Last updated October 2025.
-Note: We were unable to compare image to video with Sora 2 Pro because it currently does not support realistic human images.
-Image-to-video
-I2V Text alignment
-When participants viewed 355 image and text pairs from the VBench I2V benchmark, Veo 3.1âs outputs were preferred to other models for capturing the intent of the prompt. Last updated October 2025.
-Note: We were unable to compare image to video with Sora 2 Pro because it currently does not support realistic human images.
-Image-to-video
-I2V Visual quality
-When participants viewed 355 image and text pairs from the VBench I2V benchmark, Veo 3.1âs outputs were preferred overall to other models for the visual quality. Last updated October 2025.
-Text-to-video and audio
-T2VA Audio visual overall preference
-Participants viewed 527 prompts from MovieGenBench, and had an overall preference for Veoâs outputs with audio over other models. Last updated October 2025.
-Text-to-video and audio
-T2VA Audio-video alignment
-Participants viewed 527 prompts from MovieGenBench, and chose Veo 3.1âs outputs over other models for having audio that is better synchronized with the video content. Last updated October 2025.
-Text-to-video
-T2V Visually realistic physics
-Participants choose Veo 3.1âs outputs over other models for having visually realistic physics on the physics subset of MovieGenBench prompts. Last updated October 2025.
-Veoâs ingredients to video, Scene Extension, First and Last Frame, and Object Insertion capabilities have achieved leading results in head-to-head comparisons of outputs by human raters on internal benchmarks. Last updated October 2025.
-Slide 1 of 4
-[1] Human raters conducted direct side-by-side comparisons across 364 diverse examples (each including a prompt and 1-3 reference images and evaluating a single generated video per prompt + reference images). All comparisons were done at 1280x720 resolution. Veo videos are 8 seconds long. All other videos are 10 seconds long and shown at full length to raters.
-To ensure a fair visual comparison, all tests were conducted without sound. Audio was only enabled for the Overall Preference metric, and only when competing models had native sound support for the capability. We have indicated when audio was an active part of the comparison on the labels in the chart. Last updated October 2025.
-Ingredients to video
-Overall preference and visual quality
-Veoâs âIngredients to Videoâ capability has achieved leading results for: Overall Preference and Visual Quality in head-to-head comparisons by human raters against other leading video generation models on internal benchmarks [1]. Last updated October 2025.
-[1] Human raters conducted direct side-by-side comparisons across 80 diverse examples (each including initial text prompt and extension prompt evaluating one generated video per example. All comparisons were done at 720x1280 resolution. Veo videos are 8 seconds long. All other videos are 6 seconds long and shown at full length to raters.
-To ensure a fair visual comparison, all tests were conducted without sound. Audio was only enabled for the Overall Preference metric, and only when competing models had native sound support for the capability. We have indicated when audio was an active part of the comparison on the labels in the chart.
-Ingredients to video
-Scene extension
-Veoâs âScene Extensionâ capability has achieved leading results for: Overall Preference, Prompt Alignment and Visual Quality in head-to-head comparisons by human raters against other leading video generation models on internal benchmarks [1]. Last updated October 2025.
-[1] Human raters conducted direct side-by-side comparisons across 106 diverse examples (each including a prompt and a start and end images, evaluating one generated video per example. All comparisons were done at 720x1280 resolution. Veo videos are 8 seconds long. All other videos are 10 seconds long and shown at full length to raters.
-To ensure a fair visual comparison, all tests were conducted without sound. Audio was only enabled for the Overall Preference metric, and only when competing models had native sound support for the capability. We have indicated when audio was an active part of the comparison on the labels in the chart.
-Ingredients to video
-First and last frame
-Veoâs âFirst and Last Frameâ capability has achieved leading results for: Overall Preference, Prompt Alignment and Visual Quality, in head-to-head comparisons by human raters against other leading video generation models on internal benchmarks [1]. Last updated October 2025.
-[1] Human raters conducted direct side-by-side comparisons across 124 diverse examples (each including a video and a prompt, specifying which object to insert, evaluating one generated video per example.
-All comparisons were done at 1280x720 (or 720x1280) resolution. Veo videos are 6 seconds long. All competing model videos are 5 seconds long and shown at full length to raters. All videos had no sound.
-Ingredients to video
-Object insertion
-Veoâs âObject Insertionâ capability has achieved leading results for Overall Preference and Visual Quality, in head-to-head comparisons by human raters against other leading video generation models on internal benchmarks [1]. Last updated October 2025.
-Safety
-From development to deployment
-We built Veo with responsibility and safety in mind. We block harmful requests and results, we test how new features might affect safety, and we have both our own teams and outside experts try to find and fix potential problems before release.
-It's crucial to introduce technologies such as Veo in a responsible way. To achieve this, videos made with Veo will be marked with SynthID, our advanced technology for watermarking and detecting content generated by AI. Additionally, Veo outputs will undergo safety evaluations and checks for memorized content to reduce potential issues related to privacy, copyright infringement, and bias.
-Learn more
-Limitations
-While Veo continues to make incredible strides in video generation, creating videos with natural and consistent spoken audio, particularly for shorter speech segments, remains an area of active development. We're continuously working to refine audio synchronization and eliminate instances of incoherent speech.
-Empowering production workflows
-Discover how developers and studios are leveraging Veo to transform storytelling and production.
-Promise
-Promise Studios uses Veo 3.1 within its MUSE Platform to enhance generative storyboarding and previsualization for director-driven storytelling at production quality.
-Learn more
-Volley
-Volley powers its new AI-powered RPG, Wit's End, with Veo 3.1 to deliver static cinematics and dynamically generated assets narrating player progress.
-Learn more
-OpusClip
-OpusClip leverages Veo 3.1 within its Agent Opus to boost motion graphics and create realistic promotional videos for SMBs.
-Learn more
-Try Veo
-Gemini
-Supercharge your creativity and productivity
-Try in Gemini
-Google Flow
-An AI filmmaking tool built with and for creatives
-Try in Google Flow
-Google Vids
-AI-powered video creation for work
-Try in Google Vids
-Google AI Studio
-The fastest path from prompt to production
-Try in Google AI Studio
-Gemini API
-Get started building with cutting-edge AI models
-Learn more
-Gemini Enterprise Agent Platform
-Build, scale, and govern agents
-Learn more
-Veo 3 was made possible by key research and engineering contributions from Abhishek Sharma, Ãgoston Weisz, Alina Kuznetsova, Ali Razavi, Aleksander Bulski, Aleksander Holynski, Ankit Bhagatwala, Ankush Gupta, Anish Nangia, Austin Waters, Ben Poole, Daniel Tanis, Derek Gasaway, Dumitru Erhan, Enric Corona, Evgeny Sluzhaev, Frank Belletti, Gabe Barth-Maron, Hakan Erdogan, Henna Nandwani, Hernan Moraldo, Hongjie Wang, Ilya Figotin, Igor Saprykin, Jason Baldridge, Jason Zhang, Jeff Donahue, Jiawei Xia, Jimmy Shi, JosÃ© Lezama, Keyang Xu, Khyatti Gupta, Kristina Greller, Kuang-Huei Lee, Kurtis David, Lizao (Larry) Li, Lijun Yu, Luis C. Cobo, Mai Gimenez, Medhini Narasimhan, Miaosen Wang, Mingda Zhang, Mohammad Babaeizadeh, Mukul Bhutani, Nikhil Khadke, Nilpa Jha, Nitesh Bharadwaj Gundavarapu, Oscar Akerlund, Pieter-Jan Kindermans, Poorva Rane, Rachel Hornung, Ricky Wong, Rohith Vallu, Ruben Villegas, Ruiqi Gao, Ryan Poplin, Salah Zaiem, Sander Dieleman, Sarah Xu, Sayna Ebrahimi, Serena Zhang, Scott Wisdom, Shlomi Fruchter, Sophia Sanchez, Tayniat Khan, Tingbo Hou, Vikas Verma, Viral Carpenter, Xinchen Yan, Xinyu Wang, Yanwu Xu, Yiwen Luo, Yuchen Liu, Yukun Ma, Yukun Zhu, Yulia Rubanova, Yutian Chen, Zhengjiang He, Zhichao Yin, Zhisheng Xiao, and Zu Kim. All the clips were generated directly with Veo without modifications by Eleni Shaw, Signe NÃ¸rly, Andeep Toor, Gregory Shaw, Anne Menini, Matthieu Kim Lorrain, and Irina Blok.
-We extend our gratitude to Ahmed Chowdhury, Andrew Audibert, Andrew Bunner, Andrew Marmon, Andrew Pierson, Aparna Joshi, Asya Fadeeva, Austin Tarango, Avisek Lahiri, Bao Thach, Bihao Zhang, Bilva Chandra, Bogdan Damoc, Bryce Petrini, Cai Xu, Casylyn Tonelli, Calin Cruceru, Chengrun Yang, Clemens Schaefer, Dana Kurniawan, David Reid, Dean Lin, Donghyun Cho, Emanuele Bugliarello, Ganesh GS, Gladys Tyen, Giorgos Vernikos, Greta Kintzley, Hakim Sidahmed, Hamid Mohammadi, Hao Chen, Hiresh Gupta, Hiroki Furuta, Hongliang Fei, Huisheng Wang, Hui Zheng, Isa Liang, Izzeddin Gur, James Lyon, Jason Zhang, Jian Li, Jieru Hu, Jingjing Zhou, Jordi Pont-Tuset, Kangfu Mei, Karthik Narasimhan, Kate Lee, Keyang Xu, Kleopatra Chatziprimou, Kory Mathewson, Lluis Castrejon, Liangke Gui, Mahyar Bordbar, Marek Sedlacek, Mertay Dayanc, Mikhail Dektiarev, Mitchell McIntire, Nick Pezzotti, Nick Tombari, Nicole Brichtova, Nikos Kolotouros, Orly Liba, Pankil Botadra, Phillipp Henzler, Piyush Kumar, Ramin Mehran, Ricardo Figueira, Robert Geirhos, Rongqi Qiu, Sameera Rahman Johnson, Sami Lachgar, Sirui Xie, Sherry Yang, Shubham Nauriyal, Shuo Han, SoÅa MokrÃ¡, Sungmin Bae, Tamoghna Saha, Thomas Kipf, Tim Salimans, Tom Hume, Quoc Le, Weixi Feng, William Zhu, Woohyun Han, Xingyu Federico Xu, Yanan Qian, Yansong Gao, Yelin Kim, Yong Cheng, Yuchi Liu, Yuexiang Whai, Yutian Chen, Zerong Xi, Zhenkai Zhu, and Zoltan Egyed for their invaluable partnership in developing and refining key components of this project.
-Veo controls were made possible by Abhishek Sharma, Aleksander HoÅyÅski, Alina Kuznetsova, Andrew Marmon, Andrew Xue, Andrey Voynov, Anthony Mejia, Asaf Shul, Ben Poole, Brendan Shillingford, Dawid GÃ³rny, Dina Bashkirova, Dmitry Lagun, Emanuele Bugliarello, Enric Corona, Emma Wang, Gabriel Barcik, Henna Nandwani, Inbar Mosseri, Istvan Hernadvolgyi, Jess Gallegos, Jieru Hu, Kristina Greller, Luciano Sbaiz, Matan Cohen, Miaosen Wang, Mingda Zhang, Nikos Kolotouros, Nick Pezzotti, Philipp Henzler, Ricky Wong, Roni Paiss, Rui Huang, Ruiqi Gao, Ryan Webb, Serena Zhang, Shiran Zada, Siyang Li, Tali Dekel, Tatiana LÃ³pez, Tayniat Khan, Thomas Kipf, Tingbo Hou, Tobias Pfaff, Tom Murray, Xin Yuan, Xinyu Wang, Yulia Rubanova, Yusuf Aytar, and Zhichao Yin.
-We extend our gratitude to Alex Rav Acha, Amir Hertz, Andrew Pierson, Ankush Gupta, Anthony Tripaldi, Austin Tarango, Ben Bariach, Bilva Chandra, Budianto Budianto, Carl Doersch, Changchang Wu, David Minnen, David Yao, Dexter Allen, Dilara Gokay, Dumitru Erhan, Eric Lau, Erik Gross, Florian Schroff, Frank Belletti, Gitartha Goswami, Hang Qi, Hao Wang, Hao Zhou, Harsimran Kaur, Itzhak Garbuz, Jason Zhang, Jenny Brennan, Jessica Seah, Jiaping Zhao, Jordi Serrano Berbel, Kan Chen, Ke Yu, Kory Mathewson, Kurtis David, Lluis Castrejon, Luis C. Cobo, Mahyar Bordbar, Manika Puri, Matthew Burruss, Matthew Levine, Matthieu Kim Lorrain, Medhini Narasimhan, Metin Toksoz-Exley, Michael Chang, Michael Milne, Navin Sarma, Nick Matarese, Noah Snavely, Pankil Botadra, Pieter-Jan Kindermans, Reggie Ballesteros, Richard Tucker, Ryan Poplin, Sasha Brown, Shantanu Bhattacharya, Siavash Khodadadeh, Soumyadip Ghosh, Srimon Chatterjee, Ting Liu, Tom Hume, Troy Chinen, Vika Koriakin, Viral Carpenter, Xiang Li, Xuemei Zhao, Xuhui Jia, Yael Pritch, Yedid Hoshen, Yi Yang, Yuan Zhong, and Yutian Chen.
-Special thanks to Douglas Eck, AÃ¤ron van den Oord, Eli Collins, Koray Kavukcuoglu, Demis Hassabis and Sergey Brin for their insightful guidance and support throughout the research process.
-We also acknowledge our infrastructure partners Abhinash Giri, Allen Wu, Andy Sekyere, Georgi Todorov, Jon Blanton, Praseem Banzal, Ricky Liang, and Shariar âNafiâ Rouf. And the many other individuals who contributed across Google DeepMind and our partners at Google.
-Follow us
-Sign up for updates on our latest innovations
-I accept Google's Terms and Conditions and acknowledge that my information will be used in accordance with
-Google's Privacy Policy
-.
+Explore
+For Daily Tasks
+For Creative Pros
+For Business Owners
+Plans & Pricing
 Sign up
-Build AI responsibly to benefit humanity
-Models
-Gemini
+One
+Overview
+Google AI
+Explore
+For Daily Tasks
+For Creative Pros
+For Business Owners
+Plans & Pricing
+Sign up
+Unlock our new frontier model
+Gemini 4 Argon
+Sign up for a Google AI plan
+Cancel anytime. By subscribing, you agree to terms for
+Google One
+and
+offers
+. See how
+Google handles data
+.
+United States
+Google AI Plus
+/mo
+400 GB storage
+Unlock essential tools to boost productivity with double the access to Gemini
+Get Plus
+Terms apply
+1
+Boost productivity
+Access to Gemini 3.6 Flash and Deep Research in Gemini.
+Gemini in Google apps to help you proofread in Gmail.
+Unleash creativity
+More access to image, music, and video generation models in Gemini and Search.
+2
+Study smarter
+Create insightful multi-page reports in less time in Gemini.
+More access to features and models in Gemini Notebook.
+And more
+400 GB of cloud storage across Gmail, Drive, and Photos.
+Family sharing with up to five others.
+Plus other AI benefits across Google products.
+View plan benefits
+Hide plan benefits
+Includes Gemini 4 Argon
+Google AI Pro
+/mo
+5 TB storage
+Create faster and get more done with four times more access to Gemini
+Get Pro
+Terms apply
+1
+Boost productivity
+Access to Gemini 4 Argon for frontier performance in complex workflows.
+Expanded access to Gemini 3.1Â Pro and Deep Research in Gemini.
+Expanded access to Gemini 4 Argon in the Gemini app and AI Mode in Search.
+2
+Expanded access to Gemini 3 Pro in features such as Deep Search.
+Gemini in Google apps to help you proofread in Gmail and work smarter in Docs and Sheets. Plus, ask your Gmail inbox for an AI Overview (US only).
+Access to Tasks in Gemini.
+3
+Access to Chrome auto browse.
+4
+Unleash creativity
+Expanded access to image, music, and video generation models in Gemini, Search,
+2
+and Google Flow,
+5
+plus added benefits in Google Photos (US only), like more Remix generations (US only).
+Study smarter
+Create insightful multi-page reports in less time in Gemini and Search.
+2
+Expanded access to features and models in Gemini Notebook.
+Code faster
+Expanded access to Gemini 4 Argon in Google Antigravity and Google AI Studio.
+6
+Get expanded access to powerful accelerators and longer runtimes in Google Colab with 200 compute units per month.
+Supercharge Android development with expanded limits to our best Gemini models for agentic AI-assistance in Android Studio.
+$10 in monthly Google Cloud credits from Google Developer Program.
+And more
+Enjoy YouTube with fewer ads, offline, and in the background with the YouTube Premium Lite plan
+7
+(availability varies by
+country
+).
+Unlock Google Health Premium (
+/mo value) included for access to health coaching thatâs built with Gemini and made for you (eligible device required).
+8
+Get the Google Home Premium Standard plan at no cost ($10/mo value), with 30 days of event history and Gemini features.
+9
+5 TB of cloud storage across Gmail, Drive, and Photos.
+Family sharing with up to five others.
+Plus other AI benefits across Google products.
+View plan benefits
+Hide plan benefits
+Includes Gemini 4 Argon
+Google AI Ultra
+From
+Â
+/mo
+Starting at 20Â TB of storage
+Accelerate your workflows with 5x higher usage limits in Gemini than the AI Pro plan
+Get Ultra
+Terms apply
+1
+Boost productivity
+Higher access to Gemini 4 Argon for frontier performance in complex workflows.
+Higher access to Gemini 3.1Â Pro, Deep Research, and Gemini Agent (US only, English only).
+Higher access to Gemini 4 Argon in the Gemini app and AI Mode in Search.
+2
+Higher access to Gemini 3 Pro in features such as Deep Search. Plus, AI-powered calling for local businesses (US only).
+Gemini in Google apps to help you proofread in Gmail and work smarter in Docs and Sheets. Plus, ask your Gmail inbox for an AI Overview (US only).
+Higher limits to Chrome auto browse.
+4
+Unleash creativity
+Higher access to image, music, and video generation models in Gemini, Search,
+2
+and Google Flow,
+5
+plus added benefits in Google Photos (US only), like more Remix generations (US only).
+Interactive world creation and exploration in real time with Project Genie.
+10
+Study smarter
+Create insightful multi-page reports in less time in Gemini and Search.
+2
+Higher access to features and models in Gemini Notebook.
+Code faster
+Higher access to Gemini 4 Argon in Google Antigravity and Google AI Studio.
+6
+Get higher access to powerful accelerators and longer runtimes in Google Colab with 2,000 compute units per month.
+Supercharge Android development with higher limits to our best Gemini models for agentic AIâassistance in Android Studio.
+$40 in monthly Google Cloud credits from Google Developer Program.
+And more
+Enjoy YouTube ad-free with the YouTube Premium individual plan
+11
+(availability varies by
+country
+).
+Unlock Google Health Premium (
+/mo value) included for access to health coaching thatâs built with Gemini and made for you (eligible device required).
+8
+Get the Google Home Premium Advanced plan at no cost ($20/mo value), with 24/7 event history, Gemini features, and event descriptions.
+9
+Cloud storage starting at 20 TB across Gmail, Drive, and Photos.
+Family sharing with up to five others.
+Plus other AI benefits across Google products.
+Google AI Ultra is available in more than 150 countries â see
+full list of countries
+.
+YouTube Premium individual plan is available in over 40 countries â see
+full list of countries
+.
+View plan benefits
+Hide plan benefits
+Age restrictions, language availability, system requirements, and other
+restrictions
+may apply.
+Your Google Account gives you 15 GB of storage, which is included as part of the total storage offered in Google One plans.
+Compare plans
+Looking for AI solutions for your business or work account?
+Try Gemini Enterprise
+Students get exclusive offers on
+Google AI
+plans
+Get ahead this school year with Google AI Pro free for 1 year. Or, upgrade to get AI Pro and YouTube Premium with ad-free videos and music for just $8.99/mo ($35.98/mo when purchased separately).
+12
+See student plans
+Availability varies by country â see
+full list of countries and regions
+where Google AI Pro and YouTube Premium are supported.
+Discover a
+universe of possibilities
+New
+Next-gen AI
+Productivity
+Creativity
+Coding
+Studying
+And more
+Sign up
+Explore
+Next-gen AI
+Productivity
+Creativity
+Coding
+Studying
+And more
+New
+Next-gen AI
+Productivity
+Creativity
+Coding
+Studying
+And more
+Sign up
+Get access to Googleâs
+advanced AI models
+Frontier intelligence for your most complex workflows with
+GeminiÂ 4Â Argon
+Turn ambitious ideas into real projects
+Meet Gemini 4 Argon, our frontier model built to take your most complex tasks from start to finish. Whether you are exploring new coding projects, analyzing dense information, or visualizing 3D spaces, Argon turns your ambitious ideas into polished, ready-to-use outputs.
+Available to Google AI Pro and Ultra subscribers in
+select countries
+.
+Get the most from
+Gemini features
+Expanded access
+Unlock expanded access to Gemini features, including Deep Research. It automatically browses and analyzes hundreds of websites in real-time to give you comprehensive research reports on nearly any topic â in a matter of minutes.
+Hand off your
+tasks
+to Gemini
+Your most
+complex toâdos, done
+With Tasks in Gemini, you can hand off the busywork that normally takes time, tabs, and a whole lot of back-and-forth. Give Gemini a goal and it can plan the steps, browse across sites, and keep working in the background on your behalfâwhile you stay in control and focus on what matters most.
+Available to Google AI Pro and Ultra subscribers in
+select countries
+.
+Boost productivity with
+Gemini in your Google apps
+Google Docs
+Get personalized help
+drafting, refining, and finishing docs faster
+Google Docs
+Bring your ideas to life
+in Docs with help from Gemini
+Create personalized documents with Gemini in Docs. Draft in seconds, refine as you go, and match writing style or format so your work feels polished and ready to share.
+Rolling out
+Find emails and draft documents
+just by talking
+Rolling out
+Let your
+voice do the work
+Say what you need to instantly search your inbox with Gmail Live, or outline and write full documents with Docs Live just by talking.
+Gmail Live (AI Plus, Pro, Ultra) and Docs Live (AI Pro, Ultra) are rolling out on Android and iOS in US only.
+AI Inbox in Gmail
+Prioritize your toâdos
+and important updates with AI Inbox
+AI Inbox in Gmail
+Stay on top of
+what matters most
+AI Inbox is like having a personalized briefing, highlighting to-dos and catching you up on what matters.
+Available to Google AI Plus, Pro, and Ultra users in the US.
+Deep Search
+Find deeper answers
+to your toughest questions
+Deep Search
+Big questions deserve
+deeper answers
+Deep Search in AI Mode browses hundreds of sites and reasons across them, so you can get deeper answers faster.
+Available to Google AI Pro and Ultra users in the US.
+Chrome auto browse
+Hand off your toâdo list
+to Chrome auto browse
+Chrome auto browse
+Chrome
+auto browse
+Let Gemini in Chrome complete tasks for you with auto browse. For example, it can research hotel and flight costs across multiple date options to find you a budget-friendly time to travel.
+Available to Google AI Pro and Ultra users in the US and India.
+Bring your next
+creative masterpiece to life
 Gemini Omni
-Nano Banana
-Gemini Audio
-Gemma
-Genie
-Lyria
-Veo
-Research
-Gemini Robotics
-Breakthroughs
-Evals
-Publications
-Frontier safety
-Responsibility
-Science
-AlphaFold
-AlphaGenome
-WeatherNext
-AlphaEarth
-AlphaEvolve
-Products
-Gemini app
-Google AI Studio
-Google Antigravity
+Blend text, images, and video to bring your ideas to life in motion
+You can now upload multiple reference images to direct the characters, objects, and style of your scene for more dynamic storytelling.
+1
+Nano Banana 2
+Create images that
+match your imagination
+Nano Banana 2
+Where
+imagination becomes imagery
+Create visuals that match exactly what you have in mind, from images and typography to infographics. Describe what you want, explore styles, and refine every element, all in Gemini and Flow.
+Discover Nano Banana 2
+LyriaÂ 3.5
+Compose custom soundtracks
+forâ¨any moment
+LyriaÂ 3.5
+Play with sound styles to
+create new songs
+Generate complete tracks with LyriaÂ 3.5, including instrumentals, vocals, and lyrics. Mix genres, moods, and eras using simple prompts to push your sound in new directions.
+Discover LyriaÂ 3.5
+Code and ship faster
+with autonomous AI agents
+Antigravity
+Orchestrate complex projects
+with agentic workflows
+Antigravity
+Manage your own team
+of AI coding agents
+Guide multiple agents to plan, generate, and refine code in one place. Powered by Google Antigravity, your agent-first development platform.
+Explore Antigravity
+Google Developer Program
+Accelerate your path
+to deploy and scale
+Google Developer Program
+Fuel your next build
+with the ultimate developer toolkit
+Build, test, and deploy without infrastructure limits. Access cloud credits, powerful models, and a unified developer profile, so your projects can scale seamlessly.
+Explore Google Developer Program
+Ask bigger questionsâ¨
+and get better answers
+Gemini Notebook
+Take your learning
+to the next level
+Gemini Notebook
+Understand and
+master topics faster
+Study and research smarter with expanded access to audio overviews, notebooks and sources per notebook.
+Gemini Deep Research
+Save hours on
+complex research
+Gemini Deep Research
+Condense
+hours of searching
+Your research assistant uses 3Â Pro to helps you turn hours of work into minutes. Dive into detailed reports on any topic and ask follow-up questions to sharpen your insights.
+Gemini in Gmail, Docs, and more
+Stay on top of
+every project
+Gemini in Gmail, Docs, and more
+Stay organized
+and move projects forward
+Simplify your daily tasks and get help writing, organizing, and visualizing directly in your favorite Google apps.
+Google AI Pro and AI Ultra subscribers get premium perks
+YouTube Premium
+Enjoy the entertainment you love with fewer distractions
+When you get a Google AI Ultra subscription, youâll also get a YouTube Premium individual plan for no additional cost â enjoy ad-free YouTube and YouTube Music, offline and in the background.
+11
+A Google AI Pro subscription comes with YouTube Premium Lite â see fewer ads on most videos, at no extra cost.
+7
 Learn more
-About
-News
-Careers
-National Partnerships for AI
-Accelerator programs
-The Podcast
-DeepMind Institute
+Availability varies by country â see full list of countries for
+YouTube Premium Lite
+and
+YouTube Premium individual
+.
+Google Home Premium
+Supercharge your smart home devices with Gemini for simpler, smarter living
+Google AI Ultra subscribers get the Advanced plan of Google Home Premium for no extra cost.
+1
+A Google AI Pro subscription includes Google Home Premium for no additional cost, and can upgrade to Advanced forÂ
+/month any time.
+9
+Learn more
+Only available with Google AI Pro or Google AI Ultra plans in
+countries
+where Google Home Premium is available.
+Google Health Premium
+Get personalized fitness, sleep, and health coaching, powered by Gemini
+A Google AI Ultra or AI Pro subscription includes Google Health Premium for no extra cost.
+1
+Google Health Premium brings together effortless tracking and a health coach built with Gemini to deliver proactive, personal, and adaptive guidance that makes the most of your everyday.
+8
+Learn more
+Requires the Google Health app and a Pixel Watch or Fitbit device (sold separately). Only available with Google AI Pro or Google AI Ultra plans in
+countries
+where Google Health Premium is available.
+Be among the first to explore
+Googleâs latest AI innovations
+Project Genie
+Create and explore
+â¨infinitely diverse worlds
+Learn more
+Google Flow Music
+Your
+music production
+partner
+Learn more
+Playground
+Create
+custom games
+in minutes (US only)
+Learn more
+See your savings
+on AI, YouTube, and more
+Google AI Pro
+Google AI Ultra
+Savings calculator
+Set the amounts below to match your current monthly spend.
+Premium AI chatbots
+$20/mo
+Included in Pro:
+Four times more Gemini access*
+* In comparison to non-AI subscribers.
+Cloud storage
+$10/mo
+Included in Pro:
+5 TB cloud storage
+YouTube
+Premium Lite ($8.99)
+None ($0)
+Premium Lite ($8.99)
+Premium Student ($8.99)
+Premium individual ($15.99)
+Premium family ($26.99)
+$8.99/mo
+Included in Pro:
+YouTube Premium Lite
+7
+Individual plan selected: Because the YouTube Premium individual plan isn't included in Google AI Pro plans, this spend isn't included in your savings total.
+Family plan selected: Because the YouTube family plan isn't included in Google AI Pro plans, this spend isn't included in your savings total.
+Fitness and wellness
+$10/mo
+Included in Pro:
+Google Health Premium
+8
+Home automation and security
+$10/mo
+Included in Pro:
+Google Home Premium Standard
+9
+Reset all to $0
+Monthly ($19.99)
+Annual ($199.99)
+Your estimated savings
+$39
+/ mo
+Spend summary
+Current separate services
+$59/mo
+Google AI Pro bundle
+$19.99/mo
+Monthly savings
+$39
+Share storage and AI with up to 5 people
+$6.67/mo
+equivalent cost per user
+2
+View all bundled Pro features
+5 TB secure storage across Google Drive, Gmail, and Photos
+Gemini in Gmail, Docs, and Sheets
+YouTube Premium Lite
+7
+Google Health Premium
+8
+Google Home Premium Standard
+9
+Get Google AI Pro
+Explore all plans
+Get Google AI Pro
+Explore all plans
+Digital spend estimates, including per-user cost, are for illustrative purposes only and are based solely on your self-reported inputs. Actual costs, individual feature eligibility, usage capacity, and savings may vary depending on your specific subscriptions, regional availability, and plan terms. Offers and pricing are subject to change.
+Savings calculator
+Set the amounts below to match your current monthly spend.
+Premium AI chatbots
+$100/mo
+Included in Ultra:
+5x more Gemini access than Pro
+Cloud storage
+$10/mo
+Included in Ultra:
+20 TB cloud storage
+YouTube
+Premium individual ($15.99)
+None ($0)
+Premium Lite ($8.99)
+Premium Student ($8.99)
+Premium individual ($15.99)
+Premium family ($26.99)
+$15.99/mo
+Included in Ultra:
+YouTube Premium individual
+Family plan selected: Because the YouTube family plan isn't included in Google AI Ultra plans, this spend isn't included in your savings total.
+Fitness and wellness
+$10/mo
+Included in Ultra:
+Google Health Premium
+Home automation and security
+$10/mo
+Included in Ultra:
+Google Home Premium Advanced
+Reset all to $0
+$99.99/mo - Ultra plans are billed monthly only
+Your estimated savings
+$46
+/ mo
+Spend summary
+Current separate services
+$146/mo
+Google AI Ultra bundle
+$99.99/mo
+Monthly savings
+$46
+Share storage and AI with up to 5 people
+$33.33/mo
+equivalent cost per user
+2
+View all bundled Ultra features
+20 TB secure storage across Google Drive, Gmail, and Photos
+Gemini in Gmail, Docs, and Sheets
+YouTube Premium individual (videos and music ad-free, offline, and in the background)
+Google Health Premium
+8
+Google Home Premium Advanced
+9
+More benefits across Google
+Get Google AI Ultra
+Explore all plans
+Digital spend estimates, including per-user cost, are for illustrative purposes only and are based solely on your self-reported inputs. Actual costs, individual feature eligibility, usage capacity, and savings may vary depending on your specific subscriptions, regional availability, and plan terms. Offers and pricing are subject to change.
+Find the right Google AI plan for you
+Features
+Google AI
+Plus
+/mo
+Google AI
+Pro
+/mo
+Google AI
+UltraÂ 5x
+/mo
+Google AI
+UltraÂ 20x
+/mo
+Storage
+Storage for Gmail, Google Drive, Google Photos
+400Â GB or 2Â TB
+5 TB
+20 TB
+30 TB
+Family sharing with up to 5 people
+Device backup
+Storage manager
+Google AI
+Gemini
+Higher Usage Limits
+Two times
+(non-AI plans)
+Four times
+(non-AI plans)
+5x
+(Pro plan)
+20x
+(Pro plan)
+Access to Gemini 4 Argon
+Access to our Pro models
+Higher
+Highest
+Custom AI experts
+Gemini Live
+Tasks in Gemini
+3
+Daily Brief (US only)
+Image generation and editing with NanoÂ BananaÂ Pro
+Deep Research
+File upload size
+More
+Expanded
+Higher
+Highest
+Video generation model access
+Omni Flash
+Omni Flash
+Omni Flash
+Omni Flash
+Create music with LyriaÂ 3.5
+More
+Expanded
+Higher
+Highest
+Priority access to new features
+Expanded token context window
+1 million
+1 million
+1 million
+Gemini in Gmail, Docs, and more
+Ask your Gmail inbox and get an AI Overview (US only)
+Proofread in Gmail
+Help me generate video in Vids
+Take notes for me in Google Meet
+13
+Gemini Notebook
+Usage limits
+More
+Expanded
+Higher
+Highest
+Notebook size
+Large
+Larger
+Largest
+Largest
+Google Flow
+5
+Usage Limits
+More
+Expanded
+Higher
+Highest
+Google Flow Credits
+200/mo
+1,000/mo
+10,000/mo
+25,000/mo
+Gemini Omni Flash
+4K image upscaling
+4K video upscaling
+Vibe code custom Google Flow Tools
+Google Flow Music
+5
+Usage Limits
+More
+Expanded
+Higher
+Highest
+Google Flow Music Credits
+3,000/mo
+10,000/mo
+30,000/mo
+30,000/mo
+Google Antigravity
+Agent requests
+Limited
+Expanded
+Higher
+Highest
+Access to Gemini 4 Argon
+Google AI Studio
+6
+Access to Gemini 4 Argon
+Access to our advanced models
+Limited
+Expanded
+Higher
+Highest
+Vibe Coding agent:
+Daily usage across Flash and Pro models
+Limited
+Expanded
+Higher
+Highest
+Image generation and editing with Nano Banana Pro
+Limited
+Expanded
+Higher
+Highest
+Priority access to new features
+Google Colab
+Compute units
+50/mo
+200/mo
+1,000/mo
+2,000/mo
+Access to powerful accelerators, longer runtimes, and Gemini usage limits
+More
+Expanded
+Higher
+Highest
+Google Search
+2
+Access to our advanced models
+More
+Expanded
+Higher
+Highest
+Image generation and editing
+More
+Expanded
+Higher
+Highest
+Agentic capabilities in AI Mode (US only)
+More
+Expanded
+Higher
+Highest
+Google Finance
+14
+Deep Search in Google Finance
+More
+Expanded
+Higher
+Highest
+Google Chrome
+Complete tasks with Chrome auto browse
+4
+Expanded
+Higher
+Highest
+Google Developer Program premium
+Google Cloud credits
+$10 monthly credits
+$40 monthly credits
+$100 monthly credits
+Android Studio
+Access limits to our advanced Gemini models for agentic AI-assistance
+Limited
+Expanded
+Higher
+Highest
+Google Photos
+Remix generations
+More
+Expanded
+Higher
+Highest
+Photo-to-video generations
+More
+Expanded
+Higher
+Highest
+Project Genie
+10
+Access to interactive world model
+Playground
+Access to game generations to build & play custom games (US only)
+More
+Expanded
+Higher
+Highest
+More benefits
+Premium video calling features in Google Meet
+Only with 2Â TB plan
+Enhanced appointment scheduling in Google Calendar
+YouTube Premium
+YouTube Premium Lite plan included
+Availability varies by country
+YouTube Premium individual plan included
+Availability varies by country
+YouTube Premium individual plan included
+Availability varies by country
+Google Home Premium
+Standard
+Advanced
+Advanced
+Google Health Premium
+Frequently asked questions
+Expand all
+Collapse all
+What is included in Google AI plans?
+There are three Google AI plans that users can subscribe to: Google AI Plus, Google AI Pro, and Google AI Ultra.
+Google AI Plus gives you more access to Google AI, including:
+Gemini app with access to Gemini 3.6 Flash and limited access to Gemini Omni Flash
+5
+Google Flow with more access to Gemini Omni Flash
+5
+Gemini Notebook with more access
+Gemini in Gmail and more
+400 GB of storage for Google Photos, Drive, and Gmail
+Other
+member benefits
+Google AI Pro gives you everything in Plus, with expanded access to Google AI, and:
+Gemini app with access to Gemini 4 Argon for frontier performance in complex workflows, plus expanded limits to 3.1Â Pro and access to Gemini Omni Flash
+5
+Google Flow with expanded limits to Gemini Omni Flash
+5
+AI Studio with expanded limits to prototype, experiment, and build with our Gemini 4 Argon model and Nano Banana Pro.
+6
+YouTube Premium Lite
+7
+plan
+Gemini Notebook with expanded access
+Google Search:
+2
+Get access to the Gemini 3Â Pro model to unlock interactive simulations and tools to answer your most complex questions, plus Deep Search, agentic capabilities, and more
+Google Search: Early access to Personal Intelligence in AI Mode (US only)
+Google Antigravity: Expanded rate limits and access to Gemini 4 Argon in Google Antigravity, our agentic development platform
+Google Colab: Get expanded access to powerful accelerators and longer runtimes with 200 compute units per month
+More Remix generations and Veo 3
+5
+photo-to-video generations in Google Photos (US only)
+Gemini in Gmail, Docs, Vids, and more
+Google Home Premium Standard: 30 days of event history and Gemini features. Included in all markets where Google Home Premium is available.
+Learn more
+Access to Tasks in Gemini
+3
+5 TB of storage for Google Photos, Drive, and Gmail
+Other premium
+member benefits
+Google AI Ultra gives you a higher level of access to everything in Google AI Pro, as well as:
+Gemini app with higher access to Gemini 4 Argon for frontier performance in complex workflows, plus higher limits to 3.1Â Pro and access to Gemini Omni Flash
+5
+Google Flow with higher limits to Gemini Omni Flash
+5
+AI Studio with higher limits to prototype, experiment, and build with our Gemini 4 Argon model and Nano Banana Pro.
+6
+Project Genie
+10
+is available in more than 140 countries - see
+full list of countries
+. Only available with a Google AI Ultra plan.
+YouTube Premium
+11
+individual plan
+Google Search:
+2
+Higher access to Gemini 3Â Pro model to unlock interactive simulations and tools to answers your most complex questions, plus Deep Search, agentic capabilities and more
+Google Antigravity: Higher rate limits and access to Gemini 4 Argon in Google Antigravity, our agentic development platform
+Google Colab: Get higher access to powerful accelerators and longer runtimes with 2,000 compute units per month
+Highest Remix generations and Veo 3
+5
+photo-to-video generations in Google Photos (US only)
+Gemini in Gmail, Docs, Vids, and more
+Google Home Premium Advanced: 24/7 video history, event descriptions, and more. Included in all markets where Google Home Premium is available.
+Learn more
+Cloud storage starting at 20 TB for Google Photos, Drive, and Gmail
+Other premium
+member benefits
+Google AI Ultra is available in more than 150 countries â see
+full list of countries
+.
+Can I share the AI benefits included in Google AI plans?
+Family plan members on a Google AI Pro plan can enjoy AI benefits and features at no extra cost.
+Learn more
+.
+Iâm a Google Workspace customer, can I sign up for Google AI plans?
+Only personal Google Accounts can sign up for Google AI plans. Workspace customers can sign up for a Gemini add-on to their existing subscription.
+Learn more
+about which offering works best for you and your business.
+What countries are Google AI plans available in?
+Google AI Plus is available in over 160 countries. Google AI Pro is available in over 150 countries. Google AI Ultra is available in more than 150 countries â see
+full list of countries
+. Certain AI benefits are only available for ages 18+.
+Learn more
+.
+Gemini app and Gemini in Gmail, Docs, and more in Google AI plans are only available for ages 18+. Gemini in Gmail, Docs, and more is available in select languages â see
+full list of languages
+.
+How do I use the AI benefits included with Google AI plans?
+When you start a trial or are subscribed to a Google AI plan, you can use the following AI features:
+Gemini app: Access it atÂ
+gemini.google.com
+or through the
+mobile app
+.
+Generate AI videos in Google Flow and the Gemini app.
+Gemini in Gmail, Docs, Slides, Sheets, and Meet: Capabilities can be used directly within these Google products.
+Gemini Notebook: Access it at
+notebook.google
+.
+Can I create videos with a Google AI plan?
+Our Google AI plans give you access to video generation in Gemini and Google Flow to help you bring your ideas in motion.
+What is the difference between AI Premium and a Google AI Plus plan?
+The Google AI Premium plan has a new name: Google AI Plus. It includes the same benefits like the Gemini app, Gemini Notebook, 400 GB of storage, and more.
+Whatâs the difference between YouTube Premium individual and YouTube Premium Lite plans?
+The YouTube Premium individual plan unlocks all of YouTube and YouTube Music ad-free, offline, and in the background.
+11
+Enjoy every Premium feature across all content types.
+The YouTube Premium Lite plan is a good fit for you if you mainly watch creator content.
+7
+Music videos, concerts, and songs may still have ads and won't be available offline or in the background.
+Whatâs the difference between Fitbit Premium and Google Health Premium?
+Google Health Premium replaces the former Fitbit Premium subscription with a singular place to manage and control your health data. The Google Health app simplifies and brings all of your data into one place â including your Fitbit, Google Fit, Health Connect and Apple Health data plus your personal medical records. It also introduces Google Health Coach, which is built with Gemini to be a fitness trainer, sleep coach, and health and wellness advisor, available across the Fitbit and Pixel Watch portfolio.
+Stay in the loop with GoogleÂ One
+Get the latest updates and news from Google One, delivered to your inbox.
+Subscribe
+Manage your plan and more with the GoogleÂ One app
+1.
+Google AI Plus, Pro, and Ultra plans are available in more than 140 countries and territories â see
+full list of countries
+. Certain AI benefits are only available for those aged 18+.
+Learn more
+.
+2.
+Gemini 3Â Pro model and Nano Banana Pro are available in select countries â see
+full list of countries with Gemini 3Â Pro in AI Mode
+and
+full list of countries with Nano Banana Pro in AI Mode
+.
+3.
+Tasks in Gemini is available in select countries and languages â see
+full list of countries
+.
+4.
+Chrome auto browse is available in the US and India.
+Learn more
+.
+5.
+Veo 3.1, Google Flow, and Google Flow Music are available in more than 140 countries and territories â see full list of countries for
+Veo 3.1
+,
+Google Flow
+, and
+Google Flow Music
+.
+6.
+The
+Gemini API Additional Terms of Service
+and the
+Google Privacy Policy
+apply to your use of Google AI Studio. Learn more about
+data use
+.
+AI Studio is available in more than 140 countries - see
+full list of countries
+. AI Studio is only available for age 18+.
+7.
+YouTube Premium Lite is available for Google AI Pro subscribers in select countries â see
+full list of countries
+. Age restrictions, language availability, system requirements and
+other restrictions
+may apply.
+The YouTube Premium Lite plan included in this bundle wonât activate if you already have an equivalent or YouTube Premium subscription.
+Learn more
+. Already have a YouTube membership?â¨
+Learn more about managing memberships
+.
+8.
+Google Health Premium is available for Google AI Pro and Ultra subscribers in select countries â see
+full list of countries
+. Requires Google Health app and internet connection. Features subject to change; availability varies. Not intended for medical purposes. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary. Available on select devices.
+Requires a Pixel Watch or Google Health device (sold separately).
+9.
+Requires Google Home app, Wi-Fi, and internet connection. Features subject to change; available in
+select countries and languages
+. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary.
+Requires compatible smart home device(s) (sold separately).
+10.
+Project Genie is available in more than 140 countries â see
+full list of countries
+. Only available with a Google AI Ultra 20x plan.
+11.
+YouTube Premium individual plan is included in Google AI Ultra in over 40 countries â see
+full list of countries
+.
+12.
+Student
+Special Offer
+and
+Combined Google and YouTube Offer
+terms apply. These student offers provide students with discounted pricing and benefits on the Google AI Plus and Google AI Pro plans. Available to eligible students. Verification via SheerID required upon sign-up. Student offers are valid for up to 4 years and may automatically renew at the standard monthly price once student status concludes. Not available on school-issued accounts. Individual use only.
+13.
+âTake notes for meâ in Google Meet is available in select countries â see
+full list of countries
+.
+14.
+Deep Search in Google Finance is only available in the US.
 About Google
 Google products
 Privacy
 Terms
-Cookies management controls
+Help
+One
+Close
+Change your region and language
+Americas
+United States
+English
+Antigua & Barbuda
+English
+Argentina
+espaÃ±ol
+Aruba
+English
+Bermuda
+English
+Bolivia
+English
+Brasil
+portuguÃªs
+Bahamas
+English
+Belize
+English
+Canada
+English
+Canada
+franÃ§ais
+Chile
+espaÃ±ol
+Colombia
+espaÃ±ol
+Costa Rica
+English
+Dominican Republic
+English
+Ecuador
+English
+Guatemala
+English
+Honduras
+English
+Haiti
+English
+Jamaica
+English
+Cayman Islands
+English
+MÃ©xico
+espaÃ±ol
+Nicaragua
+English
+Panama
+English
+PerÃº
+espaÃ±ol
+Puerto Rico
+English
+Paraguay
+English
+El Salvador
+English
+Trinidad & Tobago
+English
+Uruguay
+English
+Venezuela
+English
+British Virgin Islands
+English
+Asia Pacific
+Ø§ÙØ¥ÙØ§Ø±Ø§Øª Ø§ÙØ¹Ø±Ø¨ÙØ© Ø§ÙÙØªØ­Ø¯Ø©
+Ø§ÙØ¹Ø±Ø¨ÙØ©
+Armenia
+English
+Australia
+English
+Azerbaijan
+English
+à¦¬à¦¾à¦à¦²à¦¾à¦¦à§à¦¶
+à¦¬à¦¾à¦à¦²à¦¾
+Bahrain
+English
+Fiji
+English
+Georgia
+English
+Hong Kong SAR China
+English
+ä¸­åé¦æ¸¯ç¹å¥è¡æ¿å
+ä¸­æ
+Indonesia
+Indonesia
+××©×¨××
+×¢××¨××ª
+India
+English
+Iraq
+English
+Jordan
+English
+æ¥æ¬
+æ¥æ¬èª
+Kyrgyzstan
+English
+Cambodia
+English
+ëíë¯¼êµ­
+íêµ­ì´
+Kuwait
+English
+Kazakhstan
+English
+Laos
+English
+Lebanon
+English
+Sri Lanka
+English
+Maldives
+English
+Malaysia
+English
+Nepal
+English
+New Zealand
+English
+Oman
+English
+Papua New Guinea
+English
+Philippines
+English
+Pakistan
+English
+Qatar
+English
+Ø§ÙÙÙÙÙØ© Ø§ÙØ¹Ø±Ø¨ÙØ© Ø§ÙØ³Ø¹ÙØ¯ÙØ©
+Ø§ÙØ¹Ø±Ø¨ÙØ©
+Singapore
+English
+à¹à¸à¸¢
+à¹à¸à¸¢
+Tajikistan
+English
+Turkmenistan
+English
+Tonga
+English
+TÃ¼rkiye
+TÃ¼rkÃ§e
+å°ç£
+ä¸­æ
+Uzbekistan
+English
+Viá»t Nam
+Tiáº¿ng Viá»t
+Yemen
+English
+Europe & Africa
+Albania
+English
+Angola
+English
+Ãsterreich
+Deutsch
+Bosnia & Herzegovina
+English
+Belgien
+Deutsch
+Burkina Faso
+English
+Bulgaria
+English
+Benin
+English
+Botswana
+English
+Schweiz
+Deutsch
+CÃ´te dâIvoire
+English
+Cameroon
+English
+Cape Verde
+English
+Cyprus
+English
+Äesko
+ÄeÅ¡tina
+Deutschland
+Deutsch
+Danmark
+dansk
+Algeria
+English
+Estonia
+English
+ÙØµØ±
+Ø§ÙØ¹Ø±Ø¨ÙØ©
+EspaÃ±a
+espaÃ±ol
+Suomi
+suomi
+France
+franÃ§ais
+Gabon
+English
+United Kingdom
+English
+Ghana
+English
+Gibraltar
+English
+ÎÎ»Î»Î¬Î´Î±
+ÎÎ»Î»Î·Î½Î¹ÎºÎ¬
+Guinea-Bissau
+English
+Croatia
+English
+MagyarorszÃ¡g
+magyar
+Ireland
+English
+Iceland
+English
+Italia
+italiano
+Kenya
+English
+Liechtenstein
+English
+Lithuania
+English
+Luxembourg
+English
+Latvia
+English
+Morocco
+English
+Monaco
+English
+Moldova
+English
+North Macedonia
+English
+Mali
+English
+Malta
+English
+Mauritius
+English
+Mozambique
+English
+Namibia
+English
+Niger
+English
+Nigeria
+English
+Nederland
+Nederlands
+Norge
+norsk
+Polska
+polski
+Portugal
+portuguÃªs
+RomÃ¢nia
+romÃ¢nÄ
+Serbia
+English
+Rwanda
+English
+Seychelles
+English
+Sverige
+svenska
+Slovenia
+English
+Slovakia
+English
+Sierra Leone
+English
+San Marino
+English
+Senegal
+English
+Togo
+English
+Tunisia
+English
+Tanzania
+English
+Ð£ÐºÑÐ°ÑÐ½Ð°
+ÑÐºÑÐ°ÑÐ½ÑÑÐºÐ°
+Uganda
+English
+South Africa
+English
+Zambia
+English
+Zimbabwe
+English
+United States

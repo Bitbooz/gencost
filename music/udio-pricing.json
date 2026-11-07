@@ -1,8 +1,30 @@
 {
   "platform": "Udio",
   "plans": [
-    {"name": "Free", "monthly_price_usd": 0, "credits_or_minutes": 50, "unit": "credits"},
-    {"name": "Standard", "monthly_price_usd": 10, "credits_or_minutes": 1200, "unit": "credits"},
-    {"name": "Pro", "monthly_price_usd": 30, "credits_or_minutes": 4800, "unit": "credits"}
-  ]
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 100,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Standard",
+      "monthly_price_usd": 10,
+      "yearly_price_usd": 8,
+      "credits_or_minutes": 2400,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 30,
+      "yearly_price_usd": 24,
+      "credits_or_minutes": 6000,
+      "unit": "credits",
+      "offer": ""
+    }
+  ],
+  "source": "https://www.udio.com/pricing",
+  "last_checked": "2026-11-07 14:21"
 }

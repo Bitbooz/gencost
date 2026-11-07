@@ -20,11 +20,12 @@
     {
       "name": "Ultra",
       "monthly_price_usd": 300,
+      "yearly_price_usd": 250,
       "credits_or_minutes": 150000,
       "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://lumalabs.ai/pricing",
-  "last_checked": "2026-11-07 13:51"
+  "last_checked": "2026-11-07 14:17"
 }

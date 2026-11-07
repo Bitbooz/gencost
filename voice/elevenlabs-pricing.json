@@ -14,7 +14,7 @@
       "yearly_price_usd": 5,
       "credits_or_minutes": 30000,
       "unit": "credits",
-      "offer": "first month $1"
+      "offer": ""
     },
     {
       "name": "Creator",
@@ -22,7 +22,7 @@
       "yearly_price_usd": 18.33,
       "credits_or_minutes": 121000,
       "unit": "credits",
-      "offer": "first month $11"
+      "offer": ""
     },
     {
       "name": "Pro",
@@ -50,5 +50,5 @@
     }
   ],
   "source": "https://elevenlabs.io/pricing",
-  "last_checked": "2026-11-07 13:52"
+  "last_checked": "2026-11-07 14:19"
 }
