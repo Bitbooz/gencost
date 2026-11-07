@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A *-pricing.json voice music data price-review.txt article-review.txt *-raw.txt pages index.html
+          git add -A *-pricing.json voice music data price-review.txt article-review.txt seo-review.txt *-raw.txt pages *.html sitemap.xml
           if git diff --staged --quiet; then
             echo "No changes."
           else
