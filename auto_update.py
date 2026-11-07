@@ -3,6 +3,8 @@ GenCost price updater.
 
 For every tool below it:
   1. downloads the official pricing page and saves the text as <name>-raw.txt
+     (if that fails or the prices can't be confirmed, it opens the page in a
+      real browser so prices loaded by JavaScript are visible too)
   2. asks Grok (xAI API) to turn that text into plans and prices
   3. CHECKS the result: every paid price must actually appear on the page.
      If a price can't be found (the AI misread or made it up), the old prices
@@ -31,6 +33,12 @@ except Exception:
 import requests
 from bs4 import BeautifulSoup
 
+try:  # real browser for pages that need JavaScript (pip install playwright)
+    from playwright.sync_api import sync_playwright
+    BROWSER_OK = True
+except Exception:
+    BROWSER_OK = False
+
 FOLDER = os.path.dirname(os.path.abspath(__file__))
 os.chdir(FOLDER)
 
@@ -39,7 +47,7 @@ MODEL = "grok-3"
 
 VIDEO = {
     "hailuo": "https://hailuoai.video/pricing",
-    "veo": "https://deepmind.google/technologies/veo/",
+    "veo": "https://one.google.com/about/google-ai-plans/",  # Veo is sold through Google AI plans
     "sora": "https://openai.com/sora",
     "vidu": "https://www.vidu.studio/pricing",
     "krea": "https://www.krea.ai/pricing",
@@ -162,18 +170,23 @@ Only JSON. No extra text."""
     return response.choices[0].message.content
 
 
+NUMBER_RE = re.compile(r"(?<![\d.,])(\d{1,3}(?:,\d{3})+|\d+)(?:[.,](\d{1,2}))?(?![\d])")
+
+
 def price_on_page(price, text):
-    """True if this price (or, for yearly-derived prices, price x 12) is written in the page text."""
-    def found(value):
-        value = round(float(value), 2)
-        if value == int(value):
-            pattern = rf"(?<![\d.,]){int(value)}(?:[.,]00?)?(?![\d])"
-        else:
-            whole, cents = f"{value:.2f}".split(".")
-            cents_alt = cents.rstrip("0") or "0"
-            pattern = rf"(?<![\d]){whole}[.,](?:{cents}|{cents_alt})(?![\d])"
-        return re.search(pattern, text) is not None
-    return found(price) or found(price * 12)
+    """True if this price is written on the page, or is a yearly total on the page divided by 12
+    (e.g. "$139/year" -> 11.58 a month, allowing for rounding to the cent)."""
+    value = round(float(price), 2)
+    for m in NUMBER_RE.finditer(text):
+        n = float(m.group(1).replace(",", "") + ("." + m.group(2) if m.group(2) else ""))
+        if abs(n - value) < 0.005:
+            return True
+        # yearly total / 12: only for numbers written as money ("$139", "USD 139", "139 USD")
+        if n >= 24 and abs(n / 12 - value) <= 0.01:
+            before, after = text[max(0, m.start() - 5):m.start()], text[m.end():m.end() + 5]
+            if re.search(r"[$€£]|USD", before) or re.search(r"USD|\$", after):
+                return True
+    return False
 
 
 def check(data, text):
@@ -210,29 +223,94 @@ def review(name, url, problems, outcome="kept the previous prices"):
         f.write(f"    -> {outcome}\n\n")
 
 
-def process_platform(name, url):
-    print(f"Processing {name}...")
-    path = json_path(name)
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=25)
-        soup = BeautifulSoup(r.text, "html.parser")
-        text = soup.get_text(separator="\n", strip=True)
-        with open(f"{name}-raw.txt", "w", encoding="utf-8") as f:
-            f.write(text)
-        if len(text) < 200:
-            review(name, url, [f"pricing page returned almost no text (HTTP {r.status_code})"])
-            print("  Page had no usable text - kept old prices")
-            return False
+_pw = None
+_browser = None
 
+
+def browser_text(url):
+    """Open the page in a real (headless) Chrome, let JavaScript load the prices, return the visible text."""
+    global _pw, _browser
+    if _browser is None:
+        _pw = sync_playwright().start()
+        _browser = _pw.chromium.launch()
+    ctx = _browser.new_context(user_agent=HEADERS["User-Agent"], locale="en-US", viewport={"width": 1366, "height": 900})
+    page = ctx.new_page()
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=45000)
+        try:
+            page.wait_for_load_state("networkidle", timeout=15000)
+        except Exception:
+            pass
+        for _ in range(4):  # scroll so lazy-loaded price tables appear
+            page.mouse.wheel(0, 2500)
+            page.wait_for_timeout(700)
+        page.wait_for_timeout(1500)
+        return page.inner_text("body")
+    finally:
+        ctx.close()
+
+
+def close_browser():
+    global _pw, _browser
+    try:
+        if _browser:
+            _browser.close()
+        if _pw:
+            _pw.stop()
+    except Exception:
+        pass
+
+
+def extract_and_check(name, text):
+    """Returns (data, problems, notes)."""
+    if len(text) < 200:
+        return None, ["page had almost no text"], []
+    try:
         reply = extract_pricing(name, text)
         reply = reply.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
         data = json.loads(reply)
     except Exception as e:
-        review(name, url, [f"error: {e}"])
-        print(f"  Failed {name}: {e} - kept old prices")
-        return False
-
+        return None, [f"error: {e}"], []
     problems, notes = check(data, text)
+    return data, problems, notes
+
+
+def process_platform(name, url):
+    print(f"Processing {name}...")
+    path = json_path(name)
+
+    # 1. Quick download
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=25)
+        text = BeautifulSoup(r.text, "html.parser").get_text(separator="\n", strip=True)
+        status = r.status_code
+    except Exception as e:
+        text, status = "", f"error: {e}"
+    if len(text) < 200:
+        data, problems, notes = None, [f"pricing page returned almost no text (HTTP {status})"], []
+    else:
+        data, problems, notes = extract_and_check(name, text)
+    method = "download"
+
+    # 2. Not good enough? Try again in a real browser
+    if problems and BROWSER_OK:
+        try:
+            btext = browser_text(url)
+        except Exception as e:
+            btext = ""
+            problems.append(f"browser could not open the page: {str(e).splitlines()[0][:150]}")
+        if len(btext) >= 200:
+            bdata, bproblems, bnotes = extract_and_check(name, btext)
+            if not bproblems:
+                data, problems, notes, text, method = bdata, [], bnotes, btext, "browser"
+            else:
+                problems = [f"download: {p}" for p in problems] + [f"browser: {p}" for p in bproblems]
+        elif btext:
+            problems.append("browser also got almost no text")
+
+    with open(f"{name}-raw.txt", "w", encoding="utf-8") as f:
+        f.write(text)
+
     if problems:
         review(name, url, problems)
         print(f"  Not saved, prices could not be confirmed: {problems}")
@@ -248,7 +326,7 @@ def process_platform(name, url):
     if notes:
         review(name, url, notes, outcome="saved the monthly prices")
     changed = not old or old.get("plans") != data["plans"]
-    print(f"  Saved {path}" + (" (prices changed)" if changed else " (no change)"))
+    print(f"  Saved {path} via {method}" + (" (prices changed)" if changed else " (no change)"))
     return True
 
 
@@ -261,7 +339,12 @@ if __name__ == "__main__":
         os.remove(REVIEW_FILE)  # the file always describes the latest run
     print("Starting price update...\n")
     everything = {**VIDEO, **VOICE, **MUSIC}
-    success = sum(process_platform(n, u) for n, u in everything.items())
+    if not BROWSER_OK:
+        print("(Playwright not installed: pages that need JavaScript can't be read. pip install playwright)")
+    try:
+        success = sum(process_platform(n, u) for n, u in everything.items())
+    finally:
+        close_browser()
     print(f"\nDone. {success}/{len(everything)} tools confirmed and saved.")
 
     for name, data in FALLBACK.items():
