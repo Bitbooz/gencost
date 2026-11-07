@@ -477,3 +477,14 @@ main.page { padding-bottom: 24px; }
 @media (max-width: 760px) { .cmp-pickers { grid-template-columns: 1fr; } }
 .hero-billing { margin-top: 16px; }
 .page .section-title { font-size: clamp(2.1rem, 4.6vw, 3.3rem); }
+
+/* ---------- "Today's prices" box in articles ---------- */
+.prose .live-box { margin: 26px 0 30px; padding: 22px 24px; border-radius: var(--radius); border: 1px solid rgba(0,212,255,0.3); background: linear-gradient(160deg, rgba(0,212,255,0.07), rgba(123,104,238,0.07)); }
+.prose .live-box-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.prose .live-box h2 { margin: 0; font-size: 1.25rem; }
+.prose .live-box .live-note { display: inline-flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--muted); }
+.prose .live-box .table-scroll { margin: 0 0 12px; background: rgba(0,0,0,0.2); }
+.prose .live-box td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.prose .live-box td.num:nth-child(3) { color: var(--cyan); font-weight: 700; }
+.prose .live-box .note { margin: 0; }
+.prose .live-price { border-bottom: 1px dotted rgba(0,212,255,0.6); }

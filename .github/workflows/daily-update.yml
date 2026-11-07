@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 openai tzdata playwright
+          pip install requests beautifulsoup4 lxml openai tzdata playwright
           python -m playwright install --with-deps chromium
 
       - name: Update prices (scrape, extract with Grok, check, rebuild site data)
@@ -40,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A *-pricing.json voice music data price-review.txt *-raw.txt
+          git add -A *-pricing.json voice music data price-review.txt article-review.txt *-raw.txt pages
           if git diff --staged --quiet; then
             echo "No changes."
           else

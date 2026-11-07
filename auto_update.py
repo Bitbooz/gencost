@@ -435,3 +435,4 @@ if __name__ == "__main__":
             f.write(f"{datetime.now(TZ).strftime('%Y-%m-%d %H:%M')}  All tools were checked and confirmed. Nothing to review.\n")
 
     subprocess.run([sys.executable, "regenerate_html.py"], check=False)
+    subprocess.run([sys.executable, "update_articles.py"], check=False)  # prices inside the articles
