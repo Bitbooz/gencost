@@ -46,15 +46,16 @@ API_KEY = (os.getenv("XAI_API_KEY") or "").strip()
 MODEL = "grok-3"
 
 VIDEO = {
-    "hailuo": "https://hailuoai.video/pricing",
+    # A list = several addresses to try, in order, until one gives confirmed prices
+    "hailuo": ["https://hailuoai.video/pricing", "https://hailuoai.video/subscribe"],
     "veo": "https://one.google.com/about/google-ai-plans/",  # Veo is sold through Google AI plans
     "sora": "https://openai.com/sora",
-    "vidu": "https://www.vidu.studio/pricing",
+    "vidu": ["https://www.vidu.com/pricing", "https://www.vidu.studio/pricing"],
     "krea": "https://www.krea.ai/pricing",
     "heygen": "https://www.heygen.com/pricing",
     "higgsfield": "https://higgsfield.ai/pricing",
     "runway": "https://runwayml.com/pricing",
-    "kling": "https://klingai.com/pricing",
+    "kling": ["https://app.klingai.com/global/membership/membership-plan", "https://klingai.com/global/membership/membership-plan", "https://klingai.com/pricing"],
     "synthesia": "https://www.synthesia.io/pricing",
     "pika": "https://pika.art/pricing",
     "luma": "https://lumalabs.ai/pricing",
@@ -241,6 +242,16 @@ def browser_text(url):
             page.wait_for_load_state("networkidle", timeout=15000)
         except Exception:
             pass
+        # Close cookie / consent popups that cover the page
+        for label in ("Accept all", "Accept All", "Accept", "I agree", "Agree", "Allow all", "Got it", "OK"):
+            try:
+                btn = page.get_by_role("button", name=label, exact=True)
+                if btn.count():
+                    btn.first.click(timeout=2000)
+                    page.wait_for_timeout(800)
+                    break
+            except Exception:
+                pass
         for _ in range(4):  # scroll so lazy-loaded price tables appear
             page.mouse.wheel(0, 2500)
             page.wait_for_timeout(700)
@@ -275,24 +286,20 @@ def extract_and_check(name, text):
     return data, problems, notes
 
 
-def process_platform(name, url):
-    print(f"Processing {name}...")
-    path = json_path(name)
-
-    # 1. Quick download
+def read_one(name, url):
+    """Try one address: quick download, then a real browser. Returns (data, problems, notes, text, method)."""
     try:
         r = requests.get(url, headers=HEADERS, timeout=25)
         text = BeautifulSoup(r.text, "html.parser").get_text(separator="\n", strip=True)
         status = r.status_code
     except Exception as e:
-        text, status = "", f"error: {e}"
+        text, status = "", f"error: {str(e)[:120]}"
     if len(text) < 200:
         data, problems, notes = None, [f"pricing page returned almost no text (HTTP {status})"], []
     else:
         data, problems, notes = extract_and_check(name, text)
     method = "download"
 
-    # 2. Not good enough? Try again in a real browser
     if problems and BROWSER_OK:
         try:
             btext = browser_text(url)
@@ -302,11 +309,33 @@ def process_platform(name, url):
         if len(btext) >= 200:
             bdata, bproblems, bnotes = extract_and_check(name, btext)
             if not bproblems:
-                data, problems, notes, text, method = bdata, [], bnotes, btext, "browser"
-            else:
-                problems = [f"download: {p}" for p in problems] + [f"browser: {p}" for p in bproblems]
+                return bdata, [], bnotes, btext, "browser"
+            problems = [f"download: {p}" for p in problems] + [f"browser: {p}" for p in bproblems]
         elif btext:
             problems.append("browser also got almost no text")
+        if len(btext) > len(text):
+            text = btext  # keep what the browser saw, so <name>-raw.txt shows the problem
+    return data, problems, notes, text, method
+
+
+def process_platform(name, urls):
+    print(f"Processing {name}...")
+    path = json_path(name)
+    urls = [urls] if isinstance(urls, str) else list(urls)
+    all_problems, best_text = [], ""
+    data = None
+    for url in urls:
+        data, problems, notes, text, method = read_one(name, url)
+        if len(text) > len(best_text):
+            best_text = text
+        if not problems:
+            best_text = text
+            break
+        all_problems += [f"{p}" if len(urls) == 1 else f"[{url}] {p}" for p in problems]
+    else:
+        problems = all_problems
+    url = urls[0] if problems else url
+    text = best_text
 
     with open(f"{name}-raw.txt", "w", encoding="utf-8") as f:
         f.write(text)
