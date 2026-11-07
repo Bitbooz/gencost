@@ -60,7 +60,38 @@ MOVED = {
     "pages/playht.html": "pages/best-playht-alternatives-2026.html",
     "pages/voice/playht.html": "pages/best-playht-alternatives-2026.html",
     "pages/playht-vs-elevenlabs-pricing-2026.html": "pages/best-playht-alternatives-2026.html",
+    # two Runway vs Kling articles were merged into one
+    "pages/runway-vs-kling-pricing-comparison-2026.html": "pages/runway-vs-kling-pricing-2026.html",
 }
+
+MONTH = datetime.now(TZ).strftime("%B %Y")
+TOOLS = {}
+
+
+def tool_pages():
+    """Tool pages with live prices -> (tool name, category), from data/*.json."""
+    out = {}
+    for c in ("video", "voice", "music"):
+        try:
+            with open(f"data/{c}.json", encoding="utf-8") as f:
+                for pf in json.load(f).get("platforms", []):
+                    page = (pf.get("page") or "").lstrip("/")
+                    if page.endswith(".html"):
+                        out[page] = (pf["name"], c)
+        except Exception:
+            pass
+    return out
+
+
+def tool_title(name, cat):
+    what = "Plans & Cost per Clip" if cat == "video" else "Plans & Real Cost"
+    return f"{name} Pricing ({MONTH}): {what} | GenCost"
+
+
+def tool_desc(name, cat):
+    extra = "the real cost per clip" if cat == "video" else "what you really get"
+    return (f"{name} pricing for {MONTH}: every plan in US dollars, monthly and yearly, credits, "
+            f"{extra} and hidden costs. Checked every morning.")
 
 # Two pages had the same title; give the second one its own
 TITLE_FIXES = {
@@ -232,6 +263,8 @@ def build_block(path, raw, canonical, noindex, desc):
 def main():
     pages = sorted(p.replace(os.sep, "/") for p in glob.glob("*.html") + glob.glob("pages/**/*.html", recursive=True))
     pages = [p for p in pages if p not in SKIP]
+    global TOOLS
+    TOOLS = tool_pages()
     existing = set(pages)
     report, changed, sitemap, report_fixed = [], 0, [], []
     counts = {"canonical": 0, "description": 0, "noindex": 0, "links": 0, "titles": 0}
@@ -264,6 +297,18 @@ def main():
             report.append(f"  {path}: empty file (delete it on GitHub, or leave it - it is marked noindex)")
             continue
         new = raw
+
+        if path in TOOLS:
+            name, cat = TOOLS[path]
+            want_t, want_d = tool_title(name, cat), tool_desc(name, cat)
+            t0 = re.search(r"<title>[^<]*</title>", new)
+            if t0 and t0.group(0) != f"<title>{html.escape(want_t, quote=False)}</title>":
+                new = new.replace(t0.group(0), f"<title>{html.escape(want_t, quote=False)}</title>", 1)
+                counts["titles"] += 1
+            d0 = re.search(r'<meta name="description" content="[^"]*">', BLOCK.sub("", new))
+            want_meta = f'<meta name="description" content="{html.escape(want_d)}">'
+            if d0 and d0.group(0) != want_meta:
+                new = new.replace(d0.group(0), want_meta, 1)
 
         if path in TITLE_FIXES:
             a, b = TITLE_FIXES[path]

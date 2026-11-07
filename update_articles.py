@@ -504,6 +504,28 @@ def process(path, tools, matcher, updated):
         anchor = h1.find_next_sibling("p") if h1 else None
         (anchor or h1 or art.contents[0]).insert_after(box)
 
+    for gone in GONE:  # table rows and whole sections about a shut-down tool
+        rx = re.compile(r"^\s*" + re.escape(gone) + r"\b", re.I)
+        for tr in art.find_all("tr"):
+            first = tr.find(["td", "th"])
+            if first and rx.match(first.get_text(" ", strip=True)) and not in_live(tr):
+                tr.decompose()
+                report.append(f"    - removed a {gone} table row")
+        while True:
+            h = next((x for x in art.find_all(["h2", "h3"]) if x.get_text(" ", strip=True).lower() == gone.lower()), None)
+            if not h:
+                break
+            sec = h.find_parent("section")
+            if sec and sec.find(["h2", "h3"]) is h and "live-box" not in (sec.get("class") or []):
+                sec.decompose()
+            else:
+                for sib in list(h.find_next_siblings()):
+                    if sib.name in ("h2", "h3"):
+                        break
+                    sib.decompose()
+                h.decompose()
+            report.append(f"    - removed the {gone} section")
+
     for gone, (when, link) in GONE.items():
         if (art.find(class_="gone-note", attrs={"data-gone": gone}) or os.path.basename(path) == os.path.basename(link)
                 or art.find("a", href=link)):
@@ -574,6 +596,20 @@ NOTE_FIXES = {
         ("<h3>Google Veo: cheapest per clip, closest to Sora</h3>", "<h3>Google Veo: closest to Sora, and cheap per clip</h3>"),
         ("Per clip it is the cheapest option in this list, and the plan", "Per clip it is one of the cheapest options in this list, and the plan"),
     ],
+    # PlayHT has shut down: old voice articles no longer recommend it
+    "pages/cheapest-ai-voice-tools-in-2026.html": [
+        ("<strong>Cartesia's free tier</strong> and <strong>PlayHT's free plan</strong> are the cheapest realistic options. For paid plans scaling beyond hobby use, <strong>ElevenLabs' Creator tier ($22/mo)</strong> remains the best value-per-minute for quality voice cloning, while <strong>PlayHT</strong> wins on raw character volume per dollar at higher tiers.",
+         "<strong>Cartesia's free tier</strong> and <strong>ElevenLabs' free plan</strong> are the cheapest realistic options. For paid plans, <strong>Cartesia Pro ($5/mo)</strong> gives the most speech per dollar, while <strong>ElevenLabs' Creator tier ($22/mo)</strong> is the best pick for quality voice cloning."),
+        ("Murf is the most expensive per-minute option of the four,", "Murf is the most expensive per-minute option here,"),
+    ],
+    "pages/cheapest-ai-voice-cloning-tools-2026.html": [
+        (" PlayHT sits in the middle — competitive on paper but weaker voice cloning fidelity for the price.", ""),
+        ("A cost breakdown of ElevenLabs, Cartesia, and PlayHT voice cloning pricing in 2026", "A cost breakdown of ElevenLabs and Cartesia voice cloning pricing in 2026"),
+    ],
+    # two Runway vs Kling articles were merged into one
+    "index.html#merge": [
+        ('      <li class="reveal"><a class="art" href="/pages/runway-vs-kling-pricing-comparison-2026.html"><span class="cat video">Video</span><h3>Runway vs Kling: Full Pricing Comparison</h3><p>Plans, credits and cost per clip in depth</p></a></li>\n', ""),
+    ],
     # a right arrow that was saved with the wrong encoding when the articles were first written
     "pages/*.html": [("←’", "→")],
     # with real credits per clip Pika is cheaper than Luma at every clip length
@@ -588,7 +624,7 @@ NOTE_FIXES = {
 def fix_notes():
     """Small one-time text fixes. Safe to run every day: once fixed, nothing matches any more."""
     for pattern, pairs in NOTE_FIXES.items():
-        for path in sorted(glob.glob(pattern)):
+        for path in sorted(glob.glob(pattern.split("#")[0])):
             try:
                 with open(path, encoding="utf-8") as f:
                     raw = f.read()
@@ -596,12 +632,119 @@ def fix_notes():
                 continue
             new = raw
             for a, b in pairs:
-                if a in new and b not in new:
+                if a in new and (not b or b not in new):
                     new = new.replace(a, b)
             if new != raw:
                 with open(path, "w", encoding="utf-8", newline="") as f:
                     f.write(new)
                 print(f"{path}: text fixed")
+
+
+# Articles that now redirect elsewhere: never suggested as related reading
+MOVED_ARTICLES = {"pages/playht-vs-elevenlabs-pricing-2026.html", "pages/runway-vs-kling-pricing-comparison-2026.html"}
+
+
+def article_info(path):
+    raw = open(path, encoding="utf-8").read()
+    soup = BeautifulSoup(raw, PARSER)
+    art = soup.find("article", class_="prose")
+    h1 = art.find("h1") if art else None
+    t = soup.find("title")
+    title = h1.get_text(" ", strip=True) if h1 else re.sub(r"\s*\|\s*GenCost$", "", t.get_text() if t else path)
+    return title
+
+
+def write_article(path, raw, art):
+    m = re.search(r"<article\b[^>]*>.*</article>", raw, re.S)
+    if not m:
+        return False
+    new = raw[:m.start()] + str(art) + raw[m.end():]
+    if new != raw:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(new)
+        return True
+    return False
+
+
+def related_html(items, heading, extra=""):
+    lis = "".join(f'<li><a href="/{html.escape(p)}">{html.escape(t)}</a></li>' for p, t in items)
+    return BeautifulSoup(f'<section class="related" data-auto="related"><h2>{heading}</h2><ul>{lis}</ul>{extra}</section>', PARSER).find("section")
+
+
+def put_related(art, section):
+    old = art.find("section", attrs={"data-auto": "related"})
+    if old:
+        if str(old) != str(section):
+            old.replace_with(section)
+    else:
+        art.append(section)
+
+
+def plan_line(tool, p):
+    price = num(p.get("monthly_price_usd")) or 0
+    bits = [f"{money(price)}/mo" if price else "Free"]
+    cr = num(p.get("credits_or_minutes"))
+    if cr:
+        bits.append(f"{cr:,} {p.get('unit') or ''}".strip())
+    lens = sorted(int(k) for k in ((tool.get("clips") or {}).get("clips") or {}))
+    if lens and price:
+        secs = 10 if 10 in lens else lens[-1]
+        cc = clip_cost(tool, p, secs)
+        if cc:
+            bits.append(f"{secs}s clip ≈ ${cc[0]:.2f}")
+    return f'<div class="plan"><strong>{html.escape(p["name"])}</strong>: {html.escape(" · ".join(bits))}</div>'
+
+
+def link_pages(tools, names_by_article, report):
+    """'Related guides' on every article and tool page, and today's plans as the no-JavaScript fallback."""
+    live = {p: n for p, n in names_by_article.items() if p not in MOVED_ARTICLES}
+    titles = {p: article_info(p) for p in live}
+    changed = 0
+    for path, names in live.items():
+        scored = []
+        for other, onames in live.items():
+            if other == path:
+                continue
+            overlap = len(set(names) & set(onames))
+            if overlap:
+                scored.append((-overlap, other))
+        items = [(o, titles[o]) for _, o in sorted(scored)[:4]]
+        if not items:
+            continue
+        raw = open(path, encoding="utf-8").read()
+        soup = BeautifulSoup(raw, PARSER)
+        art = soup.find("article", class_="prose")
+        if not art:
+            continue
+        put_related(art, related_html(items, "Related guides"))
+        changed += write_article(path, raw, art)
+    for name, tool in tools.items():
+        page = (tool.get("page") or "").lstrip("/")
+        if not page.endswith(".html") or not os.path.exists(page):
+            continue
+        raw = open(page, encoding="utf-8").read()
+        soup = BeautifulSoup(raw, PARSER)
+        art = soup.find("article", class_="prose")
+        if not art:
+            continue
+        box = art.find(class_="live-plans")
+        if box and tool.get("plans"):
+            fresh = BeautifulSoup("".join(plan_line(tool, p) for p in tool["plans"]), PARSER)
+            body = fresh.body or fresh
+            if box.decode_contents() != body.decode_contents():
+                box.clear()
+                for el in list(body.children):
+                    box.append(el)
+        about = [p for p, n in live.items() if name in n]
+        about.sort(key=lambda p: (len(live[p]), p))
+        slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+        extra = f'<p><a href="/compare.html?tools={slug}">Compare {html.escape(name)} with other tools →</a></p>'
+        if about:
+            put_related(art, related_html([(p, titles[p]) for p in about[:6]], f"Guides that compare {html.escape(name)}", extra))
+        else:
+            put_related(art, BeautifulSoup(f'<section class="related" data-auto="related">{extra}</section>', PARSER).find("section"))
+        changed += write_article(page, raw, art)
+    report.append(f"Related guides and tool-page fallbacks: {changed} pages updated")
 
 
 def main():
@@ -611,16 +754,19 @@ def main():
         print("No price data found (run regenerate_html.py first).")
         return
     matcher = Matcher(tools)
+    names_by_article = {}
     lines = [f"Article prices updated {datetime.now(TZ).strftime('%Y-%m-%d %H:%M')} (price data from {updated})\n"]
     for path in ARTICLES:
         r = process(path, tools, matcher, updated)
         if r is None:
             continue
         marked, changed, names, report = r
+        names_by_article[path] = names
         live = BeautifulSoup(open(path, encoding="utf-8").read(), PARSER).find_all(class_="live-price")
         lines.append(f"{path}: {len(live)} live prices ({marked} new, {changed} changed today) · box: {', '.join(names) or 'none'}")
         lines += report
         print(lines[-1 - len(report)])
+    link_pages(tools, names_by_article, lines)
     with open("article-review.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
 
