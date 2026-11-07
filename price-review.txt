@@ -1,20 +1,5 @@
-2026-11-07 14:33  hailuo  (https://hailuoai.video/pricing)
-    - [https://hailuoai.video/pricing] download: pricing page returned almost no text (HTTP 200)
-    - [https://hailuoai.video/pricing] browser: no plans found
-    - [https://hailuoai.video/subscribe] download: pricing page returned almost no text (HTTP 200)
-    - [https://hailuoai.video/subscribe] browser: no plans found
-    -> kept the previous prices
-
-2026-11-07 14:35  sora  (https://openai.com/sora)
-    - no plans found
-    -> kept the previous prices
-
-2026-11-07 14:38  heygen  (https://www.heygen.com/pricing)
-    - Pro: yearly price 41 could not be confirmed, left out
-    -> saved the monthly prices
-
-2026-11-07 14:41  murf  (https://murf.ai/pricing)
-    - download: pricing page returned almost no text (HTTP 200)
+2026-11-07 15:04  sora  (https://openai.com/sora)
+    - download: no plans found
     - browser: no plans found
     -> kept the previous prices
 
