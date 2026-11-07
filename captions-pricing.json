@@ -9,7 +9,7 @@
       "offer": ""
     },
     {
-      "name": "Frontier",
+      "name": "Frontier 1x",
       "monthly_price_usd": 69.99,
       "credits_or_minutes": 1400,
       "unit": "credits",
@@ -31,5 +31,5 @@
     }
   ],
   "source": "https://www.captions.ai/pricing",
-  "last_checked": "2026-11-07 23:49"
+  "last_checked": "2026-11-08 00:09"
 }

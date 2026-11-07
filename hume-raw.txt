@@ -287,7 +287,7 @@ How intrusive is the background noise?
 1.9
 3.1
 4.6
-3.8
+2.3
 Add question
 You can add or change a question any time.
 

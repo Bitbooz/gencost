@@ -1,12 +1,12 @@
 {
  "category": "voice",
- "updated": "2026-11-07 23:52",
+ "updated": "2026-11-08 00:15",
  "platforms": [
   {
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-07 23:49",
+   "checked": "2026-11-08 00:09",
    "plans": [
     {
      "name": "Free",
@@ -71,7 +71,7 @@
    "name": "Murf AI",
    "page": "/pages/voice/murf.html",
    "source": "https://murf.ai/pricing",
-   "checked": "2026-11-07 23:49",
+   "checked": "2026-11-08 00:10",
    "plans": [
     {
      "name": "Free",
@@ -111,34 +111,26 @@
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-07 23:50",
+   "checked": "2026-11-08 00:11",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 20000,
-     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Pro",
      "monthly_price_usd": 5,
-     "credits_or_minutes": 100000,
-     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Startup",
      "monthly_price_usd": 49,
-     "credits_or_minutes": 1250000,
-     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Scale",
      "monthly_price_usd": 299,
-     "credits_or_minutes": 8000000,
-     "unit": "credits",
      "offer": ""
     }
    ],
@@ -156,13 +148,13 @@
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-07 23:50",
+   "checked": "2026-11-08 00:11",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 0,
-     "unit": "credits",
+     "unit": "",
      "offer": ""
     },
     {
@@ -170,7 +162,7 @@
      "monthly_price_usd": 29,
      "yearly_price_usd": 11.58,
      "credits_or_minutes": 0,
-     "unit": "credits",
+     "unit": "",
      "offer": ""
     }
    ]
@@ -179,37 +171,30 @@
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-07 23:50",
+   "checked": "2026-11-08 00:11",
    "plans": [
-    {
-     "name": "Free",
-     "monthly_price_usd": 0,
-     "credits_or_minutes": 60,
-     "unit": "minutes",
-     "offer": ""
-    },
     {
      "name": "Hobbyist",
      "monthly_price_usd": 24,
      "yearly_price_usd": 16,
-     "credits_or_minutes": 600,
-     "unit": "minutes",
+     "credits_or_minutes": 400,
+     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Creator",
      "monthly_price_usd": 35,
      "yearly_price_usd": 24,
-     "credits_or_minutes": 1800,
-     "unit": "minutes",
+     "credits_or_minutes": 800,
+     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Business",
      "monthly_price_usd": 65,
      "yearly_price_usd": 50,
-     "credits_or_minutes": 2400,
-     "unit": "minutes",
+     "credits_or_minutes": 1500,
+     "unit": "credits",
      "offer": ""
     }
    ],
@@ -240,7 +225,7 @@
    "name": "Fliki",
    "page": "/pages/voice/fliki.html",
    "source": "https://fliki.ai/pricing",
-   "checked": "2026-11-07 23:51",
+   "checked": "2026-11-08 00:12",
    "plans": [
     {
      "name": "Free",
@@ -255,13 +240,13 @@
    "name": "Resemble AI",
    "page": "/pages/resemble.html",
    "source": "https://www.resemble.ai/pricing/",
-   "checked": "2026-11-07 23:50",
+   "checked": "2026-11-08 00:12",
    "plans": [
     {
      "name": "Flex",
      "monthly_price_usd": 0,
      "credits_or_minutes": 0,
-     "unit": "",
+     "unit": "credits",
      "offer": ""
     },
     {
@@ -269,7 +254,7 @@
      "monthly_price_usd": 350,
      "yearly_price_usd": 280,
      "credits_or_minutes": 0,
-     "unit": "",
+     "unit": "credits",
      "offer": ""
     },
     {
@@ -277,7 +262,7 @@
      "monthly_price_usd": 1000,
      "yearly_price_usd": 800,
      "credits_or_minutes": 0,
-     "unit": "",
+     "unit": "credits",
      "offer": ""
     }
    ]
@@ -286,30 +271,24 @@
    "name": "Fish Audio",
    "page": "/pages/fish-audio.html",
    "source": "https://fish.audio/plan/",
-   "checked": "2026-11-07 23:50",
+   "checked": "2026-11-08 00:12",
    "plans": [
     {
      "name": "Free Tier",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 8000,
-     "unit": "credits",
-     "offer": ""
+     "offer": "No credit card needed"
     },
     {
      "name": "Plus",
      "monthly_price_usd": 15,
      "yearly_price_usd": 11,
-     "credits_or_minutes": 250000,
-     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Pro",
      "monthly_price_usd": 100,
      "yearly_price_usd": 75,
-     "credits_or_minutes": 2000000,
-     "unit": "credits",
-     "offer": ""
+     "offer": "7 days money back guarantee"
     }
    ]
   }
