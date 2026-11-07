@@ -1,17 +1,6 @@
-SEO check 2026-11-07 19:54
-120 pages checked, 116 changed today, 91 in sitemap.xml, 18 marked noindex
-Made by this script: 82 canonical links, 29 descriptions; today: 6 links moved to the main page, 3 titles fixed
-
-Fixed today:
-  pages/best-free-ai-video-tools-2026.html: removed code fence / pasted <head> from the article
-  pages/cheapest-ai-music-tools-in-2026.html: removed code fence / pasted <head> from the article
-  pages/cheapest-ai-music-tools-in-2026.html: added the missing <h1>
-  pages/cheapest-ai-voice-cloning-tools-2026.html: added the missing <h1>
-  pages/cheapest-ai-voice-cloning-tools-2026.html: removed ' | GenCost' from the breadcrumb
-  pages/cheapest-ai-voice-tools-in-2026.html: added the missing <h1>
-  pages/cheapest-ai-voice-tools-in-2026.html: removed ' | GenCost' from the breadcrumb
-  pages/samples/best-free-ai-tools-for-youtube-thumbnails-short.html: added the missing <h1>
-  pages/samples/best-free-ai-tools-for-youtube-thumbnails-short.html: removed ' | GenCost' from the breadcrumb
+SEO check 2026-11-07 20:50
+122 pages checked, 6 changed today, 90 in sitemap.xml, 22 marked noindex
+Made by this script: 84 canonical links, 28 descriptions; today: 1 links moved to the main page, 0 titles fixed
 
 Needs a human:
   pages/sample-package-youtube-ai-tools.html: empty file (delete it on GitHub, or leave it - it is marked noindex)

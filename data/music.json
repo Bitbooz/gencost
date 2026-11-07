@@ -1,12 +1,12 @@
 {
  "category": "music",
- "updated": "2026-11-07 19:54",
+ "updated": "2026-11-07 20:50",
  "platforms": [
   {
    "name": "Suno",
    "page": "/pages/music/suno.html",
    "source": "https://suno.com/pricing",
-   "checked": "2026-11-07 19:53",
+   "checked": "2026-11-07 20:49",
    "plans": [
     {
      "name": "Free",
@@ -18,7 +18,6 @@
     {
      "name": "Pro",
      "monthly_price_usd": 8,
-     "yearly_price_usd": 8,
      "credits_or_minutes": 2500,
      "unit": "credits",
      "offer": ""
@@ -26,7 +25,6 @@
     {
      "name": "Premier",
      "monthly_price_usd": 24,
-     "yearly_price_usd": 24,
      "credits_or_minutes": 10000,
      "unit": "credits",
      "offer": ""
@@ -46,7 +44,7 @@
    "name": "Udio",
    "page": "/pages/music/udio.html",
    "source": "https://www.udio.com/pricing",
-   "checked": "2026-11-07 19:53",
+   "checked": "2026-11-07 20:49",
    "plans": [
     {
      "name": "Free",
@@ -86,7 +84,7 @@
    "name": "Soundraw",
    "page": "/pages/music/soundraw.html",
    "source": "https://soundraw.io/pricing",
-   "checked": "2026-11-07 19:54",
+   "checked": "2026-11-07 20:49",
    "plans": [
     {
      "name": "Creator",
@@ -127,7 +125,7 @@
    "name": "AIVA",
    "page": "/pages/music/aiva.html",
    "source": "https://www.aiva.ai/pricing",
-   "checked": "2026-11-07 19:54",
+   "checked": "2026-11-07 20:50",
    "plans": [
     {
      "name": "Free",
@@ -167,22 +165,22 @@
    "name": "Boomy",
    "page": "/pages/music/boomy.html",
    "source": "https://boomy.com/pricing",
-   "checked": "2026-11-07 19:54",
+   "checked": "2026-11-07 20:50",
    "plans": [
     {
-     "name": "Free",
+     "name": "FREE",
      "monthly_price_usd": 0,
      "offer": ""
     },
     {
-     "name": "Creator",
+     "name": "CREATOR",
      "monthly_price_usd": 9.99,
-     "offer": "33% off"
+     "offer": ""
     },
     {
      "name": "PRO",
      "monthly_price_usd": 29.99,
-     "offer": "25% off"
+     "offer": ""
     }
    ],
    "hidden": {

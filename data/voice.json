@@ -1,12 +1,12 @@
 {
  "category": "voice",
- "updated": "2026-11-07 19:54",
+ "updated": "2026-11-07 20:50",
  "platforms": [
   {
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-07 19:52",
+   "checked": "2026-11-07 20:47",
    "plans": [
     {
      "name": "Free",
@@ -71,7 +71,7 @@
    "name": "Murf AI",
    "page": "/pages/voice/murf.html",
    "source": "https://murf.ai/pricing",
-   "checked": "2026-11-07 19:52",
+   "checked": "2026-11-07 20:48",
    "plans": [
     {
      "name": "Free",
@@ -111,7 +111,7 @@
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-07 19:52",
+   "checked": "2026-11-07 20:48",
    "plans": [
     {
      "name": "Free",
@@ -156,21 +156,17 @@
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-07 19:53",
+   "checked": "2026-11-07 20:48",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": ""
     },
     {
      "name": "Premium",
      "monthly_price_usd": 29,
      "yearly_price_usd": 11.58,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": ""
     }
    ]
@@ -179,37 +175,30 @@
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-07 19:53",
+   "checked": "2026-11-07 20:48",
    "plans": [
     {
      "name": "Hobbyist",
      "monthly_price_usd": 24,
      "yearly_price_usd": 16,
-     "credits_or_minutes": 10,
-     "unit": "media_hours",
+     "credits_or_minutes": 400,
+     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Creator",
      "monthly_price_usd": 35,
      "yearly_price_usd": 24,
-     "credits_or_minutes": 30,
-     "unit": "media_hours",
+     "credits_or_minutes": 800,
+     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Business",
      "monthly_price_usd": 65,
      "yearly_price_usd": 50,
-     "credits_or_minutes": 40,
-     "unit": "media_hours",
-     "offer": ""
-    },
-    {
-     "name": "Free",
-     "monthly_price_usd": 0,
-     "credits_or_minutes": 1,
-     "unit": "media_hours",
+     "credits_or_minutes": 1500,
+     "unit": "credits",
      "offer": ""
     }
    ],
@@ -220,34 +209,6 @@
     "source": "https://www.descript.com/pricing",
     "checked": "2026-11-07",
     "official": true
-   }
-  },
-  {
-   "name": "PlayHT",
-   "page": "/pages/voice/playht.html",
-   "source": "",
-   "checked": "",
-   "plans": [
-    {
-     "monthly_price_usd": 39,
-     "name": "Creator",
-     "unit": "characters",
-     "credits_or_minutes": 200000
-    },
-    {
-     "monthly_price_usd": 99,
-     "name": "Unlimited",
-     "unit": "unlimited",
-     "credits_or_minutes": 0
-    }
-   ],
-   "hidden": {
-    "items": [
-     "Commercial use only on paid plans"
-    ],
-    "source": "https://andrew.ooo/tools/ai-voice/playht/",
-    "checked": "2026-03-11",
-    "official": false
    }
   },
   {
