@@ -113,6 +113,10 @@ def load_hidden_costs():
         return {}
 
 
+# Tools that have shut down: kept out of the price lists (their old files stay for history)
+DISCONTINUED = {"Sora", "PlayHT"}
+
+
 def build(category, paths, names):
     clip_costs = load_clip_costs() if category == "video" else {}
     hidden = load_hidden_costs()
@@ -129,6 +133,8 @@ def build(category, paths, names):
                 break
         if not name:
             name = str(d.get("platform") or os.path.basename(path).replace("-pricing.json", "")).title()
+        if name in DISCONTINUED:
+            continue
         platforms.append({
             "name": name,
             "page": page,

@@ -53,6 +53,15 @@ NOINDEX = [
 DUPLICATES = {f"pages/{n}.html": f"pages/music/{n}.html" for n in ("aiva", "boomy", "soundraw", "suno", "udio")}
 DUPLICATES.update({f"pages/{n}.html": f"pages/voice/{n}.html" for n in ("cartesia", "elevenlabs", "murf", "playht", "speechify")})
 
+# Pages about tools that shut down -> the article about their alternatives
+# (_redirects sends visitors there too; these pages are kept out of Google)
+MOVED = {
+    "pages/sora.html": "pages/best-sora-alternatives-2026.html",
+    "pages/playht.html": "pages/best-playht-alternatives-2026.html",
+    "pages/voice/playht.html": "pages/best-playht-alternatives-2026.html",
+    "pages/playht-vs-elevenlabs-pricing-2026.html": "pages/best-playht-alternatives-2026.html",
+}
+
 # Two pages had the same title; give the second one its own
 TITLE_FIXES = {
     "pages/runway-vs-kling-pricing-comparison-2026.html": (
@@ -269,7 +278,7 @@ def main():
                 report_fixed.append(f"  {path}: {x}")
 
         # links to old duplicate pages -> the main page
-        for dup, main_page in DUPLICATES.items():
+        for dup, main_page in list(DUPLICATES.items()) + list(MOVED.items()):
             for q in ('"', "'"):
                 old_href, new_href = f"href={q}/{dup}{q}", f"href={q}/{main_page}{q}"
                 if old_href in new:
@@ -277,7 +286,7 @@ def main():
                     new = new.replace(old_href, new_href)
 
         bare = BLOCK.sub("", new)
-        noindex = any(re.search(rx, path) for rx in NOINDEX)
+        noindex = any(re.search(rx, path) for rx in NOINDEX) or path in MOVED
         has_canon = 'rel="canonical"' in bare
         canonical = None
         if not has_canon:

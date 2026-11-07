@@ -58,6 +58,12 @@ EXTRA_ALIASES = {
     "InVideo": ["InVideo AI", "invideo"],
 }
 
+# Tools that have shut down: articles that mention them get a short note with a link
+GONE = {
+    "Sora": ("was shut down by OpenAI in 2026", "/pages/best-sora-alternatives-2026.html"),
+    "PlayHT": ("shut down on 31 December 2025", "/pages/best-playht-alternatives-2026.html"),
+}
+
 MONEY = r"[~≈]?\s?\$\d[\d,]*(?:\.\d{1,2})?(?:\s?/\s?(?:mo|month))?"
 # In tables a price can be a range like "$10–12/mo"; it becomes one live price
 MONEY_RANGE = r"[~≈]?\s?\$\d[\d,]*(?:\.\d{1,2})?(?:\s?[–-]\s?\$?\d[\d,]*(?:\.\d{1,2})?)?(?:\s?/\s?(?:mo|month))?"
@@ -131,8 +137,9 @@ def live_value(tool, plan, bill):
 
 def cheapest_paid(tool, need_clips=False):
     """Cheapest plan with a price (and credits, if clip costs are needed)."""
+    pc = (tool.get("clips") or {}).get("plan_credits") or {}
     ps = [p for p in tool["plans"] if (num(p.get("monthly_price_usd")) or 0) > 0
-          and (not need_clips or (num(p.get("credits_or_minutes")) or 0) > 0)]
+          and (not need_clips or (num(p.get("credits_or_minutes")) or num(pc.get(p["name"])) or 0) > 0)]
     return min(ps, key=lambda p: p["monthly_price_usd"]) if ps else None
 
 
@@ -491,6 +498,19 @@ def process(path, tools, matcher, updated):
         anchor = h1.find_next_sibling("p") if h1 else None
         (anchor or h1 or art.contents[0]).insert_after(box)
 
+    for gone, (when, link) in GONE.items():
+        if art.find(class_="gone-note", attrs={"data-gone": gone}) or os.path.basename(path) == os.path.basename(link):
+            continue
+        if re.search(r"(?<![\w])" + re.escape(gone) + r"(?![\w])", art.get_text(" "), re.I):
+            note = BeautifulSoup(f'<p class="gone-note" data-gone="{gone}"><strong>Update:</strong> {gone} {when}, so it is no longer in '
+                                 f'our price lists. See the <a href="{link}">cheapest {gone} alternatives</a>.</p>', PARSER).find("p")
+            anchor = art.find("section", class_="live-box") or art.find("h1")
+            if anchor:
+                anchor.insert_after(note)
+            else:
+                art.insert(0, note)
+            report.append(f"    - added a note that {gone} has shut down")
+
     changed = refresh(art, tools, report)
 
     for node in art.find_all(string=re.compile(r"Last checked:\s*\d{4}-\d{2}-\d{2}")):
@@ -509,8 +529,29 @@ def process(path, tools, matcher, updated):
 
 # Old sentences on other pages that are no longer true; replaced wherever they are found
 NOTE_FIXES = {
-    "index.html": [("Clip estimates assume one credit per second of video, which differs between tools.",
-                    "Clip costs use each tool's own credits per clip for the model named (hover to see it). Tools without a known clip cost show none.")],
+    # Sora and PlayHT have shut down (2026-11-07): new article cards, no PlayHT in teaser texts
+    "index.html": [
+        ('<li class="reveal"><a class="art" href="/pages/playht-vs-elevenlabs-pricing-2026.html"><span class="cat voice">Voice</span><h3>PlayHT vs ElevenLabs Pricing 2026</h3><p>Voice tools comparison</p></a></li>',
+         '<li class="reveal"><a class="art" href="/pages/best-playht-alternatives-2026.html"><span class="cat voice">Voice</span><h3>PlayHT Is Shut Down: Cheapest Alternatives</h3><p>Cartesia vs ElevenLabs vs Murf</p></a></li>'),
+        ('<li class="reveal"><a class="art" href="/pages/cheapest-ai-video-tools-in-2026.html"><span class="cat video">Video</span><h3>Cheapest AI Video Tools in 2026</h3><p>Kling vs Runway vs Pika vs Luma</p></a></li>',
+         '<li class="reveal"><a class="art" href="/pages/best-sora-alternatives-2026.html"><span class="cat video">Video</span><h3>Sora Is Shut Down: Cheapest Alternatives</h3><p>Veo vs Kling vs Runway, cost per clip</p></a></li>\n'
+         '      <li class="reveal"><a class="art" href="/pages/cheapest-ai-video-tools-in-2026.html"><span class="cat video">Video</span><h3>Cheapest AI Video Tools in 2026</h3><p>Kling vs Runway vs Pika vs Luma</p></a></li>'),
+        ("ElevenLabs, PlayHT, Cartesia and more", "ElevenLabs, Cartesia, Murf and more"),
+        ("Clip estimates assume one credit per second of video, which differs between tools.",
+         "Clip costs use each tool's own credits per clip for the model named (hover to see it). Tools without a known clip cost show none."),
+    ],
+    "voice.html": [
+        ('<li class="reveal"><a class="art" href="/pages/playht-vs-elevenlabs-pricing-2026.html"><span class="cat voice">Voice</span><h3>PlayHT vs ElevenLabs Pricing 2026</h3><p>Voice tools comparison</p></a></li>',
+         '<li class="reveal"><a class="art" href="/pages/best-playht-alternatives-2026.html"><span class="cat voice">Voice</span><h3>PlayHT Is Shut Down: Cheapest Alternatives</h3><p>Cartesia vs ElevenLabs vs Murf</p></a></li>'),
+        ("ElevenLabs, PlayHT, Cartesia and more", "ElevenLabs, Cartesia, Murf and more"),
+        ("Compare ElevenLabs, Cartesia, PlayHT, Murf,", "Compare ElevenLabs, Cartesia, Murf,"),
+    ],
+    "changelog.html": [
+        ('<div class="entry">\n<div class="date">2026-10-29</div>',
+         '<div class="entry">\n<div class="date">2026-11-07</div>\n<p>Removed Sora and PlayHT, which have both shut down, and added guides to their cheapest alternatives. '
+         'Added the real cost per video clip, "Watch out" notes on hidden costs for 26 tools, and live prices inside articles.</p>\n</div>\n'
+         '<div class="entry">\n<div class="date">2026-10-29</div>'),
+    ],
     # a right arrow that was saved with the wrong encoding when the articles were first written
     "pages/*.html": [("←’", "→")],
     # with real credits per clip Pika is cheaper than Luma at every clip length
@@ -533,7 +574,8 @@ def fix_notes():
                 continue
             new = raw
             for a, b in pairs:
-                new = new.replace(a, b)
+                if a in new and b not in new:
+                    new = new.replace(a, b)
             if new != raw:
                 with open(path, "w", encoding="utf-8", newline="") as f:
                     f.write(new)

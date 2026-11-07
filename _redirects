@@ -1,0 +1,5 @@
+# Netlify redirects. Tools that shut down -> the article about their alternatives.
+/pages/sora.html                                /pages/best-sora-alternatives-2026.html    301!
+/pages/playht.html                              /pages/best-playht-alternatives-2026.html  301!
+/pages/voice/playht.html                        /pages/best-playht-alternatives-2026.html  301!
+/pages/playht-vs-elevenlabs-pricing-2026.html   /pages/best-playht-alternatives-2026.html  301!

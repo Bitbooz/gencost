@@ -49,7 +49,6 @@ VIDEO = {
     # A list = several addresses to try, in order, until one gives confirmed prices
     "hailuo": ["https://hailuoai.video/pricing", "https://hailuoai.video/subscribe"],
     "veo": "https://one.google.com/about/google-ai-plans/",  # Veo is sold through Google AI plans
-    "sora": "https://openai.com/sora",
     "vidu": ["https://www.vidu.com/pricing", "https://www.vidu.studio/pricing"],
     "krea": "https://www.krea.ai/pricing",
     "heygen": "https://www.heygen.com/pricing",

@@ -497,3 +497,4 @@ main.page { padding-bottom: 24px; }
 .watch li { margin: 2px 0; }
 .watch-src { margin-top: 6px; color: var(--faint); font-size: 0.75rem; }
 .watch-src a { color: inherit; text-decoration: underline; }
+.prose .gone-note { margin: 14px 0; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(255, 176, 32, 0.28); background: rgba(255, 176, 32, 0.06); font-size: 0.92rem; }
