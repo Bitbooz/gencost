@@ -1,12 +1,12 @@
 {
  "category": "voice",
- "updated": "2026-11-07 18:02",
+ "updated": "2026-11-07 18:25",
  "platforms": [
   {
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-07 17:59",
+   "checked": "2026-11-07 18:23",
    "plans": [
     {
      "name": "Free",
@@ -21,7 +21,7 @@
      "yearly_price_usd": 5,
      "credits_or_minutes": 30000,
      "unit": "credits",
-     "offer": "$1 first month"
+     "offer": "first month $1"
     },
     {
      "name": "Creator",
@@ -29,7 +29,7 @@
      "yearly_price_usd": 18.33,
      "credits_or_minutes": 121000,
      "unit": "credits",
-     "offer": "$11 first month"
+     "offer": "first month $11"
     },
     {
      "name": "Pro",
@@ -61,7 +61,7 @@
    "name": "Murf AI",
    "page": "/pages/voice/murf.html",
    "source": "https://murf.ai/pricing",
-   "checked": "2026-11-07 18:00",
+   "checked": "2026-11-07 18:23",
    "plans": [
     {
      "name": "Free",
@@ -92,7 +92,7 @@
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-07 18:00",
+   "checked": "2026-11-07 18:23",
    "plans": [
     {
      "name": "Free",
@@ -128,13 +128,13 @@
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-07 18:00",
+   "checked": "2026-11-07 18:23",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 0,
-     "unit": "credits",
+     "unit": "",
      "offer": ""
     },
     {
@@ -142,7 +142,7 @@
      "monthly_price_usd": 29,
      "yearly_price_usd": 11.58,
      "credits_or_minutes": 0,
-     "unit": "credits",
+     "unit": "",
      "offer": ""
     }
    ]
@@ -151,7 +151,7 @@
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-07 18:01",
+   "checked": "2026-11-07 18:24",
    "plans": [
     {
      "name": "Hobbyist",
