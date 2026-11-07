@@ -382,6 +382,7 @@ Free tools
 Integrations
 Cookbooks
 Learn
+Glossary
 Pricing
 Compare providers
 Research

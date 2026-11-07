@@ -1,104 +1,104 @@
-2026-11-07 01:01  hailuo  (https://hailuoai.video/pricing)
+2026-11-07 10:58  hailuo  (https://hailuoai.video/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 
-2026-11-07 01:01  veo  (https://deepmind.google/technologies/veo/)
-    - error: Error code: 400
+2026-11-07 10:58  veo  (https://deepmind.google/technologies/veo/)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  sora  (https://openai.com/sora)
+2026-11-07 10:58  sora  (https://openai.com/sora)
     - pricing page returned almost no text (HTTP 403)
     -> kept the previous prices
 
-2026-11-07 01:01  vidu  (https://www.vidu.studio/pricing)
+2026-11-07 10:58  vidu  (https://www.vidu.studio/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 
-2026-11-07 01:01  krea  (https://www.krea.ai/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  krea  (https://www.krea.ai/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  heygen  (https://www.heygen.com/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  heygen  (https://www.heygen.com/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  higgsfield  (https://higgsfield.ai/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  higgsfield  (https://higgsfield.ai/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  runway  (https://runwayml.com/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  runway  (https://runwayml.com/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  kling  (https://klingai.com/pricing)
+2026-11-07 10:58  kling  (https://klingai.com/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 
-2026-11-07 01:01  synthesia  (https://www.synthesia.io/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  synthesia  (https://www.synthesia.io/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  pika  (https://pika.art/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  pika  (https://pika.art/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  luma  (https://lumalabs.ai/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  luma  (https://lumalabs.ai/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  viggle  (https://viggle.ai/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  viggle  (https://viggle.ai/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  invideo  (https://invideo.io/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  invideo  (https://invideo.io/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  capcut  (https://www.capcut.com/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  capcut  (https://www.capcut.com/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  ltx  (https://ltx.studio/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  ltx  (https://ltx.studio/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  elevenlabs  (https://elevenlabs.io/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  elevenlabs  (https://elevenlabs.io/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  murf  (https://murf.ai/pricing)
+2026-11-07 10:58  murf  (https://murf.ai/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 
-2026-11-07 01:01  cartesia  (https://cartesia.ai/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  cartesia  (https://cartesia.ai/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  speechify  (https://speechify.com/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  speechify  (https://speechify.com/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  descript  (https://www.descript.com/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  descript  (https://www.descript.com/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  suno  (https://suno.com/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  suno  (https://suno.com/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  udio  (https://www.udio.com/pricing)
+2026-11-07 10:58  udio  (https://www.udio.com/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 
-2026-11-07 01:01  soundraw  (https://soundraw.io/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  soundraw  (https://soundraw.io/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  aiva  (https://www.aiva.ai/pricing)
-    - error: Error code: 400
+2026-11-07 10:58  aiva  (https://www.aiva.ai/pricing)
+    - error: Connection error.
     -> kept the previous prices
 
-2026-11-07 01:01  boomy  (https://boomy.com/pricing)
+2026-11-07 10:58  boomy  (https://boomy.com/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 
