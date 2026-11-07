@@ -6,23 +6,25 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 50,
       "unit": "credits",
-      "offer": "Free forever"
+      "offer": ""
     },
     {
       "name": "Pro",
-      "monthly_price_usd": 8,
+      "monthly_price_usd": 10,
+      "yearly_price_usd": 8,
       "credits_or_minutes": 2500,
       "unit": "credits",
-      "offer": "Save $24 Billed $96/year"
+      "offer": ""
     },
     {
       "name": "Premier",
-      "monthly_price_usd": 24,
+      "monthly_price_usd": 30,
+      "yearly_price_usd": 24,
       "credits_or_minutes": 10000,
       "unit": "credits",
-      "offer": "Save $72 Billed $288/year"
+      "offer": ""
     }
   ],
   "source": "https://suno.com/pricing",
-  "last_checked": "2026-11-07 11:13"
+  "last_checked": "2026-11-07 13:53"
 }

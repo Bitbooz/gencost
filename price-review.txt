@@ -1,36 +1,44 @@
-2026-11-07 11:10  hailuo  (https://hailuoai.video/pricing)
+2026-11-07 13:50  hailuo  (https://hailuoai.video/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 
-2026-11-07 11:10  veo  (https://deepmind.google/technologies/veo/)
+2026-11-07 13:50  veo  (https://deepmind.google/technologies/veo/)
     - no plans found
     -> kept the previous prices
 
-2026-11-07 11:10  sora  (https://openai.com/sora)
+2026-11-07 13:50  sora  (https://openai.com/sora)
     - pricing page returned almost no text (HTTP 403)
     -> kept the previous prices
 
-2026-11-07 11:10  vidu  (https://www.vidu.studio/pricing)
+2026-11-07 13:50  vidu  (https://www.vidu.studio/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 
-2026-11-07 11:10  higgsfield  (https://higgsfield.ai/pricing)
+2026-11-07 13:50  higgsfield  (https://higgsfield.ai/pricing)
     - no plans found
     -> kept the previous prices
 
-2026-11-07 11:11  kling  (https://klingai.com/pricing)
+2026-11-07 13:51  kling  (https://klingai.com/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 
-2026-11-07 11:12  murf  (https://murf.ai/pricing)
+2026-11-07 13:51  luma  (https://lumalabs.ai/pricing)
+    - Ultra: yearly price 250 could not be confirmed, left out
+    -> saved the monthly prices
+
+2026-11-07 13:52  murf  (https://murf.ai/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 
-2026-11-07 11:13  udio  (https://www.udio.com/pricing)
+2026-11-07 13:53  speechify  (https://speechify.com/pricing)
+    - Premium: yearly price 11.58 could not be confirmed, left out
+    -> saved the monthly prices
+
+2026-11-07 13:53  udio  (https://www.udio.com/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 
-2026-11-07 11:13  boomy  (https://boomy.com/pricing)
+2026-11-07 13:54  boomy  (https://boomy.com/pricing)
     - pricing page returned almost no text (HTTP 200)
     -> kept the previous prices
 

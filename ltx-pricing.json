@@ -6,30 +6,33 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 800,
       "unit": "credits",
-      "offer": "Forever"
+      "offer": ""
     },
     {
       "name": "Lite",
       "monthly_price_usd": 15,
+      "yearly_price_usd": 12,
       "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday Billed yearly $144"
+      "offer": "Save 50% for Cyber Monday"
     },
     {
       "name": "Standard",
       "monthly_price_usd": 35,
+      "yearly_price_usd": 28,
       "credits_or_minutes": 28000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday Billed yearly $336"
+      "offer": "Save 50% for Cyber Monday; 28800 additional Computing Seconds/month first 3 months"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 125,
+      "yearly_price_usd": 100,
       "credits_or_minutes": 110000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday Billed yearly $1200"
+      "offer": "Save 50% for Cyber Monday"
     }
   ],
   "source": "https://ltx.studio/pricing",
-  "last_checked": "2026-11-07 11:12"
+  "last_checked": "2026-11-07 13:52"
 }

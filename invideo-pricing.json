@@ -4,25 +4,28 @@
     {
       "name": "Starter",
       "monthly_price_usd": 20,
+      "yearly_price_usd": 10,
       "credits_or_minutes": 400,
       "unit": "credits",
-      "offer": "50% off billed annually, Save $120 per seat compared to monthly"
+      "offer": ""
     },
     {
       "name": "Plus",
       "monthly_price_usd": 60,
+      "yearly_price_usd": 30,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "50% off billed annually, Save $360 per seat compared to monthly"
+      "offer": ""
     },
     {
       "name": "Max",
       "monthly_price_usd": 250,
+      "yearly_price_usd": 250,
       "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": "Best value"
+      "offer": ""
     }
   ],
   "source": "https://invideo.io/pricing",
-  "last_checked": "2026-11-07 11:11"
+  "last_checked": "2026-11-07 13:52"
 }

@@ -6,30 +6,33 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 100,
       "unit": "units",
-      "offer": "40% off yearly"
+      "offer": ""
     },
     {
       "name": "Basic",
-      "monthly_price_usd": 5,
+      "monthly_price_usd": 9,
+      "yearly_price_usd": 5,
       "credits_or_minutes": 5000,
       "unit": "units",
-      "offer": "40% off yearly"
+      "offer": ""
     },
     {
       "name": "Pro",
-      "monthly_price_usd": 21,
+      "monthly_price_usd": 35,
+      "yearly_price_usd": 21,
       "credits_or_minutes": 20000,
       "unit": "units",
-      "offer": "40% off yearly"
+      "offer": ""
     },
     {
       "name": "Max",
-      "monthly_price_usd": 63,
+      "monthly_price_usd": 105,
+      "yearly_price_usd": 63,
       "credits_or_minutes": 60000,
       "unit": "units",
-      "offer": "40% off yearly"
+      "offer": ""
     }
   ],
   "source": "https://www.krea.ai/pricing",
-  "last_checked": "2026-11-07 11:10"
+  "last_checked": "2026-11-07 13:50"
 }
