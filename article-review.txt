@@ -1,0 +1,20 @@
+Article prices updated 2026-11-07 14:43 (price data from 2026-11-07 15:43)
+
+pages/best-cheap-ai-video-tools-for-youtube-2026.html: 0 live prices (0 new, 0 changed today) · box: CapCut, Kling AI, ElevenLabs, Pika, Runway, Luma
+pages/best-free-ai-video-tools-2026.html: 0 live prices (0 new, 0 changed today) · box: Kling AI, Runway, Pika, Luma
+pages/cheapest-ai-avatar-tools-in-2026.html: 0 live prices (0 new, 0 changed today) · box: HeyGen, Synthesia
+pages/cheapest-ai-music-tools-in-2026.html: 3 live prices (3 new, 1 changed today) · box: Suno, Udio, AIVA, Soundraw
+pages/cheapest-ai-video-tools-in-2026.html: 6 live prices (6 new, 7 changed today) · box: Kling AI, Pika, Runway, Luma
+pages/cheapest-ai-voice-cloning-tools-2026.html: 6 live prices (6 new, 3 changed today) · box: ElevenLabs, Cartesia
+pages/cheapest-ai-voice-tools-in-2026.html: 9 live prices (9 new, 5 changed today) · box: PlayHT, Cartesia, ElevenLabs
+pages/elevenlabs-vs-cartesia-pricing-2026.html: 5 live prices (5 new, 5 changed today) · box: ElevenLabs, Cartesia
+pages/heygen-vs-capcut-pricing-2026.html: 3 live prices (3 new, 5 changed today) · box: HeyGen, CapCut
+pages/heygen-vs-synthesia-pricing-2026.html: 5 live prices (5 new, 4 changed today) · box: HeyGen, Synthesia
+pages/kling-vs-hailuo-pricing-2026.html: 3 live prices (3 new, 9 changed today) · box: Kling AI, Hailuo AI
+pages/pika-vs-luma-pricing-2026.html: 5 live prices (5 new, 2 changed today) · box: Pika, Luma
+pages/playht-vs-elevenlabs-pricing-2026.html: 2 live prices (2 new, 2 changed today) · box: PlayHT, ElevenLabs
+pages/runway-vs-kling-pricing-2026.html: 5 live prices (5 new, 19 changed today) · box: Runway, Kling AI
+pages/runway-vs-kling-pricing-comparison-2026.html: 5 live prices (5 new, 5 changed today) · box: Runway, Kling AI
+pages/runway-vs-luma-pricing-2026.html: 3 live prices (3 new, 5 changed today) · box: Runway, Luma
+pages/stable-audio-vs-beatoven-pricing-2026.html: 0 live prices (0 new, 0 changed today) · box: none
+pages/suno-vs-udio-pricing-2026.html: 4 live prices (4 new, 4 changed today) · box: Suno, Udio

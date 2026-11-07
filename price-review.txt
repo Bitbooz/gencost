@@ -1,5 +1,9 @@
-2026-11-07 15:04  sora  (https://openai.com/sora)
+2026-11-07 15:34  sora  (https://openai.com/sora)
     - download: no plans found
     - browser: no plans found
     -> kept the previous prices
+
+2026-11-07 15:35  heygen  (https://www.heygen.com/pricing)
+    - Pro: yearly price 41 could not be confirmed, left out
+    -> saved the monthly prices
 

@@ -1,13 +1,20 @@
 {
  "category": "voice",
- "updated": "2026-11-07 15:13",
+ "updated": "2026-11-07 15:43",
  "platforms": [
   {
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-07 15:09",
+   "checked": "2026-11-07 15:39",
    "plans": [
+    {
+     "name": "Free",
+     "monthly_price_usd": 0,
+     "credits_or_minutes": 10000,
+     "unit": "credits",
+     "offer": ""
+    },
     {
      "name": "Starter",
      "monthly_price_usd": 6,
@@ -54,7 +61,7 @@
    "name": "Murf AI",
    "page": "/pages/voice/murf.html",
    "source": "https://murf.ai/pricing",
-   "checked": "2026-11-07 15:10",
+   "checked": "2026-11-07 15:39",
    "plans": [
     {
      "name": "Free",
@@ -85,7 +92,7 @@
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-07 15:10",
+   "checked": "2026-11-07 15:40",
    "plans": [
     {
      "name": "Free",
@@ -121,7 +128,7 @@
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-07 15:10",
+   "checked": "2026-11-07 15:40",
    "plans": [
     {
      "name": "Free",
@@ -144,7 +151,7 @@
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-07 15:11",
+   "checked": "2026-11-07 15:41",
    "plans": [
     {
      "name": "Free",
