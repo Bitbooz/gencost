@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How we verify prices – GenCost</title>
-<meta name="description" content="How GenCost checks and updates AI video, voice and music pricing.">
+<meta name="description" content="How GenCost checks AI tool prices every morning against official pricing pages, and how the real cost per video clip is worked out.">
+<title>How We Verify Prices | GenCost</title>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -19,22 +20,6 @@
 <link rel="stylesheet" href="/assets/gencost.css">
 <script>document.documentElement.classList.add('js');</script>
 <script defer src="/assets/gencost.js"></script>
-<!-- SEO:START (added by seo_update.py, rebuilt daily) -->
-<link rel="canonical" href="https://getgencost.com/how-we-verify.html">
-<meta property="og:site_name" content="GenCost">
-<meta property="og:type" content="website">
-<meta property="og:title" content="How we verify prices – GenCost">
-<meta property="og:description" content="How GenCost checks and updates AI video, voice and music pricing.">
-<meta property="og:url" content="https://getgencost.com/how-we-verify.html">
-<meta property="og:image" content="https://getgencost.com/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="How we verify prices – GenCost">
-<meta name="twitter:description" content="How GenCost checks and updates AI video, voice and music pricing.">
-<meta name="twitter:image" content="https://getgencost.com/assets/og-image.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://getgencost.com/"}, {"@type": "ListItem", "position": 2, "name": "How we verify prices"}]}]}</script>
-<!-- SEO:END -->
 </head>
 <body class="page-util">
 <nav class="top">
@@ -62,32 +47,33 @@
 <main class="page">
   <div class="wrap narrow">
     <article class="prose">
-<h1>How we verify prices</h1>
-<div class="box">
-<p>GenCost converts credit systems into approximate real-dollar prices so you can compare AI video, voice and music tools side-by-side.</p>
-</div>
-<h2>What we do</h2>
-<div class="box">
+<h1>How We Verify Prices</h1>
+<p class="lead">Every price on GenCost comes from the tool's own official pricing page, and is checked every morning before it goes live.</p>
+
+<h2>Every morning</h2>
+<ol>
+<li><strong>Read the official page.</strong> At about 06:17 Norwegian time, GenCost opens each tool's pricing page, with a real browser when the page needs one. Where a page has Monthly and Yearly tabs, both are read.</li>
+<li><strong>Extract the plans.</strong> AI reads the plan names, the monthly price, the yearly price and the credits included. The price after any first-month deal is used, never a crossed-out "was" price.</li>
+<li><strong>Check every number.</strong> Each price must appear on the page itself (or be a yearly total divided by 12). If it doesn't, the new price is rejected and the last confirmed price stays.</li>
+<li><strong>Publish.</strong> The price lists, tool pages, comparison page, calculator and the prices inside every guide update by themselves.</li>
+</ol>
+
+<h2>Cost per clip</h2>
+<p>AI video tools sell credits, not seconds. GenCost works out the cost of one clip from each tool's own credits per clip for a named model and resolution (for example "Kling 3.0, 720p"), divided by the plan's price per credit. Where a tool doesn't publish its credits per clip, we show no clip cost rather than a guess, and figures from review sites are marked as not official.</p>
+
+<h2>Hidden costs</h2>
+<p>The "Watch out" notes (watermarks, credits that expire, intro prices, commercial-use rules) are taken from each tool's pricing page, with the source and the date they were checked.</p>
+
+<h2>What we don't do</h2>
 <ul>
-<li>We check official pricing pages regularly.</li>
-<li>We translate credits into approximate dollar costs (usually per 10 seconds).</li>
-<li>We update the site automatically when prices change.</li>
-<li>We show the last update time on the homepage.</li>
+<li>We don't use affiliate links, and no tool pays to be listed.</li>
+<li>We don't claim prices are the same in every country: tools sometimes show different prices by region. GenCost shows US dollar prices.</li>
+<li>We don't hide when a price could not be checked: those tools show "Entered by hand" or the date they were last checked.</li>
 </ul>
-</div>
-<h2>What we don’t do</h2>
-<div class="box">
-<ul>
-<li>We don’t rank quality or claim one tool is “best”.</li>
-<li>We don’t hide that prices change often.</li>
-<li>We don’t use affiliate links that affect the numbers we show.</li>
-</ul>
-</div>
+
 <h2>Always double-check</h2>
-<div class="box">
-<p>Prices change frequently. Always confirm the current price inside the tool before you buy or generate.</p>
-</div>
-    </article>
+<p>Prices change often. Always confirm the current price inside the tool before you buy. Found a wrong price? Email <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a>. More about the project on the <a href="/about.html">About page</a>.</p>
+</article>
 
   </div>
 </main>

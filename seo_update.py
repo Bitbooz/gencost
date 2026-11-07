@@ -391,6 +391,11 @@ def main():
                     new = new.replace(old_href, new_href)
 
         # speed: Orbitron is only used for the logo (and one heading), so load just those letters
+        # footer: link to the About page next to "Order a package"
+        if 'href="/about.html"' not in new and '<li><a href="/order.html">Order a package</a></li>' in new:
+            new = new.replace('<li><a href="/order.html">Order a package</a></li>',
+                              '<li><a href="/about.html">About GenCost</a></li>\n          <li><a href="/order.html">Order a package</a></li>', 1)
+
         if FONTS not in new:
             new = re.sub(r'<link href="https://fonts\.googleapis\.com/css2\?family=[^"]*Orbitron[^"]*" rel="stylesheet">',
                          FONTS, new, count=1)
