@@ -4,21 +4,27 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "",
       "offer": ""
     },
     {
       "name": "Standard",
       "monthly_price_usd": 11,
       "yearly_price_usd": 11,
+      "credits_or_minutes": 0,
+      "unit": "",
       "offer": "monthly price not shown"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 33,
       "yearly_price_usd": 33,
+      "credits_or_minutes": 0,
+      "unit": "",
       "offer": "monthly price not shown"
     }
   ],
   "source": "https://www.aiva.ai/pricing",
-  "last_checked": "2026-11-07 22:41"
+  "last_checked": "2026-11-07 23:28"
 }

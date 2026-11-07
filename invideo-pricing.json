@@ -7,7 +7,7 @@
       "yearly_price_usd": 10,
       "credits_or_minutes": 400,
       "unit": "credits",
-      "offer": "50% off for first-time AI creators"
+      "offer": "50% off"
     },
     {
       "name": "Plus",
@@ -27,5 +27,5 @@
     }
   ],
   "source": "https://invideo.io/pricing",
-  "last_checked": "2026-11-07 22:37"
+  "last_checked": "2026-11-07 23:24"
 }

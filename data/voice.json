@@ -1,20 +1,27 @@
 {
  "category": "voice",
- "updated": "2026-11-07 22:41",
+ "updated": "2026-11-07 23:29",
  "platforms": [
   {
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-07 22:38",
+   "checked": "2026-11-07 23:25",
    "plans": [
+    {
+     "name": "Free",
+     "monthly_price_usd": 0,
+     "credits_or_minutes": 10000,
+     "unit": "credits",
+     "offer": ""
+    },
     {
      "name": "Starter",
      "monthly_price_usd": 6,
      "yearly_price_usd": 5,
      "credits_or_minutes": 30000,
      "unit": "credits",
-     "offer": "$1 first month"
+     "offer": ""
     },
     {
      "name": "Creator",
@@ -64,7 +71,7 @@
    "name": "Murf AI",
    "page": "/pages/voice/murf.html",
    "source": "https://murf.ai/pricing",
-   "checked": "2026-11-07 22:38",
+   "checked": "2026-11-07 23:26",
    "plans": [
     {
      "name": "Free",
@@ -104,7 +111,7 @@
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-07 22:39",
+   "checked": "2026-11-07 23:26",
    "plans": [
     {
      "name": "Free",
@@ -149,7 +156,7 @@
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-07 22:39",
+   "checked": "2026-11-07 23:26",
    "plans": [
     {
      "name": "Free",
@@ -172,15 +179,8 @@
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-07 22:39",
+   "checked": "2026-11-07 23:26",
    "plans": [
-    {
-     "name": "Free",
-     "monthly_price_usd": 0,
-     "credits_or_minutes": 100,
-     "unit": "credits",
-     "offer": ""
-    },
     {
      "name": "Hobbyist",
      "monthly_price_usd": 24,
@@ -202,6 +202,13 @@
      "monthly_price_usd": 65,
      "yearly_price_usd": 50,
      "credits_or_minutes": 1500,
+     "unit": "credits",
+     "offer": ""
+    },
+    {
+     "name": "Free",
+     "monthly_price_usd": 0,
+     "credits_or_minutes": 100,
      "unit": "credits",
      "offer": ""
     }
