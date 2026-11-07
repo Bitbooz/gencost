@@ -4,8 +4,8 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
-      "credits_or_minutes": 3,
-      "unit": "videos",
+      "credits_or_minutes": 0,
+      "unit": "credits",
       "offer": ""
     },
     {
@@ -25,5 +25,5 @@
     }
   ],
   "source": "https://www.heygen.com/pricing",
-  "last_checked": "2026-11-07 21:04"
+  "last_checked": "2026-11-07 21:27"
 }
