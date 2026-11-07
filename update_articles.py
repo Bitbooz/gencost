@@ -511,23 +511,30 @@ def process(path, tools, matcher, updated):
 NOTE_FIXES = {
     "index.html": [("Clip estimates assume one credit per second of video, which differs between tools.",
                     "Clip costs use each tool's own credits per clip for the model named (hover to see it). Tools without a known clip cost show none.")],
+    # a right arrow that was saved with the wrong encoding when the articles were first written
+    "pages/*.html": [("←’", "→")],
+    # with real credits per clip Pika is cheaper than Luma at every clip length
+    "pages/pika-vs-luma-pricing-2026.html": [("Best for short clips: Luma<br/>", "Best for short clips: Pika<br/>"),
+                                              ("Best for volume: Luma<br/>", "Best for volume: Pika<br/>")],
 }
 
 
 def fix_notes():
-    for path, pairs in NOTE_FIXES.items():
-        try:
-            with open(path, encoding="utf-8") as f:
-                raw = f.read()
-        except FileNotFoundError:
-            continue
-        new = raw
-        for a, b in pairs:
-            new = new.replace(a, b)
-        if new != raw:
-            with open(path, "w", encoding="utf-8") as f:
-                f.write(new)
-            print(f"{path}: note updated")
+    """Small one-time text fixes. Safe to run every day: once fixed, nothing matches any more."""
+    for pattern, pairs in NOTE_FIXES.items():
+        for path in sorted(glob.glob(pattern)):
+            try:
+                with open(path, encoding="utf-8") as f:
+                    raw = f.read()
+            except (FileNotFoundError, UnicodeDecodeError):
+                continue
+            new = raw
+            for a, b in pairs:
+                new = new.replace(a, b)
+            if new != raw:
+                with open(path, "w", encoding="utf-8", newline="") as f:
+                    f.write(new)
+                print(f"{path}: text fixed")
 
 
 def main():
