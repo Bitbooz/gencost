@@ -145,7 +145,7 @@ def clip_cost(tool, plan, secs, bill="monthly"):
     info = tool.get("clips") or {}
     clips = {int(k): v for k, v in (info.get("clips") or {}).items()}
     price, p = live_value(tool, plan["name"], bill) if plan else (None, None)
-    credits = num((p or {}).get("credits_or_minutes"))
+    credits = num((p or {}).get("credits_or_minutes")) or num((info.get("plan_credits") or {}).get(plan["name"] if plan else ""))
     if not clips or not price or not credits:
         return None
     if secs in clips:
@@ -404,7 +404,7 @@ def refresh_examples(art, tools, report):
                 changed += 1
             totals.append((usd * n, tool["name"]))
             info = tool["clips"]
-            have = num(plan.get("credits_or_minutes")) or 0
+            have = num(plan.get("credits_or_minutes")) or num((info.get("plan_credits") or {}).get(plan["name"])) or 0
             fits = int(have // cr) if cr else 0
             extra = f"; the plan covers about {fits} such clips a month" if fits < n else ""
             basis.append(f"{tool['name']} {plan['name']} {money(live_value(tool, plan['name'], 'monthly')[0])}/mo, "
@@ -514,6 +514,9 @@ NOTE_FIXES = {
     # a right arrow that was saved with the wrong encoding when the articles were first written
     "pages/*.html": [("←’", "→")],
     # with real credits per clip Pika is cheaper than Luma at every clip length
+    # with real credits per clip (Kling 3.0 vs Hailuo H3) Kling is cheaper on small plans, Hailuo on the biggest
+    "pages/kling-vs-hailuo-pricing-2026.html": [("Very close in price. Hailuo can be slightly better value on higher plans.",
+                                               "Kling is cheaper per clip on the smaller plans. On the biggest plans Hailuo works out cheaper per clip.")],
     "pages/pika-vs-luma-pricing-2026.html": [("Best for short clips: Luma<br/>", "Best for short clips: Pika<br/>"),
                                               ("Best for volume: Luma<br/>", "Best for volume: Pika<br/>")],
 }

@@ -103,8 +103,19 @@ def load_clip_costs():
         return {}
 
 
+def load_hidden_costs():
+    """data/hidden-costs.json (kept by hand): watermarks, expiring credits, commercial-use rules."""
+    try:
+        with open(os.path.join(data_dir, "hidden-costs.json"), encoding="utf-8-sig") as f:
+            return json.load(f).get("tools", {})
+    except Exception as e:
+        print(f"  No hidden costs: {e}")
+        return {}
+
+
 def build(category, paths, names):
     clip_costs = load_clip_costs() if category == "video" else {}
+    hidden = load_hidden_costs()
     platforms = []
     for path in paths:
         d = load(path)
@@ -127,6 +138,8 @@ def build(category, paths, names):
         })
         if name in clip_costs:
             platforms[-1]["clips"] = clip_costs[name]
+        if name in hidden:
+            platforms[-1]["hidden"] = hidden[name]
     order = [n for _, n, _ in names]
     platforms.sort(key=lambda p: (order.index(p["name"]) if p["name"] in order else 999, p["name"]))
 
@@ -138,7 +151,7 @@ def build(category, paths, names):
         try:
             with open(out_path, encoding="utf-8") as f:
                 old = json.load(f)
-            strip = lambda ps: [{k: v for k, v in p.items() if k not in ("checked", "clips")} for p in ps]
+            strip = lambda ps: [{k: v for k, v in p.items() if k not in ("checked", "clips", "hidden")} for p in ps]
             if old.get("updated") and strip(old.get("platforms", [])) == strip(platforms):
                 updated = old["updated"]
         except Exception:

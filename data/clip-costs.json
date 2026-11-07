@@ -1,70 +1,136 @@
 {
- "about": "Credits one video clip costs on each tool. Kept by hand: the daily job does not change this file. Used for the 'per clip' cost on plan cards and for the 'Real-world example' boxes in articles. 'clips' maps clip length in seconds to credits. A tool that is not listed gets no clip estimate (better than a wrong one).",
+ "about": "Credits one video clip costs on each tool. Kept by hand: the daily job does not change this file. Used for the 'per clip' cost on plan cards and for the 'Real-world example' boxes in articles. 'clips' maps clip length in seconds to credits. 'plan_credits' fills in a plan's credits when the price data has none. A tool that is not listed gets no clip estimate (better than a wrong one).",
  "updated": "2026-11-07",
  "tools": {
   "Runway": {
    "model": "Gen-4.5",
-   "clips": {"5": 60, "10": 120},
+   "clips": {
+    "5": 60,
+    "10": 120
+   },
    "source": "https://runwayml.com/pricing",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "official": true
   },
   "Luma": {
    "model": "Ray3.2, 720p",
-   "clips": {"5": 100, "10": 300},
+   "clips": {
+    "5": 100,
+    "10": 300
+   },
    "source": "https://lumalabs.ai/pricing",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "official": true
   },
   "Pika": {
    "model": "Pika 2.5, 720p",
-   "clips": {"5": 20},
+   "clips": {
+    "5": 20
+   },
    "source": "https://pika.art/pricing",
-   "checked": "2026-11-06",
+   "checked": "2026-11-07",
    "official": true
   },
   "InVideo": {
    "model": "Seedance 2.5, 720p",
-   "clips": {"5": 56},
+   "clips": {
+    "5": 56
+   },
    "source": "https://invideo.io/pricing",
    "checked": "2026-11-06",
    "official": true
   },
   "Kling AI": {
    "model": "Kling 3.0, 720p, no audio",
-   "clips": {"5": 30, "10": 60},
+   "clips": {
+    "5": 30,
+    "10": 60
+   },
    "source": "https://eesel.ai/blog/kling-ai-pricing",
    "checked": "2026-06-15",
    "official": false
   },
   "Hailuo AI": {
-   "model": "Hailuo 2.3, 768p",
-   "clips": {"6": 25, "10": 50},
-   "source": "https://aireiter.com/blog/hailuo-ai-pricing",
-   "checked": "2026-09-18",
-   "official": false
+   "model": "MiniMax H3, 768p",
+   "clips": {
+    "6": 42,
+    "10": 70
+   },
+   "source": "https://hailuoai.video/pricing",
+   "checked": "2026-11-07",
+   "official": true,
+   "note": "The pricing page says 1,000 credits make about 143 seconds of H3 768p video, about 7 credits per second."
   },
   "Higgsfield": {
-   "model": "Kling 3.0, 720p",
-   "clips": {"5": 7},
-   "source": "https://www.hooked.so/compare/higgsfield-pricing",
-   "checked": "2026-09-25",
-   "official": false
+   "model": "Kling 3.0",
+   "clips": {
+    "5": 14
+   },
+   "source": "https://higgsfield.ai/pricing",
+   "checked": "2026-11-07",
+   "official": true,
+   "rough": true,
+   "note": "Higgsfield's own estimate: about 14 credits per Kling 3.0 video. Clip length not stated."
   },
   "Google Veo": {
    "model": "Veo Fast in Flow",
-   "clips": {"8": 20},
+   "clips": {
+    "8": 20
+   },
    "source": "https://diyai.io/ai-tools/video-generation/google-veo-pricing/",
    "checked": "2026-11-07",
-   "official": false
+   "official": false,
+   "plan_credits": {
+    "Google AI Plus": 200,
+    "Google AI Pro": 1000,
+    "Google AI Ultra": 10000
+   },
+   "note": "Flow credits per plan from Google's page: 200, 1,000 and 10,000 a month."
   },
   "Vidu": {
-   "model": "standard mode",
-   "clips": {"4": 5, "8": 8},
-   "source": "https://flowith.io/blog/vidu-pricing-2026-free-vs-pro-vs-enterprise-cost",
-   "checked": "2026-03-01",
-   "official": false,
-   "rough": true
+   "model": "Q4, 540p",
+   "clips": {
+    "4": 8,
+    "8": 16
+   },
+   "source": "https://www.vidu.com/pricing",
+   "checked": "2026-11-07",
+   "official": true,
+   "note": "Q4 model usage: 540P 2 credits/sec."
+  },
+  "CapCut": {
+   "model": "Seedance 2.0 Mini, 720p",
+   "clips": {
+    "5": 25,
+    "10": 50
+   },
+   "source": "https://www.capcut.com/pricing",
+   "checked": "2026-11-07",
+   "official": true,
+   "note": "Pro: 1,200 credits make up to 240 seconds at 720p, 5 credits per second."
+  },
+  "Krea": {
+   "model": "Kling 2.5",
+   "clips": {
+    "5": 263
+   },
+   "source": "https://www.krea.ai/pricing",
+   "checked": "2026-11-07",
+   "official": true,
+   "rough": true,
+   "note": "Krea's table: about 19 five-second Kling 2.5 videos on Basic (5,000 units)."
+  },
+  "Viggle": {
+   "model": "character swap, 1 character",
+   "clips": {
+    "5": 5,
+    "10": 10
+   },
+   "source": "https://docs.viggle.ai/v1/pricing",
+   "checked": "2026-11-07",
+   "official": true,
+   "rough": true,
+   "note": "API rate: 1 credit per character per second. App credits may be charged differently."
   }
  }
 }

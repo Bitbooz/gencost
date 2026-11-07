@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
     plans = [];
     (data.platforms || []).forEach(function (pf) {
       (pf.plans || []).forEach(function (p) {
-        var price = GenCost.price(p), credits = typeof p.credits_or_minutes === "number" ? p.credits_or_minutes : 0;
+        var price = GenCost.price(p), credits = typeof p.credits_or_minutes === "number" && p.credits_or_minutes > 0 ? p.credits_or_minutes : ((p.__clips && p.__clips.plan_credits && p.__clips.plan_credits[p.name]) || 0);
         if (price > 0 && credits > 0 && GenCost.clipLengths(p).length) plans.push({ key: pf.name + "|" + p.name, label: pf.name + " " + p.name + " (" + GenCost.money(price) + "/mo)", price: price, credits: credits, plan: p });
       });
     });

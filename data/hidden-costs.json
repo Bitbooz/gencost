@@ -1,0 +1,243 @@
+{
+ "about": "Costs and limits that are easy to miss, per tool: watermarks, credits that expire, commercial-use rules. Kept by hand from each tool's pricing page (official) or a dated review (not official). The daily job does not change this file.",
+ "updated": "2026-11-07",
+ "tools": {
+  "HeyGen": {
+   "items": [
+    "Free videos are watermarked",
+    "Monthly credits roll over for one month only (yearly: until renewal)",
+    "Unused credits are lost when you cancel"
+   ],
+   "source": "https://www.heygen.com/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Runway": {
+   "items": [
+    "Standard and Pro credits reset every month (only Max rolls over 1 month)",
+    "Free credits are a one-time 125, not monthly",
+    "Extra credits: minimum purchase 1,000"
+   ],
+   "source": "https://runwayml.com/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Kling AI": {
+   "items": [
+    "The first month is 30% off; the price shown here is what you pay after that",
+    "Watermark removal and commercial use only on paid plans"
+   ],
+   "source": "https://app.klingai.com/global/membership/membership-plan",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Synthesia": {
+   "items": [
+    "Free videos carry a Synthesia watermark",
+    "Unused minutes and credits don't roll over",
+    "Dubbing costs extra credits: 80 per minute with lip-sync"
+   ],
+   "source": "https://www.synthesia.io/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Pika": {
+   "items": [
+    "Free has no watermark but no commercial license (from Starter)",
+    "Plan credits don't roll over; bought top-ups expire after 365 days",
+    "Payments are non-refundable"
+   ],
+   "source": "https://pika.art/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Luma": {
+   "items": [
+    "No free plan",
+    "1080p costs 4× the credits of 720p (Ray3.2)"
+   ],
+   "source": "https://lumalabs.ai/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Viggle": {
+   "items": [
+    "Free Mix videos are watermarked",
+    "Monthly credits expire on your billing date",
+    "Bought credits only work while you have a paid plan"
+   ],
+   "source": "https://viggle.ai/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "InVideo": {
+   "items": [
+    "Unused credits don't roll over",
+    "Credit costs per model can change without notice"
+   ],
+   "source": "https://invideo.io/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "CapCut": {
+   "items": [
+    "The AI video per-second prices shown on CapCut's page are first-month offers",
+    "Renews automatically"
+   ],
+   "source": "https://www.capcut.com/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "LTX Studio": {
+   "items": [
+    "Free and Lite are personal use only; commercial use from Standard",
+    "Refunds only within 14 days and under 1,200 credits used"
+   ],
+   "source": "https://ltx.studio/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Hailuo AI": {
+   "items": [
+    "Watermark removal needs a paid plan",
+    "H3 at 2K costs about 1.7× more per second than 768p"
+   ],
+   "source": "https://hailuoai.video/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Vidu": {
+   "items": [
+    "Commercial use and watermark-free downloads only on paid plans"
+   ],
+   "source": "https://www.vidu.com/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Krea": {
+   "items": [
+    "Free has no commercial license",
+    "Monthly units don't roll over; bought units expire after 90 days"
+   ],
+   "source": "https://www.krea.ai/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Midjourney": {
+   "items": [
+    "Companies earning over $1M a year must use Pro or Mega",
+    "Images are public unless you're on Pro or Mega (Stealth Mode)",
+    "Unused Fast hours expire each month"
+   ],
+   "source": "https://eesel.ai/blog/midjourney-pricing",
+   "checked": "2026-06-05",
+   "official": false
+  },
+  "Leonardo": {
+   "items": [
+    "Free: your images are public and Leonardo holds the rights",
+    "Paid plans roll unused tokens over, up to a cap"
+   ],
+   "source": "https://eesel.ai/blog/leonardo-ai-pricing",
+   "checked": "2026-06-05",
+   "official": false
+  },
+  "Ideogram": {
+   "items": [
+    "Free images are public; private images from the Plus plan",
+    "Monthly credits don't roll over; bought credits last 365 days"
+   ],
+   "source": "https://docs.ideogram.ai/faq",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "ElevenLabs": {
+   "items": [
+    "Free has no commercial license (from Starter)",
+    "Creator is half price the first month only",
+    "Unused paid credits expire if you downgrade or cancel"
+   ],
+   "source": "https://elevenlabs.io/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Murf AI": {
+   "items": [
+    "Free: no downloads and no commercial rights",
+    "A business license only comes with the Business plan"
+   ],
+   "source": "https://murf.ai/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Cartesia": {
+   "items": [
+    "Free has no commercial license (from Pro)",
+    "Credits roll over, up to 2× your monthly amount"
+   ],
+   "source": "https://cartesia.ai/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Descript": {
+   "items": [
+    "Watermark-free export needs a paid plan"
+   ],
+   "source": "https://www.descript.com/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "PlayHT": {
+   "items": [
+    "Commercial use only on paid plans"
+   ],
+   "source": "https://andrew.ooo/tools/ai-voice/playht/",
+   "checked": "2026-03-11",
+   "official": false
+  },
+  "Suno": {
+   "items": [
+    "Free: no downloads and no commercial rights",
+    "Monthly credits don't carry over; top-ups need an active plan"
+   ],
+   "source": "https://suno.com/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Udio": {
+   "items": [
+    "Credits don't roll over",
+    "Free: 10 credits a day, max 3 full songs a day"
+   ],
+   "source": "https://www.udio.com/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "AIVA": {
+   "items": [
+    "Free: AIVA owns the copyright, you must credit AIVA and can't monetize",
+    "You own the copyright only on Pro"
+   ],
+   "source": "https://www.aiva.ai/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Boomy": {
+   "items": [
+    "Free: no downloads and no commercial use"
+   ],
+   "source": "https://boomy.com/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  },
+  "Soundraw": {
+   "items": [
+    "Plans are for companies under 10 employees; bigger ones need Enterprise",
+    "Artist Starter has only 10 downloads a month"
+   ],
+   "source": "https://soundraw.io/pricing",
+   "checked": "2026-11-07",
+   "official": true
+  }
+ }
+}

@@ -490,3 +490,10 @@ main.page { padding-bottom: 24px; }
 .prose .live-box .note { margin: 0; }
 .prose .live-price { border-bottom: 1px dotted rgba(0,212,255,0.6); }
 .prose .est-basis { display: inline-block; margin-top: 6px; color: var(--muted); font-size: 0.82rem; line-height: 1.45; }
+/* "Watch out" box: hidden costs per tool */
+.watch { margin-top: 12px; padding: 10px 12px; border-radius: 12px; border: 1px solid rgba(255, 176, 32, 0.28); background: rgba(255, 176, 32, 0.06); font-size: 0.83rem; }
+.watch-k { font-weight: 700; color: #ffb020; font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; }
+.watch ul { margin: 0; padding-left: 18px; color: var(--text); }
+.watch li { margin: 2px 0; }
+.watch-src { margin-top: 6px; color: var(--faint); font-size: 0.75rem; }
+.watch-src a { color: inherit; text-decoration: underline; }

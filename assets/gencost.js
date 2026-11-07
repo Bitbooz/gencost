@@ -94,7 +94,7 @@
   GC.clipCost = function (plan, secs) {
     const info = plan && plan.__clips;
     const price = GC.price(plan);
-    const credits = num(plan && plan.credits_or_minutes);
+    const credits = num(plan && plan.credits_or_minutes) || num(info && info.plan_credits && info.plan_credits[plan.name]);
     if (!info || !info.clips || !price || !credits || credits <= 0) return null;
     const known = Object.keys(info.clips).map(Number).sort((a, b) => a - b);
     if (!known.length) return null;
@@ -114,14 +114,23 @@
     return info && info.clips ? Object.keys(info.clips).map(Number).sort((a, b) => a - b) : [];
   };
 
+  /* "Watch out" box: watermarks, credits that expire, commercial-use rules
+     (data/hidden-costs.json, merged into each tool as pf.hidden) */
+  GC.hiddenHtml = function (pf) {
+    const h = pf && pf.hidden;
+    if (!h || !(h.items || []).length) return "";
+    const from = h.official
+      ? `From the official pricing page${h.source ? ` (<a href="${esc(h.source)}" target="_blank" rel="noopener">source</a>)` : ""}, checked ${esc(h.checked || "")}`
+      : `From a review dated ${esc(h.checked || "")}${h.source ? ` (<a href="${esc(h.source)}" target="_blank" rel="noopener">source</a>)` : ""}; not confirmed on the official page`;
+    return `<div class="watch"><div class="watch-k">Watch out</div><ul>${h.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul><div class="watch-src">${from}</div></div>`;
+  };
+
   /* Cost estimate per category. Video uses the real clip costs above;
      voice per 1k characters / minute, music per unit. */
   GC.estimate = function (plan, category) {
     const price = GC.price(plan);
-    const credits = num(plan.credits_or_minutes);
-    if (!price || !credits || credits <= 0) return "";
-    const unit = String(plan.unit || "").toLowerCase();
     if (category === "video") {
+      if (!price || !GC.clipCost(plan, (GC.clipLengths(plan)[0] || 5))) return "";
       const lens = GC.clipLengths(plan);
       if (!lens.length) return "";
       const parts = lens.map((s) => {
@@ -129,9 +138,12 @@
         return c ? `${s}s clip ≈ $${c.usd.toFixed(2)}` : "";
       }).filter(Boolean);
       const info = plan.__clips;
-      const tip = `${info.model}: ${lens.map((s) => `${info.clips[s]} credits per ${s}s`).join(", ")}. Source checked ${info.checked || "?"}.`;
+      const tip = `${info.model}: ${lens.map((s) => `${info.clips[s]} credits per ${s}s`).join(", ")}.${info.note ? " " + info.note : ""} Source checked ${info.checked || "?"}.`;
       return `<span title="${esc(tip)}">${parts.join(" · ")} <span class="cost-model">(${esc(info.model)}${info.rough ? ", rough" : ""})</span></span>`;
     }
+    const credits = num(plan.credits_or_minutes);
+    if (!price || !credits || credits <= 0) return "";
+    const unit = String(plan.unit || "").toLowerCase();
     if (category === "voice") {
       if (unit.includes("character")) return `~$${((price / credits) * 1000).toFixed(3)} / 1k chars`;
       if (unit.includes("minute")) return `~$${(price / credits).toFixed(2)} / minute`;
@@ -322,6 +334,7 @@
         return `<div class="plat reveal${wasIn ? " in" : ""}">
           <div class="plat-top"><a href="${esc(pf.page)}">${esc(pf.name)} →</a><span>${GC.checkedText(pf)}${source}</span></div>
           ${(pf.plans || []).map((plan) => GC.planRow(plan, category)).join("")}
+          ${GC.hiddenHtml(pf)}
         </div>`;
       }).join("");
     }
@@ -368,7 +381,7 @@
         const note = pf.checked
           ? `<span class="dot"></span>Live prices · checked ${esc(pf.checked)}${pf.source ? ` · <a href="${esc(pf.source)}" target="_blank" rel="noopener">Official pricing</a>` : ""}`
           : `Prices entered by hand · not checked automatically yet`;
-        box.innerHTML = (hasYearly ? `<div data-billing-toggle></div>` : "") + rows + `<p class="live-note">${note}</p>`;
+        box.innerHTML = (hasYearly ? `<div data-billing-toggle></div>` : "") + rows + GC.hiddenHtml(pf) + `<p class="live-note">${note}</p>`;
         box.classList.add("is-live");
         GC.initToggles(box);
       }).catch(() => {});
@@ -433,6 +446,7 @@
                 <li>${GC.checkedText(t.pf)}</li>
               </ul>
               <div class="cmp-plans">${(t.pf.plans || []).map((p) => GC.planRow(p, t.cat)).join("")}</div>
+              ${GC.hiddenHtml(t.pf)}
               <div class="cmp-links">
                 <a href="${esc(t.pf.page)}">Full ${esc(t.pf.name)} page →</a>
                 ${t.pf.source ? `<a href="${esc(t.pf.source)}" target="_blank" rel="noopener">Official pricing ↗</a>` : ""}
