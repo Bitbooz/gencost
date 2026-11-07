@@ -172,10 +172,17 @@ def build(category, paths, names):
             continue
         key = (str(d.get("platform") or "") + " " + os.path.basename(path)).lower()
         name, page = None, "#"
+        stem = os.path.basename(path).lower().replace("-pricing.json", "")
+        # exact file name first ("stableaudio" must not be read as "udio"), then the old keyword match
         for kw, n, p in names:
-            if kw in key:
+            if kw.replace("-pricing", "") == stem:
                 name, page = n, p
                 break
+        if not name:
+            for kw, n, p in names:
+                if kw in key:
+                    name, page = n, p
+                    break
         if not name:
             name = str(d.get("platform") or os.path.basename(path).replace("-pricing.json", "")).title()
         if name in DISCONTINUED:
