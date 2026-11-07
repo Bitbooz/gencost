@@ -62,6 +62,13 @@ VIDEO = {
     "invideo": "https://invideo.io/pricing",
     "capcut": "https://www.capcut.com/pricing",
     "ltx": "https://ltx.studio/pricing",
+    # added 2026-11-07
+    "pixverse": ["https://app.pixverse.ai/subscribe", "https://pixverse.ai/pricing", "https://pixverse.ai/en/pricing"],
+    "hedra": ["https://www.hedra.com/plans", "https://www.hedra.com/pricing"],
+    "did": ["https://www.d-id.com/pricing/studio/", "https://www.d-id.com/pricing/"],
+    "colossyan": ["https://www.colossyan.com/pricing"],
+    "opusclip": ["https://www.opus.pro/pricing"],
+    "captions": ["https://www.captions.ai/pricing", "https://mirage.app/pricing"],
 }
 VOICE = {
     "elevenlabs": "https://elevenlabs.io/pricing",
@@ -69,6 +76,11 @@ VOICE = {
     "cartesia": "https://cartesia.ai/pricing",
     "speechify": "https://speechify.com/pricing",
     "descript": "https://www.descript.com/pricing",
+    # added 2026-11-07
+    "hume": ["https://www.hume.ai/pricing"],
+    "resemble": ["https://www.resemble.ai/pricing/"],
+    "fishaudio": ["https://fish.audio/plan/", "https://fish.audio/pricing/"],
+    "fliki": ["https://fliki.ai/pricing"],
 }
 MUSIC = {
     "suno": "https://suno.com/pricing",
@@ -76,6 +88,10 @@ MUSIC = {
     "soundraw": "https://soundraw.io/pricing",
     "aiva": "https://www.aiva.ai/pricing",
     "boomy": "https://boomy.com/pricing",
+    # added 2026-11-07
+    "beatoven": ["https://www.beatoven.ai/pricing"],
+    "stableaudio": ["https://stableaudio.com/pricing"],
+    "mureka": ["https://www.mureka.ai/pricing", "https://www.mureka.ai/subscribe"],
 }
 
 # Used only when a tool has NO saved prices at all and extraction fails.

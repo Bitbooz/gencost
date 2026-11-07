@@ -37,6 +37,8 @@ VIDEO_FILES = [
     "veo-pricing.json", "sora-pricing.json",
     "vidu-pricing.json", "krea-pricing.json",
     "midjourney-pricing.json", "leonardo-pricing.json", "ideogram-pricing.json",
+    "pixverse-pricing.json", "hedra-pricing.json", "did-pricing.json",
+    "colossyan-pricing.json", "opusclip-pricing.json", "captions-pricing.json",
 ]
 
 # keyword in platform/file name -> (display name, page)
@@ -60,6 +62,12 @@ VIDEO_NAMES = [
     ("midjourney", "Midjourney", "/pages/midjourney.html"),
     ("leonardo", "Leonardo", "/pages/leonardo.html"),
     ("ideogram", "Ideogram", "/pages/ideogram.html"),
+    ("pixverse", "PixVerse", "/pages/pixverse.html"),
+    ("hedra", "Hedra", "/pages/hedra.html"),
+    ("did-pricing", "D-ID", "/pages/d-id.html"),
+    ("colossyan", "Colossyan", "/pages/colossyan.html"),
+    ("opusclip", "OpusClip", "/pages/opusclip.html"),
+    ("captions", "Captions", "/pages/captions.html"),
 ]
 
 VOICE_NAMES = [
@@ -72,6 +80,9 @@ VOICE_NAMES = [
     ("play.ht", "PlayHT", "/pages/voice/playht.html"),
     ("wellsaid", "WellSaid Labs", "/pages/voice/wellsaid.html"),
     ("fliki", "Fliki", "/pages/voice/fliki.html"),
+    ("hume", "Hume", "/pages/hume.html"),
+    ("resemble", "Resemble AI", "/pages/resemble.html"),
+    ("fishaudio", "Fish Audio", "/pages/fish-audio.html"),
 ]
 
 MUSIC_NAMES = [
@@ -80,6 +91,9 @@ MUSIC_NAMES = [
     ("soundraw", "Soundraw", "/pages/music/soundraw.html"),
     ("aiva", "AIVA", "/pages/music/aiva.html"),
     ("boomy", "Boomy", "/pages/music/boomy.html"),
+    ("beatoven", "Beatoven", "/pages/beatoven.html"),
+    ("stableaudio", "Stable Audio", "/pages/stable-audio.html"),
+    ("mureka", "Mureka", "/pages/mureka.html"),
 ]
 
 
@@ -115,6 +129,37 @@ def load_hidden_costs():
 
 # Tools that have shut down: kept out of the price lists (their old files stay for history)
 DISCONTINUED = {"Sora", "PlayHT"}
+
+
+def record_history(category, platforms, day):
+    """data/history.json: every plan's price per day, saved only when it changes (one value per day)."""
+    path = os.path.join(data_dir, "history.json")
+    try:
+        with open(path, encoding="utf-8") as f:
+            hist = json.load(f)
+    except Exception:
+        hist = {"about": "Price per plan over time: [date, monthly, yearly]. A new row is added only when a price changes.",
+                "since": day, "video": {}, "voice": {}, "music": {}}
+    cat = hist.setdefault(category, {})
+    for pf in platforms:
+        if not pf.get("checked"):
+            continue  # only prices that were checked against the official page
+        tool = cat.setdefault(pf["name"], {})
+        for p in pf["plans"]:
+            m = p.get("monthly_price_usd")
+            y = p.get("yearly_price_usd") or 0
+            if not isinstance(m, (int, float)) or isinstance(m, bool):
+                continue
+            rows = tool.setdefault(p["name"], [])
+            row = [day, round(float(m), 2), round(float(y), 2) if isinstance(y, (int, float)) else 0]
+            if rows and rows[-1][0] == day:
+                rows[-1] = row  # same day: keep the last value of the day
+                if len(rows) > 1 and rows[-2][1:] == row[1:]:
+                    rows.pop()  # changed back within the day: no change after all
+            elif not rows or rows[-1][1:] != row[1:]:
+                rows.append(row)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(hist, f, indent=1, ensure_ascii=False)
 
 
 def build(category, paths, names):
@@ -162,6 +207,7 @@ def build(category, paths, names):
                 updated = old["updated"]
         except Exception:
             pass
+    record_history(category, platforms, now[:10])
     # Tools the updater could not read keep "checked": "" -> the site says "Entered by hand"
     data = {"category": category, "updated": updated, "platforms": platforms}
     with open(out_path, "w", encoding="utf-8") as f:

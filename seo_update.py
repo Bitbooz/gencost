@@ -44,6 +44,7 @@ NOINDEX = [
     r"^\d\d-.*\.html$",
     r"^GenCost-Comparison-Guide\.html$",
     r"^index-clean\.html$",
+    r"^alert-thanks\.html$",
     r"^pages/sample-package-youtube-ai-tools\.html$",
     r"^pages/samples/.*-(test|short)\.html$",
     r"^pages/samples/(sample|voice-sample)\.html$",
@@ -92,6 +93,9 @@ def tool_desc(name, cat):
     extra = "the real cost per clip" if cat == "video" else "what you really get"
     return (f"{name} pricing for {MONTH}: every plan in US dollars, monthly and yearly, credits, "
             f"{extra} and hidden costs. Checked every morning.")
+
+# Pages for tools that were just added: kept out of Google until the daily check has read their prices
+PENDING = {"pages/hedra.html", "pages/d-id.html", "pages/colossyan.html"}
 
 # Two pages had the same title; give the second one its own
 TITLE_FIXES = {
@@ -401,7 +405,8 @@ def main():
                          FONTS, new, count=1)
 
         bare = BLOCK.sub("", new)
-        noindex = any(re.search(rx, path) for rx in NOINDEX) or path in MOVED
+        noindex = (any(re.search(rx, path) for rx in NOINDEX) or path in MOVED
+                   or (path in PENDING and path not in TOOLS))  # new tool page before its first prices
         has_canon = 'rel="canonical"' in bare
         canonical = None
         if not has_canon:

@@ -743,7 +743,8 @@ def faq_items(name, tool, info):
             qa.append((f"How much does one video clip cost on {name}?",
                        f"On the {p['name']} plan, one {secs}-second clip with {clips.get('model')} costs about ${usd:.2f}"
                        f" ({cr:g} credits). We work this out from {name}'s own credits per clip and today's plan price;"
-                       " higher resolutions and premium models cost more."))
+                       " higher resolutions and premium models cost more."
+                       f" If you usually need 3 tries for every clip you keep, plan for about ${usd * 3:.2f} per kept clip."))
     hidden = (tool.get("hidden") or {}).get("items") or []
     if hidden:
         qa.append((f"Are there hidden costs with {name}?", " ".join(h.rstrip(".") + "." for h in hidden)))
@@ -751,6 +752,152 @@ def faq_items(name, tool, info):
 
 
 INFO = load_tool_info()
+
+
+def load_history():
+    try:
+        with open(os.path.join("data", "history.json"), encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+HISTORY = load_history()
+
+
+def tool_history(name, cat):
+    return (HISTORY.get(cat) or {}).get(name) or {}
+
+
+def price_changes(days=None):
+    """All price changes as (date, category, tool, plan, old_monthly, new_monthly, old_yearly, new_yearly)."""
+    out = []
+    for cat in ("video", "voice", "music"):
+        for tool, plans in (HISTORY.get(cat) or {}).items():
+            for plan, rows in plans.items():
+                for a, b in zip(rows, rows[1:]):
+                    out.append((b[0], cat, tool, plan, a[1], b[1], a[2], b[2]))
+    out.sort(reverse=True)
+    if days:
+        cutoff = (datetime.now(TZ) - __import__("datetime").timedelta(days=days)).strftime("%Y-%m-%d")
+        out = [c for c in out if c[0] >= cutoff]
+    return out
+
+
+def change_text(c):
+    day, cat, tool, plan, om, nm, oy, ny = c
+    bits = []
+    if om != nm:
+        bits.append(f"{money(om) if om else 'free'} → {money(nm) if nm else 'free'} a month")
+    if oy != ny and (oy or ny):
+        bits.append(f"paid yearly {money(oy) if oy else '–'} → {money(ny) if ny else '–'}")
+    return f"{tool} {plan}: " + ", ".join(bits) if bits else ""
+
+
+def history_svg(plans):
+    """A small step chart of each paid plan's monthly price over time."""
+    series = [(n, r) for n, r in plans.items() if len(r) >= 2 and r[-1][1] > 0][:4]  # plans whose price changed
+    days = sorted({row[0] for _, r in series for row in r})
+    if len(days) < 2:
+        return ""
+    d0 = datetime.strptime(days[0], "%Y-%m-%d")
+    last = datetime.now(TZ).replace(tzinfo=None) if TZ else datetime.now()
+    span = max((last - d0).days, 1)
+    top = (max(row[1] for _, r in series for row in r) or 1) * 1.15
+    W, H, L, B = 640, 180, 56, 26
+    x = lambda d: L + (W - L - 10) * ((datetime.strptime(d, "%Y-%m-%d") - d0).days / span)
+    y = lambda v: 10 + (H - B - 10) * (1 - v / top)
+    colors = ["#00d4ff", "#9d8ff5", "#3ddc97", "#ff8fb1"]
+    paths, legend = [], []
+    for i, (name, rows) in enumerate(series):
+        pts, prev = [], None
+        for d, m, _ in rows:
+            if prev is not None:
+                pts.append(f"{x(d):.1f},{y(prev):.1f}")
+            pts.append(f"{x(d):.1f},{y(m):.1f}")
+            prev = m
+        pts.append(f"{W - 10:.1f},{y(prev):.1f}")
+        paths.append(f'<polyline fill="none" stroke="{colors[i]}" stroke-width="2.5" points="{" ".join(pts)}"/>')
+        legend.append(f'<span class="ph-key"><i style="background:{colors[i]}"></i>{html.escape(name)} {money(rows[-1][1])}</span>')
+    axis = (f'<text x="{L - 8}" y="{y(top / 1.15) + 4:.1f}" text-anchor="end">{money(round(top / 1.15, 2))}</text>'
+            f'<text x="{L - 8}" y="{y(0) + 4:.1f}" text-anchor="end">$0</text>'
+            f'<text x="{L}" y="{H - 6}">{days[0]}</text><text x="{W - 10}" y="{H - 6}" text-anchor="end">today</text>'
+            f'<line x1="{L}" y1="{y(0):.1f}" x2="{W - 10}" y2="{y(0):.1f}" class="ph-axis"/>')
+    return (f'<svg class="ph-chart" viewBox="0 0 {W} {H}" role="img" aria-label="Monthly price of each plan over time">'
+            f'{axis}{"".join(paths)}</svg><div class="ph-legend">{"".join(legend)}</div>')
+
+
+def history_section(name, cat):
+    plans = tool_history(name, cat)
+    since = HISTORY.get("since", "")
+    changes = [c for c in price_changes() if c[2] == name and c[1] == cat]
+    chart = history_svg(plans)
+    if changes:
+        items = "".join(f"<li><b>{c[0]}</b> {html.escape(change_text(c)[len(name) + 1:])}</li>" for c in changes[:6] if change_text(c))
+        body = f"{chart}<h3>Price changes</h3><ul>{items}</ul>"
+    else:
+        body = f"<p>No price changes since GenCost started recording {html.escape(name)}'s prices on {since}. Every change will show up here, with the date.</p>"
+    return BeautifulSoup(f'<section class="card price-history" data-auto="history"><h2>{html.escape(name)} price history</h2>{body}</section>', PARSER).find("section")
+
+
+def alert_form(name):
+    return BeautifulSoup(f"""<section class="card alert-box" data-auto="alert">
+<h2>Get an email when {html.escape(name)}'s price changes</h2>
+<form name="price-alerts" method="POST" action="/alert-thanks.html" data-netlify="true" netlify-honeypot="company">
+<input type="hidden" name="form-name" value="price-alerts"><input type="hidden" name="tool" value="{html.escape(name)}">
+<p class="hp"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></p>
+<div class="alert-row"><label class="sr" for="alert-email">Email</label><input id="alert-email" type="email" name="email" placeholder="you@example.com" required>
+<button class="btn btn-primary" type="submit">Notify me</button></div>
+</form>
+<p class="note">Only used to tell you about price changes. Reply "stop" to any email and you are removed. See the <a href="/about.html#privacy">privacy note</a>.</p>
+</section>""", PARSER).find("section")
+
+
+def put_auto(art, section, key, before=None):
+    old = art.find("section", attrs={"data-auto": key})
+    if old:
+        if str(old) != str(section):
+            old.replace_with(section)
+        return
+    anchor = art.find("section", attrs={"data-auto": before}) if before else None
+    if anchor:
+        anchor.insert_before(section)
+    else:
+        art.append(section)
+
+
+def update_changelog(report):
+    """changelog.html gets an automatic list of the last 60 days of price changes; price-changes.txt the last 7."""
+    week = [change_text(c) and f"{c[0]}  {change_text(c)}" for c in price_changes(7)]
+    with open("price-changes.txt", "w", encoding="utf-8") as f:
+        f.write(f"Price changes in the last 7 days (for the price alert email), made {datetime.now(TZ).strftime('%Y-%m-%d')}\n\n"
+                + ("\n".join(w for w in week if w) or "No price changes this week.") + "\n")
+    if not os.path.exists("changelog.html"):
+        return
+    raw = open("changelog.html", encoding="utf-8").read()
+    soup = BeautifulSoup(raw, PARSER)
+    art = soup.find("article", class_="prose")
+    if not art:
+        return
+    recent = [c for c in price_changes(60) if change_text(c)]
+    since = HISTORY.get("since", "")
+    if recent:
+        items = "".join(f"<li><b>{c[0]}</b> {html.escape(change_text(c))}</li>" for c in recent[:80])
+        body = f"<ul>{items}</ul>"
+    else:
+        body = f"<p>No price changes yet since automatic recording started on {since}.</p>"
+    sec = BeautifulSoup(f'<section class="price-log" data-auto="price-log"><h2>Automatic price changes</h2>'
+                        f'<p class="note">Every change found by the daily check, newest first. Recorded since {since}.</p>{body}</section>', PARSER).find("section")
+    old = art.find("section", attrs={"data-auto": "price-log"})
+    if old:
+        if str(old) != str(sec):
+            old.replace_with(sec)
+    else:
+        h1 = art.find("h1")
+        nxt = h1.find_next_sibling("p") if h1 else None
+        (nxt or h1).insert_after(sec)
+    if write_article("changelog.html", raw, art):
+        report.append("changelog.html: price log updated")
 
 
 def link_pages(tools, names_by_article, report):
@@ -813,6 +960,14 @@ def link_pages(tools, names_by_article, report):
                 plans_card = art.find(class_="live-plans")
                 anchor = plans_card.find_parent("div", class_="card") if plans_card else None
                 (anchor or art.find("h1")).insert_after(about)
+        if not art.find(class_="live-plans"):
+            for box in art.find_all("div", class_="box"):
+                if box.find("p", class_="price"):
+                    box.decompose()  # the old hand-written price box
+            card = BeautifulSoup(f'<div class="card"><h2>Plans</h2><div class="live-plans" data-cat="{tool["category"]}" data-tool="{html.escape(name)}"></div></div>', PARSER).find("div")
+            h1x = art.find("h1")
+            sub = h1x.find_next_sibling("p") if h1x else None
+            (sub or h1x).insert_after(card)
         qa = faq_items(name, tool, info)
         if qa:
             body = "".join(f"<h3>{html.escape(q)}</h3><p>{html.escape(a)}</p>" for q, a in qa)
@@ -831,6 +986,8 @@ def link_pages(tools, names_by_article, report):
                 box.clear()
                 for el in list(body.children):
                     box.append(el)
+        put_auto(art, history_section(name, tool["category"]), "history", before="faq")
+        put_auto(art, alert_form(name), "alert", before="faq")
         about = [p for p, n in live.items() if name in n]
         about.sort(key=lambda p: (len(live[p]), p))
         slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
@@ -863,6 +1020,7 @@ def main():
         lines += report
         print(lines[-1 - len(report)])
     link_pages(tools, names_by_article, lines)
+    update_changelog(lines)
     with open("article-review.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
 

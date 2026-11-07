@@ -14,27 +14,11 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;text=GENCOSTExamples&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/gencost.css">
 <script>document.documentElement.classList.add('js');</script>
 <script defer src="/assets/gencost.js"></script>
 <link rel="canonical" href="https://getgencost.com/calculator.html">
-<!-- SEO:START (added by seo_update.py, rebuilt daily) -->
-<meta property="og:site_name" content="GenCost">
-<meta property="og:type" content="website">
-<meta property="og:title" content="AI Video Budget Calculator | GenCost">
-<meta property="og:description" content="How many seconds of AI video can you get for your budget? Estimate with current GenCost prices for Kling, Runway, Pika, Luma and more.">
-<meta property="og:url" content="https://getgencost.com/calculator.html">
-<meta property="og:image" content="https://getgencost.com/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI Video Budget Calculator | GenCost">
-<meta name="twitter:description" content="How many seconds of AI video can you get for your budget? Estimate with current GenCost prices for Kling, Runway, Pika, Luma and more.">
-<meta name="twitter:image" content="https://getgencost.com/assets/og-image.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://getgencost.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculator"}]}]}</script>
-<!-- SEO:END -->
 </head>
 <body class="page-util">
 <nav class="top">
@@ -64,13 +48,15 @@
     <article class="prose">
 <span class="eyebrow">Budget calculator</span>
 <h1>How much AI video can I get for my budget?</h1>
-<p class="lead">Pick a plan and a budget. GenCost uses the plan's current price and credits to work out how many video clips you really get, using each tool's own credits per clip.</p>
+<p class="lead">Pick a plan and a budget. GenCost uses the plan's current price and credits to work out how many video clips you really keep, using each tool's own credits per clip and how many tries you usually need.</p>
 <div class="card">
   <div data-billing-toggle></div>
   <label for="budget">Budget (USD per month)</label>
   <input type="number" id="budget" value="20" min="1" step="1">
   <label for="platform">Plan</label>
   <select id="platform"><option>Loading plans…</option></select>
+  <label for="tries">Tries for each clip you keep</label>
+  <select id="tries"><option value="1">1 (every clip is a keeper)</option><option value="2">2</option><option value="3" selected>3 (typical)</option><option value="4">4</option><option value="5">5</option></select>
   <div id="result"></div>
 </div>
 <p class="note">Clip costs use the model shown for each tool; other models and higher resolutions cost more credits. Only tools with a known cost per clip are listed. Prices from GenCost data, updated <span class="js-updated"></span>. Always confirm inside the tool.</p>
@@ -131,12 +117,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var lens = GenCost.clipLengths(p.plan), secs = lens.indexOf(10) >= 0 ? 10 : lens[lens.length - 1];
     var c = GenCost.clipCost(p.plan, secs);
     if (!c) { out.innerHTML = ""; return; }
-    var clips = Math.floor(b / c.usd);
+    var tries = parseInt(document.getElementById("tries").value, 10) || 1;
+    var kept = c.usd * tries;
+    var clips = Math.floor(b / kept);
     var note = b < p.price ? '<br><span class="note">This plan costs ' + GenCost.money(p.price) + '/mo, more than your budget.</span>' : "";
     var planClips = Math.floor(p.credits / c.credits);
     out.innerHTML = "<strong>" + GenCost.esc(p.label) + "</strong> · one " + secs + "-second clip (" + GenCost.esc(c.model) + ") ≈ <strong>" + GenCost.money(Number(c.usd.toFixed(2))) + "</strong>" + (c.rough ? " (rough)" : "") + "<br>" +
-      "For <strong>$" + b + "</strong> you get roughly <strong class='price'>" + clips.toLocaleString("en-US") + " clips</strong> of " + secs + " seconds, " +
-      "≈ " + (clips * secs).toLocaleString("en-US") + " seconds of video. The plan itself covers about " + planClips.toLocaleString("en-US") + " such clips a month." + note;
+      (tries > 1 ? "With " + tries + " tries for each clip you keep, one kept clip costs about <strong>" + GenCost.money(Number(kept.toFixed(2))) + "</strong>.<br>" : "") +
+      "For <strong>$" + b + "</strong> you keep roughly <strong class='price'>" + clips.toLocaleString("en-US") + " clips</strong> of " + secs + " seconds, " +
+      "≈ " + (clips * secs).toLocaleString("en-US") + " seconds of finished video. The plan itself covers about " + Math.floor(planClips / tries).toLocaleString("en-US") + " kept clips a month." + note;
   }
   function build(data, keepKey) {
     plans = [];
@@ -161,6 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }).catch(function () { out.innerHTML = "Prices could not be loaded right now. Please refresh the page."; });
   sel.addEventListener("change", calculate);
+  document.getElementById("tries").addEventListener("change", calculate);
   budget.addEventListener("input", calculate);
 });
 </script>
