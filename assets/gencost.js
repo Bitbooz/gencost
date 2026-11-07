@@ -1,6 +1,7 @@
 /* =========================================================
    GenCost shared script
    - mobile menu, active nav link, scroll reveal
+   - Monthly / Yearly billing switch (any element with data-billing-toggle)
    - loads prices from /data/<category>.json and fills any of
      these elements if the page has them:
        #budgetSeg + #budgetRows  budget demo card
@@ -9,6 +10,8 @@
        #normTable                small "in dollars" table
        #statTools #statPlans #statCheapest #heroCount #bestValue
        .js-updated               last-updated timestamp
+       .live-plans               live prices on a single tool page
+       #compareApp               the Compare page
    ========================================================= */
 (function () {
   const GC = (window.GenCost = window.GenCost || {});
@@ -19,16 +22,81 @@
   GC.esc = esc;
   GC.money = (v) => "$" + (Number.isInteger(v) ? v : v.toFixed(2));
   GC.amount = (v) => (num(v) !== null ? v.toLocaleString("en-US") : String(v ?? "").trim());
-  GC.price = (p) => num(p.monthly_price_usd) ?? 0;
+  GC.slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
-  /* Cost estimate per category. Kept identical to the old pages:
-     video assumes 1 credit = 1 second, voice per 1k characters, music per unit. */
+  /* ---------- billing: monthly or yearly ---------- */
+  GC.billing = "monthly";
+  try { if (localStorage.getItem("gc-billing") === "yearly") GC.billing = "yearly"; } catch (e) {}
+
+  GC.monthlyPrice = (p) => num(p.monthly_price_usd) ?? 0;
+  GC.yearlyPrice = (p) => { const y = num(p.yearly_price_usd); return y && y > 0 ? y : null; };
+  /* The price used everywhere: yearly-billing price when the switch says yearly and the plan has one. */
+  GC.price = (p) => (GC.billing === "yearly" && GC.yearlyPrice(p)) || GC.monthlyPrice(p);
+  /* A $0 entry is only "Free" when it is really a free plan (not an API rate or a note). */
+  GC.isFree = (p) => GC.monthlyPrice(p) === 0 && /free|basic|trial|starter|hobby/i.test(String(p.name || ""));
+  GC.isPaid = (p) => GC.price(p) > 0;
+
+  GC.setBilling = function (value) {
+    GC.billing = value === "yearly" ? "yearly" : "monthly";
+    try { localStorage.setItem("gc-billing", GC.billing); } catch (e) {}
+    GC.initToggles();
+    if (GC._data) GC.renderPrices(GC._data);
+    GC.renderLive();
+    if (GC._compareRender) GC._compareRender();
+    document.dispatchEvent(new CustomEvent("gencost:billing", { detail: GC.billing }));
+  };
+
+  GC.initToggles = function (root) {
+    (root || document).querySelectorAll("[data-billing-toggle]").forEach((el) => {
+      if (!el.dataset.built) {
+        el.dataset.built = "1";
+        el.classList.add("billing");
+        el.setAttribute("role", "group");
+        el.setAttribute("aria-label", "Billing");
+        el.innerHTML = `<span class="billing-label">Show prices</span>
+          <span class="seg"><button type="button" data-billing="monthly">Paid monthly</button><button type="button" data-billing="yearly">Paid yearly</button></span>`;
+        el.addEventListener("click", (e) => {
+          const b = e.target.closest("button[data-billing]");
+          if (b && b.dataset.billing !== GC.billing) GC.setBilling(b.dataset.billing);
+        });
+      }
+      el.querySelectorAll("button[data-billing]").forEach((b) => {
+        const on = b.dataset.billing === GC.billing;
+        b.classList.toggle("active", on);
+        b.setAttribute("aria-pressed", on);
+      });
+    });
+  };
+
+  /* Price text for one plan, e.g. "$12/mo", "Free", "See note" */
+  GC.priceHtml = function (plan) {
+    const price = GC.price(plan);
+    if (price > 0) return `<span class="pr">${GC.money(price)}/mo</span>`;
+    if (GC.isFree(plan)) return `<span class="pr free">Free</span>`;
+    return `<span class="pr muted">See note</span>`;
+  };
+
+  /* Small line under a plan: the other billing option */
+  GC.billingNote = function (plan) {
+    const m = GC.monthlyPrice(plan), y = GC.yearlyPrice(plan);
+    if (!m) return "";
+    if (GC.billing === "yearly") {
+      if (y && y < m) return `billed yearly · ${GC.money(m)} if paid monthly`;
+      return "yearly price not listed";
+    }
+    if (y && y < m) return `${GC.money(y)}/mo if paid yearly`;
+    return "";
+  };
+
+  /* Cost estimate per category. Video assumes 1 credit = 1 second,
+     voice per 1k characters / minute, music per unit. */
   GC.estimate = function (plan, category) {
     const price = GC.price(plan);
     const credits = num(plan.credits_or_minutes);
     if (!price || !credits || credits <= 0) return "";
     const unit = String(plan.unit || "").toLowerCase();
     if (category === "video") {
+      if (!/credit|unit|token/.test(unit)) return "";
       const cps = price / credits;
       return `est. 5s $${(cps * 5).toFixed(2)} · 10s $${(cps * 10).toFixed(2)} · 30s $${(cps * 30).toFixed(2)}`;
     }
@@ -47,11 +115,33 @@
     return "";
   };
 
+  /* One plan row (used by plan cards, tool pages and the Compare page) */
+  GC.planRow = function (plan, category) {
+    const amt = GC.amount(plan.credits_or_minutes);
+    const parts = [];
+    if (amt && amt !== "0") parts.push(`${esc(amt)} ${esc(plan.unit || "")}`.trim());
+    else if (plan.unit && !/^credits?$/i.test(plan.unit)) parts.push(esc(plan.unit));
+    const bn = GC.billingNote(plan);
+    if (bn) parts.push(`<span class="bill">${bn}</span>`);
+    const est = GC.estimate(plan, category);
+    if (est) parts.push(`<span class="cost">${est}</span>`);
+    const offer = String(plan.offer || "").trim();
+    if (offer && !/^(none|n\/a|-)$/i.test(offer)) parts.push(`<span class="offer">${esc(offer)}</span>`);
+    return `<div class="plan-row">
+      <div class="plan-line"><b>${esc(plan.name)}</b>${GC.priceHtml(plan)}</div>
+      <div class="plan-sub">${parts.join("<br>") || "&nbsp;"}</div>
+    </div>`;
+  };
+
+  GC.checkedText = (pf) => (pf.checked ? `Checked ${esc(pf.checked)}` : "Entered by hand");
+
+  const loads = {};
   GC.load = function (category) {
-    return fetch(`/data/${category}.json`, { cache: "no-cache" }).then((r) => {
+    loads[category] = loads[category] || fetch(`/data/${category}.json`, { cache: "no-cache" }).then((r) => {
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
     });
+    return loads[category];
   };
 
   /* ---------- page chrome ---------- */
@@ -99,13 +189,14 @@
     });
   };
 
-  /* ---------- price rendering ---------- */
+  /* ---------- price rendering (home, voice, music) ---------- */
   GC.renderPrices = function (data) {
+    GC._data = data;
     const category = data.category;
     const platforms = data.platforms || [];
     const allPlans = [];
     platforms.forEach((pf) => (pf.plans || []).forEach((p) => allPlans.push({ tool: pf.name, page: pf.page, ...p })));
-    const paid = allPlans.filter((p) => GC.price(p) > 0);
+    const paid = allPlans.filter(GC.isPaid);
     const $ = (id) => document.getElementById(id);
     const set = (id, v) => { const el = $(id); if (el) el.textContent = v; };
 
@@ -118,7 +209,7 @@
     set("statPlans", allPlans.length);
     set("statCheapest", cheapest ? GC.money(GC.price(cheapest)) : "–");
     if ($("bestValue") && cheapest)
-      $("bestValue").textContent = `Best value right now: ${cheapest.tool} ${cheapest.name} at ${GC.money(GC.price(cheapest))}/mo. Full details below.`;
+      $("bestValue").textContent = `Best value right now: ${cheapest.tool} ${cheapest.name} at ${GC.money(GC.price(cheapest))}/mo${GC.billing === "yearly" ? " (paid yearly)" : ""}. Full details below.`;
 
     // Budget demo card
     const rowsEl = $("budgetRows");
@@ -135,7 +226,7 @@
         }
         rowsEl.innerHTML = fits.map((p, i) => {
           const amt = GC.amount(p.credits_or_minutes);
-          const meta = [amt && amt !== "0" ? `${amt} ${esc(p.unit || "")}` : "", p.offer ? esc(p.offer) : ""].filter(Boolean).join(" · ") || "See plan details";
+          const meta = [amt && amt !== "0" ? `${esc(amt)} ${esc(p.unit || "")}` : "", GC.billingNote(p)].filter(Boolean).join(" · ") || "See plan details";
           return `<a class="row" href="${esc(p.page)}" style="animation-delay:${i * 70}ms">
             <span class="name">${esc(p.tool)}<small>${esc(p.name)}</small></span>
             <span class="price">${GC.money(GC.price(p))}/mo</span>
@@ -145,19 +236,23 @@
         requestAnimationFrame(() => requestAnimationFrame(() =>
           rowsEl.querySelectorAll("[data-bw]").forEach((b) => (b.style.width = b.dataset.bw + "%"))));
       };
-      seg.addEventListener("click", (e) => {
-        const btn = e.target.closest("button");
-        if (!btn) return;
-        seg.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === btn));
-        render(Number(btn.dataset.b));
-      });
+      seg._render = render;
+      if (!seg.dataset.bound) {
+        seg.dataset.bound = "1";
+        seg.addEventListener("click", (e) => {
+          const btn = e.target.closest("button");
+          if (!btn) return;
+          seg.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === btn));
+          seg._render(Number(btn.dataset.b));
+        });
+      }
       const active = seg.querySelector("button.active") || seg.querySelector("button");
       if (active) render(Number(active.dataset.b));
     }
 
     // Lowest paid plan per tool
     const entry = platforms.map((pf) => {
-      const p = (pf.plans || []).filter((x) => GC.price(x) > 0).sort((a, b) => GC.price(a) - GC.price(b))[0];
+      const p = (pf.plans || []).filter(GC.isPaid).sort((a, b) => GC.price(a) - GC.price(b))[0];
       return p ? { tool: pf.name, page: pf.page, plan: p.name, price: GC.price(p) } : null;
     }).filter(Boolean).sort((a, b) => a.price - b.price);
 
@@ -183,22 +278,12 @@
     // Plan cards
     const content = $("content");
     if (content) {
+      const wasIn = content.querySelectorAll(".plat.in").length > 0;
       content.innerHTML = platforms.map((pf) => {
-        const plans = (pf.plans || []).map((plan) => {
-          const price = GC.price(plan);
-          const amt = GC.amount(plan.credits_or_minutes);
-          const credits = amt && amt !== "0" ? `${amt} ${esc(plan.unit || "")}` : esc(plan.unit && plan.unit !== "credits" ? plan.unit : "Limited");
-          const est = GC.estimate(plan, category);
-          const offer = plan.offer && !/^(none|n\/a|-)$/i.test(String(plan.offer).trim()) ? `<br><span class="offer">${esc(plan.offer)}</span>` : "";
-          return `<div class="plan-row">
-            <div class="plan-line"><b>${esc(plan.name)}</b><span class="pr ${price === 0 ? "free" : ""}">${price === 0 ? "Free" : GC.money(price) + "/mo"}</span></div>
-            <div class="plan-sub">${credits}${est ? `<br><span class="cost">${est}</span>` : ""}${offer}</div>
-          </div>`;
-        }).join("");
         const source = pf.source ? ` · <a href="${esc(pf.source)}" target="_blank" rel="noopener">Source</a>` : "";
-        return `<div class="plat reveal">
-          <div class="plat-top"><a href="${esc(pf.page)}">${esc(pf.name)} →</a><span>Checked ${esc(pf.checked || data.updated || "")}${source}</span></div>
-          ${plans}
+        return `<div class="plat reveal${wasIn ? " in" : ""}">
+          <div class="plat-top"><a href="${esc(pf.page)}">${esc(pf.name)} →</a><span>${GC.checkedText(pf)}${source}</span></div>
+          ${(pf.plans || []).map((plan) => GC.planRow(plan, category)).join("")}
         </div>`;
       }).join("");
     }
@@ -235,37 +320,110 @@
   /* ---------- live prices on single tool pages ----------
      <div class="live-plans" data-cat="video" data-tool="Kling AI"> ...old static plans as fallback... </div> */
   GC.renderLive = function () {
-    const boxes = document.querySelectorAll(".live-plans[data-cat][data-tool]");
-    const cache = {};
-    boxes.forEach((box) => {
+    document.querySelectorAll(".live-plans[data-cat][data-tool]").forEach((box) => {
       const cat = box.dataset.cat;
-      cache[cat] = cache[cat] || GC.load(cat);
-      cache[cat].then((data) => {
+      GC.load(cat).then((data) => {
         const pf = (data.platforms || []).find((p) => p.name === box.dataset.tool);
         if (!pf || !(pf.plans || []).length) return; // keep the old list
-        const rows = pf.plans.map((plan) => {
-          const price = GC.price(plan);
-          const amt = GC.amount(plan.credits_or_minutes);
-          const credits = amt && amt !== "0" ? `${amt} ${esc(plan.unit || "")}` : esc(plan.unit || "");
-          const est = GC.estimate(plan, cat);
-          const offer = plan.offer && !/^(none|n\/a|-)$/i.test(String(plan.offer).trim()) ? ` · <span class="offer">${esc(plan.offer)}</span>` : "";
-          return `<div class="plan-row">
-            <div class="plan-line"><b>${esc(plan.name)}</b><span class="pr ${price === 0 ? "free" : ""}">${price === 0 ? "Free" : GC.money(price) + "/mo"}</span></div>
-            <div class="plan-sub">${credits}${est ? ` · <span class="cost">${est}</span>` : ""}${offer}</div>
-          </div>`;
-        }).join("");
-        const source = pf.source ? ` · <a href="${esc(pf.source)}" target="_blank" rel="noopener">Official pricing</a>` : "";
-        box.innerHTML = rows + `<p class="live-note"><span class="dot"></span>Live prices · checked ${esc(pf.checked || data.updated || "")}${source}</p>`;
+        const rows = pf.plans.map((plan) => GC.planRow(plan, cat)).join("");
+        const hasYearly = pf.plans.some((p) => GC.yearlyPrice(p));
+        const note = pf.checked
+          ? `<span class="dot"></span>Live prices · checked ${esc(pf.checked)}${pf.source ? ` · <a href="${esc(pf.source)}" target="_blank" rel="noopener">Official pricing</a>` : ""}`
+          : `Prices entered by hand · not checked automatically yet`;
+        box.innerHTML = (hasYearly ? `<div data-billing-toggle></div>` : "") + rows + `<p class="live-note">${note}</p>`;
         box.classList.add("is-live");
+        GC.initToggles(box);
       }).catch(() => {});
+    });
+  };
+
+  /* ---------- Compare page ---------- */
+  GC.initCompare = function () {
+    const app = document.getElementById("compareApp");
+    if (!app) return;
+    const picks = [...app.querySelectorAll("select[data-pick]")];
+    const out = document.getElementById("compareOut");
+    const CAT = { video: "Video & image", voice: "Voice", music: "Music" };
+
+    Promise.all(["video", "voice", "music"].map((c) => GC.load(c).catch(() => ({ category: c, platforms: [] }))))
+      .then((sets) => {
+        const tools = [];
+        sets.forEach((d) => (d.platforms || []).forEach((pf) => tools.push({ id: GC.slug(pf.name), cat: d.category, pf })));
+        const byId = Object.fromEntries(tools.map((t) => [t.id, t]));
+
+        const options = (optional) =>
+          (optional ? `<option value="">None</option>` : "") +
+          Object.keys(CAT).map((c) => {
+            const list = tools.filter((t) => t.cat === c);
+            return list.length ? `<optgroup label="${CAT[c]}">${list.map((t) => `<option value="${t.id}">${esc(t.pf.name)}</option>`).join("")}</optgroup>` : "";
+          }).join("");
+        picks.forEach((s, i) => (s.innerHTML = options(i === 2)));
+
+        // Start from the link (?tools=runway,pika,luma) or a default trio
+        let wanted = [];
+        try { wanted = (new URLSearchParams(location.search).get("tools") || "").split(",").filter((id) => byId[id]); } catch (e) {}
+        if (wanted.length < 2) wanted = ["runway", "pika", "kling-ai"].filter((id) => byId[id]);
+        picks.forEach((s, i) => (s.value = wanted[i] || (i === 2 ? "" : tools[i] && tools[i].id)));
+
+        const render = () => {
+          const chosen = [...new Set(picks.map((s) => s.value).filter((v) => byId[v]))].map((v) => byId[v]);
+          try { history.replaceState(null, "", "?tools=" + chosen.map((t) => t.id).join(",")); } catch (e) {}
+          const starts = chosen.map((t) => {
+            const p = (t.pf.plans || []).filter(GC.isPaid).sort((a, b) => GC.price(a) - GC.price(b))[0];
+            return p ? { t, p, price: GC.price(p) } : null;
+          });
+          const valid = starts.filter(Boolean);
+          const best = valid.length ? valid.reduce((a, b) => (b.price < a.price ? b : a)) : null;
+          const mixed = new Set(chosen.map((t) => t.cat)).size > 1;
+
+          document.getElementById("compareSummary").innerHTML = best
+            ? `Cheapest way to start: <strong>${esc(best.t.pf.name)} ${esc(best.p.name)}</strong> at <strong class="price">${GC.money(best.price)}/mo</strong>${GC.billing === "yearly" ? " (paid yearly)" : ""}.${mixed ? ` <span class="muted">These tools do different jobs, so compare what each plan includes, not just the price.</span>` : ""}`
+            : "Pick at least two tools to compare.";
+
+          out.innerHTML = chosen.map((t, i) => {
+            const s = starts[i];
+            const isBest = best && s && s.t === best.t && valid.length > 1;
+            const freePlan = (t.pf.plans || []).some(GC.isFree);
+            return `<section class="cmp-col${isBest ? " best" : ""}" aria-label="${esc(t.pf.name)}">
+              ${isBest ? `<span class="cmp-badge">Cheapest start</span>` : ""}
+              <div class="cmp-cat">${CAT[t.cat]}</div>
+              <h2><a href="${esc(t.pf.page)}">${esc(t.pf.name)}</a></h2>
+              <div class="cmp-from">${s ? `from <strong>${GC.money(s.price)}</strong>/mo` : "no paid plan listed"}</div>
+              <ul class="cmp-facts">
+                <li>${freePlan ? "Free plan: yes" : "Free plan: no"}</li>
+                <li>${(t.pf.plans || []).filter(GC.isPaid).length} paid plans</li>
+                <li>${GC.checkedText(t.pf)}</li>
+              </ul>
+              <div class="cmp-plans">${(t.pf.plans || []).map((p) => GC.planRow(p, t.cat)).join("")}</div>
+              <div class="cmp-links">
+                <a href="${esc(t.pf.page)}">Full ${esc(t.pf.name)} page →</a>
+                ${t.pf.source ? `<a href="${esc(t.pf.source)}" target="_blank" rel="noopener">Official pricing ↗</a>` : ""}
+              </div>
+            </section>`;
+          }).join("");
+          const share = document.getElementById("compareShare");
+          if (share) share.dataset.url = location.href;
+        };
+        GC._compareRender = render;
+        picks.forEach((s) => s.addEventListener("change", render));
+        render();
+      });
+
+    const share = document.getElementById("compareShare");
+    if (share) share.addEventListener("click", () => {
+      const done = () => { share.textContent = "Link copied ✓"; setTimeout(() => (share.textContent = "Copy link to this comparison"), 2000); };
+      try { navigator.clipboard.writeText(location.href).then(done, () => prompt("Copy this link:", location.href)); }
+      catch (e) { prompt("Copy this link:", location.href); }
     });
   };
 
   document.addEventListener("DOMContentLoaded", () => {
     initChrome();
+    GC.initToggles();
     GC.observe();
     const cat = document.body.dataset.prices;
     if (cat) GC.start(cat);
     GC.renderLive();
+    GC.initCompare();
   });
 })();

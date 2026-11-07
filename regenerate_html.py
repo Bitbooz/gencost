@@ -130,9 +130,7 @@ def build(category, paths, names):
                 updated = old["updated"]
         except Exception:
             pass
-    for p in platforms:
-        if not p["checked"]:
-            p["checked"] = updated
+    # Tools the updater could not read keep "checked": "" -> the site says "Entered by hand"
     data = {"category": category, "updated": updated, "platforms": platforms}
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=1, ensure_ascii=False)

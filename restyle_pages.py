@@ -39,7 +39,7 @@ import site_shell
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
 
-SKIP_FILES = {"index.html", "voice.html", "music.html", "calculator.html", "index-clean.html", "GenCost-Comparison-Guide.html"}
+SKIP_FILES = {"index.html", "voice.html", "music.html", "calculator.html", "compare.html", "index-clean.html", "GenCost-Comparison-Guide.html"}
 SKIP_PATTERNS = [re.compile(r"^google[0-9a-f]+\.html$"), re.compile(r"^\d\d-.*\.html$")]
 
 EMERGING = {"seedance", "pixverse", "wan", "openart", "fish-audio", "hume", "resemble", "mureka", "stable-audio", "beatoven"}

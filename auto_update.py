@@ -119,10 +119,15 @@ def extract_pricing(platform_name, raw_text):
 
 Rules:
 - Ignore Enterprise / Contact sales plans
-- Use the MONTHLY price in US dollars exactly as written on the page (e.g. "USD 19.99" -> 19.99)
-- If only a yearly price is shown, divide it by 12 and say so in "offer"
-- If there is a yearly discount, mention it in "offer"
-- Look for phrases like "2 months free", "save X%", "limited time", "bonus credits"
+- Prices in US dollars exactly as written on the page (e.g. "USD 19.99" -> 19.99)
+- "monthly_price_usd" = the price per month when you pay MONTH BY MONTH
+- "yearly_price_usd" = the price PER MONTH when you pay for a whole year upfront
+  (if the page shows "$144 billed yearly", use 12). Use 0 if there is no yearly option.
+- Many pages show the yearly price first or by default. Read carefully which number is which.
+- If the page only shows the yearly-billing price for a plan, put it in BOTH fields
+  and write "monthly price not shown" in "offer"
+- "offer": only special offers for THIS plan (e.g. "first month $9", "bonus credits"),
+  max 80 characters. Do not repeat the yearly discount there. Use "" if none.
 - Never invent prices. Only use numbers that appear in the text.
 - Never use null
 
@@ -138,9 +143,10 @@ Return ONLY valid JSON:
     {{
       "name": "Creator",
       "monthly_price_usd": 29,
+      "yearly_price_usd": 24,
       "credits_or_minutes": 600,
       "unit": "credits",
-      "offer": "2 months free on yearly"
+      "offer": ""
     }}
   ]
 }}
@@ -171,11 +177,11 @@ def price_on_page(price, text):
 
 
 def check(data, text):
-    """Returns a list of problems. Empty list = looks right."""
-    problems = []
+    """Returns (problems, notes). Problems = do not save. Notes = saved, but something was left out."""
+    problems, notes = [], []
     plans = data.get("plans")
     if not isinstance(plans, list) or not plans:
-        return ["no plans found"]
+        return ["no plans found"], notes
     for p in plans:
         price = p.get("monthly_price_usd")
         if not isinstance(price, (int, float)):
@@ -185,16 +191,23 @@ def check(data, text):
             problems.append(f"{p.get('name')}: unrealistic price ${price}")
         elif price > 0 and not price_on_page(price, text):
             problems.append(f"{p.get('name')}: ${price} does not appear on the pricing page")
-    return problems
+        # Yearly price: optional. A wrong one is dropped instead of blocking the tool.
+        yearly = p.get("yearly_price_usd")
+        if yearly in (None, 0, "", "0"):
+            p.pop("yearly_price_usd", None)
+        elif not isinstance(yearly, (int, float)) or yearly < 0 or (price and yearly > price) or not price_on_page(yearly, text):
+            notes.append(f"{p.get('name')}: yearly price {yearly!r} could not be confirmed, left out")
+            p.pop("yearly_price_usd", None)
+    return problems, notes
 
 
-def review(name, url, problems):
+def review(name, url, problems, outcome="kept the previous prices"):
     stamp = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
     with open(REVIEW_FILE, "a", encoding="utf-8") as f:  # one run's problems
         f.write(f"{stamp}  {name}  ({url})\n")
         for pr in problems:
             f.write(f"    - {pr}\n")
-        f.write("    -> kept the previous prices\n\n")
+        f.write(f"    -> {outcome}\n\n")
 
 
 def process_platform(name, url):
@@ -219,7 +232,7 @@ def process_platform(name, url):
         print(f"  Failed {name}: {e} - kept old prices")
         return False
 
-    problems = check(data, text)
+    problems, notes = check(data, text)
     if problems:
         review(name, url, problems)
         print(f"  Not saved, prices could not be confirmed: {problems}")
@@ -232,6 +245,8 @@ def process_platform(name, url):
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+    if notes:
+        review(name, url, notes, outcome="saved the monthly prices")
     changed = not old or old.get("plans") != data["plans"]
     print(f"  Saved {path}" + (" (prices changed)" if changed else " (no change)"))
     return True

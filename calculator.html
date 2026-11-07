@@ -28,9 +28,9 @@
       <li><a href="/#platforms">Video</a></li>
       <li><a href="/voice.html" data-section="/voice,/pages/voice/">Voice</a></li>
       <li><a href="/music.html" data-section="/music,/pages/music/">Music</a></li>
+      <li><a href="/compare.html">Compare</a></li>
       <li><a href="/calculator.html">Calculator</a></li>
       <li><a href="/#articles">Articles</a></li>
-      <li><a href="/pages/emerging.html">Emerging</a></li>
     </ul>
     <div class="nav-right">
       <a class="btn btn-primary" href="/order.html">Order package</a>
@@ -50,6 +50,7 @@
 <h1>How much AI video can I get for my budget?</h1>
 <p class="lead">Pick a plan and a budget. GenCost uses the plan's current price and credits to estimate how many seconds and 10-second clips you get.</p>
 <div class="card">
+  <div data-billing-toggle></div>
   <label for="budget">Budget (USD per month)</label>
   <input type="number" id="budget" value="20" min="1" step="1">
   <label for="platform">Plan</label>
@@ -74,6 +75,7 @@
           <li><a href="/#platforms">Video &amp; avatar</a></li>
           <li><a href="/voice.html">Voice</a></li>
           <li><a href="/music.html">Music</a></li>
+          <li><a href="/compare.html">Compare any tools</a></li>
           <li><a href="/pages/emerging.html">Emerging tools</a></li>
           <li><a href="/calculator.html">Budget calculator</a></li>
         </ul>
@@ -117,18 +119,27 @@ document.addEventListener("DOMContentLoaded", function () {
       "For <strong>$" + b + "</strong> you get roughly <strong class='price'>" + Math.round(seconds).toLocaleString("en-US") + " seconds</strong> of video, " +
       "≈ <strong>" + Math.floor(seconds / 10).toLocaleString("en-US") + "</strong> clips of 10 seconds." + note;
   }
-  GenCost.load("video").then(function (data) {
-    document.querySelectorAll(".js-updated").forEach(function (el) { el.textContent = data.updated; });
+  function build(data, keepKey) {
+    plans = [];
     (data.platforms || []).forEach(function (pf) {
       (pf.plans || []).forEach(function (p) {
         var price = GenCost.price(p), credits = typeof p.credits_or_minutes === "number" ? p.credits_or_minutes : 0;
-        if (price > 0 && credits > 0) plans.push({ label: pf.name + " " + p.name + " (" + GenCost.money(price) + "/mo)", price: price, credits: credits });
+        if (price > 0 && credits > 0 && /credit|unit|token/i.test(p.unit || "")) plans.push({ key: pf.name + "|" + p.name, label: pf.name + " " + p.name + " (" + GenCost.money(price) + "/mo)", price: price, credits: credits });
       });
     });
     sel.innerHTML = plans.map(function (p, i) { return '<option value="' + i + '">' + GenCost.esc(p.label) + "</option>"; }).join("");
-    var kling = plans.findIndex(function (p) { return /^Kling AI Standard/.test(p.label); });
-    if (kling >= 0) sel.value = kling;
+    var keep = plans.findIndex(function (p) { return p.key === keepKey; });
+    if (keep < 0) keep = plans.findIndex(function (p) { return p.key === "Kling AI|Standard"; });
+    if (keep >= 0) sel.value = keep;
     calculate();
+  }
+  GenCost.load("video").then(function (data) {
+    document.querySelectorAll(".js-updated").forEach(function (el) { el.textContent = data.updated; });
+    build(data);
+    document.addEventListener("gencost:billing", function () {
+      var cur = plans[sel.value];
+      build(data, cur && cur.key);
+    });
   }).catch(function () { out.innerHTML = "Prices could not be loaded right now. Please refresh the page."; });
   sel.addEventListener("change", calculate);
   budget.addEventListener("input", calculate);
