@@ -1,12 +1,12 @@
 {
  "category": "voice",
- "updated": "2026-11-07 14:22",
+ "updated": "2026-11-07 14:43",
  "platforms": [
   {
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-07 14:19",
+   "checked": "2026-11-07 14:41",
    "plans": [
     {
      "name": "Free",
@@ -29,7 +29,7 @@
      "yearly_price_usd": 18.33,
      "credits_or_minutes": 121000,
      "unit": "credits",
-     "offer": ""
+     "offer": "first month $11"
     },
     {
      "name": "Pro",
@@ -87,7 +87,7 @@
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-07 14:20",
+   "checked": "2026-11-07 14:41",
    "plans": [
     {
      "name": "Free",
@@ -123,7 +123,7 @@
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-07 14:20",
+   "checked": "2026-11-07 14:42",
    "plans": [
     {
      "name": "Free",
@@ -142,30 +142,30 @@
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-07 14:20",
+   "checked": "2026-11-07 14:42",
    "plans": [
     {
      "name": "Hobbyist",
      "monthly_price_usd": 24,
      "yearly_price_usd": 16,
-     "credits_or_minutes": 400,
-     "unit": "credits",
+     "credits_or_minutes": 10,
+     "unit": "hours",
      "offer": ""
     },
     {
      "name": "Creator",
      "monthly_price_usd": 35,
      "yearly_price_usd": 24,
-     "credits_or_minutes": 800,
-     "unit": "credits",
+     "credits_or_minutes": 30,
+     "unit": "hours",
      "offer": ""
     },
     {
      "name": "Business",
      "monthly_price_usd": 65,
      "yearly_price_usd": 50,
-     "credits_or_minutes": 1500,
-     "unit": "credits",
+     "credits_or_minutes": 40,
+     "unit": "hours",
      "offer": ""
     }
    ]

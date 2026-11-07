@@ -22,7 +22,7 @@
       "yearly_price_usd": 18.33,
       "credits_or_minutes": 121000,
       "unit": "credits",
-      "offer": ""
+      "offer": "first month $11"
     },
     {
       "name": "Pro",
@@ -50,5 +50,5 @@
     }
   ],
   "source": "https://elevenlabs.io/pricing",
-  "last_checked": "2026-11-07 14:19"
+  "last_checked": "2026-11-07 14:41"
 }

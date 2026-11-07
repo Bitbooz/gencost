@@ -120,15 +120,4 @@ How do I purchase credits?
 Can purchased credits expire?
 What happens if I run out of credits?
 What features are included in the free plan?
-×
-This website uses cookies
-We use tools on this site to collect and record your data (e.g., your searches), which we and our vendors may use to provide, improve, and personalize our offerings, make recommendations, and for analytics and marketing. We may share your data with third parties, such as advertising vendors, social media companies, and research partners, which may be “targeted advertising,” “selling,” or “sharing” under applicable privacy laws. Continuing to browse our site means you accept these terms and our Privacy Policy https://www.udio.com/privacy-policy. To “opt out,” you can change the toggle to off on the “Targeting” category or click “Decline All.” Read more
-SHOW ALL PARTNERS (2) →
-STRICTLY NECESSARY
-PERFORMANCE
-TARGETING
-FUNCTIONALITY
-UNCLASSIFIED
- SHOW DETAILS
-ACCEPT ALL
-DECLINE ALL
+COOKIES

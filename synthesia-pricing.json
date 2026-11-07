@@ -4,19 +4,25 @@
     {
       "name": "Basic",
       "monthly_price_usd": 0,
+      "credits_or_minutes": 500,
+      "unit": "credits",
       "offer": ""
     },
     {
       "name": "Starter",
       "monthly_price_usd": 19,
-      "offer": "First month $9"
+      "credits_or_minutes": 1250,
+      "unit": "credits",
+      "offer": "First month for $9"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 89,
-      "offer": "First month $49"
+      "credits_or_minutes": 6000,
+      "unit": "credits",
+      "offer": "First month for $49"
     }
   ],
   "source": "https://www.synthesia.io/pricing",
-  "last_checked": "2026-11-07 14:17"
+  "last_checked": "2026-11-07 14:39"
 }

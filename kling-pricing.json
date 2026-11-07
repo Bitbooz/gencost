@@ -5,19 +5,31 @@
       "name": "Standard",
       "monthly_price_usd": 10,
       "credits_or_minutes": 660,
-      "unit": "credits"
+      "unit": "credits",
+      "offer": "30% Off First Month"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 37,
       "credits_or_minutes": 3000,
-      "unit": "credits"
+      "unit": "credits",
+      "offer": "30% Off First Month"
     },
     {
       "name": "Premier",
-      "monthly_price_usd": 92,
-      "credits_or_minutes": 8000,
-      "unit": "credits"
+      "monthly_price_usd": 207,
+      "credits_or_minutes": 18000,
+      "unit": "credits",
+      "offer": "30% Off First Month"
+    },
+    {
+      "name": "Ultra+",
+      "monthly_price_usd": 619,
+      "credits_or_minutes": 57000,
+      "unit": "credits",
+      "offer": "30% Off First Month"
     }
-  ]
+  ],
+  "source": "https://app.klingai.com/global/membership/membership-plan",
+  "last_checked": "2026-11-07 14:39"
 }
