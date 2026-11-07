@@ -14,7 +14,7 @@
       "yearly_price_usd": 14.999,
       "credits_or_minutes": 1200,
       "unit": "credits",
-      "offer": "first month AI discounts"
+      "offer": "Seedance 2.5 from $0.12/sec (first month)"
     },
     {
       "name": "Ultra",
@@ -22,9 +22,9 @@
       "yearly_price_usd": 75,
       "credits_or_minutes": 8645,
       "unit": "credits",
-      "offer": "first month AI discounts"
+      "offer": "Seedance 2.5 from $0.18/sec (first month)"
     }
   ],
   "source": "https://www.capcut.com/pricing",
-  "last_checked": "2026-11-07 20:47"
+  "last_checked": "2026-11-07 21:06"
 }

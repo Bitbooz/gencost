@@ -1,19 +1,18 @@
-Article prices updated 2026-11-07 20:50 (price data from 2026-11-07 20:50)
+Article prices updated 2026-11-07 21:09 (price data from 2026-11-07 21:09)
 
 pages/best-cheap-ai-video-tools-for-youtube-2026.html: 6 live prices (0 new, 0 changed today) · box: CapCut, Kling AI, ElevenLabs, Pika, Runway, Luma
 pages/best-free-ai-video-tools-2026.html: 0 live prices (0 new, 0 changed today) · box: Kling AI, Runway, Pika, Luma
-pages/best-playht-alternatives-2026.html: 6 live prices (6 new, 0 changed today) · box: ElevenLabs, Cartesia, Murf AI
-pages/best-sora-alternatives-2026.html: 11 live prices (11 new, 0 changed today) · box: Google Veo, Kling AI, Vidu, Runway, Pika
+pages/best-playht-alternatives-2026.html: 6 live prices (0 new, 0 changed today) · box: ElevenLabs, Cartesia, Murf AI
+pages/best-sora-alternatives-2026.html: 11 live prices (0 new, 0 changed today) · box: Google Veo, Kling AI, Runway, Vidu, Pika
     - example 20 x 10s: Google Veo $4.50, Kling AI $16.00, Runway $57.60 -> cheapest today: Google Veo (check the verdict text agrees)
 pages/cheapest-ai-avatar-tools-in-2026.html: 2 live prices (0 new, 0 changed today) · box: HeyGen, Synthesia
-pages/cheapest-ai-music-tools-in-2026.html: 4 live prices (0 new, 0 changed today) · box: Suno, Udio, AIVA
+pages/cheapest-ai-music-tools-in-2026.html: 4 live prices (0 new, 1 changed today) · box: Suno, Udio, AIVA
 pages/cheapest-ai-video-tools-in-2026.html: 8 live prices (0 new, 0 changed today) · box: Kling AI, Pika, Runway, Luma
 pages/cheapest-ai-voice-cloning-tools-2026.html: 7 live prices (0 new, 0 changed today) · box: ElevenLabs, Cartesia
-    - added a note that PlayHT has shut down
     - PlayHT Creator: tool no longer in the price data, left as is
-pages/cheapest-ai-voice-tools-in-2026.html: 9 live prices (0 new, 0 changed today) · box: Cartesia, ElevenLabs
-    - added a note that PlayHT has shut down
+pages/cheapest-ai-voice-tools-in-2026.html: 9 live prices (0 new, 0 changed today) · box: ElevenLabs, Cartesia
     - PlayHT Creator: tool no longer in the price data, left as is
+pages/cheapest-way-to-use-seedance-2-5-2026.html: 6 live prices (6 new, 0 changed today) · box: CapCut, Pika, Higgsfield, InVideo, Luma, Krea
 pages/elevenlabs-vs-cartesia-pricing-2026.html: 5 live prices (0 new, 0 changed today) · box: ElevenLabs, Cartesia
 pages/heygen-vs-capcut-pricing-2026.html: 3 live prices (0 new, 0 changed today) · box: HeyGen, CapCut
 pages/heygen-vs-synthesia-pricing-2026.html: 5 live prices (0 new, 0 changed today) · box: HeyGen, Synthesia
@@ -22,7 +21,6 @@ pages/kling-vs-hailuo-pricing-2026.html: 5 live prices (0 new, 0 changed today) 
 pages/pika-vs-luma-pricing-2026.html: 7 live prices (0 new, 0 changed today) · box: Pika, Luma
     - example 20 x 10s: Pika $13.33, Luma $18.00 -> cheapest today: Pika (check the verdict text agrees)
 pages/playht-vs-elevenlabs-pricing-2026.html: 2 live prices (0 new, 0 changed today) · box: ElevenLabs
-    - added a note that PlayHT has shut down
     - PlayHT Creator: tool no longer in the price data, left as is
 pages/runway-vs-kling-pricing-2026.html: 7 live prices (0 new, 0 changed today) · box: Runway, Kling AI
     - example 10 x 10s: Kling AI $8.00, Runway $28.80 -> cheapest today: Kling AI (check the verdict text agrees)
@@ -30,4 +28,4 @@ pages/runway-vs-kling-pricing-comparison-2026.html: 5 live prices (0 new, 0 chan
 pages/runway-vs-luma-pricing-2026.html: 5 live prices (0 new, 0 changed today) · box: Runway, Luma
     - example 30 x 10s: Luma $27.00, Runway $86.40 -> cheapest today: Luma (check the verdict text agrees)
 pages/stable-audio-vs-beatoven-pricing-2026.html: 0 live prices (0 new, 0 changed today) · box: none
-pages/suno-vs-udio-pricing-2026.html: 4 live prices (0 new, 0 changed today) · box: Suno, Udio
+pages/suno-vs-udio-pricing-2026.html: 4 live prices (0 new, 2 changed today) · box: Suno, Udio
