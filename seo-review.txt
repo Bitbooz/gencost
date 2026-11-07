@@ -1,6 +1,6 @@
-SEO check 2026-11-07 22:14
-126 pages checked, 30 changed today, 93 in sitemap.xml, 23 marked noindex
-Made by this script: 88 canonical links, 28 descriptions; today: 0 links moved to the main page, 29 titles fixed
+SEO check 2026-11-07 22:41
+126 pages checked, 111 changed today, 93 in sitemap.xml, 23 marked noindex
+Made by this script: 88 canonical links, 28 descriptions; today: 0 links moved to the main page, 0 titles fixed
 
 Needs a human:
   pages/sample-package-youtube-ai-tools.html: empty file (delete it on GitHub, or leave it - it is marked noindex)

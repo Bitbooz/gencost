@@ -1,12 +1,12 @@
 {
  "category": "music",
- "updated": "2026-11-07 21:35",
+ "updated": "2026-11-07 22:41",
  "platforms": [
   {
    "name": "Suno",
    "page": "/pages/music/suno.html",
    "source": "https://suno.com/pricing",
-   "checked": "2026-11-07 22:12",
+   "checked": "2026-11-07 22:40",
    "plans": [
     {
      "name": "Free",
@@ -46,7 +46,7 @@
    "name": "Udio",
    "page": "/pages/music/udio.html",
    "source": "https://www.udio.com/pricing",
-   "checked": "2026-11-07 22:13",
+   "checked": "2026-11-07 22:40",
    "plans": [
     {
      "name": "Free",
@@ -86,7 +86,7 @@
    "name": "Soundraw",
    "page": "/pages/music/soundraw.html",
    "source": "https://soundraw.io/pricing",
-   "checked": "2026-11-07 22:13",
+   "checked": "2026-11-07 22:40",
    "plans": [
     {
      "name": "Creator",
@@ -127,29 +127,23 @@
    "name": "AIVA",
    "page": "/pages/music/aiva.html",
    "source": "https://www.aiva.ai/pricing",
-   "checked": "2026-11-07 22:13",
+   "checked": "2026-11-07 22:41",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 3,
-     "unit": "downloads",
      "offer": ""
     },
     {
      "name": "Standard",
      "monthly_price_usd": 11,
      "yearly_price_usd": 11,
-     "credits_or_minutes": 15,
-     "unit": "downloads",
      "offer": "monthly price not shown"
     },
     {
      "name": "Pro",
      "monthly_price_usd": 33,
      "yearly_price_usd": 33,
-     "credits_or_minutes": 300,
-     "unit": "downloads",
      "offer": "monthly price not shown"
     }
    ],
@@ -167,28 +161,22 @@
    "name": "Boomy",
    "page": "/pages/music/boomy.html",
    "source": "https://boomy.com/pricing",
-   "checked": "2026-11-07 22:14",
+   "checked": "2026-11-07 22:41",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": ""
     },
     {
      "name": "Creator",
      "monthly_price_usd": 9.99,
-     "credits_or_minutes": 0,
-     "unit": "",
-     "offer": ""
+     "offer": "33% off"
     },
     {
      "name": "Pro",
      "monthly_price_usd": 29.99,
-     "credits_or_minutes": 0,
-     "unit": "",
-     "offer": ""
+     "offer": "25% off"
     }
    ],
    "hidden": {

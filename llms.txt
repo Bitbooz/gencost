@@ -1,0 +1,68 @@
+# GenCost
+
+> GenCost compares the prices of AI video, avatar, image, voice and music tools in US dollars. Every price is read from each tool's official pricing page every morning and checked before it goes live. Pages also show the real cost of one video clip (from each tool's own credits per clip) and hidden costs such as watermarks, expiring credits and commercial-use rules.
+
+Prices last updated: 2026-11-07. How prices are checked: https://getgencost.com/how-we-verify.html
+
+## Price lists
+- [AI video, avatar and image tools](https://getgencost.com/): every plan, monthly and yearly, with cost per clip
+- [AI voice tools](https://getgencost.com/voice.html): every plan in US dollars
+- [AI music tools](https://getgencost.com/music.html): every plan in US dollars
+- [Compare any tools](https://getgencost.com/compare.html): two or three tools side by side
+- [Budget calculator](https://getgencost.com/calculator.html): how many clips a budget buys
+- [Machine-readable prices](https://getgencost.com/data/video.json), [voice](https://getgencost.com/data/voice.json), [music](https://getgencost.com/data/music.json)
+
+## Guides
+- [Best Cheap AI Video Tools for YouTube in 2026](https://getgencost.com/pages/best-cheap-ai-video-tools-for-youtube-2026.html)
+- [Best Free AI Video Tools in 2026: Kling, Runway, Pika, Luma & More Compared](https://getgencost.com/pages/best-free-ai-video-tools-2026.html)
+- [Cheaper ElevenLabs Alternatives in 2026: Real Cost per Hour of Speech](https://getgencost.com/pages/best-elevenlabs-alternatives-2026.html)
+- [Cheapest AI Avatar Tools in 2026](https://getgencost.com/pages/cheapest-ai-avatar-tools-in-2026.html)
+- [Cheapest AI Music Tools 2026: Suno vs Udio vs AIVA](https://getgencost.com/pages/cheapest-ai-music-tools-in-2026.html)
+- [Cheapest AI Video Tools in 2026](https://getgencost.com/pages/cheapest-ai-video-tools-in-2026.html)
+- [Cheapest AI Voice Cloning Tools 2026](https://getgencost.com/pages/cheapest-ai-voice-cloning-tools-2026.html)
+- [Cheapest AI Voice Tools in 2026](https://getgencost.com/pages/cheapest-ai-voice-tools-in-2026.html)
+- [ElevenLabs vs Cartesia Pricing Comparison 2026](https://getgencost.com/pages/elevenlabs-vs-cartesia-pricing-2026.html)
+- [HeyGen vs CapCut Pricing Comparison 2026](https://getgencost.com/pages/heygen-vs-capcut-pricing-2026.html)
+- [HeyGen vs Synthesia Pricing Comparison 2026](https://getgencost.com/pages/heygen-vs-synthesia-pricing-2026.html)
+- [How Much Does AI Video Cost per Second? 11 Tools Compared (2026)](https://getgencost.com/pages/cheapest-ai-video-cost-per-second-2026.html)
+- [Kling vs Hailuo Pricing Comparison 2026](https://getgencost.com/pages/kling-vs-hailuo-pricing-2026.html)
+- [Kling vs Veo Pricing 2026: Which Costs Less per Video?](https://getgencost.com/pages/kling-vs-veo-pricing-2026.html)
+- [Pika vs Luma Pricing Comparison 2026](https://getgencost.com/pages/pika-vs-luma-pricing-2026.html)
+- [PlayHT Is Shut Down: The Cheapest PlayHT Alternatives in 2026](https://getgencost.com/pages/best-playht-alternatives-2026.html)
+- [Runway vs Kling AI Pricing Comparison 2026](https://getgencost.com/pages/runway-vs-kling-pricing-2026.html)
+- [Runway vs Luma Pricing Comparison 2026](https://getgencost.com/pages/runway-vs-luma-pricing-2026.html)
+- [Sora Is Shut Down: The Cheapest Sora Alternatives in 2026](https://getgencost.com/pages/best-sora-alternatives-2026.html)
+- [Stable Audio vs Beatoven Pricing Comparison 2026](https://getgencost.com/pages/stable-audio-vs-beatoven-pricing-2026.html)
+- [Suno vs Udio Pricing Comparison 2026](https://getgencost.com/pages/suno-vs-udio-pricing-2026.html)
+- [Where Is Seedance 2.5 Cheapest? Every Platform Compared (2026)](https://getgencost.com/pages/cheapest-way-to-use-seedance-2-5-2026.html)
+
+## Tool pricing pages
+- [AIVA Pricing](https://getgencost.com/pages/music/aiva.html)
+- [Boomy Pricing](https://getgencost.com/pages/music/boomy.html)
+- [CapCut Pricing](https://getgencost.com/pages/capcut.html)
+- [Cartesia Pricing](https://getgencost.com/pages/voice/cartesia.html)
+- [Descript Pricing](https://getgencost.com/pages/voice/descript.html)
+- [ElevenLabs Pricing](https://getgencost.com/pages/voice/elevenlabs.html)
+- [Google Veo Pricing](https://getgencost.com/pages/veo.html)
+- [Hailuo AI Pricing](https://getgencost.com/pages/hailuo.html)
+- [HeyGen Pricing](https://getgencost.com/pages/heygen.html)
+- [Higgsfield Pricing](https://getgencost.com/pages/higgsfield.html)
+- [Ideogram Pricing](https://getgencost.com/pages/ideogram.html)
+- [InVideo Pricing](https://getgencost.com/pages/invideo.html)
+- [Kling AI Pricing](https://getgencost.com/pages/kling.html)
+- [Krea Pricing](https://getgencost.com/pages/krea.html)
+- [LTX Studio Pricing](https://getgencost.com/pages/ltx.html)
+- [Leonardo Pricing](https://getgencost.com/pages/leonardo.html)
+- [Luma Pricing](https://getgencost.com/pages/luma.html)
+- [Midjourney Pricing](https://getgencost.com/pages/midjourney.html)
+- [Murf AI Pricing](https://getgencost.com/pages/voice/murf.html)
+- [Pika Pricing](https://getgencost.com/pages/pika.html)
+- [Runway Pricing](https://getgencost.com/pages/runway.html)
+- [Soundraw Pricing](https://getgencost.com/pages/music/soundraw.html)
+- [Speechify Pricing](https://getgencost.com/pages/voice/speechify.html)
+- [Suno Pricing](https://getgencost.com/pages/music/suno.html)
+- [Synthesia Pricing](https://getgencost.com/pages/synthesia.html)
+- [Udio Pricing](https://getgencost.com/pages/music/udio.html)
+- [Vidu Pricing](https://getgencost.com/pages/vidu.html)
+- [Viggle Pricing](https://getgencost.com/pages/viggle.html)
+- [WellSaid Labs Pricing](https://getgencost.com/pages/voice/wellsaid.html)
