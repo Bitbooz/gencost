@@ -26,13 +26,13 @@
     },
     {
       "name": "Ultimate",
-      "monthly_price_usd": 115,
-      "yearly_price_usd": 95.83,
+      "monthly_price_usd": 230,
+      "yearly_price_usd": 191.67,
       "credits_or_minutes": 10000,
       "unit": "credits",
       "offer": "Limited-time offer 100 credits = $0.96"
     }
   ],
   "source": "https://www.vidu.com/pricing",
-  "last_checked": "2026-11-07 15:34"
+  "last_checked": "2026-11-07 17:46"
 }

@@ -1,12 +1,12 @@
 {
  "category": "voice",
- "updated": "2026-11-07 15:43",
+ "updated": "2026-11-07 17:51",
  "platforms": [
   {
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-07 15:39",
+   "checked": "2026-11-07 17:49",
    "plans": [
     {
      "name": "Free",
@@ -61,29 +61,23 @@
    "name": "Murf AI",
    "page": "/pages/voice/murf.html",
    "source": "https://murf.ai/pricing",
-   "checked": "2026-11-07 15:39",
+   "checked": "2026-11-07 17:49",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 10,
-     "unit": "minutes",
      "offer": ""
     },
     {
      "name": "Creator",
      "monthly_price_usd": 19,
      "yearly_price_usd": 19,
-     "credits_or_minutes": 24,
-     "unit": "hours",
      "offer": ""
     },
     {
      "name": "Business",
      "monthly_price_usd": 66,
      "yearly_price_usd": 66,
-     "credits_or_minutes": 96,
-     "unit": "hours",
      "offer": ""
     }
    ]
@@ -92,34 +86,26 @@
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-07 15:40",
+   "checked": "2026-11-07 17:49",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 20000,
-     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Pro",
      "monthly_price_usd": 5,
-     "credits_or_minutes": 100000,
-     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Startup",
      "monthly_price_usd": 49,
-     "credits_or_minutes": 1250000,
-     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Scale",
      "monthly_price_usd": 299,
-     "credits_or_minutes": 8000000,
-     "unit": "credits",
      "offer": ""
     }
    ]
@@ -128,7 +114,7 @@
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-07 15:40",
+   "checked": "2026-11-07 17:49",
    "plans": [
     {
      "name": "Free",
@@ -151,15 +137,8 @@
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-07 15:41",
+   "checked": "2026-11-07 17:50",
    "plans": [
-    {
-     "name": "Free",
-     "monthly_price_usd": 0,
-     "credits_or_minutes": 60,
-     "unit": "minutes",
-     "offer": ""
-    },
     {
      "name": "Hobbyist",
      "monthly_price_usd": 24,

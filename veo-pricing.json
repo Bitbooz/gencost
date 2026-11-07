@@ -2,13 +2,27 @@
   "platform": "veo",
   "plans": [
     {
-      "name": "Google AI Pro",
-      "monthly_price_usd": 8.99,
+      "name": "Google AI Plus",
+      "monthly_price_usd": 0,
       "credits_or_minutes": 0,
-      "unit": "",
-      "offer": "free for 1 year for students; or $8.99/mo with YouTube Premium"
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Google AI Pro",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "credits",
+      "offer": "Students: free 1 year or $8.99/mo with YouTube Premium"
+    },
+    {
+      "name": "Google AI Ultra",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "credits",
+      "offer": ""
     }
   ],
   "source": "https://one.google.com/about/google-ai-plans/",
-  "last_checked": "2026-11-07 15:34"
+  "last_checked": "2026-11-07 17:45"
 }

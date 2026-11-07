@@ -6,7 +6,7 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 50,
       "unit": "credits",
-      "offer": "Free forever"
+      "offer": ""
     },
     {
       "name": "Pro",
@@ -26,5 +26,5 @@
     }
   ],
   "source": "https://suno.com/pricing",
-  "last_checked": "2026-11-07 15:41"
+  "last_checked": "2026-11-07 17:50"
 }

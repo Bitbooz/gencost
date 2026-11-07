@@ -2,13 +2,6 @@
   "platform": "descript",
   "plans": [
     {
-      "name": "Free",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 60,
-      "unit": "minutes",
-      "offer": ""
-    },
-    {
       "name": "Hobbyist",
       "monthly_price_usd": 24,
       "yearly_price_usd": 16,
@@ -34,5 +27,5 @@
     }
   ],
   "source": "https://www.descript.com/pricing",
-  "last_checked": "2026-11-07 15:41"
+  "last_checked": "2026-11-07 17:50"
 }
