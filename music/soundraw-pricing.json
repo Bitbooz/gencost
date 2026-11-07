@@ -3,31 +3,33 @@
   "plans": [
     {
       "name": "Creator",
-      "monthly_price_usd": 5.99,
+      "monthly_price_usd": 16.99,
       "credits_or_minutes": "unlimited",
       "unit": "tracks",
-      "offer": ""
+      "offer": "Get up to 67% off with Annual"
     },
     {
       "name": "Artist Starter",
-      "monthly_price_usd": 10.49,
+      "monthly_price_usd": 29.99,
       "credits_or_minutes": 10,
       "unit": "tracks",
-      "offer": ""
+      "offer": "Get up to 67% off with Annual"
     },
     {
       "name": "Artist Pro",
-      "monthly_price_usd": 12.59,
+      "monthly_price_usd": 35.99,
       "credits_or_minutes": 20,
       "unit": "tracks",
-      "offer": ""
+      "offer": "Get up to 67% off with Annual"
     },
     {
       "name": "Artist Unlimited",
-      "monthly_price_usd": 17.49,
+      "monthly_price_usd": 50,
       "credits_or_minutes": "unlimited",
       "unit": "tracks",
-      "offer": ""
+      "offer": "Get up to 67% off with Annual"
     }
-  ]
+  ],
+  "source": "https://soundraw.io/pricing",
+  "last_checked": "2026-11-07 11:13"
 }

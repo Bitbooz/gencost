@@ -1,27 +1,28 @@
 {
   "platform": "capcut",
-  "source": "https://www.capcut.com/pricing",
   "plans": [
     {
       "name": "Free",
       "monthly_price_usd": 0,
-      "credits_or_minutes": 0,
-      "unit": "credits",
+      "credits_or_minutes": "",
+      "unit": "",
       "offer": ""
     },
     {
       "name": "Pro",
       "monthly_price_usd": 19.99,
-      "credits_or_minutes": 1200,
-      "unit": "credits",
-      "offer": "$179.99/year on yearly billing"
+      "credits_or_minutes": "",
+      "unit": "",
+      "offer": "yearly 179.99, first month AI pricing"
     },
     {
       "name": "Ultra",
       "monthly_price_usd": 79,
-      "credits_or_minutes": 8645,
-      "unit": "credits",
-      "offer": "$900/year on yearly billing"
+      "credits_or_minutes": "",
+      "unit": "",
+      "offer": "yearly 900, first month AI pricing, best value"
     }
-  ]
+  ],
+  "source": "https://www.capcut.com/pricing",
+  "last_checked": "2026-11-07 11:12"
 }

@@ -13,14 +13,14 @@
       "monthly_price_usd": 6,
       "credits_or_minutes": 30000,
       "unit": "credits",
-      "offer": "$1 first month, 2 months free on yearly, limited time 30k credits for $1"
+      "offer": "$1 first month; 2 months free on yearly"
     },
     {
       "name": "Creator",
       "monthly_price_usd": 22,
       "credits_or_minutes": 121000,
       "unit": "credits",
-      "offer": "$11 first month, 2 months free on yearly"
+      "offer": "$11 first month; 2 months free on yearly"
     },
     {
       "name": "Pro",
@@ -43,5 +43,7 @@
       "unit": "credits",
       "offer": "2 months free on yearly"
     }
-  ]
+  ],
+  "source": "https://elevenlabs.io/pricing",
+  "last_checked": "2026-11-07 11:12"
 }

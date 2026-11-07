@@ -6,28 +6,30 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 20000,
       "unit": "credits",
-      "offer": ""
+      "offer": "Evaluations free of charge for a limited time only"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 5,
       "credits_or_minutes": 100000,
       "unit": "credits",
-      "offer": ""
+      "offer": "Evaluations free of charge for a limited time only"
     },
     {
       "name": "Startup",
       "monthly_price_usd": 49,
       "credits_or_minutes": 1250000,
       "unit": "credits",
-      "offer": ""
+      "offer": "Evaluations free of charge for a limited time only"
     },
     {
       "name": "Scale",
       "monthly_price_usd": 299,
       "credits_or_minutes": 8000000,
       "unit": "credits",
-      "offer": ""
+      "offer": "Evaluations free of charge for a limited time only"
     }
-  ]
+  ],
+  "source": "https://cartesia.ai/pricing",
+  "last_checked": "2026-11-07 11:12"
 }

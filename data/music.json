@@ -1,33 +1,33 @@
 {
  "category": "music",
- "updated": "2026-11-07 00:12",
+ "updated": "2026-11-07 11:13",
  "platforms": [
   {
    "name": "Suno",
    "page": "/pages/music/suno.html",
-   "source": "",
-   "checked": "2026-11-07 00:12",
+   "source": "https://suno.com/pricing",
+   "checked": "2026-11-07 11:13",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 50,
      "unit": "credits",
-     "offer": ""
+     "offer": "Free forever"
     },
     {
      "name": "Pro",
-     "monthly_price_usd": 10,
+     "monthly_price_usd": 8,
      "credits_or_minutes": 2500,
      "unit": "credits",
-     "offer": "Save $24 on yearly"
+     "offer": "Save $24 Billed $96/year"
     },
     {
      "name": "Premier",
-     "monthly_price_usd": 30,
+     "monthly_price_usd": 24,
      "credits_or_minutes": 10000,
      "unit": "credits",
-     "offer": "Save $72 on yearly"
+     "offer": "Save $72 Billed $288/year"
     }
    ]
   },
@@ -35,7 +35,7 @@
    "name": "Udio",
    "page": "/pages/music/udio.html",
    "source": "",
-   "checked": "2026-11-07 00:12",
+   "checked": "2026-11-07 11:13",
    "plans": [
     {
      "name": "Free",
@@ -60,44 +60,44 @@
   {
    "name": "Soundraw",
    "page": "/pages/music/soundraw.html",
-   "source": "",
-   "checked": "2026-11-07 00:12",
+   "source": "https://soundraw.io/pricing",
+   "checked": "2026-11-07 11:13",
    "plans": [
     {
      "name": "Creator",
-     "monthly_price_usd": 5.99,
+     "monthly_price_usd": 16.99,
      "credits_or_minutes": "unlimited",
      "unit": "tracks",
-     "offer": ""
+     "offer": "Get up to 67% off with Annual"
     },
     {
      "name": "Artist Starter",
-     "monthly_price_usd": 10.49,
+     "monthly_price_usd": 29.99,
      "credits_or_minutes": 10,
      "unit": "tracks",
-     "offer": ""
+     "offer": "Get up to 67% off with Annual"
     },
     {
      "name": "Artist Pro",
-     "monthly_price_usd": 12.59,
+     "monthly_price_usd": 35.99,
      "credits_or_minutes": 20,
      "unit": "tracks",
-     "offer": ""
+     "offer": "Get up to 67% off with Annual"
     },
     {
      "name": "Artist Unlimited",
-     "monthly_price_usd": 17.49,
+     "monthly_price_usd": 50,
      "credits_or_minutes": "unlimited",
      "unit": "tracks",
-     "offer": ""
+     "offer": "Get up to 67% off with Annual"
     }
    ]
   },
   {
    "name": "AIVA",
    "page": "/pages/music/aiva.html",
-   "source": "",
-   "checked": "2026-11-07 00:12",
+   "source": "https://www.aiva.ai/pricing",
+   "checked": "2026-11-07 11:13",
    "plans": [
     {
      "name": "Free",
@@ -126,7 +126,7 @@
    "name": "Boomy",
    "page": "/pages/music/boomy.html",
    "source": "",
-   "checked": "2026-11-07 00:12",
+   "checked": "2026-11-07 11:13",
    "plans": [
     {
      "name": "Free",

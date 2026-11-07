@@ -4,7 +4,7 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
-      "credits_or_minutes": 3,
+      "credits_or_minutes": "3 videos",
       "unit": "videos",
       "offer": "2 months free on yearly"
     },
@@ -22,5 +22,7 @@
       "unit": "credits",
       "offer": "2 months free on yearly"
     }
-  ]
+  ],
+  "source": "https://www.heygen.com/pricing",
+  "last_checked": "2026-11-07 11:10"
 }
