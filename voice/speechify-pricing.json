@@ -4,15 +4,19 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "",
       "offer": ""
     },
     {
       "name": "Premium",
       "monthly_price_usd": 29,
       "yearly_price_usd": 11.58,
+      "credits_or_minutes": 0,
+      "unit": "",
       "offer": ""
     }
   ],
   "source": "https://speechify.com/pricing",
-  "last_checked": "2026-11-07 18:47"
+  "last_checked": "2026-11-07 19:18"
 }

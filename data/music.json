@@ -1,12 +1,12 @@
 {
  "category": "music",
- "updated": "2026-11-07 18:48",
+ "updated": "2026-11-07 19:20",
  "platforms": [
   {
    "name": "Suno",
    "page": "/pages/music/suno.html",
    "source": "https://suno.com/pricing",
-   "checked": "2026-11-07 18:47",
+   "checked": "2026-11-07 19:19",
    "plans": [
     {
      "name": "Free",
@@ -17,27 +17,35 @@
     },
     {
      "name": "Pro",
-     "monthly_price_usd": 10,
-     "yearly_price_usd": 8,
+     "monthly_price_usd": 8,
+     "yearly_price_usd": 6,
      "credits_or_minutes": 2500,
      "unit": "credits",
      "offer": ""
     },
     {
      "name": "Premier",
-     "monthly_price_usd": 30,
-     "yearly_price_usd": 24,
+     "monthly_price_usd": 24,
      "credits_or_minutes": 10000,
      "unit": "credits",
      "offer": ""
     }
-   ]
+   ],
+   "hidden": {
+    "items": [
+     "Free: no downloads and no commercial rights",
+     "Monthly credits don't carry over; top-ups need an active plan"
+    ],
+    "source": "https://suno.com/pricing",
+    "checked": "2026-11-07",
+    "official": true
+   }
   },
   {
    "name": "Udio",
    "page": "/pages/music/udio.html",
    "source": "https://www.udio.com/pricing",
-   "checked": "2026-11-07 18:47",
+   "checked": "2026-11-07 19:19",
    "plans": [
     {
      "name": "Free",
@@ -62,13 +70,22 @@
      "unit": "credits",
      "offer": ""
     }
-   ]
+   ],
+   "hidden": {
+    "items": [
+     "Credits don't roll over",
+     "Free: 10 credits a day, max 3 full songs a day"
+    ],
+    "source": "https://www.udio.com/pricing",
+    "checked": "2026-11-07",
+    "official": true
+   }
   },
   {
    "name": "Soundraw",
    "page": "/pages/music/soundraw.html",
    "source": "https://soundraw.io/pricing",
-   "checked": "2026-11-07 18:48",
+   "checked": "2026-11-07 19:19",
    "plans": [
     {
      "name": "Creator",
@@ -94,13 +111,22 @@
      "yearly_price_usd": 32.5,
      "offer": ""
     }
-   ]
+   ],
+   "hidden": {
+    "items": [
+     "Plans are for companies under 10 employees; bigger ones need Enterprise",
+     "Artist Starter has only 10 downloads a month"
+    ],
+    "source": "https://soundraw.io/pricing",
+    "checked": "2026-11-07",
+    "official": true
+   }
   },
   {
    "name": "AIVA",
    "page": "/pages/music/aiva.html",
    "source": "https://www.aiva.ai/pricing",
-   "checked": "2026-11-07 18:48",
+   "checked": "2026-11-07 19:20",
    "plans": [
     {
      "name": "Free",
@@ -119,13 +145,22 @@
      "yearly_price_usd": 33,
      "offer": "monthly price not shown"
     }
-   ]
+   ],
+   "hidden": {
+    "items": [
+     "Free: AIVA owns the copyright, you must credit AIVA and can't monetize",
+     "You own the copyright only on Pro"
+    ],
+    "source": "https://www.aiva.ai/pricing",
+    "checked": "2026-11-07",
+    "official": true
+   }
   },
   {
    "name": "Boomy",
    "page": "/pages/music/boomy.html",
    "source": "https://boomy.com/pricing",
-   "checked": "2026-11-07 18:48",
+   "checked": "2026-11-07 19:20",
    "plans": [
     {
      "name": "Free",
@@ -135,14 +170,22 @@
     {
      "name": "Creator",
      "monthly_price_usd": 9.99,
-     "offer": ""
+     "offer": "33% off"
     },
     {
      "name": "Pro",
      "monthly_price_usd": 29.99,
-     "offer": ""
+     "offer": "25% off"
     }
-   ]
+   ],
+   "hidden": {
+    "items": [
+     "Free: no downloads and no commercial use"
+    ],
+    "source": "https://boomy.com/pricing",
+    "checked": "2026-11-07",
+    "official": true
+   }
   }
  ]
 }

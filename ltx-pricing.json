@@ -30,9 +30,9 @@
       "yearly_price_usd": 100,
       "credits_or_minutes": 110000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday"
+      "offer": ""
     }
   ],
   "source": "https://ltx.studio/pricing",
-  "last_checked": "2026-11-07 18:45"
+  "last_checked": "2026-11-07 19:17"
 }
