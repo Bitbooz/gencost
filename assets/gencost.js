@@ -96,6 +96,7 @@
     const price = GC.price(plan);
     const credits = num(plan && plan.credits_or_minutes) || num(info && info.plan_credits && info.plan_credits[plan.name]);
     if (!info || !info.clips || !price || !credits || credits <= 0) return null;
+    if (info.only_plans && !info.only_plans.includes(plan.name)) return null;
     const known = Object.keys(info.clips).map(Number).sort((a, b) => a - b);
     if (!known.length) return null;
     let used = known.includes(secs) ? secs : null, scaled = false;
@@ -111,6 +112,7 @@
   };
   GC.clipLengths = function (plan) {
     const info = plan && plan.__clips;
+    if (info && info.only_plans && !info.only_plans.includes(plan.name)) return [];
     return info && info.clips ? Object.keys(info.clips).map(Number).sort((a, b) => a - b) : [];
   };
 

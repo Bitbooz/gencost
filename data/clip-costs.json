@@ -1,5 +1,5 @@
 {
- "about": "Credits one video clip costs on each tool. Kept by hand: the daily job does not change this file. Used for the 'per clip' cost on plan cards and for the 'Real-world example' boxes in articles. 'clips' maps clip length in seconds to credits. 'plan_credits' fills in a plan's credits when the price data has none. A tool that is not listed gets no clip estimate (better than a wrong one).",
+ "about": "Credits one video clip costs on each tool. Kept by hand: the daily job does not change this file. Used for the 'per clip' cost on plan cards and for the 'Real-world example' boxes in articles. 'clips' maps clip length in seconds to credits. 'only_plans' limits the clip cost to plans that include that model. 'plan_credits' fills in a plan's credits when the price data has none. A tool that is not listed gets no clip estimate (better than a wrong one).",
  "updated": "2026-11-07",
  "tools": {
   "Runway": {
@@ -37,8 +37,13 @@
     "5": 56
    },
    "source": "https://invideo.io/pricing",
-   "checked": "2026-11-06",
-   "official": true
+   "checked": "2026-11-07",
+   "official": true,
+   "only_plans": [
+    "Plus",
+    "Max"
+   ],
+   "note": "Seedance 2.5 is not included on Starter, so Starter shows no clip cost."
   },
   "Kling AI": {
    "model": "Kling 3.0, 720p, no audio",

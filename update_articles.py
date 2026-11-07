@@ -138,8 +138,10 @@ def live_value(tool, plan, bill):
 def cheapest_paid(tool, need_clips=False):
     """Cheapest plan with a price (and credits, if clip costs are needed)."""
     pc = (tool.get("clips") or {}).get("plan_credits") or {}
+    only = (tool.get("clips") or {}).get("only_plans")
     ps = [p for p in tool["plans"] if (num(p.get("monthly_price_usd")) or 0) > 0
-          and (not need_clips or (num(p.get("credits_or_minutes")) or num(pc.get(p["name"])) or 0) > 0)]
+          and (not need_clips or (num(p.get("credits_or_minutes")) or num(pc.get(p["name"])) or 0) > 0)
+          and (not need_clips or not only or p["name"] in only)]
     return min(ps, key=lambda p: p["monthly_price_usd"]) if ps else None
 
 
@@ -154,6 +156,8 @@ def clip_cost(tool, plan, secs, bill="monthly"):
     price, p = live_value(tool, plan["name"], bill) if plan else (None, None)
     credits = num((p or {}).get("credits_or_minutes")) or num((info.get("plan_credits") or {}).get(plan["name"] if plan else ""))
     if not clips or not price or not credits:
+        return None
+    if info.get("only_plans") and plan["name"] not in info["only_plans"]:
         return None
     if secs in clips:
         cr, scaled = clips[secs], False
@@ -246,7 +250,9 @@ def mark_tables(soup, art, matcher):
                 continue
             cell_text = cells[pc].get_text(" ", strip=True)
             others = " | ".join(c.get_text(" ", strip=True) for i, c in enumerate(cells[1:], 1) if i != pc)
-            plan = find_plan(tool, label) or find_plan(tool, cell_text) or find_plan(tool, others)
+            plan_cell = next((cells[i].get_text(" ", strip=True) for i, h in enumerate(head) if h == "plan" and i < len(cells)), "")
+            plan = (find_plan(tool, label) or find_plan(tool, plan_cell) or find_plan(tool, cell_text)
+                    or find_plan(tool, others))
             if not plan and cheapest_col:
                 plan = cheapest_paid(tool)
             if not plan:
@@ -536,6 +542,8 @@ NOTE_FIXES = {
         ('<li class="reveal"><a class="art" href="/pages/cheapest-ai-video-tools-in-2026.html"><span class="cat video">Video</span><h3>Cheapest AI Video Tools in 2026</h3><p>Kling vs Runway vs Pika vs Luma</p></a></li>',
          '<li class="reveal"><a class="art" href="/pages/best-sora-alternatives-2026.html"><span class="cat video">Video</span><h3>Sora Is Shut Down: Cheapest Alternatives</h3><p>Veo vs Kling vs Runway, cost per clip</p></a></li>\n'
          '      <li class="reveal"><a class="art" href="/pages/cheapest-ai-video-tools-in-2026.html"><span class="cat video">Video</span><h3>Cheapest AI Video Tools in 2026</h3><p>Kling vs Runway vs Pika vs Luma</p></a></li>'),
+        ('<li class="reveal"><a class="art" href="/pages/best-sora-alternatives-2026.html"><span class="cat video">Video</span><h3>Sora Is Shut Down: Cheapest Alternatives</h3><p>Veo vs Kling vs Runway, cost per clip</p></a></li>',
+         '<li class="reveal"><a class="art" href="/pages/best-sora-alternatives-2026.html"><span class="cat video">Video</span><h3>Sora Is Shut Down: Cheapest Alternatives</h3><p>Veo vs Kling vs Runway, cost per clip</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/cheapest-way-to-use-seedance-2-5-2026.html"><span class="cat video">Video</span><h3>Where Is Seedance 2.5 Cheapest?</h3><p>CapCut vs Higgsfield vs Luma vs Pika</p></a></li>'),
         ("ElevenLabs, PlayHT, Cartesia and more", "ElevenLabs, Cartesia, Murf and more"),
         ("Clip estimates assume one credit per second of video, which differs between tools.",
          "Clip costs use each tool's own credits per clip for the model named (hover to see it). Tools without a known clip cost show none."),
