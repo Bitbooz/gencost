@@ -1,7 +1,9 @@
-﻿name: Daily Price Update
+name: Daily Price Update
 
 # Runs every morning at 05:17 UTC (06:17 Norwegian winter time),
 # or by hand: GitHub -> Actions -> Daily Price Update -> Run workflow.
+# GitHub sometimes skips scheduled runs, so there are two backup times later in the day.
+# A backup run stops at once if the prices were already updated today.
 #
 # ONE-TIME SETUP: add your xAI key as a secret named XAI_API_KEY
 # (GitHub repo -> Settings -> Secrets and variables -> Actions -> New repository secret).
@@ -9,7 +11,14 @@
 on:
   schedule:
     - cron: '17 5 * * *'
+    - cron: '47 7 * * *'
+    - cron: '23 12 * * *'
   workflow_dispatch:
+
+# Never run two updates at the same time (they would clash when saving)
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -20,27 +29,41 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v5
 
+      - name: Skip if today's update already ran
+        id: gate
+        run: |
+          today=$(TZ=Europe/Oslo date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ -f last-auto-run.txt ] && grep -q "$today" last-auto-run.txt; then
+            echo "Prices were already updated today ($today). Nothing to do."
+            echo "skip=1" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Set up Python
+        if: steps.gate.outputs.skip != '1'
         uses: actions/setup-python@v6
         with:
           python-version: '3.11'
 
       - name: Install dependencies
+        if: steps.gate.outputs.skip != '1'
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 lxml openai tzdata playwright
           python -m playwright install --with-deps chromium
 
       - name: Update prices (scrape, extract with Grok, check, rebuild site data)
+        if: steps.gate.outputs.skip != '1'
         env:
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
         run: python auto_update.py
 
       - name: Commit and push changes
+        if: steps.gate.outputs.skip != '1'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A *-pricing.json voice music data price-review.txt article-review.txt seo-review.txt *-raw.txt pages *.html sitemap.xml llms.txt price-changes.txt
+          echo "$(TZ=Europe/Oslo date +'%Y-%m-%d %H:%M') ${{ github.event_name }}" > last-auto-run.txt
+          git add -A *-pricing.json voice music data price-review.txt article-review.txt seo-review.txt *-raw.txt pages *.html sitemap.xml llms.txt price-changes.txt last-auto-run.txt
           if git diff --staged --quiet; then
             echo "No changes."
           else
