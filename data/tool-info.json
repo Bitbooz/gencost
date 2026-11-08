@@ -170,6 +170,59 @@
    "best_for": "Quick songs you want to publish on Spotify and other platforms.",
    "free": "The Free plan saves up to 25 songs, but has no downloads and no commercial use.",
    "credits": "Paid plans add WAV downloads each month, full commercial use and permission to distribute songs to streaming services."
+  },
+  "PixVerse": {
+   "about": "PixVerse is an AI video generator with its own models, known for fast generation, effects templates and output up to 4K on higher plans.",
+   "best_for": "Quick social clips, effects and templates at a low price.",
+   "free": "You get free daily credits; they renew every day at midnight UTC and expire at the end of the day if unused.",
+   "credits": "Plan credits refresh every 30 days from the date you subscribed, and unused ones expire when the new cycle starts. Paid plans are watermark-free and ad-free."
+  },
+  "D-ID": {
+   "about": "D-ID makes talking-avatar and talking-photo videos: you upload a photo or pick an avatar, add a script, and the avatar speaks it.",
+   "best_for": "Short presenter videos and animating portraits.",
+   "free": "There is a trial with a full-screen watermark, for personal use only.",
+   "credits": "The watermark and license depend on the plan: Lite has a D-ID watermark and is for personal use only; Pro adds a commercial license with a small AI watermark; Advanced lets you use your own logo."
+  },
+  "Colossyan": {
+   "about": "Colossyan makes AI avatar videos for workplace learning and training, with SCORM export for learning systems and 300+ avatars.",
+   "best_for": "Companies making training and onboarding videos.",
+   "free": "The Starter plan is free and, according to Colossyan, worth $27 a month; Professional adds watermark removal, SCORM export and more minutes.",
+   "credits": "Plans include video minutes a month. Unused minutes don't roll over to the next month."
+  },
+  "OpusClip": {
+   "about": "OpusClip turns long videos into short clips for TikTok, Reels and Shorts, with AI captions, reframing and filler-word removal.",
+   "best_for": "Podcasters and YouTubers who cut long videos into shorts.",
+   "free": "The Free plan adds a watermark and keeps your uploads for only 3 days.",
+   "credits": "Credits are used per minute of video processed. Paid plans export without a watermark and keep media longer; on Pro, unused credits roll over for up to 2 months."
+  },
+  "Captions": {
+   "about": "Captions is an AI video editing app for talking videos: auto captions, eye contact, dubbing, and generated B-roll, music and sound effects.",
+   "best_for": "Creators who film themselves talking and want quick, polished edits.",
+   "free": "There is a free version with a more limited set of features.",
+   "credits": "Generative features use credits. Unused credits roll over: your balance can hold up to three times your monthly amount."
+  },
+  "Fliki": {
+   "about": "Fliki turns text, blog posts and slides into videos with AI voices, stock media and avatars, in 80+ languages.",
+   "best_for": "Faceless YouTube videos, explainers and social posts from text.",
+   "free": "The Free plan gives about 5 minutes of audio and video a month, at 720p with a Fliki watermark.",
+   "credits": "Credits are roughly minutes of content: Standard's 180 credits make about 60 to 90 minutes of video. Paid plans remove the watermark and include commercial rights."
+  },
+  "Fish Audio": {
+   "about": "Fish Audio is an AI text-to-speech and voice-cloning platform with a large library of community voices and an API.",
+   "best_for": "Cheap, natural voice-overs and voice cloning.",
+   "free": "The Free plan gives some free generations a month, for personal, non-commercial use only.",
+   "credits": "One minute of speech costs about 600 to 625 credits. Monthly quotas reset each billing cycle; unused minutes don't roll over. Commercial use needs a paid plan."
+  },
+  "Mureka": {
+   "about": "Mureka is an AI song generator with its own models and Mureka Studio for editing, extending tracks and making lyric videos.",
+   "best_for": "Full songs you want to monetize, with unlimited downloads.",
+   "credits": "Plans use credits called Gold. Paid plans include full commercial rights for all songs, also ones made before you upgraded, and unlimited downloads."
+  },
+  "Stable Audio": {
+   "about": "Stable Audio is Stability AI's music and sound generator; it makes full mixes or separate tracks up to 6 minutes long.",
+   "best_for": "Background music, sound beds and multi-track stems.",
+   "free": "The Free plan gives about 12 full-mix generations a month, and includes a commercial license.",
+   "credits": "Each plan lists about how many generations it covers, for example about 165 full mixes a month on Solo."
   }
  }
 }

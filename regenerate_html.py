@@ -129,6 +129,8 @@ def load_hidden_costs():
 
 # Tools that have shut down: kept out of the price lists (their old files stay for history)
 DISCONTINUED = {"Sora", "PlayHT"}
+# Not shown: Resemble AI's pricing page is for deepfake detection, not for voices
+HIDDEN_TOOLS = {"Resemble AI"}
 
 
 def record_history(category, platforms, day):
@@ -209,8 +211,11 @@ def build(category, paths, names):
                     break
         if not name:
             name = str(d.get("platform") or os.path.basename(path).replace("-pricing.json", "")).title()
-        if name in DISCONTINUED:
+        if name in DISCONTINUED or name in HIDDEN_TOOLS:
             continue
+        for p in d["plans"]:  # "TEAM" -> "Team"
+            if isinstance(p.get("name"), str) and p["name"].isupper() and len(p["name"]) > 3:
+                p["name"] = p["name"].title()
         platforms.append({
             "name": name,
             "page": page,

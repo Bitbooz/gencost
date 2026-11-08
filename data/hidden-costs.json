@@ -238,6 +238,77 @@
    "source": "https://soundraw.io/pricing",
    "checked": "2026-11-07",
    "official": true
+  },
+  "PixVerse": {
+   "items": [
+    "Unused plan credits expire every 30 days",
+    "No refunds if you are unhappy with results; credit packs are never refunded"
+   ],
+   "source": "https://app.pixverse.ai/subscribe",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "D-ID": {
+   "items": [
+    "Lite is for personal use only and has a D-ID watermark",
+    "Commercial use starts on Pro"
+   ],
+   "source": "https://www.d-id.com/pricing/studio/",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "Colossyan": {
+   "items": [
+    "Unused video minutes don't roll over",
+    "Watermark removal comes with Professional"
+   ],
+   "source": "https://www.colossyan.com/pricing",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "OpusClip": {
+   "items": [
+    "Free clips have a watermark",
+    "Free uploads are deleted after 3 days"
+   ],
+   "source": "https://www.opus.pro/pricing",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "Captions": {
+   "items": [
+    "Generative features (B-roll, dubbing) use credits",
+    "Credits roll over, but only up to 3× your monthly amount"
+   ],
+   "source": "https://www.captions.ai/pricing",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "Fliki": {
+   "items": [
+    "Free videos have a Fliki watermark and are 720p",
+    "Commercial rights only on paid plans"
+   ],
+   "source": "https://fliki.ai/pricing",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "Fish Audio": {
+   "items": [
+    "Free plan is for personal, non-commercial use only",
+    "Unused minutes don't roll over"
+   ],
+   "source": "https://fish.audio/plan/",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "Mureka": {
+   "items": [
+    "Commercial rights need a paid plan"
+   ],
+   "source": "https://www.mureka.ai/subscribe",
+   "checked": "2026-11-08",
+   "official": true
   }
  }
 }
