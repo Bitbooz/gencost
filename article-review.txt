@@ -1,30 +1,33 @@
-Article prices updated 2026-11-08 14:13 (price data from 2026-11-08 14:13)
+Article prices updated 2026-11-08 14:51 (price data from 2026-11-08 14:51)
 
 pages/best-cheap-ai-video-tools-for-youtube-2026.html: 6 live prices (0 new, 0 changed today) · box: CapCut, Kling AI, Pika, ElevenLabs, Runway, Luma, Captions
 pages/best-elevenlabs-alternatives-2026.html: 6 live prices (0 new, 0 changed today) · box: ElevenLabs, Murf AI, Cartesia
+pages/best-free-ai-image-generators-2026.html: 7 live prices (0 new, 0 changed today) · box: Leonardo, Ideogram, Recraft, Midjourney, Adobe Firefly
 pages/best-free-ai-video-tools-2026.html: 0 live prices (0 new, 0 changed today) · box: Kling AI, Runway, Pika, Luma
+pages/best-midjourney-alternatives-2026.html: 20 live prices (0 new, 0 changed today) · box: Midjourney, Ideogram, Leonardo, Recraft, Adobe Firefly, OpenArt, Freepik
 pages/best-playht-alternatives-2026.html: 6 live prices (0 new, 0 changed today) · box: ElevenLabs, Cartesia, Murf AI
-pages/best-sora-alternatives-2026.html: 11 live prices (0 new, 1 changed today) · box: Google Veo, Kling AI, Runway, Vidu, Pika
+pages/best-sora-alternatives-2026.html: 11 live prices (0 new, 0 changed today) · box: Google Veo, Kling AI, Runway, Vidu, Pika
     - Hailuo AI Standard: plan not found in today's prices, left as is
     - example 20 x 10s: Google Veo $9.99, Kling AI $16.00, Runway $57.60 -> cheapest today: Google Veo (check the verdict text agrees)
 pages/cheapest-ai-avatar-tools-in-2026.html: 3 live prices (0 new, 0 changed today) · box: HeyGen, Synthesia, D-ID
 pages/cheapest-ai-image-generators-2026.html: 13 live prices (0 new, 0 changed today) · box: Ideogram, Freepik, OpenArt, Recraft, Midjourney, Adobe Firefly, Leonardo
-pages/cheapest-ai-music-tools-in-2026.html: 4 live prices (0 new, 0 changed today) · box: Suno, Udio, AIVA
-pages/cheapest-ai-video-cost-per-second-2026.html: 14 live prices (0 new, 2 changed today) · box: Kling AI, Runway, Vidu, Pika, Google Veo, InVideo, Luma, Krea, Hailuo AI, Higgsfield
+pages/cheapest-ai-music-tools-in-2026.html: 4 live prices (0 new, 1 changed today) · box: Suno, Udio, AIVA
+pages/cheapest-ai-video-cost-per-second-2026.html: 14 live prices (0 new, 0 changed today) · box: Kling AI, Runway, Vidu, Pika, Google Veo, InVideo, Luma, Krea, Hailuo AI, Higgsfield
     - Hailuo AI Standard: plan not found in today's prices, left as is
     - example 30 x 10s: Vidu $7.50, Kling AI $24.00, Runway $86.40 -> cheapest today: Vidu (check the verdict text agrees)
 pages/cheapest-ai-video-tools-in-2026.html: 8 live prices (0 new, 0 changed today) · box: Kling AI, Pika, Runway, Luma
 pages/cheapest-ai-voice-cloning-tools-2026.html: 6 live prices (0 new, 0 changed today) · box: ElevenLabs, Cartesia
 pages/cheapest-ai-voice-tools-in-2026.html: 8 live prices (0 new, 0 changed today) · box: ElevenLabs, Cartesia
-pages/cheapest-way-to-use-seedance-2-5-2026.html: 6 live prices (0 new, 1 changed today) · box: CapCut, Pika, Higgsfield, InVideo, Luma, Krea
+pages/cheapest-way-to-use-seedance-2-5-2026.html: 6 live prices (0 new, 0 changed today) · box: CapCut, Pika, Higgsfield, InVideo, Luma, Krea
 pages/elevenlabs-vs-cartesia-pricing-2026.html: 5 live prices (0 new, 0 changed today) · box: ElevenLabs, Cartesia
-pages/heygen-vs-capcut-pricing-2026.html: 3 live prices (0 new, 4 changed today) · box: HeyGen, CapCut
+pages/heygen-vs-capcut-pricing-2026.html: 3 live prices (0 new, 0 changed today) · box: HeyGen, CapCut
 pages/heygen-vs-synthesia-pricing-2026.html: 5 live prices (0 new, 0 changed today) · box: HeyGen, Synthesia
-pages/kling-vs-hailuo-pricing-2026.html: 5 live prices (0 new, 1 changed today) · box: Kling AI, Hailuo AI
+pages/kling-vs-hailuo-pricing-2026.html: 5 live prices (0 new, 0 changed today) · box: Kling AI, Hailuo AI
     - Hailuo AI Standard: plan not found in today's prices, left as is
     - example 20 x 10s: Hailuo AI $4.66, Kling AI $16.00 -> cheapest today: Hailuo AI (check the verdict text agrees)
 pages/kling-vs-veo-pricing-2026.html: 6 live prices (0 new, 0 changed today) · box: Kling AI, Google Veo
     - example 20 x 8s: Google Veo $8.00, Kling AI $12.80 -> cheapest today: Google Veo (check the verdict text agrees)
+pages/midjourney-vs-ideogram-pricing-2026.html: 10 live prices (0 new, 0 changed today) · box: Midjourney, Ideogram
 pages/pika-vs-luma-pricing-2026.html: 7 live prices (0 new, 0 changed today) · box: Pika, Luma
     - example 20 x 10s: Pika $13.33, Luma $18.00 -> cheapest today: Pika (check the verdict text agrees)
 pages/playht-vs-elevenlabs-pricing-2026.html: 1 live prices (0 new, 0 changed today) · box: ElevenLabs
@@ -35,4 +38,4 @@ pages/runway-vs-luma-pricing-2026.html: 5 live prices (0 new, 0 changed today) �
     - example 30 x 10s: Luma $27.00, Runway $86.40 -> cheapest today: Luma (check the verdict text agrees)
 pages/stable-audio-vs-beatoven-pricing-2026.html: 0 live prices (0 new, 0 changed today) · box: Stable Audio
 pages/suno-vs-udio-pricing-2026.html: 4 live prices (0 new, 0 changed today) · box: Suno, Udio
-Related guides and tool-page fallbacks: 22 pages updated
+Related guides and tool-page fallbacks: 16 pages updated

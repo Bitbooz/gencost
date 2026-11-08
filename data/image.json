@@ -1,12 +1,12 @@
 {
  "category": "image",
- "updated": "2026-11-08 14:13",
+ "updated": "2026-11-08 14:51",
  "platforms": [
   {
    "name": "Midjourney",
    "page": "/pages/midjourney.html",
    "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-   "checked": "2026-11-08 14:12",
+   "checked": "2026-11-08 14:50",
    "plans": [
     {
      "name": "Basic",
@@ -20,24 +20,24 @@
      "name": "Standard",
      "monthly_price_usd": 30,
      "yearly_price_usd": 24,
-     "credits_or_minutes": 900,
-     "unit": "minutes",
+     "credits_or_minutes": 15,
+     "unit": "hours",
      "offer": ""
     },
     {
      "name": "Pro",
      "monthly_price_usd": 60,
      "yearly_price_usd": 48,
-     "credits_or_minutes": 1800,
-     "unit": "minutes",
+     "credits_or_minutes": 30,
+     "unit": "hours",
      "offer": ""
     },
     {
      "name": "Mega",
      "monthly_price_usd": 120,
      "yearly_price_usd": 96,
-     "credits_or_minutes": 3600,
-     "unit": "minutes",
+     "credits_or_minutes": 60,
+     "unit": "hours",
      "offer": ""
     }
    ],
@@ -104,7 +104,7 @@
    "name": "Ideogram",
    "page": "/pages/ideogram.html",
    "source": "https://docs.ideogram.ai/plans-and-pricing/personal-plans",
-   "checked": "2026-11-08 14:12",
+   "checked": "2026-11-08 14:50",
    "plans": [
     {
      "name": "Free",
@@ -196,7 +196,7 @@
    "name": "Recraft",
    "page": "/pages/recraft.html",
    "source": "https://www.recraft.ai/pricing",
-   "checked": "2026-11-08 14:12",
+   "checked": "2026-11-08 14:50",
    "plans": [
     {
      "name": "Basic",
@@ -230,7 +230,7 @@
    "name": "Freepik",
    "page": "/pages/freepik.html",
    "source": "https://www.freepik.com/pricing",
-   "checked": "2026-11-08 14:13",
+   "checked": "2026-11-08 14:51",
    "plans": [
     {
      "name": "Premium",
@@ -271,7 +271,7 @@
    "name": "OpenArt",
    "page": "/pages/openart.html",
    "source": "https://openart.ai/pricing",
-   "checked": "2026-11-08 14:13",
+   "checked": "2026-11-08 14:51",
    "plans": [
     {
      "name": "Starter",
@@ -295,7 +295,7 @@
      "yearly_price_usd": 44,
      "credits_or_minutes": 24000,
      "unit": "credits",
-     "offer": "GPT Image 2.6 30% OFF, Kling 4.0 50% OFF"
+     "offer": ""
     },
     {
      "name": "Wonder",
@@ -303,7 +303,7 @@
      "yearly_price_usd": 175,
      "credits_or_minutes": 106000,
      "unit": "credits",
-     "offer": "GPT Image 2.6 30% OFF, Kling 4.0 50% OFF, Unlimited Creation"
+     "offer": ""
     }
    ],
    "hidden": {
