@@ -1,12 +1,12 @@
 {
  "category": "voice",
- "updated": "2026-11-08 10:50",
+ "updated": "2026-11-08 11:14",
  "platforms": [
   {
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-08 10:46",
+   "checked": "2026-11-08 11:09",
    "plans": [
     {
      "name": "Free",
@@ -21,7 +21,7 @@
      "yearly_price_usd": 5,
      "credits_or_minutes": 30000,
      "unit": "credits",
-     "offer": "2 months free"
+     "offer": "$1 first month"
     },
     {
      "name": "Creator",
@@ -37,7 +37,7 @@
      "yearly_price_usd": 82.5,
      "credits_or_minutes": 600000,
      "unit": "credits",
-     "offer": "2 months free"
+     "offer": ""
     },
     {
      "name": "Scale",
@@ -45,7 +45,7 @@
      "yearly_price_usd": 249.17,
      "credits_or_minutes": 1800000,
      "unit": "credits",
-     "offer": "2 months free"
+     "offer": ""
     },
     {
      "name": "Business",
@@ -53,7 +53,7 @@
      "yearly_price_usd": 825,
      "credits_or_minutes": 6000000,
      "unit": "credits",
-     "offer": "2 months free"
+     "offer": ""
     }
    ],
    "hidden": {
@@ -71,7 +71,7 @@
    "name": "Murf AI",
    "page": "/pages/voice/murf.html",
    "source": "https://murf.ai/pricing",
-   "checked": "2026-11-08 10:46",
+   "checked": "2026-11-08 11:10",
    "plans": [
     {
      "name": "Free",
@@ -111,7 +111,7 @@
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-08 10:47",
+   "checked": "2026-11-08 11:10",
    "plans": [
     {
      "name": "Free",
@@ -148,21 +148,17 @@
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-08 10:47",
+   "checked": "2026-11-08 11:10",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": ""
     },
     {
      "name": "Premium",
      "monthly_price_usd": 29,
      "yearly_price_usd": 11.58,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": ""
     }
    ]
@@ -171,15 +167,8 @@
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-08 10:47",
+   "checked": "2026-11-08 11:11",
    "plans": [
-    {
-     "name": "Free",
-     "monthly_price_usd": 0,
-     "credits_or_minutes": 60,
-     "unit": "minutes",
-     "offer": ""
-    },
     {
      "name": "Hobbyist",
      "monthly_price_usd": 24,
@@ -232,7 +221,7 @@
    "name": "Fliki",
    "page": "/pages/voice/fliki.html",
    "source": "https://fliki.ai/pricing",
-   "checked": "2026-11-08 10:48",
+   "checked": "2026-11-08 11:11",
    "plans": [
     {
      "name": "Free",
@@ -270,7 +259,7 @@
    "name": "Fish Audio",
    "page": "/pages/fish-audio.html",
    "source": "https://fish.audio/plan/",
-   "checked": "2026-11-08 10:47",
+   "checked": "2026-11-08 11:11",
    "plans": [
     {
      "name": "Free Tier",
