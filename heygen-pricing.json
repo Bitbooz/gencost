@@ -4,25 +4,26 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
-      "credits_or_minutes": 3,
-      "unit": "videos",
+      "credits_or_minutes": 0,
+      "unit": "credits",
       "offer": ""
     },
     {
       "name": "Creator",
       "monthly_price_usd": 29,
+      "yearly_price_usd": 24,
       "credits_or_minutes": 600,
       "unit": "credits",
-      "offer": "2 months free on yearly"
+      "offer": ""
     },
     {
       "name": "Pro",
       "monthly_price_usd": 49,
       "credits_or_minutes": 1000,
       "unit": "credits",
-      "offer": "2 months free on yearly"
+      "offer": ""
     }
   ],
   "source": "https://www.heygen.com/pricing",
-  "last_checked": "2026-11-08 13:23"
+  "last_checked": "2026-11-08 14:03"
 }
