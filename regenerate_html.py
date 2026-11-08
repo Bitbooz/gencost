@@ -81,7 +81,6 @@ VOICE_NAMES = [
     ("hume", "Hume", "/pages/hume.html"),
     ("resemble", "Resemble AI", "/pages/resemble.html"),
     ("fishaudio", "Fish Audio", "/pages/fish-audio.html"),
-    ("lovo", "LOVO", "/pages/voice/lovo.html"),
 ]
 
 IMAGE_NAMES = [

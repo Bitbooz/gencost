@@ -5,7 +5,7 @@
       "name": "Starter",
       "monthly_price_usd": 29,
       "yearly_price_usd": 25,
-      "credits_or_minutes": 24000,
+      "credits_or_minutes": 2000,
       "unit": "credits",
       "offer": ""
     },
@@ -13,7 +13,7 @@
       "name": "Professional",
       "monthly_price_usd": 59,
       "yearly_price_usd": 35,
-      "credits_or_minutes": 72000,
+      "credits_or_minutes": 6000,
       "unit": "credits",
       "offer": ""
     },
@@ -21,7 +21,7 @@
       "name": "Teams",
       "monthly_price_usd": 199,
       "yearly_price_usd": 119,
-      "credits_or_minutes": 216000,
+      "credits_or_minutes": 18000,
       "unit": "credits",
       "offer": ""
     }

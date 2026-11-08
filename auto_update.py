@@ -81,15 +81,13 @@ VOICE = {
     # added 2026-11-07
     "fishaudio": ["https://fish.audio/plan/", "https://fish.audio/pricing/"],
     "fliki": ["https://fliki.ai/pricing"],
-    "lovo": ["https://lovo.ai/pricing"],  # added 2026-11-08
 }
-IMAGE = {  # added 2026-11-08. Leonardo and Adobe Firefly block automated reading: their files in image/ are kept by hand
+IMAGE = {  # added 2026-11-08. Leonardo, Adobe Firefly and NightCafe block automated reading: their files in image/ are kept by hand
     "midjourney": ["https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"],
     "ideogram": ["https://docs.ideogram.ai/plans-and-pricing/personal-plans", "https://ideogram.ai/pricing"],
     "recraft": ["https://www.recraft.ai/pricing", "https://www.recraft.ai/docs/plans-and-billing/paid-plans"],
     "freepik": ["https://www.freepik.com/pricing", "https://www.freepik.com/ai/docs/plans-and-pricing"],
     "openart": ["https://openart.ai/pricing"],
-    "nightcafe": ["https://creator.nightcafe.studio/pricing"],  # added 2026-11-08
 }
 MUSIC = {
     "suno": "https://suno.com/pricing",
@@ -127,6 +125,7 @@ FALLBACK = {
 # Pages with a Monthly / Yearly switch where only one is shown at a time:
 # the browser reads the page once per tab and gives the AI both.
 TABS = {
+    "veed": ["Pay monthly", "Pay yearly"],
     "aiva": ["Billed monthly", "Billed yearly"],
     "kling": ["Monthly", "Yearly"],
     "viggle": ["Monthly", "Yearly"],
@@ -169,6 +168,18 @@ def load_existing(path):
 # Extra help for pages where the prices are easy to misread.
 # "focus": lines with these words (and the lines around them) are put first, so they are never cut off.
 HINTS = {
+    "pictory": {
+        "focus": ["billed annually", "billed monthly", "credits"],
+        "note": "Each plan shows two prices: the higher one 'per month, billed monthly' is monthly_price_usd, the lower "
+                "'per month, billed annually' is yearly_price_usd. Each plan lists two credit amounts: the big one (e.g. 24,000) "
+                "is a year's credits given upfront on annual plans; credits_or_minutes is the monthly amount (e.g. 2,000).",
+    },
+    "veed": {
+        "focus": ["per user / month", "billed", "Credits"],
+        "note": "VEED opens on 'Pay yearly' ('$12 per user / month billed yearly' = yearly_price_usd 12). The 'Pay monthly' "
+                "view gives monthly_price_usd, which is higher. Never use the yearly price as the monthly price. "
+                "credits_or_minutes = the AI credits number (6,000), unit 'credits'.",
+    },
     "aiva": {
         "focus": ["/ month", "Billed"],
         "note": "AIVA's prices are in euros. Write the euro numbers as they appear (they are converted to US dollars "

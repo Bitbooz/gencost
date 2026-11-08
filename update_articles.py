@@ -800,7 +800,11 @@ def answer_box(name, tool):
         a += f". The biggest plan, {hi['name']}, is {cents(hi['monthly_price_usd'])} a month"
     a += ". " + ("There is also a free plan." if free_plan(tool) else "There is no free plan.")
     checked = (tool.get("checked") or "")[:10]
-    tail = f"Checked {checked} on the official pricing page." if checked else "Entered by hand; confirm on the official site."
+    src = tool.get("source") or ""
+    if "costbench" in src:
+        tail = f"From CostBench, checked {checked}; this tool blocks automatic reading, so confirm on the official site."
+    else:
+        tail = f"Checked {checked} on the official pricing page." if checked else "Entered by hand; confirm on the official site."
     return BeautifulSoup(f'<div class="box answer" data-auto="answer"><strong>In short:</strong> {html.escape(a)}'
                          f' <span class="note">{html.escape(tail)}</span></div>', PARSER).find("div")
 

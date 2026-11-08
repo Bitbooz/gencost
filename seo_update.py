@@ -97,7 +97,7 @@ def tool_desc(name, cat):
 
 # Pages for tools that were just added: kept out of Google until the daily check has read their prices
 PENDING = {"pages/d-id.html", "pages/colossyan.html",
-           "pages/pictory.html", "pages/veed.html", "pages/voice/lovo.html", "pages/nightcafe.html"}
+           "pages/pictory.html", "pages/veed.html", "pages/nightcafe.html"}
 
 # Two pages had the same title; give the second one its own
 TITLE_FIXES = {

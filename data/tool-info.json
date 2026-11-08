@@ -281,6 +281,24 @@
    "about": "OpenArt is an AI creator studio with 100+ image, video and audio models, plus tools for consistent characters.",
    "best_for": "Trying many image and video models from one account.",
    "credits": "Each plan gives monthly credits. One credit makes roughly one image; videos cost far more."
+  },
+  "Pictory": {
+   "about": "Pictory turns scripts, blog posts, URLs and long recordings into short videos with stock footage, AI voices and captions.",
+   "best_for": "Marketers and creators who turn text or long videos into short social clips.",
+   "free": "A free trial gives 300 credits, up to 3 videos of 5 minutes each.",
+   "credits": "Credits are shared across all AI features. Annual plans give a full year of credits upfront (24,000 on Starter); monthly plans give them each month (2,000)."
+  },
+  "VEED": {
+   "about": "VEED is an online video editor with AI tools: subtitles, translation, AI voices, avatars and AI video generation.",
+   "best_for": "Editing social videos in the browser, with subtitles and translation.",
+   "free": "You can start for free; paid plans remove the watermark.",
+   "credits": "Paid plans include AI credits: Creator 6,000 (VEED says about 1,500 AI videos), Pro 18,000. Prices are per user."
+  },
+  "NightCafe": {
+   "about": "NightCafe is an AI art generator and community, with many image models and daily challenges.",
+   "best_for": "Hobby AI art and trying many image models cheaply.",
+   "free": "The free plan gives 2 credits a day on the base models.",
+   "credits": "Paid plans give fast credits each month, plus 600+ slower Relax credits you can earn."
   }
  }
 }

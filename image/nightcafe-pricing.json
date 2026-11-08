@@ -1,0 +1,42 @@
+{
+  "platform": "NightCafe",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 2,
+      "unit": "credits",
+      "offer": "2 credits a day, base models only"
+    },
+    {
+      "name": "AI Hobbyist",
+      "monthly_price_usd": 12.49,
+      "credits_or_minutes": 200,
+      "unit": "credits",
+      "offer": "plus 600+ Relax credits"
+    },
+    {
+      "name": "AI Enthusiast",
+      "monthly_price_usd": 24.99,
+      "credits_or_minutes": 500,
+      "unit": "credits",
+      "offer": "plus 600+ Relax credits"
+    },
+    {
+      "name": "AI Creator",
+      "monthly_price_usd": 39.99,
+      "credits_or_minutes": 850,
+      "unit": "credits",
+      "offer": "plus 600+ Relax credits"
+    },
+    {
+      "name": "AI Artist",
+      "monthly_price_usd": 62.49,
+      "credits_or_minutes": 1400,
+      "unit": "credits",
+      "offer": "plus 600+ Relax credits"
+    }
+  ],
+  "source": "https://costbench.com/software/ai-image-generators/nightcafe/",
+  "last_checked": "2026-10-31 00:00"
+}

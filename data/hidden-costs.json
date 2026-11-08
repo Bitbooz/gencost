@@ -347,6 +347,33 @@
    "source": "https://openart.ai/pricing",
    "checked": "2026-11-08",
    "official": true
+  },
+  "Pictory": {
+   "items": [
+    "Yearly plans: a year of credits upfront, monthly plans: credits each month",
+    "Free trial: 3 videos, max 5 minutes"
+   ],
+   "source": "https://pictory.ai/pricing",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "VEED": {
+   "items": [
+    "Prices are per user",
+    "Free plan videos carry a watermark"
+   ],
+   "source": "https://www.veed.io/pricing",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "NightCafe": {
+   "items": [
+    "Free plan: base models only",
+    "Prices from CostBench; NightCafe blocks automatic reading"
+   ],
+   "source": "https://costbench.com/software/ai-image-generators/nightcafe/",
+   "checked": "2026-11-08",
+   "official": false
   }
  }
 }

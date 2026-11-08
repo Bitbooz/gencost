@@ -2,12 +2,19 @@
   "platform": "veed",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "credits",
+      "offer": "watermark on exports"
+    },
+    {
       "name": "Creator",
       "monthly_price_usd": 12,
       "yearly_price_usd": 12,
       "credits_or_minutes": 6000,
       "unit": "credits",
-      "offer": "monthly price not shown"
+      "offer": "billed yearly; the monthly-billing price is read from tomorrow"
     },
     {
       "name": "Pro",
@@ -15,7 +22,7 @@
       "yearly_price_usd": 22,
       "credits_or_minutes": 18000,
       "unit": "credits",
-      "offer": "monthly price not shown"
+      "offer": "billed yearly; the monthly-billing price is read from tomorrow"
     }
   ],
   "source": "https://www.veed.io/pricing",
