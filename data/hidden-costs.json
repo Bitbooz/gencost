@@ -1,6 +1,6 @@
 {
  "about": "Costs and limits that are easy to miss, per tool: watermarks, credits that expire, commercial-use rules. Kept by hand from each tool's pricing page (official) or a dated review (not official). The daily job does not change this file.",
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "tools": {
   "HeyGen": {
    "items": [
@@ -135,11 +135,11 @@
   },
   "Leonardo": {
    "items": [
-    "Free: your images are public and Leonardo holds the rights",
-    "Paid plans roll unused tokens over, up to a cap"
+    "Free-plan images are public",
+    "Token bank has a cap per plan"
    ],
-   "source": "https://eesel.ai/blog/leonardo-ai-pricing",
-   "checked": "2026-06-05",
+   "source": "https://costbench.com/software/ai-image-generators/leonardo-ai",
+   "checked": "2026-11-08",
    "official": false
   },
   "Ideogram": {
@@ -307,6 +307,43 @@
     "Commercial rights need a paid plan"
    ],
    "source": "https://www.mureka.ai/subscribe",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "Adobe Firefly": {
+   "items": [
+    "Credits reset each billing date, no rollover",
+    "Partner models: you check if outputs are safe to use commercially"
+   ],
+   "source": "https://www.adobe.com/products/firefly/plans.html",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "Recraft": {
+   "items": [
+    "Free plan: public images, no commercial use",
+    "Monthly credits don't roll over",
+    "Commercial rights only while you subscribe"
+   ],
+   "source": "https://www.recraft.ai/docs/plans-and-billing/paid-plans",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "Freepik": {
+   "items": [
+    "Credits are yearly: heavy use can run out early",
+    "Music rights only on Plus and Pro"
+   ],
+   "source": "https://www.freepik.com/pricing",
+   "checked": "2026-11-08",
+   "official": true
+  },
+  "OpenArt": {
+   "items": [
+    "No commercial use on Starter",
+    "Video uses many credits (about 50 videos on Starter)"
+   ],
+   "source": "https://openart.ai/pricing",
    "checked": "2026-11-08",
    "official": true
   }

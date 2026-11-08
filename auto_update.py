@@ -79,11 +79,9 @@ VOICE = {
     "fishaudio": ["https://fish.audio/plan/", "https://fish.audio/pricing/"],
     "fliki": ["https://fliki.ai/pricing"],
 }
-IMAGE = {  # added 2026-11-08
+IMAGE = {  # added 2026-11-08. Leonardo and Adobe Firefly block automated reading: their files in image/ are kept by hand
     "midjourney": ["https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"],
-    "leonardo": ["https://leonardo.ai/pricing/"],
     "ideogram": ["https://docs.ideogram.ai/plans-and-pricing/personal-plans", "https://ideogram.ai/pricing"],
-    "firefly": ["https://www.adobe.com/products/firefly/plans.html"],
     "recraft": ["https://www.recraft.ai/pricing", "https://www.recraft.ai/docs/plans-and-billing/paid-plans"],
     "freepik": ["https://www.freepik.com/pricing", "https://www.freepik.com/ai/docs/plans-and-pricing"],
     "openart": ["https://openart.ai/pricing"],
@@ -128,6 +126,7 @@ TABS = {
     "viggle": ["Monthly", "Yearly"],
     "fliki": ["Monthly", "Yearly"],  # prices only appear after the page's script runs
     "murf": ["Monthly", "Yearly", "Annually", "Annual"],  # after clicking the "Studio" tab
+    "recraft": ["Pay monthly", "Pay annually"],  # the page opens on annual prices
 }
 
 CLICKS = {
@@ -178,6 +177,20 @@ HINTS = {
                 "Only include plans whose own price appears in the text. "
                 "credits_or_minutes = the plan's Google Flow Credits per month, unit 'Flow credits' "
                 "(the Flow credits row lists Plus, Pro, Ultra in that order).",
+    },
+    "recraft": {
+        "focus": ["per month", "billed annually"],
+        "note": "Recraft opens on annual billing: '$10 per month billed annually $120' is yearly_price_usd 10. "
+                "The 'Pay monthly' view (or the docs table) gives monthly_price_usd, which is higher "
+                "(Basic $12 monthly / $10 annual, Pro $20 / $16). Never use the annual price as the monthly price. "
+                "Use the lowest Pro credit option (2,000 credits).",
+    },
+    "freepik": {
+        "focus": ["Billed annually", "credits"],
+        "note": "Freepik (now called Magnific) shows two prices per plan: the higher one, e.g. $20, is monthly_price_usd "
+                "and the lower one, e.g. $14.50, is yearly_price_usd (per month, billed annually). "
+                "Credits are listed per YEAR (e.g. '240K credits /year'): divide by 12 for credits_or_minutes "
+                "(240K/year = 20000 a month). For Pro use the first credit option (1.5M a year).",
     },
 }
 

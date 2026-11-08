@@ -6,21 +6,33 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 150,
       "unit": "tokens",
-      "offer": "daily"
+      "offer": "150 tokens a day, public images"
     },
     {
-      "name": "Apprentice",
+      "name": "Essential",
       "monthly_price_usd": 12,
+      "yearly_price_usd": 9.6,
       "credits_or_minutes": 8500,
       "unit": "tokens",
-      "offer": "approx"
+      "offer": ""
     },
     {
-      "name": "Artisan",
-      "monthly_price_usd": 24,
+      "name": "Premium",
+      "monthly_price_usd": 30,
+      "yearly_price_usd": 24,
       "credits_or_minutes": 25000,
       "unit": "tokens",
-      "offer": "approx"
+      "offer": ""
+    },
+    {
+      "name": "Ultimate",
+      "monthly_price_usd": 60,
+      "yearly_price_usd": 48,
+      "credits_or_minutes": 60000,
+      "unit": "tokens",
+      "offer": ""
     }
-  ]
+  ],
+  "source": "https://costbench.com/software/ai-image-generators/leonardo-ai",
+  "last_checked": "2026-11-08 14:00"
 }

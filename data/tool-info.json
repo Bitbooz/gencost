@@ -1,6 +1,6 @@
 {
  "about": "Short texts for each tool page (what it is, who it is for, the free plan, how credits work). Kept by hand from each tool's pricing page; prices are never written here because they change - the page shows live prices. Used by update_articles.py.",
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "tools": {
   "HeyGen": {
    "about": "HeyGen makes videos with AI avatars: you type a script and a realistic presenter speaks it, in 175+ languages. It is used for marketing, sales and training videos.",
@@ -99,7 +99,7 @@
    "about": "Leonardo is an AI image and video platform with many fine-tuned models, aimed at game art, product shots and marketing images.",
    "best_for": "Consistent image styles for games, products and marketing.",
    "free": "There is a free plan, but your images are public and Leonardo holds the rights.",
-   "credits": "Everything uses tokens. Paid plans roll unused tokens over into a bank, up to a cap that depends on the plan."
+   "credits": "Everything uses tokens. Paid plans (Essential, Premium, Ultimate) let unused tokens build up in a bank, up to a cap that depends on the plan."
   },
   "Ideogram": {
    "about": "Ideogram is an AI image generator that is especially good at readable text inside images, such as logos, posters and thumbnails.",
@@ -223,6 +223,28 @@
    "best_for": "Background music, sound beds and multi-track stems.",
    "free": "The Free plan gives about 12 full-mix generations a month, and includes a commercial license.",
    "credits": "Each plan lists about how many generations it covers, for example about 165 full mixes a month on Solo."
+  },
+  "Adobe Firefly": {
+   "about": "Adobe Firefly is Adobe's AI image and video generator, built into Photoshop, Express and the Firefly web app.",
+   "best_for": "Commercially safe images for people who already work in Adobe apps.",
+   "free": "The free plan gives a few generations a day that refresh daily.",
+   "credits": "Paid plans give generative credits each month. They reset on your billing date and do not roll over."
+  },
+  "Recraft": {
+   "about": "Recraft is an AI image tool for designers, known for vector graphics, icons, logos and brand-consistent styles.",
+   "best_for": "Vector art, icons and logos you can edit as SVG.",
+   "free": "The free plan gives a few generations a day, but images are public and you may not use them commercially.",
+   "credits": "Paid plans give credits each month that do not roll over. Top-up credits never expire."
+  },
+  "Freepik": {
+   "about": "Freepik, now renamed Magnific, combines a large stock library with AI image, video and audio generators that use many models.",
+   "best_for": "One subscription for stock assets plus many AI models.",
+   "credits": "Credits are given per year and last a full year, with no monthly reset. Some models are unlimited on paid plans."
+  },
+  "OpenArt": {
+   "about": "OpenArt is an AI creator studio with 100+ image, video and audio models, plus tools for consistent characters.",
+   "best_for": "Trying many image and video models from one account.",
+   "credits": "Each plan gives monthly credits. One credit makes roughly one image; videos cost far more."
   }
  }
 }

@@ -4,25 +4,28 @@
     {
       "name": "Premium",
       "monthly_price_usd": 20,
-      "credits_or_minutes": 240000,
+      "yearly_price_usd": 14.5,
+      "credits_or_minutes": 20000,
       "unit": "credits",
-      "offer": ""
+      "offer": "credits given as 240K a year"
     },
     {
       "name": "Plus",
       "monthly_price_usd": 45,
-      "credits_or_minutes": 600000,
+      "yearly_price_usd": 33.75,
+      "credits_or_minutes": 50000,
       "unit": "credits",
-      "offer": ""
+      "offer": "credits given as 600K a year"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 110,
-      "credits_or_minutes": 1500000,
+      "yearly_price_usd": 82.5,
+      "credits_or_minutes": 125000,
       "unit": "credits",
-      "offer": ""
+      "offer": "credits given as 1.5M a year"
     }
   ],
   "source": "https://www.freepik.com/pricing",
-  "last_checked": "2026-11-08 12:03"
+  "last_checked": "2026-11-08 14:00"
 }

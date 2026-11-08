@@ -1,0 +1,42 @@
+{
+  "platform": "Adobe Firefly",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "credits",
+      "offer": "daily free generations"
+    },
+    {
+      "name": "Firefly Standard",
+      "monthly_price_usd": 9.99,
+      "credits_or_minutes": 2000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Firefly Pro",
+      "monthly_price_usd": 19.99,
+      "credits_or_minutes": 4000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Firefly Pro Plus",
+      "monthly_price_usd": 49.99,
+      "credits_or_minutes": 10000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Firefly Premium",
+      "monthly_price_usd": 199.99,
+      "credits_or_minutes": 50000,
+      "unit": "credits",
+      "offer": ""
+    }
+  ],
+  "source": "https://www.adobe.com/products/firefly/plans.html",
+  "last_checked": "2026-11-08 14:00"
+}
