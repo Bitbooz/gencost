@@ -5,27 +5,21 @@
       "name": "Starter",
       "monthly_price_usd": 20,
       "yearly_price_usd": 10,
-      "credits_or_minutes": 400,
-      "unit": "credits",
       "offer": ""
     },
     {
       "name": "Plus",
       "monthly_price_usd": 60,
       "yearly_price_usd": 30,
-      "credits_or_minutes": 2000,
-      "unit": "credits",
       "offer": ""
     },
     {
       "name": "Max",
       "monthly_price_usd": 250,
       "yearly_price_usd": 250,
-      "credits_or_minutes": 8000,
-      "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://invideo.io/pricing",
-  "last_checked": "2026-11-08 13:09"
+  "last_checked": "2026-11-08 13:25"
 }

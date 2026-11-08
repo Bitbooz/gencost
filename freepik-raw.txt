@@ -25,8 +25,8 @@ Premium
 
 For creatives exploring AI tools and stock content
 
-CA$27
-CA$20
+$20
+$14.50
 /month
 billed annually
 
@@ -65,8 +65,8 @@ Best value
 
 For individuals who need unlimited generations and full AI access
 
-CA$60
-CA$45
+$45
+$33.75
 /month
 billed annually
 
@@ -108,8 +108,8 @@ Expert choice
 
 For professionals scaling content production
 
-CA$146
-CA$109.50
+$110
+$82.50
 /month
 billed annually
 
@@ -162,19 +162,19 @@ AI video
 
 Premium
 
-CA$20/month
+$14.50/month
 240,000/year
 Get Premium
 
 Plus
 
-CA$45/month
+$33.75/month
 600,000/year
 Get Plus
 
 Pro
 
-CA$109.50/month
+$82.50/month
 1,500,000/year
 Get Pro
 
@@ -630,7 +630,7 @@ Privacy policy
 Originals
 New
 Cookies policy
-Cookies Settings
+Your Privacy Rights
 Trust center
 Affiliates
 Enterprise
@@ -657,7 +657,3 @@ X
 Reddit
 
 Copyright © 2010-2026 Magnific AI, S.L.U. All rights reserved.
-
-By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
-Cookies Settings
-Accept All Cookies

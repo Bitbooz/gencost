@@ -65,7 +65,7 @@ ElevenAgents
 Agents
 ElevenAPI
 API
-Yearly billing
+Monthly billing
 Monthly billing
 Yearly billing
 Free
@@ -83,10 +83,9 @@ Image
 10k credits
 per month
 Starter
-$6
-$5
-/mo
-2 months free
+$1
+first month
+Then $6 per month
 Choose Starter
 Everything in free, plus
 Commercial License
@@ -99,10 +98,9 @@ Image & Video
 per month
 Creator
 Popular
-$22
-$18.33
-/mo
-2 months free
+$11
+first month
+Then $22 per month
 Choose Creator
 Everything in Starter, plus
 Professional Voice Cloning
@@ -111,9 +109,7 @@ Additional Credits
 per month
 Pro
 $99
-$82.50
 /mo
-2 months free
 Choose Pro
 Everything in Creator, plus
 44.1kHz PCM audio output via API
@@ -124,9 +120,7 @@ For
 Businesses
 Scale
 $299
-$249.17
 /mo
-2 months free
 Choose Scale
 Everything in Pro, plus
 3 Workspace seats
@@ -137,9 +131,7 @@ per month
 3 seats
 Business
 $990
-$825
 /mo
-2 months free
 Choose Business
 Everything in Scale, plus
 Low-latency TTS as low as 5c/minute
@@ -163,7 +155,7 @@ Priority support
 Custom number of credits and seats
 Prices exclude all taxes, levies and duties.
 Calculate your costs based on your usage needs
-Yearly billing
+Monthly billing
 Monthly billing
 Yearly billing
 Startup Grants Program
