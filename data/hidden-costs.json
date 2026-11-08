@@ -216,7 +216,8 @@
   "AIVA": {
    "items": [
     "Free: AIVA owns the copyright, you must credit AIVA and can't monetize",
-    "You own the copyright only on Pro"
+    "You own the copyright only on Pro",
+    "Billed in euros, plus VAT: the dollar price depends on the exchange rate"
    ],
    "source": "https://www.aiva.ai/pricing",
    "checked": "2026-11-07",

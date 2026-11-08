@@ -122,6 +122,7 @@ FALLBACK = {
 # Pages with a Monthly / Yearly switch where only one is shown at a time:
 # the browser reads the page once per tab and gives the AI both.
 TABS = {
+    "aiva": ["Billed monthly", "Billed yearly"],
     "kling": ["Monthly", "Yearly"],
     "viggle": ["Monthly", "Yearly"],
     "fliki": ["Monthly", "Yearly"],  # prices only appear after the page's script runs
@@ -163,6 +164,12 @@ def load_existing(path):
 # Extra help for pages where the prices are easy to misread.
 # "focus": lines with these words (and the lines around them) are put first, so they are never cut off.
 HINTS = {
+    "aiva": {
+        "focus": ["/ month", "Billed"],
+        "note": "AIVA's prices are in euros. Write the euro numbers as they appear (they are converted to US dollars "
+                "afterwards). The 'Billed monthly' tab gives monthly_price_usd; '€11 / month Billed Annually' on the "
+                "'Billed yearly' tab is yearly_price_usd. Never use the yearly price as the monthly price.",
+    },
     "pixverse": {
         "focus": ["billed yearly as"],
         "note": "PixVerse shows the yearly-billing price first. In '$8 / month $10 billed yearly as $96' the 8 is "
@@ -464,6 +471,47 @@ def read_one(name, url):
     return data, problems, notes, text, method
 
 
+# Tools that only show prices in euros: the prices are read in euros, then converted to US dollars.
+EUR_TOOLS = {"aiva"}
+FX_FILE = "data/fx.json"
+
+
+def eur_rate():
+    """Euro to US dollar rate. The saved rate only changes when the real one moves more than 3%,
+    so converted prices don't wobble a little every day (that would look like a price change)."""
+    try:
+        saved = json.load(open(FX_FILE, encoding="utf-8"))
+    except Exception:
+        saved = {"EUR_USD": 1.117, "date": "2026-10-27", "source": "European Central Bank via frankfurter.app"}
+    try:
+        r = requests.get("https://api.frankfurter.app/latest?from=EUR&to=USD", timeout=15)
+        live = float(r.json()["rates"]["USD"])
+        if abs(live - saved["EUR_USD"]) / saved["EUR_USD"] > 0.03:
+            saved = {"EUR_USD": round(live, 4), "date": r.json().get("date", ""), "source": saved.get("source", "")}
+    except Exception:
+        pass
+    os.makedirs("data", exist_ok=True)
+    with open(FX_FILE, "w", encoding="utf-8") as f:
+        json.dump(saved, f, indent=1)
+    return saved["EUR_USD"]
+
+
+def to_usd(name, data):
+    rate = eur_rate()
+    for p in data.get("plans", []):
+        euros = []
+        for k in ("monthly_price_usd", "yearly_price_usd"):
+            v = p.get(k)
+            if isinstance(v, (int, float)) and v > 0:
+                euros.append(f"€{v:g}")
+                p[k] = round(v * rate, 2)
+        if euros:
+            note = f"{' / '.join(euros)} on the official page, converted at 1 EUR = {rate} USD"
+            p["offer"] = (p.get("offer", "") + "; " if p.get("offer") else "") + note
+    data["currency"] = f"EUR converted to USD at {rate}"
+    return data
+
+
 def process_platform(name, urls):
     print(f"Processing {name}...")
     path = json_path(name)
@@ -491,6 +539,8 @@ def process_platform(name, urls):
         print(f"  Not saved, prices could not be confirmed: {problems}")
         return False
 
+    if name in EUR_TOOLS:
+        data = to_usd(name, data)
     old = load_existing(path)
     data["platform"] = (old or {}).get("platform") or data.get("platform") or name
     data["source"] = url

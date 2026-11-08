@@ -10,21 +10,22 @@
     },
     {
       "name": "Standard",
-      "monthly_price_usd": 11,
-      "yearly_price_usd": 11,
+      "monthly_price_usd": 12.29,
+      "yearly_price_usd": 12.29,
       "credits_or_minutes": 15,
       "unit": "downloads",
-      "offer": "monthly price not shown"
+      "offer": "€11 a month billed yearly on the official page, converted at 1 EUR = 1.117 USD; monthly-billing price not shown yet"
     },
     {
       "name": "Pro",
-      "monthly_price_usd": 33,
-      "yearly_price_usd": 33,
+      "monthly_price_usd": 36.86,
+      "yearly_price_usd": 36.86,
       "credits_or_minutes": 300,
       "unit": "downloads",
-      "offer": "monthly price not shown"
+      "offer": "€33 a month billed yearly on the official page, converted at 1 EUR = 1.117 USD; monthly-billing price not shown yet"
     }
   ],
   "source": "https://www.aiva.ai/pricing",
-  "last_checked": "2026-11-08 14:10"
+  "last_checked": "2026-11-08 14:10",
+  "currency": "EUR converted to USD at 1.117"
 }
