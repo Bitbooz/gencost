@@ -259,19 +259,19 @@ Anxiety
 Frustration
 Frustration
 Frustration
+Anxiety
 Frustration
 Frustration
-Joy
-Frustration
+Anxiety
 Pick One
 What language is spoken?
 English
 Spanish
 English
 English
-Spanish
 English
 English
+French
 English
 Yes/No
 Does the reply address what the caller asked?
@@ -291,18 +291,18 @@ Two
 Two
 Two
 Two
-Three+
+Two
 Two
 Scale
 How intrusive is the background noise?
 1.9
 3.1
 4.6
-2.8
-4.3
-3.6
 4.7
-2.6
+4.4
+2.1
+2.4
+3.8
 Add question
 You can add or change a question any time.
 

@@ -1,21 +1,40 @@
-2026-11-08 09:45  heygen  (https://www.heygen.com/pricing)
+2026-11-08 10:18  heygen  (https://www.heygen.com/pricing)
     - Pro: yearly price 41 could not be confirmed, left out
     -> saved the monthly prices
 
-2026-11-08 09:48  hedra  (https://www.hedra.com/plans)
+2026-11-08 10:21  pixverse  (https://app.pixverse.ai/subscribe)
+    - [https://app.pixverse.ai/subscribe] download: needs the browser to open both tabs
+    - [https://app.pixverse.ai/subscribe] browser: no plans found
+    - [https://pixverse.ai/pricing] download: needs the browser to open both tabs
+    - [https://pixverse.ai/pricing] browser: no plans found
+    - [https://pixverse.ai/en/pricing] download: needs the browser to open both tabs
+    - [https://pixverse.ai/en/pricing] browser: no plans found
+    -> kept the previous prices
+
+2026-11-08 10:22  hedra  (https://www.hedra.com/plans)
     - [https://www.hedra.com/plans] pricing page returned almost no text (HTTP 200)
     - [https://www.hedra.com/plans] browser also got almost no text
     - [https://www.hedra.com/pricing] download: no plans found
     - [https://www.hedra.com/pricing] browser: no plans found
     -> kept the previous prices
 
-2026-11-08 09:51  hume  (https://www.hume.ai/pricing)
-    - download: no plans found
-    - browser: no plans found
+2026-11-08 10:24  hume  (https://hume.ai/pricing)
+    - [https://hume.ai/pricing] download: no plans found
+    - [https://hume.ai/pricing] browser: no plans found
+    - [https://www.hume.ai/pricing] download: no plans found
+    - [https://www.hume.ai/pricing] browser: no plans found
     -> kept the previous prices
 
-2026-11-08 09:53  beatoven  (https://www.beatoven.ai/pricing)
-    - pricing page returned almost no text (HTTP 404)
-    - browser also got almost no text
+2026-11-08 10:25  suno  (https://suno.com/pricing)
+    - Premier: yearly price 18 could not be confirmed, left out
+    -> saved the monthly prices
+
+2026-11-08 10:26  beatoven  (https://www.beatoven.ai/subscribe)
+    - [https://www.beatoven.ai/subscribe] pricing page returned almost no text (HTTP 404)
+    - [https://www.beatoven.ai/subscribe] browser also got almost no text
+    - [https://www.beatoven.ai/plans] pricing page returned almost no text (HTTP 404)
+    - [https://www.beatoven.ai/plans] browser also got almost no text
+    - [https://beatoven.ai/pricing] pricing page returned almost no text (HTTP 404)
+    - [https://beatoven.ai/pricing] browser also got almost no text
     -> kept the previous prices
 

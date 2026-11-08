@@ -10,26 +10,29 @@
     },
     {
       "name": "Pro",
-      "monthly_price_usd": 7.99,
+      "monthly_price_usd": 9.99,
+      "yearly_price_usd": 7.99,
       "credits_or_minutes": 80,
       "unit": "credits",
       "offer": ""
     },
     {
       "name": "Live",
-      "monthly_price_usd": 15.99,
+      "monthly_price_usd": 19.99,
+      "yearly_price_usd": 15.99,
       "credits_or_minutes": 200,
       "unit": "credits",
       "offer": ""
     },
     {
       "name": "Max",
-      "monthly_price_usd": 63.99,
+      "monthly_price_usd": 79.99,
+      "yearly_price_usd": 63.99,
       "credits_or_minutes": 800,
       "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://viggle.ai/pricing",
-  "last_checked": "2026-11-08 09:47"
+  "last_checked": "2026-11-08 10:20"
 }

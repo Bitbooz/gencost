@@ -2,21 +2,21 @@
   "platform": "Boomy",
   "plans": [
     {
-      "name": "FREE",
+      "name": "Free",
       "monthly_price_usd": 0,
       "offer": ""
     },
     {
-      "name": "CREATOR",
+      "name": "Creator",
       "monthly_price_usd": 9.99,
       "offer": ""
     },
     {
-      "name": "PRO",
+      "name": "Pro",
       "monthly_price_usd": 29.99,
       "offer": ""
     }
   ],
   "source": "https://boomy.com/pricing",
-  "last_checked": "2026-11-08 09:53"
+  "last_checked": "2026-11-08 10:26"
 }
