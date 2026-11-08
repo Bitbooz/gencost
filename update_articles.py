@@ -196,7 +196,7 @@ def mark_text(soup, node, tool, plan, money_match, bill):
 
 def in_live(node):
     for p in node.parents:
-        if getattr(p, "get", None) and any(c in (p.get("class") or []) for c in ("live-box", "live-price", "est-basis")):
+        if getattr(p, "get", None) and any(c in (p.get("class") or []) for c in ("live-box", "live-price", "est-basis", "no-live")):
             return True
     return False
 
@@ -558,6 +558,14 @@ def process(path, tools, matcher, updated):
 
 # Old sentences on other pages that are no longer true; replaced wherever they are found
 NOTE_FIXES = {
+    # First image article (2026-11-08)
+    "index.html#image-article": [
+        ('<li class="reveal"><a class="art" href="/pages/best-elevenlabs-alternatives-2026.html"><span class="cat voice">Voice</span><h3>Cheaper ElevenLabs Alternatives</h3><p>Real cost per hour of speech</p></a></li>',
+         '<li class="reveal"><a class="art" href="/pages/best-elevenlabs-alternatives-2026.html"><span class="cat voice">Voice</span><h3>Cheaper ElevenLabs Alternatives</h3><p>Real cost per hour of speech</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/cheapest-ai-image-generators-2026.html"><span class="cat image">Image</span><h3>Cheapest AI Image Generators 2026</h3><p>Midjourney vs Firefly vs Ideogram and more</p></a></li>'),
+    ],
+    "image.html": [
+        ('<ul class="art-grid">\n\n    </ul>', '<ul class="art-grid">\n      <li class="reveal"><a class="art" href="/pages/cheapest-ai-image-generators-2026.html"><span class="cat image">Image</span><h3>Cheapest AI Image Generators 2026</h3><p>Midjourney vs Firefly vs Ideogram and more</p></a></li>\n    </ul>'),
+    ],
     # Sora and PlayHT have shut down (2026-11-07): new article cards, no PlayHT in teaser texts
     "index.html": [
         ('<li class="reveal"><a class="art" href="/pages/playht-vs-elevenlabs-pricing-2026.html"><span class="cat voice">Voice</span><h3>PlayHT vs ElevenLabs Pricing 2026</h3><p>Voice tools comparison</p></a></li>',

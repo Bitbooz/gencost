@@ -223,7 +223,7 @@ a.row:hover { border-color: rgba(0,212,255,0.35); }
 .art { display: flex; flex-direction: column; width: 100%; text-decoration: none; padding: 22px; border-radius: 16px; border: 1px solid var(--border); background: var(--surface); transition: border-color .2s, background .2s; }
 .art:hover { border-color: rgba(0,212,255,0.35); background: var(--surface-2); }
 .art .cat { font-size: 0.72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--cyan); }
-.cat.video { color: var(--cyan); } .cat.voice { color: var(--green); } .cat.music { color: var(--pink); } .cat.avatar { color: var(--violet); } .cat.guide { color: var(--amber); }
+.cat.video { color: var(--cyan); } .cat.voice { color: var(--green); } .cat.music { color: var(--pink); } .cat.avatar { color: var(--violet); } .cat.guide { color: var(--amber); } .cat.image { color: #60a5fa; }
 .art h3 { font-size: 1.05rem; font-weight: 600; margin: 10px 0 6px; line-height: 1.3; }
 .art p { color: var(--muted); font-size: 0.9rem; margin: 0; }
 
