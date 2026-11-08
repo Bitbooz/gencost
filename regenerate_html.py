@@ -36,7 +36,6 @@ VIDEO_FILES = [
     "capcut-pricing.json", "ltx-pricing.json", "hailuo-pricing.json",
     "veo-pricing.json", "sora-pricing.json",
     "vidu-pricing.json", "krea-pricing.json",
-    "midjourney-pricing.json", "leonardo-pricing.json", "ideogram-pricing.json",
     "pixverse-pricing.json", "hedra-pricing.json", "did-pricing.json",
     "colossyan-pricing.json", "opusclip-pricing.json", "captions-pricing.json",
 ]
@@ -59,9 +58,6 @@ VIDEO_NAMES = [
     ("sora", "Sora", "/pages/sora.html"),
     ("vidu", "Vidu", "/pages/vidu.html"),
     ("krea", "Krea", "/pages/krea.html"),
-    ("midjourney", "Midjourney", "/pages/midjourney.html"),
-    ("leonardo", "Leonardo", "/pages/leonardo.html"),
-    ("ideogram", "Ideogram", "/pages/ideogram.html"),
     ("pixverse", "PixVerse", "/pages/pixverse.html"),
     ("hedra", "Hedra", "/pages/hedra.html"),
     ("did-pricing", "D-ID", "/pages/d-id.html"),
@@ -83,6 +79,16 @@ VOICE_NAMES = [
     ("hume", "Hume", "/pages/hume.html"),
     ("resemble", "Resemble AI", "/pages/resemble.html"),
     ("fishaudio", "Fish Audio", "/pages/fish-audio.html"),
+]
+
+IMAGE_NAMES = [
+    ("midjourney", "Midjourney", "/pages/midjourney.html"),
+    ("leonardo", "Leonardo", "/pages/leonardo.html"),
+    ("ideogram", "Ideogram", "/pages/ideogram.html"),
+    ("firefly", "Adobe Firefly", "/pages/firefly.html"),
+    ("recraft", "Recraft", "/pages/recraft.html"),
+    ("freepik", "Freepik", "/pages/freepik.html"),
+    ("openart", "OpenArt", "/pages/openart.html"),
 ]
 
 MUSIC_NAMES = [
@@ -148,7 +154,7 @@ def record_history(category, platforms, day):
         # start again: earlier rows could hold reading errors; each tool starts at its next fresh reading
         hist = {"about": "Price per plan over time: [date, monthly, yearly]. A row is added only when a new price "
                          "has been read in two separate daily checks.",
-                "version": 3, "since": day, "video": {}, "voice": {}, "music": {}, "pending": {}, "readings": {}}
+                "version": 3, "since": day, "video": {}, "voice": {}, "music": {}, "image": {}, "pending": {}, "readings": {}}
     cat = hist.setdefault(category, {})
     pending = hist.setdefault("pending", {})
     readings = hist.setdefault("readings", {})
@@ -255,3 +261,4 @@ def build(category, paths, names):
 build("video", [os.path.join(folder, f) for f in VIDEO_FILES], VIDEO_NAMES)
 build("voice", sorted(glob.glob(os.path.join(folder, "voice", "*-pricing.json"))), VOICE_NAMES)
 build("music", sorted(glob.glob(os.path.join(folder, "music", "*-pricing.json"))), MUSIC_NAMES)
+build("image", sorted(glob.glob(os.path.join(folder, "image", "*-pricing.json"))), IMAGE_NAMES)

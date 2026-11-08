@@ -79,6 +79,15 @@ VOICE = {
     "fishaudio": ["https://fish.audio/plan/", "https://fish.audio/pricing/"],
     "fliki": ["https://fliki.ai/pricing"],
 }
+IMAGE = {  # added 2026-11-08
+    "midjourney": ["https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"],
+    "leonardo": ["https://leonardo.ai/pricing/"],
+    "ideogram": ["https://docs.ideogram.ai/plans-and-pricing/personal-plans", "https://ideogram.ai/pricing"],
+    "firefly": ["https://www.adobe.com/products/firefly/plans.html"],
+    "recraft": ["https://www.recraft.ai/pricing", "https://www.recraft.ai/docs/plans-and-billing/paid-plans"],
+    "freepik": ["https://www.freepik.com/pricing", "https://www.freepik.com/ai/docs/plans-and-pricing"],
+    "openart": ["https://openart.ai/pricing"],
+}
 MUSIC = {
     "suno": "https://suno.com/pricing",
     "udio": "https://www.udio.com/pricing",
@@ -138,6 +147,8 @@ def json_path(name):
         return os.path.join("voice", f"{name}-pricing.json")
     if name in MUSIC:
         return os.path.join("music", f"{name}-pricing.json")
+    if name in IMAGE:
+        return os.path.join("image", f"{name}-pricing.json")
     return f"{name}-pricing.json"
 
 
@@ -463,7 +474,8 @@ if __name__ == "__main__":
     if os.path.exists(REVIEW_FILE):
         os.remove(REVIEW_FILE)  # the file always describes the latest run
     print("Starting price update...\n")
-    everything = {**VIDEO, **VOICE, **MUSIC}
+    os.makedirs("image", exist_ok=True)
+    everything = {**VIDEO, **VOICE, **MUSIC, **IMAGE}
     if not BROWSER_OK:
         print("(Playwright not installed: pages that need JavaScript can't be read. pip install playwright)")
     try:

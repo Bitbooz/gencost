@@ -72,7 +72,7 @@ TOOLS = {}
 def tool_pages():
     """Tool pages with live prices -> (tool name, category), from data/*.json."""
     out = {}
-    for c in ("video", "voice", "music"):
+    for c in ("video", "voice", "music", "image"):
         try:
             with open(f"data/{c}.json", encoding="utf-8") as f:
                 for pf in json.load(f).get("platforms", []):
@@ -85,7 +85,7 @@ def tool_pages():
 
 
 def tool_title(name, cat):
-    what = "Plans & Cost per Clip" if cat == "video" else "Plans & Real Cost"
+    what = {"video": "Plans & Cost per Clip", "image": "Plans & Cost per Image"}.get(cat, "Plans & Real Cost")
     return f"{name} Pricing ({MONTH}): {what} | GenCost"
 
 
@@ -95,7 +95,8 @@ def tool_desc(name, cat):
             f"{extra} and hidden costs. Checked every morning.")
 
 # Pages for tools that were just added: kept out of Google until the daily check has read their prices
-PENDING = {"pages/hedra.html", "pages/d-id.html", "pages/colossyan.html"}
+PENDING = {"pages/hedra.html", "pages/d-id.html", "pages/colossyan.html",
+           "pages/firefly.html", "pages/recraft.html", "pages/freepik.html"}
 
 # Two pages had the same title; give the second one its own
 TITLE_FIXES = {
@@ -201,7 +202,7 @@ def last_checked(raw):
 
 def data_updated():
     days = []
-    for c in ("video", "voice", "music"):
+    for c in ("video", "voice", "music", "image"):
         try:
             with open(f"data/{c}.json", encoding="utf-8") as f:
                 days.append((json.load(f).get("updated") or "")[:10])
@@ -308,9 +309,10 @@ def write_llms_txt(sitemap):
         f"- [AI video, avatar and image tools]({SITE}/): every plan, monthly and yearly, with cost per clip",
         f"- [AI voice tools]({SITE}/voice.html): every plan in US dollars",
         f"- [AI music tools]({SITE}/music.html): every plan in US dollars",
+        f"- [AI image generators]({SITE}/image.html): every plan in US dollars",
         f"- [Compare any tools]({SITE}/compare.html): two or three tools side by side",
         f"- [Budget calculator]({SITE}/calculator.html): how many clips a budget buys",
-        f"- [Machine-readable prices]({SITE}/data/video.json), [voice]({SITE}/data/voice.json), [music]({SITE}/data/music.json)",
+        f"- [Machine-readable prices]({SITE}/data/video.json), [voice]({SITE}/data/voice.json), [music]({SITE}/data/music.json), [image]({SITE}/data/image.json)",
         "",
         "## Guides",
     ] + [f"- [{t}]({u})" for t, u in guides] + ["", "## Tool pricing pages"] + [f"- [{t}]({u})" for t, u in tools] + [""]
@@ -395,6 +397,11 @@ def main():
                     new = new.replace(old_href, new_href)
 
         # speed: Orbitron is only used for the logo (and one heading), so load just those letters
+        # menu: "Image" next to "Music"
+        music_li = '<li><a href="/music.html" data-section="/music,/pages/music/">Music</a></li>'
+        if 'href="/image.html"' not in new and music_li in new:
+            new = new.replace(music_li, music_li + '\n      <li><a href="/image.html" data-section="/image">Image</a></li>', 1)
+
         # footer: link to the About page next to "Order a package"
         if 'href="/about.html"' not in new and '<li><a href="/order.html">Order a package</a></li>' in new:
             new = new.replace('<li><a href="/order.html">Order a package</a></li>',

@@ -1,0 +1,26 @@
+{
+  "platform": "Leonardo",
+  "plans": [
+    {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 150,
+      "unit": "tokens",
+      "offer": "daily"
+    },
+    {
+      "name": "Apprentice",
+      "monthly_price_usd": 12,
+      "credits_or_minutes": 8500,
+      "unit": "tokens",
+      "offer": "approx"
+    },
+    {
+      "name": "Artisan",
+      "monthly_price_usd": 24,
+      "credits_or_minutes": 25000,
+      "unit": "tokens",
+      "offer": "approx"
+    }
+  ]
+}

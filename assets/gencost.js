@@ -160,6 +160,10 @@
       if (unit.includes("hour")) return `~$${(price / credits).toFixed(2)} / hour`;
       return "";
     }
+    if (category === "image") {
+      if (unit.includes("image")) return `~$${(price / credits).toFixed(3)} / image`;
+      return "";
+    }
     if (category === "music") {
       const per = price / credits;
       if (per < 0.01) return "";
@@ -404,9 +408,9 @@
     if (!app) return;
     const picks = [...app.querySelectorAll("select[data-pick]")];
     const out = document.getElementById("compareOut");
-    const CAT = { video: "Video & image", voice: "Voice", music: "Music" };
+    const CAT = { video: "Video & avatar", image: "Image", voice: "Voice", music: "Music" };
 
-    Promise.all(["video", "voice", "music"].map((c) => GC.load(c).catch(() => ({ category: c, platforms: [] }))))
+    Promise.all(["video", "image", "voice", "music"].map((c) => GC.load(c).catch(() => ({ category: c, platforms: [] }))))
       .then((sets) => {
         const tools = [];
         sets.forEach((d) => (d.platforms || []).forEach((pf) => tools.push({ id: GC.slug(pf.name), cat: d.category, pf })));

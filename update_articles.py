@@ -72,7 +72,7 @@ FREE_NAMES = re.compile(r"^(free|basic|trial|starter|hobby)\b", re.I)
 
 def load_tools():
     tools, updated = {}, ""
-    for cat in ("video", "voice", "music"):
+    for cat in ("video", "voice", "music", "image"):
         try:
             with open(os.path.join("data", f"{cat}.json"), encoding="utf-8") as f:
                 d = json.load(f)
@@ -772,7 +772,7 @@ def tool_history(name, cat):
 def price_changes(days=None):
     """All price changes as (date, category, tool, plan, old_monthly, new_monthly, old_yearly, new_yearly)."""
     out = []
-    for cat in ("video", "voice", "music"):
+    for cat in ("video", "voice", "music", "image"):
         for tool, plans in (HISTORY.get(cat) or {}).items():
             for plan, rows in plans.items():
                 for a, b in zip(rows, rows[1:]):
@@ -1009,6 +1009,8 @@ def link_pages(tools, names_by_article, report):
             else:
                 art.append(faq)
         box = art.find(class_="live-plans")
+        if box is not None and box.get("data-cat") != tool["category"]:
+            box["data-cat"] = tool["category"]  # e.g. Midjourney moved from video to image
         if box and tool.get("plans"):
             fresh = BeautifulSoup("".join(plan_line(tool, p) for p in tool["plans"]), PARSER)
             body = fresh.body or fresh
