@@ -126,7 +126,7 @@ TABS = {
     "viggle": ["Monthly", "Yearly"],
     "fliki": ["Monthly", "Yearly"],  # prices only appear after the page's script runs
     "murf": ["Monthly", "Yearly", "Annually", "Annual"],  # after clicking the "Studio" tab
-    "recraft": ["Pay monthly", "Pay annually"],  # the page opens on annual prices
+    "recraft": ["Pay monthly", "Pay annually (save 20%)"],  # the page opens on annual prices
 }
 
 CLICKS = {
@@ -184,6 +184,11 @@ HINTS = {
                 "The 'Pay monthly' view (or the docs table) gives monthly_price_usd, which is higher "
                 "(Basic $12 monthly / $10 annual, Pro $20 / $16). Never use the annual price as the monthly price. "
                 "Use the lowest Pro credit option (2,000 credits).",
+    },
+    "suno": {
+        "focus": ["/month", "billing yearly", "Saves $"],
+        "note": "Suno may open on yearly billing: '$8 /month Saves $24 by billing yearly' means yearly_price_usd 8 and "
+                "monthly_price_usd 8 + 24/12 = 10. Never use the yearly price as the monthly price.",
     },
     "freepik": {
         "focus": ["Billed annually", "credits"],
@@ -266,6 +271,9 @@ Only JSON. No extra text."""
 NUMBER_RE = re.compile(r"(?<![\d.,])(\d{1,3}(?:,\d{3})+|\d+)(?:[.,](\d{1,2}))?(?![\d])")
 
 
+FOREIGN_RE = re.compile(r"(?:(?<![A-Za-z])(?:CA|AU|A|NZ|HK|SG|S|MX|C|R)\$|\b(?:CAD|AUD|NZD|HKD|SGD|MXN|BRL|INR)\b)\s*[\d][\d.,]*")
+
+
 def price_on_page(price, text):
     """True if this price is written on the page, or is a yearly total on the page divided by 12
     (e.g. "$139/year" -> 11.58 a month, allowing for rounding to the cent)."""
@@ -285,6 +293,13 @@ def price_on_page(price, text):
 def check(data, text):
     """Returns (problems, notes). Problems = do not save. Notes = saved, but something was left out."""
     problems, notes = [], []
+    # Some sites show local prices to the server's location (Freepik once showed CA$27 instead of $20,
+    # CapCut "CAD 33.99"). Prices in another currency must never count as US dollars.
+    foreign = len(FOREIGN_RE.findall(text))
+    usd = len(re.findall(r"(?<![A-Za-z])\$\s?\d|US\$\s?\d|\bUSD\b", text))
+    if foreign > usd:
+        return [f"page shows prices in another currency ({foreign} non-USD prices, {usd} in US dollars)"], notes
+    text = FOREIGN_RE.sub(" ", text)  # what is left: only prices that may be US dollars
     plans = data.get("plans")
     if not isinstance(plans, list) or not plans:
         return ["no plans found"], notes

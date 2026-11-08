@@ -6,14 +6,16 @@
       "monthly_price_usd": 12,
       "credits_or_minutes": 1000,
       "unit": "credits",
-      "offer": ""
+      "offer": "",
+      "yearly_price_usd": 10
     },
     {
       "name": "Pro",
       "monthly_price_usd": 20,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": ""
+      "offer": "",
+      "yearly_price_usd": 16
     }
   ],
   "source": "https://www.recraft.ai/pricing",

@@ -10,19 +10,19 @@
     },
     {
       "name": "Standard",
-      "monthly_price_usd": 39,
+      "monthly_price_usd": 28,
       "credits_or_minutes": 180,
       "unit": "credits",
       "offer": ""
     },
     {
       "name": "Premium",
-      "monthly_price_usd": 119,
+      "monthly_price_usd": 88,
       "credits_or_minutes": 600,
       "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://fliki.ai/pricing",
-  "last_checked": "2026-11-08 13:12"
+  "last_checked": "2026-11-08 11:58"
 }
