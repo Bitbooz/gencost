@@ -558,6 +558,14 @@ def process(path, tools, matcher, updated):
 
 # Old sentences on other pages that are no longer true; replaced wherever they are found
 NOTE_FIXES = {
+    # Homepage after the image category (2026-11-08)
+    "index.html#image-home": [
+        ("<h2>Every video, avatar &amp; image plan</h2>", "<h2>Every video &amp; avatar plan</h2>"),
+        ("<h2>Voice and music, compared the same way</h2>", "<h2>Images, voice and music, compared the same way</h2>"),
+        ('      <a class="explore reveal" href="/music.html">\n        <div class="wave" aria-hidden="true" data-k="1"></div>\n        <h3>AI Music</h3>\n        <p>Suno, Udio, Soundraw, AIVA and Boomy, side by side.</p>\n        <span class="go">Compare music tools <span class="arrow">→</span></span>\n        <div class="glow" style="background:#7b68ee"></div>\n      </a>', '      <a class="explore reveal" href="/music.html">\n        <div class="wave" aria-hidden="true" data-k="1"></div>\n        <h3>AI Music</h3>\n        <p>Suno, Udio, Soundraw, AIVA and Boomy, side by side.</p>\n        <span class="go">Compare music tools <span class="arrow">→</span></span>\n        <div class="glow" style="background:#7b68ee"></div>\n      </a>\n      <a class="explore reveal" href="/image.html">\n        <div class="wave" aria-hidden="true" data-k="3"></div>\n        <h3>AI Images</h3>\n        <p>Midjourney, Ideogram, Firefly, Recraft and more, with cost per image.</p>\n        <span class="go">Compare image tools <span class="arrow">→</span></span>\n        <div class="glow" style="background:#60a5fa"></div>\n      </a>'),
+        ("<p>Smaller companies that are often cheaper or better for specific jobs, but harder to find.</p>",
+         "<p>New and smaller tools, often cheaper or better at one job. Updated every morning.</p>"),
+    ],
     # Three more image articles (2026-11-08)
     "index.html#image-articles-2": [('<li class="reveal"><a class="art" href="/pages/cheapest-ai-image-generators-2026.html"><span class="cat image">Image</span><h3>Cheapest AI Image Generators 2026</h3><p>Midjourney vs Firefly vs Ideogram and more</p></a></li>', '<li class="reveal"><a class="art" href="/pages/cheapest-ai-image-generators-2026.html"><span class="cat image">Image</span><h3>Cheapest AI Image Generators 2026</h3><p>Midjourney vs Firefly vs Ideogram and more</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/best-midjourney-alternatives-2026.html"><span class="cat image">Image</span><h3>Cheaper Midjourney Alternatives</h3><p>Private images for less</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/midjourney-vs-ideogram-pricing-2026.html"><span class="cat image">Image</span><h3>Midjourney vs Ideogram Pricing</h3><p>Unlimited, private and free plans</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/best-free-ai-image-generators-2026.html"><span class="cat image">Image</span><h3>Best Free AI Image Generators</h3><p>What the free plans really give</p></a></li>')],
     "image.html#image-articles-2": [('<li class="reveal"><a class="art" href="/pages/cheapest-ai-image-generators-2026.html"><span class="cat image">Image</span><h3>Cheapest AI Image Generators 2026</h3><p>Midjourney vs Firefly vs Ideogram and more</p></a></li>', '<li class="reveal"><a class="art" href="/pages/cheapest-ai-image-generators-2026.html"><span class="cat image">Image</span><h3>Cheapest AI Image Generators 2026</h3><p>Midjourney vs Firefly vs Ideogram and more</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/best-midjourney-alternatives-2026.html"><span class="cat image">Image</span><h3>Cheaper Midjourney Alternatives</h3><p>Private images for less</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/midjourney-vs-ideogram-pricing-2026.html"><span class="cat image">Image</span><h3>Midjourney vs Ideogram Pricing</h3><p>Unlimited, private and free plans</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/best-free-ai-image-generators-2026.html"><span class="cat image">Image</span><h3>Best Free AI Image Generators</h3><p>What the free plans really give</p></a></li>')],
@@ -1202,6 +1210,98 @@ def monthly_reports(report):
                 report.append("changelog.html: monthly reports listed")
 
 
+# ---------- Emerging tools page: rebuilt every day from the price data ----------
+EMERGING = {
+    "video": ["PixVerse", "Vidu", "Hailuo AI", "Krea", "Viggle", "Pictory", "VEED"],
+    "image": ["Recraft", "Ideogram", "OpenArt", "NightCafe"],
+    "voice": ["Fish Audio", "Cartesia", "Fliki"],
+    "music": ["Mureka", "Stable Audio"],
+}
+EMERGING_MODELS = [
+    ("Seedance", "/pages/seedance.html", "ByteDance's video model. You don't subscribe to Seedance itself: you use it inside other tools, and the price per clip differs a lot between them.",
+     "/pages/cheapest-way-to-use-seedance-2-5-2026.html", "Where Seedance 2.5 is cheapest"),
+    ("Wan", "/pages/wan.html", "Alibaba's open video model, offered by several hosts and through APIs. Price depends on where you run it.", None, None),
+]
+SECTION_TITLE = {"video": "Video & avatar", "image": "Image", "voice": "Voice", "music": "Music"}
+
+
+def price_line(tool):
+    paid = sorted([p for p in tool["plans"] if (num(p.get("monthly_price_usd")) or 0) > 0], key=lambda p: p["monthly_price_usd"])
+    bits = []
+    if free_plan(tool):
+        bits.append("Free plan")
+    if paid:
+        lo = paid[0]
+        t = f"from {cents(lo['monthly_price_usd'])}/mo"
+        y = num(lo.get("yearly_price_usd"))
+        if y and y < lo["monthly_price_usd"]:
+            t += f" ({cents(y)} paid yearly)"
+        bits.append(t if bits else t[0].upper() + t[1:])
+    return " · ".join(bits) or "See plans"
+
+
+def emerging_page(tools, report):
+    path = "pages/emerging.html"
+    if not os.path.exists(path):
+        return
+    raw = open(path, encoding="utf-8").read()
+    now = datetime.now(TZ)
+    month = f"{MONTHS[now.month - 1]} {now.year}"
+    added = []
+    for name, tool in tools.items():
+        a = (INFO.get(name) or {}).get("added")
+        if a and a >= (now - __import__("datetime").timedelta(days=60)).strftime("%Y-%m-%d"):
+            added.append((a, name, tool))
+    added.sort(key=lambda x: (x[0], x[1]), reverse=True)
+
+    def card(name, tool, day=""):
+        info = INFO.get(name) or {}
+        desc = info.get("best_for") or info.get("about") or ""
+        page = tool.get("page") or "#"
+        return (f'<div class="card"><h3><a href="{html.escape(page)}">{html.escape(name)}</a></h3>'
+                f'<p>{html.escape(desc)}</p><p class="price">{html.escape(price_line(tool))}</p>'
+                + (f'<p class="note">Added {day}</p>' if day else "") +
+                f'<a href="{html.escape(page)}">See all plans →</a></div>')
+    parts = [f'<h1>New &amp; Emerging AI Tools</h1>\n<p class="lead">Smaller and newer AI tools for video, images, voice and music, '
+             f'often cheaper than the big names or better at one job. Prices are read from each official pricing page every morning '
+             f'and shown in US dollars.</p>\n<div class="no-live">']
+    if added:
+        parts.append(f'<h2>New on GenCost</h2><p class="note">Tools added in the last 60 days, newest first.</p><div class="cards">')
+        parts += [card(n, t, a) for a, n, t in added[:12]]
+        parts.append("</div>")
+    for cat in ("video", "image", "voice", "music"):
+        shown = {n for _, n, _ in added[:12]}
+        names = [n for n in EMERGING[cat] if n in tools and n not in shown]
+        if not names:
+            continue
+        parts.append(f'<h2>{SECTION_TITLE[cat]}</h2><div class="cards">')
+        parts += [card(n, tools[n]) for n in names]
+        parts.append("</div>")
+    parts.append('<h2>Models you can use in several tools</h2><p>Some of the most talked-about names are models, not subscriptions: '
+                 'you pay for them inside another tool.</p><div class="cards">')
+    for name, page, desc, link, label in EMERGING_MODELS:
+        more = f'<p><a href="{link}">{label} →</a></p>' if link else ""
+        parts.append(f'<div class="card"><h3><a href="{page}">{name}</a></h3><p>{html.escape(desc)}</p>{more}</div>')
+    parts.append("</div></div>")
+    parts.append(f'<p class="note">Updated {now.strftime("%Y-%m-%d")}. Prices change often; always confirm on the official site before you pay. '
+                 f'See every tool on the <a href="/#platforms">video</a>, <a href="/image.html">image</a>, '
+                 f'<a href="/voice.html">voice</a> and <a href="/music.html">music</a> price lists.</p>')
+    body = "\n".join(parts)
+    m = re.search(r'(<article class="prose">).*?(</article>)', raw, re.S)
+    if not m:
+        return
+    new = raw[:m.end(1)] + "\n" + body + "\n" + raw[m.start(2):]
+    new = re.sub(r"<title>[^<]*</title>", f"<title>New &amp; Emerging AI Tools ({month}): Prices in Real Dollars | GenCost</title>", new, count=1)
+    desc = (f"New and emerging AI tools for video, images, voice and music in {month}: every plan in US dollars, "
+            f"checked every morning. Cheaper alternatives to the big names.")
+    new = re.sub(r'(<meta (?:name|property)="(?:description|og:description|twitter:description)" content=")[^"]*(")',
+                 lambda mm: mm.group(1) + html.escape(desc) + mm.group(2), new)
+    if new != raw:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(new)
+        report.append(f"{path}: emerging tools rebuilt")
+
+
 def main():
     fix_notes()
     tools, updated = load_tools()
@@ -1224,6 +1324,7 @@ def main():
     link_pages(tools, names_by_article, lines)
     update_changelog(lines)
     monthly_reports(lines)
+    emerging_page(tools, lines)
     with open("article-review.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
 
