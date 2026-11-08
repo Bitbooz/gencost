@@ -1,23 +1,23 @@
 {
  "category": "image",
- "updated": "2026-11-08 12:03",
+ "updated": "2026-11-08 13:15",
  "platforms": [
   {
    "name": "Midjourney",
    "page": "/pages/midjourney.html",
    "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-   "checked": "2026-11-08 12:01",
+   "checked": "2026-11-08 13:14",
    "plans": [
     {
-     "name": "Basic Plan",
+     "name": "Basic",
      "monthly_price_usd": 10,
      "yearly_price_usd": 8,
-     "credits_or_minutes": 200,
-     "unit": "minutes",
+     "credits_or_minutes": 3.3,
+     "unit": "hours",
      "offer": ""
     },
     {
-     "name": "Standard Plan",
+     "name": "Standard",
      "monthly_price_usd": 30,
      "yearly_price_usd": 24,
      "credits_or_minutes": 15,
@@ -25,7 +25,7 @@
      "offer": ""
     },
     {
-     "name": "Pro Plan",
+     "name": "Pro",
      "monthly_price_usd": 60,
      "yearly_price_usd": 48,
      "credits_or_minutes": 30,
@@ -33,7 +33,7 @@
      "offer": ""
     },
     {
-     "name": "Mega Plan",
+     "name": "Mega",
      "monthly_price_usd": 120,
      "yearly_price_usd": 96,
      "credits_or_minutes": 60,
@@ -55,38 +55,48 @@
   {
    "name": "Leonardo",
    "page": "/pages/leonardo.html",
-   "source": "",
-   "checked": "",
+   "source": "https://costbench.com/software/ai-image-generators/leonardo-ai",
+   "checked": "2026-11-08 14:00",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 150,
      "unit": "tokens",
-     "offer": "daily"
+     "offer": "150 tokens a day, public images"
     },
     {
-     "name": "Apprentice",
+     "name": "Essential",
      "monthly_price_usd": 12,
+     "yearly_price_usd": 9.6,
      "credits_or_minutes": 8500,
      "unit": "tokens",
-     "offer": "approx"
+     "offer": ""
     },
     {
-     "name": "Artisan",
-     "monthly_price_usd": 24,
+     "name": "Premium",
+     "monthly_price_usd": 30,
+     "yearly_price_usd": 24,
      "credits_or_minutes": 25000,
      "unit": "tokens",
-     "offer": "approx"
+     "offer": ""
+    },
+    {
+     "name": "Ultimate",
+     "monthly_price_usd": 60,
+     "yearly_price_usd": 48,
+     "credits_or_minutes": 60000,
+     "unit": "tokens",
+     "offer": ""
     }
    ],
    "hidden": {
     "items": [
-     "Free: your images are public and Leonardo holds the rights",
-     "Paid plans roll unused tokens over, up to a cap"
+     "Free-plan images are public",
+     "Token bank has a cap per plan"
     ],
-    "source": "https://eesel.ai/blog/leonardo-ai-pricing",
-    "checked": "2026-06-05",
+    "source": "https://costbench.com/software/ai-image-generators/leonardo-ai",
+    "checked": "2026-11-08",
     "official": false
    }
   },
@@ -94,15 +104,8 @@
    "name": "Ideogram",
    "page": "/pages/ideogram.html",
    "source": "https://docs.ideogram.ai/plans-and-pricing/personal-plans",
-   "checked": "2026-11-08 12:01",
+   "checked": "2026-11-08 13:14",
    "plans": [
-    {
-     "name": "Free",
-     "monthly_price_usd": 0,
-     "credits_or_minutes": 30,
-     "unit": "credits",
-     "offer": ""
-    },
     {
      "name": "Plus",
      "monthly_price_usd": 20,
@@ -131,70 +134,135 @@
    }
   },
   {
-   "name": "Recraft",
-   "page": "/pages/recraft.html",
-   "source": "https://www.recraft.ai/pricing",
-   "checked": "2026-11-08 12:03",
+   "name": "Adobe Firefly",
+   "page": "/pages/firefly.html",
+   "source": "https://www.adobe.com/products/firefly/plans.html",
+   "checked": "2026-11-08 14:00",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 0,
      "unit": "credits",
+     "offer": "daily free generations"
+    },
+    {
+     "name": "Firefly Standard",
+     "monthly_price_usd": 9.99,
+     "credits_or_minutes": 2000,
+     "unit": "credits",
      "offer": ""
     },
     {
+     "name": "Firefly Pro",
+     "monthly_price_usd": 19.99,
+     "credits_or_minutes": 4000,
+     "unit": "credits",
+     "offer": ""
+    },
+    {
+     "name": "Firefly Pro Plus",
+     "monthly_price_usd": 49.99,
+     "credits_or_minutes": 10000,
+     "unit": "credits",
+     "offer": ""
+    },
+    {
+     "name": "Firefly Premium",
+     "monthly_price_usd": 199.99,
+     "credits_or_minutes": 50000,
+     "unit": "credits",
+     "offer": ""
+    }
+   ],
+   "hidden": {
+    "items": [
+     "Credits reset each billing date, no rollover",
+     "Partner models: you check if outputs are safe to use commercially"
+    ],
+    "source": "https://www.adobe.com/products/firefly/plans.html",
+    "checked": "2026-11-08",
+    "official": true
+   }
+  },
+  {
+   "name": "Recraft",
+   "page": "/pages/recraft.html",
+   "source": "https://www.recraft.ai/pricing",
+   "checked": "2026-11-08 13:15",
+   "plans": [
+    {
      "name": "Basic",
-     "monthly_price_usd": 10,
-     "yearly_price_usd": 10,
+     "monthly_price_usd": 12,
      "credits_or_minutes": 1000,
      "unit": "credits",
-     "offer": "monthly price not shown"
+     "offer": ""
     },
     {
      "name": "Pro",
-     "monthly_price_usd": 16,
-     "yearly_price_usd": 16,
+     "monthly_price_usd": 20,
      "credits_or_minutes": 2000,
      "unit": "credits",
-     "offer": "monthly price not shown"
+     "offer": ""
     }
-   ]
+   ],
+   "hidden": {
+    "items": [
+     "Free plan: public images, no commercial use",
+     "Monthly credits don't roll over",
+     "Commercial rights only while you subscribe"
+    ],
+    "source": "https://www.recraft.ai/docs/plans-and-billing/paid-plans",
+    "checked": "2026-11-08",
+    "official": true
+   }
   },
   {
    "name": "Freepik",
    "page": "/pages/freepik.html",
    "source": "https://www.freepik.com/pricing",
-   "checked": "2026-11-08 12:03",
+   "checked": "2026-11-08 13:15",
    "plans": [
     {
      "name": "Premium",
-     "monthly_price_usd": 20,
-     "credits_or_minutes": 240000,
+     "monthly_price_usd": 27,
+     "yearly_price_usd": 20,
+     "credits_or_minutes": 20000,
      "unit": "credits",
      "offer": ""
     },
     {
      "name": "Plus",
-     "monthly_price_usd": 45,
-     "credits_or_minutes": 600000,
+     "monthly_price_usd": 60,
+     "yearly_price_usd": 45,
+     "credits_or_minutes": 50000,
      "unit": "credits",
      "offer": ""
     },
     {
      "name": "Pro",
-     "monthly_price_usd": 110,
-     "credits_or_minutes": 1500000,
+     "monthly_price_usd": 146,
+     "yearly_price_usd": 109.5,
+     "credits_or_minutes": 125000,
      "unit": "credits",
      "offer": ""
     }
-   ]
+   ],
+   "hidden": {
+    "items": [
+     "Credits are yearly: heavy use can run out early",
+     "Music rights only on Plus and Pro"
+    ],
+    "source": "https://www.freepik.com/pricing",
+    "checked": "2026-11-08",
+    "official": true
+   }
   },
   {
    "name": "OpenArt",
    "page": "/pages/openart.html",
    "source": "https://openart.ai/pricing",
-   "checked": "2026-11-08 12:03",
+   "checked": "2026-11-08 13:15",
    "plans": [
     {
      "name": "Starter",
@@ -218,7 +286,7 @@
      "yearly_price_usd": 44,
      "credits_or_minutes": 24000,
      "unit": "credits",
-     "offer": "30% off GPT Image 2.6, 50% off Kling 4.0 until Nov 17"
+     "offer": "30% off GPT Image 2.6, 50% off Kling 4.0"
     },
     {
      "name": "Wonder",
@@ -226,9 +294,18 @@
      "yearly_price_usd": 175,
      "credits_or_minutes": 106000,
      "unit": "credits",
-     "offer": "30% off GPT Image 2.6, 50% off Kling 4.0 until Nov 17"
+     "offer": "30% off GPT Image 2.6, 50% off Kling 4.0"
     }
-   ]
+   ],
+   "hidden": {
+    "items": [
+     "No commercial use on Starter",
+     "Video uses many credits (about 50 videos on Starter)"
+    ],
+    "source": "https://openart.ai/pricing",
+    "checked": "2026-11-08",
+    "official": true
+   }
   }
  ]
 }

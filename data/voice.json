@@ -1,12 +1,12 @@
 {
  "category": "voice",
- "updated": "2026-11-08 12:03",
+ "updated": "2026-11-08 13:15",
  "platforms": [
   {
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-08 11:56",
+   "checked": "2026-11-08 13:11",
    "plans": [
     {
      "name": "Starter",
@@ -14,7 +14,7 @@
      "yearly_price_usd": 5,
      "credits_or_minutes": 30000,
      "unit": "credits",
-     "offer": "$1 first month"
+     "offer": "2 months free"
     },
     {
      "name": "Creator",
@@ -22,7 +22,7 @@
      "yearly_price_usd": 18.33,
      "credits_or_minutes": 121000,
      "unit": "credits",
-     "offer": "$11 first month"
+     "offer": "2 months free"
     },
     {
      "name": "Pro",
@@ -30,7 +30,7 @@
      "yearly_price_usd": 82.5,
      "credits_or_minutes": 600000,
      "unit": "credits",
-     "offer": ""
+     "offer": "2 months free"
     },
     {
      "name": "Scale",
@@ -38,7 +38,7 @@
      "yearly_price_usd": 249.17,
      "credits_or_minutes": 1800000,
      "unit": "credits",
-     "offer": ""
+     "offer": "2 months free"
     },
     {
      "name": "Business",
@@ -46,7 +46,7 @@
      "yearly_price_usd": 825,
      "credits_or_minutes": 6000000,
      "unit": "credits",
-     "offer": ""
+     "offer": "2 months free"
     }
    ],
    "hidden": {
@@ -64,7 +64,7 @@
    "name": "Murf AI",
    "page": "/pages/voice/murf.html",
    "source": "https://murf.ai/pricing",
-   "checked": "2026-11-08 11:57",
+   "checked": "2026-11-08 13:11",
    "plans": [
     {
      "name": "Free",
@@ -104,7 +104,7 @@
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-08 11:57",
+   "checked": "2026-11-08 13:11",
    "plans": [
     {
      "name": "Free",
@@ -141,21 +141,17 @@
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-08 11:57",
+   "checked": "2026-11-08 13:11",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": ""
     },
     {
      "name": "Premium",
      "monthly_price_usd": 29,
      "yearly_price_usd": 11.58,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": ""
     }
    ]
@@ -164,30 +160,30 @@
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-08 11:57",
+   "checked": "2026-11-08 13:12",
    "plans": [
     {
      "name": "Hobbyist",
      "monthly_price_usd": 24,
      "yearly_price_usd": 16,
-     "credits_or_minutes": 10,
-     "unit": "media hours",
+     "credits_or_minutes": 400,
+     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Creator",
      "monthly_price_usd": 35,
      "yearly_price_usd": 24,
-     "credits_or_minutes": 30,
-     "unit": "media hours",
+     "credits_or_minutes": 800,
+     "unit": "credits",
      "offer": ""
     },
     {
      "name": "Business",
      "monthly_price_usd": 65,
      "yearly_price_usd": 50,
-     "credits_or_minutes": 40,
-     "unit": "media hours",
+     "credits_or_minutes": 1500,
+     "unit": "credits",
      "offer": ""
     }
    ],
@@ -218,7 +214,7 @@
    "name": "Fliki",
    "page": "/pages/voice/fliki.html",
    "source": "https://fliki.ai/pricing",
-   "checked": "2026-11-08 11:58",
+   "checked": "2026-11-08 13:12",
    "plans": [
     {
      "name": "Free",
@@ -229,14 +225,14 @@
     },
     {
      "name": "Standard",
-     "monthly_price_usd": 28,
+     "monthly_price_usd": 39,
      "credits_or_minutes": 180,
      "unit": "credits",
      "offer": ""
     },
     {
      "name": "Premium",
-     "monthly_price_usd": 88,
+     "monthly_price_usd": 119,
      "credits_or_minutes": 600,
      "unit": "credits",
      "offer": ""
@@ -256,10 +252,10 @@
    "name": "Fish Audio",
    "page": "/pages/fish-audio.html",
    "source": "https://fish.audio/plan/",
-   "checked": "2026-11-08 11:58",
+   "checked": "2026-11-08 13:12",
    "plans": [
     {
-     "name": "Free",
+     "name": "Free Tier",
      "monthly_price_usd": 0,
      "credits_or_minutes": 8000,
      "unit": "credits",

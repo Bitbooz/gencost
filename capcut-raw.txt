@@ -57,9 +57,11 @@ Dreamina Seedance 2.0
 Dreamina Seedance 2.0 Mini
 Dreamina Seedance 2.5
 Sora 2
+Veo 3.1
 Dreamontage 1.0 Pro Fast
 Image models
 GPT Image 2
+Nano Banana Pro
 Seedream 5.0
 Integrations
 Plugins
@@ -118,7 +120,7 @@ Displayed pricing is for reference only. Sign in to see final pricing, taxes, an
 Monthly
 Yearly
 Free
-USD
+CAD
 0
 Start for free with the basics you need to create.
 Get started
@@ -129,8 +131,8 @@ Basic editing tools
 ✓
 See all benefits
 Pro
-USD
-19.99
+CAD
+33.99
 /month
 Generate up to 240s at 720p or 600s at 480p with Seedance 2.0 Mini
 Upgrade
@@ -147,7 +149,7 @@ Use up to
 58%
 fewer credits with Seedance 2.0 Mini
 ✓
-1200 monthly AI credits
+700 monthly AI credits
 ✓
 Buy credits
 ✓
@@ -162,8 +164,8 @@ All premium Pro features
 See all benefits
 Best value
 Ultra
-USD
-79
+CAD
+109.99
 /month
 Generate up to 1,700s at 720p or 4,300s at 480p with Seedance 2.0 Mini
 Upgrade
@@ -180,7 +182,7 @@ Use up to
 58%
 fewer credits with Seedance 2.0 Mini
 ✓
-8645 monthly AI credits
+11997 monthly AI credits
 ✓
 Buy credits
 ✓
@@ -194,8 +196,8 @@ Everything in Pro, plus exclusive AI features
 ✓
 See all benefits
 Teams
-USD
-12.49
+CAD
+17.5
 /month per seat
 Renews automatically. Cancel anytime.
 Sign in to choose a space
@@ -214,7 +216,7 @@ Seedance 2.0 Mini at 480p from
 $0.007/sec
 per seat
 ✓
-1200 monthly AI credits per seat
+700 monthly AI credits per seat
 ✓
 Buy credits
 ✓
@@ -231,14 +233,14 @@ Brand kit
 See all benefits
 Yearly
 Free
-USD
+CAD
 0
 Start for free with the basics you need to create.
 Free templates to start fast
 Basic editing tools
 Pro
-USD
-179.99
+CAD
+290
 /year
 Generate up to 240s at 720p or 600s at 480p with Seedance 2.0 Mini
 Seedance 2.5 from
@@ -250,7 +252,7 @@ $0.007/sec
 Use up to
 58%
 fewer credits with Seedance 2.0 Mini
-1200 monthly AI credits
+700 monthly AI credits
 Buy credits
 Access to AI features
 All premium templates
@@ -258,8 +260,8 @@ All premium Pro features
 1 TB of space storage
 Ultra
 Best value
-USD
-900
+CAD
+1299.99
 /year
 Generate up to 1,700s at 720p or 4,300s at 480p with Seedance 2.0 Mini
 Seedance 2.5 from
@@ -271,7 +273,7 @@ $0.009/sec
 Use up to
 58%
 fewer credits with Seedance 2.0 Mini
-8645 monthly AI credits
+11997 monthly AI credits
 Buy credits
 Access to AI features
 All premium templates
@@ -279,8 +281,8 @@ Everything in Pro, plus exclusive AI features
 1 TB of space storage
 Teams
 2 seats
-USD
-107.5
+CAD
+120
 /year per seat
 Renews automatically. Cancel anytime.
 2 seats
@@ -293,7 +295,7 @@ per seat
 Seedance 2.0 Mini at 480p from
 $0.007/sec
 per seat
-1200 monthly AI credits per seat
+700 monthly AI credits per seat
 Buy credits
 Access to AI features
 All premium templates
@@ -302,8 +304,8 @@ Brand kit
 1 TB of space storage
 Teams
 5 seats
-USD
-108
+CAD
+120
 /year per seat
 Renews automatically. Cancel anytime.
 2 seats
@@ -316,7 +318,7 @@ per seat
 Seedance 2.0 Mini at 480p from
 $0.007/sec
 per seat
-1200 monthly AI credits per seat
+700 monthly AI credits per seat
 Buy credits
 Access to AI features
 All premium templates
@@ -325,8 +327,8 @@ Brand kit
 1 TB of space storage
 Teams
 15 seats
-USD
-20
+CAD
+28
 /year per seat
 Renews automatically. Cancel anytime.
 2 seats
@@ -339,7 +341,7 @@ per seat
 Seedance 2.0 Mini at 480p from
 $0.007/sec
 per seat
-1200 monthly AI credits per seat
+700 monthly AI credits per seat
 Buy credits
 Access to AI features
 All premium templates
@@ -349,8 +351,8 @@ Brand kit
 Monthly
 Teams
 2 seats
-USD
-12.49
+CAD
+17.5
 /month per seat
 Renews automatically. Cancel anytime.
 2 seats
@@ -363,7 +365,7 @@ per seat
 Seedance 2.0 Mini at 480p from
 $0.007/sec
 per seat
-1200 monthly AI credits per seat
+700 monthly AI credits per seat
 Buy credits
 Access to AI features
 All premium templates
@@ -372,8 +374,8 @@ Brand kit
 1 TB of space storage
 Teams
 5 seats
-USD
-12
+CAD
+16.78
 /month per seat
 Renews automatically. Cancel anytime.
 2 seats
@@ -386,7 +388,7 @@ per seat
 Seedance 2.0 Mini at 480p from
 $0.007/sec
 per seat
-1200 monthly AI credits per seat
+700 monthly AI credits per seat
 Buy credits
 Access to AI features
 All premium templates
@@ -395,8 +397,8 @@ Brand kit
 1 TB of space storage
 Teams
 7 seats
-USD
-12
+CAD
+17
 /month per seat
 Renews automatically. Cancel anytime.
 2 seats
@@ -409,7 +411,7 @@ per seat
 Seedance 2.0 Mini at 480p from
 $0.007/sec
 per seat
-1200 monthly AI credits per seat
+700 monthly AI credits per seat
 Buy credits
 Access to AI features
 All premium templates
@@ -418,8 +420,8 @@ Brand kit
 1 TB of space storage
 Teams
 10 seats
-USD
-20
+CAD
+28
 /month per seat
 Renews automatically. Cancel anytime.
 2 seats
@@ -432,7 +434,7 @@ per seat
 Seedance 2.0 Mini at 480p from
 $0.007/sec
 per seat
-1200 monthly AI credits per seat
+700 monthly AI credits per seat
 Buy credits
 Access to AI features
 All premium templates
@@ -441,8 +443,8 @@ Brand kit
 1 TB of space storage
 Teams
 30 seats
-USD
-20
+CAD
+28
 /month per seat
 Renews automatically. Cancel anytime.
 2 seats
@@ -455,7 +457,7 @@ per seat
 Seedance 2.0 Mini at 480p from
 $0.007/sec
 per seat
-1200 monthly AI credits per seat
+700 monthly AI credits per seat
 Buy credits
 Access to AI features
 All premium templates

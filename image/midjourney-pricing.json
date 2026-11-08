@@ -2,15 +2,15 @@
   "platform": "Midjourney",
   "plans": [
     {
-      "name": "Basic Plan",
+      "name": "Basic",
       "monthly_price_usd": 10,
       "yearly_price_usd": 8,
-      "credits_or_minutes": 200,
-      "unit": "minutes",
+      "credits_or_minutes": 3.3,
+      "unit": "hours",
       "offer": ""
     },
     {
-      "name": "Standard Plan",
+      "name": "Standard",
       "monthly_price_usd": 30,
       "yearly_price_usd": 24,
       "credits_or_minutes": 15,
@@ -18,7 +18,7 @@
       "offer": ""
     },
     {
-      "name": "Pro Plan",
+      "name": "Pro",
       "monthly_price_usd": 60,
       "yearly_price_usd": 48,
       "credits_or_minutes": 30,
@@ -26,7 +26,7 @@
       "offer": ""
     },
     {
-      "name": "Mega Plan",
+      "name": "Mega",
       "monthly_price_usd": 120,
       "yearly_price_usd": 96,
       "credits_or_minutes": 60,
@@ -35,5 +35,5 @@
     }
   ],
   "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-  "last_checked": "2026-11-08 12:01"
+  "last_checked": "2026-11-08 13:14"
 }

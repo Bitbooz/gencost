@@ -39,6 +39,7 @@ Prices last updated: 2026-11-08. How prices are checked: https://getgencost.com/
 
 ## Tool pricing pages
 - [AIVA Pricing](https://getgencost.com/pages/music/aiva.html)
+- [Adobe Firefly Pricing](https://getgencost.com/pages/firefly.html)
 - [Boomy Pricing](https://getgencost.com/pages/music/boomy.html)
 - [CapCut Pricing](https://getgencost.com/pages/capcut.html)
 - [Captions Pricing](https://getgencost.com/pages/captions.html)

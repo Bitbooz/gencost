@@ -1,20 +1,14 @@
-2026-11-08 11:52  heygen  (https://www.heygen.com/pricing)
-    - Pro: yearly price 41 could not be confirmed, left out
-    -> saved the monthly prices
-
-2026-11-08 12:01  leonardo  (https://leonardo.ai/pricing/)
-    - download: pricing page returned almost no text (HTTP 403)
-    - browser: no plans found
-    -> kept the previous prices
-
-2026-11-08 12:02  firefly  (https://www.adobe.com/products/firefly/plans.html)
+2026-11-08 13:05  veo  (https://one.google.com/about/google-ai-plans/)
     - download: no plans found
     - browser: no plans found
     -> kept the previous prices
 
-2026-11-08 12:03  freepik  (https://www.freepik.com/pricing)
-    - Premium: yearly price 14.5 could not be confirmed, left out
-    - Plus: yearly price 33.75 could not be confirmed, left out
-    - Pro: yearly price 82.5 could not be confirmed, left out
+2026-11-08 13:06  heygen  (https://www.heygen.com/pricing)
+    - Pro: yearly price 41 could not be confirmed, left out
+    -> saved the monthly prices
+
+2026-11-08 13:09  capcut  (https://www.capcut.com/pricing)
+    - Pro: yearly price 24.17 could not be confirmed, left out
+    - Ultra: yearly price 108.33 could not be confirmed, left out
     -> saved the monthly prices
 

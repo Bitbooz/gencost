@@ -2,6 +2,13 @@
   "platform": "runway",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 125,
+      "unit": "credits",
+      "offer": "Includes 125 credits (one time)"
+    },
+    {
       "name": "Standard",
       "monthly_price_usd": 15,
       "yearly_price_usd": 12,
@@ -27,5 +34,5 @@
     }
   ],
   "source": "https://runwayml.com/pricing",
-  "last_checked": "2026-11-08 11:53"
+  "last_checked": "2026-11-08 13:07"
 }

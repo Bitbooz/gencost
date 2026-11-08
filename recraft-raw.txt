@@ -1,3 +1,4 @@
+[Pay monthly tab]
 Home
 Projects
 History
@@ -35,9 +36,8 @@ Basic
 
 For individual creators with core image generation needs.
 
-$10
-per month
-billed annually $120
+$12
+billed monthly
 1,000 credits per month
 Upgrade to Basic
 Everything in Free, plus:
@@ -57,9 +57,8 @@ Pro
 
 For professional creators who need scale and video generation.
 
-$16
-per month
-billed annually $192
+$20
+billed monthly
 2k
 4k
 8k
@@ -81,9 +80,8 @@ Teams
 
 For teams collaborating on shared creative workflows.
 
-$18
-per month per seat
-billed annually $211
+$22
+billed monthly per seat
 2k
 4k
 8k

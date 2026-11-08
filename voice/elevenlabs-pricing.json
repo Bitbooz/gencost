@@ -7,7 +7,7 @@
       "yearly_price_usd": 5,
       "credits_or_minutes": 30000,
       "unit": "credits",
-      "offer": "$1 first month"
+      "offer": "2 months free"
     },
     {
       "name": "Creator",
@@ -15,7 +15,7 @@
       "yearly_price_usd": 18.33,
       "credits_or_minutes": 121000,
       "unit": "credits",
-      "offer": "$11 first month"
+      "offer": "2 months free"
     },
     {
       "name": "Pro",
@@ -23,7 +23,7 @@
       "yearly_price_usd": 82.5,
       "credits_or_minutes": 600000,
       "unit": "credits",
-      "offer": ""
+      "offer": "2 months free"
     },
     {
       "name": "Scale",
@@ -31,7 +31,7 @@
       "yearly_price_usd": 249.17,
       "credits_or_minutes": 1800000,
       "unit": "credits",
-      "offer": ""
+      "offer": "2 months free"
     },
     {
       "name": "Business",
@@ -39,9 +39,9 @@
       "yearly_price_usd": 825,
       "credits_or_minutes": 6000000,
       "unit": "credits",
-      "offer": ""
+      "offer": "2 months free"
     }
   ],
   "source": "https://elevenlabs.io/pricing",
-  "last_checked": "2026-11-08 11:56"
+  "last_checked": "2026-11-08 13:11"
 }

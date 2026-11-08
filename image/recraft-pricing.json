@@ -2,16 +2,8 @@
   "platform": "recraft",
   "plans": [
     {
-      "name": "Free",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 0,
-      "unit": "credits",
-      "offer": "daily free credits, public images, no commercial use"
-    },
-    {
       "name": "Basic",
       "monthly_price_usd": 12,
-      "yearly_price_usd": 10,
       "credits_or_minutes": 1000,
       "unit": "credits",
       "offer": ""
@@ -19,12 +11,11 @@
     {
       "name": "Pro",
       "monthly_price_usd": 20,
-      "yearly_price_usd": 16,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "bigger Pro sizes up to 16,000 credits"
+      "offer": ""
     }
   ],
-  "source": "https://www.recraft.ai/docs/plans-and-billing/paid-plans",
-  "last_checked": "2026-11-08 14:00"
+  "source": "https://www.recraft.ai/pricing",
+  "last_checked": "2026-11-08 13:15"
 }
