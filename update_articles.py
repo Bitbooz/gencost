@@ -827,6 +827,36 @@ def history_svg(plans):
             f'{axis}{"".join(paths)}</svg><div class="ph-legend">{"".join(legend)}</div>')
 
 
+def clip_cost_for(tool, plan, secs, clips):
+    """Like clip_cost, but for one model option's own credits per clip."""
+    t2 = dict(tool, clips=dict(tool.get("clips") or {}, clips=clips))
+    return clip_cost(t2, plan, secs)
+
+
+def models_section(name, tool):
+    """'Cost per clip by model' table: every model/resolution we have credits for, on the cheapest plan."""
+    info = tool.get("clips") or {}
+    opts = info.get("options") or []
+    if len(opts) < 2:
+        return None
+    paid = sorted([p for p in tool["plans"] if (num(p.get("monthly_price_usd")) or 0) > 0], key=lambda p: p["monthly_price_usd"])
+    plan = next((p for p in paid if clip_cost(tool, p, 5)), None)
+    if not plan:
+        return None
+    rows = []
+    for o in opts:
+        cells = []
+        for secs in (5, 10):
+            cc = clip_cost_for(tool, plan, secs, o["clips"])
+            cells.append(f"~${cc[0]:.2f}{'*' if cc[2] else ''}" if cc else "–")
+        rows.append(f"<tr><td>{html.escape(o['model'])}</td><td class=\"num\">{cells[0]}</td><td class=\"num\">{cells[1]}</td></tr>")
+    note = (f"On the {html.escape(plan['name'])} plan at today's price, worked out from {html.escape(name)}'s own credits per clip. "
+            "* scaled from the clip length the tool lists. Bigger plans cost less per clip.")
+    return BeautifulSoup(f'<section class="card" data-auto="models"><h2>{html.escape(name)} cost per clip by model</h2>'
+                         f'<div class="table-scroll"><table><thead><tr><th>Model and resolution</th><th>5s clip</th><th>10s clip</th></tr></thead>'
+                         f'<tbody>{"".join(rows)}</tbody></table></div><p class="note">{note}</p></section>', PARSER).find("section")
+
+
 def history_section(name, cat):
     plans = tool_history(name, cat)
     since = HISTORY.get("since", "")
@@ -986,6 +1016,9 @@ def link_pages(tools, names_by_article, report):
                 box.clear()
                 for el in list(body.children):
                     box.append(el)
+        ms = models_section(name, tool)
+        if ms:
+            put_auto(art, ms, "models", before="history")
         put_auto(art, history_section(name, tool["category"]), "history", before="faq")
         put_auto(art, alert_form(name), "alert", before="faq")
         about = [p for p, n in live.items() if name in n]

@@ -91,8 +91,10 @@
   /* Real credits per video clip, from data/clip-costs.json (merged into
      data/video.json as platform.clips). Returns null when the tool has no
      known clip cost, so we show nothing rather than a wrong guess. */
-  GC.clipCost = function (plan, secs) {
-    const info = plan && plan.__clips;
+  GC.clipCost = function (plan, secs, opt) {
+    const base = plan && plan.__clips;
+    const o = base && opt && base.options && base.options[opt];
+    const info = o ? Object.assign({}, base, { clips: o.clips, model: o.model }) : base;
     const price = GC.price(plan);
     const credits = num(plan && plan.credits_or_minutes) || num(info && info.plan_credits && info.plan_credits[plan.name]);
     if (!info || !info.clips || !price || !credits || credits <= 0) return null;
@@ -110,8 +112,14 @@
     }
     return { usd: (price / credits) * cr, credits: cr, secs, scaled, model: info.model || "", rough: !!info.rough || scaled };
   };
-  GC.clipLengths = function (plan) {
+  GC.clipOptions = function (plan) {
     const info = plan && plan.__clips;
+    return info && info.options && info.options.length ? info.options : (info ? [{ model: info.model, clips: info.clips }] : []);
+  };
+  GC.clipLengths = function (plan, opt) {
+    const base = plan && plan.__clips;
+    const o = base && opt && base.options && base.options[opt];
+    const info = o ? Object.assign({}, base, { clips: o.clips }) : base;
     if (info && info.only_plans && !info.only_plans.includes(plan.name)) return [];
     return info && info.clips ? Object.keys(info.clips).map(Number).sort((a, b) => a - b) : [];
   };
