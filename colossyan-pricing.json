@@ -11,12 +11,12 @@
     {
       "name": "Professional",
       "monthly_price_usd": 59,
-      "yearly_price_usd": 59,
+      "yearly_price_usd": 30,
       "credits_or_minutes": 30,
       "unit": "min",
-      "offer": "monthly price not shown"
+      "offer": ""
     }
   ],
   "source": "https://www.colossyan.com/pricing",
-  "last_checked": "2026-11-08 00:08"
+  "last_checked": "2026-11-08 09:49"
 }

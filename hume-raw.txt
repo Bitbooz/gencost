@@ -252,42 +252,57 @@ Next
 
 We engage customers to learn their challenges and make AI feel more human.
 
-00:12:25
+00:12:38
 Pick One
 What emotion is the customer exhibiting?
-Joy
 Anxiety
 Frustration
 Frustration
 Frustration
+Frustration
+Frustration
+Joy
+Frustration
 Pick One
 What language is spoken?
+English
+Spanish
 English
 English
 Spanish
 English
 English
+English
 Yes/No
 Does the reply address what the caller asked?
 Yes
-Yes
 No
+Yes
+Yes
+Yes
+Yes
 Yes
 Yes
 Pick One
 How many people are speaking?
 Two
-Two
 Three+
 Two
 Two
+Two
+Two
+Three+
+Two
 Scale
 How intrusive is the background noise?
-2.4
 1.9
 3.1
 4.6
-2.3
+2.8
+4.3
+3.6
+4.7
+2.6
 Add question
 You can add or change a question any time.
 

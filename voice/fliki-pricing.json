@@ -7,8 +7,22 @@
       "credits_or_minutes": 3,
       "unit": "credits",
       "offer": ""
+    },
+    {
+      "name": "Standard",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 180,
+      "unit": "credits",
+      "offer": "25% off yearly"
+    },
+    {
+      "name": "Premium",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 600,
+      "unit": "credits",
+      "offer": "25% off yearly"
     }
   ],
   "source": "https://fliki.ai/pricing",
-  "last_checked": "2026-11-08 00:12"
+  "last_checked": "2026-11-08 09:51"
 }

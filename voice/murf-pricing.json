@@ -12,19 +12,19 @@
       "name": "Creator",
       "monthly_price_usd": 19,
       "yearly_price_usd": 19,
-      "credits_or_minutes": 24,
-      "unit": "hours",
+      "credits_or_minutes": 1440,
+      "unit": "minutes",
       "offer": ""
     },
     {
       "name": "Business",
       "monthly_price_usd": 66,
       "yearly_price_usd": 66,
-      "credits_or_minutes": 96,
-      "unit": "hours",
+      "credits_or_minutes": 5760,
+      "unit": "minutes",
       "offer": ""
     }
   ],
   "source": "https://murf.ai/pricing",
-  "last_checked": "2026-11-08 00:10"
+  "last_checked": "2026-11-08 09:50"
 }
