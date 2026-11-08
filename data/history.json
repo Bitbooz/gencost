@@ -914,35 +914,10 @@
    ]
   }
  },
- "pending": {
-  "video|Higgsfield|Plus": {
-   "value": [
-    47.0,
-    47.0
-   ],
-   "reading": "2026-11-08 13:23",
-   "first_seen": "2026-11-08"
-  },
-  "video|Higgsfield|Ultra": {
-   "value": [
-    99.0,
-    99.0
-   ],
-   "reading": "2026-11-08 13:23",
-   "first_seen": "2026-11-08"
-  },
-  "video|Colossyan|Professional": {
-   "value": [
-    59.0,
-    30.0
-   ],
-   "reading": "2026-11-08 13:26",
-   "first_seen": "2026-11-08"
-  }
- },
+ "pending": {},
  "readings": {
   "video|HeyGen": "2026-11-08 13:23",
-  "video|Higgsfield": "2026-11-08 13:23",
+  "video|Higgsfield": "2026-11-08 13:07",
   "video|Runway": "2026-11-08 13:24",
   "video|Kling AI": "2026-11-08 13:24",
   "video|Synthesia": "2026-11-08 13:24",
@@ -958,7 +933,7 @@
   "video|Krea": "2026-11-08 13:23",
   "video|PixVerse": "2026-11-08 13:26",
   "video|D-ID": "2026-11-08 13:26",
-  "video|Colossyan": "2026-11-08 13:26",
+  "video|Colossyan": "2026-11-08 13:10",
   "video|OpusClip": "2026-11-08 13:27",
   "video|Captions": "2026-11-08 13:27",
   "voice|ElevenLabs": "2026-11-08 13:27",

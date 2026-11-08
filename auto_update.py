@@ -185,6 +185,17 @@ HINTS = {
                 "(Basic $12 monthly / $10 annual, Pro $20 / $16). Never use the annual price as the monthly price. "
                 "Use the lowest Pro credit option (2,000 credits).",
     },
+    "higgsfield": {
+        "focus": ["billed yearly", "Save $", "/month"],
+        "note": "Higgsfield opens on yearly billing: '$47 /mo billed yearly ... Save $144' means yearly_price_usd 47 and "
+                "monthly_price_usd 47 + 144/12 = 59. Use each plan's own 'Save $X' line. "
+                "Never use the yearly price as the monthly price.",
+    },
+    "colossyan": {
+        "focus": ["/month", "annual"],
+        "note": "Professional is '$59/month on an annual plan': yearly_price_usd 59. If no separate monthly-billing "
+                "price is written, set monthly_price_usd to the same 59. Minute counts (30 minutes, 50 min) are never prices.",
+    },
     "suno": {
         "focus": ["/month", "billing yearly", "Saves $"],
         "note": "Suno may open on yearly billing: '$8 /month Saves $24 by billing yearly' means yearly_price_usd 8 and "
