@@ -4,23 +4,27 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
-      "credits_or_minutes": 25,
-      "unit": "prompts",
-      "offer": "daily"
-    },
-    {
-      "name": "Basic",
-      "monthly_price_usd": 7,
-      "credits_or_minutes": 1000,
+      "credits_or_minutes": 30,
       "unit": "credits",
-      "offer": "approx"
+      "offer": ""
     },
     {
       "name": "Plus",
       "monthly_price_usd": 20,
-      "credits_or_minutes": 3500,
+      "yearly_price_usd": 15,
+      "credits_or_minutes": 2400,
       "unit": "credits",
-      "offer": "approx"
+      "offer": ""
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 60,
+      "yearly_price_usd": 42,
+      "credits_or_minutes": 7500,
+      "unit": "credits",
+      "offer": ""
     }
-  ]
+  ],
+  "source": "https://docs.ideogram.ai/plans-and-pricing/personal-plans",
+  "last_checked": "2026-11-08 12:01"
 }

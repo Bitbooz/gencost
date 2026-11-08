@@ -8,9 +8,10 @@ Prices last updated: 2026-11-08. How prices are checked: https://getgencost.com/
 - [AI video, avatar and image tools](https://getgencost.com/): every plan, monthly and yearly, with cost per clip
 - [AI voice tools](https://getgencost.com/voice.html): every plan in US dollars
 - [AI music tools](https://getgencost.com/music.html): every plan in US dollars
+- [AI image generators](https://getgencost.com/image.html): every plan in US dollars
 - [Compare any tools](https://getgencost.com/compare.html): two or three tools side by side
 - [Budget calculator](https://getgencost.com/calculator.html): how many clips a budget buys
-- [Machine-readable prices](https://getgencost.com/data/video.json), [voice](https://getgencost.com/data/voice.json), [music](https://getgencost.com/data/music.json)
+- [Machine-readable prices](https://getgencost.com/data/video.json), [voice](https://getgencost.com/data/voice.json), [music](https://getgencost.com/data/music.json), [image](https://getgencost.com/data/image.json)
 
 ## Guides
 - [Best Cheap AI Video Tools for YouTube in 2026](https://getgencost.com/pages/best-cheap-ai-video-tools-for-youtube-2026.html)
@@ -48,6 +49,7 @@ Prices last updated: 2026-11-08. How prices are checked: https://getgencost.com/
 - [ElevenLabs Pricing](https://getgencost.com/pages/voice/elevenlabs.html)
 - [Fish Audio Pricing](https://getgencost.com/pages/fish-audio.html)
 - [Fliki Pricing](https://getgencost.com/pages/voice/fliki.html)
+- [Freepik Pricing](https://getgencost.com/pages/freepik.html)
 - [Google Veo Pricing](https://getgencost.com/pages/veo.html)
 - [Hailuo AI Pricing](https://getgencost.com/pages/hailuo.html)
 - [HeyGen Pricing](https://getgencost.com/pages/heygen.html)
@@ -62,9 +64,11 @@ Prices last updated: 2026-11-08. How prices are checked: https://getgencost.com/
 - [Midjourney Pricing](https://getgencost.com/pages/midjourney.html)
 - [Mureka Pricing](https://getgencost.com/pages/mureka.html)
 - [Murf AI Pricing](https://getgencost.com/pages/voice/murf.html)
+- [OpenArt Pricing](https://getgencost.com/pages/openart.html)
 - [OpusClip Pricing](https://getgencost.com/pages/opusclip.html)
 - [Pika Pricing](https://getgencost.com/pages/pika.html)
 - [PixVerse Pricing](https://getgencost.com/pages/pixverse.html)
+- [Recraft Pricing](https://getgencost.com/pages/recraft.html)
 - [Runway Pricing](https://getgencost.com/pages/runway.html)
 - [Soundraw Pricing](https://getgencost.com/pages/music/soundraw.html)
 - [Speechify Pricing](https://getgencost.com/pages/voice/speechify.html)

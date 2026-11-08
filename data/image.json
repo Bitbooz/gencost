@@ -1,0 +1,234 @@
+{
+ "category": "image",
+ "updated": "2026-11-08 12:03",
+ "platforms": [
+  {
+   "name": "Midjourney",
+   "page": "/pages/midjourney.html",
+   "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+   "checked": "2026-11-08 12:01",
+   "plans": [
+    {
+     "name": "Basic Plan",
+     "monthly_price_usd": 10,
+     "yearly_price_usd": 8,
+     "credits_or_minutes": 200,
+     "unit": "minutes",
+     "offer": ""
+    },
+    {
+     "name": "Standard Plan",
+     "monthly_price_usd": 30,
+     "yearly_price_usd": 24,
+     "credits_or_minutes": 15,
+     "unit": "hours",
+     "offer": ""
+    },
+    {
+     "name": "Pro Plan",
+     "monthly_price_usd": 60,
+     "yearly_price_usd": 48,
+     "credits_or_minutes": 30,
+     "unit": "hours",
+     "offer": ""
+    },
+    {
+     "name": "Mega Plan",
+     "monthly_price_usd": 120,
+     "yearly_price_usd": 96,
+     "credits_or_minutes": 60,
+     "unit": "hours",
+     "offer": ""
+    }
+   ],
+   "hidden": {
+    "items": [
+     "Companies earning over $1M a year must use Pro or Mega",
+     "Images are public unless you're on Pro or Mega (Stealth Mode)",
+     "Unused Fast hours expire each month"
+    ],
+    "source": "https://eesel.ai/blog/midjourney-pricing",
+    "checked": "2026-06-05",
+    "official": false
+   }
+  },
+  {
+   "name": "Leonardo",
+   "page": "/pages/leonardo.html",
+   "source": "",
+   "checked": "",
+   "plans": [
+    {
+     "name": "Free",
+     "monthly_price_usd": 0,
+     "credits_or_minutes": 150,
+     "unit": "tokens",
+     "offer": "daily"
+    },
+    {
+     "name": "Apprentice",
+     "monthly_price_usd": 12,
+     "credits_or_minutes": 8500,
+     "unit": "tokens",
+     "offer": "approx"
+    },
+    {
+     "name": "Artisan",
+     "monthly_price_usd": 24,
+     "credits_or_minutes": 25000,
+     "unit": "tokens",
+     "offer": "approx"
+    }
+   ],
+   "hidden": {
+    "items": [
+     "Free: your images are public and Leonardo holds the rights",
+     "Paid plans roll unused tokens over, up to a cap"
+    ],
+    "source": "https://eesel.ai/blog/leonardo-ai-pricing",
+    "checked": "2026-06-05",
+    "official": false
+   }
+  },
+  {
+   "name": "Ideogram",
+   "page": "/pages/ideogram.html",
+   "source": "https://docs.ideogram.ai/plans-and-pricing/personal-plans",
+   "checked": "2026-11-08 12:01",
+   "plans": [
+    {
+     "name": "Free",
+     "monthly_price_usd": 0,
+     "credits_or_minutes": 30,
+     "unit": "credits",
+     "offer": ""
+    },
+    {
+     "name": "Plus",
+     "monthly_price_usd": 20,
+     "yearly_price_usd": 15,
+     "credits_or_minutes": 2400,
+     "unit": "credits",
+     "offer": ""
+    },
+    {
+     "name": "Pro",
+     "monthly_price_usd": 60,
+     "yearly_price_usd": 42,
+     "credits_or_minutes": 7500,
+     "unit": "credits",
+     "offer": ""
+    }
+   ],
+   "hidden": {
+    "items": [
+     "Free images are public; private images from the Plus plan",
+     "Monthly credits don't roll over; bought credits last 365 days"
+    ],
+    "source": "https://docs.ideogram.ai/faq",
+    "checked": "2026-11-07",
+    "official": true
+   }
+  },
+  {
+   "name": "Recraft",
+   "page": "/pages/recraft.html",
+   "source": "https://www.recraft.ai/pricing",
+   "checked": "2026-11-08 12:03",
+   "plans": [
+    {
+     "name": "Free",
+     "monthly_price_usd": 0,
+     "credits_or_minutes": 0,
+     "unit": "credits",
+     "offer": ""
+    },
+    {
+     "name": "Basic",
+     "monthly_price_usd": 10,
+     "yearly_price_usd": 10,
+     "credits_or_minutes": 1000,
+     "unit": "credits",
+     "offer": "monthly price not shown"
+    },
+    {
+     "name": "Pro",
+     "monthly_price_usd": 16,
+     "yearly_price_usd": 16,
+     "credits_or_minutes": 2000,
+     "unit": "credits",
+     "offer": "monthly price not shown"
+    }
+   ]
+  },
+  {
+   "name": "Freepik",
+   "page": "/pages/freepik.html",
+   "source": "https://www.freepik.com/pricing",
+   "checked": "2026-11-08 12:03",
+   "plans": [
+    {
+     "name": "Premium",
+     "monthly_price_usd": 20,
+     "credits_or_minutes": 240000,
+     "unit": "credits",
+     "offer": ""
+    },
+    {
+     "name": "Plus",
+     "monthly_price_usd": 45,
+     "credits_or_minutes": 600000,
+     "unit": "credits",
+     "offer": ""
+    },
+    {
+     "name": "Pro",
+     "monthly_price_usd": 110,
+     "credits_or_minutes": 1500000,
+     "unit": "credits",
+     "offer": ""
+    }
+   ]
+  },
+  {
+   "name": "OpenArt",
+   "page": "/pages/openart.html",
+   "source": "https://openart.ai/pricing",
+   "checked": "2026-11-08 12:03",
+   "plans": [
+    {
+     "name": "Starter",
+     "monthly_price_usd": 14,
+     "yearly_price_usd": 13,
+     "credits_or_minutes": 4000,
+     "unit": "credits",
+     "offer": ""
+    },
+    {
+     "name": "Plus",
+     "monthly_price_usd": 34,
+     "yearly_price_usd": 27,
+     "credits_or_minutes": 12000,
+     "unit": "credits",
+     "offer": ""
+    },
+    {
+     "name": "Pro",
+     "monthly_price_usd": 56,
+     "yearly_price_usd": 44,
+     "credits_or_minutes": 24000,
+     "unit": "credits",
+     "offer": "30% off GPT Image 2.6, 50% off Kling 4.0 until Nov 17"
+    },
+    {
+     "name": "Wonder",
+     "monthly_price_usd": 240,
+     "yearly_price_usd": 175,
+     "credits_or_minutes": 106000,
+     "unit": "credits",
+     "offer": "30% off GPT Image 2.6, 50% off Kling 4.0 until Nov 17"
+    }
+   ]
+  }
+ ]
+}

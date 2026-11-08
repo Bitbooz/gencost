@@ -1,0 +1,28 @@
+{
+  "platform": "freepik",
+  "plans": [
+    {
+      "name": "Premium",
+      "monthly_price_usd": 20,
+      "credits_or_minutes": 240000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Plus",
+      "monthly_price_usd": 45,
+      "credits_or_minutes": 600000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 110,
+      "credits_or_minutes": 1500000,
+      "unit": "credits",
+      "offer": ""
+    }
+  ],
+  "source": "https://www.freepik.com/pricing",
+  "last_checked": "2026-11-08 12:03"
+}

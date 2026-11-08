@@ -1,0 +1,39 @@
+{
+  "platform": "openart",
+  "plans": [
+    {
+      "name": "Starter",
+      "monthly_price_usd": 14,
+      "yearly_price_usd": 13,
+      "credits_or_minutes": 4000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Plus",
+      "monthly_price_usd": 34,
+      "yearly_price_usd": 27,
+      "credits_or_minutes": 12000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 56,
+      "yearly_price_usd": 44,
+      "credits_or_minutes": 24000,
+      "unit": "credits",
+      "offer": "30% off GPT Image 2.6, 50% off Kling 4.0 until Nov 17"
+    },
+    {
+      "name": "Wonder",
+      "monthly_price_usd": 240,
+      "yearly_price_usd": 175,
+      "credits_or_minutes": 106000,
+      "unit": "credits",
+      "offer": "30% off GPT Image 2.6, 50% off Kling 4.0 until Nov 17"
+    }
+  ],
+  "source": "https://openart.ai/pricing",
+  "last_checked": "2026-11-08 12:03"
+}
