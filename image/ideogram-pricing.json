@@ -5,7 +5,7 @@
       "name": "Free",
       "monthly_price_usd": 0,
       "credits_or_minutes": 30,
-      "unit": "credits",
+      "unit": "credits/week",
       "offer": ""
     },
     {
@@ -26,5 +26,5 @@
     }
   ],
   "source": "https://docs.ideogram.ai/plans-and-pricing/personal-plans",
-  "last_checked": "2026-11-08 21:08"
+  "last_checked": "2026-11-08 21:44"
 }

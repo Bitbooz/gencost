@@ -347,6 +347,13 @@
      19.99,
      16.67
     ]
+   ],
+   "Pro": [
+    [
+     "2026-11-08",
+     19.99,
+     16.67
+    ]
    ]
   },
   "Vidu": {
@@ -970,57 +977,58 @@
  "pending": {
   "video|Vidu|Ultimate": {
    "value": [
-    230.0,
-    191.67
+    115.0,
+    95.83
    ],
-   "reading": "2026-11-08 20:57",
+   "reading": "2026-11-08 21:30",
    "first_seen": "2026-11-08"
   }
  },
  "readings": {
-  "video|HeyGen": "2026-11-08 20:57",
-  "video|Higgsfield": "2026-11-08 20:58",
-  "video|Runway": "2026-11-08 20:58",
-  "video|Kling AI": "2026-11-08 20:59",
-  "video|Synthesia": "2026-11-08 20:59",
-  "video|Pika": "2026-11-08 20:59",
-  "video|Luma": "2026-11-08 20:59",
-  "video|Viggle": "2026-11-08 21:00",
-  "video|InVideo": "2026-11-08 21:00",
-  "video|CapCut": "2026-11-08 21:01",
-  "video|LTX Studio": "2026-11-08 21:01",
-  "video|Hailuo AI": "2026-11-08 20:55",
-  "video|Google Veo": "2026-11-08 20:56",
-  "video|Vidu": "2026-11-08 20:57",
-  "video|Krea": "2026-11-08 20:57",
-  "video|PixVerse": "2026-11-08 21:01",
-  "video|D-ID": "2026-11-08 21:02",
-  "video|Colossyan": "2026-11-08 21:02",
-  "video|OpusClip": "2026-11-08 21:02",
-  "video|Captions": "2026-11-08 21:02",
-  "voice|ElevenLabs": "2026-11-08 21:03",
-  "voice|Murf AI": "2026-11-08 21:04",
-  "voice|Cartesia": "2026-11-08 21:04",
-  "voice|Speechify": "2026-11-08 21:04",
-  "voice|Descript": "2026-11-08 21:04",
-  "voice|Fliki": "2026-11-08 21:05",
-  "voice|Fish Audio": "2026-11-08 21:05",
-  "music|Suno": "2026-11-08 21:05",
-  "music|Udio": "2026-11-08 21:06",
-  "music|Soundraw": "2026-11-08 21:06",
-  "music|AIVA": "2026-11-08 21:06",
-  "music|Boomy": "2026-11-08 21:07",
-  "music|Stable Audio": "2026-11-08 21:07",
-  "music|Mureka": "2026-11-08 21:07",
-  "image|Midjourney": "2026-11-08 21:08",
-  "image|Ideogram": "2026-11-08 21:08",
-  "image|Recraft": "2026-11-08 21:08",
-  "image|Freepik": "2026-11-08 21:09",
-  "image|OpenArt": "2026-11-08 21:09",
-  "image|Leonardo": "2026-11-08 14:00",
+  "video|HeyGen": "2026-11-08 21:30",
+  "video|Higgsfield": "2026-11-08 21:31",
+  "video|Runway": "2026-11-08 21:32",
+  "video|Kling AI": "2026-11-08 21:32",
+  "video|Synthesia": "2026-11-08 21:33",
+  "video|Pika": "2026-11-08 21:33",
+  "video|Luma": "2026-11-08 21:33",
+  "video|Viggle": "2026-11-08 21:34",
+  "video|InVideo": "2026-11-08 21:34",
+  "video|CapCut": "2026-11-08 21:35",
+  "video|LTX Studio": "2026-11-08 21:35",
+  "video|Hailuo AI": "2026-11-08 21:28",
+  "video|Google Veo": "2026-11-08 21:28",
+  "video|Vidu": "2026-11-08 21:30",
+  "video|Krea": "2026-11-08 21:30",
+  "video|PixVerse": "2026-11-08 21:36",
+  "video|D-ID": "2026-11-08 21:37",
+  "video|Colossyan": "2026-11-08 21:37",
+  "video|OpusClip": "2026-11-08 21:38",
+  "video|Captions": "2026-11-08 21:38",
+  "voice|ElevenLabs": "2026-11-08 21:39",
+  "voice|Murf AI": "2026-11-08 21:40",
+  "voice|Cartesia": "2026-11-08 21:40",
+  "voice|Speechify": "2026-11-08 21:40",
+  "voice|Descript": "2026-11-08 21:41",
+  "voice|Fliki": "2026-11-08 21:41",
+  "voice|Fish Audio": "2026-11-08 21:41",
+  "music|Suno": "2026-11-08 21:41",
+  "music|Udio": "2026-11-08 21:42",
+  "music|Soundraw": "2026-11-08 21:42",
+  "music|AIVA": "2026-11-08 21:42",
+  "music|Boomy": "2026-11-08 21:43",
+  "music|Stable Audio": "2026-11-08 21:43",
+  "music|Mureka": "2026-11-08 21:44",
+  "image|Midjourney": "2026-11-08 21:44",
+  "image|Ideogram": "2026-11-08 21:44",
+  "image|Recraft": "2026-11-08 21:44",
+  "image|Freepik": "2026-11-08 21:45",
+  "image|OpenArt": "2026-11-08 21:45",
+  "image|Leonardo": "2026-11-05 00:00",
   "image|Adobe Firefly": "2026-11-08 14:00",
-  "video|Pictory": "2026-11-08 21:03",
-  "video|VEED": "2026-11-08 21:03"
+  "video|Pictory": "2026-11-08 21:38",
+  "video|VEED": "2026-11-08 21:39",
+  "image|NightCafe": "2026-10-31 00:00"
  },
  "image": {
   "Midjourney": {
@@ -1243,6 +1251,43 @@
     [
      "2026-11-08",
      199.99,
+     0.0
+    ]
+   ]
+  },
+  "NightCafe": {
+   "Free": [
+    [
+     "2026-11-08",
+     0.0,
+     0.0
+    ]
+   ],
+   "AI Hobbyist": [
+    [
+     "2026-11-08",
+     12.49,
+     0.0
+    ]
+   ],
+   "AI Enthusiast": [
+    [
+     "2026-11-08",
+     24.99,
+     0.0
+    ]
+   ],
+   "AI Creator": [
+    [
+     "2026-11-08",
+     39.99,
+     0.0
+    ]
+   ],
+   "AI Artist": [
+    [
+     "2026-11-08",
+     62.49,
      0.0
     ]
    ]

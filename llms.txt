@@ -69,6 +69,7 @@ Prices last updated: 2026-11-08. How prices are checked: https://getgencost.com/
 - [Midjourney Pricing](https://getgencost.com/pages/midjourney.html)
 - [Mureka Pricing](https://getgencost.com/pages/mureka.html)
 - [Murf AI Pricing](https://getgencost.com/pages/voice/murf.html)
+- [NightCafe Pricing](https://getgencost.com/pages/nightcafe.html)
 - [OpenArt Pricing](https://getgencost.com/pages/openart.html)
 - [OpusClip Pricing](https://getgencost.com/pages/opusclip.html)
 - [Pictory Pricing](https://getgencost.com/pages/pictory.html)

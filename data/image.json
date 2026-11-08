@@ -1,35 +1,43 @@
 {
  "category": "image",
- "updated": "2026-11-08 21:09",
+ "updated": "2026-11-08 21:45",
  "platforms": [
   {
    "name": "Midjourney",
    "page": "/pages/midjourney.html",
    "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-   "checked": "2026-11-08 21:08",
+   "checked": "2026-11-08 21:44",
    "plans": [
     {
      "name": "Basic",
      "monthly_price_usd": 10,
      "yearly_price_usd": 8,
+     "credits_or_minutes": 200,
+     "unit": "minutes",
      "offer": ""
     },
     {
      "name": "Standard",
      "monthly_price_usd": 30,
      "yearly_price_usd": 24,
+     "credits_or_minutes": 15,
+     "unit": "hours",
      "offer": ""
     },
     {
      "name": "Pro",
      "monthly_price_usd": 60,
      "yearly_price_usd": 48,
+     "credits_or_minutes": 30,
+     "unit": "hours",
      "offer": ""
     },
     {
      "name": "Mega",
      "monthly_price_usd": 120,
      "yearly_price_usd": 96,
+     "credits_or_minutes": 60,
+     "unit": "hours",
      "offer": ""
     }
    ],
@@ -48,7 +56,7 @@
    "name": "Leonardo",
    "page": "/pages/leonardo.html",
    "source": "https://costbench.com/software/ai-image-generators/leonardo-ai",
-   "checked": "2026-11-08 14:00",
+   "checked": "2026-11-05 00:00",
    "plans": [
     {
      "name": "Free",
@@ -96,13 +104,13 @@
    "name": "Ideogram",
    "page": "/pages/ideogram.html",
    "source": "https://docs.ideogram.ai/plans-and-pricing/personal-plans",
-   "checked": "2026-11-08 21:08",
+   "checked": "2026-11-08 21:44",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 30,
-     "unit": "credits",
+     "unit": "credits/week",
      "offer": ""
     },
     {
@@ -188,7 +196,7 @@
    "name": "Recraft",
    "page": "/pages/recraft.html",
    "source": "https://www.recraft.ai/pricing",
-   "checked": "2026-11-08 21:08",
+   "checked": "2026-11-08 21:44",
    "plans": [
     {
      "name": "Basic",
@@ -222,7 +230,7 @@
    "name": "Freepik",
    "page": "/pages/freepik.html",
    "source": "https://www.freepik.com/pricing",
-   "checked": "2026-11-08 21:09",
+   "checked": "2026-11-08 21:45",
    "plans": [
     {
      "name": "Premium",
@@ -263,7 +271,7 @@
    "name": "OpenArt",
    "page": "/pages/openart.html",
    "source": "https://openart.ai/pricing",
-   "checked": "2026-11-08 21:09",
+   "checked": "2026-11-08 21:45",
    "plans": [
     {
      "name": "Starter",
@@ -287,7 +295,7 @@
      "yearly_price_usd": 44,
      "credits_or_minutes": 24000,
      "unit": "credits",
-     "offer": "GPT Image 2.6 30% OFF, Kling 4.0 50% OFF"
+     "offer": "30% off GPT Image 2.6 until Nov 17"
     },
     {
      "name": "Wonder",
@@ -295,7 +303,7 @@
      "yearly_price_usd": 175,
      "credits_or_minutes": 106000,
      "unit": "credits",
-     "offer": "GPT Image 2.6 30% OFF, Kling 4.0 50% OFF"
+     "offer": "30% off GPT Image 2.6 until Nov 17"
     }
    ],
    "hidden": {
@@ -306,6 +314,58 @@
     "source": "https://openart.ai/pricing",
     "checked": "2026-11-08",
     "official": true
+   }
+  },
+  {
+   "name": "NightCafe",
+   "page": "/pages/nightcafe.html",
+   "source": "https://costbench.com/software/ai-image-generators/nightcafe/",
+   "checked": "2026-10-31 00:00",
+   "plans": [
+    {
+     "name": "Free",
+     "monthly_price_usd": 0,
+     "credits_or_minutes": 2,
+     "unit": "credits",
+     "offer": "2 credits a day, base models only"
+    },
+    {
+     "name": "AI Hobbyist",
+     "monthly_price_usd": 12.49,
+     "credits_or_minutes": 200,
+     "unit": "credits",
+     "offer": "plus 600+ Relax credits"
+    },
+    {
+     "name": "AI Enthusiast",
+     "monthly_price_usd": 24.99,
+     "credits_or_minutes": 500,
+     "unit": "credits",
+     "offer": "plus 600+ Relax credits"
+    },
+    {
+     "name": "AI Creator",
+     "monthly_price_usd": 39.99,
+     "credits_or_minutes": 850,
+     "unit": "credits",
+     "offer": "plus 600+ Relax credits"
+    },
+    {
+     "name": "AI Artist",
+     "monthly_price_usd": 62.49,
+     "credits_or_minutes": 1400,
+     "unit": "credits",
+     "offer": "plus 600+ Relax credits"
+    }
+   ],
+   "hidden": {
+    "items": [
+     "Free plan: base models only",
+     "Prices from CostBench; NightCafe blocks automatic reading"
+    ],
+    "source": "https://costbench.com/software/ai-image-generators/nightcafe/",
+    "checked": "2026-11-08",
+    "official": false
    }
   }
  ]

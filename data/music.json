@@ -1,17 +1,17 @@
 {
  "category": "music",
- "updated": "2026-11-08 21:09",
+ "updated": "2026-11-08 21:45",
  "platforms": [
   {
    "name": "Suno",
    "page": "/pages/music/suno.html",
    "source": "https://suno.com/pricing",
-   "checked": "2026-11-08 21:05",
+   "checked": "2026-11-08 21:41",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "offer": ""
+     "offer": "Free forever"
     },
     {
      "name": "Pro",
@@ -40,7 +40,7 @@
    "name": "Udio",
    "page": "/pages/music/udio.html",
    "source": "https://www.udio.com/pricing",
-   "checked": "2026-11-08 21:06",
+   "checked": "2026-11-08 21:42",
    "plans": [
     {
      "name": "Free",
@@ -80,7 +80,7 @@
    "name": "Soundraw",
    "page": "/pages/music/soundraw.html",
    "source": "https://soundraw.io/pricing",
-   "checked": "2026-11-08 21:06",
+   "checked": "2026-11-08 21:42",
    "plans": [
     {
      "name": "Creator",
@@ -129,7 +129,7 @@
    "name": "AIVA",
    "page": "/pages/music/aiva.html",
    "source": "https://www.aiva.ai/pricing",
-   "checked": "2026-11-08 21:06",
+   "checked": "2026-11-08 21:42",
    "plans": [
     {
      "name": "Free",
@@ -170,7 +170,7 @@
    "name": "Boomy",
    "page": "/pages/music/boomy.html",
    "source": "https://boomy.com/pricing",
-   "checked": "2026-11-08 21:07",
+   "checked": "2026-11-08 21:43",
    "plans": [
     {
      "name": "Free",
@@ -183,7 +183,7 @@
      "offer": ""
     },
     {
-     "name": "Pro",
+     "name": "PRO",
      "monthly_price_usd": 29.99,
      "offer": ""
     }
@@ -201,7 +201,7 @@
    "name": "Stable Audio",
    "page": "/pages/stable-audio.html",
    "source": "https://stableaudio.com/pricing",
-   "checked": "2026-11-08 21:07",
+   "checked": "2026-11-08 21:43",
    "plans": [
     {
      "name": "Free",
@@ -244,7 +244,7 @@
    "name": "Mureka",
    "page": "/pages/mureka.html",
    "source": "https://www.mureka.ai/subscribe",
-   "checked": "2026-11-08 21:07",
+   "checked": "2026-11-08 21:44",
    "plans": [
     {
      "name": "Pro",

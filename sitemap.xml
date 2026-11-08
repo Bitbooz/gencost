@@ -493,6 +493,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://getgencost.com/pages/nightcafe.html</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://getgencost.com/pages/openart.html</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>daily</changefreq>
