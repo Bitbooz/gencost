@@ -4,3 +4,5 @@
 /pages/voice/playht.html                        /pages/best-playht-alternatives-2026.html  301!
 /pages/playht-vs-elevenlabs-pricing-2026.html   /pages/best-playht-alternatives-2026.html  301!
 /pages/runway-vs-kling-pricing-comparison-2026.html  /pages/runway-vs-kling-pricing-2026.html  301!
+# Removed on request (2026-11-08): answer "410 Gone" so search engines drop the page
+/pages/hedra.html                               /video.html  410!

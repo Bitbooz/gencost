@@ -95,7 +95,7 @@ def tool_desc(name, cat):
             f"{extra} and hidden costs. Checked every morning.")
 
 # Pages for tools that were just added: kept out of Google until the daily check has read their prices
-PENDING = {"pages/hedra.html", "pages/d-id.html", "pages/colossyan.html"}
+PENDING = {"pages/d-id.html", "pages/colossyan.html"}
 
 # Two pages had the same title; give the second one its own
 TITLE_FIXES = {

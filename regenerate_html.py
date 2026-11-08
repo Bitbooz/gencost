@@ -36,7 +36,7 @@ VIDEO_FILES = [
     "capcut-pricing.json", "ltx-pricing.json", "hailuo-pricing.json",
     "veo-pricing.json", "sora-pricing.json",
     "vidu-pricing.json", "krea-pricing.json",
-    "pixverse-pricing.json", "hedra-pricing.json", "did-pricing.json",
+    "pixverse-pricing.json", "did-pricing.json",
     "colossyan-pricing.json", "opusclip-pricing.json", "captions-pricing.json",
 ]
 
@@ -59,7 +59,6 @@ VIDEO_NAMES = [
     ("vidu", "Vidu", "/pages/vidu.html"),
     ("krea", "Krea", "/pages/krea.html"),
     ("pixverse", "PixVerse", "/pages/pixverse.html"),
-    ("hedra", "Hedra", "/pages/hedra.html"),
     ("did-pricing", "D-ID", "/pages/d-id.html"),
     ("colossyan", "Colossyan", "/pages/colossyan.html"),
     ("opusclip", "OpusClip", "/pages/opusclip.html"),
