@@ -2,13 +2,38 @@
   "platform": "hailuo",
   "plans": [
     {
-      "name": "Hailuo",
-      "monthly_price_usd": 9.99,
-      "credits_or_minutes": 3000,
+      "name": "Standard",
+      "monthly_price_usd": 14.99,
+      "yearly_price_usd": 8.4,
+      "credits_or_minutes": 1000,
       "unit": "credits",
-      "offer": "3,000 Free Credits"
+      "offer": ""
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 54.99,
+      "yearly_price_usd": 30.4,
+      "credits_or_minutes": 4500,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Master",
+      "monthly_price_usd": 119.99,
+      "yearly_price_usd": 71.2,
+      "credits_or_minutes": 10500,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Max",
+      "monthly_price_usd": 184.0,
+      "yearly_price_usd": 184.0,
+      "credits_or_minutes": 27000,
+      "unit": "credits",
+      "offer": ""
     }
   ],
   "source": "https://hailuoai.video/pricing",
-  "last_checked": "2026-11-08 14:39"
+  "last_checked": "2026-11-08 19:51"
 }

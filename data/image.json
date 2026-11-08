@@ -1,19 +1,19 @@
 {
  "category": "image",
- "updated": "2026-11-08 14:51",
+ "updated": "2026-11-08 20:00",
  "platforms": [
   {
    "name": "Midjourney",
    "page": "/pages/midjourney.html",
    "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-   "checked": "2026-11-08 14:50",
+   "checked": "2026-11-08 19:59",
    "plans": [
     {
      "name": "Basic",
      "monthly_price_usd": 10,
      "yearly_price_usd": 8,
-     "credits_or_minutes": 200,
-     "unit": "minutes",
+     "credits_or_minutes": 3.3,
+     "unit": "hours",
      "offer": ""
     },
     {
@@ -104,7 +104,7 @@
    "name": "Ideogram",
    "page": "/pages/ideogram.html",
    "source": "https://docs.ideogram.ai/plans-and-pricing/personal-plans",
-   "checked": "2026-11-08 14:50",
+   "checked": "2026-11-08 19:59",
    "plans": [
     {
      "name": "Free",
@@ -196,7 +196,7 @@
    "name": "Recraft",
    "page": "/pages/recraft.html",
    "source": "https://www.recraft.ai/pricing",
-   "checked": "2026-11-08 14:50",
+   "checked": "2026-11-08 20:00",
    "plans": [
     {
      "name": "Basic",
@@ -230,12 +230,11 @@
    "name": "Freepik",
    "page": "/pages/freepik.html",
    "source": "https://www.freepik.com/pricing",
-   "checked": "2026-11-08 14:51",
+   "checked": "2026-11-08 20:00",
    "plans": [
     {
      "name": "Premium",
      "monthly_price_usd": 20,
-     "yearly_price_usd": 14.5,
      "credits_or_minutes": 20000,
      "unit": "credits",
      "offer": ""
@@ -243,7 +242,6 @@
     {
      "name": "Plus",
      "monthly_price_usd": 45,
-     "yearly_price_usd": 33.75,
      "credits_or_minutes": 50000,
      "unit": "credits",
      "offer": ""
@@ -251,7 +249,6 @@
     {
      "name": "Pro",
      "monthly_price_usd": 110,
-     "yearly_price_usd": 82.5,
      "credits_or_minutes": 125000,
      "unit": "credits",
      "offer": ""
@@ -271,7 +268,7 @@
    "name": "OpenArt",
    "page": "/pages/openart.html",
    "source": "https://openart.ai/pricing",
-   "checked": "2026-11-08 14:51",
+   "checked": "2026-11-08 20:00",
    "plans": [
     {
      "name": "Starter",

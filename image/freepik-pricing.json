@@ -4,7 +4,6 @@
     {
       "name": "Premium",
       "monthly_price_usd": 20,
-      "yearly_price_usd": 14.5,
       "credits_or_minutes": 20000,
       "unit": "credits",
       "offer": ""
@@ -12,7 +11,6 @@
     {
       "name": "Plus",
       "monthly_price_usd": 45,
-      "yearly_price_usd": 33.75,
       "credits_or_minutes": 50000,
       "unit": "credits",
       "offer": ""
@@ -20,12 +18,11 @@
     {
       "name": "Pro",
       "monthly_price_usd": 110,
-      "yearly_price_usd": 82.5,
       "credits_or_minutes": 125000,
       "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://www.freepik.com/pricing",
-  "last_checked": "2026-11-08 14:51"
+  "last_checked": "2026-11-08 20:00"
 }

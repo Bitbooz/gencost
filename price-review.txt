@@ -1,4 +1,10 @@
-2026-11-08 14:40  heygen  (https://www.heygen.com/pricing)
+2026-11-08 19:52  heygen  (https://www.heygen.com/pricing)
     - Pro: yearly price 41 could not be confirmed, left out
+    -> saved the monthly prices
+
+2026-11-08 20:00  freepik  (https://www.freepik.com/pricing)
+    - Premium: yearly price 14.5 could not be confirmed, left out
+    - Plus: yearly price 33.75 could not be confirmed, left out
+    - Pro: yearly price 82.5 could not be confirmed, left out
     -> saved the monthly prices
 
