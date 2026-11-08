@@ -135,31 +135,29 @@ HIDDEN_TOOLS = {"Resemble AI"}
 
 def record_history(category, platforms, day):
     """data/history.json: every plan's price per day, saved only when it changes.
-    A new price must be seen in two separate runs before it counts as a change, so a one-off
-    misread never shows up as a price change (or in a price alert)."""
+    Only prices read fresh from the official page in this run count (a tool that could not be read keeps
+    old prices, which are not a new reading). A new price must be read in two separate runs before it
+    counts as a change, so a one-off misread never shows up as a price change or in a price alert."""
     path = os.path.join(data_dir, "history.json")
     try:
         with open(path, encoding="utf-8") as f:
             hist = json.load(f)
     except Exception:
         hist = {}
-    if hist.get("version") != 2:
-        # start again from today's confirmed prices: the first evening's rows held reading errors
-        old = hist
+    if hist.get("version") != 3:
+        # start again: earlier rows could hold reading errors; each tool starts at its next fresh reading
         hist = {"about": "Price per plan over time: [date, monthly, yearly]. A row is added only when a new price "
-                         "has been seen in two separate daily checks.",
-                "version": 2, "since": day, "video": {}, "voice": {}, "music": {}, "pending": {}}
-        for cat in ("video", "voice", "music"):
-            for tool, plans in (old.get(cat) or {}).items():
-                for plan, rows in plans.items():
-                    if rows:
-                        hist[cat].setdefault(tool, {})[plan] = [[day] + rows[-1][1:]]
+                         "has been read in two separate daily checks.",
+                "version": 3, "since": day, "video": {}, "voice": {}, "music": {}, "pending": {}, "readings": {}}
     cat = hist.setdefault(category, {})
     pending = hist.setdefault("pending", {})
-    run_id = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
+    readings = hist.setdefault("readings", {})
     for pf in platforms:
-        if not pf.get("checked"):
-            continue  # only prices that were checked against the official page
+        checked = pf.get("checked")
+        rkey = f"{category}|{pf['name']}"
+        if not checked or readings.get(rkey) == checked:
+            continue  # not checked against the official page, or no new reading since last time
+        readings[rkey] = checked
         tool = cat.setdefault(pf["name"], {})
         for p in pf["plans"]:
             m = p.get("monthly_price_usd")
@@ -169,21 +167,24 @@ def record_history(category, platforms, day):
             rows = tool.setdefault(p["name"], [])
             m = round(float(m), 2)
             y = round(float(y), 2) if isinstance(y, (int, float)) else 0
-            if rows and not y and rows[-1][2]:
-                y = rows[-1][2]  # a yearly price that could not be confirmed today is not a change
             if not rows:
                 rows.append([day, m, y])
+                continue
+            if not y and rows[-1][2]:
+                y = rows[-1][2]  # a yearly price that could not be confirmed today is not a change
+            if y and not rows[-1][2] and m == rows[-1][1]:
+                rows[-1][2] = y  # a yearly price found for the first time is not a change either
                 continue
             key = f"{category}|{pf['name']}|{p['name']}"
             if rows[-1][1:] == [m, y]:
                 pending.pop(key, None)
                 continue
             seen = pending.get(key)
-            if seen and seen["value"] == [m, y] and seen["run"] != run_id:
-                rows.append([day, m, y])  # confirmed by a second run
+            if seen and seen["value"] == [m, y] and seen["reading"] != checked:
+                rows.append([day, m, y])  # read the same new price twice: a real change
                 pending.pop(key, None)
             else:
-                pending[key] = {"value": [m, y], "run": run_id, "first_seen": day}
+                pending[key] = {"value": [m, y], "reading": checked, "first_seen": day}
     with open(path, "w", encoding="utf-8") as f:
         json.dump(hist, f, indent=1, ensure_ascii=False)
 

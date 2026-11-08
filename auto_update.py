@@ -64,7 +64,6 @@ VIDEO = {
     "ltx": "https://ltx.studio/pricing",
     # added 2026-11-07
     "pixverse": ["https://app.pixverse.ai/subscribe", "https://pixverse.ai/pricing", "https://pixverse.ai/en/pricing"],
-    "hedra": ["https://www.hedra.com/plans", "https://www.hedra.com/pricing"],
     "did": ["https://www.d-id.com/pricing/studio/", "https://www.d-id.com/pricing/"],
     "colossyan": ["https://www.colossyan.com/pricing"],
     "opusclip": ["https://www.opus.pro/pricing"],
@@ -77,7 +76,6 @@ VOICE = {
     "speechify": "https://speechify.com/pricing",
     "descript": "https://www.descript.com/pricing",
     # added 2026-11-07
-    "hume": ["https://hume.ai/pricing", "https://www.hume.ai/pricing"],
     "fishaudio": ["https://fish.audio/plan/", "https://fish.audio/pricing/"],
     "fliki": ["https://fliki.ai/pricing"],
 }
@@ -88,7 +86,6 @@ MUSIC = {
     "aiva": "https://www.aiva.ai/pricing",
     "boomy": "https://boomy.com/pricing",
     # added 2026-11-07
-    "beatoven": ["https://www.beatoven.ai/subscribe", "https://www.beatoven.ai/plans", "https://beatoven.ai/pricing"],
     "stableaudio": ["https://stableaudio.com/pricing"],
     "mureka": ["https://www.mureka.ai/pricing", "https://www.mureka.ai/subscribe"],
 }
@@ -120,7 +117,6 @@ FALLBACK = {
 TABS = {
     "kling": ["Monthly", "Yearly"],
     "viggle": ["Monthly", "Yearly"],
-    "pixverse": ["Monthly", "Yearly"],
     "fliki": ["Monthly", "Yearly"],  # prices only appear after the page's script runs
     "murf": ["Monthly", "Yearly", "Annually", "Annual"],  # after clicking the "Studio" tab
 }
@@ -157,6 +153,12 @@ def load_existing(path):
 # Extra help for pages where the prices are easy to misread.
 # "focus": lines with these words (and the lines around them) are put first, so they are never cut off.
 HINTS = {
+    "pixverse": {
+        "focus": ["billed yearly as"],
+        "note": "PixVerse shows the yearly-billing price first. In '$8 / month $10 billed yearly as $96' the 8 is "
+                "yearly_price_usd (per month, paid yearly) and the 10 is monthly_price_usd (paid month by month). "
+                "The higher number is always the monthly price.",
+    },
     "veo": {
         "focus": ["Monthly (", "Annual (", "Google Flow Credits", "Included in Pro"],
         "note": "Google hides most plan prices in the page text. The Google AI Pro price is the 'Monthly ($X)' and "
