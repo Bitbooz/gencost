@@ -11,21 +11,21 @@
     },
     {
       "name": "Plus",
-      "monthly_price_usd": 47,
+      "monthly_price_usd": 59,
       "yearly_price_usd": 47,
       "credits_or_minutes": 1200,
       "unit": "credits",
-      "offer": "monthly price not shown"
+      "offer": ""
     },
     {
       "name": "Ultra",
-      "monthly_price_usd": 99,
+      "monthly_price_usd": 129,
       "yearly_price_usd": 99,
       "credits_or_minutes": 3000,
       "unit": "credits",
-      "offer": "7 days unlimited GPT Image 2.6, Seedream 5.0 Pro & Nano Banana Pro + 30% discount"
+      "offer": "7 days unlimited models + 30% discount"
     }
   ],
   "source": "https://higgsfield.ai/pricing",
-  "last_checked": "2026-11-08 10:19"
+  "last_checked": "2026-11-08 10:42"
 }

@@ -3,7 +3,7 @@
   "plans": [
     {
       "name": "Standard",
-      "monthly_price_usd": 8,
+      "monthly_price_usd": 10,
       "yearly_price_usd": 8,
       "credits_or_minutes": 1200,
       "unit": "credits",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Pro",
-      "monthly_price_usd": 24,
+      "monthly_price_usd": 30,
       "yearly_price_usd": 24,
       "credits_or_minutes": 6000,
       "unit": "credits",
@@ -19,7 +19,7 @@
     },
     {
       "name": "Premium",
-      "monthly_price_usd": 48,
+      "monthly_price_usd": 60,
       "yearly_price_usd": 48,
       "credits_or_minutes": 15000,
       "unit": "credits",
@@ -27,7 +27,7 @@
     },
     {
       "name": "Ultra",
-      "monthly_price_usd": 149,
+      "monthly_price_usd": 249,
       "yearly_price_usd": 149,
       "credits_or_minutes": 25000,
       "unit": "credits",
@@ -35,5 +35,5 @@
     }
   ],
   "source": "https://app.pixverse.ai/subscribe",
-  "last_checked": "2026-11-08 09:47"
+  "last_checked": "2026-11-08 10:44"
 }

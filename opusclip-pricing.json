@@ -2,13 +2,6 @@
   "platform": "opusclip",
   "plans": [
     {
-      "name": "Free",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 60,
-      "unit": "credits",
-      "offer": ""
-    },
-    {
       "name": "Starter",
       "monthly_price_usd": 15,
       "credits_or_minutes": 150,
@@ -19,11 +12,11 @@
       "name": "Pro",
       "monthly_price_usd": 29,
       "yearly_price_usd": 14.5,
-      "credits_or_minutes": 3600,
+      "credits_or_minutes": 300,
       "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://www.opus.pro/pricing",
-  "last_checked": "2026-11-08 10:22"
+  "last_checked": "2026-11-08 10:46"
 }
