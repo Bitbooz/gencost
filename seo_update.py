@@ -45,6 +45,7 @@ NOINDEX = [
     r"^GenCost-Comparison-Guide\.html$",
     r"^index-clean\.html$",
     r"^alert-thanks\.html$",
+    r"^404\.html$",
     r"^pages/sample-package-youtube-ai-tools\.html$",
     r"^pages/samples/.*-(test|short)\.html$",
     r"^pages/samples/(sample|voice-sample)\.html$",
@@ -95,7 +96,8 @@ def tool_desc(name, cat):
             f"{extra} and hidden costs. Checked every morning.")
 
 # Pages for tools that were just added: kept out of Google until the daily check has read their prices
-PENDING = {"pages/d-id.html", "pages/colossyan.html"}
+PENDING = {"pages/d-id.html", "pages/colossyan.html",
+           "pages/pictory.html", "pages/veed.html", "pages/voice/lovo.html", "pages/nightcafe.html"}
 
 # Two pages had the same title; give the second one its own
 TITLE_FIXES = {
@@ -362,6 +364,11 @@ def main():
 
         if path in TOOLS:
             name, cat = TOOLS[path]
+            # the "How does it compare?" box at the bottom points to the tool's own category
+            word, href = {"video": ("video", "/#platforms"), "voice": ("voice", "/voice.html"),
+                          "music": ("music", "/music.html"), "image": ("image", "/image.html")}.get(cat, ("video", "/#platforms"))
+            new = re.sub(r'<p>See all \w+ tools side by side in real dollars\.</p></div>\s*<a class="btn btn-primary" href="[^"]*">Compare \w+ tools',
+                         f'<p>See all {word} tools side by side in real dollars.</p></div>\n  <a class="btn btn-primary" href="{href}">Compare {word} tools', new, count=1)
             want_t, want_d = tool_title(name, cat), tool_desc(name, cat)
             t0 = re.search(r"<title>[^<]*</title>", new)
             if t0 and t0.group(0) != f"<title>{html.escape(want_t, quote=False)}</title>":
@@ -398,7 +405,7 @@ def main():
         # speed: Orbitron is only used for the logo (and one heading), so load just those letters
         # menu: "Image" next to "Music"
         music_li = '<li><a href="/music.html" data-section="/music,/pages/music/">Music</a></li>'
-        if 'href="/image.html"' not in new and music_li in new:
+        if 'data-section="/image"' not in new and music_li in new:
             new = new.replace(music_li, music_li + '\n      <li><a href="/image.html" data-section="/image">Image</a></li>', 1)
 
         # footer: link to the About page next to "Order a package"

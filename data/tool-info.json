@@ -129,7 +129,25 @@
    "about": "Speechify is a text-to-speech reader: it reads documents, web pages and books aloud with natural voices, on phone, computer and browser.",
    "best_for": "Listening to text, studying and reading faster.",
    "free": "The Free plan has 10 basic voices at up to 1.5x speed.",
-   "credits": "Premium unlocks 1,000+ natural voices in 60+ languages and speeds up to 5x. It can also be paid yearly, which is much cheaper per month."
+   "credits": "Premium unlocks 1,000+ natural voices in 60+ languages and speeds up to 5x. It can also be paid yearly, which is much cheaper per month.",
+   "faq": [
+    [
+     "Is Speechify cheaper if you pay yearly?",
+     "Yes, much cheaper. Premium costs {Premium:m} a month when you pay monthly, but {Premium:y} a month when you pay for a full year ($139 a year). That is about 60% less."
+    ],
+    [
+     "What do you get with Speechify Premium?",
+     "Premium unlocks 1,000+ natural voices in 60+ languages, listening at up to 5x speed, Scan & Listen for printed text, AI summaries and chat, voice typing, AI podcasts, and links to Google Drive, Dropbox and OneDrive."
+    ],
+    [
+     "What can you do with Speechify for free?",
+     "The Free plan reads text aloud with 10 basic voices at up to 1.5x speed. It covers text to speech only, without the AI features."
+    ],
+    [
+     "Is Speechify Studio included in Premium?",
+     "No. Speechify Studio (voice-overs and dubbing) and the Speechify API are separate products with their own pricing. Premium covers the reading app."
+    ]
+   ]
   },
   "Descript": {
    "about": "Descript is an audio and video editor where you edit by editing the text transcript, with AI tools for voices, filler-word removal and studio sound.",
@@ -146,7 +164,25 @@
    "about": "Suno makes complete songs with vocals and instruments from a text prompt, and has Suno Studio for editing, MIDI and effects.",
    "best_for": "Full songs with vocals, jingles and background music.",
    "free": "The Free plan gives 50 credits a day with the free models, but no song downloads and no commercial rights.",
-   "credits": "Pro includes 2,500 credits and 20 song downloads a month, with commercial use. Plan credits don't carry over; top-up credits don't expire but need an active plan."
+   "credits": "Pro includes 2,500 credits and 20 song downloads a month, with commercial use. Plan credits don't carry over; top-up credits don't expire but need an active plan.",
+   "faq": [
+    [
+     "How much does Suno Studio cost?",
+     "Suno Studio, with MIDI, effects and automation, is only part of the Premier plan: {Premier:m} a month, or {Premier:y} a month paid yearly. It is not included in Free or Pro."
+    ],
+    [
+     "Can I use Suno songs commercially?",
+     "Yes, on Pro and Premier, which include commercial use rights. Songs made on the Free plan have no commercial rights. Suno's terms of service list the limits."
+    ],
+    [
+     "How many songs can I download on Suno?",
+     "Free has no monthly song downloads. Pro ({Pro:m} a month) includes 2,500 credits and 20 song downloads a month. Premier ({Premier:m} a month) includes 10,000 credits and 60 downloads."
+    ],
+    [
+     "Which Suno models do you get on each plan?",
+     "Free uses the free v6-mini model. Pro and Premier get the advanced v6 and v6-wild models, and a priority queue with up to 10 songs at once."
+    ]
+   ]
   },
   "Udio": {
    "about": "Udio is an AI music generator that makes full songs from a prompt and lets you fine-tune and extend them.",

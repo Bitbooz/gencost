@@ -68,6 +68,9 @@ VIDEO = {
     "colossyan": ["https://www.colossyan.com/pricing"],
     "opusclip": ["https://www.opus.pro/pricing"],
     "captions": ["https://www.captions.ai/pricing", "https://mirage.app/pricing"],
+    # added 2026-11-08
+    "pictory": ["https://pictory.ai/pricing"],
+    "veed": ["https://www.veed.io/pricing"],
 }
 VOICE = {
     "elevenlabs": "https://elevenlabs.io/pricing",
@@ -78,6 +81,7 @@ VOICE = {
     # added 2026-11-07
     "fishaudio": ["https://fish.audio/plan/", "https://fish.audio/pricing/"],
     "fliki": ["https://fliki.ai/pricing"],
+    "lovo": ["https://lovo.ai/pricing"],  # added 2026-11-08
 }
 IMAGE = {  # added 2026-11-08. Leonardo and Adobe Firefly block automated reading: their files in image/ are kept by hand
     "midjourney": ["https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"],
@@ -85,6 +89,7 @@ IMAGE = {  # added 2026-11-08. Leonardo and Adobe Firefly block automated readin
     "recraft": ["https://www.recraft.ai/pricing", "https://www.recraft.ai/docs/plans-and-billing/paid-plans"],
     "freepik": ["https://www.freepik.com/pricing", "https://www.freepik.com/ai/docs/plans-and-pricing"],
     "openart": ["https://openart.ai/pricing"],
+    "nightcafe": ["https://creator.nightcafe.studio/pricing"],  # added 2026-11-08
 }
 MUSIC = {
     "suno": "https://suno.com/pricing",

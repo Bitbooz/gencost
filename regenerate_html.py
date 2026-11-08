@@ -38,6 +38,7 @@ VIDEO_FILES = [
     "vidu-pricing.json", "krea-pricing.json",
     "pixverse-pricing.json", "did-pricing.json",
     "colossyan-pricing.json", "opusclip-pricing.json", "captions-pricing.json",
+    "pictory-pricing.json", "veed-pricing.json",
 ]
 
 # keyword in platform/file name -> (display name, page)
@@ -63,6 +64,8 @@ VIDEO_NAMES = [
     ("colossyan", "Colossyan", "/pages/colossyan.html"),
     ("opusclip", "OpusClip", "/pages/opusclip.html"),
     ("captions", "Captions", "/pages/captions.html"),
+    ("pictory", "Pictory", "/pages/pictory.html"),
+    ("veed", "VEED", "/pages/veed.html"),
 ]
 
 VOICE_NAMES = [
@@ -78,6 +81,7 @@ VOICE_NAMES = [
     ("hume", "Hume", "/pages/hume.html"),
     ("resemble", "Resemble AI", "/pages/resemble.html"),
     ("fishaudio", "Fish Audio", "/pages/fish-audio.html"),
+    ("lovo", "LOVO", "/pages/voice/lovo.html"),
 ]
 
 IMAGE_NAMES = [
@@ -88,6 +92,7 @@ IMAGE_NAMES = [
     ("recraft", "Recraft", "/pages/recraft.html"),
     ("freepik", "Freepik", "/pages/freepik.html"),
     ("openart", "OpenArt", "/pages/openart.html"),
+    ("nightcafe", "NightCafe", "/pages/nightcafe.html"),
 ]
 
 MUSIC_NAMES = [

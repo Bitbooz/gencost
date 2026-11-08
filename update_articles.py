@@ -759,7 +759,50 @@ def faq_items(name, tool, info):
     hidden = (tool.get("hidden") or {}).get("items") or []
     if hidden:
         qa.append((f"Are there hidden costs with {name}?", " ".join(h.rstrip(".") + "." for h in hidden)))
+    for q, a in info.get("faq") or []:
+        a = fill_prices(a, tool)
+        if a:
+            qa.append((q, a))
     return qa
+
+
+def fill_prices(text, tool):
+    """'{Premier:m}' -> today's monthly price of the Premier plan, '{Premier:y}' -> paid yearly.
+    If a plan or price is missing (renamed, removed) the answer is left out rather than shown wrong."""
+    plans = {p["name"].lower(): p for p in tool.get("plans", [])}
+    ok = True
+
+    def rep(m):
+        nonlocal ok
+        p = plans.get(m.group(1).strip().lower())
+        v = num(p.get("monthly_price_usd" if m.group(2) == "m" else "yearly_price_usd")) if p else None
+        if not v:
+            ok = False
+            return ""
+        return cents(v)
+    out = re.sub(r"\{([^{}:]+):([my])\}", rep, text)
+    return out if ok else None
+
+
+def answer_box(name, tool):
+    """A short answer at the top of a tool page: what it costs, from today's prices."""
+    paid = sorted([p for p in tool["plans"] if (num(p.get("monthly_price_usd")) or 0) > 0], key=lambda p: p["monthly_price_usd"])
+    if not paid:
+        return None
+    lo, hi = paid[0], paid[-1]
+    y = num(lo.get("yearly_price_usd"))
+    if lo is hi:
+        a = f"{name} {lo['name']} costs {cents(lo['monthly_price_usd'])} a month"
+    else:
+        a = f"{name} costs from {cents(lo['monthly_price_usd'])} a month ({lo['name']})"
+    a += f", or {cents(y)} a month if you pay yearly" if y and y < lo["monthly_price_usd"] else ""
+    if lo is not hi:
+        a += f". The biggest plan, {hi['name']}, is {cents(hi['monthly_price_usd'])} a month"
+    a += ". " + ("There is also a free plan." if free_plan(tool) else "There is no free plan.")
+    checked = (tool.get("checked") or "")[:10]
+    tail = f"Checked {checked} on the official pricing page." if checked else "Entered by hand; confirm on the official site."
+    return BeautifulSoup(f'<div class="box answer" data-auto="answer"><strong>In short:</strong> {html.escape(a)}'
+                         f' <span class="note">{html.escape(tail)}</span></div>', PARSER).find("div")
 
 
 INFO = load_tool_info()
@@ -787,6 +830,8 @@ def price_changes(days=None):
         for tool, plans in (HISTORY.get(cat) or {}).items():
             for plan, rows in plans.items():
                 for a, b in zip(rows, rows[1:]):
+                    if all(abs((x or 0) - (y or 0)) < 0.05 for x, y in ((a[1], b[1]), (a[2], b[2]))):
+                        continue  # rounding, e.g. $14.99 read as $15.00
                     out.append((b[0], cat, tool, plan, a[1], b[1], a[2], b[2]))
     out.sort(reverse=True)
     if days:
@@ -1009,6 +1054,19 @@ def link_pages(tools, names_by_article, report):
             h1x = art.find("h1")
             sub = h1x.find_next_sibling("p") if h1x else None
             (sub or h1x).insert_after(card)
+        ab = answer_box(name, tool)
+        old_ab = art.find("div", attrs={"data-auto": "answer"})
+        if ab is not None:
+            if old_ab:
+                if str(old_ab) != str(ab):
+                    old_ab.replace_with(ab)
+            else:
+                h1y = art.find("h1")
+                suby = h1y.find_next_sibling("p") if h1y else None
+                if suby is not None or h1y is not None:
+                    (suby or h1y).insert_after(ab)
+        elif old_ab:
+            old_ab.decompose()
         qa = faq_items(name, tool, info)
         if qa:
             body = "".join(f"<h3>{html.escape(q)}</h3><p>{html.escape(a)}</p>" for q, a in qa)
@@ -1046,6 +1104,100 @@ def link_pages(tools, names_by_article, report):
     report.append(f"Related guides and tool-page fallbacks: {changed} pages updated")
 
 
+MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August",
+          "September", "October", "November", "December"]
+MIN_MONTHLY_CHANGES = 3  # fewer than this and no report page is made (a thin page does more harm than good)
+CAT_WORD = {"video": "Video", "voice": "Voice", "music": "Music", "image": "Image"}
+
+
+def monthly_reports(report):
+    """One page per finished month, 'AI Tool Price Changes in <Month Year>', made from the price history.
+    The page is written on the first run of the next month and stays up to date if a change is corrected."""
+    changes = [c for c in price_changes() if change_text(c)]
+    TOOL_PAGES = {}
+    for cat in CAT_WORD:
+        try:
+            for pf in json.load(open(f"data/{cat}.json", encoding="utf-8")).get("platforms", []):
+                if pf.get("page"):
+                    TOOL_PAGES[pf["name"]] = pf["page"]
+        except Exception:
+            pass
+    this_month = datetime.now(TZ).strftime("%Y-%m")
+    months = sorted({c[0][:7] for c in changes if c[0][:7] < this_month})
+    made = []
+    for ym in months:
+        rows = [c for c in changes if c[0][:7] == ym]
+        if len(rows) < MIN_MONTHLY_CHANGES:
+            continue
+        y, m = ym.split("-")
+        label = f"{MONTHS[int(m) - 1]} {y}"
+        path = f"pages/ai-tool-price-changes-{label.lower().replace(' ', '-')}.html"
+        tools = sorted({c[2] for c in rows})
+        cuts = [c for c in rows if c[4] and c[5] and c[5] < c[4]]
+        rises = [c for c in rows if c[4] and c[5] and c[5] > c[4]]
+        pct = lambda c: (c[5] - c[4]) / c[4] * 100
+        lines = []
+        if cuts:
+            b = min(cuts, key=pct)
+            lines.append(f"Biggest price cut: <strong>{html.escape(b[2])} {html.escape(b[3])}</strong>, {money(b[4])} → {money(b[5])} a month ({pct(b):.0f}%).")
+        if rises:
+            b = max(rises, key=pct)
+            lines.append(f"Biggest price rise: <strong>{html.escape(b[2])} {html.escape(b[3])}</strong>, {money(b[4])} → {money(b[5])} a month (+{pct(b):.0f}%).")
+        rest = len(rows) - len(cuts) - len(rises)
+        lines.append(f"{len(cuts)} {'plan' if len(cuts) == 1 else 'plans'} got cheaper and {len(rises)} got more expensive"
+                     + (f"; {rest} changed only the yearly price." if rest else "."))
+        trs = []
+        for c in sorted(rows, key=lambda c: (c[0], c[2], c[3])):
+            ch = f"{pct(c):+.0f}%" if c[4] and c[5] and c[4] != c[5] else "yearly price only"
+            page = TOOL_PAGES.get(c[2])
+            name = f'<a href="{html.escape(page)}">{html.escape(c[2])}</a>' if page else html.escape(c[2])
+            old = f"{money(c[4]) if c[4] else 'free'}" + (f" ({money(c[6])} yearly)" if c[6] else "")
+            new = f"{money(c[5]) if c[5] else 'free'}" + (f" ({money(c[7])} yearly)" if c[7] else "")
+            trs.append(f"<tr><td>{c[0]}</td><td>{name}</td><td>{html.escape(c[3])}</td><td>{CAT_WORD.get(c[1], c[1])}</td>"
+                       f"<td>{old}</td><td>{new}</td><td>{ch}</td></tr>")
+        body = (f'<h1>AI Tool Price Changes in {label}</h1>\n'
+                f'<p class="lead">GenCost checks the official pricing pages of AI video, image, voice and music tools every morning. '
+                f'In {label} it found {len(rows)} price changes across {len(tools)} tools. Here is every one of them, in US dollars a month.</p>\n'
+                f'<div class="box"><strong>The month in short</strong><br/>{"<br/>".join(lines)}</div>\n'
+                f'<h2>Every price change in {label}</h2>\n'
+                f'<div class="table-scroll no-live"><table><thead><tr><th>Date</th><th>Tool</th><th>Plan</th><th>Type</th>'
+                f'<th>Before</th><th>After</th><th>Change</th></tr></thead><tbody>{"".join(trs)}</tbody></table></div>\n'
+                f'<p class="note">A change is recorded only after it is read on two separate days, so a one-off misread is not counted. '
+                f'Yearly prices are per month when you pay for a full year.</p>\n'
+                f'<p>See the <a href="/changelog.html">full price log</a>, or get an email when a tool you use changes its price: '
+                f'every tool page has a free price alert.</p>\n')
+        if os.path.exists(path):
+            raw = open(path, encoding="utf-8").read()
+        else:
+            tpl = open("pages/best-elevenlabs-alternatives-2026.html", encoding="utf-8").read()
+            raw = re.sub(r"<title>.*?</title>", f"<title>AI Tool Price Changes {label}: Every Plan That Changed | GenCost</title>", tpl, count=1)
+            raw = re.sub(r'<meta name="description" content="[^"]*">',
+                         f'<meta name="description" content="Every AI tool price change in {label}: {len(rows)} changes across '
+                         f'{len(tools)} video, image, voice and music tools, in US dollars. Read from official pricing pages.">', raw)
+            raw = re.sub(r"<!-- SEO:START.*?SEO:END[^>]*-->\n?", "", raw, flags=re.S)
+            raw = raw.replace("<span>ElevenLabs alternatives</span>", f"<span>Price changes {label}</span>")
+        m2 = re.search(r'(<article class="prose">).*?(</article>)', raw, re.S)
+        if not m2:
+            continue
+        new_raw = raw[:m2.end(1)] + "\n" + body + raw[m2.start(2):]
+        if new_raw != raw or not os.path.exists(path):
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(new_raw)
+            report.append(f"{path}: monthly price report written")
+        made.append((path, label))
+    # list the reports on the changelog page
+    if made and os.path.exists("changelog.html"):
+        raw = open("changelog.html", encoding="utf-8").read()
+        soup = BeautifulSoup(raw, PARSER)
+        art = soup.find("article", class_="prose")
+        if art:
+            lis = "".join(f'<li><a href="/{p}">AI tool price changes in {l}</a></li>' for p, l in sorted(made, reverse=True))
+            sec = BeautifulSoup(f'<section data-auto="monthly"><h2>Monthly reports</h2><ul>{lis}</ul></section>', PARSER).find("section")
+            put_auto(art, sec, "monthly", before="price-log")
+            if write_article("changelog.html", raw, art):
+                report.append("changelog.html: monthly reports listed")
+
+
 def main():
     fix_notes()
     tools, updated = load_tools()
@@ -1067,6 +1219,7 @@ def main():
         print(lines[-1 - len(report)])
     link_pages(tools, names_by_article, lines)
     update_changelog(lines)
+    monthly_reports(lines)
     with open("article-review.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
 
