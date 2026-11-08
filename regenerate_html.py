@@ -132,15 +132,29 @@ DISCONTINUED = {"Sora", "PlayHT"}
 
 
 def record_history(category, platforms, day):
-    """data/history.json: every plan's price per day, saved only when it changes (one value per day)."""
+    """data/history.json: every plan's price per day, saved only when it changes.
+    A new price must be seen in two separate runs before it counts as a change, so a one-off
+    misread never shows up as a price change (or in a price alert)."""
     path = os.path.join(data_dir, "history.json")
     try:
         with open(path, encoding="utf-8") as f:
             hist = json.load(f)
     except Exception:
-        hist = {"about": "Price per plan over time: [date, monthly, yearly]. A new row is added only when a price changes.",
-                "since": day, "video": {}, "voice": {}, "music": {}}
+        hist = {}
+    if hist.get("version") != 2:
+        # start again from today's confirmed prices: the first evening's rows held reading errors
+        old = hist
+        hist = {"about": "Price per plan over time: [date, monthly, yearly]. A row is added only when a new price "
+                         "has been seen in two separate daily checks.",
+                "version": 2, "since": day, "video": {}, "voice": {}, "music": {}, "pending": {}}
+        for cat in ("video", "voice", "music"):
+            for tool, plans in (old.get(cat) or {}).items():
+                for plan, rows in plans.items():
+                    if rows:
+                        hist[cat].setdefault(tool, {})[plan] = [[day] + rows[-1][1:]]
     cat = hist.setdefault(category, {})
+    pending = hist.setdefault("pending", {})
+    run_id = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
     for pf in platforms:
         if not pf.get("checked"):
             continue  # only prices that were checked against the official page
@@ -151,13 +165,23 @@ def record_history(category, platforms, day):
             if not isinstance(m, (int, float)) or isinstance(m, bool):
                 continue
             rows = tool.setdefault(p["name"], [])
-            row = [day, round(float(m), 2), round(float(y), 2) if isinstance(y, (int, float)) else 0]
-            if rows and rows[-1][0] == day:
-                rows[-1] = row  # same day: keep the last value of the day
-                if len(rows) > 1 and rows[-2][1:] == row[1:]:
-                    rows.pop()  # changed back within the day: no change after all
-            elif not rows or rows[-1][1:] != row[1:]:
-                rows.append(row)
+            m = round(float(m), 2)
+            y = round(float(y), 2) if isinstance(y, (int, float)) else 0
+            if rows and not y and rows[-1][2]:
+                y = rows[-1][2]  # a yearly price that could not be confirmed today is not a change
+            if not rows:
+                rows.append([day, m, y])
+                continue
+            key = f"{category}|{pf['name']}|{p['name']}"
+            if rows[-1][1:] == [m, y]:
+                pending.pop(key, None)
+                continue
+            seen = pending.get(key)
+            if seen and seen["value"] == [m, y] and seen["run"] != run_id:
+                rows.append([day, m, y])  # confirmed by a second run
+                pending.pop(key, None)
+            else:
+                pending[key] = {"value": [m, y], "run": run_id, "first_seen": day}
     with open(path, "w", encoding="utf-8") as f:
         json.dump(hist, f, indent=1, ensure_ascii=False)
 
