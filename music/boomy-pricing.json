@@ -9,14 +9,14 @@
     {
       "name": "CREATOR",
       "monthly_price_usd": 9.99,
-      "offer": ""
+      "offer": "33% off"
     },
     {
       "name": "PRO",
       "monthly_price_usd": 29.99,
-      "offer": ""
+      "offer": "25% off"
     }
   ],
   "source": "https://boomy.com/pricing",
-  "last_checked": "2026-11-08 21:43"
+  "last_checked": "2026-11-08 23:41"
 }

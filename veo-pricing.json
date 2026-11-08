@@ -2,7 +2,7 @@
   "platform": "veo",
   "plans": [
     {
-      "name": "Pro",
+      "name": "Google AI Pro",
       "monthly_price_usd": 19.99,
       "yearly_price_usd": 16.67,
       "credits_or_minutes": 1000,
@@ -11,5 +11,5 @@
     }
   ],
   "source": "https://one.google.com/about/google-ai-plans/",
-  "last_checked": "2026-11-08 21:28"
+  "last_checked": "2026-11-08 23:31"
 }
