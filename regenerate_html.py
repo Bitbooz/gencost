@@ -78,8 +78,6 @@ VOICE_NAMES = [
     ("play.ht", "PlayHT", "/pages/voice/playht.html"),
     ("wellsaid", "WellSaid Labs", "/pages/voice/wellsaid.html"),
     ("fliki", "Fliki", "/pages/voice/fliki.html"),
-    ("hume", "Hume", "/pages/hume.html"),
-    ("resemble", "Resemble AI", "/pages/resemble.html"),
     ("fishaudio", "Fish Audio", "/pages/fish-audio.html"),
 ]
 
@@ -100,7 +98,6 @@ MUSIC_NAMES = [
     ("soundraw", "Soundraw", "/pages/music/soundraw.html"),
     ("aiva", "AIVA", "/pages/music/aiva.html"),
     ("boomy", "Boomy", "/pages/music/boomy.html"),
-    ("beatoven", "Beatoven", "/pages/beatoven.html"),
     ("stableaudio", "Stable Audio", "/pages/stable-audio.html"),
     ("mureka", "Mureka", "/pages/mureka.html"),
 ]

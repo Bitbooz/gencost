@@ -6,3 +6,12 @@
 /pages/runway-vs-kling-pricing-comparison-2026.html  /pages/runway-vs-kling-pricing-2026.html  301!
 # Removed on request (2026-11-08): answer "410 Gone" so search engines drop the page
 /pages/hedra.html                               /404.html  410!
+# Tools no longer tracked (2026-11-09): their prices were not updated any more
+/pages/beatoven.html                            /music.html  301
+/pages/beatoven                                 /music.html  301
+/pages/hume.html                                /voice.html  301
+/pages/hume                                     /voice.html  301
+/pages/resemble.html                            /voice.html  301
+/pages/resemble                                 /voice.html  301
+/pages/stable-audio-vs-beatoven-pricing-2026.html  /pages/stable-audio-vs-mureka-pricing-2026.html  301
+/pages/stable-audio-vs-beatoven-pricing-2026       /pages/stable-audio-vs-mureka-pricing-2026.html  301

@@ -558,6 +558,9 @@ def process(path, tools, matcher, updated):
 
 # Old sentences on other pages that are no longer true; replaced wherever they are found
 NOTE_FIXES = {
+    # Beatoven no longer tracked (2026-11-09)
+    "index.html#mureka": [('<li class="reveal"><a class="art" href="/pages/stable-audio-vs-beatoven-pricing-2026.html"><span class="cat music">Music</span><h3>Stable Audio vs Beatoven Pricing 2026</h3><p>Music tools comparison</p></a></li>', '<li class="reveal"><a class="art" href="/pages/stable-audio-vs-mureka-pricing-2026.html"><span class="cat music">Music</span><h3>Stable Audio vs Mureka Pricing 2026</h3><p>Cost per track, compared</p></a></li>')],
+    "music.html#mureka": [('<li class="reveal"><a class="art" href="/pages/stable-audio-vs-beatoven-pricing-2026.html"><span class="cat music">Music</span><h3>Stable Audio vs Beatoven Pricing 2026</h3><p>Music tools comparison</p></a></li>', '<li class="reveal"><a class="art" href="/pages/stable-audio-vs-mureka-pricing-2026.html"><span class="cat music">Music</span><h3>Stable Audio vs Mureka Pricing 2026</h3><p>Cost per track, compared</p></a></li>')],
     # Homepage after the image category (2026-11-08)
     "index.html#image-home": [
         ("<h2>Every video, avatar &amp; image plan</h2>", "<h2>Every video &amp; avatar plan</h2>"),
