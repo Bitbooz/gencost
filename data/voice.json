@@ -1,12 +1,12 @@
 {
  "category": "voice",
- "updated": "2026-11-09 16:32",
+ "updated": "2026-11-09 18:00",
  "platforms": [
   {
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-09 16:26",
+   "checked": "2026-11-09 17:55",
    "plans": [
     {
      "name": "Free",
@@ -71,8 +71,15 @@
    "name": "Murf AI",
    "page": "/pages/voice/murf.html",
    "source": "https://murf.ai/pricing",
-   "checked": "2026-11-09 16:27",
+   "checked": "2026-11-09 17:55",
    "plans": [
+    {
+     "name": "Free",
+     "monthly_price_usd": 0,
+     "credits_or_minutes": 10,
+     "unit": "minutes",
+     "offer": ""
+    },
     {
      "name": "Creator",
      "monthly_price_usd": 19,
@@ -104,7 +111,7 @@
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-09 16:27",
+   "checked": "2026-11-09 17:56",
    "plans": [
     {
      "name": "Free",
@@ -149,7 +156,7 @@
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-09 16:27",
+   "checked": "2026-11-09 17:56",
    "plans": [
     {
      "name": "Free",
@@ -172,15 +179,8 @@
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-09 16:27",
+   "checked": "2026-11-09 17:56",
    "plans": [
-    {
-     "name": "Free",
-     "monthly_price_usd": 0,
-     "credits_or_minutes": 100,
-     "unit": "credits",
-     "offer": ""
-    },
     {
      "name": "Hobbyist",
      "monthly_price_usd": 24,
@@ -233,7 +233,7 @@
    "name": "Fliki",
    "page": "/pages/voice/fliki.html",
    "source": "https://fliki.ai/pricing",
-   "checked": "2026-11-09 16:28",
+   "checked": "2026-11-09 17:56",
    "plans": [
     {
      "name": "Free",
@@ -271,7 +271,7 @@
    "name": "Fish Audio",
    "page": "/pages/fish-audio.html",
    "source": "https://fish.audio/plan/",
-   "checked": "2026-11-09 16:27",
+   "checked": "2026-11-09 17:56",
    "plans": [
     {
      "name": "Free Tier",
@@ -294,7 +294,7 @@
      "yearly_price_usd": 75,
      "credits_or_minutes": 2000000,
      "unit": "credits",
-     "offer": ""
+     "offer": "7 days money back guarantee"
     }
    ],
    "hidden": {

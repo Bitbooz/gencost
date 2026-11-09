@@ -1,4 +1,4 @@
-2026-11-09 16:22  heygen  (https://www.heygen.com/pricing)
+2026-11-09 17:50  heygen  (https://www.heygen.com/pricing)
     - Pro: yearly price 41 could not be confirmed, left out
     -> saved the monthly prices
 

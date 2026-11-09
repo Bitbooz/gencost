@@ -101,7 +101,7 @@ Save credits on 30+ models
 Nano Banana 2
 ALL YEAR
 Kling 2.5
-UNTIL DEC. 4
+ALL YEAR
 Nano Banana Pro
 Pro
 Expert choice
@@ -147,7 +147,7 @@ Save credits on 30+ models
 Nano Banana 2
 ALL YEAR
 Kling 2.5
-UNTIL DEC. 4
+ALL YEAR
 Nano Banana Pro
 
 Prices exclude VAT and local taxes
@@ -630,7 +630,7 @@ Privacy policy
 Originals
 New
 Cookies policy
-Do Not Sell My Personal Information
+Your Privacy Rights
 Trust center
 Affiliates
 Enterprise
@@ -657,7 +657,3 @@ X
 Reddit
 
 Copyright © 2010-2026 Magnific AI, S.L.U. All rights reserved.
-
-This website uses cookies to enhance user experience and to analyze performance and traffic on our website. We also share information about your use of our site with our social media, advertising and analytics partners.
-Do Not Sell My Personal Information
-Reject All Accept Cookies
