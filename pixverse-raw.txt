@@ -357,7 +357,7 @@ Purchase
 10,000
 $100
 Purchase
-Plans Details
+Plan Details
 Feature
 Basic
 Standard
@@ -533,7 +533,7 @@ Our subscription plans unlock premium features to elevate your creative experien
 Choose the plan that fits your creative needs and unlock more with PixVerse.
 What are the Credits?
 Credits are used for creating videos at PixVerse.
-1) Daily Credits renew every day at 0AM UTC and expire at the end of the day if unused.
+1) Daily Credits renew every day at 00:00 UTC and expire at the end of the day if unused.
 2) Membership Credits refresh every 30 days from the exact date and time your subscription began, rather than at 0:00 UTC. Any unused Membership Credits expire when the new 30-day cycle begins.
 3) Bonus Credits are extra Credits obtained through purchases, rewards, and promotional events. These Credits never expire and will stay in your account until used.
 How do I get more Credits?

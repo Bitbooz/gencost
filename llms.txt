@@ -2,7 +2,7 @@
 
 > GenCost compares the prices of AI video, avatar, image, voice and music tools in US dollars. Every price is read from each tool's official pricing page every morning and checked before it goes live. Pages also show the real cost of one video clip (from each tool's own credits per clip) and hidden costs such as watermarks, expiring credits and commercial-use rules.
 
-Prices last updated: 2026-11-08. How prices are checked: https://getgencost.com/how-we-verify.html
+Prices last updated: 2026-11-09. How prices are checked: https://getgencost.com/how-we-verify.html
 
 ## Price lists
 - [AI video, avatar and image tools](https://getgencost.com/): every plan, monthly and yearly, with cost per clip

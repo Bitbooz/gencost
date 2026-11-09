@@ -12,10 +12,10 @@
     {
       "name": "Professional",
       "monthly_price_usd": 59,
-      "yearly_price_usd": 35,
+      "yearly_price_usd": 29.5,
       "credits_or_minutes": 6000,
       "unit": "credits",
-      "offer": ""
+      "offer": "Black Friday Offer"
     },
     {
       "name": "Teams",
@@ -27,5 +27,5 @@
     }
   ],
   "source": "https://pictory.ai/pricing",
-  "last_checked": "2026-11-08 23:37"
+  "last_checked": "2026-11-09 10:48"
 }

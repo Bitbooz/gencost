@@ -13,11 +13,19 @@
       "name": "Pro",
       "monthly_price_usd": 22,
       "yearly_price_usd": 22,
-      "credits_or_minutes": 18000,
+      "credits_or_minutes": 30000,
+      "unit": "credits",
+      "offer": "monthly price not shown"
+    },
+    {
+      "name": "Studio",
+      "monthly_price_usd": 39,
+      "yearly_price_usd": 39,
+      "credits_or_minutes": 180000,
       "unit": "credits",
       "offer": "monthly price not shown"
     }
   ],
   "source": "https://www.veed.io/pricing",
-  "last_checked": "2026-11-08 23:37"
+  "last_checked": "2026-11-09 10:49"
 }

@@ -23,7 +23,7 @@
       "yearly_price_usd": 44,
       "credits_or_minutes": 24000,
       "unit": "credits",
-      "offer": "30% off GPT Image 2.6, 50% off Kling 4.0"
+      "offer": "30% off GPT Image 2.6/Recraft; 50% off Kling 4.0"
     },
     {
       "name": "Wonder",
@@ -31,9 +31,9 @@
       "yearly_price_usd": 175,
       "credits_or_minutes": 106000,
       "unit": "credits",
-      "offer": "30% off GPT Image 2.6, 50% off Kling 4.0"
+      "offer": "30% off GPT Image 2.6/Recraft; 50% off Kling 4.0"
     }
   ],
   "source": "https://openart.ai/pricing",
-  "last_checked": "2026-11-08 23:44"
+  "last_checked": "2026-11-09 10:55"
 }
