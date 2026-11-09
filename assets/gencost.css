@@ -516,3 +516,6 @@ main.page { padding-bottom: 24px; }
 .prose .alert-box input[type=email] { flex: 1 1 220px; min-width: 0; padding: 12px 14px; border-radius: 999px; border: 1px solid var(--line, rgba(255,255,255,0.15)); background: rgba(0,0,0,0.25); color: var(--text); font: inherit; }
 .prose .alert-box .hp { position: absolute; left: -9999px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+/* Embed box on tool pages */
+.prose .embed-box textarea.embed-code { width: 100%; box-sizing: border-box; font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: rgba(255,255,255,.04); color: inherit; border: 1px solid rgba(255,255,255,.12); border-radius: 8px; padding: 10px 12px; resize: vertical; margin: 6px 0 10px; }

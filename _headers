@@ -1,0 +1,6 @@
+# Let other websites use the free GenCost price box (embed.js reads these files)
+/data/*
+  Access-Control-Allow-Origin: *
+/embed.js
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600

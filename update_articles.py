@@ -954,6 +954,20 @@ def alert_form(name):
 </section>""", PARSER).find("section")
 
 
+def embed_box(name, tool):
+    """'Put these prices on your site': code other sites can paste to show this tool's live prices."""
+    page = "https://getgencost.com" + (tool.get("page") or "/")
+    snippet = (f'<div class="gencost-prices" data-tool="{name}" data-cat="{tool["category"]}">\n'
+               f'  <a href="{page}">{name} pricing</a> by GenCost\n</div>\n'
+               f'<script src="https://getgencost.com/embed.js" async></script>')
+    return BeautifulSoup(f"""<section class="card embed-box" data-auto="embed">
+<h2>Put these prices on your site</h2>
+<p>Writing about {html.escape(name)}? Paste this code into your page and a small price table appears, updated every morning. Free, no sign-up. For a dark site, add <code>data-theme="dark"</code> to the first line.</p>
+<textarea class="embed-code" readonly rows="5" aria-label="Embed code for {html.escape(name)} prices">{html.escape(snippet)}</textarea>
+<button type="button" class="btn btn-primary" data-copy>Copy code</button>
+</section>""", PARSER).find("section")
+
+
 def put_auto(art, section, key, before=None):
     old = art.find("section", attrs={"data-auto": key})
     if old:
@@ -1107,6 +1121,7 @@ def link_pages(tools, names_by_article, report):
             put_auto(art, ms, "models", before="history")
         put_auto(art, history_section(name, tool["category"]), "history", before="faq")
         put_auto(art, alert_form(name), "alert", before="faq")
+        put_auto(art, embed_box(name, tool), "embed", before="related")
         about = [p for p, n in live.items() if name in n]
         about.sort(key=lambda p: (len(live[p]), p))
         slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")

@@ -228,6 +228,17 @@
       const sections = (a.dataset.section || "").split(",").filter(Boolean);
       if (sections.some((s) => path.startsWith(s)) || href === path) a.classList.add("active");
     });
+    // "Copy code" buttons (embed box on tool pages)
+    document.querySelectorAll("[data-copy]").forEach((b) => {
+      b.addEventListener("click", () => {
+        const box = b.parentElement.querySelector("textarea, code, pre");
+        if (!box) return;
+        const text = box.value || box.textContent;
+        const done = () => { b.textContent = "Copied!"; setTimeout(() => (b.textContent = "Copy code"), 2000); };
+        if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, () => { box.select && box.select(); });
+        else { box.select && box.select(); document.execCommand("copy"); done(); }
+      });
+    });
     // Animated waveforms on explore cards
     document.querySelectorAll(".wave[data-k]").forEach((el) => {
       const k = Number(el.dataset.k) || 0;
