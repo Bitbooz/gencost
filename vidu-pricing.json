@@ -14,7 +14,7 @@
       "yearly_price_usd": 8.25,
       "credits_or_minutes": 800,
       "unit": "credits",
-      "offer": ""
+      "offer": "Limited-time offer 100 credits = $1.03"
     },
     {
       "name": "Premium",
@@ -22,7 +22,7 @@
       "yearly_price_usd": 35.42,
       "credits_or_minutes": 3500,
       "unit": "credits",
-      "offer": ""
+      "offer": "Limited-time offer 100 credits = $1.01"
     },
     {
       "name": "Ultimate",
@@ -30,9 +30,9 @@
       "yearly_price_usd": 95.83,
       "credits_or_minutes": 20000,
       "unit": "credits",
-      "offer": ""
+      "offer": "Limited-time offer 100 credits = $0.96"
     }
   ],
   "source": "https://www.vidu.com/pricing",
-  "last_checked": "2026-11-09 10:42"
+  "last_checked": "2026-11-09 16:21"
 }

@@ -5,19 +5,19 @@
       "name": "Pro",
       "monthly_price_usd": 8,
       "yearly_price_usd": 8,
-      "credits_or_minutes": 500,
-      "unit": "songs",
+      "credits_or_minutes": 5000,
+      "unit": "Gold",
       "offer": ""
     },
     {
       "name": "Premier",
       "monthly_price_usd": 24,
       "yearly_price_usd": 24,
-      "credits_or_minutes": 2000,
-      "unit": "songs",
+      "credits_or_minutes": 20000,
+      "unit": "Gold",
       "offer": ""
     }
   ],
   "source": "https://www.mureka.ai/subscribe",
-  "last_checked": "2026-11-09 10:53"
+  "last_checked": "2026-11-09 16:30"
 }

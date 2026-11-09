@@ -1,1 +1,4 @@
-2026-11-09 10:55  All tools were checked and confirmed. Nothing to review.
+2026-11-09 16:22  heygen  (https://www.heygen.com/pricing)
+    - Pro: yearly price 41 could not be confirmed, left out
+    -> saved the monthly prices
+

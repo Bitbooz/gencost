@@ -5,7 +5,7 @@
       "name": "Starter",
       "monthly_price_usd": 0,
       "credits_or_minutes": 20,
-      "unit": "minutes",
+      "unit": "min/mo NEO",
       "offer": ""
     },
     {
@@ -13,10 +13,10 @@
       "monthly_price_usd": 59,
       "yearly_price_usd": 59,
       "credits_or_minutes": 30,
-      "unit": "minutes",
-      "offer": ""
+      "unit": "min/mo NEO",
+      "offer": "monthly price not shown"
     }
   ],
   "source": "https://www.colossyan.com/pricing",
-  "last_checked": "2026-11-09 10:48"
+  "last_checked": "2026-11-09 16:25"
 }
