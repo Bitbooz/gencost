@@ -418,7 +418,7 @@ def main():
         if path == "calculator.html" and "calc-switch" not in new:
             new = re.sub(r'(<h1>How much AI video can I get for my budget\?</h1>\s*<p class="lead">.*?</p>)', lambda m: m.group(1) + "\n" + XLINK_B, new, count=1, flags=re.S)
         # footer: project calculator next to the budget calculator
-        if 'href="/project.html"' not in new and '<li><a href="/calculator.html">Budget calculator</a></li>' in new:
+        if '<li><a href="/project.html">Project calculator</a></li>' not in new and '<li><a href="/calculator.html">Budget calculator</a></li>' in new:
             new = new.replace('<li><a href="/calculator.html">Budget calculator</a></li>',
                               '<li><a href="/calculator.html">Budget calculator</a></li>\n          <li><a href="/project.html">Project calculator</a></li>', 1)
         # footer: "Use GenCost in AI assistants" (the MCP server page)
