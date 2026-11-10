@@ -314,6 +314,7 @@ def write_llms_txt(sitemap):
         f"- [Compare any tools]({SITE}/compare.html): two or three tools side by side",
         f"- [Budget calculator]({SITE}/calculator.html): how many clips a budget buys",
         f"- [Machine-readable prices]({SITE}/data/video.json), [voice]({SITE}/data/voice.json), [music]({SITE}/data/music.json), [image]({SITE}/data/image.json)",
+        f"- [MCP server]({SITE}/mcp): remote MCP endpoint (Streamable HTTP, no sign-in) with tools list_tools, get_prices, compare_tools, find_cheapest. How to connect: {SITE}/ai.html",
         "",
         "## Guides",
     ] + [f"- [{t}]({u})" for t, u in guides] + ["", "## Tool pricing pages"] + [f"- [{t}]({u})" for t, u in tools] + [""]
@@ -408,6 +409,10 @@ def main():
         if 'data-section="/image"' not in new and music_li in new:
             new = new.replace(music_li, music_li + '\n      <li><a href="/image.html" data-section="/image">Image</a></li>', 1)
 
+        # footer: "Use GenCost in AI assistants" (the MCP server page)
+        if 'href="/ai.html"' not in new and '<li><a href="/about.html">About GenCost</a></li>' in new:
+            new = new.replace('<li><a href="/about.html">About GenCost</a></li>',
+                              '<li><a href="/ai.html">Use in Claude &amp; ChatGPT</a></li>\n          <li><a href="/about.html">About GenCost</a></li>', 1)
         # footer: link to the About page next to "Order a package"
         if 'href="/about.html"' not in new and '<li><a href="/order.html">Order a package</a></li>' in new:
             new = new.replace('<li><a href="/order.html">Order a package</a></li>',
