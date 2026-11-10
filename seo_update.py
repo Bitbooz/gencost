@@ -410,6 +410,13 @@ def main():
         if 'data-section="/image"' not in new and music_li in new:
             new = new.replace(music_li, music_li + '\n      <li><a href="/image.html" data-section="/image">Image</a></li>', 1)
 
+        # menu: "Calculators" (budget + project calculator)
+        new = new.replace('<li><a href="/calculator.html">Calculator</a></li>', '<li><a href="/calculator.html">Calculators</a></li>')
+        # the two calculators point to each other
+        XLINK_B = ('<div class="box calc-switch"><strong>Planning a whole project?</strong> Videos, voiceover, music and images each month: '
+                   '<a href="/project.html">try the project calculator →</a></div>')
+        if path == "calculator.html" and "calc-switch" not in new:
+            new = re.sub(r'(<h1>How much AI video can I get for my budget\?</h1>\s*<p class="lead">.*?</p>)', lambda m: m.group(1) + "\n" + XLINK_B, new, count=1, flags=re.S)
         # footer: project calculator next to the budget calculator
         if 'href="/project.html"' not in new and '<li><a href="/calculator.html">Budget calculator</a></li>' in new:
             new = new.replace('<li><a href="/calculator.html">Budget calculator</a></li>',
