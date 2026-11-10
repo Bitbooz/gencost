@@ -5,8 +5,8 @@
       "name": "Basic",
       "monthly_price_usd": 10,
       "yearly_price_usd": 8,
-      "credits_or_minutes": 200,
-      "unit": "minutes",
+      "credits_or_minutes": 3.3,
+      "unit": "hours",
       "offer": ""
     },
     {
@@ -35,5 +35,5 @@
     }
   ],
   "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-  "last_checked": "2026-11-10 06:26"
+  "last_checked": "2026-11-10 13:28"
 }

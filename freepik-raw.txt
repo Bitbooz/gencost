@@ -51,6 +51,7 @@ NEW
 API access with credit-based usage
 250M+ photos, videos, vectors & PSDs
 Top up credits anytime
+Google Drive sync for projects and folders
 Early access to AI features
 Metadata export & lineage
 UNLIMITED
@@ -92,6 +93,7 @@ NEW
 API access with credit-based usage
 250M+ photos, videos, vectors & PSDs
 Top up credits anytime
+Google Drive sync for projects and folders
 Early access to AI features
 Metadata export & lineage
 UNLIMITED
@@ -138,6 +140,7 @@ NEW
 API access with credit-based usage
 250M+ photos, videos, vectors & PSDs
 Top up credits anytime
+Google Drive sync for projects and folders
 Early access to AI features
 Metadata export & lineage
 UNLIMITED
@@ -263,6 +266,18 @@ NEW
 833 videos
 
 2,083 videos
+
+Gemini Omni 1.2 Flash 720p
+
+NEW
+
+420 credits/3s
+
+571 videos
+
+1,428 videos
+
+3,571 videos
 
 Seedance 2 Pro 720p
 
@@ -630,7 +645,7 @@ Privacy policy
 Originals
 New
 Cookies policy
-Your Privacy Rights
+Cookie settings
 Trust center
 Affiliates
 Enterprise
@@ -657,3 +672,7 @@ X
 Reddit
 
 Copyright © 2010-2026 Magnific AI, S.L.U. All rights reserved.
+
+This website uses cookies to enhance user experience and to analyze performance and traffic on our website. We also share information about your use of our site with our social media, advertising and analytics partners.
+Do Not Sell My Personal Information
+Reject All Accept Cookies

@@ -23,16 +23,8 @@
       "credits_or_minutes": 7500,
       "unit": "credits",
       "offer": ""
-    },
-    {
-      "name": "Team",
-      "monthly_price_usd": 30,
-      "yearly_price_usd": 20,
-      "credits_or_minutes": 3600,
-      "unit": "credits",
-      "offer": ""
     }
   ],
   "source": "https://docs.ideogram.ai/plans-and-pricing/personal-plans",
-  "last_checked": "2026-11-10 06:26"
+  "last_checked": "2026-11-10 13:29"
 }

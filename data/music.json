@@ -1,12 +1,12 @@
 {
  "category": "music",
- "updated": "2026-11-10 06:27",
+ "updated": "2026-11-10 13:30",
  "platforms": [
   {
    "name": "Suno",
    "page": "/pages/music/suno.html",
    "source": "https://suno.com/pricing",
-   "checked": "2026-11-10 06:24",
+   "checked": "2026-11-10 13:26",
    "plans": [
     {
      "name": "Free",
@@ -40,7 +40,7 @@
    "name": "Udio",
    "page": "/pages/music/udio.html",
    "source": "https://www.udio.com/pricing",
-   "checked": "2026-11-10 06:24",
+   "checked": "2026-11-10 13:26",
    "plans": [
     {
      "name": "Free",
@@ -80,30 +80,38 @@
    "name": "Soundraw",
    "page": "/pages/music/soundraw.html",
    "source": "https://soundraw.io/pricing",
-   "checked": "2026-11-10 06:24",
+   "checked": "2026-11-10 13:26",
    "plans": [
     {
      "name": "Creator",
      "monthly_price_usd": 16.99,
      "yearly_price_usd": 11.04,
+     "credits_or_minutes": "",
+     "unit": "",
      "offer": ""
     },
     {
      "name": "Artist Starter",
      "monthly_price_usd": 29.99,
      "yearly_price_usd": 19.49,
+     "credits_or_minutes": "",
+     "unit": "",
      "offer": ""
     },
     {
      "name": "Artist Pro",
      "monthly_price_usd": 35.99,
      "yearly_price_usd": 23.39,
+     "credits_or_minutes": "",
+     "unit": "",
      "offer": ""
     },
     {
      "name": "Artist Unlimited",
      "monthly_price_usd": 50,
      "yearly_price_usd": 32.5,
+     "credits_or_minutes": "",
+     "unit": "",
      "offer": ""
     }
    ],
@@ -121,7 +129,7 @@
    "name": "AIVA",
    "page": "/pages/music/aiva.html",
    "source": "https://www.aiva.ai/pricing",
-   "checked": "2026-11-10 06:25",
+   "checked": "2026-11-10 13:27",
    "plans": [
     {
      "name": "Free",
@@ -156,21 +164,27 @@
    "name": "Boomy",
    "page": "/pages/music/boomy.html",
    "source": "https://boomy.com/pricing",
-   "checked": "2026-11-10 06:25",
+   "checked": "2026-11-10 13:27",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
+     "credits_or_minutes": 0,
+     "unit": "",
      "offer": ""
     },
     {
      "name": "Creator",
      "monthly_price_usd": 9.99,
+     "credits_or_minutes": 0,
+     "unit": "",
      "offer": "33% off"
     },
     {
-     "name": "PRO",
+     "name": "Pro",
      "monthly_price_usd": 29.99,
+     "credits_or_minutes": 0,
+     "unit": "",
      "offer": "25% off"
     }
    ],
@@ -187,7 +201,7 @@
    "name": "Stable Audio",
    "page": "/pages/stable-audio.html",
    "source": "https://stableaudio.com/pricing",
-   "checked": "2026-11-10 06:25",
+   "checked": "2026-11-10 13:27",
    "plans": [
     {
      "name": "Free",
@@ -230,14 +244,14 @@
    "name": "Mureka",
    "page": "/pages/mureka.html",
    "source": "https://www.mureka.ai/subscribe",
-   "checked": "2026-11-10 06:26",
+   "checked": "2026-11-10 13:28",
    "plans": [
     {
      "name": "Pro",
      "monthly_price_usd": 8,
      "yearly_price_usd": 8,
      "credits_or_minutes": 5000,
-     "unit": "gold",
+     "unit": "Gold",
      "offer": ""
     },
     {
@@ -245,7 +259,7 @@
      "monthly_price_usd": 24,
      "yearly_price_usd": 24,
      "credits_or_minutes": 20000,
-     "unit": "gold",
+     "unit": "Gold",
      "offer": ""
     }
    ],

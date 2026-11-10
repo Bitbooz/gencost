@@ -1,121 +1,37 @@
 Krea
-App
-Features
-Plugins
+Toggle Sidebar
+Krea
+Home
+Krea Agent
+Train Lora
+Node Editor
+Assets
+Tools
+Search
 Image
-Image Generator
+More
 Video
-Video Generator
-Upscaler
-API
-MCP
+More
+Enhancer
+More
+Audio
+More
+Ad Studio
+More
+Seedance Studio
+More
+Nano Banana
+More
+Realtime
+More
+Edit
+More
+More
 Pricing
+40% off yearly
 Enterprise
-Sign up for free
-Log in
-Create
-Krea Agent
-New
-Describe it, Agent makes it
-Image
-Krea 3, Nano Banana & more
-Video
-Seedance, Kling, Veo & more
-Image to Video
-Animate any photo with AI
-AI Voice
-Voiceovers from any script
-Realtime
-Instant renders as you draw
-3D Objects
-Models from text or images
-Edit & enhance
-Image Editor
-Edit any image with words
-Upscaler
-Images and video up to 22K
-Video Restyle
-Give any video a new look
-Motion Transfer
-Animate any character
-Lipsync
-Sync any video to any audio
-Build & customize
-Nodes
-Chain models into workflows
-Train
-Teach Krea your style
-Moodboards
-Steer style with references
-Mini apps
-Community-made tools
-New model
-Krea 3
-Our most advanced image model. Photoreal, editorial, on-brand.
-Try Krea 3
-20+ AI tools for images, video, 3D and audio in one app.
-Open Krea
-Sign up for free
-Log in
-App
-Image Generation
-Video Generation
-Upscale & Enhance
-Mini Apps
-MCP
-Plugins
-Plugins
-Photoshop
-Generate and edit images in Photoshop.
-After Effects
-Create and animate in After Effects.
-Illustrator
-Generate artwork and vectorize it in Illustrator.
-Premiere Pro
-Generate video inside your timeline.
-DaVinci Resolve
-Create cinematic video in DaVinci Resolve.
-Blender
-Create images and video for your 3D scenes.
-ChatGPT
-Create with Krea directly in your chats.
-All Krea plugins
-Create
-Krea Agent
-New
-Describe it, Agent makes it
-Image
-Krea 3, Nano Banana & more
-Video
-Seedance, Kling, Veo & more
-Image to Video
-Animate any photo with AI
-AI Voice
-Voiceovers from any script
-Realtime
-Instant renders as you draw
-3D Objects
-Models from text or images
-Edit & enhance
-Image Editor
-Edit any image with words
-Upscaler
-Images and video up to 22K
-Video Restyle
-Give any video a new look
-Motion Transfer
-Animate any character
-Lipsync
-Sync any video to any audio
-Build & customize
-Nodes
-Chain models into workflows
-Train
-Teach Krea your style
-Moodboards
-Steer style with references
-Mini apps
-Community-made tools
+Sign in
+Toggle Sidebar
 Pick your plan
 Trusted by 40M+ creators, enterprises, agencies, and studios
 Pick your plan
@@ -133,12 +49,6 @@ Free
 $0
 /month
 Get Free
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -166,12 +76,6 @@ $9
 $5
 /month
 Get Basic
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -198,12 +102,6 @@ $35
 $21
 /month
 Get Pro
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -233,12 +131,6 @@ $105
 $63
 /month
 Get Max
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -333,12 +225,6 @@ Free
 $0
 /month
 Get Free
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -366,12 +252,6 @@ $9
 $5
 /month
 Get Basic
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -398,12 +278,6 @@ $35
 $21
 /month
 Get Pro
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -433,12 +307,6 @@ $105
 $63
 /month
 Get Max
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -530,6 +398,9 @@ Video concurrency
 Unlimited
 Images per LoRA
 Custom
+Have an offer code?
+Enter it to see your discount before checkout.
+Redeem
 Need More Compute?
 Purchase one-time compute packs for additional credits. Applied instantly and valid for 90
 					days. To get more credits out of your purchase, consider upgrading your plan.
@@ -2778,94 +2649,3 @@ Free plan includes a daily compute allowance that refills every day â once 
 Still have questions?
 Our team is here to help you choose the right plan for your organization.
 Contact Sales
-Create
-AI Image Generator
-AI Video Generator
-Image to Video
-Krea Agent
-New
-Ad Studio
-New
-Sketch to Image
-AI Character Generator
-3D Model Generator
-T-Shirt Design Maker
-Polaroid Photo Generator
-Video Models
-Seedance 2.5
-Kling 4
-Kling AI
-Veo 3.1
-MiniMax H3
-MiniMax H3 Max
-Wan 3.0
-Runway
-All Video Models
-Edit
-AI Image Editor
-Image to Image
-AI Hairstyle Changer
-AI Clothes Changer
-Face Swap
-Remove Text from Image
-Object Remover
-Photo to Cartoon
-Change Lighting
-Motion Transfer
-Lip Sync
-Image Models
-Krea 3
-New
-Krea 2
-Nano Banana Pro
-ChatGPT Images 2
-FLUX 3
-Seedream 5.0 Pro
-All Image Models
-Enhance
-Photo Enhancer
-Image Upscaler
-Video Upscaler
-Background Remover
-AI Vectorizer
-Unblur Image
-Colorize Photo
-All AI Apps
-Solutions
-Architecture
-Interior Design
-Gaming
-All Solutions
-Krea
-Pricing
-Enterprise
-All Models
-API
-MCP
-Plugins
-Resources
-Blog
-Guides
-Customer Stories
-Krea Alternatives
-Release Notes
-Ask AI about Krea
-Ask ChatGPT about Krea
-Ask Claude about Krea
-Ask Gemini about Krea
-Ask Perplexity about Krea
-Ask Grok about Krea
-Â© 2026 Krea
-Terms
-Privacy
-Security
-Subprocessors
-Careers
-Press
-Documentation
-X
-LinkedIn
-Instagram
-Reddit
-YouTube
-Discord

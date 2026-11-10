@@ -11,6 +11,7 @@ AI Presenters
 Voiceovers
 Customize
 Custom avatars
+Avatar Studio
 Cloned voices
 Brand kits
 Screen recorder
@@ -49,6 +50,7 @@ Healthcare
 Professional services
 Manufacturing
 Technology
+Financial services
 Education
 Retail
 Featured stories
@@ -419,6 +421,7 @@ Cartoon Avatars
 AI Voice Cloning
 Colossyan Learn
 Custom AI Avatars
+Avatar Studio
 AI Video Generator
 More features
 ▾
@@ -459,6 +462,7 @@ Technology & Software
 Healthcare
 Professional Services
 Retail
+Financial Services
 Education & Training
 Resources
 Pricing

@@ -1,6 +1,6 @@
-SEO check 2026-11-10 06:27
-139 pages checked, 61 changed today, 104 in sitemap.xml, 25 marked noindex
-Made by this script: 92 canonical links, 25 descriptions; today: 0 links moved to the main page, 0 titles fixed
+SEO check 2026-11-10 13:30
+129 pages checked, 12 changed today, 103 in sitemap.xml, 25 marked noindex
+Made by this script: 91 canonical links, 25 descriptions; today: 0 links moved to the main page, 0 titles fixed
 
 Needs a human:
   pages/best-midjourney-alternatives-2026.html: title is 71 characters (Google shows about 60)

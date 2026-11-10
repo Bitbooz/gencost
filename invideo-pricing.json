@@ -19,13 +19,13 @@
     },
     {
       "name": "Max",
-      "monthly_price_usd": 250,
-      "yearly_price_usd": 250,
-      "credits_or_minutes": 8000,
+      "monthly_price_usd": 150,
+      "yearly_price_usd": 75,
+      "credits_or_minutes": 5000,
       "unit": "credits",
-      "offer": ""
+      "offer": "50% off"
     }
   ],
   "source": "https://invideo.io/pricing",
-  "last_checked": "2026-11-10 06:21"
+  "last_checked": "2026-11-10 13:21"
 }

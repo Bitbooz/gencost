@@ -108,8 +108,7 @@ For everyday AI creation
 800 Nano Banana Pro generations
 ~
 52 Seedance 2 videos
-2,000
-5,000
+2,000 credits per seat/mo
 $60
 $30
 per seat/mo, billed annually
@@ -171,22 +170,25 @@ Early access to advanced AI features
 Not included:
 Lowest cost per credit
 Max
+50% off
 Best value
 For ambitious AI projects
-8,000 credits/mo.
+5,000 credits/mo.
 =
-8,000 credits per seat/mo
+5,000 credits per seat/mo
 =
-3,200 Nano Banana Pro generations
+2,000 Nano Banana Pro generations
 ~
-210 Seedance 2 videos
-8,000
+131 Seedance 2 videos
+5,000
 10,000
 15,000
-$250
+$150
+$75
 per seat/mo, billed annually
 Get Max
-No difference compared to monthly
+Save $885
+per seat compared to monthly
 −
 1 seat
 +
@@ -440,7 +442,7 @@ per seat/mo, billed annually
 Get Plus
 Max
 Best value
-$250
+$75
 per seat/mo, billed annually
 Get Max
 Video
@@ -448,34 +450,34 @@ Seedance 2.5 720p
 ~56 credits/5s
 ✕
 35 videos
-142 videos
+89 videos
 Seedance 2.5 1080p
 ~96 credits/5s
 ✕
 20 videos
-83 videos
+52 videos
 Seedance 2.5 Draft
 ~24.5 credits/5s
 ✕
 81 videos
-326 videos
+204 videos
 View more
 Image
 Nano Banana Pro
 ~2.5 credits/image
 160 images
 800 images
-3,200 images
+2,000 images
 Nano Banana Pro 4K
 ~4 credits/image
 100 images
 500 images
-2,000 images
+1,250 images
 GPT Image 2.5 Sunburst
 ~0.4 credits/image
 1,000 images
 5,000 images
-20,000 images
+12,500 images
 View more
 Invideo editor
 Agents & models
