@@ -2,7 +2,7 @@
   "platform": "fishaudio",
   "plans": [
     {
-      "name": "Free Tier",
+      "name": "Free",
       "monthly_price_usd": 0,
       "credits_or_minutes": 8000,
       "unit": "credits",
@@ -22,9 +22,9 @@
       "yearly_price_usd": 75,
       "credits_or_minutes": 2000000,
       "unit": "credits",
-      "offer": "7 days money back guarantee"
+      "offer": ""
     }
   ],
   "source": "https://fish.audio/plan/",
-  "last_checked": "2026-11-09 17:56"
+  "last_checked": "2026-11-10 06:24"
 }

@@ -41,9 +41,8 @@ Ideogram 4.5
 NEW
 GPT Image 2.5
 Nano Banana 2.1
-Seedream 5
+Seedream 5.5
 Grok Imagine
-Seedream 4
 Explore Image Apps
 Start Creating
 Music Studio
@@ -109,9 +108,8 @@ Ideogram 4.5
 NEW
 GPT Image 2.5
 Nano Banana 2.1
-Seedream 5
+Seedream 5.5
 Grok Imagine
-Seedream 4
 Explore Image Apps
 AI Audio
 Start Creating

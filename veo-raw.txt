@@ -578,6 +578,7 @@ Proofread in Gmail
 Help me generate video in Vids
 Take notes for me in Google Meet
 13
+Google Pics
 Gemini Notebook
 Usage limits
 More

@@ -312,9 +312,9 @@ Scale:
 $38 per 1M credits
 With overages off, new requests are blocked once your credits run out.
 What happens if I use more prepaid voice agent dollars than I have in my account?
-Calls keep running at your plan's voice agent rate.
+Overages are off by default on Pro, Startup, and Scale plans, so new calls stop once your voice agent balance reaches $0. To keep calls running, an organization admin can turn overages on from the Subscription page: click Enable on the Allow overages banner, or open Manage subscription and switch on Enable overages. You need a payment method on file. Once overages are on, usage past your balance is charged at the same rates as your plan's included voice agent usage. Overages aren't available on the Free plan.
 How and when are overages charged?
-Overage charges start once you go past what your plan includes.
+Overages are billed when your plan renews, for the usage past your balance in the billing period that just ended.
 How are break tags counted in billing?
 Each break tag counts as 1 credit in the transcript of a TTS request.
 Is Cartesia SOC 2 Type II certified?

@@ -12,7 +12,6 @@ Resources
 Enterprise
 Pricing
 Enterprise Sales
-Contact Sales
 Login
 Try Runway
 Enterprises get up to 2 months of usage free.

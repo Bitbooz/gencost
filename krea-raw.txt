@@ -120,6 +120,9 @@ Pick your plan
 Trusted by 40M+ creators, enterprises, agencies, and studios
 Pick your plan
 Trusted by 40M+ creators, enterprises, agencies, and studios
+New to Krea? Save up to 50% on your first plan
+Sign up free and we'll offer you a discount on your first plan.
+Sign up free
 Monthly
 Yearly
 40% off
@@ -130,35 +133,30 @@ Free
 $0
 /month
 Get Free
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 No credit card required
 Full access to real-time models
-Generate images in real-time as you type or draw. Perfect for rapid iteration and creative exploration.
 All image models
 All video models
 All 3D & lipsync models
 LoRA training
 Limited image upscaling
-Upscale images up to 2K resolution using our basic upscaling models.
 Krea Nodes
-Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
 App Builder
-Turn your workflows into reusable apps that can be run again or shared.
 Early access to new features
-Be among the first to try new models, tools, and features.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Bulk discounts on compute unit packs
-Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Expanded concurrency and queueing
-Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
 Promo placeholder
 Basic
 5,000 units / month
@@ -168,34 +166,28 @@ $9
 $5
 /month
 Get Basic
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 All image models
 Selected video models
-Generate videos with selected models. Pro plan unlocks all video models.
 All 3D & lipsync models
 LoRA training (50 images)
-Train LoRA models using up to 50 images to personalize AI with your own characters, styles, or objects.
 Image upscaling up to 22K
-Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
 Krea Nodes
-Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
 App Builder
-Turn your workflows into reusable apps that can be run again or shared.
 Early access to new features
-Be among the first to try new models, tools, and features.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Bulk discounts on compute unit packs
-Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Expanded concurrency and queueing
-Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
 Promo placeholder
 Most popular
 Pro
@@ -206,34 +198,28 @@ $35
 $21
 /month
 Get Pro
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 All image models
 All video models
-Full access to all video models including Veo 3.1, Seedance, Kling, and more.
 All 3D & lipsync models
 LoRA training (50 images)
-Train LoRA models using up to 50 images to personalize AI with your own characters, styles, or objects.
 Image upscaling up to 22K
-Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
 Krea Nodes
-Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
 App Builder
-Turn your workflows into reusable apps that can be run again or shared.
 Early access to new features
-Be among the first to try new models, tools, and features.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Bulk discounts on compute unit packs
-Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Expanded concurrency and queueing
-Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
 Promo placeholder
 Max
 60,000 units / month
@@ -247,34 +233,28 @@ $105
 $63
 /month
 Get Max
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 All image models
 All video models
-Full access to all video models including Veo 3.1, Seedance, Kling, and more.
 All 3D & lipsync models
 Unlimited LoRA training (2,000 images)
-Train LoRA models using up to 2,000 images to personalize AI with your own characters, styles, or objects.
 Image upscaling up to 22K
-Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
 Krea Nodes
-Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
 App Builder
-Turn your workflows into reusable apps that can be run again or shared.
 Early access to new features
-Be among the first to try new models, tools, and features.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Bulk discounts on compute unit packs
-Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Expanded concurrency and queueing
-Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
 Promo placeholder
 See all features
 For Teams and Enterprises
@@ -298,37 +278,22 @@ $160
 /month
 Try Business
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 Up to 50 seats included
-One flat price covers your entire workspace â up to 50 members get full Business benefits at no extra cost per seat.
 Business Terms of Service
-Comprehensive legal terms designed for businesses, including data protection and no-training clauses for your content.
 Share private Node Apps with your workspace
-Create and share custom Node App workflows privately within your workspace for collaborative projects and brand consistency.
 Custom user roles and permissions
-Define custom roles with specific permissions to control what each workspace member can access and do.
 Fine-grained controls for model access
-Restrict which AI models your workspace can use to manage costs and ensure compliance with your policies.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Unlimited LoRA training (2,000 images)
-Train LoRA models using up to 2,000 images to personalize AI with your own characters, styles, or objects.
 Custom Terms of Service
-Fully customizable legal agreement tailored to your organization's specific requirements and compliance needs.
 SAML Single Sign-On (SSO)
-Allow members to access Krea using their existing company credentials such as Google Workspace, Microsoft Azure AD, or Okta.
 Priority support with SLA
-Dedicated support team with guaranteed response times and service level agreements for mission-critical workflows.
 Per-member spend limits
-Set individual compute budgets for each workspace member to control costs and prevent overspending.
 Indemnification
-Enterprise customers are protected against intellectual property claims on AI-generated content, when usage follows the agreement terms.
 Image concurrency
 Unlimited
 Video concurrency
@@ -339,39 +304,23 @@ Enterprise
 Custom pricing
 Contact Sales
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 Custom seat count
-Seat count is sized to your organization.
 Share private Node Apps with your workspace
-Create and share custom Node App workflows privately within your workspace for collaborative projects and brand consistency.
 Custom user roles and permissions
-Define custom roles with specific permissions to control what each workspace member can access and do.
 Fine-grained controls for model access
-Restrict which AI models your workspace can use to manage costs and ensure compliance with your policies.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Custom Terms of Service
-Fully customizable legal agreement tailored to your organization's specific requirements and compliance needs.
 SAML Single Sign-On (SSO)
-Allow members to access Krea using their existing company credentials such as Google Workspace, Microsoft Azure AD, or Okta.
 Priority support with SLA
-Dedicated support team with guaranteed response times and service level agreements for mission-critical workflows.
 Per-member spend limits
-Set individual compute budgets for each workspace member to control costs and prevent overspending.
 Indemnification
-Enterprise customers are protected against intellectual property claims on AI-generated content, when usage follows the agreement terms.
 Slack connect
-Direct Slack integration with our support team for faster issue resolution.
 Custom compute packages
-Tailored compute units based on your organization's specific needs.
 Audit logs
-Comprehensive activity logs for compliance, security monitoring, and tracking all user actions across your organization.
 SOON
 Image concurrency
 Unlimited
@@ -384,35 +333,30 @@ Free
 $0
 /month
 Get Free
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 No credit card required
 Full access to real-time models
-Generate images in real-time as you type or draw. Perfect for rapid iteration and creative exploration.
 All image models
 All video models
 All 3D & lipsync models
 LoRA training
 Limited image upscaling
-Upscale images up to 2K resolution using our basic upscaling models.
 Krea Nodes
-Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
 App Builder
-Turn your workflows into reusable apps that can be run again or shared.
 Early access to new features
-Be among the first to try new models, tools, and features.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Bulk discounts on compute unit packs
-Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Expanded concurrency and queueing
-Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
 Promo placeholder
 Basic
 5,000 units / month
@@ -422,34 +366,28 @@ $9
 $5
 /month
 Get Basic
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 All image models
 Selected video models
-Generate videos with selected models. Pro plan unlocks all video models.
 All 3D & lipsync models
 LoRA training (50 images)
-Train LoRA models using up to 50 images to personalize AI with your own characters, styles, or objects.
 Image upscaling up to 22K
-Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
 Krea Nodes
-Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
 App Builder
-Turn your workflows into reusable apps that can be run again or shared.
 Early access to new features
-Be among the first to try new models, tools, and features.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Bulk discounts on compute unit packs
-Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Expanded concurrency and queueing
-Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
 Promo placeholder
 Most popular
 Pro
@@ -460,34 +398,28 @@ $35
 $21
 /month
 Get Pro
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 All image models
 All video models
-Full access to all video models including Veo 3.1, Seedance, Kling, and more.
 All 3D & lipsync models
 LoRA training (50 images)
-Train LoRA models using up to 50 images to personalize AI with your own characters, styles, or objects.
 Image upscaling up to 22K
-Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
 Krea Nodes
-Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
 App Builder
-Turn your workflows into reusable apps that can be run again or shared.
 Early access to new features
-Be among the first to try new models, tools, and features.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Bulk discounts on compute unit packs
-Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Expanded concurrency and queueing
-Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
 Promo placeholder
 Max
 60,000 units / month
@@ -501,34 +433,28 @@ $105
 $63
 /month
 Get Max
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 All image models
 All video models
-Full access to all video models including Veo 3.1, Seedance, Kling, and more.
 All 3D & lipsync models
 Unlimited LoRA training (2,000 images)
-Train LoRA models using up to 2,000 images to personalize AI with your own characters, styles, or objects.
 Image upscaling up to 22K
-Access paid image upscalers, including Topaz Standard, that support outputs up to 22K.
 Krea Nodes
-Build workflow-based creations by connecting models, prompts, and processing steps in a visual editor.
 App Builder
-Turn your workflows into reusable apps that can be run again or shared.
 Early access to new features
-Be among the first to try new models, tools, and features.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Bulk discounts on compute unit packs
-Get volume discounts when purchasing additional compute unit packs beyond your monthly allocation.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Expanded concurrency and queueing
-Run more jobs in parallel, and queue excess jobs instead of hitting a hard submission stop.
 Promo placeholder
 See all features
 For Teams and Enterprises
@@ -553,37 +479,22 @@ $160
 /month
 Try Business
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 Up to 50 seats included
-One flat price covers your entire workspace â up to 50 members get full Business benefits at no extra cost per seat.
 Business Terms of Service
-Comprehensive legal terms designed for businesses, including data protection and no-training clauses for your content.
 Share private Node Apps with your workspace
-Create and share custom Node App workflows privately within your workspace for collaborative projects and brand consistency.
 Custom user roles and permissions
-Define custom roles with specific permissions to control what each workspace member can access and do.
 Fine-grained controls for model access
-Restrict which AI models your workspace can use to manage costs and ensure compliance with your policies.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Unlimited LoRA training (2,000 images)
-Train LoRA models using up to 2,000 images to personalize AI with your own characters, styles, or objects.
 Custom Terms of Service
-Fully customizable legal agreement tailored to your organization's specific requirements and compliance needs.
 SAML Single Sign-On (SSO)
-Allow members to access Krea using their existing company credentials such as Google Workspace, Microsoft Azure AD, or Okta.
 Priority support with SLA
-Dedicated support team with guaranteed response times and service level agreements for mission-critical workflows.
 Per-member spend limits
-Set individual compute budgets for each workspace member to control costs and prevent overspending.
 Indemnification
-Enterprise customers are protected against intellectual property claims on AI-generated content, when usage follows the agreement terms.
 Image concurrency
 Unlimited
 Video concurrency
@@ -595,39 +506,23 @@ Enterprise-grade security with dedicated support, access to Krea's educational s
 Custom pricing
 Contact Sales
 Krea 3
-Generate and edit images with our latest in-house model.
 NEW
 Krea Agent
-Brief the Agent once. It plans, generates, and iterates across models for you.
 NEW
 Custom seat count
-Seat count is sized to your organization.
 Share private Node Apps with your workspace
-Create and share custom Node App workflows privately within your workspace for collaborative projects and brand consistency.
 Custom user roles and permissions
-Define custom roles with specific permissions to control what each workspace member can access and do.
 Fine-grained controls for model access
-Restrict which AI models your workspace can use to manage costs and ensure compliance with your policies.
 Commercial license
-Use all generated content for commercial purposes including marketing, products, and client work.
 Unlimited relaxed generations
-Continue generating with supported in-house image models after exhausting your compute units.
 Custom Terms of Service
-Fully customizable legal agreement tailored to your organization's specific requirements and compliance needs.
 SAML Single Sign-On (SSO)
-Allow members to access Krea using their existing company credentials such as Google Workspace, Microsoft Azure AD, or Okta.
 Priority support with SLA
-Dedicated support team with guaranteed response times and service level agreements for mission-critical workflows.
 Per-member spend limits
-Set individual compute budgets for each workspace member to control costs and prevent overspending.
 Indemnification
-Enterprise customers are protected against intellectual property claims on AI-generated content, when usage follows the agreement terms.
 Slack connect
-Direct Slack integration with our support team for faster issue resolution.
 Custom compute packages
-Tailored compute units based on your organization's specific needs.
 Audit logs
-Comprehensive activity logs for compliance, security monitoring, and tracking all user actions across your organization.
 SOON
 Image concurrency
 Unlimited
@@ -1302,6 +1197,14 @@ videos
 ~154
 videos
 ~308
+videos
+MiniMax H3 Max Recast
+5s, 768p
+~4
+videos
+~18
+videos
+~36
 videos
 MiniMax H3 Max Turbo
 5s, 480p
@@ -2457,6 +2360,17 @@ videos
 ~308
 videos
 ~154
+videos
+Custom
+MiniMax H3 Max Recast
+5s, 768p
+~4
+videos
+~18
+videos
+~36
+videos
+~18
 videos
 Custom
 MiniMax H3 Max Turbo
