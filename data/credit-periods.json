@@ -1,0 +1,61 @@
+{
+ "about": "How some tools grant credits, kept by hand. credits_or_minutes in the price data is always per month; this file records the allowance as the tool lists it.",
+ "updated": "2026-11-10",
+ "tools": {
+  "Freepik": {
+   "Premium": {
+    "amount": 240000,
+    "period": "year",
+    "granted": "as a yearly allowance that lasts 12 months, with no monthly reset (yearly billing)",
+    "source": "https://www.freepik.com/pricing"
+   },
+   "Plus": {
+    "amount": 600000,
+    "period": "year",
+    "granted": "as a yearly allowance that lasts 12 months, with no monthly reset (yearly billing)",
+    "source": "https://www.freepik.com/pricing"
+   },
+   "Pro": {
+    "amount": 1500000,
+    "period": "year",
+    "granted": "as a yearly allowance that lasts 12 months, with no monthly reset (yearly billing)",
+    "source": "https://www.freepik.com/pricing"
+   }
+  },
+  "Pictory": {
+   "Starter": {
+    "amount": 2000,
+    "period": "month",
+    "granted": "each month on monthly billing",
+    "yearly_billing": {
+     "amount": 24000,
+     "period": "year",
+     "granted": "all upfront at the start of the year"
+    },
+    "source": "https://pictory.ai/pricing"
+   },
+   "Professional": {
+    "amount": 6000,
+    "period": "month",
+    "granted": "each month on monthly billing",
+    "yearly_billing": {
+     "amount": 72000,
+     "period": "year",
+     "granted": "all upfront at the start of the year"
+    },
+    "source": "https://pictory.ai/pricing"
+   },
+   "Teams": {
+    "amount": 18000,
+    "period": "month",
+    "granted": "each month on monthly billing",
+    "yearly_billing": {
+     "amount": 216000,
+     "period": "year",
+     "granted": "all upfront at the start of the year"
+    },
+    "source": "https://pictory.ai/pricing"
+   }
+  }
+ }
+}

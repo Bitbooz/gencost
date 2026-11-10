@@ -191,8 +191,74 @@ def record_history(category, platforms, day):
                 pending.pop(key, None)
             else:
                 pending[key] = {"value": [m, y], "reading": checked, "first_seen": day}
+        if not any(k.startswith(rkey + "|") for k in pending):
+            hist.setdefault("verified", {})[rkey] = checked  # every price read today matches the confirmed price
     with open(path, "w", encoding="utf-8") as f:
         json.dump(hist, f, indent=1, ensure_ascii=False)
+
+
+def load_credit_periods():
+    try:
+        with open(os.path.join(data_dir, "credit-periods.json"), encoding="utf-8") as f:
+            return json.load(f).get("tools", {})
+    except Exception:
+        return {}
+
+
+def apply_verification(category, platforms):
+    """Show only confirmed prices. A new price read once waits for a second reading on another day:
+    until then the plan keeps its confirmed price and carries 'pending' with the new reading.
+    Also adds source_checked (last successful reading of the page) and price_verified (last reading
+    where every price matched the confirmed price), and how credits are granted."""
+    try:
+        with open(os.path.join(data_dir, "history.json"), encoding="utf-8") as f:
+            hist = json.load(f)
+    except Exception:
+        return
+    periods = load_credit_periods()
+    cat = hist.get(category, {})
+    pending = hist.get("pending", {})
+    verified = hist.get("verified", {})
+    for pf in platforms:
+        rkey = f"{category}|{pf['name']}"
+        rows_by_plan = cat.get(pf["name"], {})
+        waiting = False
+        for p in pf["plans"]:
+            p.setdefault("credits_period", "month")
+            listed = (periods.get(pf["name"]) or {}).get(p.get("name"))
+            if listed:
+                p["credits_period"] = listed.get("period", "month")
+                p["credits_listed"] = listed
+            pend = pending.get(f"{rkey}|{p.get('name')}")
+            rows = rows_by_plan.get(p.get("name")) or []
+            if pend and rows:
+                waiting = True
+                nm, ny = pend["value"]
+                p["pending"] = {"monthly_price_usd": nm, "yearly_price_usd": ny or None,
+                                "first_seen": pend["first_seen"], "reading": pend["reading"]}
+                last = rows[-1]
+                p["monthly_price_usd"] = last[1]
+                if last[2]:
+                    p["yearly_price_usd"] = last[2]
+                else:
+                    p.pop("yearly_price_usd", None)
+        pf["source_checked"] = pf.get("checked") or ""
+        if pf.get("checked"):
+            pf["price_verified"] = verified.get(rkey) or ("" if waiting else pf["checked"])
+
+
+FIELDS = {
+    "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
+    "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
+    "credits_or_minutes": "Allowance per month, in 'unit'. Where a year's credits are given upfront, this is the monthly average: see credits_period and credits_listed",
+    "credits_period": "'month' = refilled every month; 'year' = granted as a yearly allowance (see credits_listed)",
+    "credits_listed": "The allowance exactly as the tool lists it: amount, period and how it is granted",
+    "pending": "A new price read once from the official page, waiting for a second reading on another day before it replaces the confirmed price",
+    "source_checked": "Last time the official pricing page was read successfully",
+    "price_verified": "Last time every price on the page matched the confirmed prices (empty while a change is pending)",
+    "checked": "Same as source_checked (kept for older code)",
+    "source": "Official pricing page",
+}
 
 
 def build(category, paths, names):
@@ -245,14 +311,15 @@ def build(category, paths, names):
         try:
             with open(out_path, encoding="utf-8") as f:
                 old = json.load(f)
-            strip = lambda ps: [{k: v for k, v in p.items() if k not in ("checked", "clips", "hidden")} for p in ps]
+            strip = lambda ps: [{k: v for k, v in p.items() if k not in ("checked", "clips", "hidden", "source_checked", "price_verified")} for p in ps]
             if old.get("updated") and strip(old.get("platforms", [])) == strip(platforms):
                 updated = old["updated"]
         except Exception:
             pass
     record_history(category, platforms, now[:10])
+    apply_verification(category, platforms)
     # Tools the updater could not read keep "checked": "" -> the site says "Entered by hand"
-    data = {"category": category, "updated": updated, "platforms": platforms}
+    data = {"category": category, "updated": updated, "fields": FIELDS, "platforms": platforms}
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=1, ensure_ascii=False)
     print(f"data/{category}.json: {len(platforms)} tools, updated {updated}")

@@ -185,6 +185,15 @@
     if (est) parts.push(`<span class="cost">${est}</span>`);
     const offer = String(plan.offer || "").trim();
     if (offer && !/^(none|n\/a|-)$/i.test(offer)) parts.push(`<span class="offer">${esc(offer)}</span>`);
+    const cl = plan.credits_listed;
+    if (cl && plan.credits_period === "year")
+      parts.push(`<span class="bill">${esc(GC.amount(cl.amount))} a year, ${esc(cl.granted || "")}</span>`);
+    else if (cl && cl.yearly_billing)
+      parts.push(`<span class="bill">Yearly plan: ${esc(GC.amount(cl.yearly_billing.amount))} credits ${esc(cl.yearly_billing.granted || "")}</span>`);
+    if (plan.pending) {
+      const pm = plan.pending.monthly_price_usd, py = plan.pending.yearly_price_usd;
+      parts.push(`<span class="bill">New price read ${esc(plan.pending.first_seen)}: ${GC.money(pm)}/mo${py ? ` (${GC.money(py)} yearly)` : ""}, waiting for a second check</span>`);
+    }
     return `<div class="plan-row">
       <div class="plan-line"><b>${esc(plan.name)}</b>${GC.priceHtml(plan)}</div>
       <div class="plan-sub">${parts.join("<br>") || "&nbsp;"}</div>

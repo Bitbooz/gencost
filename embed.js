@@ -60,7 +60,7 @@
       "<style>" + css + "</style><div class='b'><h4>" + esc(tool.name) + " pricing today</h4><div class='w'><table>" +
       "<thead><tr><th>Plan</th><th>Paid monthly</th>" + (hasYearly ? "<th>Paid yearly</th>" : "") + "<th>Includes</th></tr></thead>" +
       "<tbody>" + rows + "</tbody></table></div>" +
-      "<div class='f'>In US dollars, checked " + esc((tool.checked || "").slice(0, 10)) + " &middot; Prices by <a href='" + page +
+      "<div class='f'>In US dollars, verified " + esc((tool.price_verified || tool.checked || "").slice(0, 10)) + " &middot; Prices by <a href='" + page +
       "' target='_blank' rel='noopener'>GenCost</a></div></div>";
     var host = document.createElement("div");
     var root = host.attachShadow ? host.attachShadow({ mode: "open" }) : host;
