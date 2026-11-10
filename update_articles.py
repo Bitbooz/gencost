@@ -558,6 +558,8 @@ def process(path, tools, matcher, updated):
 
 # Old sentences on other pages that are no longer true; replaced wherever they are found
 NOTE_FIXES = {
+    # Project calculator (2026-11-10)
+    "index.html#project": [('<a class="btn btn-ghost" href="/calculator.html">Calculator</a>', '<a class="btn btn-ghost" href="/calculator.html">Calculator</a>\n        <a class="btn btn-ghost" href="/project.html">Project calculator</a>')],
     # HeyGen alternatives (2026-11-10)
     "index.html#heygen-alt": [('<li class="reveal"><a class="art" href="/pages/best-elevenlabs-alternatives-2026.html"><span class="cat voice">Voice</span><h3>Cheaper ElevenLabs Alternatives</h3><p>Real cost per hour of speech</p></a></li>', '<li class="reveal"><a class="art" href="/pages/best-heygen-alternatives-2026.html"><span class="cat avatar">Avatar</span><h3>Cheaper HeyGen Alternatives</h3><p>Avatar videos for less</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/best-elevenlabs-alternatives-2026.html"><span class="cat voice">Voice</span><h3>Cheaper ElevenLabs Alternatives</h3><p>Real cost per hour of speech</p></a></li>')],
     # Beatoven no longer tracked (2026-11-09)

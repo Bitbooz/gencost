@@ -521,3 +521,20 @@ main.page { padding-bottom: 24px; }
 .prose .embed-box textarea.embed-code { width: 100%; box-sizing: border-box; font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: rgba(255,255,255,.04); color: inherit; border: 1px solid rgba(255,255,255,.12); border-radius: 8px; padding: 10px 12px; resize: vertical; margin: 6px 0 10px; }
 .prose .embed-box .embed-preview { margin: 6px 0 14px; }
 .prose .embed-box .embed-label { margin: 12px 0 4px; }
+
+/* Project calculator */
+.prose .proj-presets { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 16px; }
+.prose .proj-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px 18px; }
+.prose .proj-grid label { display: flex; flex-direction: column; gap: 6px; font-size: .92rem; color: var(--muted); }
+.prose .proj-grid input[type=number], .prose .proj-grid select { background: rgba(255,255,255,.04); color: inherit; border: 1px solid rgba(255,255,255,.14); border-radius: 8px; padding: 9px 10px; font: inherit; }
+.prose .proj-grid .proj-check { flex-direction: row; align-items: center; gap: 8px; }
+.prose .proj-result { margin-top: 18px; }
+.prose .proj-result .card { margin-top: 14px; }
+.prose .proj-result tr.best td { color: var(--text); }
+.prose .proj-result tr.best td:first-child a { font-weight: 700; }
+.prose .proj-total { display: flex; flex-direction: column; gap: 4px; }
+.prose .proj-total-label { font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; color: var(--cyan); }
+.prose .proj-total-num { font-size: 2.4rem; font-weight: 800; }
+.prose .proj-total-num small { font-size: 1rem; font-weight: 500; color: var(--muted); margin-left: 4px; }
+.prose .proj-grid .proj-check { grid-column: 1 / -1; color: var(--text); }
+.prose .proj-grid .proj-check input { width: 18px; height: 18px; accent-color: #00d4ff; }

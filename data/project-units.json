@@ -1,0 +1,22 @@
+{
+ "about": "How much of each plan's allowance one minute of voice, one music track or one image uses. Kept by hand from each tool's own pricing page and used by the project calculator. Tools not listed are left out of that part of the calculator rather than guessed.",
+ "updated": "2026-11-10",
+ "voice_per_minute": {
+  "ElevenLabs": {"units": 1000, "note": "About 1,000 characters make one minute of speech; 1 credit per character on the standard models.", "source": "https://elevenlabs.io/pricing"},
+  "Fliki": {"units": 1, "note": "1 credit = 1 minute of audio or video.", "source": "https://fliki.ai/pricing"}
+ },
+ "music_per_track": {
+  "Suno": {"plan_tracks": {"Pro": 20, "Premier": 60}, "note": "Limited by monthly song downloads: 20 on Pro, 60 on Premier.", "source": "https://suno.com/pricing"},
+  "AIVA": {"units": 1, "note": "1 download per track.", "source": "https://www.aiva.ai/pricing"},
+  "Stable Audio": {"units": 4, "note": "About 4 credits per full mix (Solo: 660 credits, about 165 full mixes).", "source": "https://stableaudio.com/pricing"},
+  "Mureka": {"plan_tracks": {"Pro": 500, "Premier": 2000}, "note": "Up to 500 songs on Pro and 2,000 on Premier.", "source": "https://www.mureka.ai/pricing"}
+ },
+ "image_per_image": {
+  "OpenArt": {"units": 1, "note": "About 1 credit per image on the simplest models; premium models cost more.", "source": "https://openart.ai/pricing"},
+  "Freepik": {"units": 75, "note": "Nano Banana 2 at 2K: 75 credits per image.", "source": "https://www.freepik.com/pricing"},
+  "Adobe Firefly": {"units": 1, "note": "About 1 generative credit per standard image.", "source": "https://www.adobe.com/products/firefly/plans.html"},
+  "Midjourney": {"plan_tracks": {"Basic": 800}, "unlimited": ["Standard", "Pro", "Mega"], "note": "Basic: about 200 fast generations of 4 images. Standard and up: unlimited in the slower Relax mode.", "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"},
+  "Ideogram": {"unlimited": ["Plus", "Pro"], "note": "Unlimited images with Ideogram's own models in the slower queue once credits run out.", "source": "https://docs.ideogram.ai/plans-and-pricing/personal-plans"}
+ },
+ "video_skip": ["Viggle"]
+}
