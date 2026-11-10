@@ -2,12 +2,19 @@
   "platform": "ltx",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 800,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
       "name": "Lite",
       "monthly_price_usd": 15,
       "yearly_price_usd": 12,
       "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday"
+      "offer": "$15 first month"
     },
     {
       "name": "Standard",
@@ -15,7 +22,7 @@
       "yearly_price_usd": 28,
       "credits_or_minutes": 28000,
       "unit": "credits",
-      "offer": "Save 50% Cyber Monday; 28800 extra sec/mo first 3 mo"
+      "offer": "28800 extra seconds/month for first 3 months"
     },
     {
       "name": "Pro",
@@ -23,9 +30,9 @@
       "yearly_price_usd": 100,
       "credits_or_minutes": 110000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday"
+      "offer": ""
     }
   ],
   "source": "https://ltx.studio/pricing",
-  "last_checked": "2026-11-10 14:10"
+  "last_checked": "2026-11-10 14:26"
 }

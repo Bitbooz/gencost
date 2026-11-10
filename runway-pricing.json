@@ -6,7 +6,7 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 125,
       "unit": "credits",
-      "offer": "125 one-time credits"
+      "offer": ""
     },
     {
       "name": "Standard",
@@ -34,5 +34,5 @@
     }
   ],
   "source": "https://runwayml.com/pricing",
-  "last_checked": "2026-11-10 14:07"
+  "last_checked": "2026-11-10 14:24"
 }

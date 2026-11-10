@@ -1,36 +1,60 @@
 {
  "category": "image",
- "updated": "2026-11-10 14:18",
+ "updated": "2026-11-10 14:34",
+ "fields": {
+  "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
+  "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
+  "credits_or_minutes": "Allowance per month, in 'unit'. Where a year's credits are given upfront, this is the monthly average: see credits_period and credits_listed",
+  "credits_period": "'month' = refilled every month; 'year' = granted as a yearly allowance (see credits_listed)",
+  "credits_listed": "The allowance exactly as the tool lists it: amount, period and how it is granted",
+  "pending": "A new price read once from the official page, waiting for a second reading on another day before it replaces the confirmed price",
+  "source_checked": "Last time the official pricing page was read successfully",
+  "price_verified": "Last time every price on the page matched the confirmed prices (empty while a change is pending)",
+  "checked": "Same as source_checked (kept for older code)",
+  "source": "Official pricing page"
+ },
  "platforms": [
   {
    "name": "Midjourney",
    "page": "/pages/midjourney.html",
    "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-   "checked": "2026-11-10 14:17",
+   "checked": "2026-11-10 14:33",
    "plans": [
     {
      "name": "Basic",
      "monthly_price_usd": 10,
      "yearly_price_usd": 8,
-     "offer": ""
+     "credits_or_minutes": 200,
+     "unit": "minutes",
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Standard",
      "monthly_price_usd": 30,
      "yearly_price_usd": 24,
-     "offer": ""
+     "credits_or_minutes": 900,
+     "unit": "minutes",
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Pro",
      "monthly_price_usd": 60,
      "yearly_price_usd": 48,
-     "offer": ""
+     "credits_or_minutes": 1800,
+     "unit": "minutes",
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Mega",
      "monthly_price_usd": 120,
      "yearly_price_usd": 96,
-     "offer": ""
+     "credits_or_minutes": 3600,
+     "unit": "minutes",
+     "offer": "",
+     "credits_period": "month"
     }
    ],
    "hidden": {
@@ -42,7 +66,9 @@
     "source": "https://eesel.ai/blog/midjourney-pricing",
     "checked": "2026-06-05",
     "official": false
-   }
+   },
+   "source_checked": "2026-11-10 14:33",
+   "price_verified": "2026-11-10 14:33"
   },
   {
    "name": "Leonardo",
@@ -55,7 +81,8 @@
      "monthly_price_usd": 0,
      "credits_or_minutes": 150,
      "unit": "tokens",
-     "offer": "150 tokens a day, public images"
+     "offer": "150 tokens a day, public images",
+     "credits_period": "month"
     },
     {
      "name": "Essential",
@@ -63,7 +90,8 @@
      "yearly_price_usd": 9.6,
      "credits_or_minutes": 8500,
      "unit": "tokens",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Premium",
@@ -71,7 +99,8 @@
      "yearly_price_usd": 24,
      "credits_or_minutes": 25000,
      "unit": "tokens",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Ultimate",
@@ -79,7 +108,8 @@
      "yearly_price_usd": 48,
      "credits_or_minutes": 60000,
      "unit": "tokens",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     }
    ],
    "hidden": {
@@ -90,20 +120,23 @@
     "source": "https://costbench.com/software/ai-image-generators/leonardo-ai",
     "checked": "2026-11-08",
     "official": false
-   }
+   },
+   "source_checked": "2026-11-05 00:00",
+   "price_verified": "2026-11-05 00:00"
   },
   {
    "name": "Ideogram",
    "page": "/pages/ideogram.html",
    "source": "https://docs.ideogram.ai/plans-and-pricing/personal-plans",
-   "checked": "2026-11-10 14:17",
+   "checked": "2026-11-10 14:33",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 30,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Plus",
@@ -111,7 +144,8 @@
      "yearly_price_usd": 15,
      "credits_or_minutes": 2400,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Pro",
@@ -119,7 +153,8 @@
      "yearly_price_usd": 42,
      "credits_or_minutes": 7500,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     }
    ],
    "hidden": {
@@ -130,7 +165,9 @@
     "source": "https://docs.ideogram.ai/faq",
     "checked": "2026-11-07",
     "official": true
-   }
+   },
+   "source_checked": "2026-11-10 14:33",
+   "price_verified": "2026-11-10 14:33"
   },
   {
    "name": "Adobe Firefly",
@@ -143,35 +180,40 @@
      "monthly_price_usd": 0,
      "credits_or_minutes": 0,
      "unit": "credits",
-     "offer": "daily free generations"
+     "offer": "daily free generations",
+     "credits_period": "month"
     },
     {
      "name": "Firefly Standard",
      "monthly_price_usd": 9.99,
      "credits_or_minutes": 2000,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Firefly Pro",
      "monthly_price_usd": 19.99,
      "credits_or_minutes": 4000,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Firefly Pro Plus",
      "monthly_price_usd": 49.99,
      "credits_or_minutes": 10000,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Firefly Premium",
      "monthly_price_usd": 199.99,
      "credits_or_minutes": 50000,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     }
    ],
    "hidden": {
@@ -182,13 +224,15 @@
     "source": "https://www.adobe.com/products/firefly/plans.html",
     "checked": "2026-11-08",
     "official": true
-   }
+   },
+   "source_checked": "2026-11-08 14:00",
+   "price_verified": "2026-11-08 14:00"
   },
   {
    "name": "Recraft",
    "page": "/pages/recraft.html",
    "source": "https://www.recraft.ai/pricing",
-   "checked": "2026-11-10 14:17",
+   "checked": "2026-11-10 14:33",
    "plans": [
     {
      "name": "Basic",
@@ -196,7 +240,8 @@
      "yearly_price_usd": 10,
      "credits_or_minutes": 1000,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Pro",
@@ -204,7 +249,8 @@
      "yearly_price_usd": 16,
      "credits_or_minutes": 2000,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     }
    ],
    "hidden": {
@@ -216,13 +262,15 @@
     "source": "https://www.recraft.ai/docs/plans-and-billing/paid-plans",
     "checked": "2026-11-08",
     "official": true
-   }
+   },
+   "source_checked": "2026-11-10 14:33",
+   "price_verified": "2026-11-10 14:33"
   },
   {
    "name": "Freepik",
    "page": "/pages/freepik.html",
    "source": "https://www.freepik.com/pricing",
-   "checked": "2026-11-10 14:18",
+   "checked": "2026-11-10 14:34",
    "plans": [
     {
      "name": "Premium",
@@ -230,7 +278,14 @@
      "yearly_price_usd": 14.5,
      "credits_or_minutes": 20000,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "year",
+     "credits_listed": {
+      "amount": 240000,
+      "period": "year",
+      "granted": "as a yearly allowance that lasts 12 months, with no monthly reset (yearly billing)",
+      "source": "https://www.freepik.com/pricing"
+     }
     },
     {
      "name": "Plus",
@@ -238,7 +293,14 @@
      "yearly_price_usd": 33.75,
      "credits_or_minutes": 50000,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "year",
+     "credits_listed": {
+      "amount": 600000,
+      "period": "year",
+      "granted": "as a yearly allowance that lasts 12 months, with no monthly reset (yearly billing)",
+      "source": "https://www.freepik.com/pricing"
+     }
     },
     {
      "name": "Pro",
@@ -246,7 +308,14 @@
      "yearly_price_usd": 82.5,
      "credits_or_minutes": 125000,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "year",
+     "credits_listed": {
+      "amount": 1500000,
+      "period": "year",
+      "granted": "as a yearly allowance that lasts 12 months, with no monthly reset (yearly billing)",
+      "source": "https://www.freepik.com/pricing"
+     }
     }
    ],
    "hidden": {
@@ -257,13 +326,15 @@
     "source": "https://www.freepik.com/pricing",
     "checked": "2026-11-08",
     "official": true
-   }
+   },
+   "source_checked": "2026-11-10 14:34",
+   "price_verified": "2026-11-10 14:34"
   },
   {
    "name": "OpenArt",
    "page": "/pages/openart.html",
    "source": "https://openart.ai/pricing",
-   "checked": "2026-11-10 14:18",
+   "checked": "2026-11-10 14:34",
    "plans": [
     {
      "name": "Starter",
@@ -271,7 +342,8 @@
      "yearly_price_usd": 13,
      "credits_or_minutes": 4000,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Plus",
@@ -279,7 +351,8 @@
      "yearly_price_usd": 27,
      "credits_or_minutes": 12000,
      "unit": "credits",
-     "offer": ""
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Pro",
@@ -287,7 +360,8 @@
      "yearly_price_usd": 44,
      "credits_or_minutes": 24000,
      "unit": "credits",
-     "offer": "Extra 30-50% off select models"
+     "offer": "Up to 50% off on GPT Image 2.6, Seedream 5.5, Kling 4.0, Recraft V4.1",
+     "credits_period": "month"
     },
     {
      "name": "Wonder",
@@ -295,7 +369,8 @@
      "yearly_price_usd": 175,
      "credits_or_minutes": 106000,
      "unit": "credits",
-     "offer": "Extra 30-50% off select models"
+     "offer": "Up to 50% off on GPT Image 2.6, Seedream 5.5, Kling 4.0, Recraft V4.1",
+     "credits_period": "month"
     }
    ],
    "hidden": {
@@ -306,7 +381,9 @@
     "source": "https://openart.ai/pricing",
     "checked": "2026-11-08",
     "official": true
-   }
+   },
+   "source_checked": "2026-11-10 14:34",
+   "price_verified": "2026-11-10 14:34"
   },
   {
    "name": "NightCafe",
@@ -319,35 +396,40 @@
      "monthly_price_usd": 0,
      "credits_or_minutes": 2,
      "unit": "credits",
-     "offer": "2 credits a day, base models only"
+     "offer": "2 credits a day, base models only",
+     "credits_period": "month"
     },
     {
      "name": "AI Hobbyist",
      "monthly_price_usd": 12.49,
      "credits_or_minutes": 200,
      "unit": "credits",
-     "offer": "plus 600+ Relax credits"
+     "offer": "plus 600+ Relax credits",
+     "credits_period": "month"
     },
     {
      "name": "AI Enthusiast",
      "monthly_price_usd": 24.99,
      "credits_or_minutes": 500,
      "unit": "credits",
-     "offer": "plus 600+ Relax credits"
+     "offer": "plus 600+ Relax credits",
+     "credits_period": "month"
     },
     {
      "name": "AI Creator",
      "monthly_price_usd": 39.99,
      "credits_or_minutes": 850,
      "unit": "credits",
-     "offer": "plus 600+ Relax credits"
+     "offer": "plus 600+ Relax credits",
+     "credits_period": "month"
     },
     {
      "name": "AI Artist",
      "monthly_price_usd": 62.49,
      "credits_or_minutes": 1400,
      "unit": "credits",
-     "offer": "plus 600+ Relax credits"
+     "offer": "plus 600+ Relax credits",
+     "credits_period": "month"
     }
    ],
    "hidden": {
@@ -358,7 +440,9 @@
     "source": "https://costbench.com/software/ai-image-generators/nightcafe/",
     "checked": "2026-11-08",
     "official": false
-   }
+   },
+   "source_checked": "2026-10-31 00:00",
+   "price_verified": "2026-10-31 00:00"
   }
  ]
 }
