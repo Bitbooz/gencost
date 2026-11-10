@@ -217,6 +217,8 @@ export default async (req) => {
   if (req.method === "GET") {
     const accept = req.headers.get("accept") || "";
     if (accept.includes("text/event-stream")) return new Response("This server does not open server-sent event streams.", { status: 405, headers: { ...CORS, Allow: "POST" } });
+    // a person opening the address in a browser gets the explanation page
+    if (accept.includes("text/html")) return new Response(null, { status: 302, headers: { ...CORS, Location: SITE + "/ai.html" } });
     return new Response(JSON.stringify({ name: SERVER.title, mcp_endpoint: SITE + "/mcp", transport: "streamable-http", how_to_use: SITE + "/ai.html", tools: TOOLS.map((t) => t.name) }, null, 1),
       { status: 200, headers: { ...CORS, "Content-Type": "application/json" } });
   }
