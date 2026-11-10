@@ -4,27 +4,21 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
-      "credits_or_minutes": "",
-      "unit": "",
-      "offer": ""
+      "offer": "Free forever"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 10,
       "yearly_price_usd": 8,
-      "credits_or_minutes": "",
-      "unit": "",
       "offer": ""
     },
     {
       "name": "Premier",
       "monthly_price_usd": 30,
       "yearly_price_usd": 24,
-      "credits_or_minutes": "",
-      "unit": "",
       "offer": ""
     }
   ],
   "source": "https://suno.com/pricing",
-  "last_checked": "2026-11-10 21:59"
+  "last_checked": "2026-11-10 22:23"
 }

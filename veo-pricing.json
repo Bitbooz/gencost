@@ -2,28 +2,14 @@
   "platform": "veo",
   "plans": [
     {
-      "name": "Google AI Plus",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 200,
-      "unit": "Flow credits",
-      "offer": ""
-    },
-    {
       "name": "Google AI Pro",
       "monthly_price_usd": 19.99,
       "yearly_price_usd": 16.67,
       "credits_or_minutes": 1000,
       "unit": "Flow credits",
       "offer": "Students get Google AI Pro free for 1 year"
-    },
-    {
-      "name": "Google AI Ultra",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 10000,
-      "unit": "Flow credits",
-      "offer": ""
     }
   ],
   "source": "https://one.google.com/about/google-ai-plans/",
-  "last_checked": "2026-11-10 21:52"
+  "last_checked": "2026-11-10 22:15"
 }

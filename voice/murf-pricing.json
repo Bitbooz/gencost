@@ -2,6 +2,13 @@
   "platform": "Murf AI",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 10,
+      "unit": "minutes",
+      "offer": ""
+    },
+    {
       "name": "Creator",
       "monthly_price_usd": 19,
       "yearly_price_usd": 19,
@@ -19,5 +26,5 @@
     }
   ],
   "source": "https://murf.ai/pricing",
-  "last_checked": "2026-11-10 21:58"
+  "last_checked": "2026-11-10 22:22"
 }
