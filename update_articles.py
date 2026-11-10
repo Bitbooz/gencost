@@ -1257,8 +1257,10 @@ EMERGING_MODELS = [
     ("Wan", "/pages/wan.html", "Alibaba's open video model, offered by several hosts and through APIs. Price depends on where you run it.", None, None),
     ("Kling 4.0", "/pages/kling.html", "Kuaishou's newest video model, open to everyone since October 15, 2026: 3 to 30-second clips with sound made together with the picture. Also on Higgsfield, Runway and APIs, at very different prices per clip.",
      "/pages/cheapest-way-to-use-kling-4-0-2026.html", "Where Kling 4.0 is cheapest"),
-    ("Gemini Omni 1.2 Flash", None, "Google's newest video model (November 5, 2026): clips up to 15 seconds with sound, and you can extend them to 30. On the Gemini API it costs $0.07 per second at 720p, about $0.35 for a 5-second clip. In the Gemini app it is rolling out to Google AI Ultra subscribers.", None, None),
-    ("GPT Image 2.6", None, "OpenAI's newest image models, Flare (fast) and Sunburst (November 4, 2026). Besides still images they make animated GIFs, editable SVG vectors and PNGs with a transparent background. In ChatGPT on all plans; on the API about $0.03 to $0.05 per 1024x1024 image, from low to high quality.", None, None),
+    ("Gemini Omni 1.2 Flash", None, "Google's newest video model (November 5, 2026): clips up to 15 seconds with sound, and you can extend them to 30. On the Gemini API it costs $0.07 per second at 720p, about $0.35 for a 5-second clip. In the Gemini app it is rolling out to Google AI Ultra subscribers.",
+     "/pages/veo.html", "Google AI plan prices"),
+    ("GPT Image 2.6", None, "OpenAI's newest image models, Flare (fast) and Sunburst (November 4, 2026). Besides still images they make animated GIFs, editable SVG vectors and PNGs with a transparent background. In ChatGPT on all plans; on the API about $0.03 to $0.05 per 1024x1024 image, from low to high quality.",
+     "/pages/cheapest-ai-image-generators-2026.html", "Cheapest AI image generators"),
 ]
 SECTION_TITLE = {"video": "Video & avatar", "image": "Image", "voice": "Voice", "music": "Music"}
 
