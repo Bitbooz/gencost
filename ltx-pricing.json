@@ -15,7 +15,7 @@
       "yearly_price_usd": 28,
       "credits_or_minutes": 28000,
       "unit": "credits",
-      "offer": "28,800 additional Computing Seconds/month for first 3 months"
+      "offer": "Save 50% Cyber Monday; 28800 extra sec/mo first 3 mo"
     },
     {
       "name": "Pro",
@@ -27,5 +27,5 @@
     }
   ],
   "source": "https://ltx.studio/pricing",
-  "last_checked": "2026-11-10 13:21"
+  "last_checked": "2026-11-10 14:10"
 }

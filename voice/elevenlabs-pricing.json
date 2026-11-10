@@ -2,6 +2,13 @@
   "platform": "elevenlabs",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 10000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
       "name": "Starter",
       "monthly_price_usd": 6,
       "yearly_price_usd": 5,
@@ -43,5 +50,5 @@
     }
   ],
   "source": "https://elevenlabs.io/pricing",
-  "last_checked": "2026-11-10 13:24"
+  "last_checked": "2026-11-10 14:12"
 }

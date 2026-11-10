@@ -6,7 +6,7 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": ""
+      "offer": "No credit card needed"
     },
     {
       "name": "Plus",
@@ -26,5 +26,5 @@
     }
   ],
   "source": "https://fish.audio/plan/",
-  "last_checked": "2026-11-10 13:25"
+  "last_checked": "2026-11-10 14:13"
 }
