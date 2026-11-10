@@ -4,7 +4,7 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
-      "credits_or_minutes": 10000,
+      "credits_or_minutes": "10k",
       "unit": "credits",
       "offer": ""
     },
@@ -12,23 +12,23 @@
       "name": "Starter",
       "monthly_price_usd": 6,
       "yearly_price_usd": 5,
-      "credits_or_minutes": 30000,
+      "credits_or_minutes": "30k",
       "unit": "credits",
-      "offer": "$1 first month"
+      "offer": "first month $1"
     },
     {
       "name": "Creator",
       "monthly_price_usd": 22,
       "yearly_price_usd": 18.33,
-      "credits_or_minutes": 121000,
+      "credits_or_minutes": "121k",
       "unit": "credits",
-      "offer": "$11 first month"
+      "offer": "first month $11"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 99,
       "yearly_price_usd": 82.5,
-      "credits_or_minutes": 600000,
+      "credits_or_minutes": "600k",
       "unit": "credits",
       "offer": ""
     },
@@ -36,7 +36,7 @@
       "name": "Scale",
       "monthly_price_usd": 299,
       "yearly_price_usd": 249.17,
-      "credits_or_minutes": 1800000,
+      "credits_or_minutes": "1.8M",
       "unit": "credits",
       "offer": ""
     },
@@ -44,11 +44,11 @@
       "name": "Business",
       "monthly_price_usd": 990,
       "yearly_price_usd": 825,
-      "credits_or_minutes": 6000000,
+      "credits_or_minutes": "6M",
       "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://elevenlabs.io/pricing",
-  "last_checked": "2026-11-10 21:28"
+  "last_checked": "2026-11-10 21:57"
 }

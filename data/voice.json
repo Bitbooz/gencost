@@ -1,6 +1,6 @@
 {
  "category": "voice",
- "updated": "2026-11-10 21:34",
+ "updated": "2026-11-10 22:03",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -18,12 +18,12 @@
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-10 21:28",
+   "checked": "2026-11-10 21:57",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 10000,
+     "credits_or_minutes": "10k",
      "unit": "credits",
      "offer": "",
      "credits_period": "month"
@@ -32,25 +32,25 @@
      "name": "Starter",
      "monthly_price_usd": 6,
      "yearly_price_usd": 5,
-     "credits_or_minutes": 30000,
+     "credits_or_minutes": "30k",
      "unit": "credits",
-     "offer": "$1 first month",
+     "offer": "first month $1",
      "credits_period": "month"
     },
     {
      "name": "Creator",
      "monthly_price_usd": 22,
      "yearly_price_usd": 18.33,
-     "credits_or_minutes": 121000,
+     "credits_or_minutes": "121k",
      "unit": "credits",
-     "offer": "$11 first month",
+     "offer": "first month $11",
      "credits_period": "month"
     },
     {
      "name": "Pro",
      "monthly_price_usd": 99,
      "yearly_price_usd": 82.5,
-     "credits_or_minutes": 600000,
+     "credits_or_minutes": "600k",
      "unit": "credits",
      "offer": "",
      "credits_period": "month"
@@ -59,7 +59,7 @@
      "name": "Scale",
      "monthly_price_usd": 299,
      "yearly_price_usd": 249.17,
-     "credits_or_minutes": 1800000,
+     "credits_or_minutes": "1.8M",
      "unit": "credits",
      "offer": "",
      "credits_period": "month"
@@ -68,7 +68,7 @@
      "name": "Business",
      "monthly_price_usd": 990,
      "yearly_price_usd": 825,
-     "credits_or_minutes": 6000000,
+     "credits_or_minutes": "6M",
      "unit": "credits",
      "offer": "",
      "credits_period": "month"
@@ -84,29 +84,21 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-10 21:28",
-   "price_verified": "2026-11-10 21:28"
+   "source_checked": "2026-11-10 21:57",
+   "price_verified": "2026-11-10 21:57"
   },
   {
    "name": "Murf AI",
    "page": "/pages/voice/murf.html",
    "source": "https://murf.ai/pricing",
-   "checked": "2026-11-10 21:28",
+   "checked": "2026-11-10 21:58",
    "plans": [
-    {
-     "name": "Free",
-     "monthly_price_usd": 0,
-     "credits_or_minutes": 10,
-     "unit": "minutes",
-     "offer": "",
-     "credits_period": "month"
-    },
     {
      "name": "Creator",
      "monthly_price_usd": 19,
      "yearly_price_usd": 19,
-     "credits_or_minutes": 1440,
-     "unit": "minutes",
+     "credits_or_minutes": 24,
+     "unit": "hours",
      "offer": "",
      "credits_period": "month"
     },
@@ -114,8 +106,8 @@
      "name": "Business",
      "monthly_price_usd": 66,
      "yearly_price_usd": 66,
-     "credits_or_minutes": 5760,
-     "unit": "minutes",
+     "credits_or_minutes": 96,
+     "unit": "hours",
      "offer": "",
      "credits_period": "month"
     }
@@ -129,14 +121,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-10 21:28",
-   "price_verified": "2026-11-10 21:28"
+   "source_checked": "2026-11-10 21:58",
+   "price_verified": "2026-11-10 21:58"
   },
   {
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-10 21:28",
+   "checked": "2026-11-10 21:58",
    "plans": [
     {
      "name": "Free",
@@ -180,20 +172,20 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-10 21:28",
-   "price_verified": "2026-11-10 21:28"
+   "source_checked": "2026-11-10 21:58",
+   "price_verified": "2026-11-10 21:58"
   },
   {
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-10 21:28",
+   "checked": "2026-11-10 21:58",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 0,
-     "unit": "credits",
+     "unit": "",
      "offer": "",
      "credits_period": "month"
     },
@@ -202,19 +194,19 @@
      "monthly_price_usd": 29,
      "yearly_price_usd": 11.58,
      "credits_or_minutes": 0,
-     "unit": "credits",
+     "unit": "",
      "offer": "",
      "credits_period": "month"
     }
    ],
-   "source_checked": "2026-11-10 21:28",
-   "price_verified": "2026-11-10 21:28"
+   "source_checked": "2026-11-10 21:58",
+   "price_verified": "2026-11-10 21:58"
   },
   {
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-10 21:29",
+   "checked": "2026-11-10 21:58",
    "plans": [
     {
      "name": "Hobbyist",
@@ -252,8 +244,8 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-10 21:29",
-   "price_verified": "2026-11-10 21:29"
+   "source_checked": "2026-11-10 21:58",
+   "price_verified": "2026-11-10 21:58"
   },
   {
    "name": "WellSaid Labs",
@@ -275,7 +267,7 @@
    "name": "Fliki",
    "page": "/pages/voice/fliki.html",
    "source": "https://fliki.ai/pricing",
-   "checked": "2026-11-10 21:29",
+   "checked": "2026-11-10 21:59",
    "plans": [
     {
      "name": "Free",
@@ -311,14 +303,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-10 21:29",
-   "price_verified": "2026-11-10 21:29"
+   "source_checked": "2026-11-10 21:59",
+   "price_verified": "2026-11-10 21:59"
   },
   {
    "name": "Fish Audio",
    "page": "/pages/fish-audio.html",
    "source": "https://fish.audio/plan/",
-   "checked": "2026-11-10 21:29",
+   "checked": "2026-11-10 21:59",
    "plans": [
     {
      "name": "Free Tier",
@@ -343,7 +335,7 @@
      "yearly_price_usd": 75,
      "credits_or_minutes": 2000000,
      "unit": "credits",
-     "offer": "7 days money back guarantee",
+     "offer": "",
      "credits_period": "month"
     }
    ],
@@ -356,8 +348,8 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-10 21:29",
-   "price_verified": "2026-11-10 21:29"
+   "source_checked": "2026-11-10 21:59",
+   "price_verified": "2026-11-10 21:59"
   }
  ]
 }

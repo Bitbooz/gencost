@@ -27,13 +27,13 @@
     },
     {
       "name": "Max",
-      "monthly_price_usd": 184,
-      "yearly_price_usd": 184,
+      "monthly_price_usd": 184.0,
+      "yearly_price_usd": 184.0,
       "credits_or_minutes": 27000,
       "unit": "credits",
-      "offer": ""
+      "offer": "monthly price not shown"
     }
   ],
   "source": "https://hailuoai.video/pricing",
-  "last_checked": "2026-11-10 21:21"
+  "last_checked": "2026-11-10 21:51"
 }
