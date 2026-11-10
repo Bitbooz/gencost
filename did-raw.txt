@@ -477,6 +477,22 @@ Manual
 Content Moderation for Advanced plan: Manual
 Manual
 Content Moderation for Enterprise plan: Manual
+Work with a trusted industry leader
+Frequently Asked Questions
+How do minutes work?
+
+When you create a video, the duration is deducted from the total minutes available in your plan. The length of the video is rounded up to the nearest 15-second interval. For example, a 1-minute and 10-second video will consume 1 minute and 15 seconds.
+
+Do unused minutes carry over to the next month?
+How can I change my credit card details?
+Why do videos have a D-ID watermark on the Trial and Lite plans?
+How do I cancel my subscription?
+How do I delete my account?
+How do I switch from a monthly plan to an annual plan (and vice versa)?
+What happens to my data if I cancel my subscription?
+How can I get an API key?
+How do you calculate my minutes when I use the API?
+Where can I find the API documentation?
     
 
 “D-ID exceeded all of my expectations with their generative AI solutions. Their technology transformed my project, Convo.ai,

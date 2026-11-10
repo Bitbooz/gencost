@@ -2,6 +2,13 @@
   "platform": "did",
   "plans": [
     {
+      "name": "Trial",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 3,
+      "unit": "minutes",
+      "offer": "14-day trial"
+    },
+    {
       "name": "Lite",
       "monthly_price_usd": 4.7,
       "yearly_price_usd": 4.67,
@@ -27,5 +34,5 @@
     }
   ],
   "source": "https://www.d-id.com/pricing/studio/",
-  "last_checked": "2026-11-10 14:27"
+  "last_checked": "2026-11-10 20:36"
 }

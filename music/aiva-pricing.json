@@ -6,7 +6,7 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 3,
       "unit": "downloads",
-      "offer": "monthly price not shown"
+      "offer": ""
     },
     {
       "name": "Standard",
@@ -27,5 +27,5 @@
   ],
   "currency": "EUR converted to USD at 1.117",
   "source": "https://www.aiva.ai/pricing",
-  "last_checked": "2026-11-10 14:31"
+  "last_checked": "2026-11-10 20:41"
 }

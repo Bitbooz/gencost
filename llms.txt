@@ -12,6 +12,7 @@ Prices last updated: 2026-11-10. How prices are checked: https://getgencost.com/
 - [Compare any tools](https://getgencost.com/compare.html): two or three tools side by side
 - [Budget calculator](https://getgencost.com/calculator.html): how many clips a budget buys
 - [Machine-readable prices](https://getgencost.com/data/video.json), [voice](https://getgencost.com/data/voice.json), [music](https://getgencost.com/data/music.json), [image](https://getgencost.com/data/image.json)
+- [MCP server](https://getgencost.com/mcp): remote MCP endpoint (Streamable HTTP, no sign-in) with tools list_tools, get_prices, compare_tools, find_cheapest. How to connect: https://getgencost.com/ai.html
 
 ## Guides
 - [Best Cheap AI Video Tools for YouTube in 2026](https://getgencost.com/pages/best-cheap-ai-video-tools-for-youtube-2026.html)

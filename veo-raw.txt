@@ -21,12 +21,14 @@ For Creative Pros
 For Business Owners
 Plans & Pricing
 Sign up
-Unlock our new frontier model
-Gemini 4 Argon
-Sign up for a Google AI plan
+Unlock our strongest model
+Gemini 4 Carbon
+Sign up for a Google AI Ultra plan
 Cancel anytime. By subscribing, you agree to terms for
 Google One
-and
+,
+YouTube
+, and
 offers
 . See how
 Google handles data
@@ -65,8 +67,7 @@ Terms apply
 Boost productivity
 Access to Gemini 4 Argon for frontier performance in complex workflows.
 Expanded access to Gemini 3.1Â Pro and Deep Research in Gemini.
-Expanded access to Gemini 4 Argon in the Gemini app and AI Mode in Search.
-2
+Expanded access to Gemini 4 Argon in the Gemini app.
 Expanded access to Gemini 3 Pro in features such as Deep Search.
 Gemini in Google apps to help you proofread in Gmail and work smarter in Docs and Sheets. Plus, ask your Gmail inbox for an AI Overview (US only).
 Access to Tasks in Gemini.
@@ -105,7 +106,7 @@ Family sharing with up to five others.
 Plus other AI benefits across Google products.
 View plan benefits
 Hide plan benefits
-Includes Gemini 4 Argon
+Includes Gemini 4 Carbon
 Google AI Ultra
 From
 Â
@@ -116,9 +117,9 @@ Get Ultra
 Terms apply
 1
 Boost productivity
+Higher access to Gemini 4 Carbon for deep frontier intelligence across coding, science, and knowledge work.
 Higher access to Gemini 4 Argon for frontier performance in complex workflows.
-Higher access to Gemini 3.1Â Pro, Deep Research, and Gemini Agent (US only, English only).
-Higher access to Gemini 4 Argon in the Gemini app and AI Mode in Search.
+Higher access to Gemini 4 Carbon in the Gemini app and AI Mode in Search.
 2
 Higher access to Gemini 3 Pro in features such as Deep Search. Plus, AI-powered calling for local businesses (US only).
 Gemini in Google apps to help you proofread in Gmail and work smarter in Docs and Sheets. Plus, ask your Gmail inbox for an AI Overview (US only).
@@ -207,11 +208,11 @@ And more
 Sign up
 Get access to Googleâs
 advanced AI models
-Frontier intelligence for your most complex workflows with
-GeminiÂ 4Â Argon
-Turn ambitious ideas into real projects
-Meet Gemini 4 Argon, our frontier model built to take your most complex tasks from start to finish. Whether you are exploring new coding projects, analyzing dense information, or visualizing 3D spaces, Argon turns your ambitious ideas into polished, ready-to-use outputs.
-Available to Google AI Pro and Ultra subscribers in
+Hand over your hardest problems to
+GeminiÂ 4Â Carbon
+Pushing the frontier
+Gemini 4 Carbon is built to explore thoroughly, reason deeply and run extended verification loops using more thought tokens for frontier performance across coding, knowledge work, cyber and science. 4Â Carbon is state-of-the-art in cybersecurity and long horizon capabilities.
+Available to Google AI Ultra subscribers in
 select countries
 .
 Get the most from
@@ -541,10 +542,11 @@ Four times
 (Pro plan)
 20x
 (Pro plan)
+Access to Gemini 4 Carbon
 Access to Gemini 4 Argon
 Access to our Pro models
-Higher
-Highest
+Includes access to Argon & Carbon
+Includes access to Argon & Carbon
 Custom AI experts
 Gemini Live
 Tasks in Gemini
@@ -624,9 +626,11 @@ Limited
 Expanded
 Higher
 Highest
+Access to Gemini 4 Carbon
 Access to Gemini 4 Argon
 Google AI Studio
 6
+Access to Gemini 4 Carbon
 Access to Gemini 4 Argon
 Access to our advanced models
 Limited
@@ -777,11 +781,11 @@ Access to Tasks in Gemini
 Other premium
 member benefits
 Google AI Ultra gives you a higher level of access to everything in Google AI Pro, as well as:
-Gemini app with higher access to Gemini 4 Argon for frontier performance in complex workflows, plus higher limits to 3.1Â Pro and access to Gemini Omni Flash
+Gemini app with higher access to Gemini 4 Carbon and Gemini 4 Argon for frontier performance in complex workflows, plus access to Gemini Omni Flash
 5
 Google Flow with higher limits to Gemini Omni Flash
 5
-AI Studio with higher limits to prototype, experiment, and build with our Gemini 4 Argon model and Nano Banana Pro.
+AI Studio with higher limits to prototype, experiment, and build with our Gemini 4 Carbon and Gemini 4 Argon models and Nano Banana Pro.
 6
 Project Genie
 10
@@ -794,7 +798,7 @@ individual plan
 Google Search:
 2
 Higher access to Gemini 3Â Pro model to unlock interactive simulations and tools to answers your most complex questions, plus Deep Search, agentic capabilities and more
-Google Antigravity: Higher rate limits and access to Gemini 4 Argon in Google Antigravity, our agentic development platform
+Google Antigravity: Higher rate limits and access to Gemini 4 Carbon and Gemini 4 Argon in Google Antigravity, our agentic development platform
 Google Colab: Get higher access to powerful accelerators and longer runtimes with 2,000 compute units per month
 Highest Remix generations and Veo 3
 5
@@ -855,7 +859,7 @@ Get the latest updates and news from Google One, delivered to your inbox.
 Subscribe
 Manage your plan and more with the GoogleÂ One app
 1.
-Google AI Plus, Pro, and Ultra plans are available in more than 140 countries and territories â see
+Google AI Plus, Pro, and Ultra plans are available in more than 150 countries and territories â see
 full list of countries
 . Certain AI benefits are only available for those aged 18+.
 Learn more
