@@ -558,6 +558,8 @@ def process(path, tools, matcher, updated):
 
 # Old sentences on other pages that are no longer true; replaced wherever they are found
 NOTE_FIXES = {
+    # Kling 4.0 article (2026-11-10)
+    "index.html#kling4": [('<li class="reveal"><a class="art" href="/pages/cheapest-way-to-use-seedance-2-5-2026.html"><span class="cat video">Video</span><h3>Where Is Seedance 2.5 Cheapest?</h3><p>CapCut vs Higgsfield vs Luma vs Pika</p></a></li>', '<li class="reveal"><a class="art" href="/pages/cheapest-way-to-use-kling-4-0-2026.html"><span class="cat video">Video</span><h3>Where Is Kling 4.0 Cheapest?</h3><p>Kling vs Higgsfield vs Runway vs APIs</p></a></li>\n      <li class="reveal"><a class="art" href="/pages/cheapest-way-to-use-seedance-2-5-2026.html"><span class="cat video">Video</span><h3>Where Is Seedance 2.5 Cheapest?</h3><p>CapCut vs Higgsfield vs Luma vs Pika</p></a></li>')],
     # Project calculator (2026-11-10)
     "index.html#project": [('<a class="btn btn-ghost" href="/calculator.html">Calculator</a>', '<a class="btn btn-ghost" href="/calculator.html">Calculator</a>\n        <a class="btn btn-ghost" href="/project.html">Project calculator</a>')],
     # HeyGen alternatives (2026-11-10)
@@ -813,7 +815,13 @@ def answer_box(name, tool):
     a += f", or {cents(y)} a month if you pay yearly" if y and y < lo["monthly_price_usd"] else ""
     if lo is not hi:
         a += f". The biggest plan, {hi['name']}, is {cents(hi['monthly_price_usd'])} a month"
-    a += ". " + ("There is also a free plan." if free_plan(tool) else "There is no free plan.")
+    info = load_tool_info().get(name) or {}
+    if free_plan(tool):
+        a += ". There is also a free plan."
+    elif info.get("free"):
+        a += ". There is a free option with limited use (see below)."
+    else:
+        a += ". There is no free plan."
     checked = (tool.get("checked") or "")[:10]
     src = tool.get("source") or ""
     if "costbench" in src:
@@ -1247,6 +1255,10 @@ EMERGING_MODELS = [
     ("Seedance", "/pages/seedance.html", "ByteDance's video model. You don't subscribe to Seedance itself: you use it inside other tools, and the price per clip differs a lot between them.",
      "/pages/cheapest-way-to-use-seedance-2-5-2026.html", "Where Seedance 2.5 is cheapest"),
     ("Wan", "/pages/wan.html", "Alibaba's open video model, offered by several hosts and through APIs. Price depends on where you run it.", None, None),
+    ("Kling 4.0", "/pages/kling.html", "Kuaishou's newest video model, open to everyone since October 15, 2026: 3 to 30-second clips with sound made together with the picture. Also on Higgsfield, Runway and APIs, at very different prices per clip.",
+     "/pages/cheapest-way-to-use-kling-4-0-2026.html", "Where Kling 4.0 is cheapest"),
+    ("Gemini Omni 1.2 Flash", None, "Google's newest video model (November 5, 2026): clips up to 15 seconds with sound, and you can extend them to 30. On the Gemini API it costs $0.07 per second at 720p, about $0.35 for a 5-second clip. In the Gemini app it is rolling out to Google AI Ultra subscribers.", None, None),
+    ("GPT Image 2.6", None, "OpenAI's newest image models, Flare (fast) and Sunburst (November 4, 2026). Besides still images they make animated GIFs, editable SVG vectors and PNGs with a transparent background. In ChatGPT on all plans; on the API about $0.03 to $0.05 per 1024x1024 image, from low to high quality.", None, None),
 ]
 SECTION_TITLE = {"video": "Video & avatar", "image": "Image", "voice": "Voice", "music": "Music"}
 
@@ -1307,7 +1319,8 @@ def emerging_page(tools, report):
                  'you pay for them inside another tool.</p><div class="cards">')
     for name, page, desc, link, label in EMERGING_MODELS:
         more = f'<p><a href="{link}">{label} →</a></p>' if link else ""
-        parts.append(f'<div class="card"><h3><a href="{page}">{name}</a></h3><p>{html.escape(desc)}</p>{more}</div>')
+        title = f'<a href="{page}">{name}</a>' if page else name
+        parts.append(f'<div class="card"><h3>{title}</h3><p>{html.escape(desc)}</p>{more}</div>')
     parts.append("</div></div>")
     parts.append(f'<p class="note">Updated {now.strftime("%Y-%m-%d")}. Prices change often; always confirm on the official site before you pay. '
                  f'See every tool on the <a href="/#platforms">video</a>, <a href="/image.html">image</a>, '

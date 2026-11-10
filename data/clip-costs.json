@@ -1,6 +1,6 @@
 {
  "about": "Credits one video clip costs on each tool. Kept by hand: the daily job does not change this file. Used for the 'per clip' cost on plan cards and for the 'Real-world example' boxes in articles. 'clips' maps clip length in seconds to credits. 'only_plans' limits the clip cost to plans that include that model. 'plan_credits' fills in a plan's credits when the price data has none. A tool that is not listed gets no clip estimate (better than a wrong one). 'options' lists other models and resolutions; the first one is the default.",
- "updated": "2026-11-08",
+ "updated": "2026-11-10",
  "tools": {
   "Runway": {
    "model": "Gen-4.5",
@@ -210,8 +210,23 @@
       "5": 60,
       "10": 120
      }
+    },
+    {
+     "model": "Kling 4.0, 720p, with audio",
+     "clips": {
+      "5": 50,
+      "10": 100
+     }
+    },
+    {
+     "model": "Kling 4.0, 1080p, with audio",
+     "clips": {
+      "5": 75,
+      "10": 150
+     }
     }
-   ]
+   ],
+   "note": "Kling 4.0: about 10 credits per second at 720p and 15 at 1080p, sound included (read off the generate button by Genie Artificiel, 2026-10-16; Kling's pricing page doesn't list it)."
   },
   "Hailuo AI": {
    "model": "MiniMax H3, 768p",
@@ -256,7 +271,7 @@
    "checked": "2026-11-07",
    "official": true,
    "rough": true,
-   "note": "Higgsfield's own estimates: about 14 credits per Kling 3.0 video; Plus lists 80 Seedance 2.5 videos on 1,200 credits. Clip length not stated.",
+   "note": "Higgsfield's own estimates: about 14 credits per Kling 3.0 video; Plus lists 80 Seedance 2.5 videos on 1,200 credits. Clip length not stated. Kling 4.0: 25 credits per 5 s at 720p, 37.5 at 1080p (higgsfield.ai/blog/kling-4-0-on-higgsfield).",
    "options": [
     {
      "model": "Kling 3.0",
@@ -268,6 +283,20 @@
      "model": "Seedance 2.5",
      "clips": {
       "5": 15
+     }
+    },
+    {
+     "model": "Kling 4.0, 720p",
+     "clips": {
+      "5": 25,
+      "30": 150
+     }
+    },
+    {
+     "model": "Kling 4.0, 1080p",
+     "clips": {
+      "5": 37.5,
+      "30": 225
      }
     }
    ]
