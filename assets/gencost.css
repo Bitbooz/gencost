@@ -519,3 +519,5 @@ main.page { padding-bottom: 24px; }
 
 /* Embed box on tool pages */
 .prose .embed-box textarea.embed-code { width: 100%; box-sizing: border-box; font: 12px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: rgba(255,255,255,.04); color: inherit; border: 1px solid rgba(255,255,255,.12); border-radius: 8px; padding: 10px 12px; resize: vertical; margin: 6px 0 10px; }
+.prose .embed-box .embed-preview { margin: 6px 0 14px; }
+.prose .embed-box .embed-label { margin: 12px 0 4px; }

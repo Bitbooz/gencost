@@ -965,8 +965,12 @@ def embed_box(name, tool):
     return BeautifulSoup(f"""<section class="card embed-box" data-auto="embed">
 <h2>Put these prices on your site</h2>
 <p>Writing about {html.escape(name)}? Paste this code into your page and a small price table appears, updated every morning. Free, no sign-up. For a dark site, add <code>data-theme="dark"</code> to the first line.</p>
+<p class="note embed-label">This is what it looks like on your site (light version):</p>
+<div class="gencost-prices embed-preview" data-tool="{html.escape(name)}" data-cat="{tool["category"]}"></div>
+<p class="note embed-label">The code:</p>
 <textarea class="embed-code" readonly rows="5" aria-label="Embed code for {html.escape(name)} prices">{html.escape(snippet)}</textarea>
 <button type="button" class="btn btn-primary" data-copy>Copy code</button>
+<script src="/embed.js" async></script>
 </section>""", PARSER).find("section")
 
 
