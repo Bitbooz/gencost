@@ -9,21 +9,21 @@
       "offer": ""
     },
     {
-      "name": "Frontier 2x",
+      "name": "Frontier",
       "monthly_price_usd": 69.99,
       "credits_or_minutes": 1400,
       "unit": "credits",
       "offer": ""
     },
     {
-      "name": "Frontier 4x",
+      "name": "Frontier 2x",
       "monthly_price_usd": 139.99,
       "credits_or_minutes": 2800,
       "unit": "credits",
       "offer": ""
     },
     {
-      "name": "Frontier",
+      "name": "Frontier 4x",
       "monthly_price_usd": 279.99,
       "credits_or_minutes": 5600,
       "unit": "credits",
@@ -31,5 +31,5 @@
     }
   ],
   "source": "https://www.captions.ai/pricing",
-  "last_checked": "2026-11-10 20:36"
+  "last_checked": "2026-11-10 21:27"
 }

@@ -580,6 +580,12 @@ Proofread in Gmail
 Help me generate video in Vids
 Take notes for me in Google Meet
 13
+Gmail Live
+14
+Docs Live
+14
+Keep Live
+15
 Google Pics
 Gemini Notebook
 Usage limits
@@ -678,7 +684,7 @@ Expanded
 Higher
 Highest
 Google Finance
-14
+16
 Deep Search in Google Finance
 More
 Expanded
@@ -937,6 +943,10 @@ terms apply. These student offers provide students with discounted pricing and b
 full list of countries
 .
 14.
+Gmail Live and Docs Live is available to Google AI Pro and Ultra subscribers on iOS & Android in the US.
+15.
+Keep Live is available to Google AI Pro and Ultra subscribers on IOS in the US.
+16.
 Deep Search in Google Finance is only available in the US.
 About Google
 Google products

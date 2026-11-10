@@ -1,6 +1,6 @@
-SEO check 2026-11-10 20:44
-130 pages checked, 111 changed today, 104 in sitemap.xml, 25 marked noindex
-Made by this script: 92 canonical links, 25 descriptions; today: 0 links moved to the main page, 0 titles fixed
+SEO check 2026-11-10 21:34
+131 pages checked, 113 changed today, 105 in sitemap.xml, 25 marked noindex
+Made by this script: 93 canonical links, 25 descriptions; today: 0 links moved to the main page, 0 titles fixed
 
 Needs a human:
   ai.html: title is 76 characters (Google shows about 60)
@@ -17,3 +17,4 @@ Needs a human:
   pages/samples/cheapest-ai-music-generators-in-2026-suno-vs-udio-vs-soundraw-vs-aiva-vs-boomy.html: title is 79 characters (Google shows about 60)
   pages/samples/cheapest-ai-video-upscaling-enhancement-tools-in-2026-topaz-vs-magnific-vs-runway-vs-capcut.html: title is 80 characters (Google shows about 60)
   pages/samples/runway-vs-pika-vs-luma-cheapest-ai-video-generator-for-youtube-shorts-in-2026.html: title is 77 characters (Google shows about 60)
+  project.html: title is 92 characters (Google shows about 60)

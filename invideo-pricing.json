@@ -7,7 +7,7 @@
       "yearly_price_usd": 10,
       "credits_or_minutes": 400,
       "unit": "credits",
-      "offer": ""
+      "offer": "50% off"
     },
     {
       "name": "Plus",
@@ -15,7 +15,7 @@
       "yearly_price_usd": 30,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": ""
+      "offer": "50% off"
     },
     {
       "name": "Max",
@@ -23,9 +23,9 @@
       "yearly_price_usd": 75,
       "credits_or_minutes": 5000,
       "unit": "credits",
-      "offer": ""
+      "offer": "50% off"
     }
   ],
   "source": "https://invideo.io/pricing",
-  "last_checked": "2026-11-10 20:34"
+  "last_checked": "2026-11-10 21:25"
 }
