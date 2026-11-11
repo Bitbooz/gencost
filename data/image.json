@@ -1,6 +1,6 @@
 {
  "category": "image",
- "updated": "2026-11-11 22:18",
+ "updated": "2026-11-11 22:49",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -18,7 +18,7 @@
    "name": "Midjourney",
    "page": "/pages/midjourney.html",
    "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-   "checked": "2026-11-11 22:17",
+   "checked": "2026-11-11 22:47",
    "plans": [
     {
      "name": "Basic",
@@ -67,8 +67,8 @@
     "checked": "2026-06-05",
     "official": false
    },
-   "source_checked": "2026-11-11 22:17",
-   "price_verified": "2026-11-11 22:17"
+   "source_checked": "2026-11-11 22:47",
+   "price_verified": "2026-11-11 22:47"
   },
   {
    "name": "Leonardo",
@@ -128,7 +128,7 @@
    "name": "Ideogram",
    "page": "/pages/ideogram.html",
    "source": "https://ideogram.ai/pricing",
-   "checked": "2026-11-11 22:17",
+   "checked": "2026-11-11 22:47",
    "plans": [
     {
      "name": "Plus",
@@ -147,6 +147,15 @@
      "unit": "credits",
      "offer": "",
      "credits_period": "month"
+    },
+    {
+     "name": "Team",
+     "monthly_price_usd": 30,
+     "yearly_price_usd": 20,
+     "credits_or_minutes": 3600,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
     }
    ],
    "hidden": {
@@ -158,8 +167,8 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 22:17",
-   "price_verified": "2026-11-11 22:17"
+   "source_checked": "2026-11-11 22:47",
+   "price_verified": "2026-11-11 22:47"
   },
   {
    "name": "Adobe Firefly",
@@ -224,7 +233,7 @@
    "name": "Recraft",
    "page": "/pages/recraft.html",
    "source": "https://www.recraft.ai/pricing",
-   "checked": "2026-11-11 22:18",
+   "checked": "2026-11-11 22:48",
    "plans": [
     {
      "name": "Basic",
@@ -255,14 +264,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 22:18",
-   "price_verified": "2026-11-11 22:18"
+   "source_checked": "2026-11-11 22:48",
+   "price_verified": "2026-11-11 22:48"
   },
   {
    "name": "Freepik",
    "page": "/pages/freepik.html",
    "source": "https://www.freepik.com/pricing",
-   "checked": "2026-11-11 22:18",
+   "checked": "2026-11-11 22:48",
    "plans": [
     {
      "name": "Premium",
@@ -319,14 +328,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 22:18",
-   "price_verified": "2026-11-11 22:18"
+   "source_checked": "2026-11-11 22:48",
+   "price_verified": "2026-11-11 22:48"
   },
   {
    "name": "OpenArt",
    "page": "/pages/openart.html",
    "source": "https://openart.ai/pricing",
-   "checked": "2026-11-11 22:18",
+   "checked": "2026-11-11 22:49",
    "plans": [
     {
      "name": "Starter",
@@ -374,8 +383,8 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 22:18",
-   "price_verified": "2026-11-11 22:18"
+   "source_checked": "2026-11-11 22:49",
+   "price_verified": "2026-11-11 22:49"
   },
   {
    "name": "NightCafe",

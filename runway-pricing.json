@@ -14,7 +14,7 @@
       "yearly_price_usd": 12,
       "credits_or_minutes": 625,
       "unit": "credits",
-      "offer": "25% off Kling 4.0 until Nov 30"
+      "offer": ""
     },
     {
       "name": "Pro",
@@ -22,7 +22,7 @@
       "yearly_price_usd": 28,
       "credits_or_minutes": 2250,
       "unit": "credits",
-      "offer": "25% off Kling 4.0 until Nov 30"
+      "offer": ""
     },
     {
       "name": "Max",
@@ -30,9 +30,9 @@
       "yearly_price_usd": 76,
       "credits_or_minutes": 9500,
       "unit": "credits",
-      "offer": "25% off Kling 4.0 until Nov 30"
+      "offer": ""
     }
   ],
   "source": "https://runwayml.com/pricing",
-  "last_checked": "2026-11-11 22:09"
+  "last_checked": "2026-11-11 22:39"
 }

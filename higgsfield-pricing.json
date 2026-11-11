@@ -14,7 +14,7 @@
       "yearly_price_usd": 35,
       "credits_or_minutes": 1200,
       "unit": "credits",
-      "offer": "14-day unlimited Seedance 2.5, 60-day unlimited Nano Banana Pro"
+      "offer": "14-day unlimited Seedance 2.5, 60-day unlimited models"
     },
     {
       "name": "Ultra",
@@ -22,9 +22,9 @@
       "yearly_price_usd": 65,
       "credits_or_minutes": 3000,
       "unit": "credits",
-      "offer": "14-day unlimited Seedance 2.5, 60-day unlimited Nano Banana Pro"
+      "offer": "14-day unlimited Seedance 2.5, 60-day unlimited models"
     }
   ],
   "source": "https://higgsfield.ai/pricing",
-  "last_checked": "2026-11-11 22:09"
+  "last_checked": "2026-11-11 22:38"
 }

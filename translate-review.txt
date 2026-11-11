@@ -1,6 +1,12 @@
-2026-11-11 21:22  Español (/es/): 105 of 106 pages, stored translations: 3242, JavaScript texts: 411/411
-2026-11-11 21:22  Português (/pt/): 105 of 106 pages, stored translations: 3229, JavaScript texts: 411/411
-2026-11-11 21:22  Deutsch (/de/): 105 of 106 pages, stored translations: 3216, JavaScript texts: 411/411
-2026-11-11 21:22  Français (/fr/): 105 of 106 pages, stored translations: 3202, JavaScript texts: 411/411
-2026-11-11 21:22  العربية (/ar/): 105 of 106 pages, stored translations: 3183, JavaScript texts: 410/411
+2026-11-11 21:56  Español (/es/): 105 of 106 pages, stored translations: 3248, JavaScript texts: 408/408
+2026-11-11 21:56  Português (/pt/): 105 of 106 pages, stored translations: 3240, JavaScript texts: 408/408
+2026-11-11 21:56  Deutsch (/de/): 105 of 106 pages, stored translations: 3232, JavaScript texts: 408/408
+2026-11-11 21:56  Français (/fr/): 105 of 106 pages, stored translations: 3222, JavaScript texts: 408/408
+2026-11-11 21:56  العربية (/ar/): 105 of 106 pages, stored translations: 3208, JavaScript texts: 407/408
   - translation did not keep the tags or numbers, kept English: Kling [[0]]: [[1]] credits per [[2]]s. Higgsfield's own estimates: abo
+2026-11-11 21:56  עברית (/he/): 104 of 106 pages, stored translations: 3151, JavaScript texts: 408/408
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and the
+  - translation did not keep the tags or numbers, kept English: If you just want to mess around and make a few songs a month, <t0>Suno
+  - translation did not keep the tags or numbers, kept English: <t0>Failed tries cost the same.</t0> If you usually need [[0]] tries f
+  - translation did not keep the tags or numbers, kept English: Sources: Kling AI's and Google's official pricing pages, read [[0]]-[[
+  - pages/cheapest-ai-music-tools-in-2026.html: only 89% translated, not published yet
