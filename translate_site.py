@@ -242,7 +242,7 @@ class AttrUnit:
 def collect_attr_units(soup):
     units = []
     for el in soup.find_all(True):
-        if el.name in ("script", "style", "textarea"):
+        if el.name in ("script", "style", "textarea") or "lang-switch" in (el.get("class") or []):
             continue
         for a in ATTRS:
             if el.get(a):
