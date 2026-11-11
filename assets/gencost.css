@@ -546,7 +546,7 @@ main.page { padding-bottom: 24px; }
 .lang-menu summary::-webkit-details-marker { display: none; }
 .lang-menu summary::after { content: "▾"; margin-left: 6px; font-size: 0.7rem; opacity: 0.7; }
 .lang-menu[open] summary, .lang-menu summary:hover { color: #fff; border-color: rgba(255,255,255,0.35); }
-.lang-list { position: absolute; right: 0; top: calc(100% + 8px); z-index: 60; min-width: 160px; display: flex; flex-direction: column; gap: 2px; padding: 6px; background: #121219; border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; box-shadow: 0 12px 30px rgba(0,0,0,0.45); }
+.lang-list { position: absolute; right: 0; top: calc(100% + 8px); z-index: 60; min-width: 180px; max-height: min(70vh, 520px); overflow-y: auto; overscroll-behavior: contain; display: flex; flex-direction: column; gap: 2px; padding: 6px; background: #121219; border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; box-shadow: 0 12px 30px rgba(0,0,0,0.45); }
 .lang-list .lang-switch { border: 0; margin: 0; padding: 9px 12px; border-radius: 8px; letter-spacing: 0.02em; font-weight: 500; color: #e8e8f0; }
 .lang-list .lang-switch:hover { background: rgba(255,255,255,0.07); }
 .lang-switch:hover { color: #fff; border-color: rgba(255,255,255,0.35); }
@@ -578,5 +578,9 @@ main.page { padding-bottom: 24px; }
 
 /* Japanese: Japanese font, no tight letter-spacing, break lines between characters */
 :lang(ja) body, :lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) .prose h1, :lang(ja) .prose h2 { font-family: 'Inter', 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', system-ui, sans-serif; letter-spacing: 0; }
-:lang(zh) body, :lang(zh) h1, :lang(zh) h2, :lang(zh) h3, :lang(zh) .prose h1, :lang(zh) .prose h2 { font-family: 'Inter', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', system-ui, sans-serif; letter-spacing: 0; }
+:lang(ko) body, :lang(ko) h1, :lang(ko) h2, :lang(ko) h3, :lang(ko) .prose h1, :lang(ko) .prose h2 { font-family: 'Inter', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif; letter-spacing: 0; }
+:lang(ko) .prose p, :lang(ko) .prose li, :lang(ko) .prose td, :lang(ko) h1, :lang(ko) h2 { word-break: keep-all; overflow-wrap: anywhere; }
+:lang(hi) body, :lang(hi) h1, :lang(hi) h2, :lang(hi) h3, :lang(hi) .prose h1, :lang(hi) .prose h2 { font-family: 'Inter', 'Noto Sans Devanagari', system-ui, sans-serif; letter-spacing: 0; }
+:lang(zh-Hans) body, :lang(zh-Hans) h1, :lang(zh-Hans) h2, :lang(zh-Hans) h3 { font-family: 'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif; letter-spacing: 0; }
+:lang(zh-Hant) body, :lang(zh-Hant) h1, :lang(zh-Hant) h2, :lang(zh-Hant) h3, :lang(zh-Hant) .prose h1, :lang(zh-Hant) .prose h2 { font-family: 'Inter', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', system-ui, sans-serif; letter-spacing: 0; }
 :lang(ja) .prose p, :lang(ja) .prose li, :lang(ja) .prose td, :lang(zh) .prose p, :lang(zh) .prose li, :lang(zh) .prose td { line-break: strict; word-break: normal; overflow-wrap: anywhere; }

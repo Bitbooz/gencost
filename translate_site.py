@@ -66,10 +66,37 @@ LANGS = {
     "ru": {"html": "ru", "hreflang": "ru", "name": "Русский", "label": "RU",
            "rules": 'Write natural modern Russian, as Russian-language tech sites do. Use "вы" (lowercase). Keep tool, model and plan names in Latin letters.',
            "words": '"credits" -> "кредиты". "/mo" -> "/мес", "per month" -> "в месяц", "billed yearly"/"paid yearly" -> "при оплате за год". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 октября 2026".'},
-    "zh-tw": {"html": "zh-Hant", "hreflang": "zh-TW", "also": ["zh-HK"], "name": "繁體中文", "label": "ZH",
+    "zh-tw": {"html": "zh-Hant", "hreflang": "zh-TW", "also": ["zh-HK"], "name": "繁體中文", "label": "繁",
               "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap",
               "rules": 'Write Traditional Chinese (繁體中文) as used in Taiwan and Hong Kong, natural and clear, as Taiwanese tech sites write. Never use Simplified characters. Keep tool, model and plan names in Latin letters.',
               "words": '"credits" -> "點數". "/mo" -> "/月", "per month" -> "每月", "billed yearly"/"paid yearly" -> "年繳". Prices stay in US dollars, written with the [[n]] tokens. Dates in running text: "October 15, 2026" -> "2026年10月15日".'},
+    "ko": {"html": "ko", "hreflang": "ko", "name": "한국어", "label": "KO",
+           "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap",
+           "rules": 'Write natural Korean in the polite 합니다/습니다 style used by Korean tech sites. Keep tool, model and plan names in Latin letters.',
+           "words": '"credits" -> "크레딧". "/mo" -> "/월", "per month" -> "월", "billed yearly"/"paid yearly" -> "연간 결제". Prices stay in US dollars, written with the [[n]] tokens. Dates in running text: "October 15, 2026" -> "2026년 10월 15일".'},
+    "id": {"html": "id", "hreflang": "id", "name": "Bahasa Indonesia", "label": "ID",
+           "rules": 'Write natural, friendly Indonesian (Bahasa Indonesia) as Indonesian tech and creator sites do. Use "kamu".',
+           "words": '"credits" -> "kredit". "/mo" -> "/bulan", "per month" -> "per bulan", "billed yearly"/"paid yearly" -> "jika bayar tahunan". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 Oktober 2026".'},
+    "tr": {"html": "tr", "hreflang": "tr", "name": "Türkçe", "label": "TR",
+           "rules": 'Write natural Turkish as Turkish tech sites do. Use the informal "sen" form.',
+           "words": '"credits" -> "kredi". "/mo" -> "/ay", "per month" -> "aylık", "billed yearly"/"paid yearly" -> "yıllık ödemede". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 Ekim 2026".'},
+    "hi": {"html": "hi", "hreflang": "hi", "name": "हिन्दी", "label": "HI",
+           "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700&display=swap",
+           "rules": 'Write simple, natural Hindi in Devanagari, as Indian tech sites and creators write. Common English tech words (AI, video, plan, app) may stay in English where Hindi readers use them. Keep tool, model and plan names in Latin letters. Use "आप".',
+           "words": '"credits" -> "क्रेडिट". "/mo" -> "/महीना", "per month" -> "प्रति माह", "billed yearly"/"paid yearly" -> "सालाना भुगतान पर". Prices stay in US dollars, written with the [[n]] tokens.'},
+    "vi": {"html": "vi", "hreflang": "vi", "name": "Tiếng Việt", "label": "VI",
+           "rules": 'Write natural Vietnamese as Vietnamese tech sites do. Use "bạn".',
+           "words": '"credits" -> "tín dụng". "/mo" -> "/tháng", "per month" -> "mỗi tháng", "billed yearly"/"paid yearly" -> "khi thanh toán theo năm". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 tháng 10, 2026".'},
+    "pl": {"html": "pl", "hreflang": "pl", "name": "Polski", "label": "PL",
+           "rules": 'Write natural Polish as Polish tech sites do. Address the reader informally ("ty").',
+           "words": '"credits" -> "kredyty". "/mo" -> "/mies.", "per month" -> "miesięcznie", "billed yearly"/"paid yearly" -> "przy płatności rocznej". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 października 2026".'},
+    "uk": {"html": "uk", "hreflang": "uk", "name": "Українська", "label": "UK",
+           "rules": 'Write natural modern Ukrainian as Ukrainian tech sites do (never Russian words). Use "ви". Keep tool, model and plan names in Latin letters.',
+           "words": '"credits" -> "кредити". "/mo" -> "/міс", "per month" -> "на місяць", "billed yearly"/"paid yearly" -> "при оплаті за рік". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 жовтня 2026".'},
+    "zh": {"html": "zh-Hans", "hreflang": "zh-SG", "also": ["zh-MY", "zh"], "name": "简体中文", "label": "简",
+           "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap",
+           "rules": 'Write Simplified Chinese (简体中文), natural and clear, for readers in Singapore, Malaysia and around the world. Keep tool, model and plan names in Latin letters.',
+           "words": '"credits" -> "积分". "/mo" -> "/月", "per month" -> "每月", "billed yearly"/"paid yearly" -> "按年付费". Prices stay in US dollars, written with the [[n]] tokens. Dates in running text: "October 15, 2026" -> "2026年10月15日".'},
 }
 CODE = LANG = OUT = CACHE_FILE = UI_FILE = None
 
@@ -86,7 +113,9 @@ MIN_COVERAGE = 0.9
 MAX_BATCHES = 150          # Grok calls per run at most (the first run translates the most)
 BATCH_CHARS = 7000
 BATCH_ITEMS = 40
-WORKERS = 6               # Grok calls at the same time
+WORKERS = 8               # Grok calls at the same time
+TIME_BUDGET = 4 * 3600    # stop asking Grok after this many seconds; the rest is done the next day
+START = time.time()       # (GitHub stops a run after 6 hours, and then nothing would be saved)
 MODEL = "grok-3"
 API_KEY = (os.getenv("XAI_API_KEY") or "").strip()
 
@@ -325,7 +354,9 @@ def grok_translate(items):
     client = OpenAI(api_key=API_KEY, base_url="https://api.x.ai/v1", timeout=180)
     r = client.chat.completions.create(
         model=MODEL, temperature=0,
-        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew", "it": "Italian", "ja": "Japanese", "ru": "Russian", "zh-tw": "Traditional Chinese (Taiwan and Hong Kong)"}.get(CODE, LANGS[CODE]["name"]),
+        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew", "it": "Italian", "ja": "Japanese", "ru": "Russian", "zh-tw": "Traditional Chinese (Taiwan and Hong Kong)",
+                                                                     "ko": "Korean", "id": "Indonesian", "tr": "Turkish", "hi": "Hindi",
+                                                                     "vi": "Vietnamese", "pl": "Polish", "uk": "Ukrainian", "zh": "Simplified Chinese"}.get(CODE, LANGS[CODE]["name"]),
                                                             rules=LANGS[CODE]["rules"], words=LANGS[CODE]["words"])
                    + json.dumps(items, ensure_ascii=False)}])
     text = r.choices[0].message.content.strip()
@@ -359,6 +390,8 @@ def translate_missing(keys, cache, translator, report):
         batches.append(cur)
     def one(batch):
         items = {str(i): k for i, k in enumerate(batch)}
+        if time.time() - START > TIME_BUDGET:
+            return items, {}, "time limit"
         for attempt in range(3):
             try:
                 return items, translator(items), None
@@ -371,7 +404,10 @@ def translate_missing(keys, cache, translator, report):
     from concurrent.futures import ThreadPoolExecutor
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
         for n, (items, got, err) in enumerate(pool.map(one, batches[:MAX_BATCHES])):
-            if err:
+            if err == "time limit":
+                if not any("time limit" in r for r in report):
+                    report.append("time limit reached: the rest is translated in the next run")
+            elif err:
                 report.append(f"batch {n + 1}: {err}")
             for i, k in items.items():
                 v = got.get(i)
