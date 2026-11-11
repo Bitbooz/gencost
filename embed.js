@@ -19,8 +19,8 @@
     return "$" + (v % 1 ? v.toFixed(2) : String(v));
   }
   function esc(s) {
-    return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
   }
   function load(cat) {
@@ -43,7 +43,7 @@
         (hasYearly ? "<td>" + (p.yearly_price_usd ? money(p.yearly_price_usd) + "/mo" : "&ndash;") + "</td>" : "") +
         "<td>" + inc + "</td></tr>";
     }).join("");
-    var page = BASE + (tool.page || "/");
+    var page = esc(BASE + (/^\/[\w\/.-]*$/.test(tool.page || "") ? tool.page : "/"));
     var c = dark
       ? { bg: "#111318", fg: "#e8eaf0", mute: "#9aa3b2", line: "#262a33", head: "#181b22", link: "#5cc8ff" }
       : { bg: "#ffffff", fg: "#1b1f27", mute: "#5b6472", line: "#e3e6eb", head: "#f5f7fa", link: "#0a66c2" };

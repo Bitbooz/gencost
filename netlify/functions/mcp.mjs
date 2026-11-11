@@ -223,10 +223,14 @@ export default async (req) => {
       { status: 200, headers: { ...CORS, "Content-Type": "application/json" } });
   }
   if (req.method !== "POST") return new Response("Method not allowed", { status: 405, headers: { ...CORS, Allow: "POST, GET, OPTIONS" } });
+  if (Number(req.headers.get("content-length") || 0) > 64 * 1024)
+    return Response.json(rpcError(null, -32600, "Request too large"), { status: 413, headers: CORS });
   let body;
   try { body = await req.json(); } catch { return Response.json(rpcError(null, -32700, "Parse error"), { status: 400, headers: CORS }); }
-  const base = new URL(req.url).origin;
+  // Always read prices from GenCost itself, never from the address the request came in on
+  const base = SITE;
   const msgs = Array.isArray(body) ? body : [body];
+  if (msgs.length > 20) return Response.json(rpcError(null, -32600, "Too many requests in one batch (max 20)"), { status: 400, headers: CORS });
   const replies = (await Promise.all(msgs.map((m) => handle(m, base)))).filter(Boolean);
   if (!replies.length) return new Response(null, { status: 202, headers: CORS });
   return Response.json(Array.isArray(body) ? replies : replies[0], { headers: CORS });

@@ -1,3 +1,9 @@
+# Basic security headers for every page
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
 # Let other websites use the free GenCost price box (embed.js reads these files)
 /data/*
   Access-Control-Allow-Origin: *
