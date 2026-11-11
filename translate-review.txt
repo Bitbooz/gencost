@@ -1,18 +1,19 @@
-2026-11-11 22:28  Español (/es/): 105 of 106 pages, stored translations: 3250, JavaScript texts: 404/404
-2026-11-11 22:28  Português (/pt/): 105 of 106 pages, stored translations: 3243, JavaScript texts: 404/404
-2026-11-11 22:28  Deutsch (/de/): 105 of 106 pages, stored translations: 3236, JavaScript texts: 404/404
-2026-11-11 22:28  Français (/fr/): 105 of 106 pages, stored translations: 3227, JavaScript texts: 404/404
-2026-11-11 22:28  العربية (/ar/): 105 of 106 pages, stored translations: 3220, JavaScript texts: 404/404
-2026-11-11 22:28  עברית (/he/): 105 of 106 pages, stored translations: 3184, JavaScript texts: 403/404
-  - translation did not keep the tags or numbers, kept English: Students get Google AI Pro free for [[0]] year
-2026-11-11 22:28  Italiano (/it/): 105 of 106 pages, stored translations: 3146, JavaScript texts: 404/404
-  - translation did not keep the tags or numbers, kept English: A [[0]] pricing breakdown of Kling, Runway, Pika, and Luma — including
-2026-11-11 22:28  日本語 (/ja/): 104 of 106 pages, stored translations: 3140, JavaScript texts: 404/404
-  - translation did not keep the tags or numbers, kept English: Meta took over the PlayHT team in mid-[[0]]. The PlayHT API stopped wo
-  - translation did not keep the tags or numbers, kept English: AI video tools sell credits, not seconds, so it is hard to know what a
-  - translation did not keep the tags or numbers, kept English: <t0>Real-world example</t0><t1/> [[0]] × [[1]]-second videos per month
-  - translation did not keep the tags or numbers, kept English: <t0>Plan size.</t0> Bigger plans give more credits per dollar: Kling g
-  - translation did not keep the tags or numbers, kept English: Buying from Kling directly is the cheapest way to use its newest model
-  - translation did not keep the tags or numbers, kept English: Per clip, Veo Fast is cheaper than Kling [[0]] on every Kling plan. Bu
+2026-11-11 23:16  Español (/es/): 105 of 106 pages, stored translations: 3257, JavaScript texts: 400/400
+2026-11-11 23:16  Português (/pt/): 105 of 106 pages, stored translations: 3250, JavaScript texts: 400/400
+2026-11-11 23:16  Deutsch (/de/): 105 of 106 pages, stored translations: 3243, JavaScript texts: 400/400
+2026-11-11 23:16  Français (/fr/): 105 of 106 pages, stored translations: 3234, JavaScript texts: 400/400
+2026-11-11 23:16  العربية (/ar/): 105 of 106 pages, stored translations: 3227, JavaScript texts: 400/400
+2026-11-11 23:16  עברית (/he/): 105 of 106 pages, stored translations: 3201, JavaScript texts: 400/400
+2026-11-11 23:16  Italiano (/it/): 105 of 106 pages, stored translations: 3166, JavaScript texts: 400/400
+2026-11-11 23:16  日本語 (/ja/): 105 of 106 pages, stored translations: 3166, JavaScript texts: 400/400
+2026-11-11 23:16  Русский (/ru/): 105 of 106 pages, stored translations: 3145, JavaScript texts: 400/400
+  - translation did not keep the tags or numbers, kept English: <t0>Cheapest AI Image Generators in [[0]]: What You Really Get for You
+  - translation did not keep the tags or numbers, kept English: For most creators, Canva's free plan combined with a free AI image gen
+2026-11-11 23:16  繁體中文 (/zh-tw/): 104 of 106 pages, stored translations: 3141, JavaScript texts: 399/400
+  - translation did not keep the tags or numbers, kept English: * Measured in the Kling app; Kling's pricing page doesn't list it. Kli
+  - translation did not keep the tags or numbers, kept English: OpenArt offers Kling [[0]] at [[1]]% off on its Pro and Wonder plans u
+  - translation did not keep the tags or numbers, kept English: Monthly prices update automatically every morning. Clip costs were wor
+  - translation did not keep the tags or numbers, kept English: The sticker price of an AI video tool is not what B-roll costs you. Mo
   - translation did not keep the tags or numbers, kept English: New &amp; Emerging AI Tools (November [[0]]): Prices in Real Dollars |
-  - pages/cheapest-ai-video-cost-per-second-2026.html: only 86% translated, not published yet
+  - translation did not keep the tags or numbers, kept English: Kling [[0]]: [[1]] credits per [[2]]s. Higgsfield's own estimates: abo
+  - pages/samples/cheapest-ai-b-roll-generators-for-youtube-2026.html: only 54% translated, not published yet

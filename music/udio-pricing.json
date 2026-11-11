@@ -10,19 +10,21 @@
     },
     {
       "name": "Standard",
-      "monthly_price_usd": 8,
+      "monthly_price_usd": 10,
+      "yearly_price_usd": 8,
       "credits_or_minutes": 2400,
       "unit": "credits",
       "offer": ""
     },
     {
       "name": "Pro",
-      "monthly_price_usd": 24,
+      "monthly_price_usd": 30,
+      "yearly_price_usd": 24,
       "credits_or_minutes": 6000,
       "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://www.udio.com/pricing",
-  "last_checked": "2026-11-11 23:09"
+  "last_checked": "2026-11-11 23:58"
 }

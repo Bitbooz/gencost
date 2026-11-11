@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="將 GenCost 連接到 Claude、ChatGPT、Cursor 或任何 MCP 用戶端，即可查詢今日 AI 工具的美元價格。免費遠端 MCP 伺服器，無需登入。" name="description"/>
+<title>在 Claude、ChatGPT 與 Cursor 中使用 GenCost：AI 工具價格 MCP Server | GenCost</title>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6DHTT2ZTBK');
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;text=GENCOSTExamples&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/gencost.css" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js');</script>
+<script defer="" src="/assets/gencost.js"></script>
+<!-- SEO:START (added by seo_update.py, rebuilt daily) -->
+<link href="https://getgencost.com/zh-tw/ai.html" rel="canonical"/>
+<meta content="GenCost" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="在 Claude、ChatGPT 與 Cursor 中使用 GenCost：AI 工具價格 MCP Server | GenCost" property="og:title"/>
+<meta content="將 GenCost 連接到 Claude、ChatGPT、Cursor 或任何 MCP 用戶端，即可查詢今日 AI 工具的美元價格。免費遠端 MCP 伺服器，無需登入。" property="og:description"/>
+<meta content="https://getgencost.com/zh-tw/ai.html" property="og:url"/>
+<meta content="https://getgencost.com/assets/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="在 Claude、ChatGPT 與 Cursor 中使用 GenCost：AI 工具價格 MCP Server | GenCost" name="twitter:title"/>
+<meta content="將 GenCost 連接到 Claude、ChatGPT、Cursor 或任何 MCP 用戶端，即可查詢今日 AI 工具的美元價格。免費遠端 MCP 伺服器，無需登入。" name="twitter:description"/>
+<meta content="https://getgencost.com/assets/og-image.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://getgencost.com/zh-tw/"}, {"@type": "ListItem", "position": 2, "name": "在 AI 助理中使用"}]}]}</script>
+<!-- SEO:END -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet"/><script defer="" src="/assets/i18n.js"></script><!-- HREFLANG:START -->
+<link rel="alternate" hreflang="en" href="https://getgencost.com/ai.html">
+<link rel="alternate" hreflang="es" href="https://getgencost.com/es/ai.html">
+<link rel="alternate" hreflang="pt" href="https://getgencost.com/pt/ai.html">
+<link rel="alternate" hreflang="de" href="https://getgencost.com/de/ai.html">
+<link rel="alternate" hreflang="fr" href="https://getgencost.com/fr/ai.html">
+<link rel="alternate" hreflang="ar" href="https://getgencost.com/ar/ai.html">
+<link rel="alternate" hreflang="he" href="https://getgencost.com/he/ai.html">
+<link rel="alternate" hreflang="it" href="https://getgencost.com/it/ai.html">
+<link rel="alternate" hreflang="ja" href="https://getgencost.com/ja/ai.html">
+<link rel="alternate" hreflang="ru" href="https://getgencost.com/ru/ai.html">
+<link rel="alternate" hreflang="zh-TW" href="https://getgencost.com/zh-tw/ai.html">
+<link rel="alternate" hreflang="zh-HK" href="https://getgencost.com/zh-tw/ai.html">
+<link rel="alternate" hreflang="x-default" href="https://getgencost.com/ai.html">
+<!-- HREFLANG:END -->
+</head>
+<body class="page-util">
+<nav class="top">
+<div class="wrap">
+<a class="logo grad-text" href="/zh-tw/">GENCOST</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="/zh-tw/#platforms">影片</a></li>
+<li><a data-section="/zh-tw/voice,/zh-tw/pages/voice/" href="/zh-tw/voice.html">語音</a></li>
+<li><a data-section="/zh-tw/music,/zh-tw/pages/music/" href="/zh-tw/music.html">音樂</a></li>
+<li><a data-section="/zh-tw/image" href="/zh-tw/image.html">圖像</a></li>
+<li><a href="/zh-tw/compare.html">比較</a></li>
+<li><a href="/zh-tw/calculator.html">計算器</a></li>
+<li><a href="/zh-tw/#articles">文章</a></li>
+</ul>
+<div class="nav-right">
+
+<details class="lang-menu" translate="no"><summary title="Language">ZH</summary><div class="lang-list"><a class="lang-switch" href="/ai.html" hreflang="en" lang="en">EN · English</a><a class="lang-switch" href="/es/ai.html" hreflang="es" lang="es">ES · Español</a><a class="lang-switch" href="/pt/ai.html" hreflang="pt" lang="pt">PT · Português</a><a class="lang-switch" href="/de/ai.html" hreflang="de" lang="de">DE · Deutsch</a><a class="lang-switch" href="/fr/ai.html" hreflang="fr" lang="fr">FR · Français</a><a class="lang-switch" href="/ar/ai.html" hreflang="ar" lang="ar">AR · العربية</a><a class="lang-switch" href="/he/ai.html" hreflang="he" lang="he">HE · עברית</a><a class="lang-switch" href="/it/ai.html" hreflang="it" lang="it">IT · Italiano</a><a class="lang-switch" href="/ja/ai.html" hreflang="ja" lang="ja">JA · 日本語</a><a class="lang-switch" href="/ru/ai.html" hreflang="ru" lang="ru">RU · Русский</a></div></details>
+
+<a class="btn btn-primary" href="/zh-tw/order.html">訂購方案</a>
+<button aria-expanded="false" aria-label="開啟選單" class="menu-btn" id="menuBtn">☰</button>
+</div>
+</div>
+</nav>
+<header class="page-head">
+<div class="wrap narrow">
+<nav aria-label="麵包屑導航" class="crumbs"><a href="/zh-tw/">首頁</a><span class="sep">/</span><span>在 AI 助理中使用</span></nav>
+</div>
+</header>
+<main class="page">
+<div class="wrap narrow">
+<article class="prose">
+<h1>在 Claude、ChatGPT 與 Cursor 中使用 GenCost</h1>
+<p class="lead">GenCost 提供免費 MCP 伺服器。連線到你的 AI 助理後，當你詢問「Runway 要多少錢？」或「哪個 AI 影片工具每段最便宜？」時，答案會來自今天驗證過的價格，而非模型的記憶。</p>
+<div class="box"><strong>伺服器位址</strong><br/><code>https://getgencost.com/mcp</code><br/>免費、唯讀、無需登入。價格每天早上從各工具的官方定價頁面讀取。</div>
+<h2>你可以問什麼</h2>
+<ul>
+<li>「ElevenLabs 每月要多少錢，有什麼要注意的嗎？」</li>
+<li>「幫我比較 Midjourney、Ideogram 和 Recraft。」</li>
+<li>「哪個 AI 影片工具的 5 秒片段最便宜？」</li>
+<li>「列出有免費方案的 AI 音樂工具。」</li>
+</ul>
+<h2>Claude</h2>
+<p>在 Claude 中，開啟 <strong>設定 → 連接器</strong>，選擇 <strong>新增自訂連接器</strong>，命名為 <em>GenCost</em>，然後貼上上方伺服器位址。接著在聊天工具選單中開啟它。</p>
+<p>在 Claude Code 中執行：</p>
+<pre><code>claude mcp add --transport http gencost https://getgencost.com/mcp</code></pre>
+<h2>ChatGPT</h2>
+<p>如果你的 ChatGPT 方案支援自訂連接器（開發者模式），新增一個連接器並貼上伺服器位址。無需驗證。</p>
+<h2>Cursor、VS Code 與其他 MCP 用戶端</h2>
+<p>將此加入你的 MCP 設定（適用於 Cursor， <code>~/.cursor/mcp.json</code>):</p>
+<pre><code>{ "mcpServers": { "gencost": { "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>工具</h2>
+<div class="table-scroll no-live"><table>
+<thead><tr><th>工具</th><th>功能說明</th></tr></thead>
+<tbody>
+<tr><td><code>list_tools</code></td><td>GenCost 追蹤的所有工具，按類別分類，附上最便宜的付費方案以及是否有免費方案</td></tr>
+<tr><td><code>get_prices</code></td><td>單一工具的方案：每月與年繳價格、點數、每段影片成本、隱藏費用以及價格驗證日期</td></tr>
+<tr><td><code>compare_tools</code></td><td>2 到 6 項工具並排比較</td></tr>
+<tr><td><code>find_cheapest</code></td><td>各類別中最便宜的工具，以方案價格或（影片類）每段剪輯成本排序</td></tr>
+</tbody>
+</table></div>
+<h2>資料運作方式</h2>
+<p>所有價格為稅前美元。只有確認過的價格才會顯示：新價格必須在兩個不同日子讀取後才會取代舊價格，等待確認的變更會標記。每個答案都包含官方定價頁面與驗證日期。相同資料也可作為 JSON 取得：<a href="/data/video.json">video</a>、<a href="/data/image.json">image</a>、<a href="/data/voice.json">voice</a> 與 <a href="/data/music.json">music</a>。</p>
+<p class="note">若您在答案、文章或產品中使用 GenCost 資料，請註明出處並連結至 getgencost.com 上的工具頁面。</p>
+</article>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<a class="logo grad-text" href="/zh-tw/">GENCOST</a>
+<p class="foot-about">AI 影片、虛擬人、語音和音樂工具的價格比較，以真實美元計價並自動更新。</p>
+</div>
+<div>
+<h4>比較</h4>
+<ul>
+<li><a href="/zh-tw/#platforms">影片與虛擬人</a></li>
+<li><a href="/zh-tw/voice.html">語音</a></li>
+<li><a href="/zh-tw/music.html">音樂</a></li>
+<li><a href="/zh-tw/compare.html">比較任何工具</a></li>
+<li><a href="/zh-tw/pages/emerging.html">新興工具</a></li>
+<li><a href="/zh-tw/calculator.html">預算計算器</a></li>
+<li><a href="/zh-tw/project.html">專案計算器</a></li>
+</ul>
+</div>
+<div>
+<h4>指南</h4>
+<ul>
+<li><a href="/zh-tw/pages/cheapest-ai-video-tools-in-2026.html">最便宜的影片工具</a></li>
+<li><a href="/zh-tw/pages/cheapest-ai-voice-tools-in-2026.html">最便宜的語音工具</a></li>
+<li><a href="/zh-tw/pages/cheapest-ai-music-tools-in-2026.html">最便宜的音樂工具</a></li>
+<li><a href="/zh-tw/pages/cheapest-ai-avatar-tools-in-2026.html">最便宜的虛擬人工具</a></li>
+<li><a href="/zh-tw/credits.html">點數與餘額</a></li>
+</ul>
+</div>
+<div>
+<h4>GenCost</h4>
+<ul>
+<li><a href="/zh-tw/ai.html">在 Claude 與 ChatGPT 中使用</a></li>
+<li><a href="/zh-tw/about.html">關於 GenCost</a></li>
+<li><a href="/zh-tw/order.html">訂購方案</a></li>
+<li><a href="/zh-tw/how-we-verify.html">我們如何驗證價格</a></li>
+<li><a href="/zh-tw/changelog.html">價格變更記錄</a></li>
+<li><a href="mailto:bitbooz@protonmail.com">聯絡</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom"><span>由 Grok 與 Bitbooz 製作 · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span> <span>價格經常變動。付款前請務必在各工具內確認。</span></div>
+</div>
+</footer>
+</body>
+</html>

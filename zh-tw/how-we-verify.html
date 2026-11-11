@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="GenCost 如何每天早上根據官方定價頁面檢查 AI 工具價格，以及如何計算每段影片的實際成本。" name="description"/>
+<title>我們如何驗證價格 | GenCost</title>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6DHTT2ZTBK');
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;text=GENCOSTExamples&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/gencost.css" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js');</script>
+<script defer="" src="/assets/gencost.js"></script>
+<!-- SEO:START (added by seo_update.py, rebuilt daily) -->
+<link href="https://getgencost.com/zh-tw/how-we-verify.html" rel="canonical"/>
+<meta content="GenCost" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="我們如何驗證價格 | GenCost" property="og:title"/>
+<meta content="GenCost 如何每天早上根據官方定價頁面檢查 AI 工具價格，以及如何計算每段影片的實際成本。" property="og:description"/>
+<meta content="https://getgencost.com/zh-tw/how-we-verify.html" property="og:url"/>
+<meta content="https://getgencost.com/assets/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="我們如何驗證價格 | GenCost" name="twitter:title"/>
+<meta content="GenCost 如何每天早上根據官方定價頁面檢查 AI 工具價格，以及如何計算每段影片的實際成本。" name="twitter:description"/>
+<meta content="https://getgencost.com/assets/og-image.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://getgencost.com/zh-tw/"}, {"@type": "ListItem", "position": 2, "name": "我們如何驗證價格"}]}]}</script>
+<!-- SEO:END -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet"/><script defer="" src="/assets/i18n.js"></script><!-- HREFLANG:START -->
+<link rel="alternate" hreflang="en" href="https://getgencost.com/how-we-verify.html">
+<link rel="alternate" hreflang="es" href="https://getgencost.com/es/how-we-verify.html">
+<link rel="alternate" hreflang="pt" href="https://getgencost.com/pt/how-we-verify.html">
+<link rel="alternate" hreflang="de" href="https://getgencost.com/de/how-we-verify.html">
+<link rel="alternate" hreflang="fr" href="https://getgencost.com/fr/how-we-verify.html">
+<link rel="alternate" hreflang="ar" href="https://getgencost.com/ar/how-we-verify.html">
+<link rel="alternate" hreflang="he" href="https://getgencost.com/he/how-we-verify.html">
+<link rel="alternate" hreflang="it" href="https://getgencost.com/it/how-we-verify.html">
+<link rel="alternate" hreflang="ja" href="https://getgencost.com/ja/how-we-verify.html">
+<link rel="alternate" hreflang="ru" href="https://getgencost.com/ru/how-we-verify.html">
+<link rel="alternate" hreflang="zh-TW" href="https://getgencost.com/zh-tw/how-we-verify.html">
+<link rel="alternate" hreflang="zh-HK" href="https://getgencost.com/zh-tw/how-we-verify.html">
+<link rel="alternate" hreflang="x-default" href="https://getgencost.com/how-we-verify.html">
+<!-- HREFLANG:END -->
+</head>
+<body class="page-util">
+<nav class="top">
+<div class="wrap">
+<a class="logo grad-text" href="/zh-tw/">GENCOST</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="/zh-tw/#platforms">影片</a></li>
+<li><a data-section="/zh-tw/voice,/zh-tw/pages/voice/" href="/zh-tw/voice.html">語音</a></li>
+<li><a data-section="/zh-tw/music,/zh-tw/pages/music/" href="/zh-tw/music.html">音樂</a></li>
+<li><a data-section="/zh-tw/image" href="/zh-tw/image.html">圖像</a></li>
+<li><a href="/zh-tw/compare.html">比較</a></li>
+<li><a href="/zh-tw/calculator.html">計算器</a></li>
+<li><a href="/zh-tw/#articles">文章</a></li>
+</ul>
+<div class="nav-right">
+
+<details class="lang-menu" translate="no"><summary title="Language">ZH</summary><div class="lang-list"><a class="lang-switch" href="/how-we-verify.html" hreflang="en" lang="en">EN · English</a><a class="lang-switch" href="/es/how-we-verify.html" hreflang="es" lang="es">ES · Español</a><a class="lang-switch" href="/pt/how-we-verify.html" hreflang="pt" lang="pt">PT · Português</a><a class="lang-switch" href="/de/how-we-verify.html" hreflang="de" lang="de">DE · Deutsch</a><a class="lang-switch" href="/fr/how-we-verify.html" hreflang="fr" lang="fr">FR · Français</a><a class="lang-switch" href="/ar/how-we-verify.html" hreflang="ar" lang="ar">AR · العربية</a><a class="lang-switch" href="/he/how-we-verify.html" hreflang="he" lang="he">HE · עברית</a><a class="lang-switch" href="/it/how-we-verify.html" hreflang="it" lang="it">IT · Italiano</a><a class="lang-switch" href="/ja/how-we-verify.html" hreflang="ja" lang="ja">JA · 日本語</a><a class="lang-switch" href="/ru/how-we-verify.html" hreflang="ru" lang="ru">RU · Русский</a></div></details>
+
+<a class="btn btn-primary" href="/zh-tw/order.html">訂購方案</a>
+<button aria-expanded="false" aria-label="開啟選單" class="menu-btn" id="menuBtn">☰</button>
+</div>
+</div>
+</nav>
+<header class="page-head">
+<div class="wrap narrow">
+<nav aria-label="麵包屑導航" class="crumbs"><a href="/zh-tw/">首頁</a><span class="sep">/</span><span>我們如何驗證價格</span></nav>
+</div>
+</header>
+<main class="page">
+<div class="wrap narrow">
+<article class="prose">
+<h1>我們如何驗證價格</h1>
+<p class="lead">GenCost 上的每項價格皆來自工具本身的官方定價頁面，並在發布前每天早上進行檢查。</p>
+<h2>每天早上</h2>
+<ol>
+<li><strong>閱讀官方頁面。</strong> 大約在挪威時間 06:17，GenCost 會開啟每個工具的定價頁面，若需要則使用真實瀏覽器。若頁面有每月與每年分頁，兩者都會讀取。</li>
+<li><strong>提取方案。</strong> AI 會讀取方案名稱、每月價格、每年價格以及包含的點數。會使用首月優惠後的價格，而非劃掉的「原價」價格。</li>
+<li><strong>檢查每個數字。</strong> 每項價格必須出現在頁面上（或是每年總額除以 12）。若不符合，新價格會被拒絕，並保留上次確認的價格。</li>
+<li><strong>發布。</strong> 價格清單、工具頁面、比較頁面、計算機以及每份指南內的價格都會自動更新。</li>
+</ol>
+<h2>每段影片成本</h2>
+<p>AI 影片工具銷售的是點數而非秒數。GenCost 會根據各工具為指定模型與解析度（例如「Kling 3.0, 720p」）所公布的每段影片點數，再除以方案的每點數價格，計算出一段影片的成本。若工具未公布每段影片點數，我們不會猜測而是顯示無成本，且來自評測網站的數字會標註為非官方。</p>
+<h2>隱藏成本</h2>
+<p>「注意」備註（浮水印、點數到期、介紹價格、商業使用規則）皆來自各工具的定價頁面，並附上來源與檢查日期。</p>
+<h2>我們不做的事</h2>
+<ul>
+<li>我們不使用聯盟連結，也沒有任何工具付費上架。</li>
+<li>我們不主張價格在每個國家都相同：工具偶爾會依地區顯示不同價格。GenCost 顯示的是美元價格。</li>
+<li>我們不會隱瞞無法檢查的價格：這些工具會顯示「手動輸入」或上次檢查日期。</li>
+</ul>
+<h2>務必再次確認</h2>
+<p>價格經常變動。購買前務必在工具內確認目前價格。發現價格錯誤？請寄信至 <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a>。更多關於本專案的資訊，請至 <a href="/zh-tw/about.html">關於頁面</a>。</p>
+</article>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<a class="logo grad-text" href="/zh-tw/">GENCOST</a>
+<p class="foot-about">AI 影片、虛擬人、語音和音樂工具的價格比較，以真實美元計價並自動更新。</p>
+</div>
+<div>
+<h4>比較</h4>
+<ul>
+<li><a href="/zh-tw/#platforms">影片與虛擬人</a></li>
+<li><a href="/zh-tw/voice.html">語音</a></li>
+<li><a href="/zh-tw/music.html">音樂</a></li>
+<li><a href="/zh-tw/compare.html">比較任何工具</a></li>
+<li><a href="/zh-tw/pages/emerging.html">新興工具</a></li>
+<li><a href="/zh-tw/calculator.html">預算計算器</a></li>
+<li><a href="/zh-tw/project.html">專案計算器</a></li>
+</ul>
+</div>
+<div>
+<h4>指南</h4>
+<ul>
+<li><a href="/zh-tw/pages/cheapest-ai-video-tools-in-2026.html">最便宜的影片工具</a></li>
+<li><a href="/zh-tw/pages/cheapest-ai-voice-tools-in-2026.html">最便宜的語音工具</a></li>
+<li><a href="/zh-tw/pages/cheapest-ai-music-tools-in-2026.html">最便宜的音樂工具</a></li>
+<li><a href="/zh-tw/pages/cheapest-ai-avatar-tools-in-2026.html">最便宜的虛擬人工具</a></li>
+<li><a href="/zh-tw/credits.html">點數與餘額</a></li>
+</ul>
+</div>
+<div>
+<h4>GenCost</h4>
+<ul>
+<li><a href="/zh-tw/order.html">訂購方案</a></li>
+<li><a href="/zh-tw/how-we-verify.html">我們如何驗證價格</a></li>
+<li><a href="/zh-tw/changelog.html">價格變更記錄</a></li>
+<li><a href="mailto:bitbooz@protonmail.com">聯絡</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom"><span>由 Grok 與 Bitbooz 製作 · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span> <span>價格經常變動。付款前請務必在各工具內確認。</span></div>
+</div>
+</footer>
+</body>
+</html>
