@@ -63,6 +63,9 @@ LANGS = {
            "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap",
            "rules": 'Write natural Japanese in the polite です/ます style, as Japanese tech sites do. Keep tool, model and plan names in Latin letters.',
            "words": '"credits" -> "クレジット". "/mo" -> "/月", "per month" -> "月額", "billed yearly"/"paid yearly" -> "年払い". Prices stay in US dollars, written with the [[n]] tokens. Dates in running text: "October 15, 2026" -> "2026年10月15日".'},
+    "ru": {"html": "ru", "hreflang": "ru", "name": "Русский", "label": "RU",
+           "rules": 'Write natural modern Russian, as Russian-language tech sites do. Use "вы" (lowercase). Keep tool, model and plan names in Latin letters.',
+           "words": '"credits" -> "кредиты". "/mo" -> "/мес", "per month" -> "в месяц", "billed yearly"/"paid yearly" -> "при оплате за год". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 октября 2026".'},
 }
 CODE = LANG = OUT = CACHE_FILE = UI_FILE = None
 
@@ -318,7 +321,7 @@ def grok_translate(items):
     client = OpenAI(api_key=API_KEY, base_url="https://api.x.ai/v1", timeout=180)
     r = client.chat.completions.create(
         model=MODEL, temperature=0,
-        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew", "it": "Italian", "ja": "Japanese"}.get(CODE, LANGS[CODE]["name"]),
+        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew", "it": "Italian", "ja": "Japanese", "ru": "Russian"}.get(CODE, LANGS[CODE]["name"]),
                                                             rules=LANGS[CODE]["rules"], words=LANGS[CODE]["words"])
                    + json.dumps(items, ensure_ascii=False)}])
     text = r.choices[0].message.content.strip()

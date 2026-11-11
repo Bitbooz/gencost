@@ -1,8 +1,8 @@
-/* GenCost in other languages (Spanish /es/, Portuguese /pt/, German /de/, French /fr/, Arabic /ar/, Hebrew /he/, Italian /it/, Japanese /ja/): translates the words that the page's JavaScript writes (price tables,
+/* GenCost in other languages (Spanish /es/, Portuguese /pt/, German /de/, French /fr/, Arabic /ar/, Hebrew /he/, Italian /it/, Japanese /ja/, Russian /ru/): translates the words that the page's JavaScript writes (price tables,
    calculators, buttons), and points links to the Spanish pages. The page text itself is
    translated when the site is built (translate_site.py). */
 (function () {
-  var LANGS = ["es", "pt", "de", "fr", "ar", "he", "it", "ja"];
+  var LANGS = ["es", "pt", "de", "fr", "ar", "he", "it", "ja", "ru"];
   var code = (document.documentElement.lang || "").slice(0, 2).toLowerCase();
   if (LANGS.indexOf(code) < 0) return;
   var PREFIX = new RegExp("^/(" + LANGS.join("|") + ")/");
