@@ -64,7 +64,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           echo "$(TZ=Europe/Oslo date +'%Y-%m-%d %H:%M') ${{ github.event_name }}" > last-auto-run.txt
-          git add -A *-pricing.json voice music image data price-review.txt article-review.txt seo-review.txt *-raw.txt pages *.html sitemap.xml llms.txt price-changes.txt last-auto-run.txt
+          mkdir -p es && touch translate-review.txt
+          git add -A *-pricing.json voice music image data price-review.txt article-review.txt seo-review.txt translate-review.txt *-raw.txt pages es *.html sitemap.xml llms.txt price-changes.txt last-auto-run.txt
           if git diff --staged --quiet; then
             echo "No changes."
           else

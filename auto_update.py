@@ -614,3 +614,4 @@ if __name__ == "__main__":
     subprocess.run([sys.executable, "regenerate_html.py"], check=False)
     subprocess.run([sys.executable, "update_articles.py"], check=False)  # prices inside the articles
     subprocess.run([sys.executable, "seo_update.py"], check=False)  # canonical, descriptions, sitemap ...
+    subprocess.run([sys.executable, "translate_site.py"], check=False)  # the Spanish site under /es/
