@@ -42,6 +42,9 @@ LANGS = {
     "pt": {"html": "pt-BR", "hreflang": "pt", "name": "Português", "label": "PT",
            "rules": 'Write Brazilian Portuguese. Use "você".',
            "words": '"credits" -> "créditos". "/mo" -> "/mês", "per month" -> "por mês", "billed yearly"/"paid yearly" -> "pagamento anual".'},
+    "de": {"html": "de", "hreflang": "de", "name": "Deutsch", "label": "DE",
+           "rules": 'Write German for Germany, Austria and Switzerland. Use "du" (informal), as creator and tech sites do.',
+           "words": '"credits" -> "Credits". "/mo" -> "/Monat", "per month" -> "pro Monat", "billed yearly"/"paid yearly" -> "bei jährlicher Zahlung". Prices stay in US dollars.'},
 }
 CODE = LANG = OUT = CACHE_FILE = UI_FILE = None
 
@@ -294,7 +297,7 @@ def grok_translate(items):
     client = OpenAI(api_key=API_KEY, base_url="https://api.x.ai/v1", timeout=180)
     r = client.chat.completions.create(
         model=MODEL, temperature=0,
-        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese"}.get(CODE, LANGS[CODE]["name"]),
+        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German"}.get(CODE, LANGS[CODE]["name"]),
                                                             rules=LANGS[CODE]["rules"], words=LANGS[CODE]["words"])
                    + json.dumps(items, ensure_ascii=False)}])
     text = r.choices[0].message.content.strip()
