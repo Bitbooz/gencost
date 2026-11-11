@@ -1,236 +1,124 @@
-Pricing plans | Magnific (formerly Freepik)
-Toggle menu
 Magnific
 Creative Suite
-Image
-AI Image Generator
-Image Editor
-Image Upscaler
-Image Extender
-Background Remover
-Relight
-Change Camera
-Video
-Video Generator
-Video Project Editor
-Video Upscaler
-Clip Editor
-Speak
-Video Relight
-Audio
-Text to Speech
-Sound Effect Generator
-Music Generator
-3D
-3D Scenes
-3D Generator
-3D 360
-Workspaces
-Spaces
-Designer
-Magnific Move
-Ecosystem
-MCP
-New
-Agents
-Mobile App
-Plugins
-Desktop App
-New
-API
-Trending models
-Magnific One
-New
-Magnific
-Gemini Omni 1.2 Flash
-New
-Google
-Seedream 5.5
-New
-ByteDance
-Seedance 2.5
-New
-ByteDance
-Nano Banana Pro
-Unlimited
-Google
-Available
-Claude
-MCP
-ChatGPT
-MCP
-Photoshop
-Plugin
-Figma
-Plugin
-See all AI tools
-Stock
-Image
-All images
-Vectors
-Photos
-Illustrations
-Icons
-3D
-Video
-Videos
-Video templates
-Motion graphics
-Audio
-Sound effects
-Music
-Design
-Templates
-Mockups
-Fonts
-PSD
 Stock
 Resources
-Company
-About us
-Meet the team and 15 years of history
-Creative Partners Program
-Top creatives and affiliates program
-Blog
-Creativity news and tips
-Get help
-Get support from our team
-Contact us
-Press and partnerships
-More
-Academy
-Magnific Originals
-Documentation
-API for developers
-MCP for Claude/ChatGPT
-Plugins
-New
-Desktop App
-New
-Mobile App
-Events
-Upscale Conf and US events
-Magnific Move
 Enterprise
-Team plans
-Enterprise
-Full-scale AI for global organizations
-Business
-Collaborative AI for growing teams
-Customer Stories
-Real work from real teams
-Stories we love
-How Billy Boman scaled AI production for the World Cup
-How the House of David team made the “impossible” show
-How Hagia Labs took StarHub’s Hublings across Asia
 Pricing
 Search or create
 Log in
 Sign up
 Pick your way to create
-Trusted by
-1M+ subscribers
-: creatives, enterprises, agencies, and studios
-Save 40% on Credits
-Seedream 5.5.
-Change anything, lose nothing
+
+Trusted by 1M+ subscribers: creatives, enterprises, agencies, and studios
+
+SAVE 40% ON CREDITS
+Seedream 5.5. Change anything, lose nothing
+
 Change one detail at a time without losing the rest of your image.
+
 Ends Dec 10. Individual subscriptions only.
+
 Individual
 Teams
-monthly
+Monthly
 Annual
 Save 25% with annual
 Premium
+
 For creatives exploring AI tools and stock content
-CA$27
-CA$20
+
+$20
+$14.50
 /month
-Billed annually
+billed annually
+
 Spaces and 250M+ Premium assets
-240K credits
-/year
+
+240K credits/year
+
 No model training on your data
+Get Premium
 Credits valid for 1 year, no monthly resets
-Access to image, video, and audio model
-s
+Access to image, video, and audio models 
 Magnific One and Brand Kit, now available
-New
+NEW
 Spaces: shared canvas, built for workflows
-Pro editing tools: image, video & desig
-n
-Music, voice & sound effects generatio
-n
+Pro editing tools: image, video & design 
+Music, voice & sound effects generation 
 Commercial AI license
-Magnific image & video upscaler
-s
+Magnific image & video upscalers 
 Magnific MCP & plugins
 Magnific for ComfyUI
-New
-API access
-with credit-based usage
+NEW
+API access with credit-based usage
 250M+ photos, videos, vectors & PSDs
 Top up credits anytime
 Google Drive sync for projects and folders
 Early access to AI features
 Metadata export & lineage
-Unlimited
+UNLIMITED
+
 Save credits on 30+ models
+
 Nano Banana 2
 Kling 2.5
 Nano Banana Pro
 Plus
 Best value
+
 For individuals who need unlimited generations and full AI access
-CA$60
-CA$45
+
+$45
+$33.75
 /month
-Billed annually
+billed annually
+
 UNLIMITED generations
-600K credits
-/year
+
+600K credits/year
+
 Nano Banana 2 (1K)
 No model training on your data
+Get Plus
 Credits valid for 1 year, no monthly resets
-Access to image, video, and audio model
-s
+Access to image, video, and audio models 
 Magnific One and Brand Kit, now available
-New
+NEW
 Spaces: shared canvas, built for workflows
-Pro editing tools: image, video & desig
-n
-Music, voice & sound effects generatio
-n
+Pro editing tools: image, video & design 
+Music, voice & sound effects generation 
 Commercial AI license + music rights
-Magnific & Topaz upscaler
-s
+Magnific & Topaz upscalers 
 Magnific MCP & plugins
 Magnific for ComfyUI
-New
-API access
-with credit-based usage
+NEW
+API access with credit-based usage
 250M+ photos, videos, vectors & PSDs
 Top up credits anytime
 Google Drive sync for projects and folders
 Early access to AI features
 Metadata export & lineage
-Unlimited
+UNLIMITED
+
 Save credits on 30+ models
+
 Nano Banana 2
-All year
+ALL YEAR
 Kling 2.5
-All year
+ALL YEAR
 Nano Banana Pro
 Pro
 Expert choice
+
 For professionals scaling content production
-CA$146
-CA$109
-.50
+
+$110
+$82.50
 /month
-Billed annually
-Everything in Plus
-, and:
+billed annually
+
+Everything in Plus, and:
+
 1.5M credits
 /year
 Nano Banana 2 (2K)
@@ -238,225 +126,434 @@ Nano Banana 2 (2K)
 /year
 Nano Banana 2 (2K) + Nano Banana Pro
 No model training on your data
+Get Pro
 Credits valid for 1 year, no monthly resets
-Access to image, video, and audio model
-s
+Access to image, video, and audio models 
 Magnific One and Brand Kit, now available
-New
+NEW
 Spaces: shared canvas, built for workflows
-Pro editing tools: image, video & desig
-n
-Music, voice & sound effects generatio
-n
+Pro editing tools: image, video & design 
+Music, voice & sound effects generation 
 Commercial AI license + music rights
-Magnific & Topaz upscaler
-s
+Magnific & Topaz upscalers 
 Magnific MCP & plugins
 Magnific for ComfyUI
-New
-API access
-with credit-based usage
+NEW
+API access with credit-based usage
 250M+ photos, videos, vectors & PSDs
 Top up credits anytime
 Google Drive sync for projects and folders
 Early access to AI features
 Metadata export & lineage
-Unlimited
+UNLIMITED
+
 Save credits on 30+ models
+
 Nano Banana 2
-All year
+ALL YEAR
 Kling 2.5
-All year
+ALL YEAR
 Nano Banana Pro
+
 Prices exclude VAT and local taxes
-Compare plans:
-AI video, image, and audio plus stock
+
+Compare plans: AI video, image, and audio plus stock
+Monthly
+Annual
+
+Save 25% with annual
+
+AI video
+
+Premium
+
+$14.50/month
+240,000/year
+Get Premium
+
+Plus
+
+$33.75/month
+600,000/year
+Get Plus
+
+Pro
+
+$82.50/month
+1,500,000/year
+Get Pro
+
 Kling 4.0 1080p
-New
+
+NEW
+
 840 credits/3s
+
 285 videos
+
 714 videos
+
 1,785 videos
+
 Kling 4.0 1080p with video input
-New
+
+NEW
+
 990 credits/3s
+
 242 videos
+
 606 videos
+
 1,515 videos
+
 Kling 2.5 720p
-Unlimited
+
+UNLIMITED
+
 140 credits/5s
+
 1,714 videos
+
 Kling 3.0 Pro 1080p
+
 450 credits/5s
+
 533 videos
+
 1,333 videos
+
 3,333 videos
+
 Seedance 2.5 1080p
+
 4,400 credits/4s
+
 54 videos
+
 136 videos
+
 340 videos
+
 Seedance 2.5 720p
+
 1,760 credits/4s
+
 136 videos
+
 340 videos
+
 852 videos
+
 Seedance 2.5 Draft 480p
-New
+
+NEW
+
 800 credits/4s
+
 300 videos
+
 750 videos
+
 1,875 videos
+
 Gemini Omni 1.1
-New
+
+NEW
+
 720 credits/3s
+
 333 videos
+
 833 videos
+
 2,083 videos
+
 Gemini Omni 1.2 Flash 720p
-New
+
+NEW
+
 420 credits/3s
+
 571 videos
+
 1,428 videos
+
 3,571 videos
+
 Seedance 2 Pro 720p
-Lower price
+
+LOWER PRICE
+
 1,120 credits/4s
+
 214 videos
+
 535 videos
+
 1,339 videos
+
 MiniMax H3 Max Turbo 768p
-New
+
+NEW
+
 200 credits/5s
+
 1,200 videos
+
 3,000 videos
+
 7,500 videos
+
 Seedance 2.0 Fast 720p
-Lower price
+
+LOWER PRICE
+
 940 credits/4s
+
 255 videos
+
 638 videos
+
 1,595 videos
+
 Seedance 2.0 480p
+
 580 credits/4s
+
 413 videos
+
 1,034 videos
+
 2,586 videos
+
 Google Veo 3.1 4K w/audio
+
 2,080 credits/4s
+
 115 videos
+
 288 videos
+
 721 videos
+
 Magnific Video Upscaler
-New
+
+NEW
 AI image
+
 Magnific One High 2K
-New
+
+NEW
+
 180 credits/image
+
 1,333 images
+
 3,333 images
+
 8,333 images
+
 Magnific One High 4K
-New
+
+NEW
+
 250 credits/image
+
 960 images
+
 2,400 images
+
 6,000 images
+
 Google Nano Banana 2 2K
-Unlimited
+
+UNLIMITED
+
 75 credits/image
+
 3,200 images
+
 8,000 images
+
 Google Nano Banana Pro (1K/2K)
-Unlimited
+
+UNLIMITED
+
 75 credits/image
+
 3,200 images
+
 8,000 images
+
 Google Nano Banana 2 1K
-Unlimited
+
+UNLIMITED
+
 75 credits/image
+
 3,200 images
+
 Google Nano Banana 2 4K
+
 150 credits/image
+
 1,600 images
+
 4,000 images
+
 10,000 images
+
 Google Nano Banana 2 Lite 1K
-Unlimited
+
+UNLIMITED
+
 60 credits/image
+
 4,000 images
+
 Google Nano Banana Pro 4K
+
 150 credits/image
+
 1,600 images
+
 4,000 images
+
 10,000 images
+
 Magnific Precision
+
 90 credits/2K image
+
 2,666 images
+
 6,666 images
+
 16,666 images
+
 GPT 2.5 Medium 2K
+
 180 credits/image
+
 1,333 images
+
 3,333 images
+
 8,333 images
+
 Flux.2 Pro 1K
-Unlimited
+
+UNLIMITED
+
 50 credits/image
+
 4,800 images
+
 Recraft V4.1 Mid
-Unlimited
+
+UNLIMITED
+
 60 credits/image
+
 4,000 images
+
 Flux.2 Max 1K
-Unlimited
+
+UNLIMITED
+
 130 credits/image
+
 1,846 images
+
 4,615 images
+
 Grok
-Unlimited
+
+UNLIMITED
+
 70 credits/image
+
 3,428 images
+
 P-image Ideogram 2K High
-New
+
+NEW
+
 44 credits/image
+
 5,454 images
+
 13,636 images
+
 34,090 images
+
 AI audio
+
 Google Lyria 3
+
 160 credits/song
+
 1,500 songs
+
 3,750 songs
+
 9,375 songs
+
 ElevenLabs Music Generation
+
 600 credits/30s
+
 400 uses
+
 1,000 uses
+
 2,500 uses
+
 SFX Generation
+
 15 credits/3s
+
 16,000 uses
+
 40,000 uses
+
 100,000 uses
+
 Other perks
+
 Downloads per day
+
 Premium stock content
+
 Commercial AI license
+
 Magnific MCP
+
 Magnific for ComfyUI
-New
+
+NEW
+
 API access with credit-based usage
+
 Train AI characters
+
 3,000 credits/character
+
 80 characters
+
 200 characters
+
 500 characters
+
 Assistant
+
 Merchandising license
+
 Design and mockup tools
+
 Early access to new AI tools
+
 See all pricing & credits FAQs
 Trusted by the companies you trust
 Coca-Cola
@@ -466,17 +563,24 @@ Wonder
 Guess
 Delivery Hero
 Creative work, reimagined with AI
+
 All in one place
+
 Every leading AI model, pro features, and 250M+ stock assets. All in one platform.
+
 Join 1M+ creatives worldwide
+
 Get early access to new tools, share your work, and find inspiration in the world's biggest creative AI community.
+
 Pay safe and cancel anytime
-Encrypted transactions, 30-day refund guarantee, no cancellation fees.
-More info
+
+Encrypted transactions, 30-day refund guarantee, no cancellation fees. More info
+
 Got questions?
 We’ve got all the answers
-Find everything you need to know about pricing, credits, AI models, and more.
-See all FAQs
+
+Find everything you need to know about pricing, credits, AI models, and more. See all FAQs
+
 How do credits work?
 Do downloading limits apply to the designs I create?
 Is my subscription automatically renewed?
@@ -487,12 +591,18 @@ How many generations do I have per tool or microtool?
 How can I purchase extra credits?
 Can I use AI-generated images for commercial purposes?
 How does Unlimited work?
+
 How can I purchase extra credits?
 please contact us
+
 We're here to help!
+
 Picking the right plan is easier with someone on the other end. Tell us what you need and we'll help you find the right fit. Got other questions? Just ask, we're here for that too.
+
 Contact us
+
 The creative platform to direct your best work. More than 1 million subscribers across creatives, enterprises, agencies, and studios.
+
 English
 Products
 Spaces
@@ -537,6 +647,7 @@ Privacy policy
 Originals
 New
 Cookies policy
+Cookie settings
 Trust center
 Affiliates
 Enterprise
@@ -561,8 +672,5 @@ TikTok
 Discord
 X
 Reddit
-Copyright © 2010-
-2026
-Magnific AI, S.L.U.
-All rights reserved
-.
+
+Copyright © 2010-2026 Magnific AI, S.L.U. All rights reserved.

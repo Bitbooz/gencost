@@ -20,11 +20,11 @@
     },
     {
       "name": "Max",
-      "monthly_price_usd": 70,
-      "yearly_price_usd": 42,
+      "monthly_price_usd": 105,
+      "yearly_price_usd": 63,
       "offer": ""
     }
   ],
   "source": "https://www.krea.ai/pricing",
-  "last_checked": "2026-11-11 17:36"
+  "last_checked": "2026-11-11 18:11"
 }

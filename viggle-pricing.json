@@ -2,13 +2,6 @@
   "platform": "viggle",
   "plans": [
     {
-      "name": "Free",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 0,
-      "unit": "credits",
-      "offer": ""
-    },
-    {
       "name": "Pro",
       "monthly_price_usd": 9.99,
       "yearly_price_usd": 7.99,
@@ -34,5 +27,5 @@
     }
   ],
   "source": "https://viggle.ai/pricing",
-  "last_checked": "2026-11-11 17:38"
+  "last_checked": "2026-11-11 18:13"
 }

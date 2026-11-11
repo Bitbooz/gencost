@@ -1,134 +1,102 @@
-Pricing - VEED.IO
+[Pay monthly tab]
 Veed
 Create with AI
-Create with AI
-Generate videos, voices, avatars and images from a simple prompt. No filming, no studio - just type and create.
-AI Video
-AI Video Generator
-Text to Video
-VideoGPT
-Image to Video
-AI Video Editor
-AI Clip Generator
-AI Script Generator
-AI Avatars & Lip Sync
-AI Avatars
-AI Lip Sync
-Eye Contact AI
-Talking Photo
-AI Voice & Audio
-AI Voice Generator
-AI Voice Cloning
-Text to Speech
-AI Music Generator
-AI Voice Cleaner
-Remove Background Noise from Audio
-Remove Background Noise from Video
-AI Image
-AI Image Generator
-AI Image Editor
-AI Background Remover
-Image Upscaler
-AI Art Generator
 Ads & templates
-Ads & templates
-Make scroll-stopping video ads in minutes. Start from a template, customize for any platform and scale what works.
-Explore all
-Make Ads
-Video Ad Maker
-AI Ad Generator
-AI UGC Ads
-AI Reel Generator
-Templates
-Video Templates
-Ad Templates
-Intro Maker
-Social Banner Maker
-By Platform
-Instagram Video Maker
-TikTok Video Maker
-YouTube Video Maker
-Repurpose Video
-Scale & Workflow
-Fabric API
-VEED for Teams
-Video APIs
 Tools
-Tools
-Everything you need to edit, convert, subtitle and transcribe video - fast, free to try and right in your browser.
-Explore all
-Edit Video
-Video Editor
-Video Compressor
-Video Cutter
-Video Joiner
-Video Enhancer
-Video Background Remover
-Add Text to Video
-Add Audio to Video
-Add Photo to Video
-Video Player
-Convert
-Video Converter
-MP4 to MP3
-MP3 Converter
-GIF Maker
-Subtitles & Translation
-Auto Subtitle Generator
-Add Subtitles
-Video Caption Generator
-Video Translator
-Dubbing AI
-Transcribe & Record
-Audio to Text
-Video to Text
-Transcribe YouTube Video
-Screen Recorder
-Webcam Recorder
-Teleprompter
-Transcription
 Enterprise
 API
 Pricing
 Login
 Sign Up
 Great videos start with a plan
-Start for free
-, upgrade to get powerful features.
-Trusted by
-millions
-of teams
+
+Start for free, upgrade to get powerful features.
+
+Pay monthly
+Pay yearly
+Save up to 51%
+Creator
+
+$12
+
+per user / month
+
+billed yearly
+
+Go Creator
+
+6,000 Credits · ~1,500 AI Videos
+
+No watermark
+Unlimited Auto Subtitles
+Full audio & video catalog
+15+ AI tools to make studio-quality videos
+Create videos with Gen-AI Studio
+Pro
+Recommended
+
+$22
+
+per user / month
+
+billed yearly
+
+Go Pro
+
+30,000 Credits · ~7,500 AI Videos
+
+Everything in Creator +
+Multiple Brand Kits
+Translate to 50+ Languages
+Up to 144 hr/yr of AI voice
+Create videos with Gen-AI Studio
+Studio
+
+$39
+
+per user / month
+
+billed yearly
+
+Go Studio
+
+180,000 Credits · ~45,000 AI Videos
+
+Everything in Pro +
+Custom Templates
+Translate to 50+ Languages
+Up to 960 hr/yr of AI voice
+Create videos with Gen-AI Studio
+Enterprise
+
+Custom pricing
+
+Contact Sales
+
+Custom AI Credits
+
+Custom AI Credits
+Centrally manage teams and data
+Review mode for videos
+Privacy controls
+Customer success
+
+Trusted by millions of teams
+
 See all features
 Frequently Asked Questions
 Do you offer a trial for paid plans?
-We offer a free trial for enterprise customers. You will need a minimum of 3 users. To set this up please
-Contact Sales.
 Can I really cancel anytime?
-Yes, absolutely. If you want to cancel your plan, simply go to your dashboard and select 'Team Billing' in the top left dropdown and click on 'Turn off auto-renewal'. If you do cancel, you will continue to have access to all the premium features until the end of your billing cycle.
 What currencies and payment options are available?
-Prices are listed in your local currency if available, and if not they are listed in USD. We accept all major debit and credit cards and accept alternative payment methods like PayPal and Google and Apple Pay in specific countries. Our payment system uses the latest security technology and is powered by Stripe, one of the world’s most reliable payment companies. If you have any trouble with paying by card, please contact us.
 Can I add more AI credits to my plan?
-Yes. You can move to a higher credit allowance on your current plan. It works like a normal subscription upgrade, giving your workspace more credits each billing period.
 How do AI credits work?
-Your plan includes a set amount of AI credits each month or year to spend on AI generations. Your full allowance refreshes when your subscription renews, so you get a fresh batch to use. Credits do not carry over, and you can move to a higher plan whenever you need more.
 What are the limits on subtitles and translations?
-All paid plans include unlimited subtitle generation, subject to a fair use limit of 50 hours per month. The subtitle styles and customization options available depend on your plan, with more advanced styles unlocked on higher tiers.
-
-Translations are minute-based and count toward your plan's allowance.
-
-For example, if you add subtitles to a 30-minute video, it won't use any of your translation allowance. If you then translate that video from English to Spanish, it will use 30 minutes. Translating the same video into another language would use an additional 30 minutes.
-
-Limits are set monthly or yearly depending on your billing cycle. Any unused minutes do not roll over to the next cycle. If you need more flexibility in when you use translation minutes, a yearly plan may be a better fit.
 How do you charge for multiple users?
-Our plans are charged on a 'per seat' basis so the amount of the plan is multiplied by the number of editors in your workspace. You will be charged when you invite new users into the workspace.
 What is your refund policy?
-You can find our refund policy on our
-Terms of Sale page
-.
 Do you offer plans for educational institutions?
-Yes we do. We offer bespoke education plans for faculty wide use. Please contact sales via
-this form.
+
 Generation
+
 AI Video Generator
 Text to Video AI
 VEED AI
@@ -144,7 +112,9 @@ AI Voice Generator
 Lyric Video Maker
 Script Generator
 AI Background Expand
+
 Video Editing
+
 Video Editor
 Add Subtitles to Video
 Auto Subtitle Generator
@@ -162,7 +132,9 @@ Online Teleprompter
 Remove Background Noise from Video
 Remove Background Noise from Audio
 Eye Contact AI
+
 API
+
 AI Video APIs
 Fabric 1.0 API
 Lip Sync API
@@ -172,16 +144,22 @@ Background Removal Fast API
 Green Screen API
 Clean Audio API
 Live Avatar API Waitlist
+
 Product
+
 Pricing
 Enterprise
+
 Resources
+
 Blog
 Learn
 Webinars
 Alternatives
 Affiliate Program
+
 Company
+
 About Us
 Careers
 Newsroom
@@ -191,11 +169,197 @@ Cookie Policy
 Terms of Use
 Contact Support
 Media Enquiries
+
 Connect
+
 YouTube
 LinkedIn
 X / Twitter
 Instagram
 TikTok
 Email
+
+© Copyright 2026 VEED
+
+[Pay yearly tab]
+Veed
+Create with AI
+Ads & templates
+Tools
+Enterprise
+API
+Pricing
+Login
+Sign Up
+Great videos start with a plan
+
+Start for free, upgrade to get powerful features.
+
+Pay monthly
+Pay yearly
+Save up to 51%
+Creator
+
+$12
+
+per user / month
+
+billed yearly
+
+Go Creator
+
+6,000 Credits · ~1,500 AI Videos
+
+No watermark
+Unlimited Auto Subtitles
+Full audio & video catalog
+15+ AI tools to make studio-quality videos
+Create videos with Gen-AI Studio
+Pro
+Recommended
+
+$22
+
+per user / month
+
+billed yearly
+
+Go Pro
+
+30,000 Credits · ~7,500 AI Videos
+
+Everything in Creator +
+Multiple Brand Kits
+Translate to 50+ Languages
+Up to 144 hr/yr of AI voice
+Create videos with Gen-AI Studio
+Studio
+
+$39
+
+per user / month
+
+billed yearly
+
+Go Studio
+
+180,000 Credits · ~45,000 AI Videos
+
+Everything in Pro +
+Custom Templates
+Translate to 50+ Languages
+Up to 960 hr/yr of AI voice
+Create videos with Gen-AI Studio
+Enterprise
+
+Custom pricing
+
+Contact Sales
+
+Custom AI Credits
+
+Custom AI Credits
+Centrally manage teams and data
+Review mode for videos
+Privacy controls
+Customer success
+
+Trusted by millions of teams
+
+See all features
+Frequently Asked Questions
+Do you offer a trial for paid plans?
+Can I really cancel anytime?
+What currencies and payment options are available?
+Can I add more AI credits to my plan?
+How do AI credits work?
+What are the limits on subtitles and translations?
+How do you charge for multiple users?
+What is your refund policy?
+Do you offer plans for educational institutions?
+
+Generation
+
+AI Video Generator
+Text to Video AI
+VEED AI
+Fabric 1.0
+AI Avatars
+AI Image Generator
+Image to Video AI
+VideoGPT
+AI Reel Generator
+Dubbing AI
+Text to Speech Video
+AI Voice Generator
+Lyric Video Maker
+Script Generator
+AI Background Expand
+
+Video Editing
+
+Video Editor
+Add Subtitles to Video
+Auto Subtitle Generator
+Video Caption Generator
+Add Text to Video
+Add Audio to Video
+Video Background Remover
+Video Compressor
+Video Converter
+Video to Text
+Audio to Text
+Video Translator
+Audio Editor
+Online Teleprompter
+Remove Background Noise from Video
+Remove Background Noise from Audio
+Eye Contact AI
+
+API
+
+AI Video APIs
+Fabric 1.0 API
+Lip Sync API
+Subtitle API
+Background Removal API
+Background Removal Fast API
+Green Screen API
+Clean Audio API
+Live Avatar API Waitlist
+
+Product
+
+Pricing
+Enterprise
+
+Resources
+
+Blog
+Learn
+Webinars
+Alternatives
+Affiliate Program
+
+Company
+
+About Us
+Careers
+Newsroom
+Trust Center
+Privacy Policy
+Cookie Policy
+Terms of Use
+Contact Support
+Media Enquiries
+
+Connect
+
+YouTube
+LinkedIn
+X / Twitter
+Instagram
+TikTok
+Email
+
 © Copyright 2026 VEED

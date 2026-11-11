@@ -116,9 +116,6 @@ Pick your plan
 Trusted by 40M+ creators, enterprises, agencies, and studios
 Pick your plan
 Trusted by 40M+ creators, enterprises, agencies, and studios
-New to Krea? Save up to 50% on your first plan
-Sign up free and we'll offer you a discount on your first plan.
-Sign up free
 Monthly
 Yearly
 40% off
@@ -130,12 +127,6 @@ $0
 /month
 Get Free
 No difference compared to monthly
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -165,12 +156,6 @@ $5
 Get Basic
 Save $48
 compared to monthly
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -199,12 +184,6 @@ $21
 Get Pro
 Save $168
 compared to monthly
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -223,25 +202,19 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Max
-40,000 units / month
-~1,607 Nano Banana 2.1 generations
-~131 Seedance 2.5 videos
+60,000 units / month
+~2,410 Nano Banana 2.1 generations
+~197 Seedance 2.5 videos
 40k
 60k
 80k
 100k
-$70
-$42
+$105
+$63
 /month
 Get Max
-Save $336
+Save $504
 compared to monthly
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -337,12 +310,6 @@ $0
 /month
 Get Free
 No difference compared to monthly
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -372,12 +339,6 @@ $5
 Get Basic
 Save $48
 compared to monthly
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -406,12 +367,6 @@ $21
 Get Pro
 Save $168
 compared to monthly
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -430,25 +385,19 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Max
-40,000 units / month
-~1,607 Nano Banana 2.1 generations
-~131 Seedance 2.5 videos
+60,000 units / month
+~2,410 Nano Banana 2.1 generations
+~197 Seedance 2.5 videos
 40k
 60k
 80k
 100k
-$70
-$42
+$105
+$63
 /month
 Get Max
-Save $336
+Save $504
 compared to monthly
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -593,7 +542,7 @@ Pro
 $21
 /mo
 Max
-$42
+$63
 /mo
 Features & License
 Access to Krea 3
@@ -1479,7 +1428,7 @@ $21
 /month
 Upgrade
 Max
-$42
+$63
 /month
 Upgrade
 Business

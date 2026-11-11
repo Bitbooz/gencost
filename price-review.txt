@@ -1,61 +1,33 @@
-2026-11-11 17:35  hailuo  (https://hailuoai.video/pricing)
+2026-11-11 18:10  hailuo  (https://hailuoai.video/pricing)
     - Max: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-11 17:35  veo  (https://one.google.com/about/google-ai-plans/)
-    - download: no plans found
-    - browser: no plans found
-    -> kept the previous prices
-
-2026-11-11 17:37  higgsfield  (https://higgsfield.ai/pricing)
+2026-11-11 18:12  higgsfield  (https://higgsfield.ai/pricing)
     - Starter: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-11 17:40  capcut  (https://www.capcut.com/pricing)
-    - download: Pro: $33.99 does not appear on the pricing page
-    - download: Ultra: $109.99 does not appear on the pricing page
-    - browser: Pro: $33.99 does not appear on the pricing page
-    - browser: Ultra: $109.99 does not appear on the pricing page
-    -> kept the previous prices
-
-2026-11-11 17:41  colossyan  (https://www.colossyan.com/pricing)
+2026-11-11 18:15  colossyan  (https://www.colossyan.com/pricing)
     - Professional: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-11 17:42  veed  (https://www.veed.io/pricing)
-    - download: needs the browser to open both tabs
-    - browser: page shows prices in another currency (6 non-USD prices, 0 in US dollars)
-    -> kept the previous prices
+2026-11-11 18:16  veed  (https://www.veed.io/pricing)
+    - Creator: yearly price equals the monthly price, left out
+    - Pro: yearly price equals the monthly price, left out
+    - Studio: yearly price equals the monthly price, left out
+    -> saved the monthly prices
 
-2026-11-11 17:42  murf  (https://murf.ai/pricing)
+2026-11-11 18:16  murf  (https://murf.ai/pricing)
     - Creator: yearly price equals the monthly price, left out
     - Business: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-11 17:43  fliki  (https://fliki.ai/pricing)
-    - download: needs the browser to open both tabs
-    - browser: page shows prices in another currency (20 non-USD prices, 2 in US dollars)
-    -> kept the previous prices
-
-2026-11-11 17:45  soundraw  (https://soundraw.io/pricing)
-    - download: page shows prices in another currency (8 non-USD prices, 0 in US dollars)
-    - browser: page shows prices in another currency (4 non-USD prices, 0 in US dollars)
-    -> kept the previous prices
-
-2026-11-11 17:45  aiva  (https://www.aiva.ai/pricing)
+2026-11-11 18:19  aiva  (https://www.aiva.ai/pricing)
     - Standard: yearly price equals the monthly price, left out
     - Pro: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-11 17:46  mureka  (https://www.mureka.ai/subscribe)
+2026-11-11 18:20  mureka  (https://www.mureka.ai/subscribe)
     - Pro: yearly price equals the monthly price, left out
     - Premier: yearly price equals the monthly price, left out
     -> saved the monthly prices
-
-2026-11-11 17:48  freepik  (https://www.freepik.com/pricing)
-    - [https://www.freepik.com/pricing] download: page shows prices in another currency (6 non-USD prices, 0 in US dollars)
-    - [https://www.freepik.com/pricing] browser: page shows prices in another currency (9 non-USD prices, 0 in US dollars)
-    - [https://www.freepik.com/ai/docs/plans-and-pricing] download: no plans found
-    - [https://www.freepik.com/ai/docs/plans-and-pricing] browser: no plans found
-    -> kept the previous prices
 

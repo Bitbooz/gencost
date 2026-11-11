@@ -19,11 +19,11 @@
       "name": "Pro",
       "monthly_price_usd": 29,
       "yearly_price_usd": 14.5,
-      "credits_or_minutes": 300,
+      "credits_or_minutes": 3600,
       "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://www.opus.pro/pricing",
-  "last_checked": "2026-11-11 17:41"
+  "last_checked": "2026-11-11 18:15"
 }
