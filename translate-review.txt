@@ -1,7 +1,6 @@
-2026-11-11 20:30  Español (/es/): 105 of 106 pages, stored translations: 3231, JavaScript texts: 409/409
-2026-11-11 20:30  Português (/pt/): 105 of 106 pages, stored translations: 3215, JavaScript texts: 409/409
-2026-11-11 20:30  Deutsch (/de/): 105 of 106 pages, stored translations: 3197, JavaScript texts: 409/409
-2026-11-11 20:30  Français (/fr/): 105 of 106 pages, stored translations: 3171, JavaScript texts: 409/409
-2026-11-11 20:30  العربية (/ar/): 104 of 106 pages, stored translations: 3153, JavaScript texts: 409/409
-  - translation did not keep the tags or numbers, kept English: If you just want to mess around and make a few songs a month, <t0>Suno
-  - pages/cheapest-ai-music-tools-in-2026.html: only 89% translated, not published yet
+2026-11-11 21:22  Español (/es/): 105 of 106 pages, stored translations: 3242, JavaScript texts: 411/411
+2026-11-11 21:22  Português (/pt/): 105 of 106 pages, stored translations: 3229, JavaScript texts: 411/411
+2026-11-11 21:22  Deutsch (/de/): 105 of 106 pages, stored translations: 3216, JavaScript texts: 411/411
+2026-11-11 21:22  Français (/fr/): 105 of 106 pages, stored translations: 3202, JavaScript texts: 411/411
+2026-11-11 21:22  العربية (/ar/): 105 of 106 pages, stored translations: 3183, JavaScript texts: 410/411
+  - translation did not keep the tags or numbers, kept English: Kling [[0]]: [[1]] credits per [[2]]s. Higgsfield's own estimates: abo

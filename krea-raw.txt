@@ -116,9 +116,6 @@ Pick your plan
 Trusted by 40M+ creators, enterprises, agencies, and studios
 Pick your plan
 Trusted by 40M+ creators, enterprises, agencies, and studios
-New to Krea? Unlock a welcome discount
-Sign up free and we'll offer you a discount on your first plan.
-Sign up free
 Monthly
 Yearly
 40% off
@@ -129,6 +126,7 @@ Free
 $0
 /month
 Get Free
+No difference compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -153,8 +151,11 @@ Basic
 ~200 Nano Banana 2.1 generations
 ~16 Seedance 2.5 videos
 $9
+$5
 /month
 Get Basic
+Save $48
+compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -178,8 +179,11 @@ Pro
 ~803 Nano Banana 2.1 generations
 ~65 Seedance 2.5 videos
 $35
+$21
 /month
 Get Pro
+Save $168
+compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -198,16 +202,19 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Max
-40,000 units / month
-~1,607 Nano Banana 2.1 generations
-~131 Seedance 2.5 videos
+60,000 units / month
+~2,410 Nano Banana 2.1 generations
+~197 Seedance 2.5 videos
 40k
 60k
 80k
 100k
-$70
+$105
+$63
 /month
 Get Max
+Save $504
+compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -243,6 +250,7 @@ Business
 1M
 1.5M
 $200
+$160
 /month
 Try Business
 Krea 3
@@ -301,6 +309,7 @@ Free
 $0
 /month
 Get Free
+No difference compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -325,8 +334,11 @@ Basic
 ~200 Nano Banana 2.1 generations
 ~16 Seedance 2.5 videos
 $9
+$5
 /month
 Get Basic
+Save $48
+compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -350,8 +362,11 @@ Pro
 ~803 Nano Banana 2.1 generations
 ~65 Seedance 2.5 videos
 $35
+$21
 /month
 Get Pro
+Save $168
+compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -370,16 +385,19 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Max
-40,000 units / month
-~1,607 Nano Banana 2.1 generations
-~131 Seedance 2.5 videos
+60,000 units / month
+~2,410 Nano Banana 2.1 generations
+~197 Seedance 2.5 videos
 40k
 60k
 80k
 100k
-$70
+$105
+$63
 /month
 Get Max
+Save $504
+compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -416,6 +434,7 @@ Secure and collaborative workspace for growing teams
 1M
 1.5M
 $200
+$160
 /month
 Try Business
 Krea 3
@@ -517,13 +536,13 @@ Basic
 Pro
 Max
 Basic
-$9
+$5.25
 /mo
 Pro
-$35
+$21
 /mo
 Max
-$70
+$63
 /mo
 Features & License
 Access to Krea 3
@@ -1401,19 +1420,19 @@ $0
 /month
 Get Free
 Basic
-$9
+$5.25
 /month
 Upgrade
 Pro
-$35
+$21
 /month
 Upgrade
 Max
-$70
+$63
 /month
 Upgrade
 Business
-$200
+$160
 /month
 Try Business
 Enterprise
