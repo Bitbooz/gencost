@@ -1,8 +1,9 @@
 """
-Builds the Spanish version of GenCost under /es/.
+Builds GenCost in other languages: Spanish under /es/, Portuguese under /pt/ (see LANGS).
 
-Every page in sitemap.xml gets a Spanish copy at /es/<same path>. Runs every morning after
-seo_update.py, so the Spanish pages always carry today's prices.
+Every page in sitemap.xml gets a copy at /<lang>/<same path>. Runs every morning after
+seo_update.py, so the translated pages always carry today's prices. A new language is one more
+entry in LANGS (and its folder in the workflow's "git add" line).
 
 How it translates:
 - Text is translated in blocks (a paragraph, a table cell, a heading ...), so sentences stay whole.
@@ -10,11 +11,11 @@ How it translates:
   needs a new translation, and Grok can never change a price.
 - Inline tags (links, bold, live prices) are replaced by <t0>...</t0> and put back afterwards,
   with their original attributes.
-- Every translation is stored in data/i18n/es.json and reused. Grok (XAI_API_KEY) is only asked
+- Every translation is stored in data/i18n/<lang>.json and reused. Grok (XAI_API_KEY) is only asked
   for text it has not translated before. Without a key, the stored translations are used.
-- A page is only published in Spanish when at least MIN_COVERAGE of its text is translated.
+- A page is only published in a language when at least MIN_COVERAGE of its text is translated.
 - Text that the page's JavaScript writes (price tables, calculators) is collected with a headless
-  browser and translated too; assets/i18n.js swaps it in on the Spanish pages.
+  browser and translated too; assets/i18n.js swaps it in on the translated pages.
 
 Run: python translate_site.py            (normal daily run)
      python translate_site.py --no-browser   (skip collecting JavaScript text)
@@ -33,10 +34,26 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from bs4 import BeautifulSoup, NavigableString, Comment
 
 SITE = "https://getgencost.com"
-LANG = "es"
-OUT = "es"
-CACHE_FILE = os.path.join("data", "i18n", "es.json")
-UI_FILE = os.path.join("data", "i18n", "es-ui.json")
+# code = folder and address (/es/), html = the page's lang attribute, hreflang = what Google is told
+LANGS = {
+    "es": {"html": "es", "hreflang": "es", "name": "Español", "label": "ES",
+           "rules": 'Write neutral Latin American Spanish that also reads naturally in Spain. Use "tú".',
+           "words": '"credits" -> "créditos". "/mo" -> "/mes", "per month" -> "al mes", "billed yearly"/"paid yearly" -> "pago anual".'},
+    "pt": {"html": "pt-BR", "hreflang": "pt", "name": "Português", "label": "PT",
+           "rules": 'Write Brazilian Portuguese. Use "você".',
+           "words": '"credits" -> "créditos". "/mo" -> "/mês", "per month" -> "por mês", "billed yearly"/"paid yearly" -> "pagamento anual".'},
+}
+CODE = LANG = OUT = CACHE_FILE = UI_FILE = None
+
+
+def use(code):
+    """Switch every setting below to one language."""
+    global CODE, LANG, OUT, CACHE_FILE, UI_FILE
+    CODE, LANG, OUT = code, LANGS[code]["html"], code
+    CACHE_FILE = os.path.join("data", "i18n", f"{code}.json")
+    UI_FILE = os.path.join("data", "i18n", f"{code}-ui.json")
+
+
 MIN_COVERAGE = 0.9
 MAX_BATCHES = 150          # Grok calls per run at most (the first run translates the most)
 BATCH_CHARS = 7000
@@ -53,7 +70,7 @@ ATTRS = ("title", "alt", "placeholder", "aria-label")
 NUM = re.compile(r"[$€£]?\d(?:[\d,.]*\d)?")
 TOKEN = re.compile(r"\[\[(\d+)\]\]")
 LETTERS = re.compile(r"[A-Za-z]{2}")
-NOT_TRANSLATED_PREFIXES = ("/data/", "/assets/", "/embed.js", "/mcp", "/es/")
+NOT_TRANSLATED_PREFIXES = ("/data/", "/assets/", "/embed.js", "/mcp") + tuple(f"/{c}/" for c in LANGS)
 
 
 # ---------- small helpers ----------
@@ -258,13 +275,13 @@ def collect_attr_units(soup):
 
 # ---------- Grok ----------
 
-PROMPT = """You translate the website GenCost (an independent price comparison of AI video, image, voice and music tools) from English to Spanish.
-Write neutral Latin American Spanish that also reads naturally in Spain. Use "tú". Keep it short, clear and natural, like a good human translator.
+PROMPT = """You translate the website GenCost (an independent price comparison of AI video, image, voice and music tools) from English to {language}.
+{rules} Keep it short, clear and natural, like a good human translator.
 Strict rules:
 - Keep every tag like <t0>...</t0> or <t3/> exactly as written (same numbers), around the matching words. Do not add or remove tags.
 - Keep every token like [[0]] exactly as written. They stand for numbers and prices.
-- Do not translate names of tools, companies, models or plans (GenCost, Runway, Kling AI, HeyGen, Gen-4.5, Standard, Pro, Creator, Free ...). "credits" -> "créditos".
-- "/mo" -> "/mes", "per month" -> "al mes", "billed yearly"/"paid yearly" -> "pago anual".
+- Do not translate names of tools, companies, models or plans (GenCost, Runway, Kling AI, HeyGen, Gen-4.5, Standard, Pro, Creator, Free ...).
+- {words}
 - Return ONLY a JSON object that maps each id to its translation, nothing else.
 
 Snippets (JSON, id -> English):
@@ -277,7 +294,9 @@ def grok_translate(items):
     client = OpenAI(api_key=API_KEY, base_url="https://api.x.ai/v1", timeout=180)
     r = client.chat.completions.create(
         model=MODEL, temperature=0,
-        messages=[{"role": "user", "content": PROMPT + json.dumps(items, ensure_ascii=False)}])
+        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese"}.get(CODE, LANGS[CODE]["name"]),
+                                                            rules=LANGS[CODE]["rules"], words=LANGS[CODE]["words"])
+                   + json.dumps(items, ensure_ascii=False)}])
     text = r.choices[0].message.content.strip()
     text = text.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
     out = json.loads(text)
@@ -347,7 +366,7 @@ def sitemap_pages():
         return []
     out = []
     for loc in re.findall(r"<loc>([^<]+)</loc>", xml):
-        if not loc.startswith(SITE) or "/es/" in loc:
+        if not loc.startswith(SITE) or any(f"{SITE}/{c}/" in loc for c in LANGS):
             continue
         path = loc[len(SITE):] or "/"
         f = "index.html" if path == "/" else path.lstrip("/")
@@ -358,8 +377,10 @@ def sitemap_pages():
     return out
 
 
-def es_path(path):
-    return "/es/" if path in ("/", "/index.html") else "/es" + path
+def es_path(path, code=None):
+    """The address of a page in a language: '/pages/x.html' -> '/es/pages/x.html'."""
+    code = code or CODE
+    return f"/{code}/" if path in ("/", "/index.html") else f"/{code}" + path
 
 
 def es_file(f):
@@ -387,32 +408,47 @@ def to_es(href, translated):
     return href
 
 
-def set_lang_switch(soup, href, label, lang):
-    right = soup.select_one("nav.top .nav-right")
-    if not right:
-        return
-    for old in right.select("a.lang-switch"):
-        old.decompose()
-    a = soup.new_tag("a", attrs={"class": "lang-switch", "href": href, "hreflang": lang, "lang": lang,
-                                 "title": "Español" if lang == "es" else "English"})
-    a.string = label
-    right.insert(0, a)
+def switch_links(path, langs, here):
+    """Links to the same page in the other languages: [(href, label, hreflang, title)]."""
+    out = []
+    if here != "en":
+        out.append((path if path != "/" else "/", "EN", "en", "English"))
+    for c in LANGS:
+        if c in langs and c != here:
+            out.append((es_path(path, c), LANGS[c]["label"], LANGS[c]["hreflang"], LANGS[c]["name"]))
+    return out
+
+
+def switch_html(links):
+    return "".join(f'<a class="lang-switch" href="{h}" hreflang="{hl}" lang="{hl}" title="{t}">{lab}</a>' for h, lab, hl, t in links)
+
+
+def put_switch(raw, links):
+    new = re.sub(r'<a class="lang-switch"[^>]*>[^<]*</a>\s*', "", raw)
+    if not links:
+        return new
+    m = re.search(r'(<div class="nav-right">)(\s*)', new)
+    if not m:
+        return new
+    return new[:m.end()] + switch_html(links) + m.group(2) + new[m.end():]
 
 
 HREF_START, HREF_END = "<!-- HREFLANG:START -->", "<!-- HREFLANG:END -->"
 
 
-def hreflang_block(path):
+def hreflang_block(path, langs):
     en = SITE + ("/" if path == "/" else path)
-    es = SITE + es_path(path)
-    return (f'{HREF_START}\n<link rel="alternate" hreflang="en" href="{en}">\n'
-            f'<link rel="alternate" hreflang="es" href="{es}">\n'
-            f'<link rel="alternate" hreflang="x-default" href="{en}">\n{HREF_END}\n')
+    lines = [f'<link rel="alternate" hreflang="en" href="{en}">']
+    for c in LANGS:
+        if c in langs:
+            lines.append(f'<link rel="alternate" hreflang="{LANGS[c]["hreflang"]}" href="{SITE}{es_path(path, c)}">')
+    lines.append(f'<link rel="alternate" hreflang="x-default" href="{en}">')
+    return f"{HREF_START}\n" + "\n".join(lines) + f"\n{HREF_END}\n"
 
 
-def put_hreflang(raw, path):
-    raw = re.sub(re.escape(HREF_START) + r".*?" + re.escape(HREF_END) + r"\n?", "", raw, flags=re.S)
-    return raw.replace("</head>", hreflang_block(path) + "</head>", 1)
+def put_hreflang(raw, path, langs):
+    raw = drop_hreflang(raw)
+    return raw.replace("</head>", hreflang_block(path, langs) + "</head>", 1)
 
 
 def drop_hreflang(raw):
@@ -450,7 +486,8 @@ def translate_jsonld(soup, cache, keys_only, translated):
 
 
 def build_page(path, f, cache, translated, keys):
-    """Returns (spanish html or None, coverage). Adds every text key it needs to keys."""
+    """Returns (translated html or None, coverage). Adds every text key it needs to keys.
+    The language links and hreflang are added later, once every language is known."""
     raw = open(f, encoding="utf-8").read()
     soup = BeautifulSoup(drop_hreflang(raw), "html.parser")
     body = soup.body
@@ -480,18 +517,18 @@ def build_page(path, f, cache, translated, keys):
         if a.get(attr) and not (a.name == "link" and a.get("rel") and a.get("rel")[0] in ("canonical", "alternate", "stylesheet", "icon", "preconnect", "manifest")):
             a[attr] = to_es(a[attr], translated)
     for a in soup.select("a[data-section]"):
-        a["data-section"] = ",".join("/es" + s if s.startswith("/") else s for s in a["data-section"].split(","))
+        a["data-section"] = ",".join(f"/{CODE}" + s if s.startswith("/") else s for s in a["data-section"].split(","))
     can = soup.find("link", rel="canonical")
     if can:
         can["href"] = SITE + es_path(path)
     og = soup.find("meta", property="og:url")
     if og:
         og["content"] = SITE + es_path(path)
-    set_lang_switch(soup, path if path != "/" else "/", "EN", "en")
+    for old in soup.select("a.lang-switch"):
+        old.decompose()
     if not soup.find("script", src="/assets/i18n.js") and soup.head:
         soup.head.append(soup.new_tag("script", attrs={"defer": "", "src": "/assets/i18n.js"}))
-    out = str(soup).replace("</head>", hreflang_block(path) + "</head>", 1)
-    return out, coverage
+    return str(soup), coverage
 
 
 # ---------- text written by JavaScript ----------
@@ -568,97 +605,114 @@ def collect_runtime(pages, report):
 
 # ---------- sitemap ----------
 
-def add_to_sitemap(paths):
+def add_to_sitemap(done_by_lang):
     try:
         xml = open("sitemap.xml", encoding="utf-8").read()
     except FileNotFoundError:
         return
-    xml = re.sub(r"\s*<url>\s*<loc>" + re.escape(SITE) + r"/es/.*?</url>", "", xml, flags=re.S)
+    for c in LANGS:
+        xml = re.sub(r"\s*<url>\s*<loc>" + re.escape(SITE) + f"/{c}/" + r".*?</url>", "", xml, flags=re.S)
     today = time.strftime("%Y-%m-%d")
-    extra = "".join(f"\n  <url>\n    <loc>{SITE}{es_path(p)}</loc>\n    <lastmod>{today}</lastmod>\n"
-                    f"    <changefreq>daily</changefreq>\n    <priority>0.6</priority>\n  </url>" for p in paths)
-    xml = xml.replace("</urlset>", extra.lstrip("\n") + "\n</urlset>" if extra else "</urlset>")
+    extra = "".join(f"\n  <url>\n    <loc>{SITE}{es_path(p, c)}</loc>\n    <lastmod>{today}</lastmod>\n"
+                    f"    <changefreq>daily</changefreq>\n    <priority>0.6</priority>\n  </url>"
+                    for c, done in done_by_lang.items() for p in sorted(done))
+    if extra:
+        xml = xml.replace("</urlset>", extra.lstrip("\n") + "\n</urlset>")
     with open("sitemap.xml", "w", encoding="utf-8") as fh:
         fh.write(xml)
 
 
 # ---------- main ----------
 
-def main(translator="grok", browser=True):
-    report = []
+def run_language(code, pages, runtime, translator, report):
+    """Translate what is missing for one language. Returns (cache, ui keys, finished pages)."""
+    use(code)
     cache = load_json(CACHE_FILE, {})
+    all_paths = {p for p, _ in pages}
+    keys = []
+    for path, f in pages:
+        build_page(path, f, cache, all_paths, keys)
+    ui_old = load_json(UI_FILE, {}).get("ui", {})
+    ui_keys = sorted(runtime) if runtime is not None else sorted(ui_old)
+    translate_missing(keys + ui_keys, cache, translator, report)
+    done = set()
+    for path, f in pages:
+        out, cov = build_page(path, f, cache, all_paths, [])
+        if out and cov >= MIN_COVERAGE:
+            done.add(path)
+        elif out:
+            report.append(f"{f}: only {cov:.0%} translated, not published yet")
+    return cache, ui_keys, done
+
+
+def main(translator="grok", browser=True):
     if translator == "grok":
         translator = grok_translate if API_KEY else None
     pages = sitemap_pages()
     if not pages:
         print("No pages in sitemap.xml")
         return
-    all_paths = {p for p, _ in pages}
+    files = dict(pages)
+    notes = {"all": []}
+    runtime = collect_runtime(pages, notes["all"]) if browser else None
 
-    # 1. what needs translating: page text, then text written by JavaScript
-    keys = []
-    for path, f in pages:
-        build_page(path, f, cache, all_paths, keys)
-    runtime = collect_runtime(pages, report) if browser else None
-    ui_old = load_json(UI_FILE, {}).get("ui", {})
-    ui_keys = sorted(runtime) if runtime is not None else sorted(ui_old)
-    translate_missing(keys + ui_keys, cache, translator, report)
+    # 1. translate what is missing, language by language
+    state = {}
+    for code in LANGS:
+        notes[code] = []
+        state[code] = run_language(code, pages, runtime, translator, notes[code])
+    avail = {path: {c for c in LANGS if path in state[c][2]} for path, _ in pages}
 
-    # 2. which pages are translated well enough to publish
-    built, done = {}, set()
-    for path, f in pages:
-        out, cov = build_page(path, f, cache, all_paths, [])
-        if out and cov >= MIN_COVERAGE:
-            built[path] = (f, out)
-            done.add(path)
-        elif out:
-            report.append(f"{f}: only {cov:.0%} translated, not published in Spanish yet")
-    # links only point to Spanish pages that exist; build again with the final list
-    for path in list(built):
-        f = built[path][0]
-        out, _ = build_page(path, f, cache, done, [])
-        os.makedirs(os.path.dirname(es_file(f)) or ".", exist_ok=True)
-        with open(es_file(f), "w", encoding="utf-8") as fh:
-            fh.write(out)
-    # remove Spanish pages whose English page is gone or no longer good enough
-    keep = {os.path.normpath(es_file(built[p][0])) for p in built}
-    for root, _, files in os.walk(OUT):
-        for name in files:
-            fp = os.path.normpath(os.path.join(root, name))
-            if fp.endswith(".html") and fp not in keep:
-                os.remove(fp)
+    # 2. write the translated pages (links only point to pages that exist in that language)
+    for code in LANGS:
+        use(code)
+        cache, ui_keys, done = state[code]
+        keep = set()
+        for path in sorted(done):
+            f = files[path]
+            out, _ = build_page(path, f, cache, done, [])
+            out = put_hreflang(out, path, avail[path])
+            out = put_switch(out, switch_links(path, avail[path], code))
+            target = os.path.join(OUT, f)
+            os.makedirs(os.path.dirname(target) or ".", exist_ok=True)
+            with open(target, "w", encoding="utf-8") as fh:
+                fh.write(out)
+            keep.add(os.path.normpath(target))
+        for root, _, names in os.walk(OUT):   # pages whose English page is gone or no longer translated enough
+            for name in names:
+                fp = os.path.normpath(os.path.join(root, name))
+                if fp.endswith(".html") and fp not in keep:
+                    os.remove(fp)
+        ui = {k: cache[k] for k in ui_keys if k in cache and not re.search(r"</?t\d+", cache[k])}
+        listed = set(done) | {p.removesuffix(".html") for p in done if p.endswith(".html")} | ({"/index.html"} if "/" in done else set())
+        save_json(UI_FILE, {"about": f"{LANGS[code]['name']}: texts that the page JavaScript writes (used by /assets/i18n.js), and the pages that exist in this language.",
+                            "ui": ui, "pages": sorted(listed)})
+        state[code] = (cache, ui_keys, done, len(ui))
 
-    # 3. English pages: link to the Spanish page and say it exists
+    # 3. English pages: hreflang and language links
     for path, f in pages:
         raw = open(f, encoding="utf-8").read()
-        if path in done:
-            new = put_hreflang(raw, path)
-            new = re.sub(r'<a class="lang-switch"[^>]*>[^<]*</a>\s*', "", new)
-            link = f'<a class="lang-switch" href="{es_path(path)}" hreflang="es" lang="es" title="Español">ES</a>'
-            m = re.search(r'(<div class="nav-right">)(\s*)', new)
-            if m:
-                new = new[:m.end()] + link + m.group(2) + new[m.end():]
-        else:
-            new = drop_hreflang(raw)
-            new = re.sub(r'<a class="lang-switch"[^>]*>[^<]*</a>\s*', "", new)
+        langs = avail[path]
+        new = put_hreflang(raw, path, langs) if langs else drop_hreflang(raw)
+        new = put_switch(new, switch_links(path, langs, "en"))
         if new != raw:
             with open(f, "w", encoding="utf-8") as fh:
                 fh.write(new)
 
-    # 4. dictionary for assets/i18n.js, and the sitemap
-    ui = {k: cache[k] for k in ui_keys if k in cache and not re.search(r"</?t\d+", cache[k])}
-    pages_list = sorted({p for p in done} | {p.removesuffix(".html") for p in done if p.endswith(".html")} | ({"/index.html"} if "/" in done else set()))
-    save_json(UI_FILE, {"about": "Spanish texts for words that the page JavaScript writes (used by /assets/i18n.js), and the pages that exist in Spanish.",
-                        "ui": ui, "pages": pages_list})
-    add_to_sitemap(sorted(done))
+    add_to_sitemap({c: state[c][2] for c in LANGS})
 
+    stamp = time.strftime("%Y-%m-%d %H:%M")
     with open("translate-review.txt", "w", encoding="utf-8") as fh:
-        fh.write(f"{time.strftime('%Y-%m-%d %H:%M')}  Spanish pages: {len(done)} of {len(pages)}, "
-                 f"stored translations: {len(cache)}, JavaScript texts: {len(ui)}/{len(ui_keys)}\n")
-        for line in report:
-            fh.write("  - " + line + "\n")
-    print(f"Spanish site: {len(done)}/{len(pages)} pages, {len(cache)} stored translations, "
-          f"{len(ui)}/{len(ui_keys)} JavaScript texts" + (f", {len(report)} notes in translate-review.txt" if report else ""))
+        for line in notes["all"]:
+            fh.write(f"{stamp}  - {line}\n")
+        for code in LANGS:
+            cache, ui_keys, done, nui = state[code]
+            summary = (f"{LANGS[code]['name']} (/{code}/): {len(done)} of {len(pages)} pages, "
+                       f"stored translations: {len(cache)}, JavaScript texts: {nui}/{len(ui_keys)}")
+            fh.write(f"{stamp}  {summary}\n")
+            for line in notes[code]:
+                fh.write("  - " + line + "\n")
+            print(summary + (f" ({len(notes[code])} notes in translate-review.txt)" if notes[code] else ""))
 
 
 if __name__ == "__main__":

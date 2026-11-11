@@ -1,8 +1,11 @@
-/* GenCost in Spanish: translates the words that the page's JavaScript writes (price tables,
+/* GenCost in other languages (Spanish /es/, Portuguese /pt/): translates the words that the page's JavaScript writes (price tables,
    calculators, buttons), and points links to the Spanish pages. The page text itself is
    translated when the site is built (translate_site.py). */
 (function () {
-  if ((document.documentElement.lang || "").slice(0, 2) !== "es") return;
+  var LANGS = ["es", "pt"];
+  var code = (document.documentElement.lang || "").slice(0, 2).toLowerCase();
+  if (LANGS.indexOf(code) < 0) return;
+  var PREFIX = new RegExp("^/(" + LANGS.join("|") + ")/");
   var NUM = /[$€£]?\d(?:[\d,.]*\d)?/g;
   var dict = null, pages = {};
   var SKIP = "script,style,textarea,pre,code,svg,.notranslate,.logo,.lang-switch,[translate=no]";
@@ -22,9 +25,9 @@
 
   function fixLink(a) {
     var h = a.getAttribute("href");
-    if (!h || h.charAt(0) !== "/" || h.indexOf("/es/") === 0 || h.indexOf("//") === 0) return;
+    if (!h || h.charAt(0) !== "/" || PREFIX.test(h) || h.indexOf("//") === 0) return;
     var path = h.split("#")[0].split("?")[0] || "/";
-    if (pages[path]) a.setAttribute("href", (path === "/" || path === "/index.html" ? "/es/" : "/es" + path) + h.slice(path.length));
+    if (pages[path]) a.setAttribute("href", (path === "/" || path === "/index.html" ? "/" + code + "/" : "/" + code + path) + h.slice(path.length));
   }
 
   function run(root) {
@@ -66,7 +69,7 @@
   }
 
   function load() {
-    fetch("/data/i18n/es-ui.json").then(function (r) { return r.json(); }).then(start).catch(function () {});
+    fetch("/data/i18n/" + code + "-ui.json").then(function (r) { return r.json(); }).then(start).catch(function () {});
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", load);
   else load();

@@ -540,5 +540,6 @@ main.page { padding-bottom: 24px; }
 .prose .proj-grid .proj-check input { width: 18px; height: 18px; accent-color: #00d4ff; }
 
 /* Language switch (English / Spanish) */
-.lang-switch { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; color: var(--muted, #9aa4ad); text-decoration: none; padding: 6px 8px; border: 1px solid rgba(255,255,255,0.14); border-radius: 8px; margin-right: 10px; }
+.lang-switch { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; color: var(--muted, #9aa4ad); text-decoration: none; padding: 6px 8px; border: 1px solid rgba(255,255,255,0.14); border-radius: 8px; }
+.nav-right .lang-switch + .lang-switch { margin-left: -6px; }
 .lang-switch:hover { color: #fff; border-color: rgba(255,255,255,0.35); }
