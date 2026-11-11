@@ -1,32 +1,31 @@
-2026-11-11 20:28  hailuo  (https://hailuoai.video/pricing)
+2026-11-11 21:08  hailuo  (https://hailuoai.video/pricing)
     - Max: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-11 20:30  higgsfield  (https://higgsfield.ai/pricing)
+2026-11-11 21:10  higgsfield  (https://higgsfield.ai/pricing)
     - Starter: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-11 20:34  colossyan  (https://www.colossyan.com/pricing)
+2026-11-11 21:13  colossyan  (https://www.colossyan.com/pricing)
     - Professional: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-11 20:35  veed  (https://www.veed.io/pricing)
+2026-11-11 21:14  veed  (https://www.veed.io/pricing)
     - Creator: yearly price equals the monthly price, left out
     - Pro: yearly price equals the monthly price, left out
-    - Studio: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-11 20:36  murf  (https://murf.ai/pricing)
+2026-11-11 21:14  murf  (https://murf.ai/pricing)
     - Creator: yearly price equals the monthly price, left out
     - Business: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-11 20:39  aiva  (https://www.aiva.ai/pricing)
+2026-11-11 21:17  aiva  (https://www.aiva.ai/pricing)
     - Standard: yearly price equals the monthly price, left out
     - Pro: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-11 20:40  mureka  (https://www.mureka.ai/subscribe)
+2026-11-11 21:18  mureka  (https://www.mureka.ai/subscribe)
     - Pro: yearly price equals the monthly price, left out
     - Premier: yearly price equals the monthly price, left out
     -> saved the monthly prices

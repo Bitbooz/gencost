@@ -116,7 +116,7 @@ Pick your plan
 Trusted by 40M+ creators, enterprises, agencies, and studios
 Pick your plan
 Trusted by 40M+ creators, enterprises, agencies, and studios
-New to Krea? Save up to 50% on your first plan
+New to Krea? Unlock a welcome discount
 Sign up free and we'll offer you a discount on your first plan.
 Sign up free
 Monthly
@@ -198,14 +198,14 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Max
-60,000 units / month
-~2,410 Nano Banana 2.1 generations
-~197 Seedance 2.5 videos
+40,000 units / month
+~1,607 Nano Banana 2.1 generations
+~131 Seedance 2.5 videos
 40k
 60k
 80k
 100k
-$105
+$70
 /month
 Get Max
 Krea 3
@@ -370,14 +370,14 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Max
-60,000 units / month
-~2,410 Nano Banana 2.1 generations
-~197 Seedance 2.5 videos
+40,000 units / month
+~1,607 Nano Banana 2.1 generations
+~131 Seedance 2.5 videos
 40k
 60k
 80k
 100k
-$105
+$70
 /month
 Get Max
 Krea 3
@@ -523,7 +523,7 @@ Pro
 $35
 /mo
 Max
-$105
+$70
 /mo
 Features & License
 Access to Krea 3
@@ -1409,7 +1409,7 @@ $35
 /month
 Upgrade
 Max
-$105
+$70
 /month
 Upgrade
 Business

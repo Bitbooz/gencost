@@ -13,9 +13,9 @@
       "monthly_price_usd": 59,
       "credits_or_minutes": 30,
       "unit": "minutes",
-      "offer": "monthly price not shown"
+      "offer": ""
     }
   ],
   "source": "https://www.colossyan.com/pricing",
-  "last_checked": "2026-11-11 20:34"
+  "last_checked": "2026-11-11 21:13"
 }

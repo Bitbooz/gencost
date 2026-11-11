@@ -2,9 +2,16 @@
   "platform": "did",
   "plans": [
     {
+      "name": "Trial",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 3,
+      "unit": "minutes",
+      "offer": "14-day trial"
+    },
+    {
       "name": "Lite",
       "monthly_price_usd": 4.7,
-      "yearly_price_usd": 4.67,
+      "yearly_price_usd": 4.666666666666667,
       "credits_or_minutes": 40,
       "unit": "credits",
       "offer": "Unlimited videos for your first month"
@@ -12,7 +19,7 @@
     {
       "name": "Pro",
       "monthly_price_usd": 16,
-      "yearly_price_usd": 15.92,
+      "yearly_price_usd": 15.916666666666666,
       "credits_or_minutes": 60,
       "unit": "credits",
       "offer": "Unlimited videos for your first month"
@@ -27,5 +34,5 @@
     }
   ],
   "source": "https://www.d-id.com/pricing/studio/",
-  "last_checked": "2026-11-11 20:33"
+  "last_checked": "2026-11-11 21:13"
 }
