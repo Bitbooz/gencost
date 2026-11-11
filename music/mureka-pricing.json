@@ -5,17 +5,17 @@
       "name": "Pro",
       "monthly_price_usd": 8,
       "credits_or_minutes": 5000,
-      "unit": "gold",
+      "unit": "Gold",
       "offer": ""
     },
     {
       "name": "Premier",
       "monthly_price_usd": 24,
       "credits_or_minutes": 20000,
-      "unit": "gold",
+      "unit": "Gold",
       "offer": ""
     }
   ],
   "source": "https://www.mureka.ai/subscribe",
-  "last_checked": "2026-11-11 20:00"
+  "last_checked": "2026-11-11 20:40"
 }

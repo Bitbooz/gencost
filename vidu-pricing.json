@@ -2,6 +2,13 @@
   "platform": "vidu",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
       "name": "Standard",
       "monthly_price_usd": 10,
       "yearly_price_usd": 8.25,
@@ -20,12 +27,12 @@
     {
       "name": "Ultimate",
       "monthly_price_usd": 230,
-      "yearly_price_usd": 95.83,
-      "credits_or_minutes": 20000,
+      "yearly_price_usd": 191.67,
+      "credits_or_minutes": 10000,
       "unit": "credits",
       "offer": "Limited-time offer 100 credits = $0.96"
     }
   ],
   "source": "https://www.vidu.com/pricing",
-  "last_checked": "2026-11-11 19:52"
+  "last_checked": "2026-11-11 20:29"
 }
