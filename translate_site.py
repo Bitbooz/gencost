@@ -56,6 +56,13 @@ LANGS = {
            "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap",
            "rules": 'Write natural modern Hebrew, as Israeli tech sites do. Keep tool and plan names in Latin letters. The page is read right to left: write arrows "→" as "←".',
            "words": '"credits" -> "קרדיטים". "/mo" -> "/חודש", "per month" -> "לחודש", "billed yearly"/"paid yearly" -> "בתשלום שנתי". Prices stay in US dollars, written with the [[n]] tokens.'},
+    "it": {"html": "it", "hreflang": "it", "name": "Italiano", "label": "IT",
+           "rules": 'Write natural Italian, as Italian tech and creator sites do. Use "tu".',
+           "words": '"credits" -> "crediti". "/mo" -> "/mese", "per month" -> "al mese", "billed yearly"/"paid yearly" -> "con pagamento annuale". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 ottobre 2026".'},
+    "ja": {"html": "ja", "hreflang": "ja", "name": "日本語", "label": "JA",
+           "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap",
+           "rules": 'Write natural Japanese in the polite です/ます style, as Japanese tech sites do. Keep tool, model and plan names in Latin letters.',
+           "words": '"credits" -> "クレジット". "/mo" -> "/月", "per month" -> "月額", "billed yearly"/"paid yearly" -> "年払い". Prices stay in US dollars, written with the [[n]] tokens. Dates in running text: "October 15, 2026" -> "2026年10月15日".'},
 }
 CODE = LANG = OUT = CACHE_FILE = UI_FILE = None
 
@@ -311,7 +318,7 @@ def grok_translate(items):
     client = OpenAI(api_key=API_KEY, base_url="https://api.x.ai/v1", timeout=180)
     r = client.chat.completions.create(
         model=MODEL, temperature=0,
-        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew"}.get(CODE, LANGS[CODE]["name"]),
+        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew", "it": "Italian", "ja": "Japanese"}.get(CODE, LANGS[CODE]["name"]),
                                                             rules=LANGS[CODE]["rules"], words=LANGS[CODE]["words"])
                    + json.dumps(items, ensure_ascii=False)}])
     text = r.choices[0].message.content.strip()

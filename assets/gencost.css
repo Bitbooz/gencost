@@ -575,3 +575,7 @@ main.page { padding-bottom: 24px; }
 [dir="rtl"] textarea, [dir="rtl"] pre { text-align: left; }
 @media (max-width: 760px) { [dir="rtl"] .stat:nth-child(2) { border-left: 0; } }
 [dir="rtl"] .prose .alert-box .hp { left: auto; right: auto; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); }
+
+/* Japanese: Japanese font, no tight letter-spacing, break lines between characters */
+:lang(ja) body, :lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) .prose h1, :lang(ja) .prose h2 { font-family: 'Inter', 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', system-ui, sans-serif; letter-spacing: 0; }
+:lang(ja) .prose p, :lang(ja) .prose li, :lang(ja) .prose td { line-break: strict; word-break: normal; overflow-wrap: anywhere; }
