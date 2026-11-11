@@ -34,8 +34,6 @@ Image Editor
 Edit any image with words
 Upscaler
 Images and video up to 22K
-Video Restyle
-Give any video a new look
 Motion Transfer
 Animate any character
 Lipsync
@@ -101,8 +99,6 @@ Image Editor
 Edit any image with words
 Upscaler
 Images and video up to 22K
-Video Restyle
-Give any video a new look
 Motion Transfer
 Animate any character
 Lipsync
@@ -131,6 +127,12 @@ $0
 /month
 Get Free
 No difference compared to monthly
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -160,6 +162,12 @@ $5
 Get Basic
 Save $48
 compared to monthly
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -188,6 +196,12 @@ $21
 Get Pro
 Save $168
 compared to monthly
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -219,6 +233,12 @@ $63
 Get Max
 Save $504
 compared to monthly
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -314,6 +334,12 @@ $0
 /month
 Get Free
 No difference compared to monthly
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -343,6 +369,12 @@ $5
 Get Basic
 Save $48
 compared to monthly
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -371,6 +403,12 @@ $21
 Get Pro
 Save $168
 compared to monthly
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -402,6 +440,12 @@ $63
 Get Max
 Save $504
 compared to monthly
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -1219,14 +1263,6 @@ videos
 62
 videos
 125
-videos
-Ray 2
-5s
-16
-videos
-67
-videos
-135
 videos
 Runway Gen-3
 5s
@@ -2403,17 +2439,6 @@ videos
 125
 videos
 62
-videos
-Custom
-Ray 2
-5s
-16
-videos
-67
-videos
-135
-videos
-67
 videos
 Custom
 Runway Gen-3

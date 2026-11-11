@@ -191,6 +191,8 @@ credits / month
 $10
 /mo
 Billed monthly
+60
+credits / $1
 Subscribe
 to
 Starter
@@ -210,12 +212,14 @@ Learn more
 about
 Starter
 Creator
-Best Value
+Most popular
 2,600
 credits / month
 $35
 /mo
 Billed monthly
+74
+credits / $1
 Subscribe
 to
 Creator
@@ -238,6 +242,7 @@ Learn more
 about
 Creator
 Fancy
+Best value
 8,550
 credits / month
 8.6k
@@ -248,6 +253,8 @@ credits / month
 $95
 /mo
 Billed monthly
+90
+credits / $1
 Subscribe
 to
 Fancy
@@ -374,11 +381,12 @@ Subscribe
 to
 Starter
 Creator
-Best Value
+Most popular
 Subscribe
 to
 Creator
 Fancy
+Best value
 Subscribe
 to
 Fancy

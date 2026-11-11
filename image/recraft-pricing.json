@@ -2,6 +2,13 @@
   "platform": "recraft",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
       "name": "Basic",
       "monthly_price_usd": 12,
       "yearly_price_usd": 10,
@@ -19,5 +26,5 @@
     }
   ],
   "source": "https://www.recraft.ai/pricing",
-  "last_checked": "2026-11-10 23:52"
+  "last_checked": "2026-11-11 06:29"
 }

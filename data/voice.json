@@ -1,6 +1,6 @@
 {
  "category": "voice",
- "updated": "2026-11-10 23:53",
+ "updated": "2026-11-11 06:29",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -18,7 +18,7 @@
    "name": "ElevenLabs",
    "page": "/pages/voice/elevenlabs.html",
    "source": "https://elevenlabs.io/pricing",
-   "checked": "2026-11-10 23:46",
+   "checked": "2026-11-11 06:23",
    "plans": [
     {
      "name": "Free",
@@ -84,14 +84,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-10 23:46",
-   "price_verified": "2026-11-10 23:46"
+   "source_checked": "2026-11-11 06:23",
+   "price_verified": "2026-11-11 06:23"
   },
   {
    "name": "Murf AI",
    "page": "/pages/voice/murf.html",
    "source": "https://murf.ai/pricing",
-   "checked": "2026-11-10 23:47",
+   "checked": "2026-11-11 06:24",
    "plans": [
     {
      "name": "Free",
@@ -129,44 +129,36 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-10 23:47",
-   "price_verified": "2026-11-10 23:47"
+   "source_checked": "2026-11-11 06:24",
+   "price_verified": "2026-11-11 06:24"
   },
   {
    "name": "Cartesia",
    "page": "/pages/voice/cartesia.html",
    "source": "https://cartesia.ai/pricing",
-   "checked": "2026-11-10 23:47",
+   "checked": "2026-11-11 06:24",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 20000,
-     "unit": "credits",
      "offer": "",
      "credits_period": "month"
     },
     {
      "name": "Pro",
      "monthly_price_usd": 5,
-     "credits_or_minutes": 100000,
-     "unit": "credits",
      "offer": "",
      "credits_period": "month"
     },
     {
      "name": "Startup",
      "monthly_price_usd": 49,
-     "credits_or_minutes": 1250000,
-     "unit": "credits",
      "offer": "",
      "credits_period": "month"
     },
     {
      "name": "Scale",
      "monthly_price_usd": 299,
-     "credits_or_minutes": 8000000,
-     "unit": "credits",
      "offer": "",
      "credits_period": "month"
     }
@@ -180,20 +172,18 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-10 23:47",
-   "price_verified": "2026-11-10 23:47"
+   "source_checked": "2026-11-11 06:24",
+   "price_verified": "2026-11-11 06:24"
   },
   {
    "name": "Speechify",
    "page": "/pages/voice/speechify.html",
    "source": "https://speechify.com/pricing",
-   "checked": "2026-11-10 23:48",
+   "checked": "2026-11-11 06:24",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": "",
      "credits_period": "month"
     },
@@ -201,20 +191,18 @@
      "name": "Premium",
      "monthly_price_usd": 29,
      "yearly_price_usd": 11.58,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": "",
      "credits_period": "month"
     }
    ],
-   "source_checked": "2026-11-10 23:48",
-   "price_verified": "2026-11-10 23:48"
+   "source_checked": "2026-11-11 06:24",
+   "price_verified": "2026-11-11 06:24"
   },
   {
    "name": "Descript",
    "page": "/pages/voice/descript.html",
    "source": "https://www.descript.com/pricing",
-   "checked": "2026-11-10 23:48",
+   "checked": "2026-11-11 06:24",
    "plans": [
     {
      "name": "Hobbyist",
@@ -252,8 +240,8 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-10 23:48",
-   "price_verified": "2026-11-10 23:48"
+   "source_checked": "2026-11-11 06:24",
+   "price_verified": "2026-11-11 06:24"
   },
   {
    "name": "WellSaid Labs",
@@ -275,7 +263,7 @@
    "name": "Fliki",
    "page": "/pages/voice/fliki.html",
    "source": "https://fliki.ai/pricing",
-   "checked": "2026-11-10 23:48",
+   "checked": "2026-11-11 06:25",
    "plans": [
     {
      "name": "Free",
@@ -311,14 +299,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-10 23:48",
-   "price_verified": "2026-11-10 23:48"
+   "source_checked": "2026-11-11 06:25",
+   "price_verified": "2026-11-11 06:25"
   },
   {
    "name": "Fish Audio",
    "page": "/pages/fish-audio.html",
    "source": "https://fish.audio/plan/",
-   "checked": "2026-11-10 23:48",
+   "checked": "2026-11-11 06:25",
    "plans": [
     {
      "name": "Free Tier",
@@ -356,8 +344,8 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-10 23:48",
-   "price_verified": "2026-11-10 23:48"
+   "source_checked": "2026-11-11 06:25",
+   "price_verified": "2026-11-11 06:25"
   }
  ]
 }

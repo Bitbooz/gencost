@@ -6,6 +6,8 @@ MCP
 API
 Genjutsu
 New
+Miracle
+Soon
 Shorts Studio
 New
 Content Factory
@@ -13,10 +15,8 @@ Ads Studio
 New
 Playable
 Mangaka
-New
 AI Influencer
 Academy
-New
 Katana
 ChatGPT Plugin
 Effects
@@ -33,7 +33,7 @@ Enterprise
 Pricing
 30% OFF
 Login
-Get started
+Sign up
 SEEDANCE 2.5, GPT IMAGE 2.6 & SEEDREAM 5.5 UNLIMITED
 SIGN UP AND GET YOUR ADDITIONAL DISCOUNT
 Get Seedance 2.5, GPT Image 2.6 & Seedream 5.5 Unlimited on Ultra plan for 7 days with Special 30% discount
@@ -112,7 +112,7 @@ $
 7
 8
 9
-/mo billed yearly
+/mo, billed yearly
 Get Starter
 
 270 credits / month
@@ -210,7 +210,7 @@ $
 7
 8
 9
-/mo billed yearly
+/mo, billed yearly
 Get Plus
 −20%
 Save $144
@@ -318,7 +318,7 @@ $
 7
 8
 9
-/mo billed yearly
+/mo, billed yearly
 Get Ultra
 −23%
 Save $360

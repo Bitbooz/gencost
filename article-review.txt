@@ -1,4 +1,4 @@
-Article prices updated 2026-11-10 23:53 (price data from 2026-11-10 23:53)
+Article prices updated 2026-11-11 06:29 (price data from 2026-11-11 06:29)
 
 pages/best-cheap-ai-video-tools-for-youtube-2026.html: 6 live prices (0 new, 0 changed today) · box: CapCut, Kling AI, Pika, ElevenLabs, Runway, Luma, Captions
 pages/best-elevenlabs-alternatives-2026.html: 6 live prices (0 new, 0 changed today) · box: ElevenLabs, Murf AI, Cartesia
@@ -37,6 +37,5 @@ pages/runway-vs-luma-pricing-2026.html: 5 live prices (0 new, 0 changed today) �
     - example 30 x 10s: Luma $27.00, Runway $86.40 -> cheapest today: Luma (check the verdict text agrees)
 pages/stable-audio-vs-mureka-pricing-2026.html: 6 live prices (0 new, 0 changed today) · box: Stable Audio, Mureka
 pages/suno-vs-udio-pricing-2026.html: 4 live prices (0 new, 0 changed today) · box: Suno, Udio
-Related guides and tool-page fallbacks: 12 pages updated
-changelog.html: price log updated
+Related guides and tool-page fallbacks: 41 pages updated
 pages/emerging.html: emerging tools rebuilt
