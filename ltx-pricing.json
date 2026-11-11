@@ -14,7 +14,7 @@
       "yearly_price_usd": 12,
       "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday"
+      "offer": "$15 first month"
     },
     {
       "name": "Standard",
@@ -22,7 +22,7 @@
       "yearly_price_usd": 28,
       "credits_or_minutes": 28000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday"
+      "offer": "$35 first month"
     },
     {
       "name": "Pro",
@@ -30,9 +30,9 @@
       "yearly_price_usd": 100,
       "credits_or_minutes": 110000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday"
+      "offer": "$125 first month"
     }
   ],
   "source": "https://ltx.studio/pricing",
-  "last_checked": "2026-11-11 19:02"
+  "last_checked": "2026-11-11 19:30"
 }
