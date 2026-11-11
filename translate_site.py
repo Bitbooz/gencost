@@ -48,6 +48,10 @@ LANGS = {
     "fr": {"html": "fr", "hreflang": "fr", "name": "Français", "label": "FR",
            "rules": 'Write French that reads naturally in France, Belgium, Switzerland and Canada. Use "vous".',
            "words": '"credits" -> "crédits". "/mo" -> "/mois", "per month" -> "par mois", "billed yearly"/"paid yearly" -> "facturé annuellement". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 octobre 2026".'},
+    "ar": {"html": "ar", "hreflang": "ar", "name": "العربية", "label": "AR", "dir": "rtl",
+           "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap",
+           "rules": 'Write Modern Standard Arabic that is clear and simple for readers in every Arab country. Keep tool and plan names in Latin letters. The page is read right to left: write arrows "→" as "←".',
+           "words": '"credits" -> "رصيد" (plural "أرصدة" where natural). "/mo" -> "/شهريًا", "per month" -> "شهريًا", "billed yearly"/"paid yearly" -> "عند الدفع سنويًا". Prices stay in US dollars, written with the [[n]] tokens.'},
 }
 CODE = LANG = OUT = CACHE_FILE = UI_FILE = None
 
@@ -302,7 +306,7 @@ def grok_translate(items):
     client = OpenAI(api_key=API_KEY, base_url="https://api.x.ai/v1", timeout=180)
     r = client.chat.completions.create(
         model=MODEL, temperature=0,
-        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French"}.get(CODE, LANGS[CODE]["name"]),
+        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic"}.get(CODE, LANGS[CODE]["name"]),
                                                             rules=LANGS[CODE]["rules"], words=LANGS[CODE]["words"])
                    + json.dumps(items, ensure_ascii=False)}])
     text = r.choices[0].message.content.strip()
@@ -526,6 +530,11 @@ def build_page(path, f, cache, translated, keys):
     # language, links, address
     if soup.html:
         soup.html["lang"] = LANG
+        if LANGS[CODE].get("dir") == "rtl":
+            soup.html["dir"] = "rtl"
+    font = LANGS[CODE].get("font")
+    if font and soup.head and not soup.find("link", href=font):
+        soup.head.append(soup.new_tag("link", attrs={"rel": "stylesheet", "href": font}))
     for a in soup.find_all(["a", "form", "link"]):
         attr = "action" if a.name == "form" else "href"
         if a.get(attr) and not (a.name == "link" and a.get("rel") and a.get("rel")[0] in ("canonical", "alternate", "stylesheet", "icon", "preconnect", "manifest")):

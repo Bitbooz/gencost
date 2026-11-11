@@ -550,3 +550,28 @@ main.page { padding-bottom: 24px; }
 .lang-list .lang-switch { border: 0; margin: 0; padding: 9px 12px; border-radius: 8px; letter-spacing: 0.02em; font-weight: 500; color: #e8e8f0; }
 .lang-list .lang-switch:hover { background: rgba(255,255,255,0.07); }
 .lang-switch:hover { color: #fff; border-color: rgba(255,255,255,0.35); }
+
+/* Right-to-left languages (Arabic): mirror the layout */
+[dir="rtl"] body, [dir="rtl"] .prose h1, [dir="rtl"] .prose h2, [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { font-family: 'Noto Sans Arabic', 'Inter', system-ui, sans-serif; letter-spacing: 0; }
+[dir="rtl"] .prose h1, [dir="rtl"] .prose h2, [dir="rtl"] .prose h1 + p, [dir="rtl"] .prose .subtitle, [dir="rtl"] .prose .lead, [dir="rtl"] .prose th, [dir="rtl"] .prose td { text-align: right; }
+[dir="rtl"] .norm td:last-child, [dir="rtl"] .board-price, [dir="rtl"] .plat-top span { text-align: left; }
+[dir="rtl"] .announce .pill-new { margin-right: 0; margin-left: 8px; }
+[dir="rtl"] .row .name small, [dir="rtl"] .norm td small { margin-left: 0; margin-right: 6px; }
+[dir="rtl"] .prose .proj-total-num small { margin-left: 0; margin-right: 4px; }
+[dir="rtl"] .stat { border-right: 0; border-left: 1px solid var(--border); }
+[dir="rtl"] .stat:last-child { border-left: 0; }
+[dir="rtl"] .prose ul, [dir="rtl"] .prose ol { padding-left: 0; padding-right: 1.3em; }
+[dir="rtl"] .watch ul, [dir="rtl"] .prose .related ul, [dir="rtl"] .prose .price-history ul { padding-left: 0; padding-right: 18px; }
+[dir="rtl"] .prose .verdict-box, [dir="rtl"] .prose .verdict { border-left: 0; border-right: 3px solid var(--cyan); }
+[dir="rtl"] .prose .n { margin-right: 0; margin-left: 10px; }
+[dir="rtl"] .prose .ph-key i { margin-right: 0; margin-left: 6px; }
+[dir="rtl"] .cmp-badge { right: auto; left: 20px; }
+[dir="rtl"] .explore .glow { right: auto; left: -80px; }
+[dir="rtl"] .lang-list { right: auto; left: 0; }
+[dir="rtl"] .lang-menu summary::after { margin-left: 0; margin-right: 6px; }
+[dir="rtl"] .arrow { display: inline-block; transform: scaleX(-1); }
+[dir="rtl"] a:hover .arrow { transform: scaleX(-1) translateX(3px); }
+[dir="rtl"] .logo, [dir="rtl"] svg, [dir="rtl"] textarea, [dir="rtl"] pre, [dir="rtl"] code, [dir="rtl"] .chip { direction: ltr; }
+[dir="rtl"] textarea, [dir="rtl"] pre { text-align: left; }
+@media (max-width: 760px) { [dir="rtl"] .stat:nth-child(2) { border-left: 0; } }
+[dir="rtl"] .prose .alert-box .hp { left: auto; right: auto; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); }
