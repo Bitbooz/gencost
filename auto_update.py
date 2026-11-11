@@ -168,6 +168,12 @@ def load_existing(path):
 # Extra help for pages where the prices are easy to misread.
 # "focus": lines with these words (and the lines around them) are put first, so they are never cut off.
 HINTS = {
+    "heygen": {
+        "focus": ["/mo", "annually", "billed"],
+        "note": "HeyGen shows the monthly-billing price on the cards (Creator $29/mo). The yearly price is in the text "
+                "as '$24/month if you pay annually': that is yearly_price_usd. If no lower yearly price is written, "
+                "leave yearly_price_usd out. Never copy the monthly price into yearly_price_usd.",
+    },
     "pictory": {
         "focus": ["billed annually", "billed monthly", "credits"],
         "note": "Each plan shows two prices: the higher one 'per month, billed monthly' is monthly_price_usd, the lower "
@@ -349,6 +355,10 @@ def check(data, text):
         # Yearly price: optional. A wrong one is dropped instead of blocking the tool.
         yearly = p.get("yearly_price_usd")
         if yearly in (None, 0, "", "0"):
+            p.pop("yearly_price_usd", None)
+        elif isinstance(yearly, (int, float)) and price and yearly == price:
+            # the monthly price read twice (the yearly toggle was not used): not a yearly price
+            notes.append(f"{p.get('name')}: yearly price equals the monthly price, left out")
             p.pop("yearly_price_usd", None)
         elif not isinstance(yearly, (int, float)) or yearly < 0 or (price and yearly > price) or not price_on_page(yearly, text):
             notes.append(f"{p.get('name')}: yearly price {yearly!r} could not be confirmed, left out")

@@ -186,7 +186,7 @@ def record_history(category, platforms, day):
                 pending.pop(key, None)
                 continue
             seen = pending.get(key)
-            if seen and seen["value"] == [m, y] and seen["reading"] != checked:
+            if seen and seen["value"] == [m, y] and seen.get("first_seen") != day:  # second reading must be on another day
                 rows.append([day, m, y])  # read the same new price twice: a real change
                 pending.pop(key, None)
             else:
