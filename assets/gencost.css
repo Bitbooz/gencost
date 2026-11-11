@@ -541,5 +541,12 @@ main.page { padding-bottom: 24px; }
 
 /* Language switch (English / Spanish) */
 .lang-switch { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; color: var(--muted, #9aa4ad); text-decoration: none; padding: 6px 8px; border: 1px solid rgba(255,255,255,0.14); border-radius: 8px; }
-.nav-right .lang-switch + .lang-switch { margin-left: -6px; }
+.lang-menu { position: relative; }
+.lang-menu summary { list-style: none; cursor: pointer; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; color: var(--muted, #9aa4ad); padding: 6px 10px; border: 1px solid rgba(255,255,255,0.14); border-radius: 8px; user-select: none; }
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary::after { content: "▾"; margin-left: 6px; font-size: 0.7rem; opacity: 0.7; }
+.lang-menu[open] summary, .lang-menu summary:hover { color: #fff; border-color: rgba(255,255,255,0.35); }
+.lang-list { position: absolute; right: 0; top: calc(100% + 8px); z-index: 60; min-width: 160px; display: flex; flex-direction: column; gap: 2px; padding: 6px; background: #121219; border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; box-shadow: 0 12px 30px rgba(0,0,0,0.45); }
+.lang-list .lang-switch { border: 0; margin: 0; padding: 9px 12px; border-radius: 8px; letter-spacing: 0.02em; font-weight: 500; color: #e8e8f0; }
+.lang-list .lang-switch:hover { background: rgba(255,255,255,0.07); }
 .lang-switch:hover { color: #fff; border-color: rgba(255,255,255,0.35); }

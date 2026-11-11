@@ -44,7 +44,10 @@ LANGS = {
            "words": '"credits" -> "créditos". "/mo" -> "/mês", "per month" -> "por mês", "billed yearly"/"paid yearly" -> "pagamento anual".'},
     "de": {"html": "de", "hreflang": "de", "name": "Deutsch", "label": "DE",
            "rules": 'Write German for Germany, Austria and Switzerland. Use "du" (informal), as creator and tech sites do.',
-           "words": '"credits" -> "Credits". "/mo" -> "/Monat", "per month" -> "pro Monat", "billed yearly"/"paid yearly" -> "bei jährlicher Zahlung". Prices stay in US dollars.'},
+           "words": '"credits" -> "Credits". "/mo" -> "/Monat", "per month" -> "pro Monat", "billed yearly"/"paid yearly" -> "bei jährlicher Zahlung". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15. Oktober 2026".'},
+    "fr": {"html": "fr", "hreflang": "fr", "name": "Français", "label": "FR",
+           "rules": 'Write French that reads naturally in France, Belgium, Switzerland and Canada. Use "vous".',
+           "words": '"credits" -> "crédits". "/mo" -> "/mois", "per month" -> "par mois", "billed yearly"/"paid yearly" -> "facturé annuellement". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 octobre 2026".'},
 }
 CODE = LANG = OUT = CACHE_FILE = UI_FILE = None
 
@@ -114,7 +117,8 @@ def skipped(el):
     if el.name in SKIP:
         return True
     cls = el.get("class") or []
-    return "notranslate" in cls or "logo" in cls or el.get("translate") == "no" or "lang-switch" in cls
+    return ("notranslate" in cls or "logo" in cls or el.get("translate") == "no" or "lang-switch" in cls
+            or "lang-menu" in cls)
 
 
 def has_block(el):
@@ -262,7 +266,8 @@ class AttrUnit:
 def collect_attr_units(soup):
     units = []
     for el in soup.find_all(True):
-        if el.name in ("script", "style", "textarea") or "lang-switch" in (el.get("class") or []):
+        cls = el.get("class") or []
+        if el.name in ("script", "style", "textarea") or "lang-switch" in cls or "lang-menu" in cls or el.find_parent(class_="lang-menu"):
             continue
         for a in ATTRS:
             if el.get(a):
@@ -297,7 +302,7 @@ def grok_translate(items):
     client = OpenAI(api_key=API_KEY, base_url="https://api.x.ai/v1", timeout=180)
     r = client.chat.completions.create(
         model=MODEL, temperature=0,
-        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German"}.get(CODE, LANGS[CODE]["name"]),
+        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French"}.get(CODE, LANGS[CODE]["name"]),
                                                             rules=LANGS[CODE]["rules"], words=LANGS[CODE]["words"])
                    + json.dumps(items, ensure_ascii=False)}])
     text = r.choices[0].message.content.strip()
@@ -422,18 +427,24 @@ def switch_links(path, langs, here):
     return out
 
 
-def switch_html(links):
-    return "".join(f'<a class="lang-switch" href="{h}" hreflang="{hl}" lang="{hl}" title="{t}">{lab}</a>' for h, lab, hl, t in links)
+def switch_html(links, here):
+    """A small menu: the current language, and links to the same page in the others."""
+    cur = "EN" if here == "en" else LANGS[here]["label"]
+    items = "".join(f'<a class="lang-switch" href="{h}" hreflang="{hl}" lang="{hl}">{lab} · {t}</a>'
+                    for h, lab, hl, t in links)
+    return (f'<details class="lang-menu" translate="no"><summary title="Language">{cur}</summary>'
+            f'<div class="lang-list">{items}</div></details>')
 
 
-def put_switch(raw, links):
-    new = re.sub(r'<a class="lang-switch"[^>]*>[^<]*</a>\s*', "", raw)
+def put_switch(raw, links, here):
+    new = re.sub(r'<details class="lang-menu".*?</details>\s*', "", raw, flags=re.S)
+    new = re.sub(r'<a class="lang-switch"[^>]*>[^<]*</a>\s*', "", new)
     if not links:
         return new
     m = re.search(r'(<div class="nav-right">)(\s*)', new)
     if not m:
         return new
-    return new[:m.end()] + switch_html(links) + m.group(2) + new[m.end():]
+    return new[:m.end()] + switch_html(links, here) + m.group(2) + new[m.end():]
 
 
 HREF_START, HREF_END = "<!-- HREFLANG:START -->", "<!-- HREFLANG:END -->"
@@ -527,7 +538,7 @@ def build_page(path, f, cache, translated, keys):
     og = soup.find("meta", property="og:url")
     if og:
         og["content"] = SITE + es_path(path)
-    for old in soup.select("a.lang-switch"):
+    for old in soup.select("a.lang-switch, details.lang-menu"):
         old.decompose()
     if not soup.find("script", src="/assets/i18n.js") and soup.head:
         soup.head.append(soup.new_tag("script", attrs={"defer": "", "src": "/assets/i18n.js"}))
@@ -538,7 +549,7 @@ def build_page(path, f, cache, translated, keys):
 
 COLLECT_JS = r"""() => {
   const NUM = /[$€£]?\d(?:[\d,.]*\d)?/g, out = [];
-  const skip = (el) => el.closest('script,style,textarea,pre,code,svg,.notranslate,.logo,.lang-switch,[translate=no]');
+  const skip = (el) => el.closest('script,style,textarea,pre,code,svg,.notranslate,.logo,.lang-switch,.lang-menu,[translate=no]');
   const add = (s) => {
     s = (s || '').replace(/\s+/g, ' ').trim();
     let n = 0; const k = s.replace(NUM, () => '[[' + (n++) + ']]');
@@ -675,7 +686,7 @@ def main(translator="grok", browser=True):
             f = files[path]
             out, _ = build_page(path, f, cache, done, [])
             out = put_hreflang(out, path, avail[path])
-            out = put_switch(out, switch_links(path, avail[path], code))
+            out = put_switch(out, switch_links(path, avail[path], code), code)
             target = os.path.join(OUT, f)
             os.makedirs(os.path.dirname(target) or ".", exist_ok=True)
             with open(target, "w", encoding="utf-8") as fh:
@@ -697,7 +708,7 @@ def main(translator="grok", browser=True):
         raw = open(f, encoding="utf-8").read()
         langs = avail[path]
         new = put_hreflang(raw, path, langs) if langs else drop_hreflang(raw)
-        new = put_switch(new, switch_links(path, langs, "en"))
+        new = put_switch(new, switch_links(path, langs, "en"), "en")
         if new != raw:
             with open(f, "w", encoding="utf-8") as fh:
                 fh.write(new)
