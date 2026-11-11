@@ -2,6 +2,13 @@
   "platform": "hailuo",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 0,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
       "name": "Standard",
       "monthly_price_usd": 14.99,
       "yearly_price_usd": 8.4,
@@ -34,5 +41,5 @@
     }
   ],
   "source": "https://hailuoai.video/pricing",
-  "last_checked": "2026-11-11 22:36"
+  "last_checked": "2026-11-11 23:00"
 }
