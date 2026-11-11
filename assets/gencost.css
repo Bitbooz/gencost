@@ -552,7 +552,7 @@ main.page { padding-bottom: 24px; }
 .lang-switch:hover { color: #fff; border-color: rgba(255,255,255,0.35); }
 
 /* Right-to-left languages (Arabic): mirror the layout */
-[dir="rtl"] body, [dir="rtl"] .prose h1, [dir="rtl"] .prose h2, [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { font-family: 'Noto Sans Arabic', 'Inter', system-ui, sans-serif; letter-spacing: 0; }
+[dir="rtl"] body, [dir="rtl"] .prose h1, [dir="rtl"] .prose h2, [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { font-family: 'Noto Sans Arabic', 'Noto Sans Hebrew', 'Inter', system-ui, sans-serif; letter-spacing: 0; }
 [dir="rtl"] .prose h1, [dir="rtl"] .prose h2, [dir="rtl"] .prose h1 + p, [dir="rtl"] .prose .subtitle, [dir="rtl"] .prose .lead, [dir="rtl"] .prose th, [dir="rtl"] .prose td { text-align: right; }
 [dir="rtl"] .norm td:last-child, [dir="rtl"] .board-price, [dir="rtl"] .plat-top span { text-align: left; }
 [dir="rtl"] .announce .pill-new { margin-right: 0; margin-left: 8px; }

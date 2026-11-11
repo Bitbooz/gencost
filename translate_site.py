@@ -52,6 +52,10 @@ LANGS = {
            "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap",
            "rules": 'Write Modern Standard Arabic that is clear and simple for readers in every Arab country. Keep tool and plan names in Latin letters. The page is read right to left: write arrows "→" as "←".',
            "words": '"credits" -> "رصيد" (plural "أرصدة" where natural). "/mo" -> "/شهريًا", "per month" -> "شهريًا", "billed yearly"/"paid yearly" -> "عند الدفع سنويًا". Prices stay in US dollars, written with the [[n]] tokens.'},
+    "he": {"html": "he", "hreflang": "he", "name": "עברית", "label": "HE", "dir": "rtl",
+           "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap",
+           "rules": 'Write natural modern Hebrew, as Israeli tech sites do. Keep tool and plan names in Latin letters. The page is read right to left: write arrows "→" as "←".',
+           "words": '"credits" -> "קרדיטים". "/mo" -> "/חודש", "per month" -> "לחודש", "billed yearly"/"paid yearly" -> "בתשלום שנתי". Prices stay in US dollars, written with the [[n]] tokens.'},
 }
 CODE = LANG = OUT = CACHE_FILE = UI_FILE = None
 
@@ -307,7 +311,7 @@ def grok_translate(items):
     client = OpenAI(api_key=API_KEY, base_url="https://api.x.ai/v1", timeout=180)
     r = client.chat.completions.create(
         model=MODEL, temperature=0,
-        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic"}.get(CODE, LANGS[CODE]["name"]),
+        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew"}.get(CODE, LANGS[CODE]["name"]),
                                                             rules=LANGS[CODE]["rules"], words=LANGS[CODE]["words"])
                    + json.dumps(items, ensure_ascii=False)}])
     text = r.choices[0].message.content.strip()
