@@ -19,7 +19,7 @@ Free
 
 For beginners trying out AI video creation.
 
-$0
+CA$0
 
 No credit card required
 
@@ -43,7 +43,7 @@ Standard
 
 For creators venturing into AI video production.
 
-$28
+CA$39
 
 per user / month · No commitment, cancel anytime
 
@@ -67,7 +67,7 @@ Premium
 
 The ultimate solution for professional teams & studios
 
-$88
+CA$119
 
 per user / month · No commitment, cancel anytime
 
@@ -157,7 +157,7 @@ Yearly 25% off
 	
 FREE
 
-$0
+CA$0
 
 No credit card required
 
@@ -165,7 +165,7 @@ Start now
 	
 STANDARD
 
-$28
+CA$39
 
 per month
 
@@ -173,7 +173,7 @@ Start for free
 	
 PREMIUM
 
-$88
+CA$119
 
 per month
 
@@ -802,7 +802,7 @@ Free
 
 For beginners trying out AI video creation.
 
-$0
+CA$0
 
 No credit card required
 
@@ -826,9 +826,9 @@ Standard
 
 For creators venturing into AI video production.
 
-$28 $21
+CA$39 CA$29.25
 
-per user / month · $252 billed annually
+per user / month · CA$351 billed annually
 
 Start for free
 
@@ -850,9 +850,9 @@ Premium
 
 The ultimate solution for professional teams & studios
 
-$88 $66
+CA$119 CA$89.25
 
-per user / month · $792 billed annually
+per user / month · CA$1,071 billed annually
 
 Start for free
 
@@ -940,7 +940,7 @@ Yearly 25% off
 	
 FREE
 
-$0
+CA$0
 
 No credit card required
 
@@ -948,17 +948,17 @@ Start now
 	
 STANDARD
 
-$28 $21
+CA$39 CA$29.25
 
-per month · $252 billed annually
+per month · CA$351 billed annually
 
 Start for free
 	
 PREMIUM
 
-$88 $66
+CA$119 CA$89.25
 
-per month · $792 billed annually
+per month · CA$1,071 billed annually
 
 Start for free
 

@@ -4,14 +4,18 @@
     {
       "name": "Starter",
       "monthly_price_usd": 0,
+      "credits_or_minutes": 20,
+      "unit": "minutes",
       "offer": ""
     },
     {
       "name": "Professional",
       "monthly_price_usd": 59,
+      "credits_or_minutes": 30,
+      "unit": "minutes",
       "offer": "monthly price not shown"
     }
   ],
   "source": "https://www.colossyan.com/pricing",
-  "last_checked": "2026-11-11 16:49"
+  "last_checked": "2026-11-11 17:41"
 }

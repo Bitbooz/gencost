@@ -1,6 +1,6 @@
 {
  "category": "image",
- "updated": "2026-11-11 16:55",
+ "updated": "2026-11-11 17:48",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -18,7 +18,7 @@
    "name": "Midjourney",
    "page": "/pages/midjourney.html",
    "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-   "checked": "2026-11-11 16:54",
+   "checked": "2026-11-11 17:46",
    "plans": [
     {
      "name": "Basic",
@@ -67,8 +67,8 @@
     "checked": "2026-06-05",
     "official": false
    },
-   "source_checked": "2026-11-11 16:54",
-   "price_verified": "2026-11-11 16:54"
+   "source_checked": "2026-11-11 17:46",
+   "price_verified": "2026-11-11 17:46"
   },
   {
    "name": "Leonardo",
@@ -128,7 +128,7 @@
    "name": "Ideogram",
    "page": "/pages/ideogram.html",
    "source": "https://ideogram.ai/pricing",
-   "checked": "2026-11-11 16:54",
+   "checked": "2026-11-11 17:47",
    "plans": [
     {
      "name": "Plus",
@@ -167,8 +167,8 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 16:54",
-   "price_verified": "2026-11-11 16:54"
+   "source_checked": "2026-11-11 17:47",
+   "price_verified": "2026-11-11 17:47"
   },
   {
    "name": "Adobe Firefly",
@@ -233,7 +233,7 @@
    "name": "Recraft",
    "page": "/pages/recraft.html",
    "source": "https://www.recraft.ai/pricing",
-   "checked": "2026-11-11 16:55",
+   "checked": "2026-11-11 17:47",
    "plans": [
     {
      "name": "Basic",
@@ -264,8 +264,8 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 16:55",
-   "price_verified": "2026-11-11 16:55"
+   "source_checked": "2026-11-11 17:47",
+   "price_verified": "2026-11-11 17:47"
   },
   {
    "name": "Freepik",
@@ -335,7 +335,7 @@
    "name": "OpenArt",
    "page": "/pages/openart.html",
    "source": "https://openart.ai/pricing",
-   "checked": "2026-11-11 16:55",
+   "checked": "2026-11-11 17:48",
    "plans": [
     {
      "name": "Starter",
@@ -361,7 +361,7 @@
      "yearly_price_usd": 44,
      "credits_or_minutes": 24000,
      "unit": "credits",
-     "offer": "30% off GPT Image 2.6, 50% off Kling 4.0 & Seedream 5.5",
+     "offer": "",
      "credits_period": "month"
     },
     {
@@ -370,7 +370,7 @@
      "yearly_price_usd": 175,
      "credits_or_minutes": 106000,
      "unit": "credits",
-     "offer": "30% off GPT Image 2.6, 50% off Kling 4.0 & Seedream 5.5",
+     "offer": "",
      "credits_period": "month"
     }
    ],
@@ -383,8 +383,8 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 16:55",
-   "price_verified": "2026-11-11 16:55"
+   "source_checked": "2026-11-11 17:48",
+   "price_verified": "2026-11-11 17:48"
   },
   {
    "name": "NightCafe",

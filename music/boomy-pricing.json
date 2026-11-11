@@ -2,21 +2,21 @@
   "platform": "Boomy",
   "plans": [
     {
-      "name": "Free",
+      "name": "FREE",
       "monthly_price_usd": 0,
       "credits_or_minutes": 0,
       "unit": "",
       "offer": ""
     },
     {
-      "name": "Creator",
+      "name": "CREATOR",
       "monthly_price_usd": 9.99,
       "credits_or_minutes": 0,
       "unit": "",
       "offer": "33% off"
     },
     {
-      "name": "Pro",
+      "name": "PRO",
       "monthly_price_usd": 29.99,
       "credits_or_minutes": 0,
       "unit": "",
@@ -24,5 +24,5 @@
     }
   ],
   "source": "https://boomy.com/pricing",
-  "last_checked": "2026-11-11 16:53"
+  "last_checked": "2026-11-11 17:45"
 }

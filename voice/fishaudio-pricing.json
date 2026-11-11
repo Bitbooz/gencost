@@ -6,7 +6,7 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": ""
+      "offer": "No credit card needed"
     },
     {
       "name": "Plus",
@@ -22,9 +22,9 @@
       "yearly_price_usd": 75,
       "credits_or_minutes": 2000000,
       "unit": "credits",
-      "offer": ""
+      "offer": "7 days money back guarantee"
     }
   ],
   "source": "https://fish.audio/plan/",
-  "last_checked": "2026-11-11 16:51"
+  "last_checked": "2026-11-11 17:43"
 }
