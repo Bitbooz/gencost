@@ -66,6 +66,10 @@ LANGS = {
     "ru": {"html": "ru", "hreflang": "ru", "name": "Русский", "label": "RU",
            "rules": 'Write natural modern Russian, as Russian-language tech sites do. Use "вы" (lowercase). Keep tool, model and plan names in Latin letters.',
            "words": '"credits" -> "кредиты". "/mo" -> "/мес", "per month" -> "в месяц", "billed yearly"/"paid yearly" -> "при оплате за год". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 октября 2026".'},
+    "zh-tw": {"html": "zh-Hant", "hreflang": "zh-TW", "also": ["zh-HK"], "name": "繁體中文", "label": "ZH",
+              "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap",
+              "rules": 'Write Traditional Chinese (繁體中文) as used in Taiwan and Hong Kong, natural and clear, as Taiwanese tech sites write. Never use Simplified characters. Keep tool, model and plan names in Latin letters.',
+              "words": '"credits" -> "點數". "/mo" -> "/月", "per month" -> "每月", "billed yearly"/"paid yearly" -> "年繳". Prices stay in US dollars, written with the [[n]] tokens. Dates in running text: "October 15, 2026" -> "2026年10月15日".'},
 }
 CODE = LANG = OUT = CACHE_FILE = UI_FILE = None
 
@@ -321,7 +325,7 @@ def grok_translate(items):
     client = OpenAI(api_key=API_KEY, base_url="https://api.x.ai/v1", timeout=180)
     r = client.chat.completions.create(
         model=MODEL, temperature=0,
-        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew", "it": "Italian", "ja": "Japanese", "ru": "Russian"}.get(CODE, LANGS[CODE]["name"]),
+        messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew", "it": "Italian", "ja": "Japanese", "ru": "Russian", "zh-tw": "Traditional Chinese (Taiwan and Hong Kong)"}.get(CODE, LANGS[CODE]["name"]),
                                                             rules=LANGS[CODE]["rules"], words=LANGS[CODE]["words"])
                    + json.dumps(items, ensure_ascii=False)}])
     text = r.choices[0].message.content.strip()
@@ -474,7 +478,8 @@ def hreflang_block(path, langs):
     lines = [f'<link rel="alternate" hreflang="en" href="{en}">']
     for c in LANGS:
         if c in langs:
-            lines.append(f'<link rel="alternate" hreflang="{LANGS[c]["hreflang"]}" href="{SITE}{es_path(path, c)}">')
+            for hl in [LANGS[c]["hreflang"]] + LANGS[c].get("also", []):
+                lines.append(f'<link rel="alternate" hreflang="{hl}" href="{SITE}{es_path(path, c)}">')
     lines.append(f'<link rel="alternate" hreflang="x-default" href="{en}">')
     return f"{HREF_START}\n" + "\n".join(lines) + f"\n{HREF_END}\n"
 
