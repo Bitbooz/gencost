@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Verbinde GenCost mit Claude, ChatGPT, Cursor oder einem beliebigen MCP-Client und frag nach den heutigen AI-Tool-Preisen in US-Dollar. Kostenloser Remote-MCP-Server, keine Anmeldung." name="description"/>
+<title>GenCost in Claude, ChatGPT &amp; Cursor nutzen: AI Tool Prices MCP Server | GenCost</title>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6DHTT2ZTBK');
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;text=GENCOSTExamples&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/gencost.css" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js');</script>
+<script defer="" src="/assets/gencost.js"></script>
+<!-- SEO:START (added by seo_update.py, rebuilt daily) -->
+<link href="https://getgencost.com/de/ai.html" rel="canonical"/>
+<meta content="GenCost" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="GenCost in Claude, ChatGPT &amp; Cursor nutzen: AI Tool Prices MCP Server | GenCost" property="og:title"/>
+<meta content="Verbinde GenCost mit Claude, ChatGPT, Cursor oder einem beliebigen MCP-Client und frag nach den heutigen AI-Tool-Preisen in US-Dollar. Kostenloser Remote-MCP-Server, keine Anmeldung." property="og:description"/>
+<meta content="https://getgencost.com/de/ai.html" property="og:url"/>
+<meta content="https://getgencost.com/assets/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="GenCost in Claude, ChatGPT &amp; Cursor nutzen: AI Tool Prices MCP Server | GenCost" name="twitter:title"/>
+<meta content="Verbinde GenCost mit Claude, ChatGPT, Cursor oder einem beliebigen MCP-Client und frag nach den heutigen AI-Tool-Preisen in US-Dollar. Kostenloser Remote-MCP-Server, keine Anmeldung." name="twitter:description"/>
+<meta content="https://getgencost.com/assets/og-image.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Start", "item": "https://getgencost.com/de/"}, {"@type": "ListItem", "position": 2, "name": "In KI-Assistenten nutzen"}]}]}</script>
+<!-- SEO:END -->
+<script defer="" src="/assets/i18n.js"></script><!-- HREFLANG:START -->
+<link rel="alternate" hreflang="en" href="https://getgencost.com/ai.html">
+<link rel="alternate" hreflang="es" href="https://getgencost.com/es/ai.html">
+<link rel="alternate" hreflang="pt" href="https://getgencost.com/pt/ai.html">
+<link rel="alternate" hreflang="de" href="https://getgencost.com/de/ai.html">
+<link rel="alternate" hreflang="x-default" href="https://getgencost.com/ai.html">
+<!-- HREFLANG:END -->
+</head>
+<body class="page-util">
+<nav class="top">
+<div class="wrap">
+<a class="logo grad-text" href="/de/">GENCOST</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="/de/#platforms">Video</a></li>
+<li><a data-section="/de/voice,/de/pages/voice/" href="/de/voice.html">Stimme</a></li>
+<li><a data-section="/de/music,/de/pages/music/" href="/de/music.html">Musik</a></li>
+<li><a data-section="/de/image" href="/de/image.html">Bild</a></li>
+<li><a href="/de/compare.html">Vergleichen</a></li>
+<li><a href="/de/calculator.html">Rechner</a></li>
+<li><a href="/de/#articles">Artikel</a></li>
+</ul>
+<div class="nav-right">
+
+<a class="lang-switch" href="/ai.html" hreflang="en" lang="en" title="English">EN</a><a class="lang-switch" href="/es/ai.html" hreflang="es" lang="es" title="Español">ES</a><a class="lang-switch" href="/pt/ai.html" hreflang="pt" lang="pt" title="Português">PT</a>
+
+<a class="btn btn-primary" href="/de/order.html">Paket bestellen</a>
+<button aria-expanded="false" aria-label="Menü öffnen" class="menu-btn" id="menuBtn">☰</button>
+</div>
+</div>
+</nav>
+<header class="page-head">
+<div class="wrap narrow">
+<nav aria-label="Breadcrumb" class="crumbs"><a href="/de/">Start</a><span class="sep">/</span><span>Nutzung in KI-Assistenten</span></nav>
+</div>
+</header>
+<main class="page">
+<div class="wrap narrow">
+<article class="prose">
+<h1>GenCost in Claude, ChatGPT und Cursor nutzen</h1>
+<p class="lead">GenCost hat einen kostenlosen MCP-Server. Verbinde ihn mit deinem KI-Assistenten, und wenn du „Was kostet Runway?“ oder „Welches KI-Video-Tool ist am günstigsten pro Clip?“ fragst, kommt die Antwort aus den aktuellen geprüften Preisen statt aus dem Gedächtnis des Modells.</p>
+<div class="box"><strong>Server-Adresse</strong><br/><code>https://getgencost.com/mcp</code><br/>Kostenlos, nur lesend, keine Anmeldung. Preise werden jeden Morgen von den offiziellen Preisseiten der Tools gelesen.</div>
+<h2>Was du fragen kannst</h2>
+<ul>
+<li>„Was kostet ElevenLabs pro Monat und wo ist der Haken?“</li>
+<li>„Vergleiche Midjourney, Ideogram und Recraft für mich.“</li>
+<li>„Welches KI-Video-Tool ist am günstigsten pro 5-Sekunden-Clip?“</li>
+<li>„Liste die KI-Musik-Tools mit einem kostenlosen Plan.“</li>
+</ul>
+<h2>Claude</h2>
+<p>In Claude öffne <strong>Einstellungen → Connectors</strong>, wähle <strong>Benutzerdefinierten Connector hinzufügen</strong>, nenne ihn <em>GenCost</em> und füge die Server-Adresse oben ein. Aktiviere ihn dann in einem Chat über das Tools-Menü.</p>
+<p>In Claude Code führe aus:</p>
+<pre><code>claude mcp add --transport http gencost https://getgencost.com/mcp</code></pre>
+<h2>ChatGPT</h2>
+<p>Wo dein ChatGPT-Plan benutzerdefinierte Connectors unterstützt (Entwicklermodus), füge einen neuen Connector hinzu und füge die Server-Adresse ein. Keine Authentifizierung nötig.</p>
+<h2>Cursor, VS Code und andere MCP-Clients</h2>
+<p>Füge dies zu deiner MCP-Konfiguration hinzu (für Cursor, <code>~/.cursor/mcp.json</code>):</p>
+<pre><code>{ "mcpServers": { "gencost": { "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Die Tools</h2>
+<div class="table-scroll no-live"><table>
+<thead><tr><th>Tool</th><th>Was es macht</th></tr></thead>
+<tbody>
+<tr><td><code>list_tools</code></td><td>Jedes Tool, das GenCost verfolgt, nach Kategorie, mit dem günstigsten bezahlten Plan und ob es einen kostenlosen Plan gibt</td></tr>
+<tr><td><code>get_prices</code></td><td>Die Pläne eines Tools: monatliche und jährliche Preise, Credits, Kosten pro Videoclip, versteckte Kosten und das Datum, an dem die Preise verifiziert wurden</td></tr>
+<tr><td><code>compare_tools</code></td><td>2 bis 6 Tools nebeneinander</td></tr>
+<tr><td><code>find_cheapest</code></td><td>Die günstigsten Tools in einer Kategorie, nach Planpreis oder (bei Video) nach Kosten pro Clip</td></tr>
+</tbody>
+</table></div>
+<h2>Wie die Daten funktionieren</h2>
+<p>Alle Preise sind in US-Dollar vor Steuern. Nur bestätigte Preise werden zurückgegeben: Ein neuer Preis muss an zwei separaten Tagen gelesen werden, bevor er den alten ersetzt, und wartende Änderungen werden markiert. Jede Antwort enthält die offizielle Preisseite und das Verifizierungsdatum. Die gleichen Daten sind als JSON verfügbar: <a href="/data/video.json">video</a>, <a href="/data/image.json">image</a>, <a href="/data/voice.json">voice</a> und <a href="/data/music.json">music</a>.</p>
+<p class="note">Wenn du GenCost-Daten in einer Antwort, einem Artikel oder einem Produkt verwendest, nenne bitte GenCost und verlinke auf die Tool-Seite auf getgencost.com.</p>
+</article>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<a class="logo grad-text" href="/de/">GENCOST</a>
+<p class="foot-about">Preisvergleich für AI-Video-, Avatar-, Voice- und Musik-Tools, in echten Dollar und automatisch aktualisiert.</p>
+</div>
+<div>
+<h4>Vergleichen</h4>
+<ul>
+<li><a href="/de/#platforms">Video &amp; Avatar</a></li>
+<li><a href="/de/voice.html">Stimme</a></li>
+<li><a href="/de/music.html">Musik</a></li>
+<li><a href="/de/compare.html">Beliebige Tools vergleichen</a></li>
+<li><a href="/de/pages/emerging.html">Neue Tools</a></li>
+<li><a href="/de/calculator.html">Budget-Rechner</a></li>
+<li><a href="/de/project.html">Projekt-Rechner</a></li>
+</ul>
+</div>
+<div>
+<h4>Ratgeber</h4>
+<ul>
+<li><a href="/de/pages/cheapest-ai-video-tools-in-2026.html">Günstigste Video-Tools</a></li>
+<li><a href="/de/pages/cheapest-ai-voice-tools-in-2026.html">Günstigste Voice-Tools</a></li>
+<li><a href="/de/pages/cheapest-ai-music-tools-in-2026.html">Günstigste Musik-Tools</a></li>
+<li><a href="/de/pages/cheapest-ai-avatar-tools-in-2026.html">Günstigste Avatar-Tools</a></li>
+<li><a href="/de/credits.html">Credits &amp; Restguthaben</a></li>
+</ul>
+</div>
+<div>
+<h4>GenCost</h4>
+<ul>
+<li><a href="/de/ai.html">In Claude &amp; ChatGPT nutzen</a></li>
+<li><a href="/de/about.html">Über GenCost</a></li>
+<li><a href="/de/order.html">Paket bestellen</a></li>
+<li><a href="/de/how-we-verify.html">Wie wir Preise prüfen</a></li>
+<li><a href="/de/changelog.html">Preisänderungs-Log</a></li>
+<li><a href="mailto:bitbooz@protonmail.com">Kontakt</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom"><span>Erstellt von Grok &amp; Bitbooz · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span> <span>Preise ändern sich oft. Bestätige immer in jedem Tool, bevor du bezahlst.</span></div>
+</div>
+</footer>
+</body>
+</html>

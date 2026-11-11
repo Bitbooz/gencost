@@ -1,6 +1,6 @@
 {
  "category": "video",
- "updated": "2026-11-11 19:38",
+ "updated": "2026-11-11 20:02",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -18,7 +18,7 @@
    "name": "HeyGen",
    "page": "/pages/heygen.html",
    "source": "https://www.heygen.com/pricing",
-   "checked": "2026-11-11 19:27",
+   "checked": "2026-11-11 19:52",
    "plans": [
     {
      "name": "Free",
@@ -34,7 +34,7 @@
      "yearly_price_usd": 24,
      "credits_or_minutes": 600,
      "unit": "credits",
-     "offer": "",
+     "offer": "2 months free",
      "credits_period": "month"
     },
     {
@@ -42,7 +42,7 @@
      "monthly_price_usd": 49,
      "credits_or_minutes": 1000,
      "unit": "credits",
-     "offer": "",
+     "offer": "2 months free",
      "credits_period": "month"
     }
    ],
@@ -56,14 +56,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:27",
-   "price_verified": "2026-11-11 19:27"
+   "source_checked": "2026-11-11 19:52",
+   "price_verified": "2026-11-11 19:52"
   },
   {
    "name": "Higgsfield",
    "page": "/pages/higgsfield.html",
    "source": "https://higgsfield.ai/pricing",
-   "checked": "2026-11-11 19:27",
+   "checked": "2026-11-11 19:52",
    "plans": [
     {
      "name": "Starter",
@@ -85,7 +85,7 @@
       "monthly_price_usd": 59.0,
       "yearly_price_usd": 35.0,
       "first_seen": "2026-11-11",
-      "reading": "2026-11-11 19:27"
+      "reading": "2026-11-11 19:52"
      }
     },
     {
@@ -100,7 +100,7 @@
       "monthly_price_usd": 129.0,
       "yearly_price_usd": 65.0,
       "first_seen": "2026-11-11",
-      "reading": "2026-11-11 19:27"
+      "reading": "2026-11-11 19:52"
      }
     }
    ],
@@ -143,14 +143,14 @@
      }
     ]
    },
-   "source_checked": "2026-11-11 19:27",
+   "source_checked": "2026-11-11 19:52",
    "price_verified": "2026-11-11 06:19"
   },
   {
    "name": "Runway",
    "page": "/pages/runway.html",
    "source": "https://runwayml.com/pricing",
-   "checked": "2026-11-11 19:27",
+   "checked": "2026-11-11 19:52",
    "plans": [
     {
      "name": "Free",
@@ -166,7 +166,7 @@
      "yearly_price_usd": 12,
      "credits_or_minutes": 625,
      "unit": "credits",
-     "offer": "25% off Kling 4.0 until November 30",
+     "offer": "25% off Kling 4.0 until Nov 30",
      "credits_period": "month"
     },
     {
@@ -175,7 +175,7 @@
      "yearly_price_usd": 28,
      "credits_or_minutes": 2250,
      "unit": "credits",
-     "offer": "25% off Kling 4.0 until November 30",
+     "offer": "25% off Kling 4.0 until Nov 30",
      "credits_period": "month"
     },
     {
@@ -184,7 +184,7 @@
      "yearly_price_usd": 76,
      "credits_or_minutes": 9500,
      "unit": "credits",
-     "offer": "25% off Kling 4.0 until November 30",
+     "offer": "25% off Kling 4.0 until Nov 30",
      "credits_period": "month"
     }
    ],
@@ -236,14 +236,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:27",
-   "price_verified": "2026-11-11 19:27"
+   "source_checked": "2026-11-11 19:52",
+   "price_verified": "2026-11-11 19:52"
   },
   {
    "name": "Kling AI",
    "page": "/pages/kling.html",
    "source": "https://app.klingai.com/global/membership/membership-plan",
-   "checked": "2026-11-11 19:28",
+   "checked": "2026-11-11 19:53",
    "plans": [
     {
      "name": "Standard",
@@ -346,14 +346,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:28",
-   "price_verified": "2026-11-11 19:28"
+   "source_checked": "2026-11-11 19:53",
+   "price_verified": "2026-11-11 19:53"
   },
   {
    "name": "Synthesia",
    "page": "/pages/synthesia.html",
    "source": "https://www.synthesia.io/pricing",
-   "checked": "2026-11-11 19:28",
+   "checked": "2026-11-11 19:53",
    "plans": [
     {
      "name": "Basic",
@@ -390,14 +390,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:28",
-   "price_verified": "2026-11-11 19:28"
+   "source_checked": "2026-11-11 19:53",
+   "price_verified": "2026-11-11 19:53"
   },
   {
    "name": "Pika",
    "page": "/pages/pika.html",
    "source": "https://pika.art/pricing",
-   "checked": "2026-11-11 19:28",
+   "checked": "2026-11-11 19:53",
    "plans": [
     {
      "name": "Free",
@@ -422,7 +422,7 @@
      "yearly_price_usd": 28,
      "credits_or_minutes": 2600,
      "unit": "credits",
-     "offer": "Limited time: Free Pika H3 Flex generations every day",
+     "offer": "Free Pika H3 Flex generations every day",
      "credits_period": "month"
     },
     {
@@ -431,7 +431,7 @@
      "yearly_price_usd": 76,
      "credits_or_minutes": 8550,
      "unit": "credits",
-     "offer": "Limited time: Free Pika H3 Flex generations every day",
+     "offer": "Free Pika H3 Flex generations every day",
      "credits_period": "month"
     }
    ],
@@ -486,14 +486,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:28",
-   "price_verified": "2026-11-11 19:28"
+   "source_checked": "2026-11-11 19:53",
+   "price_verified": "2026-11-11 19:53"
   },
   {
    "name": "Luma",
    "page": "/pages/luma.html",
    "source": "https://lumalabs.ai/pricing",
-   "checked": "2026-11-11 19:28",
+   "checked": "2026-11-11 19:53",
    "plans": [
     {
      "name": "Plus",
@@ -590,14 +590,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:28",
-   "price_verified": "2026-11-11 19:28"
+   "source_checked": "2026-11-11 19:53",
+   "price_verified": "2026-11-11 19:53"
   },
   {
    "name": "Viggle",
    "page": "/pages/viggle.html",
    "source": "https://viggle.ai/pricing",
-   "checked": "2026-11-11 19:29",
+   "checked": "2026-11-11 19:54",
    "plans": [
     {
      "name": "Free",
@@ -657,14 +657,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:29",
-   "price_verified": "2026-11-11 19:29"
+   "source_checked": "2026-11-11 19:54",
+   "price_verified": "2026-11-11 19:54"
   },
   {
    "name": "InVideo",
    "page": "/pages/invideo.html",
    "source": "https://invideo.io/pricing",
-   "checked": "2026-11-11 19:29",
+   "checked": "2026-11-11 19:54",
    "plans": [
     {
      "name": "Starter",
@@ -672,7 +672,7 @@
      "yearly_price_usd": 10,
      "credits_or_minutes": 400,
      "unit": "credits",
-     "offer": "",
+     "offer": "50% off",
      "credits_period": "month"
     },
     {
@@ -681,7 +681,7 @@
      "yearly_price_usd": 30,
      "credits_or_minutes": 2000,
      "unit": "credits",
-     "offer": "",
+     "offer": "50% off",
      "credits_period": "month"
     },
     {
@@ -690,7 +690,7 @@
      "yearly_price_usd": 75,
      "credits_or_minutes": 5000,
      "unit": "credits",
-     "offer": "",
+     "offer": "50% off",
      "credits_period": "month"
     }
    ],
@@ -737,14 +737,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:29",
-   "price_verified": "2026-11-11 19:29"
+   "source_checked": "2026-11-11 19:54",
+   "price_verified": "2026-11-11 19:54"
   },
   {
    "name": "CapCut",
    "page": "/pages/capcut.html",
    "source": "https://www.capcut.com/pricing",
-   "checked": "2026-11-11 19:29",
+   "checked": "2026-11-11 19:54",
    "plans": [
     {
      "name": "Free",
@@ -809,14 +809,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:29",
-   "price_verified": "2026-11-11 19:29"
+   "source_checked": "2026-11-11 19:54",
+   "price_verified": "2026-11-11 19:54"
   },
   {
    "name": "LTX Studio",
    "page": "/pages/ltx.html",
    "source": "https://ltx.studio/pricing",
-   "checked": "2026-11-11 19:30",
+   "checked": "2026-11-11 19:54",
    "plans": [
     {
      "name": "Free",
@@ -832,7 +832,7 @@
      "yearly_price_usd": 12,
      "credits_or_minutes": 8000,
      "unit": "credits",
-     "offer": "$15 first month",
+     "offer": "Save 50% for Cyber Monday",
      "credits_period": "month"
     },
     {
@@ -841,7 +841,7 @@
      "yearly_price_usd": 28,
      "credits_or_minutes": 28000,
      "unit": "credits",
-     "offer": "$35 first month",
+     "offer": "Save 50% for Cyber Monday",
      "credits_period": "month"
     },
     {
@@ -850,7 +850,7 @@
      "yearly_price_usd": 100,
      "credits_or_minutes": 110000,
      "unit": "credits",
-     "offer": "$125 first month",
+     "offer": "Save 50% for Cyber Monday",
      "credits_period": "month"
     }
    ],
@@ -863,21 +863,21 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:30",
-   "price_verified": "2026-11-11 19:30"
+   "source_checked": "2026-11-11 19:54",
+   "price_verified": "2026-11-11 19:54"
   },
   {
    "name": "Hailuo AI",
    "page": "/pages/hailuo.html",
    "source": "https://hailuoai.video/pricing",
-   "checked": "2026-11-11 19:25",
+   "checked": "2026-11-11 19:51",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 0,
      "unit": "credits",
-     "offer": "",
+     "offer": "One-time free trial credits",
      "credits_period": "month"
     },
     {
@@ -959,14 +959,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:25",
-   "price_verified": "2026-11-11 19:25"
+   "source_checked": "2026-11-11 19:51",
+   "price_verified": "2026-11-11 19:51"
   },
   {
    "name": "Google Veo",
    "page": "/pages/veo.html",
    "source": "https://one.google.com/about/google-ai-plans/",
-   "checked": "2026-11-11 19:25",
+   "checked": "2026-11-11 19:51",
    "plans": [
     {
      "name": "Google AI Pro",
@@ -1013,14 +1013,14 @@
      }
     ]
    },
-   "source_checked": "2026-11-11 19:25",
-   "price_verified": "2026-11-11 19:25"
+   "source_checked": "2026-11-11 19:51",
+   "price_verified": "2026-11-11 19:51"
   },
   {
    "name": "Vidu",
    "page": "/pages/vidu.html",
    "source": "https://www.vidu.com/pricing",
-   "checked": "2026-11-11 19:26",
+   "checked": "2026-11-11 19:52",
    "plans": [
     {
      "name": "Standard",
@@ -1042,18 +1042,12 @@
     },
     {
      "name": "Ultimate",
-     "monthly_price_usd": 230.0,
+     "monthly_price_usd": 230,
      "yearly_price_usd": 95.83,
-     "credits_or_minutes": 8000,
+     "credits_or_minutes": 20000,
      "unit": "credits",
      "offer": "Limited-time offer 100 credits = $0.96",
-     "credits_period": "month",
-     "pending": {
-      "monthly_price_usd": 230.0,
-      "yearly_price_usd": 191.67,
-      "first_seen": "2026-11-11",
-      "reading": "2026-11-11 19:26"
-     }
+     "credits_period": "month"
     }
    ],
    "clips": {
@@ -1075,46 +1069,55 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:26",
-   "price_verified": "2026-11-11 18:59"
+   "source_checked": "2026-11-11 19:52",
+   "price_verified": "2026-11-11 19:52"
   },
   {
    "name": "Krea",
    "page": "/pages/krea.html",
    "source": "https://www.krea.ai/pricing",
-   "checked": "2026-11-11 19:26",
+   "checked": "2026-11-11 19:52",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 100,
-     "unit": "units",
+     "unit": "units / day",
      "offer": "",
      "credits_period": "month"
     },
     {
      "name": "Basic",
      "monthly_price_usd": 9,
+     "yearly_price_usd": 5,
      "credits_or_minutes": 5000,
-     "unit": "units",
+     "unit": "units / month",
      "offer": "",
      "credits_period": "month"
     },
     {
      "name": "Pro",
      "monthly_price_usd": 35,
+     "yearly_price_usd": 21,
      "credits_or_minutes": 20000,
-     "unit": "units",
+     "unit": "units / month",
      "offer": "",
      "credits_period": "month"
     },
     {
      "name": "Max",
-     "monthly_price_usd": 105,
-     "credits_or_minutes": 60000,
-     "unit": "units",
+     "monthly_price_usd": 105.0,
+     "yearly_price_usd": 63.0,
+     "credits_or_minutes": 40000,
+     "unit": "units / month",
      "offer": "",
-     "credits_period": "month"
+     "credits_period": "month",
+     "pending": {
+      "monthly_price_usd": 70.0,
+      "yearly_price_usd": 42.0,
+      "first_seen": "2026-11-11",
+      "reading": "2026-11-11 19:52"
+     }
     }
    ],
    "clips": {
@@ -1163,14 +1166,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 19:26",
+   "source_checked": "2026-11-11 19:52",
    "price_verified": "2026-11-11 19:26"
   },
   {
    "name": "PixVerse",
    "page": "/pages/pixverse.html",
    "source": "https://app.pixverse.ai/subscribe",
-   "checked": "2026-11-11 19:30",
+   "checked": "2026-11-11 19:54",
    "plans": [
     {
      "name": "Standard",
@@ -1218,14 +1221,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 19:30",
-   "price_verified": "2026-11-11 19:30"
+   "source_checked": "2026-11-11 19:54",
+   "price_verified": "2026-11-11 19:54"
   },
   {
    "name": "D-ID",
    "page": "/pages/d-id.html",
    "source": "https://www.d-id.com/pricing/studio/",
-   "checked": "2026-11-11 19:30",
+   "checked": "2026-11-11 19:55",
    "plans": [
     {
      "name": "Lite",
@@ -1264,14 +1267,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 19:30",
-   "price_verified": "2026-11-11 19:30"
+   "source_checked": "2026-11-11 19:55",
+   "price_verified": "2026-11-11 19:55"
   },
   {
    "name": "Colossyan",
    "page": "/pages/colossyan.html",
    "source": "https://www.colossyan.com/pricing",
-   "checked": "2026-11-11 19:31",
+   "checked": "2026-11-11 19:55",
    "plans": [
     {
      "name": "Starter",
@@ -1299,14 +1302,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 19:31",
-   "price_verified": "2026-11-11 19:31"
+   "source_checked": "2026-11-11 19:55",
+   "price_verified": "2026-11-11 19:55"
   },
   {
    "name": "OpusClip",
    "page": "/pages/opusclip.html",
    "source": "https://www.opus.pro/pricing",
-   "checked": "2026-11-11 19:31",
+   "checked": "2026-11-11 19:55",
    "plans": [
     {
      "name": "Free",
@@ -1343,14 +1346,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 19:31",
-   "price_verified": "2026-11-11 19:31"
+   "source_checked": "2026-11-11 19:55",
+   "price_verified": "2026-11-11 19:55"
   },
   {
    "name": "Captions",
    "page": "/pages/captions.html",
    "source": "https://www.captions.ai/pricing",
-   "checked": "2026-11-11 19:31",
+   "checked": "2026-11-11 19:55",
    "plans": [
     {
      "name": "Max",
@@ -1361,46 +1364,28 @@
      "credits_period": "month"
     },
     {
-     "name": "Frontier 2x",
-     "monthly_price_usd": 139.99,
+     "name": "Frontier",
+     "monthly_price_usd": 69.99,
      "credits_or_minutes": 1400,
      "unit": "credits",
      "offer": "",
-     "credits_period": "month",
-     "pending": {
-      "monthly_price_usd": 69.99,
-      "yearly_price_usd": null,
-      "first_seen": "2026-11-11",
-      "reading": "2026-11-11 19:31"
-     }
+     "credits_period": "month"
+    },
+    {
+     "name": "Frontier 2x",
+     "monthly_price_usd": 139.99,
+     "credits_or_minutes": 2800,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
     },
     {
      "name": "Frontier 4x",
      "monthly_price_usd": 279.99,
-     "credits_or_minutes": 2800,
-     "unit": "credits",
-     "offer": "",
-     "credits_period": "month",
-     "pending": {
-      "monthly_price_usd": 139.99,
-      "yearly_price_usd": null,
-      "first_seen": "2026-11-11",
-      "reading": "2026-11-11 19:31"
-     }
-    },
-    {
-     "name": "Frontier",
-     "monthly_price_usd": 69.99,
      "credits_or_minutes": 5600,
      "unit": "credits",
      "offer": "",
-     "credits_period": "month",
-     "pending": {
-      "monthly_price_usd": 279.99,
-      "yearly_price_usd": null,
-      "first_seen": "2026-11-11",
-      "reading": "2026-11-11 19:31"
-     }
+     "credits_period": "month"
     }
    ],
    "hidden": {
@@ -1412,14 +1397,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 19:31",
-   "price_verified": "2026-11-11 19:03"
+   "source_checked": "2026-11-11 19:55",
+   "price_verified": "2026-11-11 19:55"
   },
   {
    "name": "Pictory",
    "page": "/pages/pictory.html",
    "source": "https://pictory.ai/pricing",
-   "checked": "2026-11-11 19:31",
+   "checked": "2026-11-11 19:56",
    "plans": [
     {
      "name": "Starter",
@@ -1491,14 +1476,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 19:31",
-   "price_verified": "2026-11-11 19:31"
+   "source_checked": "2026-11-11 19:56",
+   "price_verified": "2026-11-11 19:56"
   },
   {
    "name": "VEED",
    "page": "/pages/veed.html",
    "source": "https://www.veed.io/pricing",
-   "checked": "2026-11-11 19:32",
+   "checked": "2026-11-11 19:56",
    "plans": [
     {
      "name": "Creator",
@@ -1534,8 +1519,8 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 19:32",
-   "price_verified": "2026-11-11 19:32"
+   "source_checked": "2026-11-11 19:56",
+   "price_verified": "2026-11-11 19:56"
   }
  ]
 }
