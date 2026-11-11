@@ -22,7 +22,7 @@
       "yearly_price_usd": 28,
       "credits_or_minutes": 28000,
       "unit": "credits",
-      "offer": "Save 50% for Cyber Monday; 28800 extra seconds/mo first 3 months"
+      "offer": "Save 50% for Cyber Monday"
     },
     {
       "name": "Pro",
@@ -34,5 +34,5 @@
     }
   ],
   "source": "https://ltx.studio/pricing",
-  "last_checked": "2026-11-11 18:14"
+  "last_checked": "2026-11-11 19:02"
 }

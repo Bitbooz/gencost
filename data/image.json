@@ -1,6 +1,6 @@
 {
  "category": "image",
- "updated": "2026-11-11 18:22",
+ "updated": "2026-11-11 19:09",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -18,14 +18,12 @@
    "name": "Midjourney",
    "page": "/pages/midjourney.html",
    "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-   "checked": "2026-11-11 18:20",
+   "checked": "2026-11-11 19:07",
    "plans": [
     {
      "name": "Basic",
      "monthly_price_usd": 10,
      "yearly_price_usd": 8,
-     "credits_or_minutes": 3.3,
-     "unit": "hours",
      "offer": "",
      "credits_period": "month"
     },
@@ -33,8 +31,6 @@
      "name": "Standard",
      "monthly_price_usd": 30,
      "yearly_price_usd": 24,
-     "credits_or_minutes": 15,
-     "unit": "hours",
      "offer": "",
      "credits_period": "month"
     },
@@ -42,8 +38,6 @@
      "name": "Pro",
      "monthly_price_usd": 60,
      "yearly_price_usd": 48,
-     "credits_or_minutes": 30,
-     "unit": "hours",
      "offer": "",
      "credits_period": "month"
     },
@@ -51,8 +45,6 @@
      "name": "Mega",
      "monthly_price_usd": 120,
      "yearly_price_usd": 96,
-     "credits_or_minutes": 60,
-     "unit": "hours",
      "offer": "",
      "credits_period": "month"
     }
@@ -67,8 +59,8 @@
     "checked": "2026-06-05",
     "official": false
    },
-   "source_checked": "2026-11-11 18:20",
-   "price_verified": "2026-11-11 18:20"
+   "source_checked": "2026-11-11 19:07",
+   "price_verified": "2026-11-11 19:07"
   },
   {
    "name": "Leonardo",
@@ -128,7 +120,7 @@
    "name": "Ideogram",
    "page": "/pages/ideogram.html",
    "source": "https://ideogram.ai/pricing",
-   "checked": "2026-11-11 18:21",
+   "checked": "2026-11-11 19:08",
    "plans": [
     {
      "name": "Plus",
@@ -158,8 +150,8 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-11 18:21",
-   "price_verified": "2026-11-11 18:21"
+   "source_checked": "2026-11-11 19:08",
+   "price_verified": "2026-11-11 19:08"
   },
   {
    "name": "Adobe Firefly",
@@ -224,7 +216,7 @@
    "name": "Recraft",
    "page": "/pages/recraft.html",
    "source": "https://www.recraft.ai/pricing",
-   "checked": "2026-11-11 18:21",
+   "checked": "2026-11-11 19:08",
    "plans": [
     {
      "name": "Basic",
@@ -255,14 +247,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 18:21",
-   "price_verified": "2026-11-11 18:21"
+   "source_checked": "2026-11-11 19:08",
+   "price_verified": "2026-11-11 19:08"
   },
   {
    "name": "Freepik",
    "page": "/pages/freepik.html",
    "source": "https://www.freepik.com/pricing",
-   "checked": "2026-11-11 18:22",
+   "checked": "2026-11-11 19:09",
    "plans": [
     {
      "name": "Premium",
@@ -319,14 +311,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 18:22",
-   "price_verified": "2026-11-11 18:22"
+   "source_checked": "2026-11-11 19:09",
+   "price_verified": "2026-11-11 19:09"
   },
   {
    "name": "OpenArt",
    "page": "/pages/openart.html",
    "source": "https://openart.ai/pricing",
-   "checked": "2026-11-11 18:22",
+   "checked": "2026-11-11 19:09",
    "plans": [
     {
      "name": "Starter",
@@ -352,7 +344,7 @@
      "yearly_price_usd": 44,
      "credits_or_minutes": 24000,
      "unit": "credits",
-     "offer": "30% off GPT Image 2.6, Recraft V4.1, Seedream 5.5, Kling 4.0",
+     "offer": "up to 50% off on GPT Image 2.6, Seedream 5.5, Kling 4.0, Recraft V4.1",
      "credits_period": "month"
     },
     {
@@ -361,7 +353,7 @@
      "yearly_price_usd": 175,
      "credits_or_minutes": 106000,
      "unit": "credits",
-     "offer": "30% off GPT Image 2.6, Recraft V4.1, Seedream 5.5, Kling 4.0",
+     "offer": "up to 50% off on GPT Image 2.6, Seedream 5.5, Kling 4.0, Recraft V4.1",
      "credits_period": "month"
     }
    ],
@@ -374,8 +366,8 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-11 18:22",
-   "price_verified": "2026-11-11 18:22"
+   "source_checked": "2026-11-11 19:09",
+   "price_verified": "2026-11-11 19:09"
   },
   {
    "name": "NightCafe",

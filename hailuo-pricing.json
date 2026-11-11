@@ -3,10 +3,10 @@
   "plans": [
     {
       "name": "Free",
-      "monthly_price_usd": 0.0,
+      "monthly_price_usd": 0,
       "credits_or_minutes": 0,
       "unit": "credits",
-      "offer": ""
+      "offer": "One-time free trial credits"
     },
     {
       "name": "Standard",
@@ -34,12 +34,12 @@
     },
     {
       "name": "Max",
-      "monthly_price_usd": 184.0,
+      "monthly_price_usd": 184,
       "credits_or_minutes": 27000,
       "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://hailuoai.video/pricing",
-  "last_checked": "2026-11-11 18:10"
+  "last_checked": "2026-11-11 18:58"
 }
