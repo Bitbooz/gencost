@@ -306,11 +306,8 @@ Documentation
 Pricing
 Robotics
 Overview
-Policy Model
-Offline Policy Evaluation
-Data Augmentation
-Video Model Licensing
 Get Access
+Praxis-1
 Enterprise
 Overview
 Data Security

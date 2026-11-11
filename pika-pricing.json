@@ -22,7 +22,7 @@
       "yearly_price_usd": 28,
       "credits_or_minutes": 2600,
       "unit": "credits",
-      "offer": "Free Pika H3 Flex generations every day"
+      "offer": "Limited time: Free Pika H3 Flex generations every day"
     },
     {
       "name": "Fancy",
@@ -30,9 +30,9 @@
       "yearly_price_usd": 76,
       "credits_or_minutes": 8550,
       "unit": "credits",
-      "offer": "Free Pika H3 Flex generations every day"
+      "offer": "Limited time: Free Pika H3 Flex generations every day"
     }
   ],
   "source": "https://pika.art/pricing",
-  "last_checked": "2026-11-11 06:20"
+  "last_checked": "2026-11-11 16:47"
 }

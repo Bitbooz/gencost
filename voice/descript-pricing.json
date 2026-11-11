@@ -2,30 +2,37 @@
   "platform": "descript",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 60,
+      "unit": "minutes",
+      "offer": ""
+    },
+    {
       "name": "Hobbyist",
       "monthly_price_usd": 24,
       "yearly_price_usd": 16,
-      "credits_or_minutes": 10,
-      "unit": "media hours",
+      "credits_or_minutes": 600,
+      "unit": "minutes",
       "offer": ""
     },
     {
       "name": "Creator",
       "monthly_price_usd": 35,
       "yearly_price_usd": 24,
-      "credits_or_minutes": 30,
-      "unit": "media hours",
+      "credits_or_minutes": 1800,
+      "unit": "minutes",
       "offer": ""
     },
     {
       "name": "Business",
       "monthly_price_usd": 65,
       "yearly_price_usd": 50,
-      "credits_or_minutes": 40,
-      "unit": "media hours",
+      "credits_or_minutes": 2400,
+      "unit": "minutes",
       "offer": ""
     }
   ],
   "source": "https://www.descript.com/pricing",
-  "last_checked": "2026-11-11 06:24"
+  "last_checked": "2026-11-11 16:51"
 }

@@ -1,6 +1,6 @@
 Pricing | invideo AI
 Special offer
-Nano Banana 2.1, Ideogram 4.5 & more image models
+Seedream 5.5, Nano Banana 2.1 & more image models
 unlimited for 30 days
 Unlimited images
 for 30 days
@@ -19,7 +19,7 @@ Resources
 Community
 Login
 Sign up
-Nano Banana 2.1, Ideogram 4.5
+Seedream 5.5, Nano Banana 2.1
 & many more image models
 Unlimited for 30 days
 Applicable on all annual plans.
@@ -268,12 +268,13 @@ UGC Ads
 AI Animation Generator
 AI Ad Generator
 Video Models
+Seedance 2.5
+MiniMax H3
+Gemini Omni Flash
+Kling 4.0
 Google Veo 3.1
-Kling AI
-Wan AI
+Wan 3.0
 Pixverse AI
-Hailuo AI
-Seedance
 View all
 Image Tools
 AI Image Generator
@@ -282,13 +283,13 @@ Image to Image
 AI Thumbnail Maker
 AI Image Enhancer
 Image Models
+GPT Image 2.5
 Nano Banana Pro
-Ideogram
+Nano Banana 3
 Seedream
-Flux Kontext
+Ideogram
+Flux 2
 Qwen
-Imagen AI
-Reve AI
 View all
 Audio & Music Tools
 AI Voice Generator
@@ -296,9 +297,11 @@ AI Music Generator
 Text to Speech
 Voice Cloning
 Audio Models
-Eleven Labs
-Minimax
-View all
+ElevenLabs
+ElevenLabs Music
+Minimax Music
+Google Lyria
+View all audio/music
 Quick AI Tools
 Face Swap
 Face Swap Video

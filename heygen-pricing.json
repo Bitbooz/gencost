@@ -14,16 +14,16 @@
       "yearly_price_usd": 24,
       "credits_or_minutes": 600,
       "unit": "credits",
-      "offer": "2 months free"
+      "offer": ""
     },
     {
       "name": "Pro",
       "monthly_price_usd": 49,
       "credits_or_minutes": 1000,
       "unit": "credits",
-      "offer": "2 months free"
+      "offer": ""
     }
   ],
   "source": "https://www.heygen.com/pricing",
-  "last_checked": "2026-11-11 06:19"
+  "last_checked": "2026-11-11 16:45"
 }

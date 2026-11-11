@@ -15,10 +15,9 @@ Annually
 UP TO 27% OFF
 Get an extra up to 50% Off on GPT Image 2.6, Seedream 5.5, Kling 4.0 and Recraft V4.1 on Pro and Wonder plans.
 Starter
-$
-14
+$14
 $13
-/Seat/mo
+/mo
 10% OFF
 Get Started
 Start experimenting with the magic of AI creation.
@@ -42,10 +41,9 @@ parallel generations
 Access to 100+ premium image, video, and audio models
 Watermark-free
 Plus
-$
-34
+$34
 $27
-/Seat/mo
+/mo
 20% OFF
 Get Started
 Unlock deeper control and create at scale.
@@ -73,10 +71,9 @@ Commercial use rights
 Watermark-free
 Pro
 Most Popular
-$
-56
+$56
 $44
-/Seat/mo
+/mo
 22% OFF
 Get Started
 Create at full speed with uninterrupted flow.
@@ -114,10 +111,9 @@ Kling 4.0
 50% OFF
 Wonder
 Best Value
-$
-240
+$240
 $175
-/Seat/mo
+/mo
 27% OFF
 Get Started
 Imagine without limits. Make your wonder.
@@ -156,10 +152,9 @@ Seedream 5.5
 Kling 4.0
 50% OFF
 Starter
-$
-14
+$14
 $13
-/Seat/mo
+/mo
 10% OFF
 Get Started
 Start experimenting with the magic of AI creation.
@@ -183,10 +178,9 @@ parallel generations
 Access to 100+ premium image, video, and audio models
 Watermark-free
 Plus
-$
-34
+$34
 $27
-/Seat/mo
+/mo
 20% OFF
 Get Started
 Unlock deeper control and create at scale.
@@ -214,10 +208,9 @@ Commercial use rights
 Watermark-free
 Pro
 Most Popular
-$
-56
+$56
 $44
-/Seat/mo
+/mo
 22% OFF
 Get Started
 Create at full speed with uninterrupted flow.
@@ -255,10 +248,9 @@ Kling 4.0
 50% OFF
 Wonder
 Best Value
-$
-240
+$240
 $175
-/Seat/mo
+/mo
 27% OFF
 Get Started
 Imagine without limits. Make your wonder.
@@ -299,8 +291,7 @@ Kling 4.0
 Optional add-on
 Manage
 Extra Credit
-$
-15
+$15
 /month
 1
 x
@@ -312,12 +303,45 @@ Flexible Usage
 Learn more
 FAQs
 Can I cancel my subscription any time?
+Yes, you can cancel your subscription any time
+here
+. If you're on the monthly plan and cancel, your subscription will end after the current month. If you're on the annual plan and cancel, your subscription will end after the current year.
 How do I cancel my subscription?
+You can cancel/manage/upgrade/downgrade your subscription any time
+here
+. To avoid future charges, you want to cancel your subscription at least five days before the billing period renewal date.
 Do my monthly credits roll over?
+Subscription credits do not carry over to the next month, but we provide plenty of credits so hopefully you will find more than enough to use each month. After your plan expires, you will lose access to the paid credits.
+e.g. John has an annual
+Plus
+subscription that started on March 7. He gets
+12,000
+credits and uses 6,000 of them. On April 1, he would see 6,000 credits left. On April 7, his credits are reset to
+12,000
+because it's 30 days from the start of his subscription.
 What's the difference between the monthly and annual plans?
+The features you get are the same, the only difference is in pricing. The annual plan gives a much better price per month, while the monthly plan offers a higher flexibility.
+If your usage is more long-term and deterministic, the annual plan fits you better. If you're testing things out, we recommend starting with monthly - you can still switch to the annual plan any time.
 What are add-ons?
+Add-ons are monthly extra credits that you can purchase in addition to your subscription plan. They work just like your subscription credits — only more of them! Add-ons are available in increments of 5,000 credits and can be added to your plan at any time.
+Learn more about how add-ons work →
 What happens when I upgrade?
+When you upgrade, you immediately gain access to all corresponding features, including the new amount of credits. You are billed by the pro-rated difference between your new and old plan.
 What's your refund policy?
+AI-generated content is an evolving technology, and results can vary. Because generation costs are incurred at the time of creation, we're generally unable to issue refunds for completed generations or active subscription periods.
+You can cancel your subscription
+here
+at any time to stop future charges, and you'll retain full access until the end of your current billing period.
 What happens when I downgrade/cancel?
+The change takes effect in the next billing cycle. You lose the paid credits when your current cycle expires. If you are on the Plus/Pro plan with add-ons, your add-ons will be cancelled as well.
 How does unlimited generation work?
+Unlimited generation is available for
+Pro
+and
+Wonder
+plan users, and applies only to select models — the specific models and promotion periods are listed on the pricing page. It does not apply to generations made through MCP or the CLI.
+To maintain a smooth and fair experience for everyone, we may temporarily place high-activity accounts in a slower queue, but you can still enjoy unlimited generation. You may turn off Unlimited anytime to get back to a faster queue.
+If unusual or automated activity is detected, your unlimited generation may be paused or temporarily disabled for review.
+This policy is in place to ensure speed, reliability, and fair access for all our users.
 How does the OpenArt MCP discount work?
+Plus, Pro, and Wonder members can claim this limited-time, one-time offer by authorizing OpenArt MCP while it is available. The discount reduces credit costs for MCP generations by 10% for 7 days from qualifying authorization. If you connected before the offer became available, or connected on Free or Starter and later upgraded, reconnect to activate it. Reconnecting after activation will not restart or extend the 7-day period. You must remain on an eligible plan to use the discount. It applies only to generations made through MCP in personal workspaces, not website or CLI generations, and cannot be combined with another campaign discount.
