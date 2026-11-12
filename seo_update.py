@@ -437,6 +437,14 @@ def main():
         bare = BLOCK.sub("", new)
         noindex = (any(re.search(rx, path) for rx in NOINDEX) or path in MOVED
                    or (path in PENDING and path not in TOOLS))  # new tool page before its first prices
+        # a canonical that points to another page by mistake (pages copied from a template) is replaced
+        wrong = re.search(r'<link[^>]*rel="canonical"[^>]*>', bare)
+        if wrong and path not in MOVED:
+            href = re.search(r'href="([^"]+)"', wrong.group(0))
+            if href and href.group(1) != url_for(DUPLICATES.get(path, path)):
+                new = new.replace(wrong.group(0), "", 1)
+                bare = BLOCK.sub("", new)
+                report.append(f"  {path}: canonical pointed to {href.group(1)}, now points to the page itself")
         has_canon = 'rel="canonical"' in bare
         canonical = None
         if not has_canon:

@@ -347,6 +347,7 @@ PROMPT = """You translate the website GenCost (an independent price comparison o
 Strict rules:
 - Keep every tag like <t0>...</t0> or <t3/> exactly as written (same numbers), around the matching words. Do not add or remove tags.
 - Translate the words inside the tags too (for example "In short:", "Home", "Articles", "Compare X with other tools"). Tags are links and bold text, not names.
+- Translate page titles and headings fully, for example "Kling AI Pricing (November [[0]]): Plans &amp; Cost per Clip | GenCost". Only the names stay as they are.
 - Keep every token like [[0]] exactly as written. They stand for numbers and prices.
 - Do not translate names of tools, companies, models or plans (GenCost, Runway, Kling AI, HeyGen, Gen-4.5, Standard, Pro, Creator, Free ...).
 - {words}
