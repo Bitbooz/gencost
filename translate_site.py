@@ -275,6 +275,14 @@ def collect_units(body):
     def walk(el):
         if skipped(el):
             return
+        if "crumbs" in (el.get("class") or []):
+            # breadcrumbs: each step on its own ("Home", "Video" ...), so they are translated the same everywhere
+            for c in el.find_all(True, recursive=False):
+                if "sep" not in (c.get("class") or []):
+                    u = Unit(c)
+                    if u.worth():
+                        units.append(u)
+            return
         if not has_block(el):
             u = Unit(el)
             if u.worth():
