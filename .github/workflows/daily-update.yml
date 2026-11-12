@@ -74,3 +74,8 @@ jobs:
             git pull --rebase
             git push
           fi
+
+      - name: Tell Bing, Yandex, Naver and others which pages changed (IndexNow)
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        run: python indexnow.py
