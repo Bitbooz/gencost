@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Jak GenCost sprawdza ceny narzędzi AI każdego ranka na podstawie oficjalnych stron cenników i jak obliczany jest rzeczywisty koszt za klip wideo." name="description"/>
+<title>Jak weryfikujemy ceny | GenCost</title>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6DHTT2ZTBK');
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;text=GENCOSTExamples&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/gencost.css" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js');</script>
+<script defer="" src="/assets/gencost.js"></script>
+<!-- SEO:START (added by seo_update.py, rebuilt daily) -->
+<link href="https://getgencost.com/pl/how-we-verify.html" rel="canonical"/>
+<meta content="GenCost" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="Jak weryfikujemy ceny | GenCost" property="og:title"/>
+<meta content="Jak GenCost sprawdza ceny narzędzi AI każdego ranka na podstawie oficjalnych stron cenników i jak obliczany jest rzeczywisty koszt za klip wideo." property="og:description"/>
+<meta content="https://getgencost.com/pl/how-we-verify.html" property="og:url"/>
+<meta content="https://getgencost.com/assets/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Jak weryfikujemy ceny | GenCost" name="twitter:title"/>
+<meta content="Jak GenCost sprawdza ceny narzędzi AI każdego ranka na podstawie oficjalnych stron cenników i jak obliczany jest rzeczywisty koszt za klip wideo." name="twitter:description"/>
+<meta content="https://getgencost.com/assets/og-image.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://getgencost.com/pl/"}, {"@type": "ListItem", "position": 2, "name": "Jak weryfikujemy ceny"}]}]}</script>
+<!-- SEO:END -->
+<script defer="" src="/assets/i18n.js"></script><!-- HREFLANG:START -->
+<link rel="alternate" hreflang="en" href="https://getgencost.com/how-we-verify.html">
+<link rel="alternate" hreflang="es" href="https://getgencost.com/es/how-we-verify.html">
+<link rel="alternate" hreflang="pt" href="https://getgencost.com/pt/how-we-verify.html">
+<link rel="alternate" hreflang="de" href="https://getgencost.com/de/how-we-verify.html">
+<link rel="alternate" hreflang="fr" href="https://getgencost.com/fr/how-we-verify.html">
+<link rel="alternate" hreflang="ar" href="https://getgencost.com/ar/how-we-verify.html">
+<link rel="alternate" hreflang="he" href="https://getgencost.com/he/how-we-verify.html">
+<link rel="alternate" hreflang="it" href="https://getgencost.com/it/how-we-verify.html">
+<link rel="alternate" hreflang="ja" href="https://getgencost.com/ja/how-we-verify.html">
+<link rel="alternate" hreflang="ru" href="https://getgencost.com/ru/how-we-verify.html">
+<link rel="alternate" hreflang="zh-TW" href="https://getgencost.com/zh-tw/how-we-verify.html">
+<link rel="alternate" hreflang="zh-HK" href="https://getgencost.com/zh-tw/how-we-verify.html">
+<link rel="alternate" hreflang="ko" href="https://getgencost.com/ko/how-we-verify.html">
+<link rel="alternate" hreflang="id" href="https://getgencost.com/id/how-we-verify.html">
+<link rel="alternate" hreflang="tr" href="https://getgencost.com/tr/how-we-verify.html">
+<link rel="alternate" hreflang="hi" href="https://getgencost.com/hi/how-we-verify.html">
+<link rel="alternate" hreflang="vi" href="https://getgencost.com/vi/how-we-verify.html">
+<link rel="alternate" hreflang="pl" href="https://getgencost.com/pl/how-we-verify.html">
+<link rel="alternate" hreflang="uk" href="https://getgencost.com/uk/how-we-verify.html">
+<link rel="alternate" hreflang="zh-SG" href="https://getgencost.com/zh/how-we-verify.html">
+<link rel="alternate" hreflang="zh-MY" href="https://getgencost.com/zh/how-we-verify.html">
+<link rel="alternate" hreflang="zh" href="https://getgencost.com/zh/how-we-verify.html">
+<link rel="alternate" hreflang="x-default" href="https://getgencost.com/how-we-verify.html">
+<!-- HREFLANG:END -->
+</head>
+<body class="page-util">
+<nav class="top">
+<div class="wrap">
+<a class="logo grad-text" href="/pl/">GENCOST</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="/pl/#platforms">Wideo</a></li>
+<li><a data-section="/pl/voice,/pl/pages/voice/" href="/pl/voice.html">Głos</a></li>
+<li><a data-section="/pl/music,/pl/pages/music/" href="/pl/music.html">Muzyka</a></li>
+<li><a data-section="/pl/image" href="/pl/image.html">Obraz</a></li>
+<li><a href="/pl/compare.html">Porównaj</a></li>
+<li><a href="/pl/calculator.html">Kalkulatory</a></li>
+<li><a href="/pl/#articles">Artykuły</a></li>
+</ul>
+<div class="nav-right">
+
+<details class="lang-menu" translate="no"><summary title="Language">PL</summary><div class="lang-list"><a class="lang-switch" href="/how-we-verify.html" hreflang="en" lang="en">EN · English</a><a class="lang-switch" href="/es/how-we-verify.html" hreflang="es" lang="es">ES · Español</a><a class="lang-switch" href="/pt/how-we-verify.html" hreflang="pt" lang="pt">PT · Português</a><a class="lang-switch" href="/de/how-we-verify.html" hreflang="de" lang="de">DE · Deutsch</a><a class="lang-switch" href="/fr/how-we-verify.html" hreflang="fr" lang="fr">FR · Français</a><a class="lang-switch" href="/ar/how-we-verify.html" hreflang="ar" lang="ar">AR · العربية</a><a class="lang-switch" href="/he/how-we-verify.html" hreflang="he" lang="he">HE · עברית</a><a class="lang-switch" href="/it/how-we-verify.html" hreflang="it" lang="it">IT · Italiano</a><a class="lang-switch" href="/ja/how-we-verify.html" hreflang="ja" lang="ja">JA · 日本語</a><a class="lang-switch" href="/ru/how-we-verify.html" hreflang="ru" lang="ru">RU · Русский</a><a class="lang-switch" href="/zh-tw/how-we-verify.html" hreflang="zh-TW" lang="zh-TW">繁 · 繁體中文</a><a class="lang-switch" href="/ko/how-we-verify.html" hreflang="ko" lang="ko">KO · 한국어</a><a class="lang-switch" href="/id/how-we-verify.html" hreflang="id" lang="id">ID · Bahasa Indonesia</a><a class="lang-switch" href="/tr/how-we-verify.html" hreflang="tr" lang="tr">TR · Türkçe</a><a class="lang-switch" href="/hi/how-we-verify.html" hreflang="hi" lang="hi">HI · हिन्दी</a><a class="lang-switch" href="/vi/how-we-verify.html" hreflang="vi" lang="vi">VI · Tiếng Việt</a><a class="lang-switch" href="/uk/how-we-verify.html" hreflang="uk" lang="uk">UK · Українська</a><a class="lang-switch" href="/zh/how-we-verify.html" hreflang="zh-SG" lang="zh-SG">简 · 简体中文</a></div></details>
+
+<a class="btn btn-primary" href="/pl/order.html">Zamów pakiet</a>
+<button aria-expanded="false" aria-label="Otwórz menu" class="menu-btn" id="menuBtn">☰</button>
+</div>
+</div>
+</nav>
+<header class="page-head">
+<div class="wrap narrow">
+<nav aria-label="Okruszki" class="crumbs"><a href="/pl/">Strona główna</a><span class="sep">/</span><span>Jak weryfikujemy ceny</span></nav>
+</div>
+</header>
+<main class="page">
+<div class="wrap narrow">
+<article class="prose">
+<h1>Jak weryfikujemy ceny</h1>
+<p class="lead">Każda cena na GenCost pochodzi z oficjalnej strony cennika narzędzia i jest sprawdzana każdego ranka przed publikacją.</p>
+<h2>Każdego ranka</h2>
+<ol>
+<li><strong>Czyta oficjalną stronę.</strong> Około 06:17 czasu norweskiego GenCost otwiera stronę cennika każdego narzędzia, używając prawdziwej przeglądarki gdy strona tego wymaga. Jeśli strona ma zakładki Miesięcznie i Rocznie, obie są odczytywane.</li>
+<li><strong>Wydobywa plany.</strong> AI odczytuje nazwy planów, cenę miesięczną, cenę roczną i dołączone kredyty. Używana jest cena po ewentualnej promocji pierwszego miesiąca, nigdy przekreślona cena "było".</li>
+<li><strong>Sprawdza każdy numer.</strong> Każda cena musi pojawić się na samej stronie (lub być sumą roczną podzieloną przez 12). Jeśli nie, nowa cena jest odrzucana i zostaje ostatnia potwierdzona cena.</li>
+<li><strong>Publikuje.</strong> Listy cen, strony narzędzi, strona porównań, kalkulator i ceny w każdym poradniku aktualizują się same.</li>
+</ol>
+<h2>Koszt za klip</h2>
+<p>Narzędzia AI do wideo sprzedają kredyty, nie sekundy. GenCost oblicza koszt jednego klipu na podstawie kredytów za klip każdego narzędzia dla nazwanego modelu i rozdzielczości (na przykład "Kling 3.0, 720p"), podzielonych przez cenę za kredyt w planie. Gdy narzędzie nie podaje kredytów za klip, nie pokazujemy kosztu klipu zamiast zgadywać, a dane z recenzji są oznaczone jako nieoficjalne.</p>
+<h2>Ukryte koszty</h2>
+<p>Uwagi "Uważaj" (znaki wodne, kredyty, które wygasają, ceny wprowadzające, zasady użytku komercyjnego) pochodzą ze stron cenników narzędzi, wraz ze źródłem i datą sprawdzenia.</p>
+<h2>Czego nie robimy</h2>
+<ul>
+<li>Nie używamy linków afiliacyjnych i żadne narzędzie nie płaci za bycie na liście.</li>
+<li>Nie twierdzimy, że ceny są takie same w każdym kraju: narzędzia czasem pokazują różne ceny w zależności od regionu. GenCost pokazuje ceny w dolarach amerykańskich.</li>
+<li>Nie ukrywamy, gdy cena nie mogła być sprawdzona: takie narzędzia pokazują "Wpisane ręcznie" lub datę ostatniego sprawdzenia.</li>
+</ul>
+<h2>Zawsze sprawdzaj dwa razy</h2>
+<p>Ceny często się zmieniają. Zawsze potwierdź aktualną cenę w narzędziu przed zakupem. Znalazłeś błędną cenę? Napisz na <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a>. Więcej o projekcie na <a href="/pl/about.html">stronie O nas</a>.</p>
+</article>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<a class="logo grad-text" href="/pl/">GENCOST</a>
+<p class="foot-about">Porównanie cen narzędzi AI do wideo, awatarów, głosu i muzyki, w rzeczywistych dolarach i aktualizowane automatycznie.</p>
+</div>
+<div>
+<h4>Porównaj</h4>
+<ul>
+<li><a href="/pl/#platforms">Wideo i awatary</a></li>
+<li><a href="/pl/voice.html">Głos</a></li>
+<li><a href="/pl/music.html">Muzyka</a></li>
+<li><a href="/pl/compare.html">Porównaj dowolne narzędzia</a></li>
+<li><a href="/pl/pages/emerging.html">Nowe narzędzia</a></li>
+<li><a href="/pl/calculator.html">Kalkulator budżetu</a></li>
+<li><a href="/pl/project.html">Kalkulator projektu</a></li>
+</ul>
+</div>
+<div>
+<h4>Przewodniki</h4>
+<ul>
+<li><a href="/pl/pages/cheapest-ai-video-tools-in-2026.html">Najtańsze narzędzia wideo</a></li>
+<li><a href="/pl/pages/cheapest-ai-voice-tools-in-2026.html">Najtańsze narzędzia głosowe</a></li>
+<li><a href="/pl/pages/cheapest-ai-music-tools-in-2026.html">Najtańsze narzędzia muzyczne</a></li>
+<li><a href="/pl/pages/cheapest-ai-avatar-tools-in-2026.html">Najtańsze narzędzia awatarów</a></li>
+<li><a href="/pl/credits.html">Kredyty i pozostałości</a></li>
+</ul>
+</div>
+<div>
+<h4>GenCost</h4>
+<ul>
+<li><a href="/pl/order.html">Zamów pakiet</a></li>
+<li><a href="/pl/how-we-verify.html">Jak weryfikujemy ceny</a></li>
+<li><a href="/pl/changelog.html">Dziennik zmian cen</a></li>
+<li><a href="mailto:bitbooz@protonmail.com">Kontakt</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom"><span>Stworzone przez Grok i Bitbooz · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span> <span>Ceny zmieniają się często. Zawsze potwierdź w każdym narzędziu przed płatnością.</span></div>
+</div>
+</footer>
+</body>
+</html>

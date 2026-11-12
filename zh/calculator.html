@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI 视频预算计算器 | GenCost</title>
+<meta content="您的预算能买多少秒 AI 视频？使用 GenCost 当前价格估算 Kling、Runway、Pika、Luma 等工具。" name="description"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6DHTT2ZTBK');
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;text=GENCOSTExamples&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/gencost.css" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js');</script>
+<script defer="" src="/assets/gencost.js"></script>
+<link href="https://getgencost.com/zh/calculator.html" rel="canonical"/>
+<!-- SEO:START (added by seo_update.py, rebuilt daily) -->
+<meta content="GenCost" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="AI 视频预算计算器 | GenCost" property="og:title"/>
+<meta content="您的预算能买多少秒 AI 视频？使用 GenCost 当前价格估算 Kling、Runway、Pika、Luma 等工具。" property="og:description"/>
+<meta content="https://getgencost.com/zh/calculator.html" property="og:url"/>
+<meta content="https://getgencost.com/assets/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="AI 视频预算计算器 | GenCost" name="twitter:title"/>
+<meta content="您的预算能买多少秒 AI 视频？使用 GenCost 当前价格估算 Kling、Runway、Pika、Luma 等工具。" name="twitter:description"/>
+<meta content="https://getgencost.com/assets/og-image.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://getgencost.com/zh/"}, {"@type": "ListItem", "position": 2, "name": "计算器"}]}]}</script>
+<!-- SEO:END -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/><script defer="" src="/assets/i18n.js"></script><!-- HREFLANG:START -->
+<link rel="alternate" hreflang="en" href="https://getgencost.com/calculator.html">
+<link rel="alternate" hreflang="es" href="https://getgencost.com/es/calculator.html">
+<link rel="alternate" hreflang="pt" href="https://getgencost.com/pt/calculator.html">
+<link rel="alternate" hreflang="de" href="https://getgencost.com/de/calculator.html">
+<link rel="alternate" hreflang="fr" href="https://getgencost.com/fr/calculator.html">
+<link rel="alternate" hreflang="ar" href="https://getgencost.com/ar/calculator.html">
+<link rel="alternate" hreflang="he" href="https://getgencost.com/he/calculator.html">
+<link rel="alternate" hreflang="it" href="https://getgencost.com/it/calculator.html">
+<link rel="alternate" hreflang="ja" href="https://getgencost.com/ja/calculator.html">
+<link rel="alternate" hreflang="ru" href="https://getgencost.com/ru/calculator.html">
+<link rel="alternate" hreflang="zh-TW" href="https://getgencost.com/zh-tw/calculator.html">
+<link rel="alternate" hreflang="zh-HK" href="https://getgencost.com/zh-tw/calculator.html">
+<link rel="alternate" hreflang="ko" href="https://getgencost.com/ko/calculator.html">
+<link rel="alternate" hreflang="id" href="https://getgencost.com/id/calculator.html">
+<link rel="alternate" hreflang="tr" href="https://getgencost.com/tr/calculator.html">
+<link rel="alternate" hreflang="hi" href="https://getgencost.com/hi/calculator.html">
+<link rel="alternate" hreflang="vi" href="https://getgencost.com/vi/calculator.html">
+<link rel="alternate" hreflang="pl" href="https://getgencost.com/pl/calculator.html">
+<link rel="alternate" hreflang="uk" href="https://getgencost.com/uk/calculator.html">
+<link rel="alternate" hreflang="zh-SG" href="https://getgencost.com/zh/calculator.html">
+<link rel="alternate" hreflang="zh-MY" href="https://getgencost.com/zh/calculator.html">
+<link rel="alternate" hreflang="zh" href="https://getgencost.com/zh/calculator.html">
+<link rel="alternate" hreflang="x-default" href="https://getgencost.com/calculator.html">
+<!-- HREFLANG:END -->
+</head>
+<body class="page-util">
+<nav class="top">
+<div class="wrap">
+<a class="logo grad-text" href="/zh/">GENCOST</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="/zh/#platforms">视频</a></li>
+<li><a data-section="/zh/voice,/zh/pages/voice/" href="/zh/voice.html">语音</a></li>
+<li><a data-section="/zh/music,/zh/pages/music/" href="/zh/music.html">音乐</a></li>
+<li><a data-section="/zh/image" href="/zh/image.html">图像</a></li>
+<li><a href="/zh/compare.html">对比</a></li>
+<li><a href="/zh/calculator.html">计算器</a></li>
+<li><a href="/zh/#articles">文章</a></li>
+</ul>
+<div class="nav-right">
+
+<details class="lang-menu" translate="no"><summary title="Language">简</summary><div class="lang-list"><a class="lang-switch" href="/calculator.html" hreflang="en" lang="en">EN · English</a><a class="lang-switch" href="/es/calculator.html" hreflang="es" lang="es">ES · Español</a><a class="lang-switch" href="/pt/calculator.html" hreflang="pt" lang="pt">PT · Português</a><a class="lang-switch" href="/de/calculator.html" hreflang="de" lang="de">DE · Deutsch</a><a class="lang-switch" href="/fr/calculator.html" hreflang="fr" lang="fr">FR · Français</a><a class="lang-switch" href="/ar/calculator.html" hreflang="ar" lang="ar">AR · العربية</a><a class="lang-switch" href="/he/calculator.html" hreflang="he" lang="he">HE · עברית</a><a class="lang-switch" href="/it/calculator.html" hreflang="it" lang="it">IT · Italiano</a><a class="lang-switch" href="/ja/calculator.html" hreflang="ja" lang="ja">JA · 日本語</a><a class="lang-switch" href="/ru/calculator.html" hreflang="ru" lang="ru">RU · Русский</a><a class="lang-switch" href="/zh-tw/calculator.html" hreflang="zh-TW" lang="zh-TW">繁 · 繁體中文</a><a class="lang-switch" href="/ko/calculator.html" hreflang="ko" lang="ko">KO · 한국어</a><a class="lang-switch" href="/id/calculator.html" hreflang="id" lang="id">ID · Bahasa Indonesia</a><a class="lang-switch" href="/tr/calculator.html" hreflang="tr" lang="tr">TR · Türkçe</a><a class="lang-switch" href="/hi/calculator.html" hreflang="hi" lang="hi">HI · हिन्दी</a><a class="lang-switch" href="/vi/calculator.html" hreflang="vi" lang="vi">VI · Tiếng Việt</a><a class="lang-switch" href="/pl/calculator.html" hreflang="pl" lang="pl">PL · Polski</a><a class="lang-switch" href="/uk/calculator.html" hreflang="uk" lang="uk">UK · Українська</a></div></details>
+
+<a class="btn btn-primary" href="/zh/order.html">订购套餐</a>
+<button aria-expanded="false" aria-label="打开菜单" class="menu-btn" id="menuBtn">☰</button>
+</div>
+</div>
+</nav>
+<header class="page-head">
+<div class="wrap narrow">
+<nav aria-label="面包屑导航" class="crumbs"><a href="/zh/">首页</a><span class="sep">/</span><span>计算器</span></nav>
+</div>
+</header>
+<main class="page">
+<div class="wrap narrow">
+<article class="prose">
+<span class="eyebrow">预算计算器</span>
+<h1>我的预算能买多少 AI 视频？</h1>
+<p class="lead">选择一个计划和预算。GenCost 使用计划的当前价格和积分，结合每款工具每个片段的积分消耗以及通常需要的尝试次数，计算出您实际能保留的视频片段数量。</p>
+<div class="box calc-switch"><strong>规划整个项目？</strong> 每月视频、配音、音乐和图像：<a href="/zh/project.html">试试项目计算器 →</a></div>
+<div class="card">
+<div data-billing-toggle=""></div>
+<label for="budget">预算（美元/月）</label>
+<input id="budget" min="1" step="1" type="number" value="20"/>
+<label for="platform">计划</label>
+<select id="platform"><option>正在加载计划…</option></select>
+<label for="model">模型和分辨率</label>
+<select id="model"><option value="0">默认</option></select>
+<label for="tries">每个保留片段的尝试次数</label>
+<select id="tries"><option value="1">1（每个片段都是保留的）</option><option value="2">2</option><option selected="" value="3">3（典型）</option><option value="4">4</option><option value="5">5</option></select>
+<div id="result"></div>
+</div>
+<p class="note">片段成本使用每款工具所示的模型；其他模型和更高分辨率消耗更多积分。仅列出已知每个片段成本的工具。价格来自 GenCost 数据，更新于 <span class="js-updated"></span>。请始终在工具内确认。</p>
+</article>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<a class="logo grad-text" href="/zh/">GENCOST</a>
+<p class="foot-about">AI 视频、虚拟形象、语音和音乐工具的真实美元价格对比，自动更新。</p>
+</div>
+<div>
+<h4>对比</h4>
+<ul>
+<li><a href="/zh/#platforms">视频与虚拟形象</a></li>
+<li><a href="/zh/voice.html">语音</a></li>
+<li><a href="/zh/music.html">音乐</a></li>
+<li><a href="/zh/compare.html">对比任意工具</a></li>
+<li><a href="/zh/pages/emerging.html">新兴工具</a></li>
+<li><a href="/zh/calculator.html">预算计算器</a></li>
+<li><a href="/zh/project.html">项目计算器</a></li>
+</ul>
+</div>
+<div>
+<h4>指南</h4>
+<ul>
+<li><a href="/zh/pages/cheapest-ai-video-tools-in-2026.html">最便宜的视频工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-voice-tools-in-2026.html">最便宜的语音工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-music-tools-in-2026.html">最便宜的音乐工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-avatar-tools-in-2026.html">最便宜的虚拟形象工具</a></li>
+<li><a href="/zh/credits.html">积分与余量</a></li>
+</ul>
+</div>
+<div>
+<h4>GenCost</h4>
+<ul>
+<li><a href="/zh/ai.html">在 Claude 与 ChatGPT 中使用</a></li>
+<li><a href="/zh/about.html">关于 GenCost</a></li>
+<li><a href="/zh/order.html">订购套餐</a></li>
+<li><a href="/zh/how-we-verify.html">我们如何验证价格</a></li>
+<li><a href="/zh/changelog.html">价格变更日志</a></li>
+<li><a href="mailto:bitbooz@protonmail.com">联系</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom"><span>由 Grok 与 Bitbooz 创建 · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span> <span>价格经常变动。付款前请务必在各工具内确认。</span></div>
+</div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var plans = [], sel = document.getElementById("platform"), budget = document.getElementById("budget"), out = document.getElementById("result");
+  function calculate() {
+    var p = plans[sel.value], b = parseFloat(budget.value) || 0;
+    if (!p || !b) { out.innerHTML = ""; return; }
+    var opt = parseInt(document.getElementById("model").value, 10) || 0;
+    var lens = GenCost.clipLengths(p.plan, opt), secs = lens.indexOf(10) >= 0 ? 10 : lens[lens.length - 1];
+    var c = GenCost.clipCost(p.plan, secs, opt);
+    if (!c) { out.innerHTML = ""; return; }
+    var tries = parseInt(document.getElementById("tries").value, 10) || 1;
+    var kept = c.usd * tries;
+    var clips = Math.floor(b / kept);
+    var note = b < p.price ? '<br><span class="note">This plan costs ' + GenCost.money(p.price) + '/mo, more than your budget.</span>' : "";
+    var planClips = Math.floor(p.credits / c.credits);
+    out.innerHTML = "<strong>" + GenCost.esc(p.label) + "</strong> · one " + secs + "-second clip (" + GenCost.esc(c.model) + ") ≈ <strong>" + GenCost.money(Number(c.usd.toFixed(2))) + "</strong>" + (c.rough ? " (rough)" : "") + "<br>" +
+      (tries > 1 ? "With " + tries + " tries for each clip you keep, one kept clip costs about <strong>" + GenCost.money(Number(kept.toFixed(2))) + "</strong>.<br>" : "") +
+      "For <strong>$" + b + "</strong> you keep roughly <strong class='price'>" + clips.toLocaleString("en-US") + " clips</strong> of " + secs + " seconds, " +
+      "≈ " + (clips * secs).toLocaleString("en-US") + " seconds of finished video. The plan itself covers about " + Math.floor(planClips / tries).toLocaleString("en-US") + " kept clips a month." + note;
+  }
+  function build(data, keepKey) {
+    plans = [];
+    (data.platforms || []).forEach(function (pf) {
+      (pf.plans || []).forEach(function (p) {
+        var price = GenCost.price(p), credits = typeof p.credits_or_minutes === "number" && p.credits_or_minutes > 0 ? p.credits_or_minutes : ((p.__clips && p.__clips.plan_credits && p.__clips.plan_credits[p.name]) || 0);
+        if (price > 0 && credits > 0 && GenCost.clipLengths(p).length) plans.push({ key: pf.name + "|" + p.name, label: pf.name + " " + p.name + " (" + GenCost.money(price) + "/mo)", price: price, credits: credits, plan: p });
+      });
+    });
+    sel.innerHTML = plans.map(function (p, i) { return '<option value="' + i + '">' + GenCost.esc(p.label) + "</option>"; }).join("");
+    var keep = plans.findIndex(function (p) { return p.key === keepKey; });
+    if (keep < 0) keep = plans.findIndex(function (p) { return p.key === "Kling AI|Standard"; });
+    if (keep >= 0) sel.value = keep;
+    fillModels();
+    calculate();
+  }
+  GenCost.load("video").then(function (data) {
+    document.querySelectorAll(".js-updated").forEach(function (el) { el.textContent = data.updated; });
+    build(data);
+    document.addEventListener("gencost:billing", function () {
+      var cur = plans[sel.value];
+      build(data, cur && cur.key);
+    });
+  }).catch(function () { out.innerHTML = "Prices could not be loaded right now. Please refresh the page."; });
+  function fillModels() {
+    var p = plans[sel.value], m = document.getElementById("model");
+    var opts = p ? GenCost.clipOptions(p.plan) : [];
+    m.innerHTML = opts.map(function (o, i) { return '<option value="' + i + '">' + GenCost.esc(o.model) + "</option>"; }).join("");
+    m.disabled = opts.length < 2;
+  }
+  sel.addEventListener("change", function () { fillModels(); calculate(); });
+  document.getElementById("model").addEventListener("change", calculate);
+  document.getElementById("tries").addEventListener("change", calculate);
+  budget.addEventListener("input", calculate);
+});
+</script>
+</body>
+</html>

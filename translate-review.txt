@@ -1,19 +1,55 @@
-2026-11-11 23:16  Español (/es/): 105 of 106 pages, stored translations: 3257, JavaScript texts: 400/400
-2026-11-11 23:16  Português (/pt/): 105 of 106 pages, stored translations: 3250, JavaScript texts: 400/400
-2026-11-11 23:16  Deutsch (/de/): 105 of 106 pages, stored translations: 3243, JavaScript texts: 400/400
-2026-11-11 23:16  Français (/fr/): 105 of 106 pages, stored translations: 3234, JavaScript texts: 400/400
-2026-11-11 23:16  العربية (/ar/): 105 of 106 pages, stored translations: 3227, JavaScript texts: 400/400
-2026-11-11 23:16  עברית (/he/): 105 of 106 pages, stored translations: 3201, JavaScript texts: 400/400
-2026-11-11 23:16  Italiano (/it/): 105 of 106 pages, stored translations: 3166, JavaScript texts: 400/400
-2026-11-11 23:16  日本語 (/ja/): 105 of 106 pages, stored translations: 3166, JavaScript texts: 400/400
-2026-11-11 23:16  Русский (/ru/): 105 of 106 pages, stored translations: 3145, JavaScript texts: 400/400
-  - translation did not keep the tags or numbers, kept English: <t0>Cheapest AI Image Generators in [[0]]: What You Really Get for You
-  - translation did not keep the tags or numbers, kept English: For most creators, Canva's free plan combined with a free AI image gen
-2026-11-11 23:16  繁體中文 (/zh-tw/): 104 of 106 pages, stored translations: 3141, JavaScript texts: 399/400
-  - translation did not keep the tags or numbers, kept English: * Measured in the Kling app; Kling's pricing page doesn't list it. Kli
+2026-11-12 06:09  Español (/es/): 105 of 106 pages, stored translations: 3265, JavaScript texts: 406/406
+2026-11-12 06:09  Português (/pt/): 105 of 106 pages, stored translations: 3259, JavaScript texts: 406/406
+2026-11-12 06:09  Deutsch (/de/): 105 of 106 pages, stored translations: 3252, JavaScript texts: 406/406
+2026-11-12 06:09  Français (/fr/): 105 of 106 pages, stored translations: 3244, JavaScript texts: 406/406
+2026-11-12 06:09  العربية (/ar/): 105 of 106 pages, stored translations: 3237, JavaScript texts: 406/406
+2026-11-12 06:09  עברית (/he/): 105 of 106 pages, stored translations: 3220, JavaScript texts: 406/406
+2026-11-12 06:09  Italiano (/it/): 105 of 106 pages, stored translations: 3199, JavaScript texts: 406/406
+2026-11-12 06:09  日本語 (/ja/): 105 of 106 pages, stored translations: 3199, JavaScript texts: 406/406
+2026-11-12 06:09  Русский (/ru/): 105 of 106 pages, stored translations: 3186, JavaScript texts: 406/406
+2026-11-12 06:09  繁體中文 (/zh-tw/): 105 of 106 pages, stored translations: 3186, JavaScript texts: 406/406
+2026-11-12 06:09  한국어 (/ko/): 103 of 106 pages, stored translations: 3136, JavaScript texts: 406/406
+  - translation did not keep the tags or numbers, kept English: AI video tools sell credits, not seconds, so it is hard to know what a
+  - translation did not keep the tags or numbers, kept English: If you are a developer, or only need a few clips, fal.ai and Segmind c
+  - translation did not keep the tags or numbers, kept English: Sources: the official pricing pages of Kling, Higgsfield and Runway; H
+  - translation did not keep the tags or numbers, kept English: [[0]] credits per second at [[1]]p, with audio
+  - translation did not keep the tags or numbers, kept English: CapCut Pricing (November [[0]]): Plans &amp; Cost per Clip | GenCost
+  - translation did not keep the tags or numbers, kept English: CapCut pricing for November [[0]]: every plan in US dollars, monthly a
+  - translation did not keep the tags or numbers, kept English: New &amp; Emerging AI Tools (November [[0]]): Prices in Real Dollars |
+  - translation did not keep the tags or numbers, kept English: Credits pay for video creation and generative models. Seedance [[0]] a
+  - translation did not keep the tags or numbers, kept English: Kling AI Pricing (November [[0]]): Plans &amp; Cost per Clip | GenCost
+  - translation did not keep the tags or numbers, kept English: Kling AI pricing for November [[0]]: every plan in US dollars, monthly
+  - pages/capcut.html: only 86% translated, not published yet
+  - pages/kling.html: only 88% translated, not published yet
+2026-11-12 06:09  Bahasa Indonesia (/id/): 105 of 106 pages, stored translations: 3141, JavaScript texts: 405/406
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and the
+  - translation did not keep the tags or numbers, kept English: Yes. The Free plan costs [[0]] and includes [[1]] downloads. On the Fr
+  - translation did not keep the tags or numbers, kept English: Yes. The Free plan costs [[0]] and includes [[1]] credits. The Free pl
+  - translation did not keep the tags or numbers, kept English: Yes. The Free plan costs [[0]] and includes [[1]] credits. The Free pl
+  - translation did not keep the tags or numbers, kept English: Kling [[0]]: [[1]] credits per [[2]]s. Higgsfield's own estimates: abo
+2026-11-12 06:09  Türkçe (/tr/): 104 of 106 pages, stored translations: 3140, JavaScript texts: 406/406
+  - translation did not keep the tags or numbers, kept English: A real-dollar breakdown of the cheapest AI avatar tools in [[0]] — cov
+  - translation did not keep the tags or numbers, kept English: Buying from Kling directly is the cheapest way to use its newest model
+  - translation did not keep the tags or numbers, kept English: If you are a developer, or only need a few clips, fal.ai and Segmind c
   - translation did not keep the tags or numbers, kept English: OpenArt offers Kling [[0]] at [[1]]% off on its Pro and Wonder plans u
-  - translation did not keep the tags or numbers, kept English: Monthly prices update automatically every morning. Clip costs were wor
+  - translation did not keep the tags or numbers, kept English: [[0]] credits per second at [[1]]p, with audio
+  - translation did not keep the tags or numbers, kept English: <t0>[[0]]</t0>The [[1]] Best Free AI Thumbnail Tools, Ranked
+  - pages/cheapest-way-to-use-kling-4-0-2026.html: only 87% translated, not published yet
+2026-11-12 06:09  हिन्दी (/hi/): 105 of 106 pages, stored translations: 3145, JavaScript texts: 406/406
+  - translation did not keep the tags or numbers, kept English: [[0]] credits per second at [[1]]p, with audio
+2026-11-12 06:09  Tiếng Việt (/vi/): 105 of 106 pages, stored translations: 3145, JavaScript texts: 405/406
+  - translation did not keep the tags or numbers, kept English: Kling [[0]]: [[1]] credits per [[2]]s. Higgsfield's own estimates: abo
+2026-11-12 06:09  Polski (/pl/): 105 of 106 pages, stored translations: 3146, JavaScript texts: 406/406
+2026-11-12 06:09  Українська (/uk/): 105 of 106 pages, stored translations: 3144, JavaScript texts: 405/406
+  - translation did not keep the tags or numbers, kept English: <t0>Team</t0>: [[0]]/mo · [[1]] credits
+  - translation did not keep the tags or numbers, kept English: Kling [[0]]: [[1]] credits per [[2]]s. Higgsfield's own estimates: abo
+2026-11-12 06:09  简体中文 (/zh/): 104 of 106 pages, stored translations: 3138, JavaScript texts: 404/406
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and the
+  - translation did not keep the tags or numbers, kept English: Sources: the official pricing pages of Kling, Higgsfield and Runway; H
+  - translation did not keep the tags or numbers, kept English: [[0]] credits per second at [[1]]p, with audio
+  - translation did not keep the tags or numbers, kept English: Per clip, Veo Fast is cheaper than Kling [[0]] on every Kling plan. Bu
   - translation did not keep the tags or numbers, kept English: The sticker price of an AI video tool is not what B-roll costs you. Mo
   - translation did not keep the tags or numbers, kept English: New &amp; Emerging AI Tools (November [[0]]): Prices in Real Dollars |
+  - translation did not keep the tags or numbers, kept English: About [[0]] characters make one minute of speech; [[1]] credit per cha
   - translation did not keep the tags or numbers, kept English: Kling [[0]]: [[1]] credits per [[2]]s. Higgsfield's own estimates: abo
   - pages/samples/cheapest-ai-b-roll-generators-for-youtube-2026.html: only 54% translated, not published yet

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="GenCost 如何每天早上根据官方定价页面检查 AI 工具价格，以及如何计算每个视频剪辑的实际成本。" name="description"/>
+<title>我们如何验证价格 | GenCost</title>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6DHTT2ZTBK');
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;text=GENCOSTExamples&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/gencost.css" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js');</script>
+<script defer="" src="/assets/gencost.js"></script>
+<!-- SEO:START (added by seo_update.py, rebuilt daily) -->
+<link href="https://getgencost.com/zh/how-we-verify.html" rel="canonical"/>
+<meta content="GenCost" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="我们如何验证价格 | GenCost" property="og:title"/>
+<meta content="GenCost 如何每天早上根据官方定价页面检查 AI 工具价格，以及如何计算每个视频剪辑的实际成本。" property="og:description"/>
+<meta content="https://getgencost.com/zh/how-we-verify.html" property="og:url"/>
+<meta content="https://getgencost.com/assets/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="我们如何验证价格 | GenCost" name="twitter:title"/>
+<meta content="GenCost 如何每天早上根据官方定价页面检查 AI 工具价格，以及如何计算每个视频剪辑的实际成本。" name="twitter:description"/>
+<meta content="https://getgencost.com/assets/og-image.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://getgencost.com/zh/"}, {"@type": "ListItem", "position": 2, "name": "我们如何验证价格"}]}]}</script>
+<!-- SEO:END -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/><script defer="" src="/assets/i18n.js"></script><!-- HREFLANG:START -->
+<link rel="alternate" hreflang="en" href="https://getgencost.com/how-we-verify.html">
+<link rel="alternate" hreflang="es" href="https://getgencost.com/es/how-we-verify.html">
+<link rel="alternate" hreflang="pt" href="https://getgencost.com/pt/how-we-verify.html">
+<link rel="alternate" hreflang="de" href="https://getgencost.com/de/how-we-verify.html">
+<link rel="alternate" hreflang="fr" href="https://getgencost.com/fr/how-we-verify.html">
+<link rel="alternate" hreflang="ar" href="https://getgencost.com/ar/how-we-verify.html">
+<link rel="alternate" hreflang="he" href="https://getgencost.com/he/how-we-verify.html">
+<link rel="alternate" hreflang="it" href="https://getgencost.com/it/how-we-verify.html">
+<link rel="alternate" hreflang="ja" href="https://getgencost.com/ja/how-we-verify.html">
+<link rel="alternate" hreflang="ru" href="https://getgencost.com/ru/how-we-verify.html">
+<link rel="alternate" hreflang="zh-TW" href="https://getgencost.com/zh-tw/how-we-verify.html">
+<link rel="alternate" hreflang="zh-HK" href="https://getgencost.com/zh-tw/how-we-verify.html">
+<link rel="alternate" hreflang="ko" href="https://getgencost.com/ko/how-we-verify.html">
+<link rel="alternate" hreflang="id" href="https://getgencost.com/id/how-we-verify.html">
+<link rel="alternate" hreflang="tr" href="https://getgencost.com/tr/how-we-verify.html">
+<link rel="alternate" hreflang="hi" href="https://getgencost.com/hi/how-we-verify.html">
+<link rel="alternate" hreflang="vi" href="https://getgencost.com/vi/how-we-verify.html">
+<link rel="alternate" hreflang="pl" href="https://getgencost.com/pl/how-we-verify.html">
+<link rel="alternate" hreflang="uk" href="https://getgencost.com/uk/how-we-verify.html">
+<link rel="alternate" hreflang="zh-SG" href="https://getgencost.com/zh/how-we-verify.html">
+<link rel="alternate" hreflang="zh-MY" href="https://getgencost.com/zh/how-we-verify.html">
+<link rel="alternate" hreflang="zh" href="https://getgencost.com/zh/how-we-verify.html">
+<link rel="alternate" hreflang="x-default" href="https://getgencost.com/how-we-verify.html">
+<!-- HREFLANG:END -->
+</head>
+<body class="page-util">
+<nav class="top">
+<div class="wrap">
+<a class="logo grad-text" href="/zh/">GENCOST</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="/zh/#platforms">视频</a></li>
+<li><a data-section="/zh/voice,/zh/pages/voice/" href="/zh/voice.html">语音</a></li>
+<li><a data-section="/zh/music,/zh/pages/music/" href="/zh/music.html">音乐</a></li>
+<li><a data-section="/zh/image" href="/zh/image.html">图像</a></li>
+<li><a href="/zh/compare.html">对比</a></li>
+<li><a href="/zh/calculator.html">计算器</a></li>
+<li><a href="/zh/#articles">文章</a></li>
+</ul>
+<div class="nav-right">
+
+<details class="lang-menu" translate="no"><summary title="Language">简</summary><div class="lang-list"><a class="lang-switch" href="/how-we-verify.html" hreflang="en" lang="en">EN · English</a><a class="lang-switch" href="/es/how-we-verify.html" hreflang="es" lang="es">ES · Español</a><a class="lang-switch" href="/pt/how-we-verify.html" hreflang="pt" lang="pt">PT · Português</a><a class="lang-switch" href="/de/how-we-verify.html" hreflang="de" lang="de">DE · Deutsch</a><a class="lang-switch" href="/fr/how-we-verify.html" hreflang="fr" lang="fr">FR · Français</a><a class="lang-switch" href="/ar/how-we-verify.html" hreflang="ar" lang="ar">AR · العربية</a><a class="lang-switch" href="/he/how-we-verify.html" hreflang="he" lang="he">HE · עברית</a><a class="lang-switch" href="/it/how-we-verify.html" hreflang="it" lang="it">IT · Italiano</a><a class="lang-switch" href="/ja/how-we-verify.html" hreflang="ja" lang="ja">JA · 日本語</a><a class="lang-switch" href="/ru/how-we-verify.html" hreflang="ru" lang="ru">RU · Русский</a><a class="lang-switch" href="/zh-tw/how-we-verify.html" hreflang="zh-TW" lang="zh-TW">繁 · 繁體中文</a><a class="lang-switch" href="/ko/how-we-verify.html" hreflang="ko" lang="ko">KO · 한국어</a><a class="lang-switch" href="/id/how-we-verify.html" hreflang="id" lang="id">ID · Bahasa Indonesia</a><a class="lang-switch" href="/tr/how-we-verify.html" hreflang="tr" lang="tr">TR · Türkçe</a><a class="lang-switch" href="/hi/how-we-verify.html" hreflang="hi" lang="hi">HI · हिन्दी</a><a class="lang-switch" href="/vi/how-we-verify.html" hreflang="vi" lang="vi">VI · Tiếng Việt</a><a class="lang-switch" href="/pl/how-we-verify.html" hreflang="pl" lang="pl">PL · Polski</a><a class="lang-switch" href="/uk/how-we-verify.html" hreflang="uk" lang="uk">UK · Українська</a></div></details>
+
+<a class="btn btn-primary" href="/zh/order.html">订购套餐</a>
+<button aria-expanded="false" aria-label="打开菜单" class="menu-btn" id="menuBtn">☰</button>
+</div>
+</div>
+</nav>
+<header class="page-head">
+<div class="wrap narrow">
+<nav aria-label="面包屑导航" class="crumbs"><a href="/zh/">首页</a><span class="sep">/</span><span>我们如何验证价格</span></nav>
+</div>
+</header>
+<main class="page">
+<div class="wrap narrow">
+<article class="prose">
+<h1>我们如何验证价格</h1>
+<p class="lead">GenCost 上的每个价格均来自工具的官方定价页面，并在上线前每天早上进行检查。</p>
+<h2>每天早上</h2>
+<ol>
+<li><strong>读取官方页面。</strong> 大约在挪威时间 06:17，GenCost 会打开每个工具的定价页面，如果需要则使用真实浏览器。如果页面有每月和每年选项卡，两者都会被读取。</li>
+<li><strong>提取计划。</strong> AI 会读取计划名称、每月价格、每年价格以及包含的积分。使用任何首月优惠后的价格，从不使用划掉的“原价”。</li>
+<li><strong>检查每个数字。</strong> 每个价格必须出现在页面本身（或为年度总额除以 12）。如果没有，新价格将被拒绝，保留上次确认的价格。</li>
+<li><strong>发布。</strong> 价格列表、工具页面、对比页面、计算器以及每个指南中的价格会自动更新。</li>
+</ol>
+<h2>每剪辑成本</h2>
+<p>AI 视频工具销售积分而非秒数。GenCost 根据每个工具为指定模型和分辨率（例如“Kling 3.0，720p”）的每剪辑积分，结合计划的每积分价格，计算一个剪辑的成本。如果工具未公布每剪辑积分，我们不显示猜测的剪辑成本，来自评测网站的数据会标记为非官方。</p>
+<h2>隐藏成本</h2>
+<p>“注意”备注（水印、积分过期、介绍价格、商业使用规则）均来自每个工具的定价页面，并附有来源和检查日期。</p>
+<h2>我们不做的事</h2>
+<ul>
+<li>我们不使用联盟链接，也没有工具付费上榜。</li>
+<li>我们不声称价格在每个国家都相同：工具有时会按地区显示不同价格。GenCost 显示美元价格。</li>
+<li>当价格无法检查时，我们不会隐藏：这些工具会显示“手动输入”或上次检查日期。</li>
+</ul>
+<h2>始终仔细核对</h2>
+<p>价格经常变化。购买前请务必在工具内确认当前价格。发现价格错误？请发送电子邮件至 <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a>。更多关于本项目的信息，请访问 <a href="/zh/about.html">关于页面</a>。</p>
+</article>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<a class="logo grad-text" href="/zh/">GENCOST</a>
+<p class="foot-about">AI 视频、虚拟形象、语音和音乐工具的真实美元价格对比，自动更新。</p>
+</div>
+<div>
+<h4>对比</h4>
+<ul>
+<li><a href="/zh/#platforms">视频与虚拟形象</a></li>
+<li><a href="/zh/voice.html">语音</a></li>
+<li><a href="/zh/music.html">音乐</a></li>
+<li><a href="/zh/compare.html">对比任意工具</a></li>
+<li><a href="/zh/pages/emerging.html">新兴工具</a></li>
+<li><a href="/zh/calculator.html">预算计算器</a></li>
+<li><a href="/zh/project.html">项目计算器</a></li>
+</ul>
+</div>
+<div>
+<h4>指南</h4>
+<ul>
+<li><a href="/zh/pages/cheapest-ai-video-tools-in-2026.html">最便宜的视频工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-voice-tools-in-2026.html">最便宜的语音工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-music-tools-in-2026.html">最便宜的音乐工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-avatar-tools-in-2026.html">最便宜的虚拟形象工具</a></li>
+<li><a href="/zh/credits.html">积分与余量</a></li>
+</ul>
+</div>
+<div>
+<h4>GenCost</h4>
+<ul>
+<li><a href="/zh/order.html">订购套餐</a></li>
+<li><a href="/zh/how-we-verify.html">我们如何验证价格</a></li>
+<li><a href="/zh/changelog.html">价格变更日志</a></li>
+<li><a href="mailto:bitbooz@protonmail.com">联系</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom"><span>由 Grok 与 Bitbooz 创建 · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span> <span>价格经常变动。付款前请务必在各工具内确认。</span></div>
+</div>
+</footer>
+</body>
+</html>

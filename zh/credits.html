@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>积分与残值 | GenCost</title>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6DHTT2ZTBK');
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;text=GENCOSTExamples&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/gencost.css" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js');</script>
+<script defer="" src="/assets/gencost.js"></script>
+<!-- SEO:START (added by seo_update.py, rebuilt daily) -->
+<link href="https://getgencost.com/zh/credits.html" rel="canonical"/>
+<meta content="大多数 AI 视频、语音和音乐计划都会提供每月积分额度。未使用的积分通常会在下一个账单日期消失。本页面显示…" name="description"/>
+<meta content="GenCost" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="积分与残值 | GenCost" property="og:title"/>
+<meta content="大多数 AI 视频、语音和音乐计划都会提供每月积分额度。未使用的积分通常会在下一个账单日期消失。本页面显示…" property="og:description"/>
+<meta content="https://getgencost.com/zh/credits.html" property="og:url"/>
+<meta content="https://getgencost.com/assets/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="积分与残值 | GenCost" name="twitter:title"/>
+<meta content="大多数 AI 视频、语音和音乐计划都会提供每月积分额度。未使用的积分通常会在下一个账单日期消失。本页面显示…" name="twitter:description"/>
+<meta content="https://getgencost.com/assets/og-image.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://getgencost.com/zh/"}, {"@type": "ListItem", "position": 2, "name": "积分与残值"}]}]}</script>
+<!-- SEO:END -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/><script defer="" src="/assets/i18n.js"></script><!-- HREFLANG:START -->
+<link rel="alternate" hreflang="en" href="https://getgencost.com/credits.html">
+<link rel="alternate" hreflang="es" href="https://getgencost.com/es/credits.html">
+<link rel="alternate" hreflang="pt" href="https://getgencost.com/pt/credits.html">
+<link rel="alternate" hreflang="de" href="https://getgencost.com/de/credits.html">
+<link rel="alternate" hreflang="fr" href="https://getgencost.com/fr/credits.html">
+<link rel="alternate" hreflang="ar" href="https://getgencost.com/ar/credits.html">
+<link rel="alternate" hreflang="he" href="https://getgencost.com/he/credits.html">
+<link rel="alternate" hreflang="it" href="https://getgencost.com/it/credits.html">
+<link rel="alternate" hreflang="ja" href="https://getgencost.com/ja/credits.html">
+<link rel="alternate" hreflang="ru" href="https://getgencost.com/ru/credits.html">
+<link rel="alternate" hreflang="zh-TW" href="https://getgencost.com/zh-tw/credits.html">
+<link rel="alternate" hreflang="zh-HK" href="https://getgencost.com/zh-tw/credits.html">
+<link rel="alternate" hreflang="ko" href="https://getgencost.com/ko/credits.html">
+<link rel="alternate" hreflang="id" href="https://getgencost.com/id/credits.html">
+<link rel="alternate" hreflang="tr" href="https://getgencost.com/tr/credits.html">
+<link rel="alternate" hreflang="hi" href="https://getgencost.com/hi/credits.html">
+<link rel="alternate" hreflang="vi" href="https://getgencost.com/vi/credits.html">
+<link rel="alternate" hreflang="pl" href="https://getgencost.com/pl/credits.html">
+<link rel="alternate" hreflang="uk" href="https://getgencost.com/uk/credits.html">
+<link rel="alternate" hreflang="zh-SG" href="https://getgencost.com/zh/credits.html">
+<link rel="alternate" hreflang="zh-MY" href="https://getgencost.com/zh/credits.html">
+<link rel="alternate" hreflang="zh" href="https://getgencost.com/zh/credits.html">
+<link rel="alternate" hreflang="x-default" href="https://getgencost.com/credits.html">
+<!-- HREFLANG:END -->
+</head>
+<body class="page-util">
+<nav class="top">
+<div class="wrap">
+<a class="logo grad-text" href="/zh/">GENCOST</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="/zh/#platforms">视频</a></li>
+<li><a data-section="/zh/voice,/zh/pages/voice/" href="/zh/voice.html">语音</a></li>
+<li><a data-section="/zh/music,/zh/pages/music/" href="/zh/music.html">音乐</a></li>
+<li><a data-section="/zh/image" href="/zh/image.html">图像</a></li>
+<li><a href="/zh/compare.html">对比</a></li>
+<li><a href="/zh/calculator.html">计算器</a></li>
+<li><a href="/zh/#articles">文章</a></li>
+</ul>
+<div class="nav-right">
+
+<details class="lang-menu" translate="no"><summary title="Language">简</summary><div class="lang-list"><a class="lang-switch" href="/credits.html" hreflang="en" lang="en">EN · English</a><a class="lang-switch" href="/es/credits.html" hreflang="es" lang="es">ES · Español</a><a class="lang-switch" href="/pt/credits.html" hreflang="pt" lang="pt">PT · Português</a><a class="lang-switch" href="/de/credits.html" hreflang="de" lang="de">DE · Deutsch</a><a class="lang-switch" href="/fr/credits.html" hreflang="fr" lang="fr">FR · Français</a><a class="lang-switch" href="/ar/credits.html" hreflang="ar" lang="ar">AR · العربية</a><a class="lang-switch" href="/he/credits.html" hreflang="he" lang="he">HE · עברית</a><a class="lang-switch" href="/it/credits.html" hreflang="it" lang="it">IT · Italiano</a><a class="lang-switch" href="/ja/credits.html" hreflang="ja" lang="ja">JA · 日本語</a><a class="lang-switch" href="/ru/credits.html" hreflang="ru" lang="ru">RU · Русский</a><a class="lang-switch" href="/zh-tw/credits.html" hreflang="zh-TW" lang="zh-TW">繁 · 繁體中文</a><a class="lang-switch" href="/ko/credits.html" hreflang="ko" lang="ko">KO · 한국어</a><a class="lang-switch" href="/id/credits.html" hreflang="id" lang="id">ID · Bahasa Indonesia</a><a class="lang-switch" href="/tr/credits.html" hreflang="tr" lang="tr">TR · Türkçe</a><a class="lang-switch" href="/hi/credits.html" hreflang="hi" lang="hi">HI · हिन्दी</a><a class="lang-switch" href="/vi/credits.html" hreflang="vi" lang="vi">VI · Tiếng Việt</a><a class="lang-switch" href="/pl/credits.html" hreflang="pl" lang="pl">PL · Polski</a><a class="lang-switch" href="/uk/credits.html" hreflang="uk" lang="uk">UK · Українська</a></div></details>
+
+<a class="btn btn-primary" href="/zh/order.html">订购套餐</a>
+<button aria-expanded="false" aria-label="打开菜单" class="menu-btn" id="menuBtn">☰</button>
+</div>
+</div>
+</nav>
+<header class="page-head">
+<div class="wrap narrow">
+<nav aria-label="面包屑导航" class="crumbs"><a href="/zh/">首页</a><span class="sep">/</span><span>积分与结余</span></nav>
+</div>
+</header>
+<main class="page">
+<div class="wrap narrow">
+<article class="prose">
+<h1>积分与余量</h1>
+<div class="timestamp">最后更新 · 2026-10-30</div>
+<p>大多数 AI 视频、语音和音乐方案提供每月积分额度。未使用的积分通常在下个账单日消失。本页显示当前结转规则，帮助您选择符合实际使用习惯的方案，避免浪费剩余积分。</p>
+<p style="color:#aaa;">价格和积分规则经常变动 — 请务必在工具内确认。</p>
+<h2>为什么结余很重要</h2>
+<p>如果经常留下未使用的积分，便宜的方案也可能变得昂贵。有些平台每月重置所有积分。其他平台允许有限结转或长期保留购买的充值。了解差异有助于选择合适的层级，并用好已支付的费用。</p>
+<h2>按平台划分的结转规则</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>平台</th>
+<th>类别</th>
+<th>方案 / 每月积分结转？</th>
+<th>购买 / 充值积分</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Kling AI</td><td>视频</td><td>否（有效期约31天）</td><td>最长保留2年</td><td>每月积分会过期；购买的积分保留更久。不可转让。</td></tr>
+<tr><td>Runway</td><td>视频</td><td>Standard &amp; Pro：否<br/>Max：最多1个月</td><td>永不过期</td><td>购买的积分保留至使用为止。</td></tr>
+<tr><td>HeyGen</td><td>视频</td><td>每月：1 额外一个月<br/>按年付费：直至续订</td><td>—</td><td>取消后积分将丢失。</td></tr>
+<tr><td>Luma</td><td>视频</td><td>查看当前计划条款</td><td>视情况而定</td><td>请在官网确认。</td></tr>
+<tr><td>Pika</td><td>视频</td><td>否</td><td>套餐通常持续更久</td><td>计划积分每个周期重置。</td></tr>
+<tr><td>Synthesia</td><td>视频</td><td>因计划而异</td><td>—</td><td>请在官网确认。</td></tr>
+<tr><td>ElevenLabs</td><td>语音</td><td>部分结转（每月最多 2×，余额可达约 3×）</td><td>PAYG 积分在 12 个月后过期</td><td>仅在保持同一付费计划时结转。取消或降级后丢失。</td></tr>
+<tr><td>Cartesia</td><td>语音</td><td>部分结转（最多 2×）</td><td>—</td><td>请确认当前详情。</td></tr>
+<tr><td>Suno</td><td>音乐</td><td>否</td><td>充值通常不会过期（需保持有效计划）</td><td>生成积分和每月下载配额会重置。</td></tr>
+<tr><td>Udio</td><td>音乐</td><td>否</td><td>单次购买永不过期</td><td>订阅积分每月重置。</td></tr>
+<tr><td>Soundraw / AIVA / Boomy</td><td>音乐</td><td>大多无或有限</td><td>视情况而定</td><td>请在各官网确认。</td></tr>
+</tbody>
+</table>
+</div>
+<h2>快速提示</h2>
+<ul>
+<li>如果使用量不均，优先选择支持部分结转或充值持久的平台。</li>
+<li>在严格的“无结转”计划下，尽量在重置日期前使用剩余积分。</li>
+<li>团队或企业计划有时允许管理员分配共享池——适合与他人合作时使用。</li>
+<li>始终查看工具内的官方定价或积分页面。规则可能随时更改，恕不另行通知。</li>
+</ul>
+<div class="tracker">
+<h2 style="margin-top:0;">剩余积分追踪器</h2>
+<p style="color:#aaa; margin-top:0;">追踪各平台的剩余积分，以便了解即将过期的积分以及大致的风险价值。</p>
+<h3 style="margin-bottom:8px;">使用方法</h3>
+<ul style="margin-top:0; color:#ddd;">
+<li>选择平台并输入您剩余的积分。</li>
+<li>添加每积分的近似成本（查看您的计划价格 ÷ 每月总积分）。</li>
+<li>设置重置日期（积分过期或续订的日期）。</li>
+<li>点击 <strong>添加</strong>。您可以添加任意数量的平台。</li>
+<li>列表按最近的重置日期排序。红色表示剩余不到 4 天。</li>
+<li>所有内容仅保存在您的浏览器中 — 不会发送到任何地方。</li>
+<li>使用 <strong>复制摘要</strong> 获取可粘贴到其他地方的文本概览。</li>
+</ul>
+<div class="form-row">
+<select id="platform">
+<option value="">选择平台</option>
+<option>Kling AI</option>
+<option>Runway</option>
+<option>HeyGen</option>
+<option>Luma</option>
+<option>Pika</option>
+<option>Synthesia</option>
+<option>ElevenLabs</option>
+<option>Cartesia</option>
+<option>Suno</option>
+<option>Udio</option>
+<option>Soundraw</option>
+<option>AIVA</option>
+<option>Boomy</option>
+<option>其他</option>
+</select>
+<input id="plan" placeholder="计划名称（可选）" type="text"/>
+<input id="credits" min="0" placeholder="剩余积分" step="1" type="number"/>
+<input id="pricePerCredit" min="0" placeholder="每积分美元价格（约）" step="0.001" type="number"/>
+<input id="resetDate" type="date"/>
+<button onclick="addEntry()">添加</button>
+</div>
+<div id="list"></div>
+<div style="margin-top:20px;"><strong>风险总值：<span class="value" id="total">$0.00</span></strong></div>
+<div style="margin-top:16px;">
+<button onclick="copySummary()">复制摘要</button>
+<button onclick="clearAll()" style="background:#444; margin-left:10px;">全部清除</button>
+</div>
+</div>
+<div style="margin-top:40px; font-size:0.9em;">· <a href="/zh/voice.html" style="color:#00d4ff;">语音对比</a> · <a href="/zh/music.html" style="color:#00d4ff;">音乐对比</a></div>
+</article>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<a class="logo grad-text" href="/zh/">GENCOST</a>
+<p class="foot-about">AI 视频、虚拟形象、语音和音乐工具的真实美元价格对比，自动更新。</p>
+</div>
+<div>
+<h4>对比</h4>
+<ul>
+<li><a href="/zh/#platforms">视频与虚拟形象</a></li>
+<li><a href="/zh/voice.html">语音</a></li>
+<li><a href="/zh/music.html">音乐</a></li>
+<li><a href="/zh/compare.html">对比任意工具</a></li>
+<li><a href="/zh/pages/emerging.html">新兴工具</a></li>
+<li><a href="/zh/calculator.html">预算计算器</a></li>
+<li><a href="/zh/project.html">项目计算器</a></li>
+</ul>
+</div>
+<div>
+<h4>指南</h4>
+<ul>
+<li><a href="/zh/pages/cheapest-ai-video-tools-in-2026.html">最便宜的视频工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-voice-tools-in-2026.html">最便宜的语音工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-music-tools-in-2026.html">最便宜的音乐工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-avatar-tools-in-2026.html">最便宜的虚拟形象工具</a></li>
+<li><a href="/zh/credits.html">积分与余量</a></li>
+</ul>
+</div>
+<div>
+<h4>GenCost</h4>
+<ul>
+<li><a href="/zh/ai.html">在 Claude 与 ChatGPT 中使用</a></li>
+<li><a href="/zh/about.html">关于 GenCost</a></li>
+<li><a href="/zh/order.html">订购套餐</a></li>
+<li><a href="/zh/how-we-verify.html">我们如何验证价格</a></li>
+<li><a href="/zh/changelog.html">价格变更日志</a></li>
+<li><a href="mailto:bitbooz@protonmail.com">联系</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom"><span>由 Grok 与 Bitbooz 创建 · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span> <span>价格经常变动。付款前请务必在各工具内确认。</span></div>
+</div>
+</footer>
+<script>
+const STORAGE_KEY = "gencost_residuals";
+
+function loadEntries() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+  } catch {
+    return [];
+  }
+}
+
+function saveEntries(entries) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+}
+
+function daysUntil(dateStr) {
+  if (!dateStr) return null;
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const reset = new Date(dateStr);
+  const diff = Math.ceil((reset - today) / (1000 * 60 * 60 * 24));
+  return diff;
+}
+
+function render() {
+  const entries = loadEntries();
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  let total = 0;
+
+  entries.sort((a, b) => {
+    const da = daysUntil(a.resetDate) ?? 9999;
+    const db = daysUntil(b.resetDate) ?? 9999;
+    return da - db;
+  });
+
+  entries.forEach((e, i) => {
+    const value = (e.credits || 0) * (e.pricePerCredit || 0);
+    total += value;
+    const days = daysUntil(e.resetDate);
+    let dayText = "";
+    let dayClass = "";
+    if (days === null) {
+      dayText = "No date";
+    } else if (days < 0) {
+      dayText = "Expired";
+      dayClass = "warn";
+    } else if (days <= 3) {
+      dayText = `${days} day${days !== 1 ? "s" : ""} left`;
+      dayClass = "warn";
+    } else {
+      dayText = `${days} days left`;
+      dayClass = "ok";
+    }
+
+    const suggestion = value > 0 && days !== null && days >= 0
+      ? `≈ $${value.toFixed(2)} left`
+      : "";
+
+    const div = document.createElement("div");
+    div.className = "entry";
+    div.innerHTML = `
+      <div>
+        <strong>${e.platform}</strong> ${e.plan ? `(${e.plan})` : ""}<br>
+        <span style="font-size:0.9em; opacity:0.8;">${e.credits} credits · ${suggestion}</span>
+      </div>
+      <div style="text-align:right;">
+        <div class="${dayClass}">${dayText}</div>
+        <button onclick="removeEntry(${i})" style="background:#ff6b6b; margin-top:6px; padding:4px 10px; font-size:0.85em;">Remove</button>
+      </div>
+    `;
+    list.appendChild(div);
+  });
+
+  document.getElementById("total").textContent = `$${total.toFixed(2)}`;
+}
+
+function addEntry() {
+  const platform = document.getElementById("platform").value;
+  if (!platform) return alert("Select a platform");
+  const credits = parseFloat(document.getElementById("credits").value) || 0;
+  const pricePerCredit = parseFloat(document.getElementById("pricePerCredit").value) || 0;
+  const resetDate = document.getElementById("resetDate").value;
+  const plan = document.getElementById("plan").value.trim();
+
+  const entries = loadEntries();
+  entries.push({ platform, plan, credits, pricePerCredit, resetDate });
+  saveEntries(entries);
+  render();
+
+  document.getElementById("credits").value = "";
+  document.getElementById("pricePerCredit").value = "";
+  document.getElementById("resetDate").value = "";
+  document.getElementById("plan").value = "";
+}
+
+function removeEntry(index) {
+  const entries = loadEntries();
+  entries.splice(index, 1);
+  saveEntries(entries);
+  render();
+}
+
+function clearAll() {
+  if (confirm("Clear all entries?")) {
+    localStorage.removeItem(STORAGE_KEY);
+    render();
+  }
+}
+
+function copySummary() {
+  const entries = loadEntries();
+  if (!entries.length) return alert("Nothing to copy");
+  let text = "Residual credits summary\n\n";
+  let total = 0;
+  entries.forEach(e => {
+    const value = (e.credits || 0) * (e.pricePerCredit || 0);
+    total += value;
+    const days = daysUntil(e.resetDate);
+    text += `${e.platform}${e.plan ? " (" + e.plan + ")" : ""}: ${e.credits} credits ≈ $${value.toFixed(2)}`;
+    if (days !== null) text += ` (${days} days)`;
+    text += "\n";
+  });
+  text += `\nTotal at risk: $${total.toFixed(2)}`;
+  navigator.clipboard.writeText(text).then(() => alert("Summary copied"));
+}
+
+render();
+</script>
+</body>
+</html>

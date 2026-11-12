@@ -2,13 +2,6 @@
   "platform": "ltx",
   "plans": [
     {
-      "name": "Free",
-      "monthly_price_usd": 0,
-      "credits_or_minutes": 800,
-      "unit": "credits",
-      "offer": ""
-    },
-    {
       "name": "Lite",
       "monthly_price_usd": 15,
       "yearly_price_usd": 12,
@@ -34,5 +27,5 @@
     }
   ],
   "source": "https://ltx.studio/pricing",
-  "last_checked": "2026-11-11 23:54"
+  "last_checked": "2026-11-12 06:21"
 }

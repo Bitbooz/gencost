@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GenCost · AI 비디오 가격 비교</title>
+<meta content="GenCost은 AI 비디오, 아바타, 음성 및 음악 도구의 실제 비용을 비교합니다. 플랜, 크레딧 및 가격을 나란히 표시하며 자동으로 업데이트됩니다." name="description"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6DHTT2ZTBK');
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;text=GENCOSTExamples&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/gencost.css" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js');</script>
+<script defer="" src="/assets/gencost.js"></script>
+<link href="https://getgencost.com/ko/" rel="canonical"/>
+<!-- SEO:START (added by seo_update.py, rebuilt daily) -->
+<meta content="GenCost" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="GenCost · AI 비디오 가격 비교" property="og:title"/>
+<meta content="GenCost은 AI 비디오, 아바타, 음성 및 음악 도구의 실제 비용을 비교합니다. 플랜, 크레딧 및 가격을 나란히 표시하며 자동으로 업데이트됩니다." property="og:description"/>
+<meta content="https://getgencost.com/ko/" property="og:url"/>
+<meta content="https://getgencost.com/assets/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="GenCost · AI 비디오 가격 비교" name="twitter:title"/>
+<meta content="GenCost은 AI 비디오, 아바타, 음성 및 음악 도구의 실제 비용을 비교합니다. 플랜, 크레딧 및 가격을 나란히 표시하며 자동으로 업데이트됩니다." name="twitter:description"/>
+<meta content="https://getgencost.com/assets/og-image.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://getgencost.com/#org", "name": "GenCost", "url": "https://getgencost.com/ko/"}, {"@type": "WebSite", "@id": "https://getgencost.com/#website", "name": "GenCost", "url": "https://getgencost.com/ko/", "description": "GenCost은 AI 비디오, 아바타, 음성 및 음악 도구의 실제 비용을 비교합니다. 플랜, 크레딧 및 가격을 나란히 표시하며 자동으로 업데이트됩니다.", "publisher": {"@id": "https://getgencost.com/#org"}}]}</script>
+<!-- SEO:END -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet"/><script defer="" src="/assets/i18n.js"></script><!-- HREFLANG:START -->
+<link rel="alternate" hreflang="en" href="https://getgencost.com/">
+<link rel="alternate" hreflang="es" href="https://getgencost.com/es/">
+<link rel="alternate" hreflang="pt" href="https://getgencost.com/pt/">
+<link rel="alternate" hreflang="de" href="https://getgencost.com/de/">
+<link rel="alternate" hreflang="fr" href="https://getgencost.com/fr/">
+<link rel="alternate" hreflang="ar" href="https://getgencost.com/ar/">
+<link rel="alternate" hreflang="he" href="https://getgencost.com/he/">
+<link rel="alternate" hreflang="it" href="https://getgencost.com/it/">
+<link rel="alternate" hreflang="ja" href="https://getgencost.com/ja/">
+<link rel="alternate" hreflang="ru" href="https://getgencost.com/ru/">
+<link rel="alternate" hreflang="zh-TW" href="https://getgencost.com/zh-tw/">
+<link rel="alternate" hreflang="zh-HK" href="https://getgencost.com/zh-tw/">
+<link rel="alternate" hreflang="ko" href="https://getgencost.com/ko/">
+<link rel="alternate" hreflang="id" href="https://getgencost.com/id/">
+<link rel="alternate" hreflang="tr" href="https://getgencost.com/tr/">
+<link rel="alternate" hreflang="hi" href="https://getgencost.com/hi/">
+<link rel="alternate" hreflang="vi" href="https://getgencost.com/vi/">
+<link rel="alternate" hreflang="pl" href="https://getgencost.com/pl/">
+<link rel="alternate" hreflang="uk" href="https://getgencost.com/uk/">
+<link rel="alternate" hreflang="zh-SG" href="https://getgencost.com/zh/">
+<link rel="alternate" hreflang="zh-MY" href="https://getgencost.com/zh/">
+<link rel="alternate" hreflang="zh" href="https://getgencost.com/zh/">
+<link rel="alternate" hreflang="x-default" href="https://getgencost.com/">
+<!-- HREFLANG:END -->
+</head>
+<body data-prices="video">
+<a class="announce" href="/ko/music.html"><span class="pill-new">신규</span>AI 음악 가격 비교가 공개되었습니다: Suno, Udio, Soundraw 등 <span class="muted">→</span></a>
+<nav class="top">
+<div class="wrap">
+<a class="logo grad-text" href="/ko/">GENCOST</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="/ko/#platforms">비디오</a></li>
+<li><a data-section="/ko/voice,/ko/pages/voice/" href="/ko/voice.html">보이스</a></li>
+<li><a data-section="/ko/music,/ko/pages/music/" href="/ko/music.html">뮤직</a></li>
+<li><a data-section="/ko/image" href="/ko/image.html">이미지</a></li>
+<li><a href="/ko/compare.html">비교</a></li>
+<li><a href="/ko/calculator.html">계산기</a></li>
+<li><a href="/ko/#articles">아티클</a></li>
+</ul>
+<div class="nav-right">
+
+<details class="lang-menu" translate="no"><summary title="Language">KO</summary><div class="lang-list"><a class="lang-switch" href="/" hreflang="en" lang="en">EN · English</a><a class="lang-switch" href="/es/" hreflang="es" lang="es">ES · Español</a><a class="lang-switch" href="/pt/" hreflang="pt" lang="pt">PT · Português</a><a class="lang-switch" href="/de/" hreflang="de" lang="de">DE · Deutsch</a><a class="lang-switch" href="/fr/" hreflang="fr" lang="fr">FR · Français</a><a class="lang-switch" href="/ar/" hreflang="ar" lang="ar">AR · العربية</a><a class="lang-switch" href="/he/" hreflang="he" lang="he">HE · עברית</a><a class="lang-switch" href="/it/" hreflang="it" lang="it">IT · Italiano</a><a class="lang-switch" href="/ja/" hreflang="ja" lang="ja">JA · 日本語</a><a class="lang-switch" href="/ru/" hreflang="ru" lang="ru">RU · Русский</a><a class="lang-switch" href="/zh-tw/" hreflang="zh-TW" lang="zh-TW">繁 · 繁體中文</a><a class="lang-switch" href="/id/" hreflang="id" lang="id">ID · Bahasa Indonesia</a><a class="lang-switch" href="/tr/" hreflang="tr" lang="tr">TR · Türkçe</a><a class="lang-switch" href="/hi/" hreflang="hi" lang="hi">HI · हिन्दी</a><a class="lang-switch" href="/vi/" hreflang="vi" lang="vi">VI · Tiếng Việt</a><a class="lang-switch" href="/pl/" hreflang="pl" lang="pl">PL · Polski</a><a class="lang-switch" href="/uk/" hreflang="uk" lang="uk">UK · Українська</a><a class="lang-switch" href="/zh/" hreflang="zh-SG" lang="zh-SG">简 · 简体中文</a></div></details>
+
+<a class="btn btn-primary" href="/ko/order.html">패키지 주문하기</a>
+<button aria-expanded="false" aria-label="메뉴 열기" class="menu-btn" id="menuBtn">☰</button>
+</div>
+</div>
+</nav>
+<header class="hero">
+<div class="wrap hero-grid">
+<div class="reveal">
+<span class="eyebrow">AI 비디오 가격 비교</span>
+<h1>AI 비디오의 <span class="grad-text">실제 비용</span>을 알아보세요.</h1>
+<p class="lead">모든 AI 도구는 자체 크레딧으로 가격을 책정합니다. GenCost는 <span id="heroCount">19</span>개의 비디오, 아바타, 이미지 도구와 보이스, 뮤직 플랜을 추적하여 실제 달러로 나란히 비교합니다.</p>
+<div class="ctas"><a class="btn btn-primary" href="#platforms">가격 비교 <span class="arrow">→</span></a> <a class="btn btn-ghost" href="/ko/calculator.html">예산 계산기</a></div>
+<div class="updated"><span class="dot"></span>가격 업데이트 <span class="js-updated"></span></div>
+<div class="hero-billing" data-billing-toggle=""></div>
+</div>
+<div aria-live="polite" class="demo reveal">
+<div class="demo-head">
+<div>
+<div class="demo-q">GenCost에게 물어보기</div>
+<div class="demo-title">내 예산으로 무엇을 얻을 수 있나요?</div>
+</div>
+<div class="seg" id="budgetSeg"><button class="active" data-b="10">$10</button><button data-b="30">$30</button><button data-b="60">$60</button><button data-b="100">$100</button></div>
+</div>
+<div class="rows" id="budgetRows"><p class="loading">가격 로딩 중…</p></div>
+<div class="demo-foot"><span>예산 이하의 월간 플랜</span> <a href="#platforms">모든 플랜 보기 →</a></div>
+</div>
+</div>
+</header>
+<div class="stats">
+<div class="wrap">
+<div class="stats-grid reveal">
+<div class="stat"><div class="num grad-text" id="statTools">–</div><div class="lbl">추적 중인 비디오, 아바타 및 이미지 도구</div></div>
+<div class="stat"><div class="num grad-text" id="statPlans">–</div><div class="lbl">비교된 플랜</div></div>
+<div class="stat"><div class="num grad-text" id="statCheapest">–</div><div class="lbl">가장 저렴한 유료 플랜 /월</div></div>
+<div class="stat"><div class="num grad-text">3</div><div class="lbl">카테고리: 비디오, 보이스, 뮤직</div></div>
+</div>
+</div>
+</div>
+<section class="band">
+<div class="wrap">
+<div class="center reveal">
+<span class="eyebrow">빠른 답변</span>
+<h2>카테고리별 가장 저렴한 시작 방법</h2>
+<p class="lead" id="bestValue">현재 최고의 가성비 계산 중…</p>
+</div>
+<div class="quick-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+<a class="quick reveal" href="#platforms" id="qVideo" style="text-decoration:none"><div class="k">가장 저렴한 비디오</div><div class="v">–</div><div class="p"></div></a>
+<a class="quick reveal" href="/ko/pages/cheapest-ai-avatar-tools-in-2026.html" id="qAvatar" style="text-decoration:none"><div class="k">가장 저렴한 아바타</div><div class="v">–</div><div class="p"></div></a>
+<a class="quick reveal" href="/ko/voice.html" id="qVoice" style="text-decoration:none"><div class="k">가장 저렴한 보이스</div><div class="v">–</div><div class="p"></div></a>
+<a class="quick reveal" href="/ko/music.html" id="qMusic" style="text-decoration:none"><div class="k">가장 저렴한 뮤직</div><div class="v">–</div><div class="p"></div></a>
+</div>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<div class="reveal">
+<span class="eyebrow">GenCost를 사용하는 이유</span>
+<h2>수십 개의 가격 페이지<br/>에서 하나의 명확한 답변으로</h2>
+<p class="lead">크레딧, 유닛, 비디오, 일일 유닛. 모든 도구가 다르게 계산하므로 직접 비교하려면 각 도구의 탭을 열고 수동으로 계산해야 합니다.</p>
+</div>
+<div class="ba-grid">
+<div class="panel reveal">
+<div class="tag-line">GenCost 없이</div>
+<h3>도구마다 탭 하나, 탭마다 통화 하나</h3>
+<div class="chips"><span class="chip"><b>660</b> 크레딧</span> <span class="chip"><b>3</b> 비디오</span> <span class="chip"><b>100</b> 유닛/일</span> <span class="chip"><b>2,250</b> 크레딧</span> <span class="chip"><b>270</b> 크레딧</span> <span class="chip"><b>10,000</b> 크레딧</span> <span class="chip"><b>5,000</b> 유닛</span> <span class="chip"><b>80</b> 크레딧</span> <span class="chip">연간 결제?</span> <span class="chip">가격 변경?</span></div>
+</div>
+<div class="panel after reveal">
+<div class="tag-line">GenCost와 함께</div>
+<h3>하나의 테이블, 달러로</h3>
+<table class="norm" id="normTable"></table>
+</div>
+</div>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<div class="section-head reveal">
+<div>
+<span class="eyebrow">리더보드</span>
+<h2>도구별 최저 유료 플랜</h2>
+<p class="lead">각 도구의 유료 시작 방법 중 가장 저렴한 순위.</p>
+</div>
+<a class="btn btn-ghost" href="/ko/pages/cheapest-ai-video-tools-in-2026.html">전체 분석 읽기 <span class="arrow">→</span></a>
+</div>
+<div class="board reveal" data-limit="8" id="board"></div>
+</div>
+</section>
+<section class="band" id="platforms">
+<div class="wrap">
+<div class="section-head reveal">
+<div>
+<span class="eyebrow">모든 플랜</span>
+<h2>모든 비디오 및 아바타 플랜</h2>
+<p class="lead">월 가격, 포함 내용, 클립 길이당 예상 비용.</p>
+</div>
+<div data-billing-toggle=""></div>
+</div>
+<div class="plat-grid" id="content"><p class="loading">가격 로딩 중…</p></div>
+<p class="small-note">클립 비용은 명명된 모델에 대해 각 도구의 자체 크레딧을 사용합니다(마우스를 올려 확인하세요). 알려진 클립 비용이 없는 도구는 표시하지 않습니다. 가격은 자주 변경되므로 생성하기 전에 도구 내에서 항상 확인하세요.</p>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<div class="center reveal">
+<span class="eyebrow">비디오 외</span>
+<h2>이미지, 음성 및 음악도 동일한 방식으로 비교</h2>
+</div>
+<div class="explore-grid">
+<a class="explore reveal" href="/ko/voice.html">
+<div aria-hidden="true" class="wave" data-k="0"></div>
+<h3>AI 음성</h3>
+<p>ElevenLabs, Cartesia, Murf 등 실제 달러 기준.</p>
+<span class="go">음성 도구 비교 <span class="arrow">→</span></span>
+<div class="glow" style="background:#00d4ff"></div>
+</a>
+<a class="explore reveal" href="/ko/music.html">
+<div aria-hidden="true" class="wave" data-k="1"></div>
+<h3>AI 음악</h3>
+<p>Suno, Udio, Soundraw, AIVA 및 Boomy를 나란히 비교.</p>
+<span class="go">음악 도구 비교 <span class="arrow">→</span></span>
+<div class="glow" style="background:#7b68ee"></div>
+</a>
+<a class="explore reveal" href="/ko/image.html">
+<div aria-hidden="true" class="wave" data-k="3"></div>
+<h3>AI 이미지</h3>
+<p>Midjourney, Ideogram, Firefly, Recraft 등 이미지당 비용 포함.</p>
+<span class="go">이미지 도구 비교 <span class="arrow">→</span></span>
+<div class="glow" style="background:#60a5fa"></div>
+</a>
+<a class="explore reveal" href="/ko/pages/emerging.html">
+<div aria-hidden="true" class="wave" data-k="2"></div>
+<h3>신흥 도구</h3>
+<p>새롭고 작은 도구들로, 종종 더 저렴하거나 특정 작업에 더 뛰어납니다. 매일 아침 업데이트됩니다.</p>
+<span class="go">신흥 도구 보기 <span class="arrow">→</span></span>
+<div class="glow" style="background:#3ddc97"></div>
+</a>
+</div>
+</div>
+</section>
+<!-- Articles Section -->
+<section class="band" id="articles">
+<div class="wrap">
+<div class="section-head reveal">
+<div>
+<span class="eyebrow">아티클</span>
+<h2>일대일 가격 분석</h2>
+</div>
+<a class="btn btn-ghost" href="/ko/changelog.html">가격 변경 로그 <span class="arrow">→</span></a>
+</div>
+<ul class="art-grid">
+<!-- ARTICLES:START (new article cards are added just above ARTICLES:END) -->
+<li class="reveal"><a class="art" href="/ko/pages/best-sora-alternatives-2026.html"><span class="cat video">비디오</span><h3>Sora 종료: 가장 저렴한 대안</h3><p>Veo vs Kling vs Runway, 클립당 비용</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/cheapest-way-to-use-seedance-2-5-2026.html"><span class="cat video">비디오</span><h3>Seedance 2.5는 어디서 가장 저렴할까요?</h3><p>CapCut vs Higgsfield vs Luma vs Pika</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/cheapest-way-to-use-kling-4-0-2026.html"><span class="cat video">비디오</span><h3>Kling 4.0는 어디서 가장 저렴할까요?</h3><p>Kling vs Higgsfield vs Runway vs API</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/cheapest-way-to-use-seedance-2-5-2026.html"><span class="cat video">비디오</span><h3>Seedance 2.5는 어디서 가장 저렴할까요?</h3><p>CapCut vs Higgsfield vs Luma vs Pika</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/kling-vs-veo-pricing-2026.html"><span class="cat video">비디오</span><h3>Kling vs Veo 가격 2026</h3><p>플랜 및 비디오당 실제 비용</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/cheapest-ai-video-cost-per-second-2026.html"><span class="cat video">비디오</span><h3>AI 비디오 초당 비용</h3><p>11 도구, 클립당 실제 비용</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/best-sora-alternatives-2026.html"><span class="cat video">비디오</span><h3>Sora 종료: 가장 저렴한 대안</h3><p>Veo vs Kling vs Runway, 클립당 비용</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/cheapest-way-to-use-seedance-2-5-2026.html"><span class="cat video">비디오</span><h3>Seedance 2.5는 어디서 가장 저렴할까요?</h3><p>CapCut vs Higgsfield vs Luma vs Pika</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/best-sora-alternatives-2026.html"><span class="cat video">비디오</span><h3>Sora 종료: 가장 저렴한 대안</h3><p>Veo vs Kling vs Runway, 클립당 비용</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/cheapest-ai-video-tools-in-2026.html"><span class="cat video">비디오</span><h3>2026에서 가장 저렴한 AI 비디오 도구</h3><p>Kling vs Runway vs Pika vs Luma</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/runway-vs-kling-pricing-2026.html"><span class="cat video">비디오</span><h3>Runway vs Kling 가격 2026</h3><p>나란히 비용 분석</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/pika-vs-luma-pricing-2026.html"><span class="cat video">비디오</span><h3>Pika vs Luma 가격 2026</h3><p>무료 티어 및 유료 플랜 비교</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/kling-vs-hailuo-pricing-2026.html"><span class="cat video">비디오</span><h3>Kling vs Hailuo 가격 2026</h3><p>떠오르는 비디오 툴</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/runway-vs-luma-pricing-2026.html"><span class="cat video">비디오</span><h3>Runway vs Luma 가격 2026</h3><p>품질 vs 볼륨</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/best-cheap-ai-video-tools-for-youtube-2026.html"><span class="cat video">비디오</span><h3>YouTube용 최고의 저가 AI 비디오 툴 2026</h3><p>YouTube에 잘 맞는 툴</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/best-free-ai-video-tools-2026.html"><span class="cat video">비디오</span><h3>최고의 무료 AI 비디오 툴 2026</h3><p>실제로 사용 가능한 무료 티어</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/cheapest-ai-avatar-tools-in-2026.html"><span class="cat avatar">아바타</span><h3>2026에서 가장 저렴한 AI 아바타 툴</h3><p>HeyGen, Synthesia 등</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/heygen-vs-synthesia-pricing-2026.html"><span class="cat avatar">아바타</span><h3>HeyGen vs Synthesia 가격 2026</h3><p>아바타 비디오 비용 비교</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/heygen-vs-capcut-pricing-2026.html"><span class="cat avatar">아바타</span><h3>HeyGen vs CapCut 가격 2026</h3><p>아바타 vs 에디터</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/cheapest-ai-voice-tools-in-2026.html"><span class="cat voice">음성</span><h3>2026에서 가장 저렴한 AI 음성 툴</h3><p>ElevenLabs, Cartesia, Murf 등</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/cheapest-ai-voice-cloning-tools-2026.html"><span class="cat voice">음성</span><h3>가장 저렴한 AI 음성 복제 툴 2026</h3><p>최고의 무료 및 유료 옵션</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/elevenlabs-vs-cartesia-pricing-2026.html"><span class="cat voice">음성</span><h3>ElevenLabs vs Cartesia 가격 2026</h3><p>음성 가격 비교</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/best-playht-alternatives-2026.html"><span class="cat voice">음성</span><h3>PlayHT 서비스 종료: 가장 저렴한 대안</h3><p>Cartesia vs ElevenLabs vs Murf</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/best-elevenlabs-alternatives-2026.html"><span class="cat voice">음성</span><h3>더 저렴한 ElevenLabs 대안</h3><p>시간당 실제 음성 비용</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/best-heygen-alternatives-2026.html"><span class="cat avatar">아바타</span><h3>더 저렴한 HeyGen 대안</h3><p>더 저렴한 아바타 비디오</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/best-elevenlabs-alternatives-2026.html"><span class="cat voice">음성</span><h3>더 저렴한 ElevenLabs 대안</h3><p>시간당 실제 음성 비용</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/cheapest-ai-image-generators-2026.html"><span class="cat image">이미지</span><h3>가장 저렴한 AI 이미지 생성기 2026</h3><p>Midjourney vs Firefly vs Ideogram 등</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/best-midjourney-alternatives-2026.html"><span class="cat image">이미지</span><h3>더 저렴한 Midjourney 대안</h3><p>더 저렴한 프라이빗 이미지</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/midjourney-vs-ideogram-pricing-2026.html"><span class="cat image">이미지</span><h3>Midjourney vs Ideogram 가격</h3><p>무제한, 프라이빗 및 무료 플랜</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/best-free-ai-image-generators-2026.html"><span class="cat image">이미지</span><h3>최고의 무료 AI 이미지 생성기</h3><p>무료 플랜이 실제로 제공하는 것</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/cheapest-ai-music-tools-in-2026.html"><span class="cat music">음악</span><h3>2026에서 가장 저렴한 AI 음악 툴</h3><p>Suno vs Udio 및 기타</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/suno-vs-udio-pricing-2026.html"><span class="cat music">음악</span><h3>Suno vs Udio 가격 2026</h3><p>음악 생성기 비교</p></a></li>
+<li class="reveal"><a class="art" href="/ko/pages/stable-audio-vs-mureka-pricing-2026.html"><span class="cat music">음악</span><h3>Stable Audio vs Mureka 가격 2026</h3><p>트랙당 비용 비교</p></a></li>
+<li class="reveal"><a class="art" href="/ko/credits.html"><span class="cat guide">가이드</span><h3>크레딧 및 잔여분</h3><p>사용하지 않은 크레딧을 이월할 수 있는 도구는?</p></a></li>
+<!-- ARTICLES:END -->
+</ul>
+</div>
+</section>
+<!-- Sample Packages -->
+<section class="band" id="packages">
+<div class="wrap">
+<div class="split">
+<div class="reveal">
+<span class="eyebrow">대신 해드립니다</span>
+<h2 class="section-title">GenCost 데이터를 기반으로 한 SEO 기사와 YouTube 자산</h2>
+<p class="lead">여기서 보시는 최신 가격을 사용하여, 여러분의 청중이 관심 있는 도구를 비교하는 바로 게시 가능한 기사와 YouTube 자산을 받아보세요.</p>
+<div class="ctas"><a class="btn btn-primary" href="/ko/order.html">패키지 주문 / Order package <span class="arrow">→</span></a></div>
+</div>
+<div class="card-lg reveal">
+<h3>패키지에는 무엇이 들어 있나요</h3>
+<p>실제 달러 가격표가 포함된 깔끔하고 SEO 친화적인 기사, YouTube 제목 옵션, 대본 개요 및 썸네일 아이디어가 포함되어 있습니다. 패키지당 $49–99.</p>
+<a class="btn btn-ghost" href="#samples">샘플 패키지 보기 <span class="arrow">↓</span></a>
+</div>
+</div>
+<div class="pkg-grid" id="samples"></div>
+</div>
+</section>
+<section class="band">
+<div class="wrap">
+<div class="cta reveal">
+<span class="eyebrow">추측을 멈추세요</span>
+<h2>결제하기 <span class="grad-text">전에 올바른 AI 도구를 선택하세요.</span></h2>
+<div class="ctas"><a class="btn btn-primary" href="/ko/#platforms">비디오 도구 비교 <span class="arrow">→</span></a> <a class="btn btn-ghost" href="/ko/voice.html">음성</a> <a class="btn btn-ghost" href="/ko/music.html">음악</a> <a class="btn btn-ghost" href="/ko/calculator.html">계산기</a> <a class="btn btn-ghost" href="/ko/project.html">프로젝트 계산기</a></div>
+</div>
+</div>
+</section>
+<footer class="site">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<a class="logo grad-text" href="/ko/">GENCOST</a>
+<p class="foot-about">AI 비디오, 아바타, 음성 및 음악 도구의 실제 달러 가격 비교로, 자동으로 업데이트됩니다.</p>
+</div>
+<div>
+<h4>비교</h4>
+<ul>
+<li><a href="/ko/#platforms">비디오 및 아바타</a></li>
+<li><a href="/ko/voice.html">보이스</a></li>
+<li><a href="/ko/music.html">뮤직</a></li>
+<li><a href="/ko/compare.html">모든 도구 비교</a></li>
+<li><a href="/ko/pages/emerging.html">신흥 도구</a></li>
+<li><a href="/ko/calculator.html">예산 계산기</a></li>
+<li><a href="/ko/project.html">프로젝트 계산기</a></li>
+</ul>
+</div>
+<div>
+<h4>가이드</h4>
+<ul>
+<li><a href="/ko/pages/cheapest-ai-video-tools-in-2026.html">가장 저렴한 비디오 도구</a></li>
+<li><a href="/ko/pages/cheapest-ai-voice-tools-in-2026.html">가장 저렴한 음성 도구</a></li>
+<li><a href="/ko/pages/cheapest-ai-music-tools-in-2026.html">가장 저렴한 음악 도구</a></li>
+<li><a href="/ko/pages/cheapest-ai-avatar-tools-in-2026.html">가장 저렴한 아바타 도구</a></li>
+<li><a href="/ko/credits.html">크레딧 및 잔여분</a></li>
+</ul>
+</div>
+<div>
+<h4>GenCost</h4>
+<ul>
+<li><a href="/ko/ai.html">Claude 및 ChatGPT에서 사용</a></li>
+<li><a href="/ko/about.html">GenCost 소개</a></li>
+<li><a href="/ko/order.html">패키지 주문</a></li>
+<li><a href="/ko/how-we-verify.html">가격 확인 방법</a></li>
+<li><a href="/ko/changelog.html">가격 변경 로그</a></li>
+<li><a href="mailto:bitbooz@protonmail.com">문의</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom"><span>Grok 및 Bitbooz가 제작 · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span> <span>가격은 자주 변경됩니다. 결제하기 전에 각 도구 내에서 항상 확인하세요.</span></div>
+</div>
+</footer>
+<script>
+/* Homepage extras: sample packages + cheapest per category */
+document.addEventListener("DOMContentLoaded", function () {
+  GenCost.loadPackages("samples", 9);
+  var AVATAR = ["HeyGen", "Synthesia"], IMAGE = ["Midjourney", "Leonardo", "Ideogram"];
+  function cheapest(data, filter) {
+    var best = null;
+    (data.platforms || []).forEach(function (pf) {
+      if (filter && !filter(pf.name)) return;
+      (pf.plans || []).forEach(function (p) {
+        var pr = GenCost.price(p);
+        if (pr > 0 && (!best || pr < best.price)) best = { tool: pf.name, plan: p.name, price: pr, page: pf.page };
+      });
+    });
+    return best;
+  }
+  function fill(id, b) {
+    var el = document.getElementById(id);
+    if (!el || !b) return;
+    el.querySelector(".v").textContent = b.tool;
+    el.querySelector(".p").textContent = b.plan + " · " + GenCost.money(b.price) + " / month" + (GenCost.billing === "yearly" ? " (yearly)" : "");
+  }
+  function run() {
+    GenCost.load("video").then(function (d) {
+      fill("qVideo", cheapest(d, function (n) { return AVATAR.indexOf(n) < 0 && IMAGE.indexOf(n) < 0; }));
+      fill("qAvatar", cheapest(d, function (n) { return AVATAR.indexOf(n) >= 0; }));
+    }).catch(function () {});
+    GenCost.load("voice").then(function (d) { fill("qVoice", cheapest(d)); }).catch(function () {});
+    GenCost.load("music").then(function (d) { fill("qMusic", cheapest(d)); }).catch(function () {});
+  }
+  run();
+  document.addEventListener("gencost:billing", run);
+});
+</script>
+</body>
+</html>
