@@ -39,7 +39,7 @@ VIDEO_FILES = [
     "pixverse-pricing.json", "did-pricing.json",
     "colossyan-pricing.json", "opusclip-pricing.json", "captions-pricing.json",
     "pictory-pricing.json", "veed-pricing.json",
-    "dreamina-pricing.json", "hedra-pricing.json", "magichour-pricing.json",
+    "dreamina-pricing.json", "magichour-pricing.json",
 ]
 
 # keyword in platform/file name -> (display name, page)
@@ -68,7 +68,6 @@ VIDEO_NAMES = [
     ("pictory", "Pictory", "/pages/pictory.html"),
     ("veed", "VEED", "/pages/veed.html"),
     ("dreamina", "Dreamina", "/pages/dreamina.html"),
-    ("hedra", "Hedra", "/pages/hedra.html"),
     ("magichour", "Magic Hour", "/pages/magic-hour.html"),
 ]
 

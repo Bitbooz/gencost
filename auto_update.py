@@ -73,7 +73,6 @@ VIDEO = {
     "veed": ["https://www.veed.io/pricing"],
     # added 2026-11-13
     "dreamina": ["https://dreamina.capcut.com/pricing/dreamina-price"],
-    "hedra": ["https://www.hedra.com/pricing", "https://www.hedra.com/plans"],
     "magichour": ["https://magichour.ai/pricing"],
 }
 VOICE = {
@@ -185,12 +184,6 @@ HINTS = {
         "note": "Magic Hour: the monthly-billing price (Creator $19) is monthly_price_usd; the yearly-billing price per month "
                 "(Creator $12, '$144 billed yearly') is yearly_price_usd. Credits are often written per YEAR (144,000 per year): "
                 "divide by 12 for credits_or_minutes (12000). Leave out the free plan's daily credits.",
-    },
-    "hedra": {
-        "focus": ["/month", "billed", "credits"],
-        "note": "Hedra: for each individual plan (Basic, Pro, Ultra or similar) the price billed monthly is monthly_price_usd and "
-                "the lower per-month price billed yearly is yearly_price_usd. credits_or_minutes = credits per month on the card. "
-                "Leave out Teams and Enterprise (per seat or contact sales). Never use the yearly price as the monthly price.",
     },
     "heygen": {
         "focus": ["/mo", "annually", "billed"],

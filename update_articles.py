@@ -1249,7 +1249,7 @@ def monthly_reports(report):
 
 # ---------- Emerging tools page: rebuilt every day from the price data ----------
 EMERGING = {
-    "video": ["PixVerse", "Vidu", "Hailuo AI", "Krea", "Viggle", "Pictory", "VEED", "Dreamina", "Hedra", "Magic Hour"],
+    "video": ["PixVerse", "Vidu", "Hailuo AI", "Krea", "Viggle", "Pictory", "VEED", "Dreamina", "Magic Hour"],
     "image": ["Recraft", "Ideogram", "OpenArt", "NightCafe"],
     "voice": ["Fish Audio", "Cartesia", "Fliki"],
     "music": ["Mureka", "Stable Audio"],

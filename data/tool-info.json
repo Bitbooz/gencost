@@ -323,13 +323,6 @@
    "credits": "Each plan gives a set number of credits a month (Basic 1,575). Seedance 2.5 uses 37 credits per second at 720p. The first month of each plan is discounted, so the second month costs more.",
    "added": "2026-11-13"
   },
-  "Hedra": {
-   "about": "Hedra makes talking-character and avatar videos from a photo and a voice, with its own Character models and other video models.",
-   "best_for": "Talking-head clips, AI characters and lip-synced avatar videos.",
-   "free": "There is a free plan with a small number of credits and a watermark.",
-   "credits": "Paid plans give credits every month. Videos use credits per second, and the rate depends on the model you pick.",
-   "added": "2026-11-13"
-  },
   "Magic Hour": {
    "about": "Magic Hour is an all-in-one AI platform for video, image and audio: image-to-video, text-to-video, face swap, lip sync, subtitles and more.",
    "best_for": "Creators who want many AI video and image tools under one plan.",
