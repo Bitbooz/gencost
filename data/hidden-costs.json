@@ -374,6 +374,23 @@
    "source": "https://costbench.com/software/ai-image-generators/nightcafe/",
    "checked": "2026-11-08",
    "official": false
+  },
+  "Dreamina": {
+   "items": [
+    "The first month is discounted (Basic $0.29); after that Basic is $15 a month",
+    "The pricing page shows no yearly prices, only a '40% off' label"
+   ],
+   "source": "https://dreamina.capcut.com/pricing/dreamina-price",
+   "checked": "2026-11-13",
+   "official": true
+  },
+  "Magic Hour": {
+   "items": [
+    "Maximum resolution depends on the plan: 1024px on Creator, 4K only on Business"
+   ],
+   "source": "https://magichour.ai/pricing",
+   "checked": "2026-11-13",
+   "official": true
   }
  }
 }

@@ -39,7 +39,7 @@ SITE = "https://getgencost.com"
 ORG_DESCRIPTION = ("GenCost (getgencost.com) is an independent price comparison website for AI video, avatar, image, "
                    "voice and music tools. It reads each tool's official pricing page every morning and shows the "
                    "real cost of one clip, in US dollars. It is not related to CSIRO's GenCost electricity cost report.")
-ORG_SAME_AS = ["https://github.com/Bitbooz/gencost"]   # add more profile links here (dev.to, Facebook page)
+ORG_SAME_AS = ["https://github.com/Bitbooz/gencost", "https://dev.to/bitbooz", "https://www.facebook.com/gencost"]   # profile links (add more here)
 OG_IMAGE = SITE + "/assets/og-image.png"
 TODAY = datetime.now(TZ).strftime("%Y-%m-%d")
 

@@ -1,0 +1,35 @@
+{
+  "platform": "dreamina",
+  "plans": [
+    {
+      "name": "Basic",
+      "monthly_price_usd": 15,
+      "credits_or_minutes": 1575,
+      "unit": "credits",
+      "offer": "First month $0.29"
+    },
+    {
+      "name": "Standard",
+      "monthly_price_usd": 36,
+      "credits_or_minutes": 3885,
+      "unit": "credits",
+      "offer": "First month $21.60"
+    },
+    {
+      "name": "Advanced",
+      "monthly_price_usd": 159,
+      "credits_or_minutes": 17600,
+      "unit": "credits",
+      "offer": "First month $95.40"
+    },
+    {
+      "name": "Ultra",
+      "monthly_price_usd": 520,
+      "credits_or_minutes": 59000,
+      "unit": "credits",
+      "offer": "First month $312"
+    }
+  ],
+  "source": "https://dreamina.capcut.com/pricing/dreamina-price",
+  "last_checked": "2026-11-13 19:50"
+}

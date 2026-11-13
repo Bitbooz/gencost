@@ -71,6 +71,10 @@ VIDEO = {
     # added 2026-11-08
     "pictory": ["https://pictory.ai/pricing"],
     "veed": ["https://www.veed.io/pricing"],
+    # added 2026-11-13
+    "dreamina": ["https://dreamina.capcut.com/pricing/dreamina-price"],
+    "hedra": ["https://www.hedra.com/pricing", "https://www.hedra.com/plans"],
+    "magichour": ["https://magichour.ai/pricing"],
 }
 VOICE = {
     "elevenlabs": "https://elevenlabs.io/pricing",
@@ -125,6 +129,7 @@ FALLBACK = {
 # Pages with a Monthly / Yearly switch where only one is shown at a time:
 # the browser reads the page once per tab and gives the AI both.
 TABS = {
+    "magichour": ["Monthly", "Yearly"],
     "veed": ["Pay monthly", "Pay yearly"],
     "aiva": ["Billed monthly", "Billed yearly"],
     "kling": ["Monthly", "Yearly"],
@@ -168,6 +173,25 @@ def load_existing(path):
 # Extra help for pages where the prices are easy to misread.
 # "focus": lines with these words (and the lines around them) are put first, so they are never cut off.
 HINTS = {
+    "dreamina": {
+        "focus": ["first month", "then USD", "/month", "credits"],
+        "note": "Dreamina shows a first-month deal on each card, e.g. 'USD 0.29 first month, then USD 15.00/month'. "
+                "monthly_price_usd is the price AFTER the first month (15), never the first-month price; put the "
+                "first-month price in offer ('First month $0.29'). credits_or_minutes = the monthly credits on the card "
+                "(Basic 1,575). Only give yearly_price_usd if a yearly price is written as a number; never work it out from '40% OFF'.",
+    },
+    "magichour": {
+        "focus": ["/month", "billed yearly", "credits"],
+        "note": "Magic Hour: the monthly-billing price (Creator $19) is monthly_price_usd; the yearly-billing price per month "
+                "(Creator $12, '$144 billed yearly') is yearly_price_usd. Credits are often written per YEAR (144,000 per year): "
+                "divide by 12 for credits_or_minutes (12000). Leave out the free plan's daily credits.",
+    },
+    "hedra": {
+        "focus": ["/month", "billed", "credits"],
+        "note": "Hedra: for each individual plan (Basic, Pro, Ultra or similar) the price billed monthly is monthly_price_usd and "
+                "the lower per-month price billed yearly is yearly_price_usd. credits_or_minutes = credits per month on the card. "
+                "Leave out Teams and Enterprise (per seat or contact sales). Never use the yearly price as the monthly price.",
+    },
     "heygen": {
         "focus": ["/mo", "annually", "billed"],
         "note": "HeyGen shows the monthly-billing price on the cards (Creator $29/mo). The yearly price is in the text "

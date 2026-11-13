@@ -943,6 +943,9 @@ def models_section(name, tool):
 def history_section(name, cat):
     plans = tool_history(name, cat)
     since = HISTORY.get("since", "")
+    first = [r[0] for rows in (HISTORY.get(cat, {}).get(name) or {}).values() for r in rows if r]
+    if first and min(first) > since:
+        since = min(first)  # a tool added later than the start of the history
     changes = [c for c in price_changes() if c[2] == name and c[1] == cat]
     chart = history_svg(plans)
     if changes:
@@ -1246,7 +1249,7 @@ def monthly_reports(report):
 
 # ---------- Emerging tools page: rebuilt every day from the price data ----------
 EMERGING = {
-    "video": ["PixVerse", "Vidu", "Hailuo AI", "Krea", "Viggle", "Pictory", "VEED"],
+    "video": ["PixVerse", "Vidu", "Hailuo AI", "Krea", "Viggle", "Pictory", "VEED", "Dreamina", "Hedra", "Magic Hour"],
     "image": ["Recraft", "Ideogram", "OpenArt", "NightCafe"],
     "voice": ["Fish Audio", "Cartesia", "Fliki"],
     "music": ["Mureka", "Stable Audio"],
@@ -1255,7 +1258,7 @@ EMERGING_MODELS = [
     ("Seedance", "/pages/seedance.html", "ByteDance's video model. You don't subscribe to Seedance itself: you use it inside other tools, and the price per clip differs a lot between them.",
      "/pages/cheapest-way-to-use-seedance-2-5-2026.html", "Where Seedance 2.5 is cheapest"),
     ("Wan", "/pages/wan.html", "Alibaba's open video model, offered by several hosts and through APIs. Price depends on where you run it.", None, None),
-    ("Kling 4.0", "/pages/kling.html", "Kuaishou's newest video model, open to everyone since October 15, 2026: 3 to 30-second clips with sound made together with the picture. Also on Higgsfield, Runway and APIs, at very different prices per clip.",
+    ("Kling 4.0", "/pages/kling.html", "Kuaishou's newest video model, open to everyone since October 15, 2026: 3 to 30-second clips with sound made together with the picture. Also on Luma, Pika, Higgsfield, Runway and APIs, at very different prices per clip.",
      "/pages/cheapest-way-to-use-kling-4-0-2026.html", "Where Kling 4.0 is cheapest"),
     ("Gemini Omni 1.2 Flash", "/pages/veo.html", "Google's newest video model (November 5, 2026): clips up to 15 seconds with sound, and you can extend them to 30. On the Gemini API it costs $0.07 per second at 720p, about $0.35 for a 5-second clip. In the Gemini app it is rolling out to Google AI Ultra subscribers.",
      "/pages/veo.html", "Google AI plan prices"),

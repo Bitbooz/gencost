@@ -1,6 +1,6 @@
 {
  "about": "Credits one video clip costs on each tool. Kept by hand: the daily job does not change this file. Used for the 'per clip' cost on plan cards and for the 'Real-world example' boxes in articles. 'clips' maps clip length in seconds to credits. 'only_plans' limits the clip cost to plans that include that model. 'plan_credits' fills in a plan's credits when the price data has none. A tool that is not listed gets no clip estimate (better than a wrong one). 'options' lists other models and resolutions; the first one is the default.",
- "updated": "2026-11-10",
+ "updated": "2026-11-13",
  "tools": {
   "Runway": {
    "model": "Gen-4.5",
@@ -95,8 +95,21 @@
      "clips": {
       "5": 955
      }
+    },
+    {
+     "model": "Kling 4.0, 720p",
+     "clips": {
+      "5": 265
+     }
+    },
+    {
+     "model": "Kling 4.0, 1080p",
+     "clips": {
+      "5": 395
+     }
     }
-   ]
+   ],
+   "note": "Kling 4.0: 265 credits per 5 s at 720p, 395 at 1080p (lumalabs.ai/pricing, 2026-11-13)."
   },
   "Pika": {
    "model": "Pika 2.5, 720p",
@@ -136,8 +149,15 @@
      "clips": {
       "5": 299
      }
+    },
+    {
+     "model": "Kling 4.0, 1080p",
+     "clips": {
+      "5": 118
+     }
     }
-   ]
+   ],
+   "note": "Kling 4.0: 118 credits per 5 s at 1080p; no 720p rate listed (pika.art/pricing, 2026-11-13)."
   },
   "InVideo": {
    "model": "Seedance 2.5, 720p",
@@ -422,6 +442,26 @@
    "official": true,
    "rough": true,
    "note": "API rate: 1 credit per character per second. App credits may be charged differently."
+  },
+  "Dreamina": {
+   "model": "Seedance 2.5, 720p",
+   "clips": {
+    "5": 185,
+    "10": 370
+   },
+   "source": "https://dreamina.capcut.com/seedance/seedance-2-5-pricing-2026",
+   "checked": "2026-11-13",
+   "official": true,
+   "options": [
+    {
+     "model": "Seedance 2.5, 720p",
+     "clips": {
+      "5": 185,
+      "10": 370
+     }
+    }
+   ],
+   "note": "Dreamina's Seedance 2.5 page: 37 credits per generated second at 720p."
   }
  }
 }

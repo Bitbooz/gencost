@@ -1,6 +1,6 @@
 {
  "category": "video",
- "updated": "2026-11-13 06:28",
+ "updated": "2026-11-13 19:48",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -455,8 +455,15 @@
       "clips": {
        "5": 299
       }
+     },
+     {
+      "model": "Kling 4.0, 1080p",
+      "clips": {
+       "5": 118
+      }
      }
-    ]
+    ],
+    "note": "Kling 4.0: 118 credits per 5 s at 1080p; no 720p rate listed (pika.art/pricing, 2026-11-13)."
    },
    "hidden": {
     "items": [
@@ -560,8 +567,21 @@
       "clips": {
        "5": 955
       }
+     },
+     {
+      "model": "Kling 4.0, 720p",
+      "clips": {
+       "5": 265
+      }
+     },
+     {
+      "model": "Kling 4.0, 1080p",
+      "clips": {
+       "5": 395
+      }
      }
-    ]
+    ],
+    "note": "Kling 4.0: 265 credits per 5 s at 720p, 395 at 1080p (lumalabs.ai/pricing, 2026-11-13)."
    },
    "hidden": {
     "items": [
@@ -1515,6 +1535,122 @@
    },
    "source_checked": "2026-11-13 06:23",
    "price_verified": "2026-11-13 06:23"
+  },
+  {
+   "name": "Dreamina",
+   "page": "/pages/dreamina.html",
+   "source": "https://dreamina.capcut.com/pricing/dreamina-price",
+   "checked": "2026-11-13 19:50",
+   "plans": [
+    {
+     "name": "Basic",
+     "monthly_price_usd": 15,
+     "credits_or_minutes": 1575,
+     "unit": "credits",
+     "offer": "First month $0.29",
+     "credits_period": "month"
+    },
+    {
+     "name": "Standard",
+     "monthly_price_usd": 36,
+     "credits_or_minutes": 3885,
+     "unit": "credits",
+     "offer": "First month $21.60",
+     "credits_period": "month"
+    },
+    {
+     "name": "Advanced",
+     "monthly_price_usd": 159,
+     "credits_or_minutes": 17600,
+     "unit": "credits",
+     "offer": "First month $95.40",
+     "credits_period": "month"
+    },
+    {
+     "name": "Ultra",
+     "monthly_price_usd": 520,
+     "credits_or_minutes": 59000,
+     "unit": "credits",
+     "offer": "First month $312",
+     "credits_period": "month"
+    }
+   ],
+   "clips": {
+    "model": "Seedance 2.5, 720p",
+    "clips": {
+     "5": 185,
+     "10": 370
+    },
+    "source": "https://dreamina.capcut.com/seedance/seedance-2-5-pricing-2026",
+    "checked": "2026-11-13",
+    "official": true,
+    "options": [
+     {
+      "model": "Seedance 2.5, 720p",
+      "clips": {
+       "5": 185,
+       "10": 370
+      }
+     }
+    ],
+    "note": "Dreamina's Seedance 2.5 page: 37 credits per generated second at 720p."
+   },
+   "hidden": {
+    "items": [
+     "The first month is discounted (Basic $0.29); after that Basic is $15 a month",
+     "The pricing page shows no yearly prices, only a '40% off' label"
+    ],
+    "source": "https://dreamina.capcut.com/pricing/dreamina-price",
+    "checked": "2026-11-13",
+    "official": true
+   },
+   "source_checked": "2026-11-13 19:50",
+   "price_verified": "2026-11-13 19:50"
+  },
+  {
+   "name": "Magic Hour",
+   "page": "/pages/magic-hour.html",
+   "source": "https://magichour.ai/pricing",
+   "checked": "2026-11-13 19:50",
+   "plans": [
+    {
+     "name": "Creator",
+     "monthly_price_usd": 19,
+     "yearly_price_usd": 12,
+     "credits_or_minutes": 12000,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    },
+    {
+     "name": "Pro",
+     "monthly_price_usd": 39,
+     "yearly_price_usd": 25,
+     "credits_or_minutes": 25000,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    },
+    {
+     "name": "Business",
+     "monthly_price_usd": 99,
+     "yearly_price_usd": 66,
+     "credits_or_minutes": 70000,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    }
+   ],
+   "hidden": {
+    "items": [
+     "Maximum resolution depends on the plan: 1024px on Creator, 4K only on Business"
+    ],
+    "source": "https://magichour.ai/pricing",
+    "checked": "2026-11-13",
+    "official": true
+   },
+   "source_checked": "2026-11-13 19:50",
+   "price_verified": "2026-11-13 19:50"
   }
  ]
 }
