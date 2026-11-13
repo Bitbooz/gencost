@@ -34,6 +34,7 @@ offers
 Google handles data
 .
 United States
+Includes Gemini 4 Hydrogen
 Google AI Plus
 /mo
 400 GB storage
@@ -42,7 +43,7 @@ Get Plus
 Terms apply
 1
 Boost productivity
-Access to Gemini 3.6 Flash and Deep Research in Gemini.
+Access to Gemini 4 Hydrogen and Deep Research in Gemini.
 Gemini in Google apps to help you proofread in Gmail.
 Unleash creativity
 More access to image, music, and video generation models in Gemini and Search.
@@ -547,6 +548,7 @@ Access to Gemini 4 Argon
 Access to our Pro models
 Includes access to Argon & Carbon
 Includes access to Argon & Carbon
+Access to Gemini 4 Hydrogen
 Custom AI experts
 Gemini Live
 Tasks in Gemini
@@ -634,17 +636,19 @@ Higher
 Highest
 Access to Gemini 4 Carbon
 Access to Gemini 4 Argon
+Access to Gemini 4 Hydrogen
 Google AI Studio
 6
 Access to Gemini 4 Carbon
 Access to Gemini 4 Argon
+Access to Gemini 4 Hydrogen
 Access to our advanced models
 Limited
 Expanded
 Higher
 Highest
 Vibe Coding agent:
-Daily usage across Flash and Pro models
+Daily usage across Hydrogen and Pro models
 Limited
 Expanded
 Higher
@@ -749,7 +753,7 @@ Collapse all
 What is included in Google AI plans?
 There are three Google AI plans that users can subscribe to: Google AI Plus, Google AI Pro, and Google AI Ultra.
 Google AI Plus gives you more access to Google AI, including:
-Gemini app with access to Gemini 3.6 Flash and limited access to Gemini Omni Flash
+Gemini app with access to Gemini 4 Hydrogen and limited access to Gemini Omni Flash
 5
 Google Flow with more access to Gemini Omni Flash
 5

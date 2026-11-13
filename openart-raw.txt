@@ -327,6 +327,8 @@ Add-ons are monthly extra credits that you can purchase in addition to your subs
 Learn more about how add-ons work →
 What happens when I upgrade?
 When you upgrade, you immediately gain access to all corresponding features, including the new amount of credits. You are billed by the pro-rated difference between your new and old plan.
+How do promotional discounts work?
+Promotional and limited-time discounts apply only to the first billing period of a new purchase or upgrade. When your plan renews, it renews at the then-current list price — excluding any promotional discounts referenced on the “Pricing” page which are not applicable for a renewal.
 What's your refund policy?
 AI-generated content is an evolving technology, and results can vary. Because generation costs are incurred at the time of creation, we're generally unable to issue refunds for completed generations or active subscription periods.
 You can cancel your subscription

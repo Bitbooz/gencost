@@ -24,6 +24,7 @@ Use cases
 Customer support
 Appointment scheduling
 SDR and lead qualification
+IT helpdesk
 Industries
 Financial services
 Healthcare
@@ -366,6 +367,7 @@ Use cases
 Customer support
 Appointment scheduling
 SDR and lead qualification
+IT helpdesk
 Localization
 Industries
 Financial services

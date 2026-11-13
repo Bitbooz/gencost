@@ -5,27 +5,35 @@
       "name": "Creator",
       "monthly_price_usd": 16.99,
       "yearly_price_usd": 11.04,
+      "credits_or_minutes": 0,
+      "unit": "",
       "offer": ""
     },
     {
       "name": "Artist Starter",
       "monthly_price_usd": 29.99,
       "yearly_price_usd": 19.49,
+      "credits_or_minutes": 0,
+      "unit": "",
       "offer": ""
     },
     {
       "name": "Artist Pro",
       "monthly_price_usd": 35.99,
       "yearly_price_usd": 23.39,
+      "credits_or_minutes": 0,
+      "unit": "",
       "offer": ""
     },
     {
       "name": "Artist Unlimited",
       "monthly_price_usd": 50,
       "yearly_price_usd": 32.5,
+      "credits_or_minutes": 0,
+      "unit": "",
       "offer": ""
     }
   ],
   "source": "https://soundraw.io/pricing",
-  "last_checked": "2026-11-12 06:25"
+  "last_checked": "2026-11-13 06:25"
 }

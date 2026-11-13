@@ -1,3 +1,9 @@
+We use cookies and similar technologies to run Higgsfield and understand how you use it. Product analytics helps us improve Higgsfield, may be linked to your account, and stays on when you opt out of advertising. We and third-party providers use device and activity information to measure the effectiveness of our advertising and improve our campaigns. You can opt out of advertising tracking in Cookie Preferences or using the advertising opt-out button below. See our Cookie Notice
+
+Cookie Notice
+Accept All Cookies
+Reject Advertising Cookies
+Cookie Preferences
 Explore
 Image
 Video
@@ -9,14 +15,16 @@ Genjutsu
 Top
 Miracle
 Soon
+Contests
 Shorts
 New
 Ads Studio
 New
+GPU
+New
 Playable
 Supercomputer
 Community
-Contests
 Academy
 Plugins
 Canvas
@@ -24,7 +32,7 @@ Enterprise
 Pricing
 60% OFF
 Login
-Get started
+Sign up
 SEEDANCE 2.5 UNLIMITED FOR UP TO 14 DAYS
 & 60 DAYS OF UNLIMITED
 NANO BANANA PRO, GPT IMAGE 2.5, SEEDREAM 5.0 PRO
@@ -32,12 +40,12 @@ NANO BANANA PRO
 
 Unlimited up to 14 days of Seedance 2.5 & 60 days of Nano Banana Pro, GPT Image 2.5, Seedream 5.0 Pro
 
-11.11 unlimited sale ends in...
-66
+Special offer ends in...
+42
 hours
 40
 minutes
-10
+18
 seconds
 Best prices in GenAI industry
 11.11 sale ends on Nov 15. Don’t miss your chance to get up to 60% OFF.
@@ -144,7 +152,7 @@ Access to selected models only & features
 Early access to advanced AI features
 
 11.11 special sale
-66h 40m 10s
+42h 40m 18s
 
 Plus
 Most popular
@@ -225,7 +233,7 @@ Unlimited & free gens work only on higgsfield.ai
 600 images Nano Banana Pro
 80 videos Seedance 2.5
 
-Unlimited sale ends in 66h 40m 10s
+Unlimited sale ends in 42h 40m 18s
 
 Unlimited for 14 days
 Unlimited Seedance 2.5
@@ -255,7 +263,7 @@ All models & features
 Early access to advanced AI features
 
 11.11 special sale
-66h 40m 10s
+42h 40m 18s
 
 Ultra
 3K
@@ -339,7 +347,7 @@ Unlimited & free gens work only on higgsfield.ai
 1,500 images Nano Banana Pro
 200 videos Seedance 2.5
 
-Unlimited sale ends in 66h 40m 10s
+Unlimited sale ends in 42h 40m 18s
 
 Unlimited for 14 days
 Unlimited Seedance 2.5
@@ -406,7 +414,7 @@ Annual
 Save up to 60%
 
 11.11 special sale
-66h 40m 10s
+42h 40m 18s
 
 Plus
 $59
@@ -527,6 +535,18 @@ Billed annually
 Get Plan
 Video
 Concurrent Jobs
+Seedance 2.5 720p
+35 credits/5s
+Seedance 2.5 1080p
+80 credits/5s
+Higgsfield Genjutsu 720p
+35 credits/5s
+Higgsfield Genjutsu 1080p
+100 credits/5s
+Higgsfield Genjutsu Lite 720p
+10 credits/5s
+Higgsfield Genjutsu Lite 1080p
+20 credits/5s
 Seedance 2.0 720p
 ~22 credits/5s
 Seedance 2.0 1080p
@@ -535,6 +555,12 @@ Seedance 2.0 4K
 ~110 credits/5s
 Seedance 2.0 Fast 720p
 ~12 credits/5s
+Kling 4.0 720p
+11.25 credits/5s
+Kling 4.0 1080p
+16.25 credits/5s
+Kling 4.0 Flash 720p
+15 credits/5s
 Kling 3.0 720p
 ~7 credits/5s
 Kling 3.0 1080p
@@ -575,6 +601,10 @@ Wan 2.6 720p
 ~7 credits/5s
 Wan 2.6 1080p
 ~10 credits/5s
+Wan 2.7 720p
+7.5 credits/5s
+Wan 2.7 1080p
+12.5 credits/5s
 Wan 3.0 480p
 5 credits/5s
 Wan 3.0 720p
@@ -587,12 +617,6 @@ Wan 3.0 Prime 720p
 15 credits/5s
 Wan 3.0 Prime 1080p
 30 credits/5s
-Seedance 1.5 480p
-~1 credits/5s
-Seedance 1.5 720p
-~3 credits/5s
-Seedance 1.5 1080p
-~7 credits/5s
 Higgsfield DoP Lite 720p
 ~3 credits/3s
 Higgsfield DoP Standard 720p
@@ -658,6 +682,20 @@ Nano Banana Pro 4K
 4 credits/image
 Nano Banana 2
 2 credit/image
+Nano Banana 2.1
+2 credit/image
+GPT Image 2.6
+1 credit/image
+GPT Image 2.5
+1 credit/image
+GPT Image 2
+2 credit/image
+Seedream 5.0 Pro
+2.5 credit/image
+Seedream 5.0 Lite
+1 credit/image
+Seedream 5.0 Flash
+0.5 credit/image
 Higgsfield Soul 2.0
 0.12 credits/image
 Higgsfield Soul
@@ -699,6 +737,30 @@ View More
 8 concurrent jobs
 Not included
 Not included
+411 videos
+1028 videos
+Not included
+Not included
+180 videos
+450 videos
+Included
+92 videos
+411 videos
+1028 videos
+Included
+32 videos
+144 videos
+360 videos
+Included
+324 videos
+1440 videos
+3600 videos
+Included
+162 videos
+720 videos
+1800 videos
+Not included
+Not included
 640 videos
 1600 videos
 Not included
@@ -713,6 +775,18 @@ Not included
 259 videos
 1152 videos
 2880 videos
+Not included
+288 videos
+1280 videos
+3200 videos
+Not included
+199 videos
+886 videos
+2215 videos
+Not included
+216 videos
+960 videos
+2400 videos
 Not included
 432 videos
 1920 videos
@@ -794,6 +868,14 @@ Not included
 1440 videos
 3600 videos
 Not included
+432 videos
+1920 videos
+4800 videos
+Not included
+259 videos
+1152 videos
+2880 videos
+Not included
 648 videos
 2880 videos
 7200 videos
@@ -817,18 +899,6 @@ Not included
 108 videos
 480 videos
 1200 videos
-Not included
-2160 videos
-9600 videos
-24000 videos
-Not included
-1080 videos
-4800 videos
-12000 videos
-Not included
-432 videos
-1920 videos
-4800 videos
 0 videos
 1080 videos
 4800 videos
@@ -957,6 +1027,34 @@ Not included
 1620 images
 7200 images
 18000 images
+Not included
+1620 images
+7200 images
+18000 images
+Not included
+3240 images
+14400 images
+36000 images
+Not included
+3240 images
+14400 images
+36000 images
+Not included
+1620 images
+7200 images
+18000 images
+Not included
+1296 images
+5760 images
+14400 images
+Not included
+3240 images
+14400 images
+36000 images
+Not included
+6480 images
+28800 images
+72000 images
 Not included
 27000 images
 120000 images

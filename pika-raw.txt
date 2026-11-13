@@ -39,7 +39,7 @@ All Image Apps
 Image Models
 Ideogram 4.5
 NEW
-GPT Image 2.5
+GPT Image 2.6
 Nano Banana 2.1
 Seedream 5.5
 Grok Imagine
@@ -106,7 +106,7 @@ All Image Apps
 Image Models
 Ideogram 4.5
 NEW
-GPT Image 2.5
+GPT Image 2.6
 Nano Banana 2.1
 Seedream 5.5
 Grok Imagine
@@ -523,12 +523,12 @@ Nano Banana 2
 371
 1,221
 +
-GPT Image 2.5
+GPT Image 2.6
 1 image · 1K
-2
-300
-1,300
-4,275
+4
+150
+650
+2,137
 +
 Seedream 5 Lite
 1 image · 1K

@@ -57,13 +57,14 @@ Dreamina Seedance 2.0
 Dreamina Seedance 2.0 Mini
 Dreamina Seedance 2.5
 Sora 2
-Dreamontage 1.0 Pro Fast
 Image models
 GPT Image 2
 Seedream 5.0
+Seedream 5.0 Pro
+Seedream 5.5
 Integrations
 Plugins
-CapCut × Codex
+CapCut × ChatGPT
 Solutions
 By project
 Social media videos
