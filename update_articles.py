@@ -649,6 +649,22 @@ NOTE_FIXES = {
 }
 
 
+CARD = re.compile(r'[ \t]*<li class="reveal"><a class="art" href="([^"]+)".*?</li>\n?', re.S)
+
+
+def dedupe_cards(raw):
+    """Keep only the first card for each article in every article list (art-grid)."""
+    def one_list(m):
+        seen = set()
+        def keep(c):
+            if c.group(1) in seen:
+                return ""
+            seen.add(c.group(1))
+            return c.group(0)
+        return CARD.sub(keep, m.group(0))
+    return re.sub(r'<ul class="art-grid">.*?</ul>', one_list, raw, flags=re.S)
+
+
 def fix_notes():
     """Small one-time text fixes. Safe to run every day: once fixed, nothing matches any more."""
     for pattern, pairs in NOTE_FIXES.items():
@@ -660,8 +676,12 @@ def fix_notes():
                 continue
             new = raw
             for a, b in pairs:
+                added = set(re.findall(r'href="([^"]+)"', b)) - set(re.findall(r'href="([^"]+)"', a))
+                if added and all(f'class="art" href="{h}"' in new for h in added):
+                    continue  # the article cards this fix adds are already on the page
                 if a in new and (not b or b not in new):
                     new = new.replace(a, b)
+            new = dedupe_cards(new)
             if new != raw:
                 with open(path, "w", encoding="utf-8", newline="") as f:
                     f.write(new)

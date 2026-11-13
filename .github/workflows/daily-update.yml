@@ -53,6 +53,11 @@ jobs:
           # If Ubuntu's package servers are down, the browser still installs without the extra fonts
           python -m playwright install --with-deps chromium || python -m playwright install chromium
 
+      - name: Publish today's article from the queue (one a day, see publish_queue.py)
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        run: python publish_queue.py
+
       - name: Update prices (scrape, extract with Grok, check, rebuild site data)
         if: steps.gate.outputs.skip != '1'
         env:
@@ -74,7 +79,7 @@ jobs:
           echo "$(TZ=Europe/Oslo date +'%Y-%m-%d %H:%M') ${{ github.event_name }}" > last-auto-run.txt
           LANG_DIRS="es pt de fr ar he it ja ru zh-tw ko id tr hi vi pl uk zh"   # one folder per language (see translate_site.py)
           mkdir -p $LANG_DIRS && touch translate-review.txt devto-review.txt
-          git add -A *-pricing.json voice music image data price-review.txt article-review.txt seo-review.txt translate-review.txt devto-review.txt *-raw.txt pages $LANG_DIRS *.html sitemap.xml llms.txt price-changes.txt last-auto-run.txt
+          git add -A *-pricing.json voice music image data price-review.txt article-review.txt seo-review.txt translate-review.txt devto-review.txt queue *-raw.txt pages $LANG_DIRS *.html sitemap.xml llms.txt price-changes.txt last-auto-run.txt
           if git diff --staged --quiet; then
             echo "No changes."
           else

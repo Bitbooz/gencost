@@ -1,0 +1,35 @@
+{
+ "about": "Articles waiting to be published, one a day, by publish_queue.py (oldest first). 'published' is set to the date the article went live. Add new articles to the end.",
+ "items": [
+  {
+   "file": "queue/01-cheapest-way-to-make-a-60-second-ai-video-2026.html",
+   "page": "pages/cheapest-way-to-make-a-60-second-ai-video-2026.html",
+   "card": "<li class=\"reveal\"><a class=\"art\" href=\"/pages/cheapest-way-to-make-a-60-second-ai-video-2026.html\"><span class=\"cat video\">Video</span><h3>What a 60-Second AI Video Costs</h3><p>12 tools, from $1.50 a minute</p></a></li>",
+   "published": ""
+  },
+  {
+   "file": "queue/02-kling-4-0-vs-seedance-2-5-cost-per-clip-2026.html",
+   "page": "pages/kling-4-0-vs-seedance-2-5-cost-per-clip-2026.html",
+   "card": "<li class=\"reveal\"><a class=\"art\" href=\"/pages/kling-4-0-vs-seedance-2-5-cost-per-clip-2026.html\"><span class=\"cat video\">Video</span><h3>Kling 4.0 vs Seedance 2.5</h3><p>Cost per clip on every platform</p></a></li>",
+   "published": ""
+  },
+  {
+   "file": "queue/03-cheapest-way-to-pay-for-ai-tools-yearly-vs-monthly-2026.html",
+   "page": "pages/cheapest-way-to-pay-for-ai-tools-yearly-vs-monthly-2026.html",
+   "card": "<li class=\"reveal\"><a class=\"art\" href=\"/pages/cheapest-way-to-pay-for-ai-tools-yearly-vs-monthly-2026.html\"><span class=\"cat video\">Savings</span><h3>Yearly vs Monthly: What You Save</h3><p>Up to 60% on 30 AI tools</p></a></li>",
+   "published": ""
+  },
+  {
+   "file": "queue/04-cheapest-ai-video-tools-for-commercial-use-2026.html",
+   "page": "pages/cheapest-ai-video-tools-for-commercial-use-2026.html",
+   "card": "<li class=\"reveal\"><a class=\"art\" href=\"/pages/cheapest-ai-video-tools-for-commercial-use-2026.html\"><span class=\"cat video\">Video</span><h3>Cheapest AI Video for Commercial Use</h3><p>Plans that allow client work</p></a></li>",
+   "published": ""
+  },
+  {
+   "file": "queue/05-midjourney-vs-firefly-vs-gpt-image-cost-per-image-2026.html",
+   "page": "pages/midjourney-vs-firefly-vs-gpt-image-cost-per-image-2026.html",
+   "card": "<li class=\"reveal\"><a class=\"art\" href=\"/pages/midjourney-vs-firefly-vs-gpt-image-cost-per-image-2026.html\"><span class=\"cat image\">Image</span><h3>Midjourney vs Firefly vs GPT Image</h3><p>Real cost per image</p></a></li>",
+   "published": ""
+  }
+ ]
+}
