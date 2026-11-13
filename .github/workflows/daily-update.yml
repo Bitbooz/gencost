@@ -7,6 +7,7 @@ name: Daily Price Update
 #
 # ONE-TIME SETUP: add your xAI key as a secret named XAI_API_KEY
 # (GitHub repo -> Settings -> Secrets and variables -> Actions -> New repository secret).
+# OPTIONAL: a dev.to API key as a secret named DEVTO_API_KEY turns on one automatic dev.to post a week.
 
 on:
   schedule:
@@ -58,6 +59,13 @@ jobs:
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
         run: python auto_update.py
 
+      - name: Weekly dev.to post (only runs once a week, and only if the DEVTO_API_KEY secret is set)
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+        run: python devto_post.py
+
       - name: Commit and push changes
         if: steps.gate.outputs.skip != '1'
         run: |
@@ -65,8 +73,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           echo "$(TZ=Europe/Oslo date +'%Y-%m-%d %H:%M') ${{ github.event_name }}" > last-auto-run.txt
           LANG_DIRS="es pt de fr ar he it ja ru zh-tw ko id tr hi vi pl uk zh"   # one folder per language (see translate_site.py)
-          mkdir -p $LANG_DIRS && touch translate-review.txt
-          git add -A *-pricing.json voice music image data price-review.txt article-review.txt seo-review.txt translate-review.txt *-raw.txt pages $LANG_DIRS *.html sitemap.xml llms.txt price-changes.txt last-auto-run.txt
+          mkdir -p $LANG_DIRS && touch translate-review.txt devto-review.txt
+          git add -A *-pricing.json voice music image data price-review.txt article-review.txt seo-review.txt translate-review.txt devto-review.txt *-raw.txt pages $LANG_DIRS *.html sitemap.xml llms.txt price-changes.txt last-auto-run.txt
           if git diff --staged --quiet; then
             echo "No changes."
           else

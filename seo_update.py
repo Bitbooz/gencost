@@ -34,6 +34,12 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
 
 SITE = "https://getgencost.com"
+# Who GenCost is, for search engines and AI assistants (homepage only).
+# The name is shared with CSIRO's "GenCost" electricity report in Australia, so say plainly what this site is.
+ORG_DESCRIPTION = ("GenCost (getgencost.com) is an independent price comparison website for AI video, avatar, image, "
+                   "voice and music tools. It reads each tool's official pricing page every morning and shows the "
+                   "real cost of one clip, in US dollars. It is not related to CSIRO's GenCost electricity cost report.")
+ORG_SAME_AS = ["https://github.com/Bitbooz/gencost"]   # add more profile links here (dev.to, Facebook page)
 OG_IMAGE = SITE + "/assets/og-image.png"
 TODAY = datetime.now(TZ).strftime("%Y-%m-%d")
 
@@ -244,6 +250,7 @@ def build_block(path, raw, canonical, noindex, desc):
         graph = []
         org = {"@type": "Organization", "@id": SITE + "/#org", "name": "GenCost", "url": SITE + "/"}
         if path == "index.html":
+            org = dict(org, description=ORG_DESCRIPTION, sameAs=ORG_SAME_AS)
             graph += [org, {"@type": "WebSite", "@id": SITE + "/#website", "name": "GenCost", "url": SITE + "/",
                             "description": og_desc, "publisher": {"@id": SITE + "/#org"}}]
         if is_article:
