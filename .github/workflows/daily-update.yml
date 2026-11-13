@@ -26,6 +26,7 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       contents: write
+      issues: write   # notify_issue.py opens an issue when something needs a look
     steps:
       - name: Checkout repo
         uses: actions/checkout@v5
@@ -92,3 +93,12 @@ jobs:
         if: steps.gate.outputs.skip != '1'
         continue-on-error: true
         run: python indexnow.py
+
+      - name: Tell Frode if something needs a look (GitHub issue, phone notification)
+        if: always() && steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          JOB_STATUS: ${{ job.status }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python notify_issue.py
