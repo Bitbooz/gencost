@@ -10,3 +10,7 @@
 /embed.js
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=3600
+# Android app verification (Digital Asset Links)
+/.well-known/assetlinks.json
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *

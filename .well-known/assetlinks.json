@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.getgencost.app",
+      "sha256_cert_fingerprints": [
+        "CD:6F:45:B7:66:C9:73:7B:26:A3:96:37:92:19:DE:9D:A0:8B:D8:9A:C1:21:4F:07:0B:FF:2E:D0:4B:AD:F3:1B"
+      ]
+    }
+  }
+]
