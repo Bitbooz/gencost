@@ -50,7 +50,7 @@ jobs:
         if: steps.gate.outputs.skip != '1'
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 lxml openai tzdata playwright
+          pip install requests beautifulsoup4 lxml openai tzdata playwright huggingface_hub
           # If Ubuntu's package servers are down, the browser still installs without the extra fonts
           python -m playwright install --with-deps chromium || python -m playwright install chromium
 
@@ -93,6 +93,13 @@ jobs:
         if: steps.gate.outputs.skip != '1'
         continue-on-error: true
         run: python indexnow.py
+
+      - name: Upload today's prices to Hugging Face (only if the HF_TOKEN secret is set)
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python hf_upload.py
 
       - name: Tell Frode if something needs a look (GitHub issue, phone notification)
         if: always() && steps.gate.outputs.skip != '1'

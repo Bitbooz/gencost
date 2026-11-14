@@ -46,6 +46,9 @@ def problems():
     dev = [l for l in read("devto-review.txt").splitlines() if l.startswith(TODAY) and "failed" in l]
     if dev:
         out.append("**The weekly dev.to post failed:**\n" + "\n".join(f"- {l[18:]}" for l in dev[-3:]))
+    hf = [l for l in read("hf-review.txt").splitlines() if l.startswith(TODAY)]
+    if hf:
+        out.append("**The Hugging Face upload failed:**\n" + "\n".join(f"- {l[12:]}" for l in hf[-2:]))
     try:
         q = json.load(open(os.path.join(HERE, "queue", "queue.json"), encoding="utf-8"))
         bad = [i["page"] for i in q.get("items", []) if i.get("published") in ("missing", "exists")]
