@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>GenCost: AI tool prices</title>
+  <link>https://getgencost.com/</link>
+  <atom:link href="https://getgencost.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>New guides on what AI video, image, voice and music tools really cost, from GenCost's daily price checks.</description>
+  <language>en</language>
+  <lastBuildDate>Sat, 14 Nov 2026 16:51:02 +0100</lastBuildDate>
+  <item>
+    <title>What Does a 60-Second AI Video Cost? 12 Tools Compared (2026)</title>
+    <link>https://getgencost.com/pages/cheapest-way-to-make-a-60-second-ai-video-2026.html</link>
+    <guid isPermaLink="true">https://getgencost.com/pages/cheapest-way-to-make-a-60-second-ai-video-2026.html</guid>
+    <pubDate>Sat, 14 Nov 2026 07:00:00 +0100</pubDate>
+    <description>What one minute of finished AI video really costs on Veo, Vidu, Luma, Pika, Kling, CapCut, Runway and more, on each tool&#x27;s cheapest plan, with and without retries.</description>
+  </item>
+</channel>
+</rss>
