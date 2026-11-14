@@ -104,6 +104,16 @@ jobs:
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
         run: python bluesky_post.py
 
+      - name: Make today's YouTube Short and send the download link (needs HF_TOKEN)
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          python shorts_make.py
+
       - name: Upload today's prices to Hugging Face (only if the HF_TOKEN secret is set)
         if: steps.gate.outputs.skip != '1'
         continue-on-error: true
