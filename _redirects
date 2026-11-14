@@ -40,3 +40,4 @@
 /pages/stablevideo                                  /#platforms  301
 # Articles waiting in the queue are not public until publish_queue.py moves them to pages/
 /queue/*                                        /404.html  404!
+/android/*                                        /404.html  404!
