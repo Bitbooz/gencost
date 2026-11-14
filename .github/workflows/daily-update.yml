@@ -96,6 +96,14 @@ jobs:
         continue-on-error: true
         run: python indexnow.py
 
+      - name: Post today's new article on Bluesky (only if the BSKY secrets are set)
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+        run: python bluesky_post.py
+
       - name: Upload today's prices to Hugging Face (only if the HF_TOKEN secret is set)
         if: steps.gate.outputs.skip != '1'
         continue-on-error: true

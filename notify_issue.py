@@ -46,6 +46,9 @@ def problems():
     dev = [l for l in read("devto-review.txt").splitlines() if l.startswith(TODAY) and "failed" in l]
     if dev:
         out.append("**The weekly dev.to post failed:**\n" + "\n".join(f"- {l[18:]}" for l in dev[-3:]))
+    bs = [l for l in read("bluesky-review.txt").splitlines() if l.startswith(TODAY) and "failed" in l]
+    if bs:
+        out.append("**The Bluesky post failed:**\n" + "\n".join(f"- {l[18:]}" for l in bs[-2:]))
     hf = [l for l in read("hf-review.txt").splitlines() if l.startswith(TODAY)]
     if hf:
         out.append("**The Hugging Face upload failed:**\n" + "\n".join(f"- {l[12:]}" for l in hf[-2:]))
