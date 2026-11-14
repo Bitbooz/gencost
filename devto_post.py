@@ -232,17 +232,25 @@ def main():
         print(f"Preview written to {PREVIEW} ({page})")
         return
 
-    try:
-        r = requests.post("https://dev.to/api/articles", timeout=60,
-                          headers={"api-key": key, "Content-Type": "application/json",
-                                   "Accept": "application/vnd.forem.api-v1+json",
-                                   "User-Agent": "GenCost weekly post (getgencost.com)"},
-                          json={"article": article})
-    except requests.RequestException as e:
-        log(f"dev.to post failed (network): {e}")
-        return
+    # dev.to answers an empty 403 when it doesn't like the User-Agent (it filters some library names),
+    # so try a browser-style one first and a plain one second, and log what came back.
+    agents = ["Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) GenCost/1.0 (+https://getgencost.com)",
+              "GenCost/1.0 (+https://getgencost.com)"]
+    r = None
+    for ua in agents:
+        try:
+            r = requests.post("https://dev.to/api/articles", timeout=60,
+                              headers={"api-key": key, "Content-Type": "application/json",
+                                       "Accept": "application/vnd.forem.api-v1+json", "User-Agent": ua},
+                              json={"article": article})
+        except requests.RequestException as e:
+            log(f"dev.to post failed (network): {e}")
+            return
+        if r.status_code != 403:
+            break
     if r.status_code not in (200, 201):
-        log(f"dev.to post failed: HTTP {r.status_code} {r.text[:300]}")
+        info = ", ".join(f"{h}: {r.headers[h]}" for h in ("server", "x-served-by", "cf-ray", "via") if h in r.headers)
+        log(f"dev.to post failed: HTTP {r.status_code} {r.text[:300]} ({info})")
         return
     link = r.json().get("url", "")
     state["last_posted"] = today().isoformat()
