@@ -122,22 +122,14 @@ Sign up free
 Monthly
 Yearly
 40% off
-Need help choosing a plan?
 Model Licensing
 Looking for API?
 Free
-For trying out Krea
+100 units / day
 $0
 /month
 Get Free
-100 units
-/ day
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
+No difference compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -158,27 +150,15 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Basic
-For getting started with AI
+5,000 units / month
+~200 Nano Banana 2.1 generations
+~16 Seedance 2.5 videos
 $9
 $5
 /month
+Get Basic
 Save $48
 compared to monthly
-Get Basic
-5,000 units
-/ month
-16
-Seedance 2.5 videos
-64
-Nano Banana Pro images
-138
-Krea 3 images
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -196,29 +176,17 @@ Bulk discounts on compute unit packs
 Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
-Pro
 Most popular
-For everyday AI creation
+Pro
+20,000 units / month
+~803 Nano Banana 2.1 generations
+~65 Seedance 2.5 videos
 $35
 $21
 /month
+Get Pro
 Save $168
 compared to monthly
-Get Pro
-20,000 units
-/ month
-65
-Seedance 2.5 videos
-257
-Nano Banana Pro images
-555
-Krea 3 images
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -237,31 +205,19 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Max
-For ambitious AI projects
-$70
-$42
-/month
-Save $336
-compared to monthly
-Get Max
-40,000 units
-/ month
-131
-Seedance 2.5 videos
-514
-Nano Banana Pro images
-1,111
-Krea 3 images
+80,000 units / month
+~3,214 Nano Banana 2.1 generations
+~262 Seedance 2.5 videos
 40k
 60k
 80k
 100k
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
+$135
+$81
+/month
+Get Max
+Save $648
+compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -352,18 +308,11 @@ Unlimited
 Images per LoRA
 Custom
 Free
-For trying out Krea
+100 units / day
 $0
 /month
 Get Free
-100 units
-/ day
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
+No difference compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -384,27 +333,15 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Basic
-For getting started with AI
+5,000 units / month
+~200 Nano Banana 2.1 generations
+~16 Seedance 2.5 videos
 $9
 $5
 /month
+Get Basic
 Save $48
 compared to monthly
-Get Basic
-5,000 units
-/ month
-16
-Seedance 2.5 videos
-64
-Nano Banana Pro images
-138
-Krea 3 images
-Unlimited
-Pro & Max
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -422,29 +359,17 @@ Bulk discounts on compute unit packs
 Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
-Pro
 Most popular
-For everyday AI creation
+Pro
+20,000 units / month
+~803 Nano Banana 2.1 generations
+~65 Seedance 2.5 videos
 $35
 $21
 /month
+Get Pro
 Save $168
 compared to monthly
-Get Pro
-20,000 units
-/ month
-65
-Seedance 2.5 videos
-257
-Nano Banana Pro images
-555
-Krea 3 images
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
 Krea 3
 NEW
 Krea Agent
@@ -463,31 +388,19 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Max
-For ambitious AI projects
-$70
-$42
-/month
-Save $336
-compared to monthly
-Get Max
-40,000 units
-/ month
-131
-Seedance 2.5 videos
-514
-Nano Banana Pro images
-1,111
-Krea 3 images
+80,000 units / month
+~3,214 Nano Banana 2.1 generations
+~262 Seedance 2.5 videos
 40k
 60k
 80k
 100k
-Unlimited
-7 days
-Nano Banana Pro
-Nano Banana 2.1
-Nano Banana 2
-offer terms
+$135
+$81
+/month
+Get Max
+Save $648
+compared to monthly
 Krea 3
 NEW
 Krea Agent
@@ -582,59 +495,6 @@ Custom
 Have an offer code?
 Enter it to see your discount before checkout.
 Redeem
-Find the best plan for you
-Tell us what you make and how much, and we'll match you to the plan that fits.
-1
-What are you here to make?
-Select all that apply
-Social media videos
-Talking-avatar videos
-UGC & product video ads
-Marketing product photos
-Cinematic videos
-Personal projects
-2
-How much content each month?
-About 581 units per video and 78 per image
-Premium quality
-~40 Kling 4.0 videos
-23,240 units
-~60 Nano Banana Pro images
-4,680 units
-3
-Need anything else?
-Add features to match your workflow
-Add features
-Monthly
-Yearly
-Save up to 40%
-Max
-Recommended
-For ambitious AI projects
-$70
-$42
-/month
-Save $336
-compared to monthly
-Get Max
-40,000 units
-/ month
-131
-Seedance 2.5 videos
-514
-Nano Banana Pro images
-1,111
-Krea 3 images
-40k
-60k
-80k
-100k
-Unlimited LoRA training (2,000 images)
-Bulk discounts on compute unit packs
-Unlimited relaxed generations
-Expanded concurrency and queueing
-Expected monthly usage
-27.9K of 40K units
 Need More Compute?
 Purchase one-time compute packs for additional credits. Applied instantly and valid for 90
 					days. To get more credits out of your purchase, consider upgrading your plan.
@@ -685,7 +545,7 @@ Pro
 $21
 /mo
 Max
-$42
+$81
 /mo
 Features & License
 Access to Krea 3
@@ -1571,7 +1431,7 @@ $21
 /month
 Upgrade
 Max
-$42
+$81
 /month
 Upgrade
 Business

@@ -1,5 +1,5 @@
-SEO check 2026-11-14 06:31
-136 pages checked, 106 changed today, 110 in sitemap.xml, 25 marked noindex
+SEO check 2026-11-14 19:15
+136 pages checked, 109 changed today, 110 in sitemap.xml, 25 marked noindex
 Made by this script: 106 canonical links, 25 descriptions; today: 0 links moved to the main page, 0 titles fixed
 
 Needs a human:

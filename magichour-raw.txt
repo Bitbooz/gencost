@@ -9,12 +9,12 @@ Log In
 Sign Up
 - It's Free
 Pricing
-Create videos, images, and audio with one AI plan
-Get more credits, higher resolution exports, faster queues, and commercial rights in one plan.
+Create videos, images, and audio
+Choose a plan or buy credits once.
 Monthly
 Yearly
-4 months free
-Save 33–37% with annual billing. Need more credits? View credit packs
+33% off
+Credit packs
 Creator
 For social content and everyday creation
 $19/ month
@@ -315,62 +315,6 @@ AI Sound Effect Generator
 9.7 hours
 24 minutes
 9.7 hours
-Credit Pack
-Need More Credits?
-One-time purchase. No subscription.
-No watermark, credits never expire.
-Small
-4,000
-$1 = 400 credits
-Buy for
-$10
-Up to 2.8 min of video
-Up to 800 images
-Commercial use, no watermark
-Most Popular
--10%
-Medium
-12,000
-$1 = 444 credits
-Buy for
-$30
-$27
-Up to 8.3 min of video
-Up to 2,400 images
-Commercial use, no watermark
-Recommended
--15%
-Large
-32,000
-$1 = 470 credits
-Buy for
-$80
-$68
-Up to 22.2 min of video
-Up to 6,400 images
-Commercial use, no watermark
--20%
-XL
-64,000
-$1 = 500 credits
-Buy for
-$160
-$128
-Up to 44.4 min of video
-Up to 12,800 images
-Commercial use, no watermark
-Best Value
--25%
-Max
-256,000
-$1 = 533 credits
-Buy for
-$640
-$480
-Up to 3.0 hours of video
-Up to 51,200 images
-Commercial use, no watermark
-Credit packs include watermark-free exports and commercial-use rights. Subscriptions also unlock higher resolutions, faster queues, larger uploads, and greater concurrency.
 
 [Yearly tab]
 Magic Hour
@@ -383,12 +327,12 @@ Log In
 Sign Up
 - It's Free
 Pricing
-Create videos, images, and audio with one AI plan
-Get more credits, higher resolution exports, faster queues, and commercial rights in one plan.
+Create videos, images, and audio
+Choose a plan or buy credits once.
 Monthly
 Yearly
-4 months free
-Save 33–37% with annual billing. Need more credits? View credit packs
+33% off
+Credit packs
 -37%
 Creator
 For social content and everyday creation
@@ -698,59 +642,3 @@ AI Sound Effect Generator
 116.7 hours
 4.9 hours
 116.7 hours
-Credit Pack
-Need More Credits?
-One-time purchase. No subscription.
-No watermark, credits never expire.
-Small
-4,000
-$1 = 400 credits
-Buy for
-$10
-Up to 2.8 min of video
-Up to 800 images
-Commercial use, no watermark
-Most Popular
--10%
-Medium
-12,000
-$1 = 444 credits
-Buy for
-$30
-$27
-Up to 8.3 min of video
-Up to 2,400 images
-Commercial use, no watermark
-Recommended
--15%
-Large
-32,000
-$1 = 470 credits
-Buy for
-$80
-$68
-Up to 22.2 min of video
-Up to 6,400 images
-Commercial use, no watermark
--20%
-XL
-64,000
-$1 = 500 credits
-Buy for
-$160
-$128
-Up to 44.4 min of video
-Up to 12,800 images
-Commercial use, no watermark
-Best Value
--25%
-Max
-256,000
-$1 = 533 credits
-Buy for
-$640
-$480
-Up to 3.0 hours of video
-Up to 51,200 images
-Commercial use, no watermark
-Credit packs include watermark-free exports and commercial-use rights. Subscriptions also unlock higher resolutions, faster queues, larger uploads, and greater concurrency.
