@@ -1,4 +1,4 @@
-Krea
+Krea Pricing | AI Creative Tools for Everyone
 App
 Features
 Plugins
@@ -116,6 +116,9 @@ Pick your plan
 Trusted by 40M+ creators, enterprises, agencies, and studios
 Pick your plan
 Trusted by 40M+ creators, enterprises, agencies, and studios
+New to Krea? Save up to 50% on your first plan
+Sign up free and we'll offer you a discount on your first plan.
+Sign up free
 Monthly
 Yearly
 40% off
@@ -129,6 +132,12 @@ $0
 Get Free
 100 units
 / day
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -164,6 +173,12 @@ Seedance 2.5 videos
 Nano Banana Pro images
 138
 Krea 3 images
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -198,6 +213,12 @@ Seedance 2.5 videos
 Nano Banana Pro images
 555
 Krea 3 images
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -217,24 +238,30 @@ Expanded concurrency and queueing
 Promo placeholder
 Max
 For ambitious AI projects
-$105
-$63
+$70
+$42
 /month
-Save $504
+Save $336
 compared to monthly
 Get Max
-60,000 units
+40,000 units
 / month
-197
+131
 Seedance 2.5 videos
-771
+514
 Nano Banana Pro images
-1,666
+1,111
 Krea 3 images
 40k
 60k
 80k
 100k
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -331,6 +358,12 @@ $0
 Get Free
 100 units
 / day
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -366,6 +399,12 @@ Seedance 2.5 videos
 Nano Banana Pro images
 138
 Krea 3 images
+Unlimited
+Pro & Max
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -400,6 +439,12 @@ Seedance 2.5 videos
 Nano Banana Pro images
 555
 Krea 3 images
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -419,24 +464,30 @@ Expanded concurrency and queueing
 Promo placeholder
 Max
 For ambitious AI projects
-$105
-$63
+$70
+$42
 /month
-Save $504
+Save $336
 compared to monthly
 Get Max
-60,000 units
+40,000 units
 / month
-197
+131
 Seedance 2.5 videos
-771
+514
 Nano Banana Pro images
-1,666
+1,111
 Krea 3 images
 40k
 60k
 80k
 100k
+Unlimited
+7 days
+Nano Banana Pro
+Nano Banana 2.1
+Nano Banana 2
+offer terms
 Krea 3
 NEW
 Krea Agent
@@ -634,7 +685,7 @@ Pro
 $21
 /mo
 Max
-$63
+$42
 /mo
 Features & License
 Access to Krea 3
@@ -1520,7 +1571,7 @@ $21
 /month
 Upgrade
 Max
-$63
+$42
 /month
 Upgrade
 Business

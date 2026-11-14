@@ -20,16 +20,16 @@
       "monthly_price_usd": 159,
       "credits_or_minutes": 17600,
       "unit": "credits",
-      "offer": "First month $95.40"
+      "offer": "First month $63.60"
     },
     {
       "name": "Ultra",
       "monthly_price_usd": 520,
       "credits_or_minutes": 59000,
       "unit": "credits",
-      "offer": "First month $312"
+      "offer": "First month $260"
     }
   ],
   "source": "https://dreamina.capcut.com/pricing/dreamina-price",
-  "last_checked": "2026-11-13 19:50"
+  "last_checked": "2026-11-14 06:25"
 }

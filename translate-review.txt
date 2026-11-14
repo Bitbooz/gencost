@@ -1,26 +1,40 @@
-2026-11-13 05:39  Español (/es/): 105 of 106 pages, stored translations: 3261, JavaScript texts: 405/405
-2026-11-13 05:39  Português (/pt/): 105 of 106 pages, stored translations: 3260, JavaScript texts: 405/405
-2026-11-13 05:39  Deutsch (/de/): 105 of 106 pages, stored translations: 3241, JavaScript texts: 405/405
-2026-11-13 05:39  Français (/fr/): 105 of 106 pages, stored translations: 3242, JavaScript texts: 405/405
-2026-11-13 05:39  العربية (/ar/): 105 of 106 pages, stored translations: 3231, JavaScript texts: 405/405
-2026-11-13 05:39  עברית (/he/): 105 of 106 pages, stored translations: 3193, JavaScript texts: 405/405
-2026-11-13 05:39  Italiano (/it/): 105 of 106 pages, stored translations: 3178, JavaScript texts: 405/405
-2026-11-13 05:39  日本語 (/ja/): 105 of 106 pages, stored translations: 3184, JavaScript texts: 405/405
-2026-11-13 05:39  Русский (/ru/): 105 of 106 pages, stored translations: 3181, JavaScript texts: 405/405
-2026-11-13 05:39  繁體中文 (/zh-tw/): 105 of 106 pages, stored translations: 3194, JavaScript texts: 405/405
-2026-11-13 05:39  한국어 (/ko/): 104 of 106 pages, stored translations: 3149, JavaScript texts: 405/405
-  - translation did not keep the tags or numbers, kept English: CapCut Pricing (November [[0]]): Plans &amp; Cost per Clip | GenCost
-  - translation did not keep the tags or numbers, kept English: CapCut pricing for November [[0]]: every plan in US dollars, monthly a
-  - translation did not keep the tags or numbers, kept English: New &amp; Emerging AI Tools (November [[0]]): Prices in Real Dollars |
-  - pages/capcut.html: only 86% translated, not published yet
-2026-11-13 05:39  Bahasa Indonesia (/id/): 105 of 106 pages, stored translations: 3168, JavaScript texts: 405/405
-  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and the
-2026-11-13 05:39  Türkçe (/tr/): 105 of 106 pages, stored translations: 3175, JavaScript texts: 405/405
+2026-11-14 05:46  Español (/es/): 109 of 110 pages, stored translations: 3417, JavaScript texts: 420/420
+2026-11-14 05:46  Português (/pt/): 109 of 110 pages, stored translations: 3418, JavaScript texts: 420/420
+2026-11-14 05:46  Deutsch (/de/): 109 of 110 pages, stored translations: 3396, JavaScript texts: 420/420
+2026-11-14 05:46  Français (/fr/): 109 of 110 pages, stored translations: 3405, JavaScript texts: 420/420
+2026-11-14 05:46  العربية (/ar/): 109 of 110 pages, stored translations: 3392, JavaScript texts: 420/420
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its mo
+2026-11-14 05:46  עברית (/he/): 109 of 110 pages, stored translations: 3357, JavaScript texts: 420/420
+2026-11-14 05:46  Italiano (/it/): 109 of 110 pages, stored translations: 3346, JavaScript texts: 420/420
+  - translation did not keep the tags or numbers, kept English: <t0>Real-world example</t0><t1/> [[0]] × [[1]]-second videos: Kling ≈ 
+2026-11-14 05:46  日本語 (/ja/): 109 of 110 pages, stored translations: 3351, JavaScript texts: 420/420
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its mo
+2026-11-14 05:46  Русский (/ru/): 109 of 110 pages, stored translations: 3353, JavaScript texts: 420/420
+2026-11-14 05:46  繁體中文 (/zh-tw/): 108 of 110 pages, stored translations: 3362, JavaScript texts: 420/420
+  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> Cheapest per minute: <t2>Google AI Pro</t2>
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its mo
+  - translation did not keep the tags or numbers, kept English: Luma's Ray[[0]] at [[1]]p and Pika [[2]] both land under [[3]] a minut
+  - translation did not keep the tags or numbers, kept English: Runway Standard's [[0]] credits give about [[1]] seconds of Gen-[[2]] 
+  - pages/cheapest-way-to-make-a-60-second-ai-video-2026.html: only 82% translated, not published yet
+2026-11-14 05:46  한국어 (/ko/): 109 of 110 pages, stored translations: 3329, JavaScript texts: 420/420
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its mo
+2026-11-14 05:46  Bahasa Indonesia (/id/): 109 of 110 pages, stored translations: 3343, JavaScript texts: 420/420
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its mo
+  - translation did not keep the tags or numbers, kept English: Yes. The Free plan costs [[0]] and includes [[1]] downloads. On the Fr
+  - translation did not keep the tags or numbers, kept English: Yes. The Free plan costs [[0]] and includes [[1]] credits. The Free pl
+  - translation did not keep the tags or numbers, kept English: Yes. The Free plan costs [[0]] and includes [[1]] credits. There is a 
+  - translation did not keep the tags or numbers, kept English: Yes. The Free plan costs [[0]] and includes [[1]] minutes. The Free pl
+2026-11-14 05:46  Türkçe (/tr/): 109 of 110 pages, stored translations: 3353, JavaScript texts: 420/420
   - translation did not keep the tags or numbers, kept English: If you are a developer, or only need a few clips, fal.ai and Segmind c
   - translation did not keep the tags or numbers, kept English: OpenArt offers Kling [[0]] at [[1]]% off on its Pro and Wonder plans u
-2026-11-13 05:39  हिन्दी (/hi/): 105 of 106 pages, stored translations: 3137, JavaScript texts: 405/405
-2026-11-13 05:39  Tiếng Việt (/vi/): 105 of 106 pages, stored translations: 3178, JavaScript texts: 405/405
-2026-11-13 05:39  Polski (/pl/): 105 of 106 pages, stored translations: 3177, JavaScript texts: 405/405
-2026-11-13 05:39  Українська (/uk/): 105 of 106 pages, stored translations: 3172, JavaScript texts: 405/405
-2026-11-13 05:39  简体中文 (/zh/): 105 of 106 pages, stored translations: 3173, JavaScript texts: 405/405
-  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and the
+2026-11-14 05:46  हिन्दी (/hi/): 109 of 110 pages, stored translations: 3314, JavaScript texts: 420/420
+  - translation did not keep the tags or numbers, kept English: [[0]] credits per second at [[1]]p (on Dreamina's Seedance [[2]] page)
+2026-11-14 05:46  Tiếng Việt (/vi/): 109 of 110 pages, stored translations: 3355, JavaScript texts: 420/420
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its mo
+2026-11-14 05:46  Polski (/pl/): 109 of 110 pages, stored translations: 3355, JavaScript texts: 420/420
+2026-11-14 05:46  Українська (/uk/): 109 of 110 pages, stored translations: 3349, JavaScript texts: 420/420
+  - translation did not keep the tags or numbers, kept English: <t0>Real-world example</t0><t1/> [[0]] × [[1]]-second videos: Kling ≈ 
+2026-11-14 05:46  简体中文 (/zh/): 109 of 110 pages, stored translations: 3349, JavaScript texts: 419/420
+  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> Cheapest per minute: <t2>Google AI Pro</t2>
+  - translation did not keep the tags or numbers, kept English: Elyum's Kling [[0]] page lists [[1]] credits per second at [[2]]p and 
+  - translation did not keep the tags or numbers, kept English: Ray[[0]], [[1]]p: [[2]] credits per [[3]]s, [[4]] credits per [[5]]s. 

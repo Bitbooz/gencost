@@ -1,32 +1,44 @@
-2026-11-13 06:18  hailuo  (https://hailuoai.video/pricing)
-    - Max: yearly price equals the monthly price, left out
-    -> saved the monthly prices
-
-2026-11-13 06:19  higgsfield  (https://higgsfield.ai/pricing)
+2026-11-14 06:20  higgsfield  (https://higgsfield.ai/pricing)
     - Starter: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-13 06:22  colossyan  (https://www.colossyan.com/pricing)
+2026-11-14 06:23  pixverse  (https://app.pixverse.ai/subscribe)
+    - [https://app.pixverse.ai/subscribe] download: pricing page returned almost no text (HTTP 403)
+    - [https://app.pixverse.ai/subscribe] browser: no plans found
+    - [https://pixverse.ai/pricing] download: no plans found
+    - [https://pixverse.ai/pricing] browser: no plans found
+    - [https://pixverse.ai/en/pricing] download: no plans found
+    - [https://pixverse.ai/en/pricing] browser: no plans found
+    -> kept the previous prices
+
+2026-11-14 06:23  colossyan  (https://www.colossyan.com/pricing)
     - Professional: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-13 06:23  veed  (https://www.veed.io/pricing)
+2026-11-14 06:24  veed  (https://www.veed.io/pricing)
     - Creator: yearly price equals the monthly price, left out
     - Pro: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-13 06:23  murf  (https://murf.ai/pricing)
+2026-11-14 06:26  murf  (https://murf.ai/pricing)
     - Creator: yearly price equals the monthly price, left out
     - Business: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-13 06:25  aiva  (https://www.aiva.ai/pricing)
+2026-11-14 06:28  aiva  (https://www.aiva.ai/pricing)
     - Standard: yearly price equals the monthly price, left out
     - Pro: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-13 06:27  mureka  (https://www.mureka.ai/subscribe)
+2026-11-14 06:29  mureka  (https://www.mureka.ai/subscribe)
     - Pro: yearly price equals the monthly price, left out
     - Premier: yearly price equals the monthly price, left out
     -> saved the monthly prices
+
+2026-11-14 06:30  ideogram  (https://docs.ideogram.ai/plans-and-pricing/personal-plans)
+    - [https://docs.ideogram.ai/plans-and-pricing/personal-plans] download: pricing page returned almost no text (HTTP 403)
+    - [https://docs.ideogram.ai/plans-and-pricing/personal-plans] browser: no plans found
+    - [https://ideogram.ai/pricing] download: pricing page returned almost no text (HTTP 403)
+    - [https://ideogram.ai/pricing] browser: no plans found
+    -> kept the previous prices
 

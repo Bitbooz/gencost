@@ -7,7 +7,7 @@
       "yearly_price_usd": 10,
       "credits_or_minutes": 400,
       "unit": "credits",
-      "offer": ""
+      "offer": "Unlimited images for 30 days"
     },
     {
       "name": "Plus",
@@ -15,7 +15,7 @@
       "yearly_price_usd": 30,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": ""
+      "offer": "Unlimited images for 30 days"
     },
     {
       "name": "Max",
@@ -23,9 +23,9 @@
       "yearly_price_usd": 75,
       "credits_or_minutes": 5000,
       "unit": "credits",
-      "offer": ""
+      "offer": "Unlimited images for 30 days"
     }
   ],
   "source": "https://invideo.io/pricing",
-  "last_checked": "2026-11-13 06:21"
+  "last_checked": "2026-11-14 06:21"
 }

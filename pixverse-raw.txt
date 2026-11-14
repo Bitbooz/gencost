@@ -1,554 +1,116 @@
-PixVerse Pricing: Credits, Plans & AI Video Costs
-Home
-Creation
-Agent
-CLI & Plugin
+PixVerse | Create Amazing AI Videos from Text & Photos with AI Video Generator
+Product
+AI Video Creation
+AI Video Generator
+Image to Video
+Text to Video
+AI Video Transition
+AI Video Extender
+AI Video Editor
+Camera Motion Control AI
+Reference Video Generator
+AI Animation Generator
+AI Video Ad Generator
+AI Audio Creation
+Text to Speech
+AI Products
 Canvas
-Mini-Apps
-Music Video
-Subscription
-API Platform
-Growth Studio
-PixVerse World
-PixVerse Game
-💰
-Become an Affiliate
-Learn More
-Terms
-©
-PixVerse
-2026
-Download App
-Earn Credits
-Subscribe
-PixVerse Pricing and Subscription Plans
-Subscription Plans
-Yearly
-40% OFF
-Monthly
-Standard
-20% Off
-$8
-/ month
-$10
-billed yearly as $96
-Subscribe
-Daily Credits 60 (reset daily)
-1200
-Credits reset every 30 days
-Watermark-free & Ad-free
-Access to HD resolution (up to
-720P
-)
-Access to all image models
-Get
-10%
-extra on Credit Packs
-3
-concurrent generation
-Faster generations (PixVerse models only)
-Save
-20%
-on Credits in Preview Mode (PixVerse models only)
-Pro
-20% Off
-$24
-/ month
-$30
-billed yearly as $288
-Subscribe
-Daily Credits 60 (reset daily)
-6000
-Credits reset every 30 days
-Watermark-free & Ad-free
-Access to HD resolution (up to
-4K
-)
-Access to all image models
-Get
-30%
-extra on Credit Packs
-5
-concurrent generation
-Faster generations (PixVerse models only)
-Save
-20%
-on Credits in Preview Mode (PixVerse models only)
-Off-Peak Mode: Save
-30%
-on Credits (PixVerse models only)
-Batch Creation (up to 4 at a time)
-Unlimited Image Generation in Relax Mode
-Qwen-image
-365 Unlimited
-Nano Banana 2 Lite
-365 Unlimited
-Access to More Video Models
+Game
+Model
+AI Video Models
+PixVerse V6
+PixVerse R2
 Seedance 2.5
-Seedance 2.0 (Standard)
-Seedance 2.0 (Fast & Mini)
-10% OFF
+Seedance 2
 MiniMax H3
-MiniMax H3 Max
-FLUX 3
-Wan 3.0
-Gemini Omni Flash
-Happy Horse 1.0
-Kling 4.0
-Kling O3 (Standard & Pro)
-Grok Imagine 1.5
-Premium
-20% Off
-$48
-/ month
-$60
-billed yearly as $576
-Subscribe
-Daily Credits 60 (reset daily)
-15000
-Credits reset every 30 days
-Watermark-free & Ad-free
-Access to HD resolution (up to
-4K
-)
-Access to all image models
-Get
-50%
-extra on Credit Packs
-8
-concurrent generation
-Faster generations (PixVerse models only)
-Save
-20%
-on Credits in Preview Mode (PixVerse models only)
-Off-Peak Mode: Save
-50%
-on Credits (PixVerse models only)
-Batch Creation (up to 4 at a time)
-Unlimited Image Generation in Relax Mode
-Qwen-image
-365 Unlimited
-Nano Banana 2.1
-365 Unlimited
-Nano Banana 2
-365 Unlimited
-Nano Banana 2 Lite
-365 Unlimited
-Nano Banana
-365 Unlimited
-Seedream 4.0
-365 Unlimited
-Access to More Video Models
-Seedance 2.5
-Seedance 2.0 (Standard)
-Seedance 2.0 (Fast & Mini)
-30% OFF
-MiniMax H3
-MiniMax H3 Max
-FLUX 3
-Wan 3.0
-Gemini Omni Flash
-Happy Horse 1.0
-Kling 4.0
-Kling O3 (Standard & Pro)
-Grok Imagine 1.5
-Most Popular
-Ultra
-40% Off
-$149
-/ month
-$249
-billed yearly as $1788
-Subscribe
-Daily Credits 60 (reset daily)
-25000
-Credits reset every 30 days
-Watermark-free & Ad-free
-Access to HD resolution (up to
-4K
-)
-Access to all image models
-Get
-50%
-extra on Credit Packs
-8
-concurrent generation
-Faster generations (PixVerse models only)
-Save
-20%
-on Credits in Preview Mode (PixVerse models only)
-Unlimited FREE generations with Off-Peak Mode (PixVerse models only)
-Batch Creation (up to 4 at a time)
-Unlimited Image Generation in Relax Mode
-Qwen-image
-365 Unlimited
-GPT Image 2.5 Sunburst
-365 Unlimited
-GPT Image 2.5 Flare
-365 Unlimited
-GPT Image 2
-365 Unlimited
-Nano Banana 2.1
-365 Unlimited
-Nano Banana Pro
-365 Unlimited
-Nano Banana 2
-365 Unlimited
-Nano Banana 2 Lite
-365 Unlimited
-Nano Banana
-365 Unlimited
-Seedream 5.0 Pro
-365 Unlimited
-Seedream 5.0 Lite
-365 Unlimited
-Seedream 4.5
-365 Unlimited
-Seedream 4.0
-365 Unlimited
-Kling O3
-365 Unlimited
-Kling 3.0
-365 Unlimited
-Access to More Video Models
-Seedance 2.5
-20% OFF
-Seedance 2.0 (Standard)
-40% OFF
-Seedance 2.0 (Fast & Mini)
-70% OFF
-MiniMax H3
-20% OFF
-MiniMax H3 Max
-20% OFF
-FLUX 3
-20% OFF
-Wan 3.0
-20% OFF
-Gemini Omni Flash
-40% OFF
-Happy Horse 1.0
-40% OFF
-Kling 4.0
-20% OFF
-Kling O3 (Standard & Pro)
-40% OFF
-Grok Imagine 1.5
-40% OFF
-Team Ultra
-25% Off
-$149
-per seat
-/ month
-$199
-billed yearly as $1788
-Number of seats
-Subscribe Now
-Team exclusive
-Shared Credit pool across all members
-Unified workspace with shared assets
-Role-based member management
-Highest generation priority
-Usage analytics
-Centralized billing
-25000
-Credits reset every 30 days
-Watermark-free & Ad-free
-Access to HD resolution (up to
-4K
-)
-Access to all image models
-12
-concurrent generation
-Faster generations (PixVerse models only)
-Save
-20%
-on Credits in Preview Mode (PixVerse models only)
-Off-Peak Mode: Save
-100%
-on Credits (PixVerse models only)
-Batch Creation (up to 4 at a time)
-Unlimited Image Generation in Relax Mode
-Qwen-image
-365 Unlimited
-GPT Image 2.5 Sunburst
-365 Unlimited
-GPT Image 2.5 Flare
-365 Unlimited
-GPT Image 2
-365 Unlimited
-Nano Banana 2.1
-365 Unlimited
-Nano Banana Pro
-365 Unlimited
-Nano Banana 2
-365 Unlimited
-Nano Banana 2 Lite
-365 Unlimited
-Nano Banana
-365 Unlimited
-Seedream 5.0 Pro
-365 Unlimited
-Seedream 5.0 Lite
-365 Unlimited
-Seedream 4.5
-365 Unlimited
-Seedream 4.0
-365 Unlimited
-Kling O3
-365 Unlimited
-Kling 3.0
-365 Unlimited
-Access to More Video Models
-Seedance 2.5
-20% OFF
-Seedance 2.0 (Standard)
-40% OFF
-Seedance 2.0 (Fast & Mini)
-70% OFF
-MiniMax H3
-20% OFF
-MiniMax H3 Max
-20% OFF
-FLUX 3
-20% OFF
-Wan 3.0
-20% OFF
-Gemini Omni Flash
-40% OFF
-Happy Horse 1.0
-40% OFF
-Kling 4.0
-20% OFF
-Kling O3 (Standard & Pro)
-40% OFF
-Grok Imagine 1.5
-40% OFF
-Basic
-$0
-/ month
-Your Current Plan
-Initial Credits 60
-Daily Credits 30 (reset daily)
+Flux 3
+AI Image Models
+GPT Image 2.5
+Resource
+Read, Watch, and Explore PixVerse
+Blog
+News
+Research
 Enterprise
-Starting from
-$100
-For enterprises & teams
-Get API Access
-Full API access & documentation
-Volume-based pricing discounts
-Custom effect configurations
-Higher concurrency limits
-Usage analytics & monitoring
-Credit Pack
-500
-500
-$5
-Purchase
-2000
-2,000
-$20
-Purchase
-5000
-5,000
-$50
-Purchase
-10000
-10,000
-$100
-Purchase
-Plan Details
-Feature
-Basic
-Standard
-Pro
-Premium
-Ultra
-Team Ultra
-Initial Credits
-60
-60
-60
-60
-60
--
-Daily Credits
-30
-60
-60
-60
-60
--
-Membership Credits
-1200
-6000
-15000
-25000
-25000
-Watermark-free
-Unlimited Template access
-Access to all image models
-Video Resolution
-Up to 540P
-Up to 720P
-Up to 4K
-Up to 4K
-Up to 4K
-Up to 4K
-Bonus on Credit Pack Purchases
-10%
-30%
-50%
-50%
-Concurrent Generations
-2
-3
-5
-8
-8
-12
-Faster Generation Speed (PixVerse models only)
-Preview Mode Discount (PixVerse models only)
-Save 20%
-Save 20%
-Save 20%
-Save 20%
-Save 20%
-Off-Peak Mode Discount (PixVerse models only)
-Save 30%
-Save 50%
-Save 100%
-Save 100%
-Folders for Asset Management
-Up to 30
-Unlimited
-Unlimited
-Unlimited
-Unlimited
-Batch Creation (up to 4 at a time)
-Unlimited Free Image Generations in Relax Mode (365 Days)
-Qwen-image
-Nano Banana 2 Lite
-Qwen-image
-Nano Banana 2.1
-Nano Banana 2
-Nano Banana 2 Lite
-Nano Banana
-Seedream 4.0
-Qwen-image
-GPT Image 2.5 Sunburst
-GPT Image 2.5 Flare
-GPT Image 2
-Nano Banana 2.1
-Nano Banana Pro
-Nano Banana 2
-Nano Banana 2 Lite
-Nano Banana
-Seedream 5.0 Pro
-Seedream 5.0 Lite
-Seedream 4.5
-Seedream 4.0
-Kling O3
-Kling 3.0
-Qwen-image
-GPT Image 2.5 Sunburst
-GPT Image 2.5 Flare
-GPT Image 2
-Nano Banana 2.1
-Nano Banana Pro
-Nano Banana 2
-Nano Banana 2 Lite
-Nano Banana
-Seedream 5.0 Pro
-Seedream 5.0 Lite
-Seedream 4.5
-Seedream 4.0
-Kling O3
-Kling 3.0
-Access to Video Models (& Discounts)
-All PixVerse Models
-All PixVerse Models
-All PixVerse Models
+Scale Video Creation
+Enterprise Homepage
+Developers
+Growth Studio
+Industry Solutions
+Entertainment
+Real Estate
+Drama
+Marketing
+Community
+Careers
+Affiliate
+Earn
+Download App
+Log In
+Try PixVerse
+API
+Page Not Found
+Sorry, the page you're looking for doesn't exist or has been removed.
+Back to Home
+Products
+Products
+PixVerse Web
+PixVerse CLI & Plugin
+PixVerse Canvas
+PixVerse Agent
+API Platform
+Models
+Models
+PixVerse V6
+PixVerse R2
+GPT Image 2.5
 Seedance 2.5
-Seedance 2.0 (Standard)
-Seedance 2.0 (Fast & Mini) (10% OFF)
+Seedance 2
 MiniMax H3
-MiniMax H3 Max
-FLUX 3
-Wan 3.0
-Gemini Omni Flash
-Happy Horse 1.0
-Kling 4.0
-Kling O3 (Standard & Pro)
-Grok Imagine 1.5
-All PixVerse Models
-Seedance 2.5
-Seedance 2.0 (Standard)
-Seedance 2.0 (Fast & Mini) (30% OFF)
-MiniMax H3
-MiniMax H3 Max
-FLUX 3
-Wan 3.0
-Gemini Omni Flash
-Happy Horse 1.0
-Kling 4.0
-Kling O3 (Standard & Pro)
-Grok Imagine 1.5
-All PixVerse Models
-Seedance 2.5 (20% OFF)
-Seedance 2.0 (Standard) (40% OFF)
-Seedance 2.0 (Fast & Mini) (70% OFF)
-MiniMax H3 (20% OFF)
-MiniMax H3 Max (20% OFF)
-FLUX 3 (20% OFF)
-Wan 3.0 (20% OFF)
-Gemini Omni Flash (40% OFF)
-Happy Horse 1.0 (40% OFF)
-Kling 4.0 (20% OFF)
-Kling O3 (Standard & Pro) (40% OFF)
-Grok Imagine 1.5 (40% OFF)
-All PixVerse Models
-Seedance 2.5 (20% OFF)
-Seedance 2.0 (Standard) (40% OFF)
-Seedance 2.0 (Fast & Mini) (70% OFF)
-MiniMax H3 (20% OFF)
-MiniMax H3 Max (20% OFF)
-FLUX 3 (20% OFF)
-Wan 3.0 (20% OFF)
-Gemini Omni Flash (40% OFF)
-Happy Horse 1.0 (40% OFF)
-Kling 4.0 (20% OFF)
-Kling O3 (Standard & Pro) (40% OFF)
-Grok Imagine 1.5 (40% OFF)
-Frequently Asked Questions
-Why Subscribe?
-Our subscription plans unlock premium features to elevate your creative experience. Benefits vary by plan and may include:
-- Higher-resolution outputs, up to 4K
-- Watermark-free & Ad-free
-- Access to more powerful video and image models
-- Faster generation speeds and more concurrent generations
-- Bonus Credits with Credit Pack purchases
-- Unlimited free image generations in Relax Mode on select models (available with eligible plans)
-- Savings on Credits in select generation modes
-Choose the plan that fits your creative needs and unlock more with PixVerse.
-What are the Credits?
-Credits are used for creating videos at PixVerse.
-1) Daily Credits renew every day at 00:00 UTC and expire at the end of the day if unused.
-2) Membership Credits refresh every 30 days from the exact date and time your subscription began, rather than at 0:00 UTC. Any unused Membership Credits expire when the new 30-day cycle begins.
-3) Bonus Credits are extra Credits obtained through purchases, rewards, and promotional events. These Credits never expire and will stay in your account until used.
-How do I get more Credits?
-There are multiple ways to obtain more Credits:
-1) Collect Daily Credits by logging in.
-2) Get Membership Credits by subscribing.
-3) Purchase Bonus Credits or earn Bonus Credits through promotional events and activities.
-How can I delete my account?
-We're sorry to hear you'd like to delete your account. If you wish to proceed, you can delete your account through the Delete Account option in User Info. Please back up any data you want to keep first. Your account will be permanently deleted after 5 days, and your subscription will be canceled at that time. After that, you will not be charged, and no future renewals will occur. During the 5-day cooling-off period, please cancel auto-renewal yourself if you don't want further charges. If your subscription was purchased through the App Store, it won't be canceled automatically. Please manage or cancel it in your App Store subscription settings. We'd be happy to welcome you back anytime!
-How can I get a refund?
-Please understand that AI-generated video results may be unstable and do not guarantee complete fulfillment of expected outcomes. We encourage you to make full use of the free Credits provided for your experience. We do not accept refund requests based on dissatisfaction with the generated results. More details about our refund policy:
-- Partial refunds are not supported.
-- Only subscriptions that are still within their validity period and have not been used, including annual and monthly plans, are eligible for a full refund. Expired subscriptions are not refundable, even if unused.
-- Credit Pack purchases are non-refundable, regardless of whether the Credits have been used.
-For refund inquiries, please contact us at support@pixverse.ai with your registered email, account ID, payment receipt, and purchased product details.
-Can't find the answer you're looking for? Read the
-FAQ
-or contact us at support@pixverse.ai.
+Flux 3
+AI Tools
+AI Tools
+All AI Tools
+Ad Master
+Director Shots
+Promo Mix
+Sound Effect Generator
+Image Region Editor
+Fashion Beat
+Magic Extend
+Video Expand
+Vibe MV
+Product Video Remix
+Resources
+Resources
+Blog
+Enterprise
+Developers
+Community
+News
+Research
+Careers
+Affiliate
+Brand Guidelines
+API Documentation
+AI Video Generator
+Image to Video
+Text to Video
+Contact & Support
+Contact & Support
+support@pixverse.ai
+Feedback
+About PixVerse
+Download App
+Create AI videos with PixVerse anytime, anywhere.
+Download on the
+App Store
+Download on the
+Google Play
+Legal
+Terms of Service
+Privacy Policy
+Community Guidelines
+PixVerse Platform Terms of Service
+Open Source Notice
+Â© PixVerse 2026

@@ -69,7 +69,6 @@ Boost productivity
 Access to Gemini 4 Argon for frontier performance in complex workflows.
 Expanded access to Gemini 3.1Â Pro and Deep Research in Gemini.
 Expanded access to Gemini 4 Argon in the Gemini app.
-Expanded access to Gemini 3 Pro in features such as Deep Search.
 Gemini in Google apps to help you proofread in Gmail and work smarter in Docs and Sheets. Plus, ask your Gmail inbox for an AI Overview (US only).
 Access to Tasks in Gemini.
 3
@@ -122,7 +121,6 @@ Higher access to Gemini 4 Carbon for deep frontier intelligence across coding, s
 Higher access to Gemini 4 Argon for frontier performance in complex workflows.
 Higher access to Gemini 4 Carbon in the Gemini app and AI Mode in Search.
 2
-Higher access to Gemini 3 Pro in features such as Deep Search. Plus, AI-powered calling for local businesses (US only).
 Gemini in Google apps to help you proofread in Gmail and work smarter in Docs and Sheets. Plus, ask your Gmail inbox for an AI Overview (US only).
 Higher limits to Chrome auto browse.
 4
@@ -775,7 +773,7 @@ plan
 Gemini Notebook with expanded access
 Google Search:
 2
-Get access to the Gemini 3Â Pro model to unlock interactive simulations and tools to answer your most complex questions, plus Deep Search, agentic capabilities, and more
+Get access to the Gemini 4 Carbon model in AI Mode
 Google Search: Early access to Personal Intelligence in AI Mode (US only)
 Google Antigravity: Expanded rate limits and access to Gemini 4 Argon in Google Antigravity, our agentic development platform
 Google Colab: Get expanded access to powerful accelerators and longer runtimes with 200 compute units per month
@@ -807,7 +805,7 @@ YouTube Premium
 individual plan
 Google Search:
 2
-Higher access to Gemini 3Â Pro model to unlock interactive simulations and tools to answers your most complex questions, plus Deep Search, agentic capabilities and more
+Higher access to the Gemini 4 Carbon model in AI Mode
 Google Antigravity: Higher rate limits and access to Gemini 4 Carbon and Gemini 4 Argon in Google Antigravity, our agentic development platform
 Google Colab: Get higher access to powerful accelerators and longer runtimes with 2,000 compute units per month
 Highest Remix generations and Veo 3
@@ -875,9 +873,7 @@ full list of countries
 Learn more
 .
 2.
-Gemini 3Â Pro model and Nano Banana Pro are available in select countries â see
-full list of countries with Gemini 3Â Pro in AI Mode
-and
+Nano Banana Pro in AI Mode is available in select countries â see
 full list of countries with Nano Banana Pro in AI Mode
 .
 3.
