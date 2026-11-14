@@ -1,0 +1,92 @@
+# Builds the GenCost Android app (a Trusted Web Activity: the website, full screen)
+# for Google Play. Run it by hand: Actions -> "Android app" -> Run workflow.
+#
+# Signing: one GitHub secret, ANDROID_KEY_PASSWORD (a long password Frode chose).
+# The first run with that secret makes the upload key and stores it in the repo
+# ENCRYPTED with that password (android/upload-key.jks.enc). Without the secret the
+# run makes a throwaway key: that build is only a test and must not be uploaded.
+name: Android app
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PW: ${{ secrets.ANDROID_KEY_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Bubblewrap
+        run: |
+          npm install -g @bubblewrap/cli@1
+          mkdir -p ~/.bubblewrap
+          echo "{\"jdkPath\":\"$JAVA_HOME\",\"androidSdkPath\":\"$ANDROID_HOME\"}" > ~/.bubblewrap/config.json
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+
+      - name: Signing key
+        id: key
+        working-directory: android
+        run: |
+          if [ -z "$PW" ]; then
+            echo "No ANDROID_KEY_PASSWORD secret: making a throwaway TEST key (do not upload this build)."
+            PW="test-only-$(openssl rand -hex 12)"
+            echo "::add-mask::$PW"
+            echo "PW=$PW" >> "$GITHUB_ENV"
+            echo "kind=TEST" >> "$GITHUB_OUTPUT"
+            keytool -genkeypair -keystore upload-key.jks -alias gencost -keyalg RSA -keysize 2048 -validity 10000 \
+              -storepass "$PW" -keypass "$PW" -dname "CN=GenCost, O=GenCost, C=NO" -noprompt
+          elif [ -f upload-key.jks.enc ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in upload-key.jks.enc -out upload-key.jks -pass env:PW
+            echo "kind=release" >> "$GITHUB_OUTPUT"
+          else
+            keytool -genkeypair -keystore upload-key.jks -alias gencost -keyalg RSA -keysize 2048 -validity 10000 \
+              -storepass "$PW" -keypass "$PW" -dname "CN=GenCost, O=GenCost, C=NO" -noprompt
+            openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -in upload-key.jks -out upload-key.jks.enc -pass env:PW
+            echo "kind=release" >> "$GITHUB_OUTPUT"
+            echo "new=1" >> "$GITHUB_OUTPUT"
+          fi
+          keytool -list -v -keystore upload-key.jks -alias gencost -storepass "$PW" | grep -E "SHA256:" | head -1 | tee fingerprint.txt
+
+      - name: Build
+        working-directory: android
+        env:
+          BUBBLEWRAP_KEYSTORE_PASSWORD: ${{ env.PW }}
+          BUBBLEWRAP_KEY_PASSWORD: ${{ env.PW }}
+        run: |
+          # every Play upload needs a higher version code: use the run number
+          jq ".appVersionCode = ${{ github.run_number }} | .appVersionName = \"1.0.${{ github.run_number }}\"" twa-manifest.json > t.json && mv t.json twa-manifest.json
+          bubblewrap update --skipVersionUpgrade
+          bubblewrap build --skipPwaValidation
+          mkdir -p ../android-out
+          cp app-release-bundle.aab "../android-out/gencost-${{ steps.key.outputs.kind }}-${{ github.run_number }}.aab"
+          cp app-release-signed.apk "../android-out/gencost-${{ steps.key.outputs.kind }}-${{ github.run_number }}.apk"
+          cp fingerprint.txt ../android-out/upload-key-fingerprint.txt
+
+      - name: Save the encrypted upload key (first real run only)
+        if: steps.key.outputs.new == '1'
+        run: |
+          git config user.name "GenCost Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add android/upload-key.jks.enc
+          git commit -m "Android: encrypted upload key [skip netlify]"
+          git push
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gencost-android-${{ steps.key.outputs.kind }}-${{ github.run_number }}
+          path: android-out/

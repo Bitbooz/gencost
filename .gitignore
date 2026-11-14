@@ -2,3 +2,6 @@
 .netlify
 hf-dataset/
 shorts-out/
+
+android/upload-key.jks
+android-out/
