@@ -43,10 +43,16 @@ def problems():
             kept.append(f"- {head.split('  ', 1)[-1].strip()}: " + "; ".join(why))
     if kept:
         out.append("**Prices could not be confirmed** for these tools, so their old prices were kept:\n" + "\n".join(kept[:15]))
-    dev = [l for l in read("devto-review.txt").splitlines() if l.startswith(TODAY) and "failed" in l]
+    def latest_failures(name, ok_word):
+        """Today's failures that came after the last success (a later retry that worked clears them)."""
+        lines = [l for l in read(name).splitlines() if l.startswith(TODAY)]
+        last_ok = max((n for n, l in enumerate(lines) if ok_word in l), default=-1)
+        return [l for l in lines[last_ok + 1:] if "failed" in l]
+
+    dev = latest_failures("devto-review.txt", "Posted on dev.to")
     if dev:
         out.append("**The weekly dev.to post failed:**\n" + "\n".join(f"- {l[18:]}" for l in dev[-3:]))
-    bs = [l for l in read("bluesky-review.txt").splitlines() if l.startswith(TODAY) and "failed" in l]
+    bs = latest_failures("bluesky-review.txt", "Posted on Bluesky")
     if bs:
         out.append("**The Bluesky post failed:**\n" + "\n".join(f"- {l[18:]}" for l in bs[-2:]))
     hf = [l for l in read("hf-review.txt").splitlines() if l.startswith(TODAY)]
