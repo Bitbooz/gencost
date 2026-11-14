@@ -34,5 +34,5 @@
   "isChromeOSOnly": false,
   "isMetaQuest": false,
   "fullScopeUrl": "https://getgencost.com/",
-  "minSdkVersion": 21
+  "minSdkVersion": 24
 }
