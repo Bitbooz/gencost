@@ -74,6 +74,8 @@ VIDEO = {
     # added 2026-11-13
     "dreamina": ["https://dreamina.capcut.com/pricing/dreamina-price"],
     "magichour": ["https://magichour.ai/pricing"],
+    # added 2026-11-14
+    "elyum": ["https://elyum.ai/pricing"],
 }
 VOICE = {
     "elevenlabs": "https://elevenlabs.io/pricing",
@@ -172,6 +174,12 @@ def load_existing(path):
 # Extra help for pages where the prices are easy to misread.
 # "focus": lines with these words (and the lines around them) are put first, so they are never cut off.
 HINTS = {
+    "elyum": {
+        "focus": ["/month", "credits", "Plus", "Pro", "Ultra"],
+        "note": "Elyum: plans Plus, Pro and Ultra, each with a monthly price and credits per month (Plus $9, 900 credits). "
+                "The page says yearly billing saves 'up to 17%' but shows no yearly prices: leave yearly_price_usd out. "
+                "Leave out the free plan's one-time welcome credits.",
+    },
     "dreamina": {
         "focus": ["first month", "then USD", "/month", "credits"],
         "note": "Dreamina shows a first-month deal on each card, e.g. 'USD 0.29 first month, then USD 15.00/month'. "

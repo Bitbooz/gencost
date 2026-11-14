@@ -2,7 +2,7 @@
 
 > GenCost compares the prices of AI video, avatar, image, voice and music tools in US dollars. Every price is read from each tool's official pricing page every morning and checked before it goes live. Pages also show the real cost of one video clip (from each tool's own credits per clip) and hidden costs such as watermarks, expiring credits and commercial-use rules.
 
-Prices last updated: 2026-11-13. How prices are checked: https://getgencost.com/how-we-verify.html
+Prices last updated: 2026-11-14. How prices are checked: https://getgencost.com/how-we-verify.html
 
 ## Price lists
 - [AI video, avatar and image tools](https://getgencost.com/): every plan, monthly and yearly, with cost per clip
@@ -57,6 +57,7 @@ Prices last updated: 2026-11-13. How prices are checked: https://getgencost.com/
 - [Descript Pricing](https://getgencost.com/pages/voice/descript.html)
 - [Dreamina Pricing](https://getgencost.com/pages/dreamina.html)
 - [ElevenLabs Pricing](https://getgencost.com/pages/voice/elevenlabs.html)
+- [Elyum Pricing](https://getgencost.com/pages/elyum.html)
 - [Fish Audio Pricing](https://getgencost.com/pages/fish-audio.html)
 - [Fliki Pricing](https://getgencost.com/pages/voice/fliki.html)
 - [Freepik Pricing](https://getgencost.com/pages/freepik.html)

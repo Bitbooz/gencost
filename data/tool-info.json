@@ -329,6 +329,13 @@
    "free": "You can try the tools for free with a small credit allowance; paid plans have watermark-free exports and commercial use.",
    "credits": "Credits are listed per year on the pricing page (Creator 144,000 a year, about 12,000 a month). Higher plans also raise the maximum resolution: 1024px on Creator, 1472px on Pro, 4K on Business.",
    "added": "2026-11-13"
+  },
+  "Elyum": {
+   "about": "Elyum is an AI video and image platform that gives you many top models, including Kling 4.0, Kling 3, Seedance 2.5 and MiniMax H3, under one plan.",
+   "best_for": "Trying several leading video models from one subscription, starting at $9 a month.",
+   "free": "New accounts may get up to 100 welcome credits once, but they can't be used on Kling 4.0.",
+   "credits": "Each plan gives credits every month (Plus 900, Pro 3,500, Ultra 9,000). Kling 4.0 uses 17 credits per second at 720p and 25 at 1080p, with sound included.",
+   "added": "2026-11-14"
   }
  }
 }

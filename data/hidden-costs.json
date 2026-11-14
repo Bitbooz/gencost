@@ -391,6 +391,15 @@
    "source": "https://magichour.ai/pricing",
    "checked": "2026-11-13",
    "official": true
+  },
+  "Elyum": {
+   "items": [
+    "The free welcome credits can't be used on Kling 4.0",
+    "Yearly billing saves up to 17%, but the pricing page shows no yearly prices"
+   ],
+   "source": "https://elyum.ai/pricing",
+   "checked": "2026-11-14",
+   "official": true
   }
  }
 }

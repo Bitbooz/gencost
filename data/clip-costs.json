@@ -462,6 +462,33 @@
     }
    ],
    "note": "Dreamina's Seedance 2.5 page: 37 credits per generated second at 720p."
+  },
+  "Elyum": {
+   "model": "Kling 4.0, 720p",
+   "clips": {
+    "5": 85,
+    "10": 170
+   },
+   "source": "https://elyum.ai/models/kling-4",
+   "checked": "2026-11-14",
+   "official": true,
+   "options": [
+    {
+     "model": "Kling 4.0, 720p",
+     "clips": {
+      "5": 85,
+      "10": 170
+     }
+    },
+    {
+     "model": "Kling 4.0, 1080p",
+     "clips": {
+      "5": 125,
+      "10": 250
+     }
+    }
+   ],
+   "note": "Elyum's Kling 4.0 page: 17 credits per second at 720p, 25 at 1080p, sound included (confirmed by Elyum 2026-11-14)."
   }
  }
 }

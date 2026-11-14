@@ -1,0 +1,28 @@
+{
+  "platform": "elyum",
+  "plans": [
+    {
+      "name": "Plus",
+      "monthly_price_usd": 9,
+      "credits_or_minutes": 900,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 29,
+      "credits_or_minutes": 3500,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Ultra",
+      "monthly_price_usd": 69,
+      "credits_or_minutes": 9000,
+      "unit": "credits",
+      "offer": ""
+    }
+  ],
+  "source": "https://elyum.ai/pricing",
+  "last_checked": "2026-11-14 04:15"
+}

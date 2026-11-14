@@ -1,6 +1,6 @@
 {
  "category": "video",
- "updated": "2026-11-13 19:48",
+ "updated": "2026-11-14 04:12",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -1651,6 +1651,76 @@
    },
    "source_checked": "2026-11-13 19:50",
    "price_verified": "2026-11-13 19:50"
+  },
+  {
+   "name": "Elyum",
+   "page": "/pages/elyum.html",
+   "source": "https://elyum.ai/pricing",
+   "checked": "2026-11-14 04:15",
+   "plans": [
+    {
+     "name": "Plus",
+     "monthly_price_usd": 9,
+     "credits_or_minutes": 900,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    },
+    {
+     "name": "Pro",
+     "monthly_price_usd": 29,
+     "credits_or_minutes": 3500,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    },
+    {
+     "name": "Ultra",
+     "monthly_price_usd": 69,
+     "credits_or_minutes": 9000,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    }
+   ],
+   "clips": {
+    "model": "Kling 4.0, 720p",
+    "clips": {
+     "5": 85,
+     "10": 170
+    },
+    "source": "https://elyum.ai/models/kling-4",
+    "checked": "2026-11-14",
+    "official": true,
+    "options": [
+     {
+      "model": "Kling 4.0, 720p",
+      "clips": {
+       "5": 85,
+       "10": 170
+      }
+     },
+     {
+      "model": "Kling 4.0, 1080p",
+      "clips": {
+       "5": 125,
+       "10": 250
+      }
+     }
+    ],
+    "note": "Elyum's Kling 4.0 page: 17 credits per second at 720p, 25 at 1080p, sound included (confirmed by Elyum 2026-11-14)."
+   },
+   "hidden": {
+    "items": [
+     "The free welcome credits can't be used on Kling 4.0",
+     "Yearly billing saves up to 17%, but the pricing page shows no yearly prices"
+    ],
+    "source": "https://elyum.ai/pricing",
+    "checked": "2026-11-14",
+    "official": true
+   },
+   "source_checked": "2026-11-14 04:15",
+   "price_verified": "2026-11-14 04:15"
   }
  ]
 }
