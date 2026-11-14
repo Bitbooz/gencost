@@ -391,6 +391,20 @@ def check(data, text):
     return problems, notes
 
 
+def plan_set_problems(data, old):
+    """A redirected or half-loaded page can give one stray price (Hailuo once gave a nameless "$9.99" plan from a
+    banner and replaced all five plans). Plans without a name, or losing most of the known plans at once, are
+    never saved; a real change of plans shows up in price-review.txt and can be confirmed by hand."""
+    plans = data.get("plans") or []
+    if any(not str(p.get("name") or "").strip() for p in plans):
+        return ["a plan has no name (the page may not be the pricing page)"]
+    known = {str(p.get("name", "")).strip().lower() for p in (old or {}).get("plans", []) if (p.get("monthly_price_usd") or 0) > 0}
+    found = {str(p.get("name", "")).strip().lower() for p in plans if (p.get("monthly_price_usd") or 0) > 0}
+    if len(known) >= 2 and len(known & found) < (len(known) + 1) // 2:
+        return [f"only {len(known & found)} of the {len(known)} known paid plans were found ({', '.join(sorted(found)) or 'none'})"]
+    return []
+
+
 def review(name, url, problems, outcome="kept the previous prices"):
     stamp = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
     with open(REVIEW_FILE, "a", encoding="utf-8") as f:  # one run's problems
@@ -593,6 +607,11 @@ def process_platform(name, urls):
     if name in EUR_TOOLS:
         data = to_usd(name, data)
     old = load_existing(path)
+    shrink = plan_set_problems(data, old)
+    if shrink:
+        review(name, url, shrink)
+        print(f"  Not saved, the plans don't match the known plans: {shrink}")
+        return False
     data["platform"] = (old or {}).get("platform") or data.get("platform") or name
     data["source"] = url
     data["last_checked"] = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
