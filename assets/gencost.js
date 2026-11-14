@@ -503,6 +503,36 @@
     });
   };
 
+  /* ---------- app: installable on phones (manifest.webmanifest + /sw.js) ---------- */
+  if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
+    window.addEventListener("load", () => { navigator.serviceWorker.register("/sw.js").catch(() => {}); });
+  }
+  let installEvent = null;
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    installEvent = e;
+    const links = document.getElementById("navLinks");
+    if (!links || document.getElementById("installApp")) return;
+    const li = document.createElement("li");
+    li.innerHTML = '<a href="#" id="installApp">Install app</a>';
+    links.appendChild(li);
+    li.firstChild.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      if (!installEvent) return;
+      installEvent.prompt();
+      installEvent.userChoice.then((c) => {
+        if (window.gtag) gtag("event", "app_install_prompt", { outcome: c && c.outcome });
+        if (c && c.outcome === "accepted") li.remove();
+      });
+      installEvent = null;
+    });
+  });
+  window.addEventListener("appinstalled", () => {
+    const a = document.getElementById("installApp");
+    if (a) a.parentElement.remove();
+    if (window.gtag) gtag("event", "app_installed");
+  });
+
   document.addEventListener("DOMContentLoaded", () => {
     initChrome();
     GC.initToggles();

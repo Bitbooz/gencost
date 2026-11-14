@@ -222,6 +222,16 @@ def build_block(path, raw, canonical, noindex, desc):
     title = re.search(r"<title>([^<]*)</title>", raw)
     title = html.unescape(title.group(1)).strip() if title else "GenCost"
     lines = [START]
+    # app: icon, colour and the install file (manifest.webmanifest), on every page
+    lines += [
+        '<link rel="icon" href="/favicon.ico" sizes="32x32">',
+        '<link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">',
+        '<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">',
+        '<link rel="manifest" href="/manifest.webmanifest">',
+        '<meta name="theme-color" content="#07070c">',
+        '<meta name="apple-mobile-web-app-title" content="GenCost">',
+        '<meta name="mobile-web-app-capable" content="yes">',
+    ]
     if noindex:
         lines.append('<meta name="robots" content="noindex, follow">')
     if canonical:
@@ -319,6 +329,7 @@ def write_llms_txt(sitemap):
         f"- [AI music tools]({SITE}/music.html): every plan in US dollars",
         f"- [AI image generators]({SITE}/image.html): every plan in US dollars",
         f"- [Compare any tools]({SITE}/compare.html): two or three tools side by side",
+        f"- [Cheapest clip finder]({SITE}/clip.html): pick a video model, resolution and clip length, and see the cheapest plan to make it on every tool",
         f"- [Budget calculator]({SITE}/calculator.html): how many clips a budget buys",
         f"- [Project calculator]({SITE}/project.html): the cheapest plan per tool for a monthly amount of video, voiceover, music and images",
         f"- [Machine-readable prices]({SITE}/data/video.json), [voice]({SITE}/data/voice.json), [music]({SITE}/data/music.json), [image]({SITE}/data/image.json)",
@@ -424,6 +435,10 @@ def main():
                    '<a href="/project.html">try the project calculator →</a></div>')
         if path == "calculator.html" and "calc-switch" not in new:
             new = re.sub(r'(<h1>How much AI video can I get for my budget\?</h1>\s*<p class="lead">.*?</p>)', lambda m: m.group(1) + "\n" + XLINK_B, new, count=1, flags=re.S)
+        # footer: cheapest clip finder above the budget calculator (2026-11-14)
+        if '<li><a href="/clip.html">Cheapest clip finder</a></li>' not in new and '<li><a href="/calculator.html">Budget calculator</a></li>' in new:
+            new = new.replace('<li><a href="/calculator.html">Budget calculator</a></li>',
+                              '<li><a href="/clip.html">Cheapest clip finder</a></li>\n          <li><a href="/calculator.html">Budget calculator</a></li>', 1)
         # footer: project calculator next to the budget calculator
         if '<li><a href="/project.html">Project calculator</a></li>' not in new and '<li><a href="/calculator.html">Budget calculator</a></li>' in new:
             new = new.replace('<li><a href="/calculator.html">Budget calculator</a></li>',
@@ -508,7 +523,7 @@ def main():
         canon_now = canon_now.group(1) if canon_now else url_for(path)
         if not noindex and path not in DUPLICATES and canon_now == url_for(path):
             live = ("live-price" in new or "live-plans" in new or "GenCost.start" in new or "GC.start" in new
-                    or path in ("index.html", "voice.html", "music.html", "compare.html", "calculator.html"))
+                    or path in ("index.html", "voice.html", "music.html", "compare.html", "calculator.html", "clip.html"))
             lastmod = updated if live else (last_checked(new) or old_lastmod.get(canon_now) or TODAY)
             prio = "1.0" if path == "index.html" else ("0.9" if path.count("/") == 0 else ("0.8" if ARTICLE.match(path) else "0.7"))
             sitemap.append((canon_now, lastmod, "daily" if live else "weekly", prio))

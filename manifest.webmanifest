@@ -1,0 +1,23 @@
+{
+  "name": "GenCost · AI tool prices",
+  "short_name": "GenCost",
+  "description": "Today's prices for AI video, voice, image and music tools, and the cheapest place to make a clip.",
+  "id": "/",
+  "start_url": "/?source=app",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#07070c",
+  "theme_color": "#07070c",
+  "lang": "en",
+  "categories": ["utilities", "productivity", "business"],
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Cheapest clip finder", "short_name": "Clip finder", "url": "/clip.html?source=app", "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Compare tools", "short_name": "Compare", "url": "/compare.html?source=app", "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Budget calculator", "short_name": "Budget", "url": "/calculator.html?source=app", "icons": [{ "src": "/assets/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

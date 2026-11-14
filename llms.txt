@@ -10,6 +10,7 @@ Prices last updated: 2026-11-14. How prices are checked: https://getgencost.com/
 - [AI music tools](https://getgencost.com/music.html): every plan in US dollars
 - [AI image generators](https://getgencost.com/image.html): every plan in US dollars
 - [Compare any tools](https://getgencost.com/compare.html): two or three tools side by side
+- [Cheapest clip finder](https://getgencost.com/clip.html): pick a video model, resolution and clip length, and see the cheapest plan to make it on every tool
 - [Budget calculator](https://getgencost.com/calculator.html): how many clips a budget buys
 - [Project calculator](https://getgencost.com/project.html): the cheapest plan per tool for a monthly amount of video, voiceover, music and images
 - [Machine-readable prices](https://getgencost.com/data/video.json), [voice](https://getgencost.com/data/voice.json), [music](https://getgencost.com/data/music.json), [image](https://getgencost.com/data/image.json)
