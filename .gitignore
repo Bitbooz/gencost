@@ -5,3 +5,6 @@ shorts-out/
 
 android/upload-key.jks
 android-out/
+
+# copies of the companies pricing pages: only kept as a 14-day run download, never published
+*-raw.txt

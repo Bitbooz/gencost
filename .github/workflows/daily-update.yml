@@ -67,6 +67,18 @@ jobs:
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
         run: python auto_update.py
 
+      # The copied text of each pricing page (<name>-raw.txt) is only needed to find out why a
+      # reading failed. It is the companies' own text, so it is NOT published in the repo or on the
+      # site: it is kept for 14 days as a download on the run page (Actions -> this run -> Artifacts).
+      - name: Keep the raw pricing page text for 14 days (not published)
+        if: steps.gate.outputs.skip != '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-pricing-pages
+          path: "*-raw.txt"
+          retention-days: 14
+          if-no-files-found: ignore
+
       - name: Weekly dev.to post (only runs once a week, and only if the DEVTO_API_KEY secret is set)
         if: steps.gate.outputs.skip != '1'
         continue-on-error: true
@@ -82,7 +94,7 @@ jobs:
           echo "$(TZ=Europe/Oslo date +'%Y-%m-%d %H:%M') ${{ github.event_name }}" > last-auto-run.txt
           LANG_DIRS="es pt de fr ar he it ja ru zh-tw ko id tr hi vi pl uk zh"   # one folder per language (see translate_site.py)
           mkdir -p $LANG_DIRS && touch translate-review.txt devto-review.txt hf-review.txt feed.xml
-          git add -A *-pricing.json voice music image data price-review.txt article-review.txt seo-review.txt translate-review.txt devto-review.txt queue *-raw.txt pages $LANG_DIRS *.html sitemap.xml feed.xml hf-review.txt llms.txt price-changes.txt last-auto-run.txt
+          git add -A *-pricing.json voice music image data price-review.txt article-review.txt seo-review.txt translate-review.txt devto-review.txt queue pages $LANG_DIRS *.html sitemap.xml feed.xml hf-review.txt llms.txt price-changes.txt last-auto-run.txt
           if git diff --staged --quiet; then
             echo "No changes."
           else
