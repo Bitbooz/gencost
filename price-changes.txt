@@ -1,5 +1,6 @@
-Price changes in the last 7 days (for the price alert email), made 2026-11-14
+Price changes in the last 7 days (for the price alert email), made 2026-11-15
 
+2026-11-15  Dreamina Advanced: $159 → $79 a month
 2026-11-12  Higgsfield Ultra: paid yearly $99 → $65
 2026-11-12  Higgsfield Plus: paid yearly $47 → $35
 2026-11-10  InVideo Max: $250 → $150 a month, paid yearly $250 → $75

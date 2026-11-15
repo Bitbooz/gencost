@@ -205,18 +205,18 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Max
-80,000 units / month
-~3,214 Nano Banana 2.1 generations
-~262 Seedance 2.5 videos
+60,000 units / month
+~2,410 Nano Banana 2.1 generations
+~197 Seedance 2.5 videos
 40k
 60k
 80k
 100k
-$135
-$81
+$105
+$63
 /month
 Get Max
-Save $648
+Save $504
 compared to monthly
 Krea 3
 NEW
@@ -388,18 +388,18 @@ Unlimited relaxed generations
 Expanded concurrency and queueing
 Promo placeholder
 Max
-80,000 units / month
-~3,214 Nano Banana 2.1 generations
-~262 Seedance 2.5 videos
+60,000 units / month
+~2,410 Nano Banana 2.1 generations
+~197 Seedance 2.5 videos
 40k
 60k
 80k
 100k
-$135
-$81
+$105
+$63
 /month
 Get Max
-Save $648
+Save $504
 compared to monthly
 Krea 3
 NEW
@@ -545,7 +545,7 @@ Pro
 $21
 /mo
 Max
-$81
+$63
 /mo
 Features & License
 Access to Krea 3
@@ -1431,7 +1431,7 @@ $21
 /month
 Upgrade
 Max
-$81
+$63
 /month
 Upgrade
 Business

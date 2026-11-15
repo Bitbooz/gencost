@@ -1,19 +1,23 @@
-2026-11-14 18:24  Español (/es/): 109 of 110 pages, stored translations: 3421, JavaScript texts: 429/429
-2026-11-14 18:24  Português (/pt/): 109 of 110 pages, stored translations: 3422, JavaScript texts: 429/429
-2026-11-14 18:24  Deutsch (/de/): 109 of 110 pages, stored translations: 3401, JavaScript texts: 429/429
-2026-11-14 18:24  Français (/fr/): 109 of 110 pages, stored translations: 3410, JavaScript texts: 429/429
-2026-11-14 18:24  العربية (/ar/): 109 of 110 pages, stored translations: 3399, JavaScript texts: 429/429
-2026-11-14 18:24  עברית (/he/): 109 of 110 pages, stored translations: 3367, JavaScript texts: 429/429
-2026-11-14 18:24  Italiano (/it/): 109 of 110 pages, stored translations: 3359, JavaScript texts: 429/429
-2026-11-14 18:24  日本語 (/ja/): 109 of 110 pages, stored translations: 3365, JavaScript texts: 429/429
-2026-11-14 18:24  Русский (/ru/): 109 of 110 pages, stored translations: 3366, JavaScript texts: 429/429
-2026-11-14 18:24  繁體中文 (/zh-tw/): 109 of 110 pages, stored translations: 3378, JavaScript texts: 429/429
+2026-11-15 05:41  Español (/es/): 111 of 112 pages, stored translations: 3483, JavaScript texts: 456/456
+2026-11-15 05:41  Português (/pt/): 111 of 112 pages, stored translations: 3484, JavaScript texts: 456/456
+2026-11-15 05:41  Deutsch (/de/): 111 of 112 pages, stored translations: 3463, JavaScript texts: 456/456
+2026-11-15 05:41  Français (/fr/): 111 of 112 pages, stored translations: 3472, JavaScript texts: 456/456
+2026-11-15 05:41  العربية (/ar/): 111 of 112 pages, stored translations: 3461, JavaScript texts: 456/456
+2026-11-15 05:41  עברית (/he/): 111 of 112 pages, stored translations: 3429, JavaScript texts: 456/456
+2026-11-15 05:41  Italiano (/it/): 111 of 112 pages, stored translations: 3427, JavaScript texts: 456/456
+2026-11-15 05:41  日本語 (/ja/): 111 of 112 pages, stored translations: 3432, JavaScript texts: 456/456
+  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> Cheapest Kling [[0]]: <t2>Kling AI Standard
+2026-11-15 05:41  Русский (/ru/): 111 of 112 pages, stored translations: 3434, JavaScript texts: 456/456
+2026-11-15 05:41  繁體中文 (/zh-tw/): 111 of 112 pages, stored translations: 3446, JavaScript texts: 456/456
   - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its mo
-2026-11-14 18:24  한국어 (/ko/): 109 of 110 pages, stored translations: 3347, JavaScript texts: 429/429
-2026-11-14 18:24  Bahasa Indonesia (/id/): 109 of 110 pages, stored translations: 3363, JavaScript texts: 429/429
-2026-11-14 18:24  Türkçe (/tr/): 109 of 110 pages, stored translations: 3372, JavaScript texts: 429/429
-2026-11-14 18:24  हिन्दी (/hi/): 109 of 110 pages, stored translations: 3332, JavaScript texts: 429/429
-2026-11-14 18:24  Tiếng Việt (/vi/): 109 of 110 pages, stored translations: 3373, JavaScript texts: 429/429
-2026-11-14 18:24  Polski (/pl/): 109 of 110 pages, stored translations: 3372, JavaScript texts: 429/429
-2026-11-14 18:24  Українська (/uk/): 109 of 110 pages, stored translations: 3366, JavaScript texts: 429/429
-2026-11-14 18:24  简体中文 (/zh/): 109 of 110 pages, stored translations: 3369, JavaScript texts: 429/429
+2026-11-15 05:41  한국어 (/ko/): 111 of 112 pages, stored translations: 3418, JavaScript texts: 456/456
+2026-11-15 05:41  Bahasa Indonesia (/id/): 111 of 112 pages, stored translations: 3435, JavaScript texts: 456/456
+2026-11-15 05:41  Türkçe (/tr/): 111 of 112 pages, stored translations: 3442, JavaScript texts: 456/456
+  - translation did not keep the tags or numbers, kept English: Gemini Omni [[0]] Flash, released on November [[1]], [[2]], costs [[3]
+2026-11-15 05:41  हिन्दी (/hi/): 111 of 112 pages, stored translations: 3402, JavaScript texts: 456/456
+  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> Cheapest Kling [[0]]: <t2>Kling AI Standard
+2026-11-15 05:41  Tiếng Việt (/vi/): 111 of 112 pages, stored translations: 3443, JavaScript texts: 456/456
+  - translation did not keep the tags or numbers, kept English: Gemini Omni [[0]] Flash, released on November [[1]], [[2]], costs [[3]
+2026-11-15 05:41  Polski (/pl/): 111 of 112 pages, stored translations: 3443, JavaScript texts: 456/456
+2026-11-15 05:41  Українська (/uk/): 111 of 112 pages, stored translations: 3437, JavaScript texts: 456/456
+2026-11-15 05:41  简体中文 (/zh/): 111 of 112 pages, stored translations: 3440, JavaScript texts: 456/456

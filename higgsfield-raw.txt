@@ -1,3 +1,9 @@
+We use cookies and similar technologies to run Higgsfield and understand how you use it. Product analytics helps us improve Higgsfield, may be linked to your account, and stays on when you opt out of advertising. We and third-party providers use device and activity information to measure the effectiveness of our advertising and improve our campaigns. You can opt out of advertising tracking in Cookie Preferences or using the advertising opt-out button below. See our Cookie Notice
+
+Cookie Notice
+Accept All Cookies
+Reject Advertising Cookies
+Cookie Preferences
 Explore
 Image
 Video
@@ -26,7 +32,7 @@ Enterprise
 Pricing
 60% OFF
 Login
-Sign up
+Get started
 Black Friday 60% off
 BLACK FRIDAY
 60% OFF
@@ -71,14 +77,14 @@ BLACK FRIDAY
 00
 00
 days
-05
-05
+18
+18
 hours
-55
-55
+39
+39
 min
-56
-56
+00
+00
 sec
 All plans
 Don’t miss your chance to get up to 60% OFF.
@@ -167,10 +173,8 @@ Unlimited models
 Unlimited Seedream 5.0 Lite
 Unlimited Flux.2 Pro
 1K
-Seedance 2.5
 Nano Banana Pro
 Seedream 5.0 Pro
-GPT Image 2.5
 GPT Image 2.6
 Availability
 Free generations
@@ -183,10 +187,6 @@ Parallel generations 2 videos & 4 images
 Seedance 2.0 Fast & 2.0 Mini access
 Access to selected models only & features
 Early access to advanced AI features
-
-Up to 60% sale ends in…
-05h 55m 56s
-
 Plus
 Most popular
 
@@ -265,19 +265,10 @@ Unlimited & free gens work only on higgsfield.ai
 
 600 images Nano Banana Pro
 80 videos Seedance 2.5
-
-Unlimited sale ends in 05h 55m 56s
-
-Unlimited for 14 days
-Unlimited Seedance 2.5
-30s
-720p
-Unlimited for 60 days
+Unlimited models for 7 days
 Unlimited Nano Banana Pro
 2K
 Unlimited Seedream 5.0 Pro
-2K
-Unlimited GPT Image 2.5
 2K
 Unlimited GPT Image 2.6
 2K
@@ -294,15 +285,10 @@ Unlimited paid parallel generations
 All Seedance models
 All models & features
 Early access to advanced AI features
-
-Up to 60% sale ends in…
-05h 55m 56s
-
 Ultra
 3K
 6K
 9K
-−60%
 
 For ambitious AI projects
 
@@ -379,19 +365,10 @@ Unlimited & free gens work only on higgsfield.ai
 
 1,500 images Nano Banana Pro
 200 videos Seedance 2.5
-
-Unlimited sale ends in 05h 55m 56s
-
-Unlimited for 14 days
-Unlimited Seedance 2.5
-30s
-1080p
-Unlimited for 60 days
+Unlimited models for 7 days
 Unlimited Nano Banana Pro
 2K
 Unlimited Seedream 5.0 Pro
-2K
-Unlimited GPT Image 2.5
 2K
 Unlimited GPT Image 2.6
 2K
@@ -445,10 +422,6 @@ MCP & Supercomputer
 Monthly
 Annual
 Save up to 60%
-
-Up to 60% sale ends in…
-05h 55m 56s
-
 Plus
 $59
 $35
@@ -520,18 +493,16 @@ Save $288
 Expected monthly usage
 820 of 1,200 credits
 Included in plan
-1,200 credits / month
-14-day unlimited Seedance 2.5
-30s
-720p
-60-day unlimited Nano Banana Pro
+1,200 credits
+/ month
+Credit top-ups with discount
+7-day unlimited GPT Image 2.6
 2K
-60-day unlimited Seedream 5.0 Pro
+7-day unlimited Seedream 5.0 Pro
 2K
-60-day unlimited GPT Image 2.5
-2K
-60-day unlimited GPT Image 2.6
-2K
+All models & features
+Higgsfield Genjutsu 720p
+3 free gens
 Premium quality
 Compare features
 
@@ -567,7 +538,7 @@ Billed annually
 
 Get Plan
 Video
-Concurrent Jobs
+Concurrent Generations
 Seedance 2.5 720p
 35 credits/5s
 Seedance 2.5 1080p
@@ -708,7 +679,7 @@ Seedance Pro 1080p
 ~18 credits/5s
 View More
 Image
-Concurrent Jobs
+Concurrent Generations
 Nano Banana Pro
 2 credit/image
 Nano Banana Pro 4K
@@ -764,10 +735,10 @@ FLUX.2 Flex
 FLUX.2 Max
 4 credits/image
 View More
-1 concurrent job
-2 concurrent jobs
-6 concurrent jobs
-8 concurrent jobs
+1 concurrent generation
+2 concurrent generations
+Unlimited concurrent generations
+Unlimited concurrent generations
 Not included
 Not included
 411 videos
@@ -1044,10 +1015,10 @@ Not included
 180 videos
 800 videos
 2000 videos
-1 concurrent job
-4 concurrent jobs
-8 concurrent jobs
-8 concurrent jobs
+1 concurrent generation
+4 concurrent generations
+Unlimited concurrent generations
+Unlimited concurrent generations
 Included
 1620 images
 7200 images
@@ -1157,7 +1128,7 @@ Not included
 3600 images
 9000 images
 Lipsync Studio
-Concurrent Jobs
+Concurrent Generations
 Higgsfield Speak 2.0 720p
 ~14 credits/5s
 Wan 2.5 Speak Fast 720p
@@ -1183,10 +1154,10 @@ Infinite Talk 720p
 Sync Lipsync 3 4K 30FPS
 ~18 credits/2s
 View More
-1 concurrent job
-2 concurrent jobs
-6 concurrent jobs
-8 concurrent jobs
+1 concurrent generation
+2 concurrent generations
+6 concurrent generations
+8 concurrent generations
 Not included
 Not included
 1028 videos
@@ -1236,12 +1207,12 @@ Not included
 800 videos
 2000 videos
 Character
-Concurrent Jobs
+Concurrent Generations
 Max Generations Amount
-1 concurrent jobs
-1 concurrent jobs
-3 concurrent jobs
-3 concurrent jobs
+1 concurrent generation
+1 concurrent generation
+3 concurrent generations
+3 concurrent generations
 Up to 1 generation
 Up to 108 generations
 Up to 480 generations
