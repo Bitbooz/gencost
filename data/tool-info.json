@@ -108,10 +108,32 @@
    "credits": "Monthly credits don't roll over; credits you buy separately last 365 days and are used after your monthly credits."
   },
   "ElevenLabs": {
-   "about": "ElevenLabs is the best-known AI voice platform: text to speech, voice cloning, dubbing, sound effects and music, with a large library of voices in many languages.",
+   "about": "ElevenLabs (often written Eleven Labs or 11 Labs) is the best-known AI voice platform: text to speech, voice cloning, dubbing, sound effects and music, with a large library of voices in many languages.",
    "best_for": "High-quality narration, voice cloning and dubbing, especially if you use several of its tools.",
    "free": "The Free plan includes 10,000 credits a month, but no commercial license; that starts on Starter.",
-   "credits": "All tools share one monthly credit pool. Text to speech costs about 1 credit per character, so 30,000 credits is roughly 30 to 40 minutes of speech. Starter is $1 and Creator $11 for the first month."
+   "credits": "All tools share one monthly credit pool. Text to speech costs about 1 credit per character, so 30,000 credits is roughly 30 to 40 minutes of speech. Starter is $1 and Creator $11 for the first month.",
+   "faq": [
+    [
+     "How much does Eleven Labs (11 Labs) cost per month?",
+     "ElevenLabs has five paid plans: Starter {Starter:m} a month, Creator {Creator:m}, Pro {Pro:m}, Scale {Scale:m} and Business {Business:m}. Paid yearly, Starter is {Starter:y} a month and Creator {Creator:y} a month. There is also a Free plan without a commercial license."
+    ],
+    [
+     "How many minutes of speech do you get on each ElevenLabs plan?",
+     "Text to speech uses about 1 credit per character, so as a rough guide (November 2026): Starter's 30,000 credits give about 30 to 40 minutes of speech, Creator's 121,000 about 2 to 2.5 hours, Pro's 600,000 about 10 to 13 hours and Scale's 1,800,000 about 30 to 40 hours. Real minutes depend on the voice, the model and how fast it speaks."
+    ],
+    [
+     "What does one minute of ElevenLabs voice cost?",
+     "About 14 to 20 cents per minute of finished speech if you use your whole plan: Starter ({Starter:m}) and Creator ({Creator:m}) come out at roughly 15 to 20 cents, Pro ({Pro:m}) and bigger plans at about 14 cents or less. Dubbing, sound effects and music use the same credits, so they lower your minutes."
+    ],
+    [
+     "What is the cheapest way to pay for ElevenLabs?",
+     "Start with Starter: {Starter:m} a month, and only $1 for the first month, with a commercial license. If you know you'll keep it, paying yearly brings Starter down to {Starter:y} a month. Creator is half price for the first month only, then {Creator:m}."
+    ],
+    [
+     "Is ElevenLabs more expensive in my country?",
+     "GenCost shows ElevenLabs' prices in US dollars before tax, as listed on its official pricing page. Depending on where you live, VAT or sales tax can be added at checkout, and your bank may charge a currency conversion fee, so the final amount can be a little higher."
+    ]
+   ]
   },
   "Murf AI": {
    "about": "Murf AI is a voice-over studio with 200+ voices and an editor that lines speech up with your video or slides.",
