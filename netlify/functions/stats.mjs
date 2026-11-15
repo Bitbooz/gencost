@@ -66,8 +66,8 @@ td,th{padding:6px 8px;border-bottom:1px solid #222;text-align:left}td.n,th.n{tex
 ${rows.map((r) => `<tr><td style="white-space:nowrap">${new Date(r.day + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" })}</td><td class=n>${r.people}</td><td class=n>${r.ai}</td><td class=n>${r.mcp}</td></tr>`).join("")}</table>
 <h2>Which AI read GenCost</h2>${list(data.ai_by_assistant)}
 <h2>Where people came from</h2>${list(data.people_by_source)}
-<h2>Language: pages read by AI</h2>\${list(data.ai_by_language)}
-<h2>Language: visits by people</h2>\${list(data.people_by_language)}
+<h2>Language: pages read by AI</h2>${list(data.ai_by_language)}
+<h2>Language: visits by people</h2>${list(data.people_by_language)}
 <h2>Pages AI read most</h2>${list(data.pages_read_by_ai)}
 <h2>Pages people landed on</h2>${list(data.pages_people_landed_on)}
 <h2>AI connector: tools asked</h2>${list(data.mcp_tools)}
