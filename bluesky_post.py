@@ -63,6 +63,25 @@ def facets(text, url):
              "features": [{"$type": "app.bsky.richtext.facet#link", "uri": url}]}]
 
 
+def links_already_posted(session, auth):
+    """The article links in GenCost's latest Bluesky posts. Checked before every post, so the same
+    article is never posted twice, even if the workflow runs twice in a day (the saved state file
+    is written after the daily commit, so it cannot be trusted alone)."""
+    try:
+        r = requests.get(f"{API}/app.bsky.feed.getAuthorFeed", timeout=30, headers=auth,
+                         params={"actor": session["did"], "limit": 50, "filter": "posts_no_replies"})
+        if r.status_code != 200:
+            return set()
+        out = set()
+        for item in r.json().get("feed", []):
+            ext = (((item.get("post") or {}).get("record") or {}).get("embed") or {}).get("external") or {}
+            if ext.get("uri"):
+                out.add(ext["uri"].split("?")[0].rstrip("/"))
+        return out
+    except (requests.RequestException, ValueError):
+        return set()
+
+
 def main():
     preview = "--preview" in sys.argv
     handle = os.environ.get("BSKY_HANDLE", "").strip().lstrip("@")
@@ -86,7 +105,7 @@ def main():
     if not todo:
         print("No new article to post on Bluesky today.")
         return
-    session = None
+    session, seen = None, set()
     for item in todo[:2]:
         title, desc = meta(item["page"])
         url = f"{SITE}/{item['page']}"
@@ -102,7 +121,13 @@ def main():
                     log(f"Bluesky login failed: HTTP {r.status_code} {r.text[:200]}")
                     return
                 session = r.json()
+                auth = {"Authorization": f"Bearer {session['accessJwt']}"}
+                seen = links_already_posted(session, auth)
             auth = {"Authorization": f"Bearer {session['accessJwt']}"}
+            if url.split("?")[0].rstrip("/") in seen:
+                state["posted"][item["page"]] = {"date": today, "url": "already on Bluesky"}
+                log(f"Already on Bluesky, not posted again: {item['page']}")
+                continue
             embed = {"$type": "app.bsky.embed.external",
                      "external": {"uri": url, "title": title[:300], "description": desc[:300]}}
             if os.path.exists(IMAGE):
