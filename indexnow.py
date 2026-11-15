@@ -3,8 +3,9 @@ Tells Bing, Yandex, Naver, Seznam and Yep which GenCost pages changed (IndexNow)
 
 Runs in the workflow right after the morning update has been pushed. It looks at the pages the
 update changed (the last commit) and only reports pages whose content really changed: a page
-whose only change is today's "checked" date and time is left out, so the search engines are not
-asked to re-read 2,000 pages every morning. New pages are always reported.
+whose only changes are today's "checked" date and time, its language links, the rotating
+"Related guides" box or the data for Google in its <head> is left out, so the search engines are
+not asked to re-read 2,000 pages every morning. New pages are always reported.
 
 The key file (KEY.txt at the site root) proves to the search engines that the site is ours.
 Run by hand: python indexnow.py            (reports what the last commit changed)
@@ -22,6 +23,23 @@ HOST = "getgencost.com"
 KEY = "c62418c80e416da2b27ee6d3b7e0596d"
 ENDPOINT = "https://api.indexnow.org/indexnow"   # shared: passed on to every IndexNow search engine
 DATES = re.compile(r"\d{4}-\d{2}-\d{2}(?:[ T]\d{2}:\d{2}(?::\d{2})?)?|\d{1,2}:\d{2}")
+# Parts that change without the page's content changing: the <head> (hreflang links, data for
+# Google), the language menu, the rotating "Related guides" box, the nav and the footer.
+NOT_CONTENT = [re.compile(p, re.S | re.I) for p in (
+    r"<head\b.*?</head>",
+    r"<script\b.*?</script>",
+    r"<details class=\"lang-menu\".*?</details>",
+    r"<section class=\"related\".*?</section>",
+    r"<nav\b.*?</nav>",
+    r"<footer\b.*?</footer>",
+)]
+
+
+def content(html):
+    """The part of a page a reader (or a search engine) would call its content, without dates."""
+    for rx in NOT_CONTENT:
+        html = rx.sub("", html)
+    return DATES.sub("", html)
 
 
 def git(*args):
@@ -55,7 +73,7 @@ def changed_pages(base="HEAD~1", head="HEAD"):
             continue
         old = git("show", f"{base}:{path}")
         new = git("show", f"{head}:{path}")
-        if DATES.sub("", old) != DATES.sub("", new):
+        if content(old) != content(new):
             out.append(path)
     return out
 
