@@ -6,7 +6,13 @@
    "about": "HeyGen makes videos with AI avatars: you type a script and a realistic presenter speaks it, in 175+ languages. It is used for marketing, sales and training videos.",
    "best_for": "Talking-head and presenter videos without filming, and translating existing videos with lip-sync.",
    "free": "The Free plan makes up to 3 videos a month, up to 1 minute each, with a HeyGen watermark.",
-   "credits": "Credits are HeyGen's single currency. How many a video uses depends on the AI model, the video length and how complex it is. Monthly subscribers' unused credits roll over for one month; on yearly plans they build up until renewal."
+   "credits": "Credits are HeyGen's single currency. How many a video uses depends on the AI model, the video length and how complex it is. Monthly subscribers' unused credits roll over for one month; on yearly plans they build up until renewal.",
+   "faq": [
+    [
+     "How many credits does a HeyGen avatar video really use? (we tested it)",
+     "GenCost tested it on 2026-11-15: three short videos with the public avatar Kurt (32, 28 and 39 seconds, 99 seconds in total) used 65 credits. That is about 39 credits per minute of finished video, or about 20 credits for a 30-second clip. At today's prices that is about $1.90 per minute on Creator ({Creator:m} a month for 600 credits) and on Pro ({Pro:m} a month for 1,000 credits). Other avatar types and premium engines can use more credits."
+    ]
+   ]
   },
   "Higgsfield": {
    "about": "Higgsfield is a creative platform that gives you many top video and image models in one place, including Kling 3.0, Seedance 2.5 and Nano Banana Pro, with presets for cinematic shots and viral effects.",
