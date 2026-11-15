@@ -5,6 +5,10 @@ import { getStore } from "@netlify/blobs";
 
 const KEY_SHA256 = "3068fae61026ffa073b7200a7fe630032473b69938cda187e3cc162a0bfc353e";
 const KEEP_DAYS = 90;
+const LANGS = { es: "Spanish", pt: "Portuguese", de: "German", fr: "French", ar: "Arabic", he: "Hebrew", it: "Italian",
+  ja: "Japanese", ru: "Russian", "zh-tw": "Chinese (Traditional)", ko: "Korean", id: "Indonesian", tr: "Turkish",
+  hi: "Hindi", vi: "Vietnamese", pl: "Polish", uk: "Ukrainian", zh: "Chinese (Simplified)", no: "Norwegian", sv: "Swedish" };
+const langOf = (page) => LANGS[(page.split("/")[1] || "").toLowerCase()] || "English";
 
 async function sha256(text) {
   const d = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
@@ -23,7 +27,7 @@ export default async (req) => {
   const store = getStore("stats");
   const today = new Date();
   const rows = [];
-  const total = { ai: new Map(), src: new Map(), aiPages: new Map(), pages: new Map(), mcp: new Map() };
+  const total = { ai: new Map(), src: new Map(), aiPages: new Map(), pages: new Map(), mcp: new Map(), aiLang: new Map(), lang: new Map() };
   for (let i = 0; i < days; i++) {
     const day = new Date(today.getTime() - i * 86400000).toISOString().slice(0, 10);
     const { blobs } = await store.list({ prefix: day + "/" });
@@ -31,8 +35,8 @@ export default async (req) => {
     for (const b of blobs) {
       const [kind, who, path] = b.key.slice(11).split("|");
       const page = decodeURIComponent(path || "");
-      if (kind === "person") { r.people++; count(total.src, label(who)); count(total.pages, page); }
-      else if (kind === "ai") { r.ai++; count(total.ai, label(who)); count(total.aiPages, page); }
+      if (kind === "person") { r.people++; count(total.src, label(who)); count(total.pages, page); count(total.lang, langOf(page)); }
+      else if (kind === "ai") { r.ai++; count(total.ai, label(who)); count(total.aiPages, page); count(total.aiLang, langOf(page)); }
       else if (kind === "mcp") { r.mcp++; count(total.mcp, label(who)); }
     }
     rows.push(r);
@@ -44,7 +48,7 @@ export default async (req) => {
     await Promise.all(blobs.slice(0, 300).map((b) => store.delete(b.key)));
   } catch (_) {}
   const data = { days: rows, ai_by_assistant: top(total.ai, 20), people_by_source: top(total.src, 20),
-                 pages_read_by_ai: top(total.aiPages, 15), pages_people_landed_on: top(total.pages, 15), mcp_tools: top(total.mcp, 10) };
+                 pages_read_by_ai: top(total.aiPages, 15), ai_by_language: top(total.aiLang, 21), people_by_language: top(total.lang, 21), pages_people_landed_on: top(total.pages, 15), mcp_tools: top(total.mcp, 10) };
   if (url.searchParams.get("format") === "json")
     return Response.json(data, { headers: { "Cache-Control": "no-store", "X-Robots-Tag": "noindex" } });
   const list = (pairs) => pairs.length ? "<table>" + pairs.map(([k, v]) => `<tr><td>${esc(k || "/")}</td><td class=n>${v}</td></tr>`).join("") + "</table>" : "<p class=m>Nothing yet.</p>";
@@ -62,10 +66,12 @@ td,th{padding:6px 8px;border-bottom:1px solid #222;text-align:left}td.n,th.n{tex
 ${rows.map((r) => `<tr><td style="white-space:nowrap">${new Date(r.day + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" })}</td><td class=n>${r.people}</td><td class=n>${r.ai}</td><td class=n>${r.mcp}</td></tr>`).join("")}</table>
 <h2>Which AI read GenCost</h2>${list(data.ai_by_assistant)}
 <h2>Where people came from</h2>${list(data.people_by_source)}
+<h2>Language: pages read by AI</h2>\${list(data.ai_by_language)}
+<h2>Language: visits by people</h2>\${list(data.people_by_language)}
 <h2>Pages AI read most</h2>${list(data.pages_read_by_ai)}
 <h2>Pages people landed on</h2>${list(data.pages_people_landed_on)}
 <h2>AI connector: tools asked</h2>${list(data.mcp_tools)}
-<p class=m>"A user asked" means an assistant fetched the page while answering someone. Counting started 2026-11-16.</p></body></html>`;
+<p class=m>"A user asked" means an assistant fetched the page while answering someone. Counting started 2026-11-15.</p></body></html>`;
   return new Response(html, { headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store", "X-Robots-Tag": "noindex" } });
 };
 
