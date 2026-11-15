@@ -504,6 +504,16 @@ def process(path, tools, matcher, updated):
     elif box:
         anchor = h1.find_next_sibling("p") if h1 else None
         (anchor or h1 or art.contents[0]).insert_after(box)
+    # 2026-11-15: the short answer goes ABOVE the "Today's prices" table, so it sits in the first
+    # 100 words of the page, where AI search engines take most of their quotes from.
+    placed = art.find("section", class_="live-box")
+    if placed:
+        for nxt in placed.find_next_siblings(limit=2):   # the answer may sit under a short update note
+            cls = nxt.get("class") or []
+            if nxt.name in ("div", "section") and ("highlight-card" in cls or (("box" in cls or nxt.name == "section") and re.match(
+                    r"\s*(Quick answer|Quick take|Quick summary|In short)", nxt.get_text(" ", strip=True), re.I))):
+                placed.insert_before(nxt.extract())
+                break
 
     for gone in GONE:  # table rows and whole sections about a shut-down tool
         rx = re.compile(r"^\s*" + re.escape(gone) + r"\b", re.I)
