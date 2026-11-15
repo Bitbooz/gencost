@@ -1,0 +1,35 @@
+# Lists GenCost's MCP server (https://getgencost.com/mcp) in the official MCP Registry,
+# which other MCP directories copy from. Run by hand after changing server.json:
+# Actions -> "MCP Registry" -> Run workflow. No secrets: GitHub proves the repo is ours (OIDC).
+name: MCP Registry
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install mcp-publisher
+        run: |
+          curl -sSL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz" | tar xz mcp-publisher
+          ./mcp-publisher --help | head -5 || true
+
+      - name: Check server.json
+        run: ./mcp-publisher validate server.json || ./mcp-publisher publish --dry-run || true
+
+      - name: Log in (GitHub OIDC)
+        run: ./mcp-publisher login github-oidc
+
+      - name: Publish
+        run: ./mcp-publisher publish
+
+      - name: Show the listing
+        run: curl -s "https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.Bitbooz/gencost" | head -c 2000
