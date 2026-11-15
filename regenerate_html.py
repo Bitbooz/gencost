@@ -177,22 +177,34 @@ def record_history(category, platforms, day):
             rows = tool.setdefault(p["name"], [])
             m = round(float(m), 2)
             y = round(float(y), 2) if isinstance(y, (int, float)) else 0
+            key = f"{category}|{pf['name']}|{p['name']}"
+            # credits that go with the confirmed price, so a change can say "credits 17,600 -> 8,645" too
+            cr = p.get("credits_or_minutes")
+            cr = cr if isinstance(cr, (int, float)) and not isinstance(cr, bool) and cr > 0 else None
+            credits = hist.setdefault("credits", {})
             if not rows:
                 rows.append([day, m, y])
+                if cr:
+                    credits[key] = cr
                 continue
             if not y and rows[-1][2]:
                 y = rows[-1][2]  # a yearly price that could not be confirmed today is not a change
             if y and not rows[-1][2] and m == rows[-1][1]:
                 rows[-1][2] = y  # a yearly price found for the first time is not a change either
                 continue
-            key = f"{category}|{pf['name']}|{p['name']}"
             if rows[-1][1:] == [m, y]:
                 pending.pop(key, None)
+                if cr:
+                    credits[key] = cr
                 continue
             seen = pending.get(key)
             if seen and seen["value"] == [m, y] and seen.get("first_seen") != day:  # second reading must be on another day
                 rows.append([day, m, y])  # read the same new price twice: a real change
                 pending.pop(key, None)
+                if cr:
+                    if credits.get(key) and credits[key] != cr:
+                        hist.setdefault("credit_changes", {})[f"{key}|{day}"] = [credits[key], cr]
+                    credits[key] = cr
             else:
                 pending[key] = {"value": [m, y], "reading": checked, "first_seen": day}
         if not any(k.startswith(rkey + "|") for k in pending):

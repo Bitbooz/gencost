@@ -900,6 +900,12 @@ def change_text(c):
         bits.append(f"{money(om) if om else 'free'} → {money(nm) if nm else 'free'} a month")
     if oy != ny and (oy or ny):
         bits.append(f"paid yearly {money(oy) if oy else '–'} → {money(ny) if ny else '–'}")
+    cc = (HISTORY.get("credit_changes") or {}).get(f"{cat}|{tool}|{plan}|{day}")
+    if bits and cc:
+        text = f"credits {cc[0]:,.0f} → {cc[1]:,.0f}"
+        if om and nm and abs((nm / cc[1]) / (om / cc[0]) - 1) < 0.05:
+            text += ", so the price per credit hardly changed"
+        bits.append(text)
     return f"{tool} {plan}: " + ", ".join(bits) if bits else ""
 
 
