@@ -97,6 +97,12 @@ LANGS = {
            "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap",
            "rules": 'Write Simplified Chinese (简体中文), natural and clear, for readers in Singapore, Malaysia and around the world. Keep tool, model and plan names in Latin letters.',
            "words": '"credits" -> "积分". "/mo" -> "/月", "per month" -> "每月", "billed yearly"/"paid yearly" -> "按年付费". Prices stay in US dollars, written with the [[n]] tokens. Dates in running text: "October 15, 2026" -> "2026年10月15日".'},
+    "no": {"html": "nb", "hreflang": "no", "also": ["nb"], "name": "Norsk", "label": "NO",
+           "rules": 'Write natural Norwegian Bokmål, as Norwegian tech sites do. Use "du". Keep tool, model and plan names as they are.',
+           "words": '"credits" -> "kreditter". "/mo" -> "/mnd", "per month" -> "per måned", "billed yearly"/"paid yearly" -> "ved årlig betaling". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15. oktober 2026".'},
+    "sv": {"html": "sv", "hreflang": "sv", "name": "Svenska", "label": "SV",
+           "rules": 'Write natural Swedish, as Swedish tech sites do. Use "du". Keep tool, model and plan names as they are.',
+           "words": '"credits" -> "krediter". "/mo" -> "/mån", "per month" -> "per månad", "billed yearly"/"paid yearly" -> "vid årsbetalning". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 oktober 2026".'},
 }
 CODE = LANG = OUT = CACHE_FILE = UI_FILE = None
 
@@ -365,7 +371,7 @@ def grok_translate(items):
         model=MODEL, temperature=0,
         messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew", "it": "Italian", "ja": "Japanese", "ru": "Russian", "zh-tw": "Traditional Chinese (Taiwan and Hong Kong)",
                                                                      "ko": "Korean", "id": "Indonesian", "tr": "Turkish", "hi": "Hindi",
-                                                                     "vi": "Vietnamese", "pl": "Polish", "uk": "Ukrainian", "zh": "Simplified Chinese"}.get(CODE, LANGS[CODE]["name"]),
+                                                                     "vi": "Vietnamese", "pl": "Polish", "uk": "Ukrainian", "zh": "Simplified Chinese", "no": "Norwegian (Bokmål)", "sv": "Swedish"}.get(CODE, LANGS[CODE]["name"]),
                                                             rules=LANGS[CODE]["rules"], words=LANGS[CODE]["words"])
                    + json.dumps(items, ensure_ascii=False)}])
     text = r.choices[0].message.content.strip()

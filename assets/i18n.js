@@ -2,8 +2,8 @@
    calculators, buttons), and points links to the Spanish pages. The page text itself is
    translated when the site is built (translate_site.py). */
 (function () {
-  var LANGS = ["es", "pt", "de", "fr", "ar", "he", "it", "ja", "ru", "zh-tw", "ko", "id", "tr", "hi", "vi", "pl", "uk", "zh"];
-  var FOLDER = { "zh-hant": "zh-tw", "zh-hans": "zh" };   // page language -> folder
+  var LANGS = ["es", "pt", "de", "fr", "ar", "he", "it", "ja", "ru", "zh-tw", "ko", "id", "tr", "hi", "vi", "pl", "uk", "zh", "no", "sv"];
+  var FOLDER = { "zh-hant": "zh-tw", "zh-hans": "zh", "nb": "no", "nn": "no" };   // page language -> folder
   var full = (document.documentElement.lang || "").toLowerCase();
   var code = FOLDER[full] || full.slice(0, 2);
   if (LANGS.indexOf(code) < 0) return;
