@@ -584,3 +584,6 @@ main.page { padding-bottom: 24px; }
 :lang(zh-Hans) body, :lang(zh-Hans) h1, :lang(zh-Hans) h2, :lang(zh-Hans) h3 { font-family: 'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif; letter-spacing: 0; }
 :lang(zh-Hant) body, :lang(zh-Hant) h1, :lang(zh-Hant) h2, :lang(zh-Hant) h3, :lang(zh-Hant) .prose h1, :lang(zh-Hant) .prose h2 { font-family: 'Inter', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', system-ui, sans-serif; letter-spacing: 0; }
 :lang(ja) .prose p, :lang(ja) .prose li, :lang(ja) .prose td, :lang(zh) .prose p, :lang(zh) .prose li, :lang(zh) .prose td { line-break: strict; word-break: normal; overflow-wrap: anywhere; }
+
+/* "See a wrong price? Tell us" under the short answer on tool pages (2026-11-15) */
+.box.answer .report-price { display: block; margin-top: 8px; font-size: .85rem; opacity: .85; }

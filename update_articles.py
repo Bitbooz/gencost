@@ -21,6 +21,7 @@ import html
 import json
 import os
 import re
+import urllib.parse
 from datetime import datetime
 
 try:
@@ -848,14 +849,22 @@ def answer_box(name, tool):
         a += ". There is a free option with limited use (see below)."
     else:
         a += ". There is no free plan."
-    checked = (tool.get("checked") or "")[:10]
+    stamp = tool.get("checked") or ""
+    checked, at = stamp[:10], stamp[11:16]
     src = tool.get("source") or ""
     if "costbench" in src:
         tail = f"From CostBench, checked {checked}; this tool blocks automatic reading, so confirm on the official site."
+    elif checked:
+        # 2026-11-15: show the time too; GenCost reads each pricing page every morning
+        tail = (f"Checked {checked} at {at} Central European Time on the official pricing page. GenCost reads it again every morning."
+                if at else f"Checked {checked} on the official pricing page. GenCost reads it again every morning.")
     else:
-        tail = f"Checked {checked} on the official pricing page." if checked else "Entered by hand; confirm on the official site."
+        tail = "Entered by hand; confirm on the official site."
+    subject = urllib.parse.quote(f"Wrong price on GenCost: {name}")
+    report = (f' <a class="report-price" href="mailto:bitbooz@protonmail.com?subject={subject}" rel="nofollow">'
+              f'See a wrong price? Tell us</a>')
     return BeautifulSoup(f'<div class="box answer" data-auto="answer"><strong>In short:</strong> {html.escape(a)}'
-                         f' <span class="note">{html.escape(tail)}</span></div>', PARSER).find("div")
+                         f' <span class="note">{html.escape(tail)}{report}</span></div>', PARSER).find("div")
 
 
 INFO = load_tool_info()
