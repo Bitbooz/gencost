@@ -1,0 +1,17 @@
+# One-off check (2026-11-15): does package.json install, and do the counter files load? Safe to delete.
+name: Node check
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm install --no-audit --no-fund && npm ls @netlify/blobs
+      - run: node -e "import('@netlify/blobs').then(m => console.log('blobs ok:', typeof m.getStore))"
+      - run: node --check netlify/functions/stats.mjs && node --check netlify/functions/mcp.mjs && node --check netlify/edge-functions/count.js

@@ -2,6 +2,8 @@
 // today's AI tool prices from GenCost. Remote MCP over "Streamable HTTP", stateless, read-only.
 // Endpoint: https://getgencost.com/mcp
 
+import { getStore } from "@netlify/blobs";
+
 const SITE = "https://getgencost.com";
 const CATS = ["video", "image", "voice", "music"];
 const CAT_NAME = { video: "AI video & avatar", image: "AI image", voice: "AI voice & text to speech", music: "AI music" };
@@ -184,6 +186,15 @@ async function callTool(name, args, base) {
 function rpcResult(id, result) { return { jsonrpc: "2.0", id, result }; }
 function rpcError(id, code, message) { return { jsonrpc: "2.0", id: id ?? null, error: { code, message } }; }
 
+// Count each tool call for GenCost's private counter (/api/stats). Only the tool name is kept.
+async function countCall(tool) {
+  try {
+    const day = new Date().toISOString().slice(0, 10);
+    const name = String(tool || "unknown").replace(/[^a-z0-9_]/gi, "_").slice(0, 40);
+    await getStore("stats").set(`${day}/mcp|${name}||${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`, "1").catch(() => {});
+  } catch (_) { /* counting must never break the connector */ }
+}
+
 async function handle(msg, base) {
   if (!msg || msg.jsonrpc !== "2.0" || typeof msg.method !== "string") return rpcError(msg && msg.id, -32600, "Invalid request");
   const { id, method, params = {} } = msg;
@@ -201,6 +212,7 @@ async function handle(msg, base) {
     case "ping": return rpcResult(id, {});
     case "tools/list": return rpcResult(id, { tools: TOOLS });
     case "tools/call": {
+      await countCall(params.name);
       const out = await callTool(params.name, params.arguments || {}, base);
       if (out.error) return rpcResult(id, { content: [{ type: "text", text: out.error }], isError: true });
       const payload = { ...out.result, attribution: ATTR };

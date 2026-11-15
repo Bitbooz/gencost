@@ -1,0 +1,8 @@
+{
+  "name": "gencost",
+  "private": true,
+  "description": "Only for Netlify: the visitor and AI-read counter uses Netlify Blobs (private storage).",
+  "dependencies": {
+    "@netlify/blobs": ">=8.1.0 <12"
+  }
+}
