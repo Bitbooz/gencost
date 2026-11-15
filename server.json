@@ -1,5 +1,5 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.Bitbooz/gencost",
   "title": "GenCost AI tool prices",
   "description": "Today's prices of 40+ AI video, image, voice and music tools, checked every morning.",
@@ -8,7 +8,7 @@
     "url": "https://github.com/Bitbooz/gencost",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "remotes": [
     {
       "type": "streamable-http",

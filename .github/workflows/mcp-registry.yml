@@ -32,4 +32,5 @@ jobs:
         run: ./mcp-publisher publish
 
       - name: Show the listing
+        if: always()
         run: curl -s "https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.Bitbooz/gencost" | head -c 2000
