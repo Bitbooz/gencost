@@ -43,7 +43,7 @@ ORG_SAME_AS = ["https://github.com/Bitbooz/gencost", "https://dev.to/bitbooz", "
 OG_IMAGE = SITE + "/assets/og-image.png"
 TODAY = datetime.now(TZ).strftime("%Y-%m-%d")
 
-SKIP = {"google202bf6f8b03cfa8a.html", "yandex_249ddf068423e99d.html"}  # search engine verification files: leave exactly as they are
+SKIP = {"google202bf6f8b03cfa8a.html", "yandex_249ddf068423e99d.html", "naverd3d24067afbecd242b3e2927b4ed75b9.html"}  # search engine verification files: leave exactly as they are
 
 # Old project notes and test copies: reachable, but should not be in Google
 NOINDEX = [
