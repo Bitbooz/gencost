@@ -25,6 +25,7 @@ const AI = [
   ["YouBot", "You.com"],
   ["cohere-ai", "Cohere"],
   ["Bytespider", "ByteDance (Doubao)"],
+  ["DeepSeekBot", "DeepSeek"],
   ["Baiduspider", "Baidu (also feeds ERNIE)"],
   ["YisouSpider", "Alibaba Quark/Shenma (Qwen)"],
   ["Sogou", "Sogou (Tencent)"],
