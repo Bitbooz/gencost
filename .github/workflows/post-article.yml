@@ -1,0 +1,40 @@
+name: Post an article
+
+# By hand: GitHub -> Actions -> Post an article -> Run workflow, and give the page (e.g. pages/xyz.html).
+# Posts it on X (no link) and Bluesky (with link card) now. Normally the daily run does this for each new article.
+
+on:
+  workflow_dispatch:
+    inputs:
+      page:
+        description: "The article, e.g. pages/gencost-now-in-norwegian-and-swedish-2026.html"
+        required: true
+
+jobs:
+  post:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Post on X
+        continue-on-error: true
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          X_WITH_LINK: ${{ vars.X_WITH_LINK }}
+          PAGE: ${{ inputs.page }}
+        run: python x_post.py --page "$PAGE"
+      - name: Post on Bluesky
+        continue-on-error: true
+        env:
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          PAGE: ${{ inputs.page }}
+        run: python bluesky_post.py --page "$PAGE"

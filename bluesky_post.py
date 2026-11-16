@@ -100,6 +100,9 @@ def main():
     today = now().date().isoformat()
     todo = [i for i in items if i.get("published") == today and i["page"] not in state["posted"]
             and os.path.exists(os.path.join(HERE, i["page"]))]
+    if "--page" in sys.argv:  # post one chosen article now (the "Post an article" workflow)
+        page = sys.argv[sys.argv.index("--page") + 1]
+        todo = [{"page": page}] if os.path.exists(os.path.join(HERE, page)) else []
     if preview:
         todo = todo or [i for i in items if re.fullmatch(r"\d{4}-\d{2}-\d{2}", i.get("published") or "")][-1:]
     if not todo:
