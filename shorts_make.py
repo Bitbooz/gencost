@@ -161,7 +161,7 @@ def shorts_feed(api, newest):
     from email.utils import format_datetime
     from xml.sax.saxutils import escape
     names = sorted({f[:-4] for f in api.list_repo_files(REPO, repo_type="dataset")
-                    if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.mp4", f)} | {newest}, reverse=True)[:15]
+                    if re.fullmatch(r"\d{4}-\d{2}-\d{2}(-\d+)?\.mp4", f)} | {newest}, reverse=True)[:15]
     items = []
     for n in names:
         try:
@@ -176,7 +176,8 @@ def shorts_feed(api, newest):
         if not m:
             continue
         url = f"https://huggingface.co/datasets/{REPO}/resolve/main/{n}.mp4"
-        when = format_datetime(dt.datetime.fromisoformat(n + "T07:00:00+00:00"))
+        extra = int(n[11:] or 0)
+        when = format_datetime(dt.datetime.fromisoformat(n[:10] + "T07:00:00+00:00") + dt.timedelta(hours=12 + extra))
         items.append(f"<item><title>{escape(m.group(1).strip())}</title><link>{url}</link><guid isPermaLink=\"false\">gencost-short-{n}</guid>"
                      f"<pubDate>{when}</pubDate><description>{escape(m.group(2).strip())}</description>"
                      f"<enclosure url=\"{url}\" type=\"video/mp4\" length=\"{os.path.getsize(os.path.join(OUT, n + '.mp4')) if os.path.exists(os.path.join(OUT, n + '.mp4')) else 0}\"/></item>")
@@ -214,7 +215,7 @@ def main():
         from huggingface_hub import HfApi
         api = HfApi(token=token)
         os.makedirs(OUT, exist_ok=True)
-        names = sorted(f[:-4] for f in api.list_repo_files(REPO, repo_type="dataset") if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.mp4", f))
+        names = sorted(f[:-4] for f in api.list_repo_files(REPO, repo_type="dataset") if re.fullmatch(r"\d{4}-\d{2}-\d{2}(-\d+)?\.mp4", f))
         if names:
             shorts_feed(api, names[-1])
             print(f"shorts.xml rebuilt with {min(len(names), 15)} Shorts: https://huggingface.co/datasets/{REPO}/resolve/main/shorts.xml")
@@ -227,6 +228,8 @@ def main():
     except (OSError, ValueError):
         items = []
     item = next((i for i in items if i.get("published") == day.isoformat()), None)
+    if "--page" in sys.argv:  # an extra Short for a chosen article now ("Make a Short" workflow)
+        item = {"page": sys.argv[sys.argv.index("--page") + 1]}
     if not item:
         print("No new article today, so no Short.")
         return
@@ -237,6 +240,13 @@ def main():
     shutil.rmtree(OUT, ignore_errors=True)
     imgs = render(slides(title, lines, day), os.path.join(OUT, "frames"))
     name = day.isoformat()
+    if "--page" in sys.argv:  # never replace the day's own Short: use 2026-11-16-2, -3, ...
+        from huggingface_hub import HfApi
+        have = set(HfApi(token=token).list_repo_files(REPO, repo_type="dataset"))
+        k = 2
+        while f"{name}-{k}.mp4" in have:
+            k += 1
+        name = f"{name}-{k}"
     video = os.path.join(OUT, f"{name}.mp4")
     to_video(imgs, video, durations(title, lines))
     t, d = caption(title, desc, item["page"])

@@ -1,0 +1,31 @@
+name: Make a Short
+
+# By hand: makes a YouTube Short for a chosen article now and adds it to the Shorts feed,
+# so Zapier uploads it to YouTube. Give the page, e.g. pages/xyz.html.
+on:
+  workflow_dispatch:
+    inputs:
+      page:
+        description: "The article, e.g. pages/gencost-now-in-norwegian-and-swedish-2026.html"
+        required: true
+
+jobs:
+  short:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: |
+          pip install requests tzdata playwright huggingface_hub
+          python -m playwright install --with-deps chromium || python -m playwright install chromium
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          PAGE: ${{ inputs.page }}
+        run: python shorts_make.py --page "$PAGE"
