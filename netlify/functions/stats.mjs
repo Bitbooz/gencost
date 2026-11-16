@@ -3,7 +3,7 @@
 // Only the SHA-256 fingerprint of the key is in this public code, never the key itself.
 import { getStore } from "@netlify/blobs";
 
-const KEY_SHA256 = "3068fae61026ffa073b7200a7fe630032473b69938cda187e3cc162a0bfc353e";
+const KEY_SHA256 = "7645ccca618d5385e7ad81f66763f780d7c9054f09900adaabcdf174cf8731b6";
 const KEEP_DAYS = 90;
 const LANGS = { es: "Spanish", pt: "Portuguese", de: "German", fr: "French", ar: "Arabic", he: "Hebrew", it: "Italian",
   ja: "Japanese", ru: "Russian", "zh-tw": "Chinese (Traditional)", ko: "Korean", id: "Indonesian", tr: "Turkish",
