@@ -10,6 +10,12 @@ Where the video goes (only if HF_TOKEN is set):
 and a comment on the GitHub issue "Today's YouTube Short" with the download link and the text to paste,
 so it arrives as an email / phone notification. Upload it from the YouTube app and add music there.
 
+Automatic upload: shorts.xml (an RSS feed of the latest Shorts, each with the video as an enclosure) is updated in the
+same Hugging Face repo. Zapier watches it ("RSS by Zapier: New item in feed" -> "YouTube: Upload video", using the
+enclosure URL as the file, the item title as the title and the item description as the description). Zapier's
+YouTube app is audited by Google, so the videos can be public; our own Google project would be locked to private.
+  Feed: https://huggingface.co/datasets/Bitbooz/gencost-shorts/resolve/main/shorts.xml
+
     python shorts_make.py                  # today's article (needs HF_TOKEN to upload; GH_TOKEN for the issue)
     python shorts_make.py --local PAGE     # only make shorts-out/short.mp4 from pages/PAGE.html
 """
@@ -150,6 +156,38 @@ def caption(title, desc, page):
     return f"{short_title} #shorts", text
 
 
+def shorts_feed(api, newest):
+    """RSS of the 15 newest Shorts in the Hugging Face repo, for Zapier's automatic YouTube upload."""
+    from email.utils import format_datetime
+    from xml.sax.saxutils import escape
+    names = sorted({f[:-4] for f in api.list_repo_files(REPO, repo_type="dataset")
+                    if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.mp4", f)} | {newest}, reverse=True)[:15]
+    items = []
+    for n in names:
+        try:
+            path = os.path.join(OUT, f"{n}.txt")
+            if not os.path.exists(path):
+                from huggingface_hub import hf_hub_download
+                path = hf_hub_download(REPO, f"{n}.txt", repo_type="dataset", token=api.token)
+            txt = open(path, encoding="utf-8").read()
+        except Exception:
+            continue
+        m = re.search(r"TITLE:\n(.*?)\n\nDESCRIPTION:\n(.*)", txt, re.S)
+        if not m:
+            continue
+        url = f"https://huggingface.co/datasets/{REPO}/resolve/main/{n}.mp4"
+        when = format_datetime(dt.datetime.fromisoformat(n + "T07:00:00+00:00"))
+        items.append(f"<item><title>{escape(m.group(1).strip())}</title><link>{url}</link><guid isPermaLink=\"false\">gencost-short-{n}</guid>"
+                     f"<pubDate>{when}</pubDate><description>{escape(m.group(2).strip())}</description>"
+                     f"<enclosure url=\"{url}\" type=\"video/mp4\" length=\"{os.path.getsize(os.path.join(OUT, n + '.mp4')) if os.path.exists(os.path.join(OUT, n + '.mp4')) else 0}\"/></item>")
+    rss = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>GenCost YouTube Shorts</title>'
+           f"<link>{SITE}</link><description>Daily GenCost Shorts, for automatic upload to YouTube.</description>"
+           + "".join(items) + "</channel></rss>\n")
+    open(os.path.join(OUT, "shorts.xml"), "w", encoding="utf-8").write(rss)
+    api.upload_file(path_or_fileobj=os.path.join(OUT, "shorts.xml"), path_in_repo="shorts.xml", repo_id=REPO,
+                    repo_type="dataset", commit_message=f"Shorts feed {newest}")
+
+
 def gh(*args):
     r = subprocess.run(["gh", *args], capture_output=True, text=True)
     if r.returncode:
@@ -200,6 +238,10 @@ def main():
         for fn in (f"{name}.mp4", f"{name}.txt"):
             api.upload_file(path_or_fileobj=os.path.join(OUT, fn), path_in_repo=fn, repo_id=REPO, repo_type="dataset",
                             commit_message=f"Short {name}")
+        try:
+            shorts_feed(api, name)
+        except Exception as e:  # the Short itself is uploaded; only the automatic-upload feed failed
+            print(f"Shorts feed failed: {e}")
     except Exception as e:
         print(f"Short upload failed: {e}")
         with open(os.path.join(HERE, "hf-review.txt"), "a", encoding="utf-8") as f:
