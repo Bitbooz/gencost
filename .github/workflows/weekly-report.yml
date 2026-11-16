@@ -1,0 +1,29 @@
+name: Weekly report
+
+# Every Monday morning: a short GenCost report as a GitHub issue (the GitHub app sends it to Frode's phone).
+# Optional secret STATS_KEY (the key from the private dashboard link) adds the counter numbers.
+# By hand: GitHub -> Actions -> Weekly report -> Run workflow.
+
+on:
+  schedule:
+    - cron: '41 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      issues: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Write the weekly report
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STATS_KEY: ${{ secrets.STATS_KEY }}
+        run: python weekly_report.py
