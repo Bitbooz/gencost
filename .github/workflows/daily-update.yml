@@ -116,6 +116,17 @@ jobs:
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
         run: python bluesky_post.py
 
+      - name: Post today's new article on X (only if the X secrets are set; about $0.015 a post without a link)
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          X_WITH_LINK: ${{ vars.X_WITH_LINK }}
+        run: python x_post.py
+
       - name: Make today's YouTube Short and send the download link (needs HF_TOKEN)
         if: steps.gate.outputs.skip != '1'
         continue-on-error: true
