@@ -12,6 +12,7 @@ Only today's new articles are posted, at most 2 a day. State: data/x-state.json.
 
     python x_post.py            # post (needs the secrets)
     python x_post.py --preview  # print the post text, never posts
+    python x_post.py --check    # check the keys (reads @bitbooz's own profile, about $0.001), never posts
 """
 import base64
 import datetime as dt
@@ -86,6 +87,17 @@ def main():
     keys = {"api_key": os.environ.get("X_API_KEY", "").strip(), "api_secret": os.environ.get("X_API_SECRET", "").strip(),
             "token": os.environ.get("X_ACCESS_TOKEN", "").strip(), "token_secret": os.environ.get("X_ACCESS_TOKEN_SECRET", "").strip()}
     with_link = os.environ.get("X_WITH_LINK", "").strip() == "1"
+    if "--check" in sys.argv:
+        missing = [n for n, k in [("X_API_KEY", "api_key"), ("X_API_SECRET", "api_secret"), ("X_ACCESS_TOKEN", "token"),
+                                  ("X_ACCESS_TOKEN_SECRET", "token_secret")] if not keys[k]]
+        if missing:
+            print("Missing secrets:", ", ".join(missing))
+            sys.exit(1)
+        print("Access token looks like an OAuth 1.0a token (number-dash-...):", bool(re.fullmatch(r"\d+-\w+", keys["token"])))
+        url = "https://api.x.com/2/users/me"
+        r = requests.get(url, timeout=30, headers={"Authorization": oauth_header("GET", url, keys)})
+        print("X answered:", r.status_code, r.text[:300])
+        sys.exit(0 if r.status_code == 200 else 1)
     if not preview and not all(keys.values()):
         print("No X_API_KEY / X_API_SECRET / X_ACCESS_TOKEN / X_ACCESS_TOKEN_SECRET secrets, so nothing was posted to X.")
         return
