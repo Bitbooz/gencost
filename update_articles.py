@@ -1359,6 +1359,22 @@ def emerging_page(tools, report):
     parts = [f'<h1>New &amp; Emerging AI Tools</h1>\n<p class="lead">Smaller and newer AI tools for video, images, voice and music, '
              f'often cheaper than the big names or better at one job. Prices are read from each official pricing page every morning '
              f'and shown in US dollars.</p>\n<div class="no-live">']
+    # Quick answer in the first 100 words: the cheapest emerging tool per category, from today's prices
+    cheap = []
+    for cat in ("video", "image", "voice", "music"):
+        best = None
+        for n in EMERGING[cat]:
+            t = tools.get(n)
+            lo = cheapest_paid(t) if t else None
+            if lo and (best is None or lo["monthly_price_usd"] < best[1]["monthly_price_usd"]):
+                best = (n, lo)
+        if best:
+            cheap.append(f"<strong>{html.escape(best[0])}</strong> for {cat} ({cents(best[1]['monthly_price_usd'])}/mo)")
+    if cheap:
+        parts.insert(1, '<div class="box">\n<strong>Quick answer</strong><br/>\nThe cheapest emerging tools to start with today: '
+                     + ", ".join(cheap[:-1]) + (" and " if len(cheap) > 1 else "") + cheap[-1] + '.<br/>\n'
+                     f'Every tool below shows its cheapest paid plan, read from the official pricing page every morning.<br/>\n'
+                     f'Last checked: {now.strftime("%Y-%m-%d")}\n</div>')
     if added:
         parts.append(f'<h2>New on GenCost</h2><p class="note">Tools added in the last 60 days, newest first.</p><div class="cards">')
         parts += [card(n, t, a) for a, n, t in added[:12]]
