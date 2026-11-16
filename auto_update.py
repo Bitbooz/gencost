@@ -577,6 +577,22 @@ def to_usd(name, data):
     return data
 
 
+def keep_missing_credits(data, old):
+    """A page read sometimes misses the credits line (Luma, 2026-11-16) while the prices are the
+    same. Then keep yesterday's credits instead of dropping them, and say so in price-review.txt."""
+    kept = []
+    before = {p.get("name"): p for p in (old or {}).get("plans", [])}
+    for p in data.get("plans", []):
+        o = before.get(p.get("name"))
+        if (o and "credits_or_minutes" not in p and o.get("credits_or_minutes")
+                and o.get("monthly_price_usd") == p.get("monthly_price_usd")):
+            p["credits_or_minutes"] = o["credits_or_minutes"]
+            if o.get("unit"):
+                p["unit"] = o["unit"]
+            kept.append(f"{p['name']}: no credits found today, kept yesterday's {o['credits_or_minutes']:,}")
+    return kept
+
+
 def process_platform(name, urls):
     print(f"Processing {name}...")
     path = json_path(name)
@@ -612,6 +628,9 @@ def process_platform(name, urls):
         review(name, url, shrink)
         print(f"  Not saved, the plans don't match the known plans: {shrink}")
         return False
+    kept = keep_missing_credits(data, old)
+    if kept:
+        notes = list(notes or []) + kept
     data["platform"] = (old or {}).get("platform") or data.get("platform") or name
     data["source"] = url
     data["last_checked"] = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")

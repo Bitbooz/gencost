@@ -5,19 +5,25 @@
       "name": "Plus",
       "monthly_price_usd": 30,
       "yearly_price_usd": 25,
-      "offer": ""
+      "offer": "",
+      "credits_or_minutes": 10000,
+      "unit": "credits"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 90,
       "yearly_price_usd": 75,
-      "offer": ""
+      "offer": "",
+      "credits_or_minutes": 40000,
+      "unit": "credits"
     },
     {
       "name": "Ultra",
       "monthly_price_usd": 300,
       "yearly_price_usd": 250,
-      "offer": ""
+      "offer": "",
+      "credits_or_minutes": 150000,
+      "unit": "credits"
     }
   ],
   "source": "https://lumalabs.ai/pricing",
