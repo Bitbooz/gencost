@@ -76,6 +76,8 @@ VIDEO = {
     "magichour": ["https://magichour.ai/pricing"],
     # added 2026-11-14
     "elyum": ["https://elyum.ai/pricing"],
+    # added 2026-11-16 (Chinese platforms)
+    "wan": ["https://create.wan.video/pricing", "https://wan.video/pricing"],
 }
 VOICE = {
     "elevenlabs": "https://elevenlabs.io/pricing",
@@ -86,6 +88,8 @@ VOICE = {
     # added 2026-11-07
     "fishaudio": ["https://fish.audio/plan/", "https://fish.audio/pricing/"],
     "fliki": ["https://fliki.ai/pricing"],
+    # added 2026-11-16
+    "minimax": ["https://platform.minimax.io/docs/guides/pricing-speech.md", "https://platform.minimax.io/docs/guides/pricing-speech"],
 }
 IMAGE = {  # added 2026-11-08. Leonardo, Adobe Firefly and NightCafe block automated reading: their files in image/ are kept by hand
     "midjourney": ["https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"],
@@ -131,6 +135,7 @@ FALLBACK = {
 # the browser reads the page once per tab and gives the AI both.
 TABS = {
     "magichour": ["Monthly", "Yearly"],
+    "wan": ["Billed Monthly", "Billed Yearly"],
     "veed": ["Pay monthly", "Pay yearly"],
     "aiva": ["Billed monthly", "Billed yearly"],
     "kling": ["Monthly", "Yearly"],
@@ -174,6 +179,20 @@ def load_existing(path):
 # Extra help for pages where the prices are easy to misread.
 # "focus": lines with these words (and the lines around them) are put first, so they are never cut off.
 HINTS = {
+    "wan": {
+        "focus": ["/ month", "Billed", "Credits per month", "Pro", "Premium"],
+        "note": "Wan (Alibaba): plans Pro and Premium. Each card shows the yearly-billed price per month (Pro US$5) and the "
+                "monthly-billed price ($10, shown crossed out next to 'Billed Yearly (50%off)'). monthly_price_usd = the price "
+                "when billed monthly (Pro 10, Premium 40); yearly_price_usd = the per-month price when billed yearly (Pro 5, "
+                "Premium 20). credits_or_minutes = credits per month (Pro 300, Premium 1,200). Leave out the Free plan's daily check-in credits.",
+    },
+    "minimax": {
+        "focus": ["Audio Subscription", "Monthly", "Yearly", "Credits per month", "Starter", "Standard", "Scale"],
+        "note": "MiniMax Audio Subscription: plans Starter, Standard, Pro, Scale and Business. monthly_price_usd = the Monthly "
+                "Subscription price (Starter 5). The Yearly Subscription row is a price for the whole year (Starter $48): "
+                "yearly_price_usd = that yearly price divided by 12 (Starter 4). credits_or_minutes = credits (audio points) "
+                "per month (Starter 100,000), unit 'credits'. Ignore the Video Package table and the pay-as-you-go rates.",
+    },
     "elyum": {
         "focus": ["/month", "credits", "Plus", "Pro", "Ultra"],
         "note": "Elyum: plans Plus, Pro and Ultra, each with a monthly price and credits per month (Plus $9, 900 credits). "

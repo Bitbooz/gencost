@@ -1,0 +1,47 @@
+{
+  "platform": "minimax",
+  "plans": [
+    {
+      "name": "Starter",
+      "monthly_price_usd": 5,
+      "yearly_price_usd": 4.0,
+      "credits_or_minutes": 100000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Standard",
+      "monthly_price_usd": 30,
+      "yearly_price_usd": 24.0,
+      "credits_or_minutes": 300000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Pro",
+      "monthly_price_usd": 99,
+      "yearly_price_usd": 79.17,
+      "credits_or_minutes": 1100000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Scale",
+      "monthly_price_usd": 249,
+      "yearly_price_usd": 199.17,
+      "credits_or_minutes": 3300000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Business",
+      "monthly_price_usd": 999,
+      "yearly_price_usd": 799.17,
+      "credits_or_minutes": 20000000,
+      "unit": "credits",
+      "offer": ""
+    }
+  ],
+  "source": "https://platform.minimax.io/docs/guides/pricing-speech",
+  "last_checked": "2026-11-16 12:00"
+}

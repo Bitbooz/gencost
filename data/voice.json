@@ -1,6 +1,6 @@
 {
  "category": "voice",
- "updated": "2026-11-16 06:31",
+ "updated": "2026-11-16 11:36",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -364,6 +364,61 @@
    },
    "source_checked": "2026-11-16 06:26",
    "price_verified": "2026-11-16 06:26"
+  },
+  {
+   "name": "MiniMax Audio",
+   "page": "/pages/voice/minimax.html",
+   "source": "https://platform.minimax.io/docs/guides/pricing-speech",
+   "checked": "2026-11-16 12:00",
+   "plans": [
+    {
+     "name": "Starter",
+     "monthly_price_usd": 5,
+     "yearly_price_usd": 4.0,
+     "credits_or_minutes": 100000,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    },
+    {
+     "name": "Standard",
+     "monthly_price_usd": 30,
+     "yearly_price_usd": 24.0,
+     "credits_or_minutes": 300000,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    },
+    {
+     "name": "Pro",
+     "monthly_price_usd": 99,
+     "yearly_price_usd": 79.17,
+     "credits_or_minutes": 1100000,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    },
+    {
+     "name": "Scale",
+     "monthly_price_usd": 249,
+     "yearly_price_usd": 199.17,
+     "credits_or_minutes": 3300000,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    },
+    {
+     "name": "Business",
+     "monthly_price_usd": 999,
+     "yearly_price_usd": 799.17,
+     "credits_or_minutes": 20000000,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    }
+   ],
+   "source_checked": "2026-11-16 12:00",
+   "price_verified": "2026-11-16 12:00"
   }
  ]
 }

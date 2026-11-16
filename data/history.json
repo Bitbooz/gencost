@@ -712,6 +712,22 @@
      57.5
     ]
    ]
+  },
+  "Wan": {
+   "Pro": [
+    [
+     "2026-11-16",
+     10.0,
+     5.0
+    ]
+   ],
+   "Premium": [
+    [
+     "2026-11-16",
+     40.0,
+     20.0
+    ]
+   ]
   }
  },
  "voice": {
@@ -908,6 +924,43 @@
      "2026-11-08",
      0.0,
      0.0
+    ]
+   ]
+  },
+  "MiniMax Audio": {
+   "Starter": [
+    [
+     "2026-11-16",
+     5.0,
+     4.0
+    ]
+   ],
+   "Standard": [
+    [
+     "2026-11-16",
+     30.0,
+     24.0
+    ]
+   ],
+   "Pro": [
+    [
+     "2026-11-16",
+     99.0,
+     79.17
+    ]
+   ],
+   "Scale": [
+    [
+     "2026-11-16",
+     249.0,
+     199.17
+    ]
+   ],
+   "Business": [
+    [
+     "2026-11-16",
+     999.0,
+     799.17
     ]
    ]
   }
@@ -1208,7 +1261,9 @@
   "image|NightCafe": "2026-10-31 00:00",
   "video|Dreamina": "2026-11-16 06:24",
   "video|Magic Hour": "2026-11-16 06:24",
-  "video|Elyum": "2026-11-16 06:24"
+  "video|Elyum": "2026-11-16 06:24",
+  "video|Wan": "2026-11-16 12:00",
+  "voice|MiniMax Audio": "2026-11-16 12:00"
  },
  "image": {
   "Midjourney": {
@@ -1524,7 +1579,9 @@
   "image|OpenArt": "2026-11-16 06:31",
   "video|Dreamina": "2026-11-16 06:24",
   "video|Magic Hour": "2026-11-16 06:24",
-  "video|Elyum": "2026-11-16 06:24"
+  "video|Elyum": "2026-11-16 06:24",
+  "video|Wan": "2026-11-16 12:00",
+  "voice|MiniMax Audio": "2026-11-16 12:00"
  },
  "credit_changes": {
   "video|Dreamina|Advanced|2026-11-15": [
@@ -1676,6 +1733,13 @@
   "voice|ElevenLabs|Free": 10000,
   "voice|Murf AI|Free": 10,
   "voice|Murf AI|Creator": 24,
-  "voice|Murf AI|Business": 96
+  "voice|Murf AI|Business": 96,
+  "video|Wan|Pro": 300,
+  "video|Wan|Premium": 1200,
+  "voice|MiniMax Audio|Starter": 100000,
+  "voice|MiniMax Audio|Standard": 300000,
+  "voice|MiniMax Audio|Pro": 1100000,
+  "voice|MiniMax Audio|Scale": 3300000,
+  "voice|MiniMax Audio|Business": 20000000
  }
 }

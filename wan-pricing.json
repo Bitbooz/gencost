@@ -1,0 +1,23 @@
+{
+  "platform": "wan",
+  "plans": [
+    {
+      "name": "Pro",
+      "monthly_price_usd": 10,
+      "yearly_price_usd": 5,
+      "credits_or_minutes": 300,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
+      "name": "Premium",
+      "monthly_price_usd": 40,
+      "yearly_price_usd": 20,
+      "credits_or_minutes": 1200,
+      "unit": "credits",
+      "offer": ""
+    }
+  ],
+  "source": "https://create.wan.video/pricing",
+  "last_checked": "2026-11-16 12:00"
+}

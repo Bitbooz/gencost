@@ -1,6 +1,6 @@
 {
  "category": "video",
- "updated": "2026-11-16 06:31",
+ "updated": "2026-11-16 11:36",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -507,6 +507,8 @@
      "monthly_price_usd": 30,
      "yearly_price_usd": 25,
      "offer": "",
+     "credits_or_minutes": 10000,
+     "unit": "credits",
      "credits_period": "month"
     },
     {
@@ -514,6 +516,8 @@
      "monthly_price_usd": 90,
      "yearly_price_usd": 75,
      "offer": "",
+     "credits_or_minutes": 40000,
+     "unit": "credits",
      "credits_period": "month"
     },
     {
@@ -521,6 +525,8 @@
      "monthly_price_usd": 300,
      "yearly_price_usd": 250,
      "offer": "",
+     "credits_or_minutes": 150000,
+     "unit": "credits",
      "credits_period": "month"
     }
    ],
@@ -1741,6 +1747,34 @@
    },
    "source_checked": "2026-11-16 06:24",
    "price_verified": "2026-11-16 06:24"
+  },
+  {
+   "name": "Wan",
+   "page": "/pages/wan.html",
+   "source": "https://create.wan.video/pricing",
+   "checked": "2026-11-16 12:00",
+   "plans": [
+    {
+     "name": "Pro",
+     "monthly_price_usd": 10,
+     "yearly_price_usd": 5,
+     "credits_or_minutes": 300,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    },
+    {
+     "name": "Premium",
+     "monthly_price_usd": 40,
+     "yearly_price_usd": 20,
+     "credits_or_minutes": 1200,
+     "unit": "credits",
+     "offer": "",
+     "credits_period": "month"
+    }
+   ],
+   "source_checked": "2026-11-16 12:00",
+   "price_verified": "2026-11-16 12:00"
   }
  ]
 }

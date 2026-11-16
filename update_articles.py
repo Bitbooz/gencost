@@ -1300,9 +1300,9 @@ def monthly_reports(report):
 
 # ---------- Emerging tools page: rebuilt every day from the price data ----------
 EMERGING = {
-    "video": ["PixVerse", "Vidu", "Hailuo AI", "Krea", "Viggle", "Pictory", "VEED", "Dreamina", "Magic Hour", "Elyum"],
+    "video": ["PixVerse", "Vidu", "Hailuo AI", "Krea", "Viggle", "Pictory", "VEED", "Dreamina", "Magic Hour", "Elyum", "Wan"],
     "image": ["Recraft", "Ideogram", "OpenArt", "NightCafe"],
-    "voice": ["Fish Audio", "Cartesia", "Fliki"],
+    "voice": ["Fish Audio", "Cartesia", "Fliki", "MiniMax Audio"],
     "music": ["Mureka", "Stable Audio"],
 }
 EMERGING_MODELS = [

@@ -40,6 +40,7 @@ VIDEO_FILES = [
     "colossyan-pricing.json", "opusclip-pricing.json", "captions-pricing.json",
     "pictory-pricing.json", "veed-pricing.json",
     "dreamina-pricing.json", "magichour-pricing.json", "elyum-pricing.json",
+    "wan-pricing.json",
 ]
 
 # keyword in platform/file name -> (display name, page)
@@ -70,6 +71,7 @@ VIDEO_NAMES = [
     ("dreamina", "Dreamina", "/pages/dreamina.html"),
     ("magichour", "Magic Hour", "/pages/magic-hour.html"),
     ("elyum", "Elyum", "/pages/elyum.html"),
+    ("wan-pricing", "Wan", "/pages/wan.html"),
 ]
 
 VOICE_NAMES = [
@@ -83,6 +85,7 @@ VOICE_NAMES = [
     ("wellsaid", "WellSaid Labs", "/pages/voice/wellsaid.html"),
     ("fliki", "Fliki", "/pages/voice/fliki.html"),
     ("fishaudio", "Fish Audio", "/pages/fish-audio.html"),
+    ("minimax", "MiniMax Audio", "/pages/voice/minimax.html"),
 ]
 
 IMAGE_NAMES = [

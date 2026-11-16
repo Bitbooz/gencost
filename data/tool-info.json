@@ -364,6 +364,20 @@
    "free": "New accounts may get up to 100 welcome credits once, but they can't be used on Kling 4.0.",
    "credits": "Each plan gives credits every month (Plus 900, Pro 3,500, Ultra 9,000). Kling 4.0 uses 17 credits per second at 720p and 25 at 1080p, with sound included.",
    "added": "2026-11-14"
+  },
+  "Wan": {
+   "about": "Wan is Alibaba's AI video and image platform (wan.video), made by the Tongyi lab behind the Qwen models. It runs Alibaba's own Wan video models, including Wan 3.0.",
+   "best_for": "The lowest entry price among the big video models, especially if you pay for a year.",
+   "free": "The Free plan gives credits through a daily check-in, one video at a time and a watermark.",
+   "credits": "Each plan gives credits every month (Pro 300, Premium 1,200). Paying yearly halves the price. Pro adds 1080p and videos of 10 to 30 seconds.",
+   "added": "2026-11-16"
+  },
+  "MiniMax Audio": {
+   "about": "MiniMax Audio is the text-to-speech and voice-cloning service of MiniMax, the Chinese company behind Hailuo AI. It speaks 40+ languages with hundreds of voices.",
+   "best_for": "Cheap, natural speech in many languages, and an API for developers.",
+   "free": "There is a free tier with a small number of credits to test the voices.",
+   "credits": "Each plan gives audio credits every month (Starter 100,000, Standard 300,000, Pro 1,100,000). Paying yearly saves 20%. Through the API, speech costs $60 per million characters on Turbo and $100 on HD.",
+   "added": "2026-11-16"
   }
  }
 }
