@@ -210,6 +210,17 @@ def main():
     if not token:
         print("No HF_TOKEN, so no Short was made.")
         return
+    if "--feed" in sys.argv:  # only rebuild shorts.xml from the Shorts already on Hugging Face
+        from huggingface_hub import HfApi
+        api = HfApi(token=token)
+        os.makedirs(OUT, exist_ok=True)
+        names = sorted(f[:-4] for f in api.list_repo_files(REPO, repo_type="dataset") if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.mp4", f))
+        if names:
+            shorts_feed(api, names[-1])
+            print(f"shorts.xml rebuilt with {min(len(names), 15)} Shorts: https://huggingface.co/datasets/{REPO}/resolve/main/shorts.xml")
+        else:
+            print("No Shorts on Hugging Face yet.")
+        return
     day = today()
     try:
         items = json.load(open(os.path.join(HERE, "queue", "queue.json"), encoding="utf-8")).get("items", [])

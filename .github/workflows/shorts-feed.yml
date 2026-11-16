@@ -1,0 +1,20 @@
+name: Rebuild Shorts feed
+
+# By hand: rebuilds shorts.xml (the feed Zapier uses to upload Shorts to YouTube) from the Shorts on Hugging Face.
+on:
+  workflow_dispatch:
+
+jobs:
+  feed:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install huggingface_hub
+      - env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: python shorts_make.py --feed
