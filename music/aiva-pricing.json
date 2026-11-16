@@ -4,7 +4,7 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
-      "offer": "monthly price not shown"
+      "offer": ""
     },
     {
       "name": "Standard",
@@ -19,5 +19,5 @@
   ],
   "currency": "EUR converted to USD at 1.117",
   "source": "https://www.aiva.ai/pricing",
-  "last_checked": "2026-11-15 06:28"
+  "last_checked": "2026-11-16 06:28"
 }

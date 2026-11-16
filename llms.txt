@@ -2,7 +2,7 @@
 
 > GenCost compares the prices of AI video, avatar, image, voice and music tools in US dollars. Every price is read from each tool's official pricing page every morning and checked before it goes live. Pages also show the real cost of one video clip (from each tool's own credits per clip) and hidden costs such as watermarks, expiring credits and commercial-use rules.
 
-Prices last updated: 2026-11-15. How prices are checked: https://getgencost.com/how-we-verify.html
+Prices last updated: 2026-11-16. How prices are checked: https://getgencost.com/how-we-verify.html
 
 ## Price lists
 - [AI video, avatar and image tools](https://getgencost.com/): every plan, monthly and yearly, with cost per clip
@@ -47,6 +47,7 @@ Prices last updated: 2026-11-15. How prices are checked: https://getgencost.com/
 - [What Does a 60-Second AI Video Cost? 12 Tools Compared (2026)](https://getgencost.com/pages/cheapest-way-to-make-a-60-second-ai-video-2026.html)
 - [Where Is Kling 4.0 Cheapest? Every Platform Compared (2026)](https://getgencost.com/pages/cheapest-way-to-use-kling-4-0-2026.html)
 - [Where Is Seedance 2.5 Cheapest? Every Platform Compared (2026)](https://getgencost.com/pages/cheapest-way-to-use-seedance-2-5-2026.html)
+- [Yearly vs Monthly: How Much You Save on 30 AI Tools (2026)](https://getgencost.com/pages/cheapest-way-to-pay-for-ai-tools-yearly-vs-monthly-2026.html)
 
 ## Tool pricing pages
 - [AIVA Pricing](https://getgencost.com/pages/music/aiva.html)

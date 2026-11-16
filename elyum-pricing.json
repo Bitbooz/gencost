@@ -4,7 +4,6 @@
     {
       "name": "Plus",
       "monthly_price_usd": 9,
-      "yearly_price_usd": 7.5,
       "credits_or_minutes": 900,
       "unit": "credits",
       "offer": ""
@@ -12,7 +11,6 @@
     {
       "name": "Pro",
       "monthly_price_usd": 29,
-      "yearly_price_usd": 24.17,
       "credits_or_minutes": 3500,
       "unit": "credits",
       "offer": ""
@@ -20,12 +18,11 @@
     {
       "name": "Ultra",
       "monthly_price_usd": 69,
-      "yearly_price_usd": 57.5,
       "credits_or_minutes": 9000,
       "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://elyum.ai/pricing",
-  "last_checked": "2026-11-15 06:25"
+  "last_checked": "2026-11-16 06:24"
 }

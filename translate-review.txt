@@ -1,23 +1,26 @@
-2026-11-15 05:41  Español (/es/): 111 of 112 pages, stored translations: 3483, JavaScript texts: 456/456
-2026-11-15 05:41  Português (/pt/): 111 of 112 pages, stored translations: 3484, JavaScript texts: 456/456
-2026-11-15 05:41  Deutsch (/de/): 111 of 112 pages, stored translations: 3463, JavaScript texts: 456/456
-2026-11-15 05:41  Français (/fr/): 111 of 112 pages, stored translations: 3472, JavaScript texts: 456/456
-2026-11-15 05:41  العربية (/ar/): 111 of 112 pages, stored translations: 3461, JavaScript texts: 456/456
-2026-11-15 05:41  עברית (/he/): 111 of 112 pages, stored translations: 3429, JavaScript texts: 456/456
-2026-11-15 05:41  Italiano (/it/): 111 of 112 pages, stored translations: 3427, JavaScript texts: 456/456
-2026-11-15 05:41  日本語 (/ja/): 111 of 112 pages, stored translations: 3432, JavaScript texts: 456/456
-  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> Cheapest Kling [[0]]: <t2>Kling AI Standard
-2026-11-15 05:41  Русский (/ru/): 111 of 112 pages, stored translations: 3434, JavaScript texts: 456/456
-2026-11-15 05:41  繁體中文 (/zh-tw/): 111 of 112 pages, stored translations: 3446, JavaScript texts: 456/456
-  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its mo
-2026-11-15 05:41  한국어 (/ko/): 111 of 112 pages, stored translations: 3418, JavaScript texts: 456/456
-2026-11-15 05:41  Bahasa Indonesia (/id/): 111 of 112 pages, stored translations: 3435, JavaScript texts: 456/456
-2026-11-15 05:41  Türkçe (/tr/): 111 of 112 pages, stored translations: 3442, JavaScript texts: 456/456
-  - translation did not keep the tags or numbers, kept English: Gemini Omni [[0]] Flash, released on November [[1]], [[2]], costs [[3]
-2026-11-15 05:41  हिन्दी (/hi/): 111 of 112 pages, stored translations: 3402, JavaScript texts: 456/456
-  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> Cheapest Kling [[0]]: <t2>Kling AI Standard
-2026-11-15 05:41  Tiếng Việt (/vi/): 111 of 112 pages, stored translations: 3443, JavaScript texts: 456/456
-  - translation did not keep the tags or numbers, kept English: Gemini Omni [[0]] Flash, released on November [[1]], [[2]], costs [[3]
-2026-11-15 05:41  Polski (/pl/): 111 of 112 pages, stored translations: 3443, JavaScript texts: 456/456
-2026-11-15 05:41  Українська (/uk/): 111 of 112 pages, stored translations: 3437, JavaScript texts: 456/456
-2026-11-15 05:41  简体中文 (/zh/): 111 of 112 pages, stored translations: 3440, JavaScript texts: 456/456
+2026-11-16 05:59  Español (/es/): 112 of 113 pages, stored translations: 3581, JavaScript texts: 453/453
+2026-11-16 05:59  Português (/pt/): 112 of 113 pages, stored translations: 3582, JavaScript texts: 453/453
+2026-11-16 05:59  Deutsch (/de/): 112 of 113 pages, stored translations: 3562, JavaScript texts: 453/453
+2026-11-16 05:59  Français (/fr/): 112 of 113 pages, stored translations: 3571, JavaScript texts: 453/453
+2026-11-16 05:59  العربية (/ar/): 112 of 113 pages, stored translations: 3561, JavaScript texts: 453/453
+2026-11-16 05:59  עברית (/he/): 112 of 113 pages, stored translations: 3527, JavaScript texts: 453/453
+  - translation did not keep the tags or numbers, kept English: <t0>Real-world example</t0><t1/> [[0]] × [[1]]-second videos per month
+  - translation did not keep the tags or numbers, kept English: <t0>Real-world example</t0><t1/> [[0]] × [[1]]-second videos: Runway ≈
+2026-11-16 05:59  Italiano (/it/): 112 of 113 pages, stored translations: 3527, JavaScript texts: 453/453
+2026-11-16 05:59  日本語 (/ja/): 112 of 113 pages, stored translations: 3533, JavaScript texts: 453/453
+2026-11-16 05:59  Русский (/ru/): 112 of 113 pages, stored translations: 3534, JavaScript texts: 453/453
+2026-11-16 05:59  繁體中文 (/zh-tw/): 112 of 113 pages, stored translations: 3547, JavaScript texts: 453/453
+2026-11-16 05:59  한국어 (/ko/): 112 of 113 pages, stored translations: 3517, JavaScript texts: 453/453
+  - translation did not keep the tags or numbers, kept English: Text to speech uses about [[0]] credit per character, so as a rough gu
+2026-11-16 05:59  Bahasa Indonesia (/id/): 112 of 113 pages, stored translations: 3535, JavaScript texts: 453/453
+2026-11-16 05:59  Türkçe (/tr/): 112 of 113 pages, stored translations: 3542, JavaScript texts: 453/453
+  - translation did not keep the tags or numbers, kept English: GenCost tested it on [[0]]-[[1]]-[[2]]: three short videos with the pu
+2026-11-16 05:59  हिन्दी (/hi/): 112 of 113 pages, stored translations: 3503, JavaScript texts: 453/453
+2026-11-16 05:59  Tiếng Việt (/vi/): 112 of 113 pages, stored translations: 3544, JavaScript texts: 453/453
+2026-11-16 05:59  Polski (/pl/): 112 of 113 pages, stored translations: 3543, JavaScript texts: 453/453
+2026-11-16 05:59  Українська (/uk/): 112 of 113 pages, stored translations: 3537, JavaScript texts: 453/453
+2026-11-16 05:59  简体中文 (/zh/): 112 of 113 pages, stored translations: 3539, JavaScript texts: 453/453
+  - translation did not keep the tags or numbers, kept English: GenCost tested it on [[0]]-[[1]]-[[2]]: three short videos with the pu
+2026-11-16 05:59  Norsk (/no/): 112 of 113 pages, stored translations: 3281, JavaScript texts: 453/453
+2026-11-16 05:59  Svenska (/sv/): 112 of 113 pages, stored translations: 3280, JavaScript texts: 453/453
+  - translation did not keep the tags or numbers, kept English: Dreamina is ByteDance's own app and the home of Seedance. Seedance [[0

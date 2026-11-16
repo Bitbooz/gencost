@@ -1,6 +1,6 @@
-SEO check 2026-11-15 06:31
-138 pages checked, 66 changed today, 112 in sitemap.xml, 25 marked noindex
-Made by this script: 107 canonical links, 25 descriptions; today: 0 links moved to the main page, 0 titles fixed
+SEO check 2026-11-16 06:31
+139 pages checked, 112 changed today, 113 in sitemap.xml, 25 marked noindex
+Made by this script: 108 canonical links, 25 descriptions; today: 0 links moved to the main page, 0 titles fixed
 
 Needs a human:
   ai.html: title is 76 characters (Google shows about 60)
