@@ -5,6 +5,11 @@ name: Check X keys
 
 on:
   workflow_dispatch:
+    inputs:
+      post:
+        description: "Also post GenCost's first hello post on X (about $0.015)"
+        type: boolean
+        default: false
 
 jobs:
   check:
@@ -24,3 +29,12 @@ jobs:
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
         run: python x_post.py --check
+
+      - name: Post the hello post (only if "post" was ticked)
+        if: inputs.post
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: python x_post.py --hello

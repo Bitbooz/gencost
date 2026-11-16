@@ -98,6 +98,15 @@ def main():
         r = requests.get(url, timeout=30, headers={"Authorization": oauth_header("GET", url, keys)})
         print("X answered:", r.status_code, r.text[:300])
         sys.exit(0 if r.status_code == 200 else 1)
+    if "--hello" in sys.argv:  # one first post by hand (Check X keys workflow, "post" ticked)
+        text = ("GenCost is now on X! \U0001F44B\n\nEvery morning we read the official pricing pages of 40+ AI video, image, "
+                "voice and music tools, so you can see what they really cost in dollars.\n\nNew price comparisons here every day.")
+        r = requests.post(API, json={"text": text}, timeout=30,
+                          headers={"Authorization": oauth_header("POST", API, keys), "Content-Type": "application/json"})
+        print("X answered:", r.status_code, r.text[:300])
+        if r.status_code in (200, 201):
+            log(f"Posted the first GenCost post on X: https://x.com/i/status/{r.json()['data']['id']}")
+        sys.exit(0 if r.status_code in (200, 201) else 1)
     if not preview and not all(keys.values()):
         print("No X_API_KEY / X_API_SECRET / X_ACCESS_TOKEN / X_ACCESS_TOKEN_SECRET secrets, so nothing was posted to X.")
         return
