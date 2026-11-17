@@ -1,7 +1,12 @@
-Price changes in the last 7 days (for the price alert email), made 2026-11-16
+Price changes in the last 7 days (for the price alert email), made 2026-11-17
 
+2026-11-17  PixVerse Ultra: paid yearly $149 → $104.30, credits 25,000 → 30,000
+2026-11-17  PixVerse Standard: paid yearly $8 → $7.20
+2026-11-17  PixVerse Pro: paid yearly $24 → $20.40
+2026-11-17  PixVerse Premium: paid yearly $48 → $38.40
+2026-11-17  Higgsfield Ultra: paid yearly $65 → $50
+2026-11-17  Higgsfield Plus: paid yearly $35 → $33
 2026-11-15  Dreamina Advanced: $159 → $79 a month, credits 17,600 → 8,645, so the price per credit hardly changed
 2026-11-12  Higgsfield Ultra: paid yearly $99 → $65
 2026-11-12  Higgsfield Plus: paid yearly $47 → $35
 2026-11-10  InVideo Max: $250 → $150 a month, paid yearly $250 → $75
-2026-11-09  Pictory Professional: paid yearly $35 → $29.50

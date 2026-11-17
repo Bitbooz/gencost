@@ -1,6 +1,29 @@
-SEO check 2026-11-16 06:31
-139 pages checked, 112 changed today, 113 in sitemap.xml, 25 marked noindex
-Made by this script: 108 canonical links, 25 descriptions; today: 0 links moved to the main page, 0 titles fixed
+SEO check 2026-11-17 06:32
+142 pages checked, 114 changed today, 116 in sitemap.xml, 25 marked noindex
+Made by this script: 111 canonical links, 24 descriptions; today: 0 links moved to the main page, 1 titles fixed
+
+Links to pages that don't exist (fix or remove these links):
+  /ar/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /de/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /es/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /fr/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /he/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /hi/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /id/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /it/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /ja/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /ko/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /no/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /pages/is-the-bigger-ai-plan-cheaper-price-per-credit-2026.html  <- on 1 page(s), e.g. pages/kling-4-0-price-per-second-every-plan-2026.html
+  /pl/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /pt/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /ru/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /sv/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /tr/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /uk/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /vi/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /zh-tw/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
+  /zh/pages/voice/minimax.html  <- on 1 page(s), e.g. pages/voice/minimax.html
 
 Needs a human:
   ai.html: title is 76 characters (Google shows about 60)

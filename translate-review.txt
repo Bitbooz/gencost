@@ -1,26 +1,31 @@
-2026-11-16 05:59  Español (/es/): 112 of 113 pages, stored translations: 3581, JavaScript texts: 453/453
-2026-11-16 05:59  Português (/pt/): 112 of 113 pages, stored translations: 3582, JavaScript texts: 453/453
-2026-11-16 05:59  Deutsch (/de/): 112 of 113 pages, stored translations: 3562, JavaScript texts: 453/453
-2026-11-16 05:59  Français (/fr/): 112 of 113 pages, stored translations: 3571, JavaScript texts: 453/453
-2026-11-16 05:59  العربية (/ar/): 112 of 113 pages, stored translations: 3561, JavaScript texts: 453/453
-2026-11-16 05:59  עברית (/he/): 112 of 113 pages, stored translations: 3527, JavaScript texts: 453/453
-  - translation did not keep the tags or numbers, kept English: <t0>Real-world example</t0><t1/> [[0]] × [[1]]-second videos per month
-  - translation did not keep the tags or numbers, kept English: <t0>Real-world example</t0><t1/> [[0]] × [[1]]-second videos: Runway ≈
-2026-11-16 05:59  Italiano (/it/): 112 of 113 pages, stored translations: 3527, JavaScript texts: 453/453
-2026-11-16 05:59  日本語 (/ja/): 112 of 113 pages, stored translations: 3533, JavaScript texts: 453/453
-2026-11-16 05:59  Русский (/ru/): 112 of 113 pages, stored translations: 3534, JavaScript texts: 453/453
-2026-11-16 05:59  繁體中文 (/zh-tw/): 112 of 113 pages, stored translations: 3547, JavaScript texts: 453/453
-2026-11-16 05:59  한국어 (/ko/): 112 of 113 pages, stored translations: 3517, JavaScript texts: 453/453
-  - translation did not keep the tags or numbers, kept English: Text to speech uses about [[0]] credit per character, so as a rough gu
-2026-11-16 05:59  Bahasa Indonesia (/id/): 112 of 113 pages, stored translations: 3535, JavaScript texts: 453/453
-2026-11-16 05:59  Türkçe (/tr/): 112 of 113 pages, stored translations: 3542, JavaScript texts: 453/453
+2026-11-17 05:49  Español (/es/): 115 of 116 pages, stored translations: 3751, JavaScript texts: 453/453
+2026-11-17 05:49  Português (/pt/): 115 of 116 pages, stored translations: 3753, JavaScript texts: 453/453
+2026-11-17 05:49  Deutsch (/de/): 115 of 116 pages, stored translations: 3733, JavaScript texts: 453/453
+2026-11-17 05:49  Français (/fr/): 115 of 116 pages, stored translations: 3741, JavaScript texts: 453/453
+  - translation did not keep the tags or numbers, kept English: Ask an AI assistant where Kling [[0]] is cheapest and you may be told 
+2026-11-17 05:49  العربية (/ar/): 115 of 116 pages, stored translations: 3732, JavaScript texts: 453/453
+2026-11-17 05:49  עברית (/he/): 115 of 116 pages, stored translations: 3698, JavaScript texts: 453/453
+2026-11-17 05:49  Italiano (/it/): 115 of 116 pages, stored translations: 3701, JavaScript texts: 453/453
+2026-11-17 05:49  日本語 (/ja/): 115 of 116 pages, stored translations: 3707, JavaScript texts: 453/453
+2026-11-17 05:49  Русский (/ru/): 115 of 116 pages, stored translations: 3708, JavaScript texts: 453/453
+2026-11-17 05:49  繁體中文 (/zh-tw/): 115 of 116 pages, stored translations: 3717, JavaScript texts: 453/453
+  - translation did not keep the tags or numbers, kept English: <t0>Checked November [[0]]</t0> <t1>[[1]] Tools Compared</t1> <t2>From
+  - translation did not keep the tags or numbers, kept English: AI video generation is expensive to run, far more GPU-intensive than t
+  - translation did not keep the tags or numbers, kept English: From each tool's official plan pages, checked November [[0]]. Free all
+  - translation did not keep the tags or numbers, kept English: <t0>Higgsfield</t0> stays the most expensive at [[0]]p on every plan, 
+2026-11-17 05:49  한국어 (/ko/): 115 of 116 pages, stored translations: 3692, JavaScript texts: 453/453
+2026-11-17 05:49  Bahasa Indonesia (/id/): 115 of 116 pages, stored translations: 3709, JavaScript texts: 453/453
+2026-11-17 05:49  Türkçe (/tr/): 114 of 116 pages, stored translations: 3715, JavaScript texts: 453/453
   - translation did not keep the tags or numbers, kept English: GenCost tested it on [[0]]-[[1]]-[[2]]: three short videos with the pu
-2026-11-16 05:59  हिन्दी (/hi/): 112 of 113 pages, stored translations: 3503, JavaScript texts: 453/453
-2026-11-16 05:59  Tiếng Việt (/vi/): 112 of 113 pages, stored translations: 3544, JavaScript texts: 453/453
-2026-11-16 05:59  Polski (/pl/): 112 of 113 pages, stored translations: 3543, JavaScript texts: 453/453
-2026-11-16 05:59  Українська (/uk/): 112 of 113 pages, stored translations: 3537, JavaScript texts: 453/453
-2026-11-16 05:59  简体中文 (/zh/): 112 of 113 pages, stored translations: 3539, JavaScript texts: 453/453
+  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> You can't subscribe to Seedance itself: you
+  - pages/seedance.html: only 82% translated, not published yet
+2026-11-17 05:49  हिन्दी (/hi/): 115 of 116 pages, stored translations: 3676, JavaScript texts: 453/453
+  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> On a small budget, <t2>Kling AI's own Stand
+2026-11-17 05:49  Tiếng Việt (/vi/): 115 of 116 pages, stored translations: 3718, JavaScript texts: 453/453
+2026-11-17 05:49  Polski (/pl/): 115 of 116 pages, stored translations: 3717, JavaScript texts: 453/453
+2026-11-17 05:49  Українська (/uk/): 115 of 116 pages, stored translations: 3711, JavaScript texts: 453/453
+2026-11-17 05:49  简体中文 (/zh/): 115 of 116 pages, stored translations: 3712, JavaScript texts: 453/453
+  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> The cheapest paid AI avatar plan is <t2>D-I
   - translation did not keep the tags or numbers, kept English: GenCost tested it on [[0]]-[[1]]-[[2]]: three short videos with the pu
-2026-11-16 05:59  Norsk (/no/): 112 of 113 pages, stored translations: 3281, JavaScript texts: 453/453
-2026-11-16 05:59  Svenska (/sv/): 112 of 113 pages, stored translations: 3280, JavaScript texts: 453/453
-  - translation did not keep the tags or numbers, kept English: Dreamina is ByteDance's own app and the home of Seedance. Seedance [[0
+2026-11-17 05:49  Norsk (/no/): 115 of 116 pages, stored translations: 3475, JavaScript texts: 453/453
+2026-11-17 05:49  Svenska (/sv/): 115 of 116 pages, stored translations: 3475, JavaScript texts: 453/453

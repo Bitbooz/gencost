@@ -5,7 +5,7 @@
       "name": "Free",
       "monthly_price_usd": 0,
       "credits_or_minutes": 100,
-      "unit": "units/day",
+      "unit": "units / day",
       "offer": ""
     },
     {
@@ -26,13 +26,13 @@
     },
     {
       "name": "Max",
-      "monthly_price_usd": 135,
-      "yearly_price_usd": 81,
-      "credits_or_minutes": 80000,
+      "monthly_price_usd": 105,
+      "yearly_price_usd": 63,
+      "credits_or_minutes": 60000,
       "unit": "units",
       "offer": ""
     }
   ],
   "source": "https://www.krea.ai/pricing",
-  "last_checked": "2026-11-16 06:19"
+  "last_checked": "2026-11-17 06:19"
 }
