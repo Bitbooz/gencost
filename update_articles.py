@@ -874,6 +874,11 @@ def answer_box(name, tool):
     report = (f' <a class="report-price" href="mailto:bitbooz@protonmail.com?subject={subject}" rel="nofollow">'
               f'See a wrong price? Tell us</a>')
     tail_html = html.escape(tail)
+    # Tools GenCost can't read itself (CostBench or entered by hand): still link their own pricing page
+    official = {"Leonardo": "https://leonardo.ai/pricing", "NightCafe": "https://creator.nightcafe.studio/pricing",
+                "WellSaid Labs": "https://wellsaidlabs.com/pricing/"}.get(name)
+    if official and "official site" in tail_html:
+        tail_html = tail_html.replace("official site", f'<a href="{official}" target="_blank" rel="noopener">official site</a>', 1)
     if src.startswith("http") and "costbench" not in src:
         # 2026-11-17: link the source, so readers can check it themselves (asked by Magic Hour, fair for every tool)
         link = f'<a href="{html.escape(src, quote=True)}" target="_blank" rel="noopener">official pricing page</a>'
