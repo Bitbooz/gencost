@@ -873,8 +873,13 @@ def answer_box(name, tool):
     subject = urllib.parse.quote(f"Wrong price on GenCost: {name}")
     report = (f' <a class="report-price" href="mailto:bitbooz@protonmail.com?subject={subject}" rel="nofollow">'
               f'See a wrong price? Tell us</a>')
+    tail_html = html.escape(tail)
+    if src.startswith("http") and "costbench" not in src:
+        # 2026-11-17: link the source, so readers can check it themselves (asked by Magic Hour, fair for every tool)
+        link = f'<a href="{html.escape(src, quote=True)}" target="_blank" rel="noopener">official pricing page</a>'
+        tail_html = tail_html.replace("official pricing page", link, 1)
     return BeautifulSoup(f'<div class="box answer" data-auto="answer"><strong>In short:</strong> {html.escape(a)}'
-                         f' <span class="note">{html.escape(tail)}{report}</span></div>', PARSER).find("div")
+                         f' <span class="note">{tail_html}{report}</span></div>', PARSER).find("div")
 
 
 INFO = load_tool_info()
