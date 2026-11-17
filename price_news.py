@@ -180,10 +180,21 @@ def main():
                     session = r.json() if r.status_code == 200 else False
                 if session:
                     btext = text.replace("this morning.", "this morning:") + f"\n{url}"
+                    if os.path.exists(bluesky_post.IMAGE):  # the GenCost picture on the link card, like the article posts
+                        up = requests.post(f"{bluesky_post.API}/com.atproto.repo.uploadBlob", timeout=60,
+                                           data=open(bluesky_post.IMAGE, "rb").read(),
+                                           headers={"Authorization": f"Bearer {session['accessJwt']}", "Content-Type": "image/png"})
+                        if up.status_code == 200:
+                            card_thumb = up.json()["blob"]
+                        else:
+                            card_thumb = None
+                    else:
+                        card_thumb = None
                     record = {"$type": "app.bsky.feed.post", "text": btext, "facets": bluesky_post.facets(btext, url),
                               "embed": {"$type": "app.bsky.embed.external",
                                         "external": {"uri": url, "title": f"{c['tool']} pricing today | GenCost",
-                                                     "description": "Every plan in US dollars, read from the official pricing page every morning."}},
+                                                     "description": "Every plan in US dollars, read from the official pricing page every morning.",
+                                                     **({"thumb": card_thumb} if card_thumb else {})}},
                               "langs": ["en"], "createdAt": dt.datetime.now(dt.timezone.utc).isoformat().replace("+00:00", "Z")}
                     r = requests.post(f"{bluesky_post.API}/com.atproto.repo.createRecord", timeout=30,
                                       headers={"Authorization": f"Bearer {session['accessJwt']}"},
