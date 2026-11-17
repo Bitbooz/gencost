@@ -82,6 +82,38 @@ def oauth_header(method, url, keys):
     return "OAuth " + ", ".join(f'{q(k)}="{q(v)}"' for k, v in sorted(p.items()))
 
 
+IMAGE = os.path.join(HERE, "assets", "og-image.png")
+
+
+def upload_image(keys):
+    """Upload the GenCost picture (X API v2 media upload) and return its media id, or None.
+    Set the repository variable X_NO_IMAGE=1 to post text only."""
+    if os.environ.get("X_NO_IMAGE", "").strip() == "1" or not os.path.exists(IMAGE):
+        return None
+    url = "https://api.x.com/2/media/upload"
+    try:
+        r = requests.post(url, timeout=60, headers={"Authorization": oauth_header("POST", url, keys)},
+                          files={"media": ("gencost.png", open(IMAGE, "rb"), "image/png")},
+                          data={"media_category": "tweet_image", "media_type": "image/png"})
+        if r.status_code in (200, 201):
+            d = r.json()
+            return (d.get("data") or {}).get("id") or d.get("media_id_string")
+        log(f"X picture upload failed (posting text only): HTTP {r.status_code} {r.text[:200]}")
+    except requests.RequestException as e:
+        log(f"X picture upload failed (posting text only): {e}")
+    return None
+
+
+def post(keys, text):
+    """Post on X with the GenCost picture when it can be uploaded. Returns the response."""
+    body = {"text": text}
+    mid = upload_image(keys)
+    if mid:
+        body["media"] = {"media_ids": [str(mid)]}
+    return requests.post(API, json=body, timeout=30,
+                         headers={"Authorization": oauth_header("POST", API, keys), "Content-Type": "application/json"})
+
+
 def main():
     preview = "--preview" in sys.argv
     keys = {"api_key": os.environ.get("X_API_KEY", "").strip(), "api_secret": os.environ.get("X_API_SECRET", "").strip(),
@@ -97,6 +129,8 @@ def main():
         url = "https://api.x.com/2/users/me"
         r = requests.get(url, timeout=30, headers={"Authorization": oauth_header("GET", url, keys)})
         print("X answered:", r.status_code, r.text[:300])
+        mid = upload_image(keys)  # uploading a picture is not a post: nothing is published
+        print("Picture upload:", "works, media id " + str(mid) if mid else "failed (posts will be text only)")
         sys.exit(0 if r.status_code == 200 else 1)
     if "--hello" in sys.argv:  # one first post by hand (Check X keys workflow, "post" ticked)
         text = ("GenCost is now on X! \U0001F44B\n\nEvery morning we read the official pricing pages of 40+ AI video, image, "
@@ -137,8 +171,7 @@ def main():
             print(text, f"\n[{len(text)} characters, {'with' if url else 'no'} link]\n")
             continue
         try:
-            r = requests.post(API, json={"text": text}, timeout=30,
-                              headers={"Authorization": oauth_header("POST", API, keys), "Content-Type": "application/json"})
+            r = post(keys, text)
         except requests.RequestException as e:
             log(f"X post failed (network): {e}")
             return

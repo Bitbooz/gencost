@@ -163,9 +163,7 @@ def main():
         done = {}
         if all(xkeys.values()):
             try:
-                r = requests.post(x_post.API, json={"text": text}, timeout=30,
-                                  headers={"Authorization": x_post.oauth_header("POST", x_post.API, xkeys),
-                                           "Content-Type": "application/json"})
+                r = x_post.post(xkeys, text)
                 if r.status_code in (200, 201):
                     done["x"] = f"https://x.com/i/status/{r.json()['data']['id']}"
                 else:
