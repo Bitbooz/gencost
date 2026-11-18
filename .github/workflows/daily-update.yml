@@ -150,7 +150,7 @@ jobs:
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
         run: |
           python price_alerts.py
-          git add data/alert-state.json data/price-news-state.json data/x-state.json 2>/dev/null || true
+          for f in data/alert-state.json data/price-news-state.json data/x-state.json; do [ -f "$f" ] && git add "$f"; done
           if ! git diff --staged --quiet; then
             git commit -m "Price alerts and post state [skip netlify]" && git pull --rebase -q && git push -q
           fi
