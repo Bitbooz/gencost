@@ -700,6 +700,7 @@ if __name__ == "__main__":
             f.write(f"{datetime.now(TZ).strftime('%Y-%m-%d %H:%M')}  All tools were checked and confirmed. Nothing to review.\n")
 
     subprocess.run([sys.executable, "regenerate_html.py"], check=False)
+    subprocess.run([sys.executable, "run_log.py"], check=False)  # data/run-log.json for /live.html
     subprocess.run([sys.executable, "update_articles.py"], check=False)  # prices inside the articles
     subprocess.run([sys.executable, "seo_update.py"], check=False)  # canonical, descriptions, sitemap ...
     subprocess.run([sys.executable, "translate_site.py"], check=False)  # the Spanish site under /es/

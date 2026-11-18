@@ -1,0 +1,482 @@
+{
+ "about": "What GenCost's morning price check did today. Written by run_log.py; shown on /live.html.",
+ "date": "2026-11-18",
+ "started": "06:23",
+ "finished": "06:39",
+ "totals": {
+  "tools": 50,
+  "read": 44,
+  "changed": 0,
+  "kept": 2,
+  "manual": 4,
+  "waiting": 2
+ },
+ "articles": [
+  {
+   "title": "Cheapest AI Video for Commercial Use",
+   "url": "/pages/cheapest-ai-video-tools-for-commercial-use-2026.html"
+  },
+  {
+   "title": "GenCost in every AI assistant",
+   "url": "/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html"
+  }
+ ],
+ "tools": [
+  {
+   "name": "Hailuo AI",
+   "cat": "video",
+   "page": "/pages/hailuo.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:23",
+   "status": "kept",
+   "note": "The page couldn't be read today, so yesterday's prices were kept"
+  },
+  {
+   "name": "Google Veo",
+   "cat": "video",
+   "page": "/pages/veo.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:23",
+   "status": "ok"
+  },
+  {
+   "name": "Vidu",
+   "cat": "video",
+   "page": "/pages/vidu.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:24",
+   "status": "ok"
+  },
+  {
+   "name": "Krea",
+   "cat": "video",
+   "page": "/pages/krea.html",
+   "changes": [],
+   "waiting": 2,
+   "time": "06:24",
+   "status": "ok"
+  },
+  {
+   "name": "HeyGen",
+   "cat": "video",
+   "page": "/pages/heygen.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:25",
+   "status": "ok"
+  },
+  {
+   "name": "Higgsfield",
+   "cat": "video",
+   "page": "/pages/higgsfield.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:25",
+   "status": "ok"
+  },
+  {
+   "name": "Runway",
+   "cat": "video",
+   "page": "/pages/runway.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:25",
+   "status": "ok"
+  },
+  {
+   "name": "Kling AI",
+   "cat": "video",
+   "page": "/pages/kling.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:26",
+   "status": "ok"
+  },
+  {
+   "name": "Synthesia",
+   "cat": "video",
+   "page": "/pages/synthesia.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:26",
+   "status": "ok"
+  },
+  {
+   "name": "Pika",
+   "cat": "video",
+   "page": "/pages/pika.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:26",
+   "status": "ok"
+  },
+  {
+   "name": "Luma",
+   "cat": "video",
+   "page": "/pages/luma.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:26",
+   "status": "ok"
+  },
+  {
+   "name": "Viggle",
+   "cat": "video",
+   "page": "/pages/viggle.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:27",
+   "status": "ok"
+  },
+  {
+   "name": "InVideo",
+   "cat": "video",
+   "page": "/pages/invideo.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:27",
+   "status": "ok"
+  },
+  {
+   "name": "CapCut",
+   "cat": "video",
+   "page": "/pages/capcut.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:27",
+   "status": "ok"
+  },
+  {
+   "name": "LTX Studio",
+   "cat": "video",
+   "page": "/pages/ltx.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:27",
+   "status": "ok"
+  },
+  {
+   "name": "PixVerse",
+   "cat": "video",
+   "page": "/pages/pixverse.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:28",
+   "status": "ok"
+  },
+  {
+   "name": "D-ID",
+   "cat": "video",
+   "page": "/pages/d-id.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:28",
+   "status": "ok"
+  },
+  {
+   "name": "Colossyan",
+   "cat": "video",
+   "page": "/pages/colossyan.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:28",
+   "status": "ok"
+  },
+  {
+   "name": "OpusClip",
+   "cat": "video",
+   "page": "/pages/opusclip.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:29",
+   "status": "ok"
+  },
+  {
+   "name": "Captions",
+   "cat": "video",
+   "page": "/pages/captions.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:29",
+   "status": "ok"
+  },
+  {
+   "name": "Pictory",
+   "cat": "video",
+   "page": "/pages/pictory.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:29",
+   "status": "ok"
+  },
+  {
+   "name": "VEED",
+   "cat": "video",
+   "page": "/pages/veed.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:30",
+   "status": "ok"
+  },
+  {
+   "name": "Dreamina",
+   "cat": "video",
+   "page": "/pages/dreamina.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:30",
+   "status": "ok"
+  },
+  {
+   "name": "Magic Hour",
+   "cat": "video",
+   "page": "/pages/magic-hour.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:30",
+   "status": "ok"
+  },
+  {
+   "name": "Elyum",
+   "cat": "video",
+   "page": "/pages/elyum.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:30",
+   "status": "ok"
+  },
+  {
+   "name": "Wan",
+   "cat": "video",
+   "page": "/pages/wan.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:31",
+   "status": "ok"
+  },
+  {
+   "name": "ElevenLabs",
+   "cat": "voice",
+   "page": "/pages/voice/elevenlabs.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:31",
+   "status": "ok"
+  },
+  {
+   "name": "Murf AI",
+   "cat": "voice",
+   "page": "/pages/voice/murf.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:32",
+   "status": "ok"
+  },
+  {
+   "name": "Cartesia",
+   "cat": "voice",
+   "page": "/pages/voice/cartesia.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:32",
+   "status": "ok"
+  },
+  {
+   "name": "Speechify",
+   "cat": "voice",
+   "page": "/pages/voice/speechify.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:32",
+   "status": "ok"
+  },
+  {
+   "name": "Descript",
+   "cat": "voice",
+   "page": "/pages/voice/descript.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:32",
+   "status": "ok"
+  },
+  {
+   "name": "Fliki",
+   "cat": "voice",
+   "page": "/pages/voice/fliki.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:33",
+   "status": "ok"
+  },
+  {
+   "name": "Fish Audio",
+   "cat": "voice",
+   "page": "/pages/fish-audio.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:33",
+   "status": "ok"
+  },
+  {
+   "name": "MiniMax Audio",
+   "cat": "voice",
+   "page": "/pages/voice/minimax.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:33",
+   "status": "ok"
+  },
+  {
+   "name": "Suno",
+   "cat": "music",
+   "page": "/pages/music/suno.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:34",
+   "status": "ok"
+  },
+  {
+   "name": "Udio",
+   "cat": "music",
+   "page": "/pages/music/udio.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:34",
+   "status": "ok"
+  },
+  {
+   "name": "Soundraw",
+   "cat": "music",
+   "page": "/pages/music/soundraw.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:34",
+   "status": "ok"
+  },
+  {
+   "name": "AIVA",
+   "cat": "music",
+   "page": "/pages/music/aiva.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:35",
+   "status": "ok"
+  },
+  {
+   "name": "Boomy",
+   "cat": "music",
+   "page": "/pages/music/boomy.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:36",
+   "status": "ok"
+  },
+  {
+   "name": "Stable Audio",
+   "cat": "music",
+   "page": "/pages/stable-audio.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:36",
+   "status": "ok"
+  },
+  {
+   "name": "Midjourney",
+   "cat": "image",
+   "page": "/pages/midjourney.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:37",
+   "status": "ok"
+  },
+  {
+   "name": "Mureka",
+   "cat": "music",
+   "page": "/pages/mureka.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:37",
+   "status": "ok"
+  },
+  {
+   "name": "Ideogram",
+   "cat": "image",
+   "page": "/pages/ideogram.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:38",
+   "status": "kept",
+   "note": "The page couldn't be read today, so yesterday's prices were kept"
+  },
+  {
+   "name": "Recraft",
+   "cat": "image",
+   "page": "/pages/recraft.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:38",
+   "status": "ok"
+  },
+  {
+   "name": "Freepik",
+   "cat": "image",
+   "page": "/pages/freepik.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:39",
+   "status": "ok"
+  },
+  {
+   "name": "OpenArt",
+   "cat": "image",
+   "page": "/pages/openart.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:39",
+   "status": "ok"
+  },
+  {
+   "name": "Leonardo",
+   "cat": "image",
+   "page": "/pages/leonardo.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "",
+   "status": "manual",
+   "note": "This tool blocks automatic reading; its prices are checked by hand"
+  },
+  {
+   "name": "Adobe Firefly",
+   "cat": "image",
+   "page": "/pages/firefly.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "",
+   "status": "manual",
+   "note": "This tool blocks automatic reading; its prices are checked by hand"
+  },
+  {
+   "name": "NightCafe",
+   "cat": "image",
+   "page": "/pages/nightcafe.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "",
+   "status": "manual",
+   "note": "This tool blocks automatic reading; its prices are checked by hand"
+  },
+  {
+   "name": "WellSaid Labs",
+   "cat": "voice",
+   "page": "/pages/voice/wellsaid.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "",
+   "status": "manual",
+   "note": "This tool blocks automatic reading; its prices are checked by hand"
+  }
+ ]
+}

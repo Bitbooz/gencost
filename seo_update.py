@@ -457,6 +457,10 @@ def main():
         if 'spaces/Bitbooz/ai-price-finder' not in new and '<li><a href="/ai.html">Use in AI assistants</a></li>' in new:
             new = new.replace('<li><a href="/ai.html">Use in AI assistants</a></li>',
                               '<li><a href="/ai.html">Use in AI assistants</a></li>\n          ' + hf_li, 1)
+        # footer: "Watch the price check" (/live.html) after the price changes log (2026-11-18)
+        log_li = '<li><a href="/changelog.html">Price changes log</a></li>'
+        if 'href="/live.html"' not in new and log_li in new:
+            new = new.replace(log_li, log_li + '\n          <li><a href="/live.html">Watch the price check</a></li>', 1)
         # footer: link to the About page next to "Order a package"
         if 'href="/about.html"' not in new and '<li><a href="/order.html">Order a package</a></li>' in new:
             new = new.replace('<li><a href="/order.html">Order a package</a></li>',

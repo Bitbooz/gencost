@@ -3,24 +3,27 @@
   "plans": [
     {
       "name": "Starter",
-      "monthly_price_usd": 12.5,
+      "monthly_price_usd": 29.0,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "monthly price not shown"
+      "offer": "",
+      "yearly_price_usd": 25.0
     },
     {
       "name": "Professional",
-      "monthly_price_usd": 17.5,
+      "monthly_price_usd": 59.0,
       "credits_or_minutes": 6000,
       "unit": "credits",
-      "offer": "monthly price not shown"
+      "offer": "",
+      "yearly_price_usd": 29.5
     },
     {
       "name": "Teams",
-      "monthly_price_usd": 59.5,
+      "monthly_price_usd": 199.0,
       "credits_or_minutes": 18000,
       "unit": "credits",
-      "offer": "monthly price not shown"
+      "offer": "",
+      "yearly_price_usd": 119.0
     }
   ],
   "source": "https://pictory.ai/pricing",
