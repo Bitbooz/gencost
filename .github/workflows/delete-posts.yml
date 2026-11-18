@@ -1,0 +1,34 @@
+name: Delete posts
+
+# By hand: GitHub -> Actions -> Delete posts -> Run workflow, with the post ids.
+# Deletes GenCost's own posts on X and Bluesky (for example a price news post that was wrong).
+
+on:
+  workflow_dispatch:
+    inputs:
+      x:
+        description: "X post ids, comma separated (the number at the end of the post link)"
+        default: ""
+      bsky:
+        description: "Bluesky post ids, comma separated (the last part of the post link)"
+        default: ""
+
+jobs:
+  delete:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+        run: python delete_posts.py --x "${{ inputs.x }}" --bsky "${{ inputs.bsky }}"
