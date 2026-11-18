@@ -46,6 +46,15 @@ def review_times():
     return out
 
 
+def baseline(prev, day):
+    """Stored translations per language before today's translation run (yesterday's totals)."""
+    if prev.get("date") == day and prev.get("lang_baseline"):
+        return prev["lang_baseline"]
+    if prev.get("date") == day:
+        return {l["code"]: l.get("baseline", l["stored"]) for l in prev.get("languages", [])}
+    return {l["code"]: l["stored"] for l in prev.get("languages", [])}
+
+
 def langs(day):
     """Each translated language today: name, code, pages, stored translations and how many are new since the last run."""
     try:
@@ -54,8 +63,7 @@ def langs(day):
         return [], ""
     prev = load("data/run-log.json", {})
     # baseline = the counts before today's run: yesterday's totals, or the baseline already kept today
-    base = {l["code"]: (l.get("baseline", l["stored"]) if prev.get("date") == day else l["stored"])
-            for l in prev.get("languages", [])}
+    base = baseline(prev, day)
     out, stamp = [], ""
     for m in re.finditer(r"^(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2})  (.+?) \(/([a-z-]+)/\): (\d+) of (\d+) pages, stored translations: (\d+)", text, re.M):
         if m.group(1) != day:
@@ -120,6 +128,7 @@ def build(day=None):
         "articles": articles,
         "tools": tools,
         "translated": translated,
+        "lang_baseline": baseline(load("data/run-log.json", {}), day),
         "languages": languages,
     }
 
