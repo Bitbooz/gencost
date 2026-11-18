@@ -1,494 +1,494 @@
 {
- "about": "Credits one video clip costs on each tool. Kept by hand: the daily job does not change this file. Used for the 'per clip' cost on plan cards and for the 'Real-world example' boxes in articles. 'clips' maps clip length in seconds to credits. 'only_plans' limits the clip cost to plans that include that model. 'plan_credits' fills in a plan's credits when the price data has none. A tool that is not listed gets no clip estimate (better than a wrong one). 'options' lists other models and resolutions; the first one is the default.",
- "updated": "2026-11-13",
- "tools": {
-  "Runway": {
-   "model": "Gen-4.5",
-   "clips": {
-    "5": 60,
-    "10": 120
-   },
-   "source": "https://runwayml.com/pricing",
-   "checked": "2026-11-07",
-   "official": true,
-   "options": [
-    {
-     "model": "Gen-4.5",
-     "clips": {
-      "5": 60,
-      "10": 120
-     }
+  "about": "Credits one video clip costs on each tool. Kept by hand: the daily job does not change this file. Used for the 'per clip' cost on plan cards and for the 'Real-world example' boxes in articles. 'clips' maps clip length in seconds to credits. 'only_plans' limits the clip cost to plans that include that model. 'plan_credits' fills in a plan's credits when the price data has none. A tool that is not listed gets no clip estimate (better than a wrong one). 'options' lists other models and resolutions; the first one is the default.",
+  "updated": "2026-11-13",
+  "tools": {
+    "Runway": {
+      "model": "Gen-4.5",
+      "clips": {
+        "5": 60,
+        "10": 120
+      },
+      "source": "https://runwayml.com/pricing",
+      "checked": "2026-11-07",
+      "official": true,
+      "options": [
+        {
+          "model": "Gen-4.5",
+          "clips": {
+            "5": 60,
+            "10": 120
+          }
+        },
+        {
+          "model": "Aleph 2.0",
+          "clips": {
+            "5": 140
+          }
+        },
+        {
+          "model": "Kling 4.0, 1080p",
+          "clips": {
+            "5": 118
+          }
+        },
+        {
+          "model": "Seedance 2.0 Pro, 1080p",
+          "clips": {
+            "4": 160
+          }
+        }
+      ],
+      "note": "From Runway's page: Gen-4.5 60, Aleph 2.0 140, Kling 4.0 118 credits per 5 s; Seedance 2.0 Pro 160 per 4 s."
     },
-    {
-     "model": "Aleph 2.0",
-     "clips": {
-      "5": 140
-     }
+    "Luma": {
+      "model": "Ray3.2, 720p",
+      "clips": {
+        "5": 100,
+        "10": 300
+      },
+      "source": "https://lumalabs.ai/pricing",
+      "checked": "2026-11-07",
+      "official": true,
+      "options": [
+        {
+          "model": "Ray3.2, 720p",
+          "clips": {
+            "5": 100,
+            "10": 300
+          }
+        },
+        {
+          "model": "Ray3.2, 360p",
+          "clips": {
+            "5": 20,
+            "10": 60
+          }
+        },
+        {
+          "model": "Ray3.2, 540p",
+          "clips": {
+            "5": 50,
+            "10": 150
+          }
+        },
+        {
+          "model": "Ray3.2, 1080p",
+          "clips": {
+            "5": 400,
+            "10": 1200
+          }
+        },
+        {
+          "model": "Seedance 2.5, 480p",
+          "clips": {
+            "5": 180
+          }
+        },
+        {
+          "model": "Seedance 2.5, 720p",
+          "clips": {
+            "5": 390
+          }
+        },
+        {
+          "model": "Seedance 2.5, 1080p",
+          "clips": {
+            "5": 955
+          }
+        },
+        {
+          "model": "Kling 4.0, 720p",
+          "clips": {
+            "5": 265
+          }
+        },
+        {
+          "model": "Kling 4.0, 1080p",
+          "clips": {
+            "5": 395
+          }
+        }
+      ],
+      "note": "Kling 4.0: 265 credits per 5 s at 720p, 395 at 1080p (lumalabs.ai/pricing, 2026-11-13)."
     },
-    {
-     "model": "Kling 4.0, 1080p",
-     "clips": {
-      "5": 118
-     }
+    "Pika": {
+      "model": "Pika 2.5, 720p",
+      "clips": {
+        "5": 20
+      },
+      "source": "https://pika.art/pricing",
+      "checked": "2026-11-07",
+      "official": true,
+      "options": [
+        {
+          "model": "Pika 2.5, 720p",
+          "clips": {
+            "5": 20
+          }
+        },
+        {
+          "model": "Pika H3 Flex, 768p",
+          "clips": {
+            "5": 10
+          }
+        },
+        {
+          "model": "Seedance 2.5, 480p",
+          "clips": {
+            "5": 54
+          }
+        },
+        {
+          "model": "Seedance 2.5, 720p",
+          "clips": {
+            "5": 122
+          }
+        },
+        {
+          "model": "Seedance 2.5, 1080p",
+          "clips": {
+            "5": 299
+          }
+        },
+        {
+          "model": "Kling 4.0, 1080p",
+          "clips": {
+            "5": 118
+          }
+        }
+      ],
+      "note": "Kling 4.0: 118 credits per 5 s at 1080p; no 720p rate listed (pika.art/pricing, 2026-11-13)."
     },
-    {
-     "model": "Seedance 2.0 Pro, 1080p",
-     "clips": {
-      "4": 160
-     }
+    "InVideo": {
+      "model": "Seedance 2.5, 720p",
+      "clips": {
+        "5": 56
+      },
+      "source": "https://invideo.io/pricing",
+      "checked": "2026-11-07",
+      "official": true,
+      "only_plans": [
+        "Plus",
+        "Max"
+      ],
+      "note": "Seedance 2.5 is not included on Starter, so Starter shows no clip cost.",
+      "options": [
+        {
+          "model": "Seedance 2.5, 720p",
+          "clips": {
+            "5": 56
+          }
+        },
+        {
+          "model": "Seedance 2.5, Draft",
+          "clips": {
+            "5": 24.5
+          }
+        },
+        {
+          "model": "Seedance 2.5, 1080p",
+          "clips": {
+            "5": 96
+          }
+        }
+      ]
+    },
+    "Kling AI": {
+      "model": "Kling 3.0, 720p, no audio",
+      "clips": {
+        "5": 30,
+        "10": 60
+      },
+      "source": "https://eesel.ai/blog/kling-ai-pricing",
+      "checked": "2026-06-15",
+      "official": false,
+      "options": [
+        {
+          "model": "Kling 3.0, 720p, no audio",
+          "clips": {
+            "5": 30,
+            "10": 60
+          }
+        },
+        {
+          "model": "Kling 3.0, 1080p, no audio",
+          "clips": {
+            "5": 40,
+            "10": 80
+          }
+        },
+        {
+          "model": "Kling 3.0, 720p, with audio",
+          "clips": {
+            "5": 45,
+            "10": 90
+          }
+        },
+        {
+          "model": "Kling 3.0, 1080p, with audio",
+          "clips": {
+            "5": 60,
+            "10": 120
+          }
+        },
+        {
+          "model": "Kling 4.0, 720p, with audio",
+          "clips": {
+            "5": 50,
+            "10": 100
+          }
+        },
+        {
+          "model": "Kling 4.0, 1080p, with audio",
+          "clips": {
+            "5": 75,
+            "10": 150
+          }
+        }
+      ],
+      "note": "Kling 4.0: about 10 credits per second at 720p and 15 at 1080p, sound included (read off the generate button by Genie Artificiel, 2026-10-16; Kling's pricing page doesn't list it)."
+    },
+    "Hailuo AI": {
+      "model": "MiniMax H3, 768p",
+      "clips": {
+        "6": 42,
+        "10": 70
+      },
+      "source": "https://hailuoai.video/pricing",
+      "checked": "2026-11-07",
+      "official": true,
+      "note": "From Hailuo's page: 1,000 credits make about 143 s of H3 at 768p, 84 s at 2K, or 250 s of H3 Max at 480p.",
+      "options": [
+        {
+          "model": "MiniMax H3, 768p",
+          "clips": {
+            "6": 42,
+            "10": 70
+          }
+        },
+        {
+          "model": "MiniMax H3 Max, 480p",
+          "clips": {
+            "6": 24,
+            "10": 40
+          }
+        },
+        {
+          "model": "MiniMax H3, 2K",
+          "clips": {
+            "6": 71,
+            "10": 119
+          }
+        }
+      ]
+    },
+    "Higgsfield": {
+      "model": "Kling 3.0",
+      "clips": {
+        "5": 14
+      },
+      "source": "https://higgsfield.ai/pricing",
+      "checked": "2026-11-07",
+      "official": true,
+      "rough": true,
+      "note": "Higgsfield's own estimates: about 14 credits per Kling 3.0 video; Plus lists 80 Seedance 2.5 videos on 1,200 credits. Clip length not stated. Kling 4.0: 25 credits per 5 s at 720p, 37.5 at 1080p (higgsfield.ai/blog/kling-4-0-on-higgsfield).",
+      "options": [
+        {
+          "model": "Kling 3.0",
+          "clips": {
+            "5": 14
+          }
+        },
+        {
+          "model": "Seedance 2.5",
+          "clips": {
+            "5": 15
+          }
+        },
+        {
+          "model": "Kling 4.0, 720p",
+          "clips": {
+            "5": 25,
+            "30": 150
+          }
+        },
+        {
+          "model": "Kling 4.0, 1080p",
+          "clips": {
+            "5": 37.5,
+            "30": 225
+          }
+        }
+      ]
+    },
+    "Google Veo": {
+      "model": "Veo Fast in Flow",
+      "clips": {
+        "8": 20
+      },
+      "source": "https://diyai.io/ai-tools/video-generation/google-veo-pricing/",
+      "checked": "2026-11-07",
+      "official": false,
+      "plan_credits": {
+        "Google AI Plus": 200,
+        "Google AI Pro": 1000,
+        "Google AI Ultra": 10000
+      },
+      "note": "Flow credits per plan from Google's page: 200, 1,000 and 10,000 a month. Several guides (Nov 2026) report that Veo 3.1 Fast and Quality leave Flow on 5 December 2026; Lite stays. Re-check then.",
+      "options": [
+        {
+          "model": "Veo Fast in Flow",
+          "clips": {
+            "8": 20
+          }
+        },
+        {
+          "model": "Veo Lite in Flow",
+          "clips": {
+            "8": 10
+          }
+        },
+        {
+          "model": "Veo Quality in Flow",
+          "clips": {
+            "8": 100
+          }
+        }
+      ]
+    },
+    "Vidu": {
+      "model": "Q4, 540p",
+      "clips": {
+        "4": 8,
+        "8": 16
+      },
+      "source": "https://www.vidu.com/pricing",
+      "checked": "2026-11-07",
+      "official": true,
+      "note": "Q4 model usage: 540P 2 credits/sec."
+    },
+    "CapCut": {
+      "model": "Seedance 2.0 Mini, 720p",
+      "clips": {
+        "5": 25,
+        "10": 50
+      },
+      "source": "https://www.capcut.com/pricing",
+      "checked": "2026-11-07",
+      "official": true,
+      "note": "Pro: 1,200 credits make up to 240 seconds at 720p, 5 credits per second.",
+      "options": [
+        {
+          "model": "Seedance 2.0 Mini, 720p",
+          "clips": {
+            "5": 25,
+            "10": 50
+          }
+        },
+        {
+          "model": "Seedance 2.0 Mini, 480p",
+          "clips": {
+            "5": 10,
+            "10": 20
+          }
+        }
+      ]
+    },
+    "Krea": {
+      "model": "Kling 2.5",
+      "clips": {
+        "5": 263
+      },
+      "source": "https://www.krea.ai/pricing",
+      "checked": "2026-11-07",
+      "official": true,
+      "rough": true,
+      "note": "From Krea's table of videos per plan on Basic (5,000 units). Approximate.",
+      "options": [
+        {
+          "model": "Kling 2.5",
+          "clips": {
+            "5": 263
+          }
+        },
+        {
+          "model": "Kling 3.0, standard, no audio",
+          "clips": {
+            "3": 192
+          }
+        },
+        {
+          "model": "LTX-2.5 Fast, 720p",
+          "clips": {
+            "6": 417
+          }
+        },
+        {
+          "model": "Seedance 2.5, 720p",
+          "clips": {
+            "5": 1000
+          }
+        }
+      ]
+    },
+    "Viggle": {
+      "model": "character swap, 1 character",
+      "clips": {
+        "5": 5,
+        "10": 10
+      },
+      "source": "https://docs.viggle.ai/v1/pricing",
+      "checked": "2026-11-07",
+      "official": true,
+      "rough": true,
+      "note": "API rate: 1 credit per character per second. App credits may be charged differently."
+    },
+    "Dreamina": {
+      "model": "Seedance 2.5, 720p",
+      "clips": {
+        "5": 185,
+        "10": 370
+      },
+      "source": "https://dreamina.capcut.com/seedance/seedance-2-5-pricing-2026",
+      "checked": "2026-11-13",
+      "official": true,
+      "options": [
+        {
+          "model": "Seedance 2.5, 720p",
+          "clips": {
+            "5": 185,
+            "10": 370
+          }
+        }
+      ],
+      "note": "Dreamina's Seedance 2.5 page: 37 credits per generated second at 720p."
+    },
+    "Elyum": {
+      "model": "Kling 4.0, 720p",
+      "clips": {
+        "5": 85,
+        "10": 170
+      },
+      "source": "https://elyum.ai/models/kling-4",
+      "checked": "2026-11-14",
+      "official": true,
+      "options": [
+        {
+          "model": "Kling 4.0, 720p",
+          "clips": {
+            "5": 85,
+            "10": 170
+          }
+        },
+        {
+          "model": "Kling 4.0, 1080p",
+          "clips": {
+            "5": 125,
+            "10": 250
+          }
+        }
+      ],
+      "note": "Elyum's Kling 4.0 page: 17 credits per second at 720p, 25 at 1080p, sound included (confirmed by Elyum 2026-11-14)."
     }
-   ],
-   "note": "From Runway's page: Gen-4.5 60, Aleph 2.0 140, Kling 4.0 118 credits per 5 s; Seedance 2.0 Pro 160 per 4 s."
-  },
-  "Luma": {
-   "model": "Ray3.2, 720p",
-   "clips": {
-    "5": 100,
-    "10": 300
-   },
-   "source": "https://lumalabs.ai/pricing",
-   "checked": "2026-11-07",
-   "official": true,
-   "options": [
-    {
-     "model": "Ray3.2, 720p",
-     "clips": {
-      "5": 100,
-      "10": 300
-     }
-    },
-    {
-     "model": "Ray3.2, 360p",
-     "clips": {
-      "5": 20,
-      "10": 60
-     }
-    },
-    {
-     "model": "Ray3.2, 540p",
-     "clips": {
-      "5": 50,
-      "10": 150
-     }
-    },
-    {
-     "model": "Ray3.2, 1080p",
-     "clips": {
-      "5": 400,
-      "10": 1200
-     }
-    },
-    {
-     "model": "Seedance 2.5, 480p",
-     "clips": {
-      "5": 180
-     }
-    },
-    {
-     "model": "Seedance 2.5, 720p",
-     "clips": {
-      "5": 390
-     }
-    },
-    {
-     "model": "Seedance 2.5, 1080p",
-     "clips": {
-      "5": 955
-     }
-    },
-    {
-     "model": "Kling 4.0, 720p",
-     "clips": {
-      "5": 265
-     }
-    },
-    {
-     "model": "Kling 4.0, 1080p",
-     "clips": {
-      "5": 395
-     }
-    }
-   ],
-   "note": "Kling 4.0: 265 credits per 5 s at 720p, 395 at 1080p (lumalabs.ai/pricing, 2026-11-13)."
-  },
-  "Pika": {
-   "model": "Pika 2.5, 720p",
-   "clips": {
-    "5": 20
-   },
-   "source": "https://pika.art/pricing",
-   "checked": "2026-11-07",
-   "official": true,
-   "options": [
-    {
-     "model": "Pika 2.5, 720p",
-     "clips": {
-      "5": 20
-     }
-    },
-    {
-     "model": "Pika H3 Flex, 768p",
-     "clips": {
-      "5": 10
-     }
-    },
-    {
-     "model": "Seedance 2.5, 480p",
-     "clips": {
-      "5": 54
-     }
-    },
-    {
-     "model": "Seedance 2.5, 720p",
-     "clips": {
-      "5": 122
-     }
-    },
-    {
-     "model": "Seedance 2.5, 1080p",
-     "clips": {
-      "5": 299
-     }
-    },
-    {
-     "model": "Kling 4.0, 1080p",
-     "clips": {
-      "5": 118
-     }
-    }
-   ],
-   "note": "Kling 4.0: 118 credits per 5 s at 1080p; no 720p rate listed (pika.art/pricing, 2026-11-13)."
-  },
-  "InVideo": {
-   "model": "Seedance 2.5, 720p",
-   "clips": {
-    "5": 56
-   },
-   "source": "https://invideo.io/pricing",
-   "checked": "2026-11-07",
-   "official": true,
-   "only_plans": [
-    "Plus",
-    "Max"
-   ],
-   "note": "Seedance 2.5 is not included on Starter, so Starter shows no clip cost.",
-   "options": [
-    {
-     "model": "Seedance 2.5, 720p",
-     "clips": {
-      "5": 56
-     }
-    },
-    {
-     "model": "Seedance 2.5, Draft",
-     "clips": {
-      "5": 24.5
-     }
-    },
-    {
-     "model": "Seedance 2.5, 1080p",
-     "clips": {
-      "5": 96
-     }
-    }
-   ]
-  },
-  "Kling AI": {
-   "model": "Kling 3.0, 720p, no audio",
-   "clips": {
-    "5": 30,
-    "10": 60
-   },
-   "source": "https://eesel.ai/blog/kling-ai-pricing",
-   "checked": "2026-06-15",
-   "official": false,
-   "options": [
-    {
-     "model": "Kling 3.0, 720p, no audio",
-     "clips": {
-      "5": 30,
-      "10": 60
-     }
-    },
-    {
-     "model": "Kling 3.0, 1080p, no audio",
-     "clips": {
-      "5": 40,
-      "10": 80
-     }
-    },
-    {
-     "model": "Kling 3.0, 720p, with audio",
-     "clips": {
-      "5": 45,
-      "10": 90
-     }
-    },
-    {
-     "model": "Kling 3.0, 1080p, with audio",
-     "clips": {
-      "5": 60,
-      "10": 120
-     }
-    },
-    {
-     "model": "Kling 4.0, 720p, with audio",
-     "clips": {
-      "5": 50,
-      "10": 100
-     }
-    },
-    {
-     "model": "Kling 4.0, 1080p, with audio",
-     "clips": {
-      "5": 75,
-      "10": 150
-     }
-    }
-   ],
-   "note": "Kling 4.0: about 10 credits per second at 720p and 15 at 1080p, sound included (read off the generate button by Genie Artificiel, 2026-10-16; Kling's pricing page doesn't list it)."
-  },
-  "Hailuo AI": {
-   "model": "MiniMax H3, 768p",
-   "clips": {
-    "6": 42,
-    "10": 70
-   },
-   "source": "https://hailuoai.video/pricing",
-   "checked": "2026-11-07",
-   "official": true,
-   "note": "From Hailuo's page: 1,000 credits make about 143 s of H3 at 768p, 84 s at 2K, or 250 s of H3 Max at 480p.",
-   "options": [
-    {
-     "model": "MiniMax H3, 768p",
-     "clips": {
-      "6": 42,
-      "10": 70
-     }
-    },
-    {
-     "model": "MiniMax H3 Max, 480p",
-     "clips": {
-      "6": 24,
-      "10": 40
-     }
-    },
-    {
-     "model": "MiniMax H3, 2K",
-     "clips": {
-      "6": 71,
-      "10": 119
-     }
-    }
-   ]
-  },
-  "Higgsfield": {
-   "model": "Kling 3.0",
-   "clips": {
-    "5": 14
-   },
-   "source": "https://higgsfield.ai/pricing",
-   "checked": "2026-11-07",
-   "official": true,
-   "rough": true,
-   "note": "Higgsfield's own estimates: about 14 credits per Kling 3.0 video; Plus lists 80 Seedance 2.5 videos on 1,200 credits. Clip length not stated. Kling 4.0: 25 credits per 5 s at 720p, 37.5 at 1080p (higgsfield.ai/blog/kling-4-0-on-higgsfield).",
-   "options": [
-    {
-     "model": "Kling 3.0",
-     "clips": {
-      "5": 14
-     }
-    },
-    {
-     "model": "Seedance 2.5",
-     "clips": {
-      "5": 15
-     }
-    },
-    {
-     "model": "Kling 4.0, 720p",
-     "clips": {
-      "5": 25,
-      "30": 150
-     }
-    },
-    {
-     "model": "Kling 4.0, 1080p",
-     "clips": {
-      "5": 37.5,
-      "30": 225
-     }
-    }
-   ]
-  },
-  "Google Veo": {
-   "model": "Veo Fast in Flow",
-   "clips": {
-    "8": 20
-   },
-   "source": "https://diyai.io/ai-tools/video-generation/google-veo-pricing/",
-   "checked": "2026-11-07",
-   "official": false,
-   "plan_credits": {
-    "Google AI Plus": 200,
-    "Google AI Pro": 1000,
-    "Google AI Ultra": 10000
-   },
-   "note": "Flow credits per plan from Google's page: 200, 1,000 and 10,000 a month.",
-   "options": [
-    {
-     "model": "Veo Fast in Flow",
-     "clips": {
-      "8": 20
-     }
-    },
-    {
-     "model": "Veo Lite in Flow",
-     "clips": {
-      "8": 10
-     }
-    },
-    {
-     "model": "Veo Quality in Flow",
-     "clips": {
-      "8": 100
-     }
-    }
-   ]
-  },
-  "Vidu": {
-   "model": "Q4, 540p",
-   "clips": {
-    "4": 8,
-    "8": 16
-   },
-   "source": "https://www.vidu.com/pricing",
-   "checked": "2026-11-07",
-   "official": true,
-   "note": "Q4 model usage: 540P 2 credits/sec."
-  },
-  "CapCut": {
-   "model": "Seedance 2.0 Mini, 720p",
-   "clips": {
-    "5": 25,
-    "10": 50
-   },
-   "source": "https://www.capcut.com/pricing",
-   "checked": "2026-11-07",
-   "official": true,
-   "note": "Pro: 1,200 credits make up to 240 seconds at 720p, 5 credits per second.",
-   "options": [
-    {
-     "model": "Seedance 2.0 Mini, 720p",
-     "clips": {
-      "5": 25,
-      "10": 50
-     }
-    },
-    {
-     "model": "Seedance 2.0 Mini, 480p",
-     "clips": {
-      "5": 10,
-      "10": 20
-     }
-    }
-   ]
-  },
-  "Krea": {
-   "model": "Kling 2.5",
-   "clips": {
-    "5": 263
-   },
-   "source": "https://www.krea.ai/pricing",
-   "checked": "2026-11-07",
-   "official": true,
-   "rough": true,
-   "note": "From Krea's table of videos per plan on Basic (5,000 units). Approximate.",
-   "options": [
-    {
-     "model": "Kling 2.5",
-     "clips": {
-      "5": 263
-     }
-    },
-    {
-     "model": "Kling 3.0, standard, no audio",
-     "clips": {
-      "3": 192
-     }
-    },
-    {
-     "model": "LTX-2.5 Fast, 720p",
-     "clips": {
-      "6": 417
-     }
-    },
-    {
-     "model": "Seedance 2.5, 720p",
-     "clips": {
-      "5": 1000
-     }
-    }
-   ]
-  },
-  "Viggle": {
-   "model": "character swap, 1 character",
-   "clips": {
-    "5": 5,
-    "10": 10
-   },
-   "source": "https://docs.viggle.ai/v1/pricing",
-   "checked": "2026-11-07",
-   "official": true,
-   "rough": true,
-   "note": "API rate: 1 credit per character per second. App credits may be charged differently."
-  },
-  "Dreamina": {
-   "model": "Seedance 2.5, 720p",
-   "clips": {
-    "5": 185,
-    "10": 370
-   },
-   "source": "https://dreamina.capcut.com/seedance/seedance-2-5-pricing-2026",
-   "checked": "2026-11-13",
-   "official": true,
-   "options": [
-    {
-     "model": "Seedance 2.5, 720p",
-     "clips": {
-      "5": 185,
-      "10": 370
-     }
-    }
-   ],
-   "note": "Dreamina's Seedance 2.5 page: 37 credits per generated second at 720p."
-  },
-  "Elyum": {
-   "model": "Kling 4.0, 720p",
-   "clips": {
-    "5": 85,
-    "10": 170
-   },
-   "source": "https://elyum.ai/models/kling-4",
-   "checked": "2026-11-14",
-   "official": true,
-   "options": [
-    {
-     "model": "Kling 4.0, 720p",
-     "clips": {
-      "5": 85,
-      "10": 170
-     }
-    },
-    {
-     "model": "Kling 4.0, 1080p",
-     "clips": {
-      "5": 125,
-      "10": 250
-     }
-    }
-   ],
-   "note": "Elyum's Kling 4.0 page: 17 credits per second at 720p, 25 at 1080p, sound included (confirmed by Elyum 2026-11-14)."
   }
- }
 }
