@@ -1,6 +1,6 @@
 name: Hugging Face Space
 
-# Publishes the space/ folder as the Hugging Face Space Bitbooz/ai-price-finder (free CPU).
+# Publishes the space/ folder as the Hugging Face Space Bitbooz/ai-price-finder (a free static Space).
 # Runs by itself when space/ changes; or by hand: Actions -> Hugging Face Space -> Run workflow.
 
 on:
@@ -19,24 +19,17 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - run: pip install huggingface_hub pandas "gradio[mcp]"
-      - name: Test the app against today's live data
-        working-directory: space
-        run: |
-          python -c "import app; print(app.clip_cost('Kling 4.0', 10, 5)[:400]); print(app.cheapest_plans('voice', 3)[:300])"
+      - run: pip install huggingface_hub
       - name: Upload to Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          V=$(python -c "import gradio; print(gradio.__version__)")
-          echo "Gradio $V"
-          sed -i "s/SDK_VERSION/$V/" space/README.md
           python - <<'PY'
           import os, time
           from huggingface_hub import HfApi
           api = HfApi(token=os.environ["HF_TOKEN"])
           rid = "Bitbooz/ai-price-finder"
-          api.create_repo(rid, repo_type="space", space_sdk="gradio", exist_ok=True)
+          api.create_repo(rid, repo_type="space", space_sdk="static", exist_ok=True)
           api.upload_folder(folder_path="space", repo_id=rid, repo_type="space",
                             commit_message="Update from GitHub Bitbooz/gencost", ignore_patterns=["__pycache__/*"])
           for _ in range(30):

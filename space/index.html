@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Price Finder by GenCost</title>
+<style>
+  :root { --bg:#f7f8f6; --card:#fff; --ink:#17201b; --muted:#5d6b63; --line:#dfe5e0; --accent:#0f7a4f; --accent2:#e8f4ee; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111614; --card:#18201c; --ink:#e7eee9; --muted:#9aaba1; --line:#2a3530; --accent:#3fc38a; --accent2:#1d2e26; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
+  main { max-width:960px; margin:0 auto; padding:28px 16px 48px; }
+  h1 { margin:0 0 4px; font-size:28px; letter-spacing:-.01em; }
+  .sub { color:var(--muted); margin:0 0 22px; }
+  .tabs { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px; }
+  .tabs button { border:1px solid var(--line); background:var(--card); color:var(--ink); padding:8px 14px; border-radius:999px; cursor:pointer; font:inherit; }
+  .tabs button[aria-selected=true] { background:var(--accent); border-color:var(--accent); color:#fff; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; }
+  .row { display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end; margin-bottom:14px; }
+  label { display:flex; flex-direction:column; gap:4px; font-size:13px; color:var(--muted); }
+  input, select { font:inherit; padding:8px 10px; border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--ink); min-width:110px; }
+  .go { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:9px 16px; font:inherit; cursor:pointer; }
+  .wrap { overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; font-size:14px; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); white-space:nowrap; }
+  th { color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+  td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  tr:first-child td { background:var(--accent2); }
+  a { color:var(--accent); }
+  .note { color:var(--muted); font-size:13px; margin-top:12px; }
+  .hidden { display:none; }
+  footer { color:var(--muted); font-size:13px; margin-top:22px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>AI Price Finder</h1>
+  <p class="sub">Today's prices of 50 AI video, image, voice and music tools, in US dollars. Read from each official pricing page every morning by <a href="https://getgencost.com" target="_blank" rel="noopener">GenCost</a>. No affiliate links, no paid placement. <span id="day"></span></p>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="clips">Cost of video clips</button>
+    <button role="tab" aria-selected="false" data-tab="plans">Cheapest plans</button>
+    <button role="tab" aria-selected="false" data-tab="tool">One tool</button>
+  </div>
+
+  <section class="card" id="clips">
+    <div class="row">
+      <label>Video model<select id="model"></select></label>
+      <label>Clips a month<input id="n" type="number" min="1" value="10"></label>
+      <label>Seconds per clip<input id="s" type="number" min="1" value="5"></label>
+      <button class="go" id="goClips">Find the cheapest</button>
+    </div>
+    <div class="wrap" id="outClips"></div>
+    <p class="note">Cheapest monthly plan on each platform with enough credits for all the clips. Credits per clip depend on resolution and sound; check each platform's page.</p>
+  </section>
+
+  <section class="card hidden" id="plans">
+    <div class="row">
+      <label>Category<select id="cat"><option>video</option><option>image</option><option>voice</option><option>music</option></select></label>
+      <button class="go" id="goPlans">Show</button>
+    </div>
+    <div class="wrap" id="outPlans"></div>
+  </section>
+
+  <section class="card hidden" id="tool">
+    <div class="row">
+      <label>Tool<select id="toolSel"></select></label>
+      <button class="go" id="goTool">Show prices</button>
+    </div>
+    <div class="wrap" id="outTool"></div>
+  </section>
+
+  <footer>
+    Data: <a href="https://huggingface.co/datasets/Bitbooz/ai-tool-prices" target="_blank" rel="noopener">Bitbooz/ai-tool-prices</a>, updated every morning. Full comparisons and calculators: <a href="https://getgencost.com" target="_blank" rel="noopener">getgencost.com</a>.
+    AI assistants can ask GenCost directly through its MCP connector: <a href="https://getgencost.com/ai.html" target="_blank" rel="noopener">getgencost.com/ai.html</a>.
+    Prices from GenCost, CC BY 4.0.
+  </footer>
+</main>
+<script>
+const BASE = "https://huggingface.co/datasets/Bitbooz/ai-tool-prices/resolve/main/";
+let P = [], C = [];
+
+function parseCSV(t) {
+  const rows = []; let row = [], f = "", q = false;
+  for (let i = 0; i < t.length; i++) {
+    const ch = t[i];
+    if (q) { if (ch === '"') { if (t[i+1] === '"') { f += '"'; i++; } else q = false; } else f += ch; }
+    else if (ch === '"') q = true;
+    else if (ch === ",") { row.push(f); f = ""; }
+    else if (ch === "\n" || ch === "\r") { if (ch === "\r" && t[i+1] === "\n") i++; row.push(f); rows.push(row); row = []; f = ""; }
+    else f += ch;
+  }
+  if (f || row.length) { row.push(f); rows.push(row); }
+  const head = rows.shift();
+  return rows.filter(r => r.length === head.length).map(r => Object.fromEntries(head.map((h, i) => [h, r[i]])));
+}
+const num = v => (v === "" || v == null || isNaN(+v)) ? null : +v;
+const money = v => v == null ? "" : "$" + v.toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const link = u => `<a href="${esc(u || "https://getgencost.com")}" target="_blank" rel="noopener">GenCost</a>`;
+const amount = r => r.credits == null ? "" : `${r.credits.toLocaleString("en-US")} ${esc(r.unit)}`;
+
+function table(head, rows) {
+  if (!rows.length) return "<p>Nothing found.</p>";
+  return "<table><thead><tr>" + head.map(h => `<th class="${h[1] || ""}">${h[0]}</th>`).join("") + "</tr></thead><tbody>" +
+    rows.map(r => "<tr>" + r.map((c, i) => `<td class="${head[i][1] || ""}">${c}</td>`).join("") + "</tr>").join("") + "</tbody></table>";
+}
+
+function clips() {
+  const model = document.getElementById("model").value, n = Math.max(1, +document.getElementById("n").value || 1),
+        s = Math.max(1, +document.getElementById("s").value || 5);
+  const byTool = {};
+  C.filter(c => c.model === model).forEach(c => (byTool[c.tool] = byTool[c.tool] || []).push(c));
+  const out = Object.entries(byTool).map(([tool, rows]) => {
+    let ref = rows.find(r => r.seconds === s), note = "";
+    let per = ref ? ref.credits : null;
+    if (!ref) { ref = rows.slice().sort((a, b) => Math.abs(a.seconds - s) - Math.abs(b.seconds - s))[0]; per = ref.credits / ref.seconds * s; note = ` (from ${ref.seconds} s)`; }
+    const need = per * n;
+    const plans = P.filter(p => p.tool === tool && p.unit === "credits" && p.monthly > 0);
+    const fit = plans.filter(p => p.credits >= need).sort((a, b) => a.monthly - b.monthly)[0];
+    const page = (fit || plans[0] || {}).page;
+    return {sort: fit ? fit.monthly : Infinity, cells: [esc(tool), Math.round(need).toLocaleString("en-US") + note,
+      fit ? esc(fit.plan) : "no single plan has enough", fit ? money(fit.monthly) : "–", link(page)]};
+  }).sort((a, b) => a.sort - b.sort);
+  document.getElementById("outClips").innerHTML = table([["Platform"], ["Credits needed", "num"], ["Plan that covers it"], ["Monthly", "num"], ["More"]], out.map(o => o.cells));
+}
+
+function plans() {
+  const cat = document.getElementById("cat").value;
+  const rows = P.filter(p => p.category === cat && p.monthly > 0)
+    .map(p => ({...p, best: Math.min(p.monthly, p.yearly || Infinity)})).sort((a, b) => a.best - b.best).slice(0, 20);
+  document.getElementById("outPlans").innerHTML = table([["Tool"], ["Plan"], ["Monthly", "num"], ["Yearly, per month", "num"], ["Credits / minutes", "num"], ["More"]],
+    rows.map(p => [esc(p.tool), esc(p.plan) + (p.offer ? ` <small>(${esc(p.offer)})</small>` : ""), money(p.monthly), money(p.yearly), amount(p), link(p.page)]));
+}
+
+function tool() {
+  const t = document.getElementById("toolSel").value, rows = P.filter(p => p.tool === t);
+  const src = rows[0] && rows[0].source;
+  document.getElementById("outTool").innerHTML = table([["Plan"], ["Monthly", "num"], ["Yearly, per month", "num"], ["Credits / minutes", "num"]],
+    rows.map(p => [esc(p.plan) + (p.offer ? ` <small>(${esc(p.offer)})</small>` : ""), money(p.monthly), money(p.yearly), amount(p)])) +
+    (rows[0] ? `<p class="note">Official pricing: <a href="${esc(src)}" target="_blank" rel="noopener">${esc(src)}</a> · More on ${link(rows[0].page)}</p>` : "");
+}
+
+document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => {
+  document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-selected", x === b));
+  document.querySelectorAll("section.card").forEach(s => s.classList.toggle("hidden", s.id !== b.dataset.tab));
+});
+document.getElementById("goClips").onclick = clips;
+document.getElementById("goPlans").onclick = plans;
+document.getElementById("goTool").onclick = tool;
+document.getElementById("model").onchange = clips;
+document.getElementById("cat").onchange = plans;
+document.getElementById("toolSel").onchange = tool;
+
+Promise.all([fetch(BASE + "prices.csv").then(r => r.text()), fetch(BASE + "clip-costs.csv").then(r => r.text())]).then(([pt, ct]) => {
+  P = parseCSV(pt).map(r => ({category: r.category, tool: r.tool, plan: r.plan, monthly: num(r.monthly_price_usd), yearly: num(r.yearly_price_usd),
+    credits: num(String(r.credits_or_minutes).replace(/,/g, "")), unit: r.unit, offer: r.offer, source: r.source, page: r.gencost_page, date: r.date}));
+  C = parseCSV(ct).map(r => ({tool: r.tool, model: r.model, seconds: num(r.seconds), credits: num(String(r.credits).replace(/,/g, ""))}))
+    .filter(r => r.seconds && r.credits != null);
+  if (P[0]) document.getElementById("day").textContent = "Prices from " + P[0].date + ".";
+  const models = [...new Set(C.map(c => c.model))].sort();
+  document.getElementById("model").innerHTML = models.map(m => `<option${m === "Kling 4.0, 1080p" ? " selected" : ""}>${esc(m)}</option>`).join("");
+  document.getElementById("toolSel").innerHTML = [...new Set(P.map(p => p.tool))].sort().map(t => `<option${t === "Runway" ? " selected" : ""}>${esc(t)}</option>`).join("");
+  clips(); plans(); tool();
+}).catch(() => { document.getElementById("outClips").innerHTML = '<p>Could not load today\'s prices. See <a href="https://getgencost.com">getgencost.com</a>.</p>'; });
+</script>
+</body>
+</html>
