@@ -98,6 +98,35 @@ def group(items):
     return list(out.values())
 
 
+def offers():
+    """(cat, tool, plan) -> the plan's offer note, e.g. "monthly price not shown"."""
+    out = {}
+    for cat in ("video", "image", "voice", "music"):
+        try:
+            for p in json.load(open(os.path.join(HERE, "data", f"{cat}.json"), encoding="utf-8"))["platforms"]:
+                for pl in p.get("plans") or []:
+                    out[(cat, p["name"], pl.get("name", ""))] = (pl.get("offer") or "").lower()
+        except (OSError, ValueError, KeyError):
+            pass
+    return out
+
+
+def doubtful(g, offer_map):
+    """Reason not to post a change automatically, or None. Wrong news is worse than no news."""
+    if "not shown" in offer_map.get((g["cat"], g["tool"], g["plan"]), ""):
+        return "the monthly price isn't shown on the page, so the comparison may mix monthly and yearly"
+    price = [c for c in g["parts"] if c["kind"] == "price"]
+    cred = next((c for c in g["parts"] if c["kind"] == "credits"), None)
+    if any(abs(c["new"] - c["old"]) / c["old"] > 0.5 for c in price):
+        return "the price moved more than 50%, which is more often a misreading or a sale than a real change"
+    if price and cred:
+        lead = next((c for c in price if c["how"] == "a month"), price[0])
+        po, pn = lead["old"] / cred["old"], lead["new"] / cred["new"]
+        if abs(pn - po) / po < 0.1:
+            return "price and credits moved together (same price per credit), probably renamed plans"
+    return None
+
+
 def text_for(g, hist):
     name = f"{g['tool']} {g['plan']}"
     price = [c for c in g["parts"] if c["kind"] == "price"]
@@ -154,7 +183,14 @@ def main():
     handle = os.environ.get("BSKY_HANDLE", "").strip().lstrip("@")
     password = os.environ.get("BSKY_APP_PASSWORD", "").strip()
     session = None
-    for c in group(todo)[:MAX_POSTS if not preview else 6]:
+    omap, ok = offers(), []
+    for g in group(todo):
+        why = doubtful(g, omap)
+        if why:
+            log(f"Not posted, needs a human look ({why}): {text_for(g, hist).splitlines()[0]}")
+        else:
+            ok.append(g)
+    for c in ok[:MAX_POSTS if not preview else 6]:
         text = text_for(c, hist)
         url = SITE + links.get((c["cat"], c["tool"]), "")
         if preview:

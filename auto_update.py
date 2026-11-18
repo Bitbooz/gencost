@@ -218,10 +218,16 @@ HINTS = {
                 "as '$24/month if you pay annually': that is yearly_price_usd. If no lower yearly price is written, "
                 "leave yearly_price_usd out. Never copy the monthly price into yearly_price_usd.",
     },
+    "captions": {
+        "focus": ["/mo", "credits", "Frontier"],
+        "note": "The Frontier card has a 1x / 2x / 4x usage choice. Name the base (cheapest, fewest credits) 'Frontier', "
+                "the doubled one 'Frontier 2x' and the quadrupled one 'Frontier 4x'. Never give 'Frontier' the 4x price.",
+    },
     "pictory": {
         "focus": ["billed annually", "billed monthly", "credits"],
         "note": "Each plan shows two prices: the higher one 'per month, billed monthly' is monthly_price_usd, the lower "
-                "'per month, billed annually' is yearly_price_usd. Each plan lists two credit amounts: the big one (e.g. 24,000) "
+                "'per month, billed annually' is yearly_price_usd. A Black Friday or other sale banner is an offer: "
+                "write it in 'offer' and still use the regular 'billed monthly' price as monthly_price_usd. Each plan lists two credit amounts: the big one (e.g. 24,000) "
                 "is a year's credits given upfront on annual plans; credits_or_minutes is the monthly amount (e.g. 2,000).",
     },
     "veed": {
