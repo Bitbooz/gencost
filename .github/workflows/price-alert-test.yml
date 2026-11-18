@@ -1,0 +1,31 @@
+name: Price alert test
+
+# By hand: Actions -> Price alert test -> Run workflow.
+# Sends one sample price alert to your own inbox (ALERT_REPLY_TO) and shows what today's real alerts would say.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install requests openai tzdata
+      - env:
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ALERT_REPLY_TO: ${{ secrets.ALERT_REPLY_TO }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+        run: |
+          python price_alerts.py --test
+          python - <<'PY'
+          import os, price_alerts
+          people = price_alerts.signups(os.environ["NETLIFY_TOKEN"].strip())
+          print(f"Netlify OK: {len(people)} price-alert sign-up(s) for {len({p['tool'] for p in people})} tool(s).")
+          PY

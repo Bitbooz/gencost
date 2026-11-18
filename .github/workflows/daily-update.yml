@@ -140,6 +140,21 @@ jobs:
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
         run: python price_news.py
 
+      - name: Email price alerts to the people who asked (needs NETLIFY_TOKEN, RESEND_API_KEY, ALERT_REPLY_TO)
+        if: steps.gate.outputs.skip != '1'
+        continue-on-error: true
+        env:
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          ALERT_REPLY_TO: ${{ secrets.ALERT_REPLY_TO }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+        run: |
+          python price_alerts.py
+          git add data/alert-state.json data/price-news-state.json data/x-state.json 2>/dev/null || true
+          if ! git diff --staged --quiet; then
+            git commit -m "Price alerts and post state [skip netlify]" && git pull --rebase -q && git push -q
+          fi
+
       - name: Make today's YouTube Short and send the download link (needs HF_TOKEN)
         if: steps.gate.outputs.skip != '1'
         continue-on-error: true
