@@ -1,49 +1,57 @@
-2026-11-17 06:18  hailuo  (https://hailuoai.video/pricing)
-    - only 0 of the 4 known paid plans were found (basic)
+2026-11-18 06:23  hailuo  (https://hailuoai.video/pricing)
+    - [https://hailuoai.video/pricing] download: pricing page returned almost no text (HTTP 200)
+    - [https://hailuoai.video/pricing] browser: no plans found
+    - [https://hailuoai.video/subscribe] download: pricing page returned almost no text (HTTP 200)
+    - [https://hailuoai.video/subscribe] browser: no plans found
     -> kept the previous prices
 
-2026-11-17 06:20  higgsfield  (https://higgsfield.ai/pricing)
+2026-11-18 06:25  higgsfield  (https://higgsfield.ai/pricing)
     - Starter: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-17 06:23  colossyan  (https://www.colossyan.com/pricing)
+2026-11-18 06:27  viggle  (https://viggle.ai/pricing)
+    - Pro: no credits found today, kept yesterday's 80
+    - Live: no credits found today, kept yesterday's 200
+    - Max: no credits found today, kept yesterday's 800
+    -> saved the monthly prices
+
+2026-11-18 06:28  colossyan  (https://www.colossyan.com/pricing)
     - Professional: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-17 06:24  pictory  (https://pictory.ai/pricing)
+2026-11-18 06:29  pictory  (https://pictory.ai/pricing)
     - Starter: yearly price equals the monthly price, left out
     - Professional: yearly price equals the monthly price, left out
     - Teams: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-17 06:24  veed  (https://www.veed.io/pricing)
+2026-11-18 06:30  veed  (https://www.veed.io/pricing)
     - Creator: yearly price equals the monthly price, left out
     - Pro: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-17 06:26  murf  (https://murf.ai/pricing)
+2026-11-18 06:32  murf  (https://murf.ai/pricing)
     - Creator: yearly price equals the monthly price, left out
     - Business: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-17 06:29  aiva  (https://www.aiva.ai/pricing)
+2026-11-18 06:33  fishaudio  (https://fish.audio/plan/)
+    - Free Tier: no credits found today, kept yesterday's 8,000
+    - Plus: no credits found today, kept yesterday's 250,000
+    - Pro: no credits found today, kept yesterday's 2,000,000
+    -> saved the monthly prices
+
+2026-11-18 06:35  aiva  (https://www.aiva.ai/pricing)
     - Standard: yearly price equals the monthly price, left out
     - Pro: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-17 06:30  mureka  (https://www.mureka.ai/subscribe)
+2026-11-18 06:37  mureka  (https://www.mureka.ai/subscribe)
     - Pro: yearly price equals the monthly price, left out
     - Premier: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-17 06:30  midjourney  (https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans)
-    - Basic: no credits found today, kept yesterday's 200
-    - Standard: no credits found today, kept yesterday's 900
-    - Pro: no credits found today, kept yesterday's 1,800
-    - Mega: no credits found today, kept yesterday's 3,600
-    -> saved the monthly prices
-
-2026-11-17 06:31  ideogram  (https://docs.ideogram.ai/plans-and-pricing/personal-plans)
+2026-11-18 06:38  ideogram  (https://docs.ideogram.ai/plans-and-pricing/personal-plans)
     - [https://docs.ideogram.ai/plans-and-pricing/personal-plans] download: no plans found
     - [https://docs.ideogram.ai/plans-and-pricing/personal-plans] browser: no plans found
     - [https://ideogram.ai/pricing] download: pricing page returned almost no text (HTTP 403)

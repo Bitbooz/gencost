@@ -1,5 +1,15 @@
-Price changes in the last 7 days (for the price alert email), made 2026-11-17
+Price changes in the last 7 days (for the price alert email), made 2026-11-18
 
+2026-11-18  Pictory Teams: $199 → $59.50 a month
+2026-11-18  Pictory Starter: $29 → $12.50 a month
+2026-11-18  Pictory Professional: $59 → $17.50 a month
+2026-11-18  Captions Frontier 4x: $279.99 → $139.99 a month, credits 5,600 → 2,800, so the price per credit hardly changed
+2026-11-18  Captions Frontier 2x: $139.99 → $69.99 a month, credits 2,800 → 1,400, so the price per credit hardly changed
+2026-11-18  Captions Frontier: $69.99 → $279.99 a month, credits 1,400 → 5,600, so the price per credit hardly changed
+2026-11-18  OpenArt Wonder: paid yearly $175 → $144
+2026-11-18  OpenArt Starter: paid yearly $13 → $11
+2026-11-18  OpenArt Pro: paid yearly $44 → $36
+2026-11-18  OpenArt Plus: paid yearly $27 → $24
 2026-11-17  PixVerse Ultra: paid yearly $149 → $104.30, credits 25,000 → 30,000
 2026-11-17  PixVerse Standard: paid yearly $8 → $7.20
 2026-11-17  PixVerse Pro: paid yearly $24 → $20.40
@@ -9,4 +19,3 @@ Price changes in the last 7 days (for the price alert email), made 2026-11-17
 2026-11-15  Dreamina Advanced: $159 → $79 a month, credits 17,600 → 8,645, so the price per credit hardly changed
 2026-11-12  Higgsfield Ultra: paid yearly $99 → $65
 2026-11-12  Higgsfield Plus: paid yearly $47 → $35
-2026-11-10  InVideo Max: $250 → $150 a month, paid yearly $250 → $75

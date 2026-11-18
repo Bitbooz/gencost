@@ -23,8 +23,16 @@
       "credits_or_minutes": 10000,
       "unit": "credits",
       "offer": ""
+    },
+    {
+      "name": "Platinum",
+      "monthly_price_usd": 120,
+      "yearly_price_usd": 100,
+      "credits_or_minutes": 15000,
+      "unit": "credits",
+      "offer": ""
     }
   ],
   "source": "https://suno.com/pricing",
-  "last_checked": "2026-11-17 06:28"
+  "last_checked": "2026-11-18 06:34"
 }

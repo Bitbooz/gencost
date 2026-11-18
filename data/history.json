@@ -141,14 +141,14 @@
     [
      "2026-11-08",
      19.0,
-     0.0
+     14.0
     ]
    ],
    "Pro": [
     [
      "2026-11-08",
      89.0,
-     0.0
+     59.0
     ]
    ]
   },
@@ -594,6 +594,11 @@
      "2026-11-08",
      69.99,
      0.0
+    ],
+    [
+     "2026-11-18",
+     279.99,
+     0.0
     ]
    ],
    "Frontier 2x": [
@@ -601,12 +606,22 @@
      "2026-11-08",
      139.99,
      0.0
+    ],
+    [
+     "2026-11-18",
+     69.99,
+     0.0
     ]
    ],
    "Frontier 4x": [
     [
      "2026-11-08",
      279.99,
+     0.0
+    ],
+    [
+     "2026-11-18",
+     139.99,
      0.0
     ]
    ]
@@ -616,6 +631,11 @@
     [
      "2026-11-08",
      29.0,
+     25.0
+    ],
+    [
+     "2026-11-18",
+     12.5,
      25.0
     ]
    ],
@@ -629,12 +649,22 @@
      "2026-11-09",
      59.0,
      29.5
+    ],
+    [
+     "2026-11-18",
+     17.5,
+     29.5
     ]
    ],
    "Teams": [
     [
      "2026-11-08",
      199.0,
+     119.0
+    ],
+    [
+     "2026-11-18",
+     59.5,
      119.0
     ]
    ]
@@ -693,6 +723,13 @@
     [
      "2026-11-13",
      520.0,
+     0.0
+    ]
+   ],
+   "Advanced higher credit tier": [
+    [
+     "2026-11-18",
+     159.0,
      0.0
     ]
    ]
@@ -1017,6 +1054,13 @@
      30.0,
      24.0
     ]
+   ],
+   "Platinum": [
+    [
+     "2026-11-18",
+     120.0,
+     100.0
+    ]
    ]
   },
   "Udio": {
@@ -1187,145 +1231,73 @@
   }
  },
  "pending": {
-  "video|CapCut|Pro": {
+  "video|Krea|Pro": {
    "value": [
-    19.99,
-    14.99
+    42.0,
+    21.0
    ],
-   "reading": "2026-11-17 06:22",
-   "first_seen": "2026-11-17"
+   "reading": "2026-11-18 06:24",
+   "first_seen": "2026-11-18"
   },
-  "video|Captions|Frontier 2x": {
+  "video|Krea|Max": {
    "value": [
-    69.99,
-    0.0
+    180.0,
+    54.0
    ],
-   "reading": "2026-11-17 06:23",
-   "first_seen": "2026-11-17"
-  },
-  "video|Captions|Frontier 4x": {
-   "value": [
-    139.99,
-    0.0
-   ],
-   "reading": "2026-11-17 06:23",
-   "first_seen": "2026-11-17"
-  },
-  "video|Captions|Frontier": {
-   "value": [
-    279.99,
-    0.0
-   ],
-   "reading": "2026-11-17 06:23",
-   "first_seen": "2026-11-17"
-  },
-  "video|Pictory|Starter": {
-   "value": [
-    12.5,
-    25.0
-   ],
-   "reading": "2026-11-17 06:24",
-   "first_seen": "2026-11-17"
-  },
-  "video|Pictory|Professional": {
-   "value": [
-    17.5,
-    29.5
-   ],
-   "reading": "2026-11-17 06:24",
-   "first_seen": "2026-11-17"
-  },
-  "video|Pictory|Teams": {
-   "value": [
-    59.5,
-    119.0
-   ],
-   "reading": "2026-11-17 06:24",
-   "first_seen": "2026-11-17"
-  },
-  "image|OpenArt|Starter": {
-   "value": [
-    14.0,
-    11.0
-   ],
-   "reading": "2026-11-17 06:32",
-   "first_seen": "2026-11-17"
-  },
-  "image|OpenArt|Plus": {
-   "value": [
-    34.0,
-    24.0
-   ],
-   "reading": "2026-11-17 06:32",
-   "first_seen": "2026-11-17"
-  },
-  "image|OpenArt|Pro": {
-   "value": [
-    56.0,
-    36.0
-   ],
-   "reading": "2026-11-17 06:32",
-   "first_seen": "2026-11-17"
-  },
-  "image|OpenArt|Wonder": {
-   "value": [
-    240.0,
-    144.0
-   ],
-   "reading": "2026-11-17 06:32",
-   "first_seen": "2026-11-17"
+   "reading": "2026-11-18 06:24",
+   "first_seen": "2026-11-18"
   }
  },
  "readings": {
-  "video|HeyGen": "2026-11-17 06:19",
-  "video|Higgsfield": "2026-11-17 06:20",
-  "video|Runway": "2026-11-17 06:20",
-  "video|Kling AI": "2026-11-17 06:20",
-  "video|Synthesia": "2026-11-17 06:20",
-  "video|Pika": "2026-11-17 06:21",
-  "video|Luma": "2026-11-17 06:21",
-  "video|Viggle": "2026-11-17 06:21",
-  "video|InVideo": "2026-11-17 06:21",
-  "video|CapCut": "2026-11-17 06:22",
-  "video|LTX Studio": "2026-11-17 06:22",
+  "video|HeyGen": "2026-11-18 06:25",
+  "video|Higgsfield": "2026-11-18 06:25",
+  "video|Runway": "2026-11-18 06:25",
+  "video|Kling AI": "2026-11-18 06:26",
+  "video|Synthesia": "2026-11-18 06:26",
+  "video|Pika": "2026-11-18 06:26",
+  "video|Luma": "2026-11-18 06:26",
+  "video|Viggle": "2026-11-18 06:27",
+  "video|InVideo": "2026-11-18 06:27",
+  "video|CapCut": "2026-11-18 06:27",
+  "video|LTX Studio": "2026-11-18 06:27",
   "video|Hailuo AI": "2026-11-16 06:18",
-  "video|Google Veo": "2026-11-17 06:18",
-  "video|Vidu": "2026-11-17 06:19",
-  "video|Krea": "2026-11-17 06:19",
-  "video|PixVerse": "2026-11-17 06:22",
-  "video|D-ID": "2026-11-17 06:22",
-  "video|Colossyan": "2026-11-17 06:23",
-  "video|OpusClip": "2026-11-17 06:23",
-  "video|Captions": "2026-11-17 06:23",
-  "voice|ElevenLabs": "2026-11-17 06:25",
-  "voice|Murf AI": "2026-11-17 06:26",
-  "voice|Cartesia": "2026-11-17 06:26",
-  "voice|Speechify": "2026-11-17 06:26",
-  "voice|Descript": "2026-11-17 06:26",
-  "voice|Fliki": "2026-11-17 06:27",
-  "voice|Fish Audio": "2026-11-17 06:27",
-  "music|Suno": "2026-11-17 06:28",
-  "music|Udio": "2026-11-17 06:28",
-  "music|Soundraw": "2026-11-17 06:28",
-  "music|AIVA": "2026-11-17 06:29",
-  "music|Boomy": "2026-11-17 06:29",
-  "music|Stable Audio": "2026-11-17 06:29",
-  "music|Mureka": "2026-11-17 06:30",
-  "image|Midjourney": "2026-11-17 06:30",
+  "video|Google Veo": "2026-11-18 06:23",
+  "video|Vidu": "2026-11-18 06:24",
+  "video|Krea": "2026-11-18 06:24",
+  "video|PixVerse": "2026-11-18 06:28",
+  "video|D-ID": "2026-11-18 06:28",
+  "video|Colossyan": "2026-11-18 06:28",
+  "video|OpusClip": "2026-11-18 06:29",
+  "video|Captions": "2026-11-18 06:29",
+  "voice|ElevenLabs": "2026-11-18 06:31",
+  "voice|Murf AI": "2026-11-18 06:32",
+  "voice|Cartesia": "2026-11-18 06:32",
+  "voice|Speechify": "2026-11-18 06:32",
+  "voice|Descript": "2026-11-18 06:32",
+  "voice|Fliki": "2026-11-18 06:33",
+  "voice|Fish Audio": "2026-11-18 06:33",
+  "music|Suno": "2026-11-18 06:34",
+  "music|Udio": "2026-11-18 06:34",
+  "music|Soundraw": "2026-11-18 06:34",
+  "music|AIVA": "2026-11-18 06:35",
+  "music|Boomy": "2026-11-18 06:36",
+  "music|Stable Audio": "2026-11-18 06:36",
+  "music|Mureka": "2026-11-18 06:37",
+  "image|Midjourney": "2026-11-18 06:37",
   "image|Ideogram": "2026-11-16 06:30",
-  "image|Recraft": "2026-11-17 06:31",
-  "image|Freepik": "2026-11-17 06:32",
-  "image|OpenArt": "2026-11-17 06:32",
+  "image|Recraft": "2026-11-18 06:38",
+  "image|Freepik": "2026-11-18 06:39",
+  "image|OpenArt": "2026-11-18 06:39",
   "image|Leonardo": "2026-11-05 00:00",
   "image|Adobe Firefly": "2026-11-08 14:00",
-  "video|Pictory": "2026-11-17 06:24",
-  "video|VEED": "2026-11-17 06:24",
+  "video|Pictory": "2026-11-18 06:29",
+  "video|VEED": "2026-11-18 06:30",
   "image|NightCafe": "2026-10-31 00:00",
-  "video|Dreamina": "2026-11-17 06:24",
-  "video|Magic Hour": "2026-11-17 06:25",
-  "video|Elyum": "2026-11-17 06:25",
-  "video|Wan": "2026-11-17 06:25",
-  "voice|MiniMax Audio": "2026-11-17 06:27"
+  "video|Dreamina": "2026-11-18 06:30",
+  "video|Magic Hour": "2026-11-18 06:30",
+  "video|Elyum": "2026-11-18 06:30",
+  "video|Wan": "2026-11-18 06:31",
+  "voice|MiniMax Audio": "2026-11-18 06:33"
  },
  "image": {
   "Midjourney": {
@@ -1468,6 +1440,11 @@
      "2026-11-08",
      14.0,
      13.0
+    ],
+    [
+     "2026-11-18",
+     14.0,
+     11.0
     ]
    ],
    "Plus": [
@@ -1475,6 +1452,11 @@
      "2026-11-08",
      34.0,
      27.0
+    ],
+    [
+     "2026-11-18",
+     34.0,
+     24.0
     ]
    ],
    "Pro": [
@@ -1482,6 +1464,11 @@
      "2026-11-08",
      56.0,
      44.0
+    ],
+    [
+     "2026-11-18",
+     56.0,
+     36.0
     ]
    ],
    "Wonder": [
@@ -1489,6 +1476,11 @@
      "2026-11-08",
      240.0,
      175.0
+    ],
+    [
+     "2026-11-18",
+     240.0,
+     144.0
     ]
    ]
   },
@@ -1598,52 +1590,52 @@
   }
  },
  "verified": {
-  "video|HeyGen": "2026-11-17 06:19",
-  "video|Higgsfield": "2026-11-17 06:20",
-  "video|Runway": "2026-11-17 06:20",
-  "video|Kling AI": "2026-11-17 06:20",
-  "video|Synthesia": "2026-11-17 06:20",
-  "video|Pika": "2026-11-17 06:21",
-  "video|Luma": "2026-11-17 06:21",
-  "video|Viggle": "2026-11-17 06:21",
-  "video|InVideo": "2026-11-17 06:21",
-  "video|CapCut": "2026-11-16 06:22",
-  "video|LTX Studio": "2026-11-17 06:22",
+  "video|HeyGen": "2026-11-18 06:25",
+  "video|Higgsfield": "2026-11-18 06:25",
+  "video|Runway": "2026-11-18 06:25",
+  "video|Kling AI": "2026-11-18 06:26",
+  "video|Synthesia": "2026-11-18 06:26",
+  "video|Pika": "2026-11-18 06:26",
+  "video|Luma": "2026-11-18 06:26",
+  "video|Viggle": "2026-11-18 06:27",
+  "video|InVideo": "2026-11-18 06:27",
+  "video|CapCut": "2026-11-18 06:27",
+  "video|LTX Studio": "2026-11-18 06:27",
   "video|Hailuo AI": "2026-11-16 06:18",
-  "video|Google Veo": "2026-11-17 06:18",
-  "video|Vidu": "2026-11-17 06:19",
+  "video|Google Veo": "2026-11-18 06:23",
+  "video|Vidu": "2026-11-18 06:24",
   "video|Krea": "2026-11-17 06:19",
-  "video|PixVerse": "2026-11-17 06:22",
-  "video|D-ID": "2026-11-17 06:22",
-  "video|Colossyan": "2026-11-17 06:23",
-  "video|OpusClip": "2026-11-17 06:23",
-  "video|Captions": "2026-11-16 06:23",
-  "video|Pictory": "2026-11-16 06:23",
-  "video|VEED": "2026-11-17 06:24",
-  "voice|ElevenLabs": "2026-11-17 06:25",
-  "voice|Murf AI": "2026-11-17 06:26",
-  "voice|Cartesia": "2026-11-17 06:26",
-  "voice|Speechify": "2026-11-17 06:26",
-  "voice|Descript": "2026-11-17 06:26",
-  "voice|Fliki": "2026-11-17 06:27",
-  "voice|Fish Audio": "2026-11-17 06:27",
-  "music|Suno": "2026-11-17 06:28",
-  "music|Udio": "2026-11-17 06:28",
-  "music|Soundraw": "2026-11-17 06:28",
-  "music|AIVA": "2026-11-17 06:29",
-  "music|Boomy": "2026-11-17 06:29",
-  "music|Stable Audio": "2026-11-17 06:29",
-  "music|Mureka": "2026-11-17 06:30",
-  "image|Midjourney": "2026-11-17 06:30",
+  "video|PixVerse": "2026-11-18 06:28",
+  "video|D-ID": "2026-11-18 06:28",
+  "video|Colossyan": "2026-11-18 06:28",
+  "video|OpusClip": "2026-11-18 06:29",
+  "video|Captions": "2026-11-18 06:29",
+  "video|Pictory": "2026-11-18 06:29",
+  "video|VEED": "2026-11-18 06:30",
+  "voice|ElevenLabs": "2026-11-18 06:31",
+  "voice|Murf AI": "2026-11-18 06:32",
+  "voice|Cartesia": "2026-11-18 06:32",
+  "voice|Speechify": "2026-11-18 06:32",
+  "voice|Descript": "2026-11-18 06:32",
+  "voice|Fliki": "2026-11-18 06:33",
+  "voice|Fish Audio": "2026-11-18 06:33",
+  "music|Suno": "2026-11-18 06:34",
+  "music|Udio": "2026-11-18 06:34",
+  "music|Soundraw": "2026-11-18 06:34",
+  "music|AIVA": "2026-11-18 06:35",
+  "music|Boomy": "2026-11-18 06:36",
+  "music|Stable Audio": "2026-11-18 06:36",
+  "music|Mureka": "2026-11-18 06:37",
+  "image|Midjourney": "2026-11-18 06:37",
   "image|Ideogram": "2026-11-16 06:30",
-  "image|Recraft": "2026-11-17 06:31",
-  "image|Freepik": "2026-11-17 06:32",
-  "image|OpenArt": "2026-11-16 06:31",
-  "video|Dreamina": "2026-11-17 06:24",
-  "video|Magic Hour": "2026-11-17 06:25",
-  "video|Elyum": "2026-11-17 06:25",
-  "video|Wan": "2026-11-17 06:25",
-  "voice|MiniMax Audio": "2026-11-17 06:27"
+  "image|Recraft": "2026-11-18 06:38",
+  "image|Freepik": "2026-11-18 06:39",
+  "image|OpenArt": "2026-11-18 06:39",
+  "video|Dreamina": "2026-11-18 06:30",
+  "video|Magic Hour": "2026-11-18 06:30",
+  "video|Elyum": "2026-11-18 06:30",
+  "video|Wan": "2026-11-18 06:31",
+  "voice|MiniMax Audio": "2026-11-18 06:33"
  },
  "credit_changes": {
   "video|Dreamina|Advanced|2026-11-15": [
@@ -1653,6 +1645,18 @@
   "video|PixVerse|Ultra|2026-11-17": [
    25000,
    30000
+  ],
+  "video|Captions|Frontier 2x|2026-11-18": [
+   2800,
+   1400
+  ],
+  "video|Captions|Frontier 4x|2026-11-18": [
+   5600,
+   2800
+  ],
+  "video|Captions|Frontier|2026-11-18": [
+   1400,
+   5600
   ]
  },
  "credits": {
@@ -1717,9 +1721,9 @@
   "video|OpusClip|Starter": 150,
   "video|OpusClip|Pro": 300,
   "video|Captions|Max": 500,
-  "video|Captions|Frontier": 1400,
-  "video|Captions|Frontier 2x": 2800,
-  "video|Captions|Frontier 4x": 5600,
+  "video|Captions|Frontier": 5600,
+  "video|Captions|Frontier 2x": 1400,
+  "video|Captions|Frontier 4x": 2800,
   "video|Pictory|Starter": 2000,
   "video|Pictory|Professional": 6000,
   "video|Pictory|Teams": 18000,
@@ -1745,9 +1749,9 @@
   "voice|Cartesia|Startup": 1250000,
   "voice|Cartesia|Scale": 8000000,
   "voice|Descript|Free": 100,
-  "voice|Descript|Hobbyist": 400,
-  "voice|Descript|Creator": 800,
-  "voice|Descript|Business": 1500,
+  "voice|Descript|Hobbyist": 10,
+  "voice|Descript|Creator": 30,
+  "voice|Descript|Business": 40,
   "voice|Fliki|Free": 3,
   "voice|Fliki|Standard": 180,
   "voice|Fliki|Premium": 600,
@@ -1767,10 +1771,10 @@
   "music|Stable Audio|Studio": 14000,
   "music|Mureka|Pro": 5000,
   "music|Mureka|Premier": 20000,
-  "image|Midjourney|Basic": 200,
-  "image|Midjourney|Standard": 900,
-  "image|Midjourney|Pro": 1800,
-  "image|Midjourney|Mega": 3600,
+  "image|Midjourney|Basic": 3.3,
+  "image|Midjourney|Standard": 15,
+  "image|Midjourney|Pro": 30,
+  "image|Midjourney|Mega": 60,
   "image|Leonardo|Free": 150,
   "image|Leonardo|Essential": 8500,
   "image|Leonardo|Premium": 25000,
@@ -1806,6 +1810,8 @@
   "voice|MiniMax Audio|Standard": 300000,
   "voice|MiniMax Audio|Pro": 1100000,
   "voice|MiniMax Audio|Scale": 3300000,
-  "voice|MiniMax Audio|Business": 20000000
+  "voice|MiniMax Audio|Business": 20000000,
+  "video|Dreamina|Advanced higher credit tier": 17600,
+  "music|Suno|Platinum": 15000
  }
 }
