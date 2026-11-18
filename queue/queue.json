@@ -132,6 +132,12 @@
    "page": "pages/why-ai-credits-are-not-comparable-2026.html",
    "card": "<li class=\"reveal\"><a class=\"art\" href=\"/pages/why-ai-credits-are-not-comparable-2026.html\"><span class=\"cat guide\">Guide</span><h3>Why credits aren't comparable</h3><p>1,000 credits: $1 or $125?</p></a></li>",
    "published": ""
+  },
+  {
+   "file": "queue/news-gencost-ai-connector-and-hugging-face-price-finder-2026.html",
+   "page": "pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html",
+   "card": "<li class=\"reveal\"><a class=\"art\" href=\"/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html\"><span class=\"cat guide\">News</span><h3>GenCost in every AI assistant</h3><p>New: free Price Finder on Hugging Face</p></a></li>",
+   "published": "2026-11-18"
   }
  ]
 }

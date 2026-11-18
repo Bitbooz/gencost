@@ -446,7 +446,17 @@ def main():
         # footer: "Use GenCost in AI assistants" (the MCP server page)
         if 'href="/ai.html"' not in new and '<li><a href="/about.html">About GenCost</a></li>' in new:
             new = new.replace('<li><a href="/about.html">About GenCost</a></li>',
-                              '<li><a href="/ai.html">Use in Claude &amp; ChatGPT</a></li>\n          <li><a href="/about.html">About GenCost</a></li>', 1)
+                              '<li><a href="/ai.html">Use in AI assistants</a></li>\n          <li><a href="/about.html">About GenCost</a></li>', 1)
+        # menu: "AI connector" after Calculators (2026-11-18)
+        calc_li = '<li><a href="/calculator.html">Calculators</a></li>'
+        if '<li><a href="/ai.html">AI connector</a></li>' not in new and calc_li in new:
+            new = new.replace(calc_li, calc_li + '\n      <li><a href="/ai.html">AI connector</a></li>', 1)
+        # footer: the AI page covers many assistants now, plus the free Hugging Face calculator (2026-11-18)
+        new = new.replace('<li><a href="/ai.html">Use in Claude &amp; ChatGPT</a></li>', '<li><a href="/ai.html">Use in AI assistants</a></li>')
+        hf_li = '<li><a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" target="_blank" rel="noopener">AI Price Finder (Hugging Face)</a></li>'
+        if 'spaces/Bitbooz/ai-price-finder' not in new and '<li><a href="/ai.html">Use in AI assistants</a></li>' in new:
+            new = new.replace('<li><a href="/ai.html">Use in AI assistants</a></li>',
+                              '<li><a href="/ai.html">Use in AI assistants</a></li>\n          ' + hf_li, 1)
         # footer: link to the About page next to "Order a package"
         if 'href="/about.html"' not in new and '<li><a href="/order.html">Order a package</a></li>' in new:
             new = new.replace('<li><a href="/order.html">Order a package</a></li>',
