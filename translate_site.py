@@ -795,7 +795,9 @@ def main(translator="grok", browser=True):
 
     add_to_sitemap({c: state[c][2] for c in LANGS})
 
-    stamp = time.strftime("%Y-%m-%d %H:%M")
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    stamp = datetime.now(ZoneInfo("Europe/Oslo")).strftime("%Y-%m-%d %H:%M")  # Oslo time, like the other review files
     with open("translate-review.txt", "w", encoding="utf-8") as fh:
         for line in notes["all"]:
             fh.write(f"{stamp}  - {line}\n")

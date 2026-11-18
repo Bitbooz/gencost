@@ -478,5 +478,188 @@
    "status": "manual",
    "note": "This tool blocks automatic reading; its prices are checked by hand"
   }
+ ],
+ "translated": "06:55",
+ "languages": [
+  {
+   "code": "es",
+   "name": "Español",
+   "pages": 116,
+   "of": 117,
+   "stored": 3867,
+   "baseline": 3867,
+   "new": 0
+  },
+  {
+   "code": "pt",
+   "name": "Português",
+   "pages": 116,
+   "of": 117,
+   "stored": 3869,
+   "baseline": 3869,
+   "new": 0
+  },
+  {
+   "code": "de",
+   "name": "Deutsch",
+   "pages": 116,
+   "of": 117,
+   "stored": 3849,
+   "baseline": 3849,
+   "new": 0
+  },
+  {
+   "code": "fr",
+   "name": "Français",
+   "pages": 116,
+   "of": 117,
+   "stored": 3858,
+   "baseline": 3858,
+   "new": 0
+  },
+  {
+   "code": "ar",
+   "name": "العربية",
+   "pages": 116,
+   "of": 117,
+   "stored": 3848,
+   "baseline": 3848,
+   "new": 0
+  },
+  {
+   "code": "he",
+   "name": "עברית",
+   "pages": 116,
+   "of": 117,
+   "stored": 3813,
+   "baseline": 3813,
+   "new": 0
+  },
+  {
+   "code": "it",
+   "name": "Italiano",
+   "pages": 116,
+   "of": 117,
+   "stored": 3816,
+   "baseline": 3816,
+   "new": 0
+  },
+  {
+   "code": "ja",
+   "name": "日本語",
+   "pages": 116,
+   "of": 117,
+   "stored": 3822,
+   "baseline": 3822,
+   "new": 0
+  },
+  {
+   "code": "ru",
+   "name": "Русский",
+   "pages": 116,
+   "of": 117,
+   "stored": 3824,
+   "baseline": 3824,
+   "new": 0
+  },
+  {
+   "code": "zh-tw",
+   "name": "繁體中文",
+   "pages": 116,
+   "of": 117,
+   "stored": 3837,
+   "baseline": 3837,
+   "new": 0
+  },
+  {
+   "code": "ko",
+   "name": "한국어",
+   "pages": 116,
+   "of": 117,
+   "stored": 3808,
+   "baseline": 3808,
+   "new": 0
+  },
+  {
+   "code": "id",
+   "name": "Bahasa Indonesia",
+   "pages": 116,
+   "of": 117,
+   "stored": 3824,
+   "baseline": 3824,
+   "new": 0
+  },
+  {
+   "code": "tr",
+   "name": "Türkçe",
+   "pages": 116,
+   "of": 117,
+   "stored": 3832,
+   "baseline": 3832,
+   "new": 0
+  },
+  {
+   "code": "hi",
+   "name": "हिन्दी",
+   "pages": 116,
+   "of": 117,
+   "stored": 3793,
+   "baseline": 3793,
+   "new": 0
+  },
+  {
+   "code": "vi",
+   "name": "Tiếng Việt",
+   "pages": 116,
+   "of": 117,
+   "stored": 3834,
+   "baseline": 3834,
+   "new": 0
+  },
+  {
+   "code": "pl",
+   "name": "Polski",
+   "pages": 116,
+   "of": 117,
+   "stored": 3833,
+   "baseline": 3833,
+   "new": 0
+  },
+  {
+   "code": "uk",
+   "name": "Українська",
+   "pages": 116,
+   "of": 117,
+   "stored": 3827,
+   "baseline": 3827,
+   "new": 0
+  },
+  {
+   "code": "zh",
+   "name": "简体中文",
+   "pages": 116,
+   "of": 117,
+   "stored": 3830,
+   "baseline": 3830,
+   "new": 0
+  },
+  {
+   "code": "no",
+   "name": "Norsk",
+   "pages": 116,
+   "of": 117,
+   "stored": 3604,
+   "baseline": 3604,
+   "new": 0
+  },
+  {
+   "code": "sv",
+   "name": "Svenska",
+   "pages": 116,
+   "of": 117,
+   "stored": 3604,
+   "baseline": 3604,
+   "new": 0
+  }
  ]
 }

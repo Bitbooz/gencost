@@ -81,7 +81,7 @@
 @keyframes lvPulse{70%{box-shadow:0 0 0 10px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
 .lv h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.05;margin:18px 0 12px;letter-spacing:-.02em;background:linear-gradient(90deg,var(--v),var(--i) 35%,var(--a) 70%,var(--m));-webkit-background-clip:text;background-clip:text;color:transparent}
 .lv-sub{color:#aab3c5;max-width:680px;margin:0 auto;font-size:1.05rem}
-.lv-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:28px 0 18px}
+.lv-stats{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:28px 0 18px}
 .lv-stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
 .lv-stat b{display:block;font-size:1.7rem;font-variant-numeric:tabular-nums;line-height:1.1}
 .lv-stat span{color:#9aa3b5;font-size:.82rem}
@@ -116,9 +116,32 @@
 .lv-log div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lv-log .t{color:#5b6477}.lv-log .g{color:var(--ok)}.lv-log .o{color:var(--kept)}.lv-log .c{color:var(--i)}
 .lv-legend{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;color:#9aa3b5;font-size:.85rem;margin-top:16px}
 .lv-legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.lv-langs,.lv-pub{margin-top:14px;background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.01));border:1px solid var(--line);border-radius:18px;padding:14px}
+.lv-langs h2,.lv-pub h2{font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 12px;display:flex;align-items:center;gap:8px;color:#e5e7eb}
+.lv-langs h2 i{width:10px;height:10px;border-radius:3px;background:linear-gradient(135deg,#c084fc,#f472b6);box-shadow:0 0 12px #c084fc}
+.lv-pub h2 i{width:10px;height:10px;border-radius:3px;background:linear-gradient(135deg,#fbbf24,#34d399);box-shadow:0 0 12px #fbbf24}
+.lv-langs h2 small,.lv-pub h2 small{letter-spacing:0;text-transform:none;color:#7c8396;font-weight:400;font-size:.8rem}
+.lv-lgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:7px}
+.lv-lang{position:relative;padding:9px 10px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid transparent;color:#7c8396;font-size:.88rem;text-decoration:none;overflow:hidden;transition:background .35s,border-color .35s,color .35s,transform .35s}
+.lv-lang b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lv-lang .st{font-size:.72rem;font-variant-numeric:tabular-nums}
+.lv-lang.scan{color:#fff;border-color:#c084fc;transform:scale(1.04)}
+.lv-lang.scan::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(192,132,252,.45),transparent);animation:lvScan .5s linear}
+.lv-lang.done{color:#f5ecff;background:rgba(192,132,252,.1);border-color:rgba(192,132,252,.4)}.lv-lang.done .st{color:#d8b4fe}
+.lv-lang.src{color:#e5e7eb;border:1px dashed rgba(255,255,255,.25)}
+.lv-cursor.tr svg path{fill:#c084fc}.lv-cursor.tr span{background:linear-gradient(90deg,#c084fc,#f472b6)}
+.lv-cursor.pb svg path{fill:#fbbf24}.lv-cursor.pb span{background:linear-gradient(90deg,#fbbf24,#34d399)}
+.lv-pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+.lv-pc{position:relative;display:flex;gap:12px;align-items:center;padding:12px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid transparent;color:#7c8396;text-decoration:none;overflow:hidden;transition:all .4s;min-height:84px}
+.lv-pc .ic{font-size:1.6rem;filter:grayscale(1);opacity:.5;transition:all .4s}
+.lv-pc b{display:block;color:inherit;font-size:.95rem;line-height:1.3}
+.lv-pc small{display:block;font-size:.75rem;margin-top:3px}
+.lv-pc video{width:64px;height:114px;border-radius:9px;object-fit:cover;background:#111;flex:none;opacity:.35;transition:opacity .4s}
+.lv-pc.scan{border-color:#fbbf24;transform:scale(1.02)}
+.lv-pc.done{color:#fff7e6;background:rgba(251,191,36,.08);border-color:rgba(251,191,36,.4)}.lv-pc.done .ic{filter:none;opacity:1}.lv-pc.done video{opacity:1}.lv-pc.done small{color:#fcd34d}
 .lv-note{color:#8a93a6;font-size:.88rem;text-align:center;margin-top:18px}
-@media(max-width:900px){.lv-stage{grid-template-columns:1fr 1fr}.lv-stats{grid-template-columns:repeat(3,1fr)}.lv-flow{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:520px){.lv-stage{grid-template-columns:1fr 1fr;gap:8px}.lv-lane{padding:10px}.lv-card{font-size:.8rem;padding:7px 8px}.lv-card .st{font-size:.68rem}.lv-stats{grid-template-columns:1fr 1fr}.lv-stat.clock{grid-column:span 2}.lv-flow{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.lv-stage{grid-template-columns:1fr 1fr}.lv-lgrid{grid-template-columns:repeat(4,1fr)}.lv-pgrid{grid-template-columns:1fr}.lv-stats{grid-template-columns:repeat(3,1fr)}.lv-flow{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:520px){.lv-stage{grid-template-columns:1fr 1fr;gap:8px}.lv-lane{padding:10px}.lv-card{font-size:.8rem;padding:7px 8px}.lv-card .st{font-size:.68rem}.lv-stats{grid-template-columns:1fr 1fr}.lv-stat.clock{grid-column:span 2}.lv-lgrid{grid-template-columns:repeat(3,1fr)}.lv-lang{font-size:.78rem;padding:7px 8px}.lv-flow{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){.lv-cursor{display:none}.lv-card,.lv-step{transition:none}.lv-dot{animation:none}}
 </style>
 <div class="lv-wrap">
@@ -133,6 +156,7 @@
     <div class="lv-stat"><b id="lvChanged">0</b><span>Price changes</span></div>
     <div class="lv-stat"><b id="lvKept">0</b><span>Couldn't be read, kept</span></div>
     <div class="lv-stat"><b id="lvTotal">0</b><span>Tools checked</span></div>
+    <div class="lv-stat"><b id="lvLangs">0</b><span>Languages updated</span></div>
   </div>
   <div class="lv-ctrl"><button id="lvReplay" type="button">↻ Replay</button><button data-speed="1" class="on" type="button">1×</button><button data-speed="2" type="button">2×</button><button id="lvSkip" type="button">Skip to the end</button></div>
   <div class="lv-stage" id="lvStage">
@@ -142,6 +166,14 @@
     <section class="lv-lane" data-cat="voice"><h2><i></i>Voice</h2><div class="lv-cards"></div></section>
     <section class="lv-lane" data-cat="music"><h2><i></i>Music</h2><div class="lv-cards"></div></section>
   </div>
+  <section class="lv-langs" id="lvLangsBox">
+    <h2><i></i>Translations <small>the whole site, in every language</small></h2>
+    <div class="lv-lgrid" id="lvLgrid"></div>
+  </section>
+  <section class="lv-pub" id="lvPub">
+    <h2><i></i>Published today <small>new articles and today's video</small></h2>
+    <div class="lv-pgrid" id="lvPgrid"></div>
+  </section>
   <div class="lv-legend"><span><i style="background:var(--ok)"></i>Read and confirmed</span><span><i style="background:var(--i)"></i>Price changed</span><span><i style="background:var(--kept)"></i>Couldn't be read, yesterday's price kept</span><span><i style="background:var(--hand)"></i>Checked by hand</span></div>
   <div class="lv-flow" id="lvFlow">
     <div class="lv-step" data-step="0"><b>🧾</b>Prices checked twice before they count</div>
@@ -159,7 +191,9 @@
   const $ = (id) => document.getElementById(id);
   const stage = $("lvStage"), cursor = $("lvCursor"), log = $("lvLog");
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  let data, cards = {}, timer = null, speed = 1, run = 0;
+  let data, cards = {}, langEls = {}, pubs = [], timer = null, speed = 1, run = 0;
+  const langLabel = (l) => `${l.pages} pages ✓` + (l.new ? ` · +${l.new} new` : "");
+  const SHORTS = "https://huggingface.co/datasets/Bitbooz/gencost-shorts/resolve/main/";
   const money = (v) => "$" + (+v).toLocaleString("en-US", { minimumFractionDigits: v % 1 ? 2 : 0, maximumFractionDigits: 2 });
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const toMin = (t) => { const [h, m] = (t || "0:0").split(":").map(Number); return h * 60 + m; };
@@ -195,6 +229,10 @@
     cursor.style.opacity = 1;
     cursor.style.transform = `translate(${r.left - s.left + r.width * 0.62}px, ${r.top - s.top + r.height * 0.35}px)`;
   }
+  function pubDone(p) {
+    p.el.classList.remove("scan"); p.el.classList.add("done"); p.el.querySelector("small").textContent = p.done;
+    const v = p.el.querySelector("video"); if (v) v.play().catch(() => {});
+  }
   function steps(n) { document.querySelectorAll(".lv-step").forEach((s) => s.classList.toggle("done", +s.dataset.step < n)); }
 
   function build() {
@@ -207,6 +245,24 @@
       document.querySelector(`.lv-lane[data-cat="${t.cat}"] .lv-cards`).appendChild(a);
       cards[t.name] = a;
     });
+    langEls = {};
+    const lg = $("lvLgrid"); lg.innerHTML = "";
+    $("lvLangsBox").style.display = (data.languages || []).length ? "" : "none";
+    if ((data.languages || []).length) {
+      const src = document.createElement("a"); src.className = "lv-lang src"; src.href = "/";
+      src.innerHTML = "<b>English</b><span class='st'>source</span>"; lg.appendChild(src);
+    }
+    (data.languages || []).forEach((l) => {
+      const a = document.createElement("a"); a.className = "lv-lang"; a.href = "/" + l.code + "/";
+      a.innerHTML = `<b>${esc(l.name)}</b><span class="st">/${esc(l.code)}/ · waiting</span>`;
+      lg.appendChild(a); langEls[l.code] = a;
+    });
+    $("lvLangs").textContent = 0;
+    const pg = $("lvPgrid"); pg.innerHTML = ""; pubs = [];
+    (data.articles || []).forEach((a) => pubs.push({ html: `<span class="ic">📝</span><span><b>${esc(a.title)}</b><small>Article · waiting</small></span>`, href: a.url, done: "New article published", log: "Article published: " + a.title }));
+    if (data.short) pubs.push({ html: `<video muted loop playsinline preload="metadata" src="${esc(data.short.url)}"></video><span><b>${esc(data.short.title)}</b><small>YouTube Short · waiting</small></span>`, href: data.short.url, done: "Video sent to YouTube & Facebook", log: "Today's video made and sent to YouTube and Facebook" });
+    pubs.push({ html: `<span class="ic">📣</span><span><b>Posted on X and Bluesky</b><small>Social · waiting</small></span>`, href: "https://bsky.app/profile/bitbooz.bsky.social", done: "With a picture, no link", log: "New article posted on X and Bluesky" });
+    pubs.forEach((p) => { const a = document.createElement("a"); a.className = "lv-pc"; a.href = p.href; a.target = p.href.startsWith("http") ? "_blank" : ""; a.rel = "noopener"; a.innerHTML = p.html; pg.appendChild(a); p.el = a; });
     log.innerHTML = "";
     counters([]); steps(0);
     $("lvClock").textContent = data.started || "06:00";
@@ -216,6 +272,10 @@
     clearTimeout(timer);
     data.tools.forEach(settle);
     counters(data.tools); steps(6);
+    (data.languages || []).forEach((l) => { const el = langEls[l.code]; el.classList.remove("scan"); el.classList.add("done"); el.querySelector(".st").textContent = langLabel(l); });
+    $("lvLangs").textContent = (data.languages || []).length;
+    pubs.forEach(pubDone);
+    cursor.className = "lv-cursor"; cursor.querySelector("span").textContent = "Price reader";
     $("lvClock").textContent = data.finished || "";
     cursor.style.opacity = 0;
   }
@@ -226,14 +286,44 @@
     const order = data.tools.filter((t) => t.time).concat(data.tools.filter((t) => !t.time));
     const done = [], start = toMin(data.started), end = toMin(data.finished) || start + 1;
     line("t", data.started || "", "Price reader starting: " + data.tools.length + " official pricing pages to visit");
-    let i = 0;
+    let i = 0, li = 0, pi = 0;
     const next = () => {
       if (me !== run) return;
+      const L = data.languages || [], a0 = toMin(data.finished), b0 = toMin(data.translated) || a0;
+      if (i >= order.length && li < L.length) {
+        if (li === 0) {
+          cursor.className = "lv-cursor tr"; cursor.querySelector("span").textContent = "Translator";
+          steps(2);
+          line("c", data.finished, "Pages rebuilt, articles updated. Translating the site into " + L.length + " languages…");
+        }
+        const l = L[li++], el = langEls[l.code];
+        moveTo(el); el.classList.add("scan");
+        const now = fmt(a0 + (b0 - a0) * li / L.length);
+        $("lvClock").textContent = now;
+        timer = setTimeout(() => {
+          if (me !== run) return;
+          el.classList.remove("scan"); el.classList.add("done"); el.querySelector(".st").textContent = langLabel(l);
+          $("lvLangs").textContent = li;
+          line("g", now, `${l.name}: ${l.pages} pages updated` + (l.new ? `, ${l.new} new texts translated` : ""));
+          timer = setTimeout(next, 90 / speed);
+        }, 330 / speed);
+        return;
+      }
+      if (i >= order.length && pi < pubs.length) {
+        if (pi === 0) { cursor.className = "lv-cursor pb"; cursor.querySelector("span").textContent = "Publisher"; steps(4); }
+        const p = pubs[pi++]; moveTo(p.el); p.el.classList.add("scan");
+        timer = setTimeout(() => { if (me !== run) return; pubDone(p); line("c", data.translated || data.finished, p.log); timer = setTimeout(next, 200 / speed); }, 700 / speed);
+        return;
+      }
       if (i >= order.length) {
         cursor.style.opacity = 0;
+        cursor.className = "lv-cursor"; cursor.querySelector("span").textContent = "Price reader";
         const after = ["Pages rebuilt with today's prices", "Articles updated", data.articles.length ? "Published: " + data.articles.map((a) => a.title).join(" · ") : "No article in the queue today", "Translated into 21 languages", "Posted on X and Bluesky", "Search engines told what changed (IndexNow)"];
         let k = 0;
-        const flow = () => { if (me !== run) return; steps(k + 1); line("c", data.finished, after[k]); if (++k < after.length) timer = setTimeout(flow, 650 / speed); else line("g", data.finished, "Done. See you tomorrow morning ☕"); };
+        const tEnd = data.translated || data.finished;
+        const short = (data.languages || []).length > 0;  // the translation and publishing phases already showed the rest
+        if (short) after.splice(0, after.length, "Today's prices uploaded to Hugging Face (open dataset)", "Search engines told what changed (IndexNow)");
+        const flow = () => { if (me !== run) return; steps(short ? 5 + k : k + 1); line("c", short || k >= 3 ? tEnd : data.finished, after[k]); if (++k < after.length) timer = setTimeout(flow, 650 / speed); else line("g", tEnd, "Done. See you tomorrow morning ☕"); };
         return (timer = setTimeout(flow, 400 / speed));
       }
       const t = order[i++], el = cards[t.name];
@@ -260,8 +350,13 @@
   }));
   addEventListener("resize", () => cursor.style.opacity = 0);
 
-  fetch("/data/run-log.json", { cache: "no-cache" }).then((r) => r.json()).then((d) => {
+  fetch("/data/run-log.json", { cache: "no-cache" }).then((r) => r.json()).then(async (d) => {
     data = d;
+    try {
+      const x = await fetch(SHORTS + "shorts.xml", { cache: "no-cache" }).then((r) => r.text());
+      const it = [...new DOMParser().parseFromString(x, "text/xml").querySelectorAll("item")].find((n) => (n.querySelector("guid")?.textContent || "") === "gencost-short-" + d.date);
+      if (it) d.short = { title: it.querySelector("title").textContent, url: it.querySelector("enclosure").getAttribute("url") };
+    } catch (e) {}
     const day = new Date(d.date + "T12:00:00").toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" });
     $("lvDay").textContent = `Today's run · ${day} · ${d.started}–${d.finished} Oslo time`;
     if (d.articles.length) $("lvArticle").innerHTML = 'Published: <a href="' + esc(d.articles[0].url) + '">' + esc(d.articles[0].title) + "</a>";

@@ -7,6 +7,7 @@ It only reads files the run already wrote, so it can't change a price:
 - price-review.txt                      tools that could not be read today (old prices kept), and their time
 - data/history.json                     confirmed price changes today, and new prices waiting for a second reading
 - queue/queue.json                      the article published today
+- translate-review.txt                  each language: pages and stored translations (run again after translate_site.py)
 """
 import json
 import os
@@ -43,6 +44,28 @@ def review_times():
         if m and "kept the previous prices" in block:
             out[slug(m.group(3))] = (m.group(1), m.group(2))
     return out
+
+
+def langs(day):
+    """Each translated language today: name, code, pages, stored translations and how many are new since the last run."""
+    try:
+        text = open(os.path.join(HERE, "translate-review.txt"), encoding="utf-8").read()
+    except OSError:
+        return [], ""
+    prev = load("data/run-log.json", {})
+    # baseline = the counts before today's run: yesterday's totals, or the baseline already kept today
+    base = {l["code"]: (l.get("baseline", l["stored"]) if prev.get("date") == day else l["stored"])
+            for l in prev.get("languages", [])}
+    out, stamp = [], ""
+    for m in re.finditer(r"^(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2})  (.+?) \(/([a-z-]+)/\): (\d+) of (\d+) pages, stored translations: (\d+)", text, re.M):
+        if m.group(1) != day:
+            continue
+        stamp = m.group(2)
+        code, stored = m.group(4), int(m.group(7))
+        b = base.get(code, stored)
+        out.append({"code": code, "name": m.group(3), "pages": int(m.group(5)), "of": int(m.group(6)),
+                    "stored": stored, "baseline": b, "new": max(0, stored - b)})
+    return out, stamp
 
 
 def build(day=None):
@@ -85,6 +108,8 @@ def build(day=None):
             h3 = re.search(r"<h3>(.*?)</h3>", it.get("card", ""))
             articles.append({"title": re.sub(r"<[^>]+>", "", h3.group(1)) if h3 else it["page"], "url": "/" + it["page"]})
 
+    languages, translated = langs(day)
+
     count = lambda s: sum(1 for t in tools if t["status"] == s)
     return {
         "about": "What GenCost's morning price check did today. Written by run_log.py; shown on /live.html.",
@@ -94,6 +119,8 @@ def build(day=None):
                    "waiting": sum(t["waiting"] for t in tools)},
         "articles": articles,
         "tools": tools,
+        "translated": translated,
+        "languages": languages,
     }
 
 
@@ -101,4 +128,4 @@ if __name__ == "__main__":
     log = build()
     with open(os.path.join(HERE, "data", "run-log.json"), "w", encoding="utf-8") as f:
         json.dump(log, f, indent=1, ensure_ascii=False)
-    print(f"run-log: {log['totals']} ({log['started']}–{log['finished']})")
+    print(f"run-log: {log['totals']} ({log['started']}–{log['finished']}), {len(log['languages'])} languages at {log['translated']}")
