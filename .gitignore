@@ -1,12 +1,11 @@
+
 # Local Netlify folder
-.netlify
-hf-dataset/
-shorts-out/
-
-android/upload-key.jks
-android-out/
-
 # copies of the companies pricing pages: only kept as a 14-day run download, never published
 *-raw.txt
-
+.netlify
+__pycache__/
+android-out/
+android/upload-key.jks
+hf-dataset/
 node_modules/
+shorts-out/
