@@ -50,7 +50,6 @@ def main():
     done = sum(1 for i in items if i.get("published") == today and not i.get("extra"))
     if done >= PER_DAY:
         print(f"{done} article(s) already published today.")
-        return
     while done < PER_DAY:
         nxt = next((i for i in items if not i.get("published") and not i.get("extra")), None)
         if not nxt:
