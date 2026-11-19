@@ -598,3 +598,10 @@ main.page { padding-bottom: 24px; }
 .live-dot { width: 9px; height: 9px; border-radius: 50%; background: #34d399; box-shadow: 0 0 0 0 rgba(52,211,153,.7); animation: livePulse 1.8s infinite; }
 @keyframes livePulse { 70% { box-shadow: 0 0 0 10px rgba(52,211,153,0); } 100% { box-shadow: 0 0 0 0 rgba(52,211,153,0); } }
 @media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
+
+/* Front page: second live button, the AI radar (2026-11-19) */
+.radar-pill { margin-left: 8px; border-color: rgba(167,139,250,0.5); background: linear-gradient(90deg, rgba(167,139,250,0.14), rgba(244,114,182,0.10)); box-shadow: 0 0 24px rgba(167,139,250,0.18); color: #f1ecff; }
+.radar-pill:hover { border-color: #a78bfa; box-shadow: 0 0 30px rgba(167,139,250,0.4); }
+.radar-pill .live-dot { background: #f43f5e; animation-name: radarPulse; }
+@keyframes radarPulse { 70% { box-shadow: 0 0 0 10px rgba(244,63,94,0); } 100% { box-shadow: 0 0 0 0 rgba(244,63,94,0); } }
+@media (max-width: 640px) { .radar-pill { margin-left: 0; } }
