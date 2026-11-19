@@ -192,6 +192,10 @@ async function countCall(tool) {
     const day = new Date().toISOString().slice(0, 10);
     const name = String(tool || "unknown").replace(/[^a-z0-9_]/gi, "_").slice(0, 40);
     await getStore("stats").set(`${day}/mcp|${name}||${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`, "1").catch(() => {});
+    if (["list_tools", "get_prices", "find_cheapest", "compare_tools"].includes(name)) {  // the live AI radar
+      const minute = new Date().toISOString().slice(0, 16);
+      await getStore("radar").set(`${minute}/GenCost_AI_connector|${name}|${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`, "1").catch(() => {});
+    }
   } catch (_) { /* counting must never break the connector */ }
 }
 

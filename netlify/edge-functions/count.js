@@ -72,7 +72,13 @@ export default async (request, context) => {
     }
     const day = new Date().toISOString().slice(0, 10);
     const key = `${day}/${kind}|${clean(who)}|${encodeURIComponent(path).slice(0, 180)}|${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
-    const save = getStore("stats").set(key, "1");
+    let save = getStore("stats").set(key, "1");
+    if (kind === "ai") {
+      // the live AI radar (/radar.html): one tiny key per AI visit, grouped by minute; no person data at all
+      const minute = new Date().toISOString().slice(0, 16);
+      const rkey = `${minute}/${clean(who)}|${encodeURIComponent(path).slice(0, 180)}|${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`;
+      save = Promise.all([save, getStore("radar").set(rkey, "1")]);
+    }
     if (context.waitUntil) context.waitUntil(save.catch(() => {}));
     else await save.catch(() => {});
   } catch (_) { /* counting must never break the site */ }

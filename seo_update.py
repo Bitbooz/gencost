@@ -461,6 +461,10 @@ def main():
         log_li = '<li><a href="/changelog.html">Price changes log</a></li>'
         if 'href="/live.html"' not in new and log_li in new:
             new = new.replace(log_li, log_li + '\n          <li><a href="/live.html">Watch the price check</a></li>', 1)
+        # footer: "AI radar (live)" after "Watch the price check" (2026-11-19)
+        live_li = '<li><a href="/live.html">Watch the price check</a></li>'
+        if 'href="/radar.html"' not in new and live_li in new:
+            new = new.replace(live_li, live_li + '\n          <li><a href="/radar.html">AI radar (live)</a></li>', 1)
         # footer: link to the About page next to "Order a package"
         if 'href="/about.html"' not in new and '<li><a href="/order.html">Order a package</a></li>' in new:
             new = new.replace('<li><a href="/order.html">Order a package</a></li>',
