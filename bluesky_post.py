@@ -109,7 +109,7 @@ def main():
         print("No new article to post on Bluesky today.")
         return
     session, seen = None, set()
-    for item in todo[:2]:
+    for item in todo[:4]:
         title, desc = meta(item["page"])
         url = f"{SITE}/{item['page']}"
         text = post_text(title, desc, url)

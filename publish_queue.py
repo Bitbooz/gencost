@@ -33,12 +33,26 @@ def main():
         print("No article queue.")
         return
     items = q.get("items", [])
-    done = sum(1 for i in items if i.get("published") == today)
+    # Extra articles (e.g. news about a new GenCost feature): published on their own day, on top of PER_DAY.
+    for x in items:
+        if x.get("extra") and not x.get("published") and x.get("publish_on", "9999") <= today:
+            src, dst = os.path.join(HERE, x["file"]), os.path.join(HERE, x["page"])
+            if os.path.exists(src) and not os.path.exists(dst):
+                shutil.copyfile(src, dst)
+                raw = open(INDEX, encoding="utf-8").read()
+                if MARK in raw and ('href="/' + x["page"] + '"') not in raw.split('id="articles"', 1)[-1]:
+                    with open(INDEX, "w", encoding="utf-8", newline="") as f:
+                        f.write(raw.replace(MARK, MARK + "\n      " + x["card"], 1))
+                x["published"] = today
+                print(f"Published extra article {x['page']}")
+            else:
+                x["published"] = "missing" if not os.path.exists(src) else "exists"
+    done = sum(1 for i in items if i.get("published") == today and not i.get("extra"))
     if done >= PER_DAY:
         print(f"{done} article(s) already published today.")
         return
     while done < PER_DAY:
-        nxt = next((i for i in items if not i.get("published")), None)
+        nxt = next((i for i in items if not i.get("published") and not i.get("extra")), None)
         if not nxt:
             print("The article queue is empty.")
             break

@@ -138,6 +138,22 @@
    "page": "pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html",
    "card": "<li class=\"reveal\"><a class=\"art\" href=\"/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html\"><span class=\"cat guide\">News</span><h3>GenCost in every AI assistant</h3><p>New: free Price Finder on Hugging Face</p></a></li>",
    "published": "2026-11-18"
+  },
+  {
+   "file": "queue/news-gencost-ai-radar-watch-ai-assistants-read-prices-live-2026.html",
+   "page": "pages/gencost-ai-radar-watch-ai-assistants-read-prices-live-2026.html",
+   "card": "<li class=\"reveal\"><a class=\"art\" href=\"/pages/gencost-ai-radar-watch-ai-assistants-read-prices-live-2026.html\"><span class=\"cat guide\">News</span><h3>New: the AI radar</h3><p>Watch AIs read GenCost live</p></a></li>",
+   "published": "",
+   "extra": true,
+   "publish_on": "2026-11-20"
+  },
+  {
+   "file": "queue/news-ai-price-exchange-ai-tools-priced-like-shares-2026.html",
+   "page": "pages/ai-price-exchange-ai-tools-priced-like-shares-2026.html",
+   "card": "<li class=\"reveal\"><a class=\"art\" href=\"/pages/ai-price-exchange-ai-tools-priced-like-shares-2026.html\"><span class=\"cat guide\">News</span><h3>New: the AI price exchange</h3><p>AI tools priced like shares</p></a></li>",
+   "published": "",
+   "extra": true,
+   "publish_on": "2026-11-20"
   }
  ]
 }

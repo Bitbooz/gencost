@@ -8,7 +8,7 @@ Uses the X API v2 (pay-per-use) with OAuth 1.0a user keys, stored as GitHub secr
 Cost: X charges $0.015 for a post without a link and $0.20 for a post with a link (Nov 2026).
 So by default the post has NO link (about $0.45 a month for one article a day); readers find GenCost
 through the link in the X profile. Set the repository variable X_WITH_LINK=1 to add the article link.
-Only today's new articles are posted, at most 2 a day. State: data/x-state.json. Log: x-review.txt.
+Only today's new articles are posted, at most 4 a day (2 queued + feature news). State: data/x-state.json. Log: x-review.txt.
 
     python x_post.py            # post (needs the secrets)
     python x_post.py --preview  # print the post text, never posts
@@ -163,7 +163,7 @@ def main():
     if not todo:
         print("No new article to post on X today.")
         return
-    for item in todo[:2]:
+    for item in todo[:4]:
         title, desc = meta(item["page"])
         url = f"{SITE}/{item['page']}" if with_link else None
         text = post_text(title, desc, url)
