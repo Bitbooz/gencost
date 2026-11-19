@@ -6,13 +6,20 @@
   <atom:link href="https://getgencost.com/feed.xml" rel="self" type="application/rss+xml"/>
   <description>New guides on what AI video, image, voice and music tools really cost, from GenCost's daily price checks.</description>
   <language>en</language>
-  <lastBuildDate>Wed, 18 Nov 2026 06:22:34 +0100</lastBuildDate>
+  <lastBuildDate>Thu, 19 Nov 2026 06:22:14 +0100</lastBuildDate>
   <item>
-    <title>GenCost in Every AI Assistant + a Free Price Finder on Hugging Face (2026)</title>
-    <link>https://getgencost.com/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html</link>
-    <guid isPermaLink="true">https://getgencost.com/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html</guid>
-    <pubDate>Wed, 18 Nov 2026 10:00:00 +0100</pubDate>
-    <description>Ask Claude, ChatGPT, Cursor, VS Code, Codex, Windsurf or Gemini CLI for today's AI tool prices with GenCost's free connector, or try the free AI Price Finder on Hugging Face.</description>
+    <title>Midjourney vs Firefly vs GPT Image 2.6: Cost per Image (2026)</title>
+    <link>https://getgencost.com/pages/midjourney-vs-firefly-vs-gpt-image-cost-per-image-2026.html</link>
+    <guid isPermaLink="true">https://getgencost.com/pages/midjourney-vs-firefly-vs-gpt-image-cost-per-image-2026.html</guid>
+    <pubDate>Thu, 19 Nov 2026 07:00:00 +0100</pubDate>
+    <description>What one AI image really costs on Midjourney, Adobe Firefly, OpenArt, Freepik and OpenAI&#x27;s new GPT Image 2.6, worked out from each plan&#x27;s credits.</description>
+  </item>
+  <item>
+    <title>Higgsfield vs Kling: Which Is Cheaper for Kling Videos? (2026)</title>
+    <link>https://getgencost.com/pages/higgsfield-vs-kling-pricing-2026.html</link>
+    <guid isPermaLink="true">https://getgencost.com/pages/higgsfield-vs-kling-pricing-2026.html</guid>
+    <pubDate>Thu, 19 Nov 2026 07:00:00 +0100</pubDate>
+    <description>Higgsfield sells Kling 3.0 and Kling 4.0 inside its own plans. We compared the price of one clip on Higgsfield and on Kling&#x27;s own app, plan by plan.</description>
   </item>
   <item>
     <title>Cheapest AI Video Tools You Can Use Commercially (2026)</title>
@@ -20,6 +27,13 @@
     <guid isPermaLink="true">https://getgencost.com/pages/cheapest-ai-video-tools-for-commercial-use-2026.html</guid>
     <pubDate>Wed, 18 Nov 2026 07:00:00 +0100</pubDate>
     <description>Many free AI video plans don&#x27;t allow commercial use. See the cheapest plan with commercial rights on Kling, Pika, Vidu, D-ID, Magic Hour, Luma and LTX Studio.</description>
+  </item>
+  <item>
+    <title>GenCost in Every AI Assistant + a Free Price Finder on Hugging Face (2026)</title>
+    <link>https://getgencost.com/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html</link>
+    <guid isPermaLink="true">https://getgencost.com/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html</guid>
+    <pubDate>Wed, 18 Nov 2026 07:00:00 +0100</pubDate>
+    <description>Ask Claude, ChatGPT, Cursor, VS Code, Codex, Windsurf or Gemini CLI for today&#x27;s AI tool prices with GenCost&#x27;s free connector, or try the free AI Price Finder on Hugging Face.</description>
   </item>
   <item>
     <title>Kling 4.0 Price Per Second: Every Plan on 6 Platforms (2026)</title>

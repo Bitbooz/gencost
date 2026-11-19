@@ -1,11 +1,5 @@
-Price changes in the last 7 days (for the price alert email), made 2026-11-18
+Price changes in the last 7 days (for the price alert email), made 2026-11-19
 
-2026-11-18  Pictory Teams: $199 → $59.50 a month
-2026-11-18  Pictory Starter: $29 → $12.50 a month
-2026-11-18  Pictory Professional: $59 → $17.50 a month
-2026-11-18  Captions Frontier 4x: $279.99 → $139.99 a month, credits 5,600 → 2,800, so the price per credit hardly changed
-2026-11-18  Captions Frontier 2x: $139.99 → $69.99 a month, credits 2,800 → 1,400, so the price per credit hardly changed
-2026-11-18  Captions Frontier: $69.99 → $279.99 a month, credits 1,400 → 5,600, so the price per credit hardly changed
 2026-11-18  OpenArt Wonder: paid yearly $175 → $144
 2026-11-18  OpenArt Starter: paid yearly $13 → $11
 2026-11-18  OpenArt Pro: paid yearly $44 → $36

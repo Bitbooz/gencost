@@ -1,6 +1,6 @@
 {
  "category": "image",
- "updated": "2026-11-18 12:46",
+ "updated": "2026-11-19 06:36",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -18,7 +18,7 @@
    "name": "Midjourney",
    "page": "/pages/midjourney.html",
    "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
-   "checked": "2026-11-18 06:37",
+   "checked": "2026-11-19 06:34",
    "plans": [
     {
      "name": "Basic",
@@ -67,8 +67,8 @@
     "checked": "2026-06-05",
     "official": false
    },
-   "source_checked": "2026-11-18 06:37",
-   "price_verified": "2026-11-18 06:37"
+   "source_checked": "2026-11-19 06:34",
+   "price_verified": "2026-11-19 06:34"
   },
   {
    "name": "Leonardo",
@@ -224,7 +224,7 @@
    "name": "Recraft",
    "page": "/pages/recraft.html",
    "source": "https://www.recraft.ai/pricing",
-   "checked": "2026-11-18 06:38",
+   "checked": "2026-11-19 06:35",
    "plans": [
     {
      "name": "Basic",
@@ -232,7 +232,7 @@
      "yearly_price_usd": 10,
      "credits_or_minutes": 1000,
      "unit": "credits",
-     "offer": "40% off first year (new yearly plans)",
+     "offer": "40% off first year of new yearly plan",
      "credits_period": "month"
     },
     {
@@ -241,7 +241,7 @@
      "yearly_price_usd": 16,
      "credits_or_minutes": 2000,
      "unit": "credits",
-     "offer": "40% off first year (new yearly plans)",
+     "offer": "40% off first year of new yearly plan",
      "credits_period": "month"
     }
    ],
@@ -255,14 +255,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-18 06:38",
-   "price_verified": "2026-11-18 06:38"
+   "source_checked": "2026-11-19 06:35",
+   "price_verified": "2026-11-19 06:35"
   },
   {
    "name": "Freepik",
    "page": "/pages/freepik.html",
    "source": "https://www.freepik.com/pricing",
-   "checked": "2026-11-18 06:39",
+   "checked": "2026-11-19 06:36",
    "plans": [
     {
      "name": "Premium",
@@ -319,14 +319,14 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-18 06:39",
-   "price_verified": "2026-11-18 06:39"
+   "source_checked": "2026-11-19 06:36",
+   "price_verified": "2026-11-19 06:36"
   },
   {
    "name": "OpenArt",
    "page": "/pages/openart.html",
    "source": "https://openart.ai/pricing",
-   "checked": "2026-11-18 06:39",
+   "checked": "2026-11-19 06:36",
    "plans": [
     {
      "name": "Starter",
@@ -374,8 +374,8 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-18 06:39",
-   "price_verified": "2026-11-18 06:39"
+   "source_checked": "2026-11-19 06:36",
+   "price_verified": "2026-11-19 06:36"
   },
   {
    "name": "NightCafe",

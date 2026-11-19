@@ -3,9 +3,9 @@
   "plans": [
     {
       "name": "Creator",
-      "monthly_price_usd": 19,
-      "yearly_price_usd": 12,
-      "credits_or_minutes": 12000,
+      "monthly_price_usd": 24,
+      "yearly_price_usd": 15,
+      "credits_or_minutes": 15000,
       "unit": "credits",
       "offer": ""
     },
@@ -27,5 +27,5 @@
     }
   ],
   "source": "https://magichour.ai/pricing",
-  "last_checked": "2026-11-18 06:30"
+  "last_checked": "2026-11-19 06:29"
 }

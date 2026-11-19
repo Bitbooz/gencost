@@ -4,27 +4,27 @@
     {
       "name": "Free Tier",
       "monthly_price_usd": 0,
-      "offer": "",
       "credits_or_minutes": 8000,
-      "unit": "credits"
+      "unit": "credits",
+      "offer": ""
     },
     {
       "name": "Plus",
       "monthly_price_usd": 15,
       "yearly_price_usd": 11,
-      "offer": "",
       "credits_or_minutes": 250000,
-      "unit": "credits"
+      "unit": "credits",
+      "offer": ""
     },
     {
       "name": "Pro",
       "monthly_price_usd": 100,
       "yearly_price_usd": 75,
-      "offer": "",
       "credits_or_minutes": 2000000,
-      "unit": "credits"
+      "unit": "credits",
+      "offer": ""
     }
   ],
   "source": "https://fish.audio/plan/",
-  "last_checked": "2026-11-18 06:33"
+  "last_checked": "2026-11-19 06:31"
 }

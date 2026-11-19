@@ -83,6 +83,7 @@
 <li><a data-section="/vi/image" href="/vi/image.html">Image</a></li>
 <li><a href="/vi/compare.html">So sánh</a></li>
 <li><a href="/vi/calculator.html">Máy tính</a></li>
+<li><a href="/vi/ai.html">Trình kết nối AI</a></li>
 <li><a href="/vi/#articles">Bài viết</a></li>
 </ul>
 <div class="nav-right">
@@ -118,9 +119,26 @@
 <pre><code>claude mcp add --transport http gencost https://getgencost.com/mcp</code></pre>
 <h2>ChatGPT</h2>
 <p>Nếu gói ChatGPT của bạn hỗ trợ custom connectors (chế độ developer), thêm connector mới và dán địa chỉ server. Không cần xác thực.</p>
-<h2>Cursor, VS Code và các MCP client khác</h2>
-<p>Thêm dòng này vào cấu hình MCP của bạn (dành cho Cursor, <code>~/.cursor/mcp.json</code>):</p>
+<h2>Cursor</h2>
+<p>Thêm cái này vào <code>~/.cursor/mcp.json</code>:</p>
 <pre><code>{ "mcpServers": { "gencost": { "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>VS Code (GitHub Copilot)</h2>
+<p>Thêm cái này vào <code>.vscode/mcp.json</code> trong dự án của bạn, hoặc vào cấu hình người dùng (bảng lệnh: <em>MCP: Mở Cấu hình Người dùng</em>). VS Code sử dụng <code>servers</code>, không phải <code>mcpServers</code>:</p>
+<pre><code>{ "servers": { "gencost": { "type": "http", "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Codex (CLI, IDE extension and ChatGPT desktop)</h2>
+<p>Chạy:</p>
+<pre><code>codex mcp add gencost --url https://getgencost.com/mcp</code></pre>
+<p>hoặc thêm cái này vào <code>~/.codex/config.toml</code>:</p>
+<pre><code>[mcp_servers.gencost]
+url = "https://getgencost.com/mcp"</code></pre>
+<h2>Windsurf</h2>
+<p>Trong bảng Cascade, mở <em>MCPs</em> và chọn <em>Xem cấu hình thô</em> để mở <code>mcp_config.json</code>, thêm cái này, sau đó nhấn làm mới:</p>
+<pre><code>{ "mcpServers": { "gencost": { "serverUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Gemini CLI</h2>
+<p>Thêm cái này vào <code>~/.gemini/settings.json</code>. Sử dụng <code>httpUrl</code> (không phải <code>url</code>, cái này dành cho máy chủ SSE cũ hơn):</p>
+<pre><code>{ "mcpServers": { "gencost": { "httpUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Các client MCP khác</h2>
+<p>Bất kỳ client nào hỗ trợ máy chủ MCP từ xa qua Streamable HTTP đều hoạt động: sử dụng địa chỉ <code>https://getgencost.com/mcp</code>. Không cần API key hay đăng nhập.</p>
 <h2>Các công cụ</h2>
 <div class="table-scroll no-live"><table>
 <thead><tr><th>Công cụ</th><th>Nó làm gì</th></tr></thead>
@@ -170,11 +188,15 @@
 <div>
 <h4>GenCost</h4>
 <ul>
-<li><a href="/vi/ai.html">Sử dụng trong Claude &amp; ChatGPT</a></li>
+<li><a href="/vi/ai.html">Sử dụng trong trợ lý AI</a></li>
+<li><a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" rel="noopener" target="_blank">AI Price Finder (Hugging Face)</a></li>
 <li><a href="/vi/about.html">Về GenCost</a></li>
 <li><a href="/vi/order.html">Đặt một gói</a></li>
 <li><a href="/vi/how-we-verify.html">Cách chúng tôi xác minh giá</a></li>
 <li><a href="/vi/changelog.html">Nhật ký thay đổi giá</a></li>
+<li><a href="/vi/live.html">Xem kiểm tra giá</a></li>
+<li><a href="/vi/radar.html">Radar AI (trực tiếp)</a></li>
+<li><a href="/vi/exchange.html">Sàn giá AI</a></li>
 <li><a href="mailto:bitbooz@protonmail.com">Liên hệ</a></li>
 </ul>
 </div>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GenCost 接入每款 AI 助手 + Hugging Face 免费价格查找器（2026）| GenCost</title>
+<meta content="通过 GenCost 的免费连接器，向 Claude、ChatGPT、Cursor、VS Code、Codex、Windsurf 或 Gemini CLI 询问今日 AI 工具价格，或试用 Hugging Face 上的免费 AI Price Finder。" name="description"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6DHTT2ZTBK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6DHTT2ZTBK');
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;text=GENCOSTExamples&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/gencost.css" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js');</script>
+<script defer="" src="/assets/gencost.js"></script>
+<!-- SEO:START (added by seo_update.py, rebuilt daily) -->
+<link href="/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="/assets/icon-192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="/assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="/manifest.webmanifest" rel="manifest"/>
+<meta content="#07070c" name="theme-color"/>
+<meta content="GenCost" name="apple-mobile-web-app-title"/>
+<meta content="yes" name="mobile-web-app-capable"/>
+<link href="https://getgencost.com/zh/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" rel="canonical"/>
+<meta content="GenCost" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="GenCost 接入每款 AI 助手 + Hugging Face 免费价格查找器（2026）| GenCost" property="og:title"/>
+<meta content="通过 GenCost 的免费连接器，向 Claude、ChatGPT、Cursor、VS Code、Codex、Windsurf 或 Gemini CLI 询问今日 AI 工具价格，或试用 Hugging Face 上的免费 AI Price Finder。" property="og:description"/>
+<meta content="https://getgencost.com/zh/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" property="og:url"/>
+<meta content="https://getgencost.com/assets/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="GenCost 接入每款 AI 助手 + Hugging Face 免费价格查找器（2026）| GenCost" name="twitter:title"/>
+<meta content="通过 GenCost 的免费连接器，向 Claude、ChatGPT、Cursor、VS Code、Codex、Windsurf 或 Gemini CLI 询问今日 AI 工具价格，或试用 Hugging Face 上的免费 AI Price Finder。" name="twitter:description"/>
+<meta content="https://getgencost.com/assets/og-image.png" name="twitter:image"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://getgencost.com/zh/"}, {"@type": "ListItem", "position": 2, "name": "文章", "item": "https://getgencost.com/zh/#articles"}, {"@type": "ListItem", "position": 3, "name": "AI 连接器与价格查找器"}]}]}</script>
+<!-- SEO:END -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/><script defer="" src="/assets/i18n.js"></script><!-- HREFLANG:START -->
+<link rel="alternate" hreflang="en" href="https://getgencost.com/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="es" href="https://getgencost.com/es/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="pt" href="https://getgencost.com/pt/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="de" href="https://getgencost.com/de/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="fr" href="https://getgencost.com/fr/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="ar" href="https://getgencost.com/ar/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="he" href="https://getgencost.com/he/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="it" href="https://getgencost.com/it/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="ja" href="https://getgencost.com/ja/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="ru" href="https://getgencost.com/ru/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="zh-TW" href="https://getgencost.com/zh-tw/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="zh-HK" href="https://getgencost.com/zh-tw/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="ko" href="https://getgencost.com/ko/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="id" href="https://getgencost.com/id/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="tr" href="https://getgencost.com/tr/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="hi" href="https://getgencost.com/hi/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="vi" href="https://getgencost.com/vi/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="pl" href="https://getgencost.com/pl/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="uk" href="https://getgencost.com/uk/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="zh-SG" href="https://getgencost.com/zh/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="zh-MY" href="https://getgencost.com/zh/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="zh" href="https://getgencost.com/zh/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="no" href="https://getgencost.com/no/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="nb" href="https://getgencost.com/no/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="sv" href="https://getgencost.com/sv/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<link rel="alternate" hreflang="x-default" href="https://getgencost.com/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html">
+<!-- HREFLANG:END -->
+</head>
+<body class="page-article">
+<nav class="top">
+<div class="wrap">
+<a class="logo grad-text" href="/zh/">GENCOST</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="/zh/#platforms">视频</a></li>
+<li><a data-section="/zh/voice,/zh/pages/voice/" href="/zh/voice.html">语音</a></li>
+<li><a data-section="/zh/music,/zh/pages/music/" href="/zh/music.html">音乐</a></li>
+<li><a data-section="/zh/image" href="/zh/image.html">图像</a></li>
+<li><a href="/zh/compare.html">对比</a></li>
+<li><a href="/zh/calculator.html">计算器</a></li>
+<li><a href="/zh/ai.html">AI 连接器</a></li>
+<li><a href="/zh/#articles">文章</a></li>
+</ul>
+<div class="nav-right">
+
+<details class="lang-menu" translate="no"><summary title="Language">简</summary><div class="lang-list"><a class="lang-switch" href="/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="en" lang="en">EN · English</a><a class="lang-switch" href="/es/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="es" lang="es">ES · Español</a><a class="lang-switch" href="/pt/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="pt" lang="pt">PT · Português</a><a class="lang-switch" href="/de/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="de" lang="de">DE · Deutsch</a><a class="lang-switch" href="/fr/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="fr" lang="fr">FR · Français</a><a class="lang-switch" href="/ar/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="ar" lang="ar">AR · العربية</a><a class="lang-switch" href="/he/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="he" lang="he">HE · עברית</a><a class="lang-switch" href="/it/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="it" lang="it">IT · Italiano</a><a class="lang-switch" href="/ja/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="ja" lang="ja">JA · 日本語</a><a class="lang-switch" href="/ru/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="ru" lang="ru">RU · Русский</a><a class="lang-switch" href="/zh-tw/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="zh-TW" lang="zh-TW">繁 · 繁體中文</a><a class="lang-switch" href="/ko/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="ko" lang="ko">KO · 한국어</a><a class="lang-switch" href="/id/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="id" lang="id">ID · Bahasa Indonesia</a><a class="lang-switch" href="/tr/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="tr" lang="tr">TR · Türkçe</a><a class="lang-switch" href="/hi/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="hi" lang="hi">HI · हिन्दी</a><a class="lang-switch" href="/vi/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="vi" lang="vi">VI · Tiếng Việt</a><a class="lang-switch" href="/pl/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="pl" lang="pl">PL · Polski</a><a class="lang-switch" href="/uk/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="uk" lang="uk">UK · Українська</a><a class="lang-switch" href="/no/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="no" lang="no">NO · Norsk</a><a class="lang-switch" href="/sv/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html" hreflang="sv" lang="sv">SV · Svenska</a></div></details>
+
+<a class="btn btn-primary" href="/zh/order.html">订购套餐</a>
+<button aria-expanded="false" aria-label="打开菜单" class="menu-btn" id="menuBtn">☰</button>
+</div>
+</div>
+</nav>
+<header class="page-head">
+<div class="wrap narrow">
+<nav aria-label="面包屑导航" class="crumbs"><a href="/zh/">首页</a><span class="sep">/</span><a href="/zh/#articles">文章</a><span class="sep">/</span><span>AI 连接器与价格查找器</span></nav>
+</div>
+</header>
+<main class="page">
+<div class="wrap narrow">
+<article class="prose">
+<h1>GenCost 现已支持所有 AI 助手，并在 Hugging Face 上提供免费价格查找器</h1>
+<div class="box">
+<strong>快速回答</strong><br/>
+你现在可以通过 GenCost 的免费连接器向 AI 助手询问今日 AI 工具价格，地址为 <code>https://getgencost.com/mcp</code>。可直接复制的设置适用于 <strong>Claude、ChatGPT、Cursor、VS Code、Codex、Windsurf 和 Gemini CLI</strong> ，详见 <a href="/zh/ai.html">AI 连接器页面</a>.<br/>
+没有 AI 助手？可尝试免费的 <a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" rel="noopener" target="_blank">Hugging Face AI 价格查找器</a>：选择一个视频模型和剪辑数量，即可先看到最便宜的平台。<br/>
+两者均使用与本网站相同的价格，每日早晨从各官方定价页面读取。<br/>
+最后检查：2026-11-18
+</div>
+<p class="lead">越来越多的人在购买前先询问 AI 助手。因此 GenCost 现在在人们常用的助手内，以及 AI 社区分享工具的 Hugging Face 上回答这些问题。</p>
+<h2>向您的 AI 助手询问今日价格</h2>
+<p>GenCost 提供免费只读的 <strong>MCP server</strong>（一个“AI 连接器”）。添加后，您可以询问例如：</p>
+<ul>
+<li>“本月生成 20 个 Kling 4.0 片段最便宜的方式是什么？”</li>
+<li>“比较 Runway 和 Pika 的套餐。”</li>
+<li>“哪款 AI 语音工具的付费套餐今天最便宜？”</li>
+</ul>
+<p>助手从 GenCost 的实时数据获取答案，而非依赖旧训练数据猜测。无需登录，也无需 API 密钥。</p>
+<h2>现已支持七款应用</h2>
+<p><a href="/zh/ai.html">AI connector page</a> 为每款应用提供简短、可直接复制的设置说明，并已对照各应用官方文档验证：</p>
+<ul>
+<li><strong>Claude</strong> 和 <strong>Claude Code</strong></li>
+<li><strong>ChatGPT</strong></li>
+<li><strong>Cursor</strong></li>
+<li><strong>VS Code</strong>（GitHub Copilot），新增</li>
+<li><strong>Codex</strong>（CLI、IDE 扩展和 ChatGPT 桌面版），新增</li>
+<li><strong>Windsurf</strong>，新增</li>
+<li><strong>Gemini CLI</strong>，新增</li>
+</ul>
+<p>任何其他支持远程 MCP 服务器的应用也适用：只需使用地址 <code>https://getgencost.com/mcp</code>.</p>
+<h2>新增：Hugging Face 上的 AI Price Finder</h2>
+<p><a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" rel="noopener" target="_blank">AI Price Finder</a> 是 Hugging Face 上的免费小应用，包含三个标签页：</p>
+<ul>
+<li><strong>Cost of video clips</strong>：选择 Kling 4.0、Seedance 2.5 或 Ray3.2 等模型，输入片段数量和秒数，即可查看各平台能覆盖需求的最便宜套餐。</li>
+<li><strong>Cheapest plans</strong>：视频、图像、语音或音乐的最便宜套餐。</li>
+<li><strong>One tool</strong>：单个工具的所有套餐，并附官方定价页面链接。</li>
+</ul>
+<p>它实时读取开放的 <a href="https://huggingface.co/datasets/Bitbooz/ai-tool-prices" rel="noopener" target="_blank">AI tool prices dataset</a>，因此始终保持最新。该数据集可免费使用（CC BY 4.0），方便您自行构建应用。</p>
+<h2>价格处处一致</h2>
+<p>网站、AI 连接器、Hugging Face 应用和数据集均使用相同数据。GenCost 每日早晨读取各工具官方定价页面，价格变动需在两个不同日期被确认后才会发布。</p>
+<p>从这里开始：<a href="/zh/ai.html">Use GenCost in your AI assistant</a> · <a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" rel="noopener" target="_blank">AI Price Finder</a> · <a href="/zh/clip.html">Cheapest clip finder</a></p>
+<p class="note">GenCost 没有联盟链接，也没有付费推广。价格每天早上从每个工具的官方定价页面读取。</p>
+</article>
+<div class="page-cta">
+<div><h3>需要将其制作为文章或 YouTube 视频吗？</h3><p>基于真实 GenCost 定价的 SEO 文章 + YouTube 素材，一站式完成。</p></div>
+<a class="btn btn-primary" href="/zh/order.html">订购套餐 <span class="arrow">→</span></a>
+</div>
+</div>
+</main>
+<footer class="site">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<a class="logo grad-text" href="/zh/">GENCOST</a>
+<p class="foot-about">AI 视频、虚拟形象、语音和音乐工具的真实美元价格对比，自动更新。</p>
+</div>
+<div>
+<h4>对比</h4>
+<ul>
+<li><a href="/zh/#platforms">视频与虚拟形象</a></li>
+<li><a href="/zh/voice.html">语音</a></li>
+<li><a href="/zh/music.html">音乐</a></li>
+<li><a href="/zh/compare.html">对比任意工具</a></li>
+<li><a href="/zh/pages/emerging.html">新兴工具</a></li>
+<li><a href="/zh/clip.html">最便宜剪辑查找器</a></li>
+<li><a href="/zh/calculator.html">预算计算器</a></li>
+<li><a href="/zh/project.html">项目计算器</a></li>
+</ul>
+</div>
+<div>
+<h4>指南</h4>
+<ul>
+<li><a href="/zh/pages/cheapest-ai-video-tools-in-2026.html">最便宜的视频工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-voice-tools-in-2026.html">最便宜的语音工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-music-tools-in-2026.html">最便宜的音乐工具</a></li>
+<li><a href="/zh/pages/cheapest-ai-avatar-tools-in-2026.html">最便宜的虚拟形象工具</a></li>
+<li><a href="/zh/credits.html">积分与余量</a></li>
+</ul>
+</div>
+<div>
+<h4>GenCost</h4>
+<ul>
+<li><a href="/zh/ai.html">在 AI 助手中使用</a></li>
+<li><a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" rel="noopener" target="_blank">AI 价格查找器 (Hugging Face)</a></li>
+<li><a href="/zh/about.html">关于 GenCost</a></li>
+<li><a href="/zh/order.html">订购套餐</a></li>
+<li><a href="/zh/how-we-verify.html">我们如何验证价格</a></li>
+<li><a href="/zh/changelog.html">价格变更日志</a></li>
+<li><a href="/zh/live.html">观看价格检查</a></li>
+<li><a href="/zh/radar.html">AI 雷达（实时）</a></li>
+<li><a href="/zh/exchange.html">AI 价格交易所</a></li>
+<li><a href="mailto:bitbooz@protonmail.com">联系</a></li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom"><span>由 Grok 与 Bitbooz 创建 · <a href="mailto:bitbooz@protonmail.com">bitbooz@protonmail.com</a></span> <span>价格经常变动。付款前请务必在各工具内确认。</span></div>
+</div>
+</footer>
+</body>
+</html>

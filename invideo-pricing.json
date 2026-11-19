@@ -12,10 +12,10 @@
     {
       "name": "Plus",
       "monthly_price_usd": 60,
-      "yearly_price_usd": 30,
+      "yearly_price_usd": 24,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "50% off for first-time AI creators"
+      "offer": "60% off Limited offer"
     },
     {
       "name": "Max",
@@ -23,9 +23,9 @@
       "yearly_price_usd": 75,
       "credits_or_minutes": 5000,
       "unit": "credits",
-      "offer": "50% off for first-time AI creators"
+      "offer": "50% off Best value"
     }
   ],
   "source": "https://invideo.io/pricing",
-  "last_checked": "2026-11-18 06:27"
+  "last_checked": "2026-11-19 06:26"
 }

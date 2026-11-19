@@ -83,6 +83,7 @@
 <li><a data-section="/pl/image" href="/pl/image.html">Obraz</a></li>
 <li><a href="/pl/compare.html">Porównaj</a></li>
 <li><a href="/pl/calculator.html">Kalkulatory</a></li>
+<li><a href="/pl/ai.html">Łącznik AI</a></li>
 <li><a href="/pl/#articles">Artykuły</a></li>
 </ul>
 <div class="nav-right">
@@ -118,9 +119,26 @@
 <pre><code>claude mcp add --transport http gencost https://getgencost.com/mcp</code></pre>
 <h2>ChatGPT</h2>
 <p>Tam, gdzie Twój plan ChatGPT obsługuje łączniki niestandardowe (tryb deweloperski), dodaj nowy łącznik i wklej adres serwera. Nie wymaga uwierzytelniania.</p>
-<h2>Cursor, VS Code i inne klienty MCP</h2>
-<p>Dodaj to do swojej konfiguracji MCP (dla Cursor, <code>~/.cursor/mcp.json</code>):</p>
+<h2>Cursor</h2>
+<p>Dodaj to do <code>~/.cursor/mcp.json</code>:</p>
 <pre><code>{ "mcpServers": { "gencost": { "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>VS Code (GitHub Copilot)</h2>
+<p>Dodaj to do <code>.vscode/mcp.json</code> w swoim projekcie lub do konfiguracji użytkownika (paleta poleceń: <em>MCP: Open User Configuration</em>). VS Code używa <code>servers</code>, nie <code>mcpServers</code>:</p>
+<pre><code>{ "servers": { "gencost": { "type": "http", "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Codex (CLI, IDE extension i ChatGPT desktop)</h2>
+<p>Uruchom:</p>
+<pre><code>codex mcp add gencost --url https://getgencost.com/mcp</code></pre>
+<p>lub dodaj to do <code>~/.codex/config.toml</code>:</p>
+<pre><code>[mcp_servers.gencost]
+url = "https://getgencost.com/mcp"</code></pre>
+<h2>Windsurf</h2>
+<p>W panelu Cascade otwórz <em>MCPs</em> i wybierz <em>View raw config</em> aby otworzyć <code>mcp_config.json</code>, dodaj to, a następnie naciśnij odśwież:</p>
+<pre><code>{ "mcpServers": { "gencost": { "serverUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Gemini CLI</h2>
+<p>Dodaj to do <code>~/.gemini/settings.json</code>. Użyj <code>httpUrl</code> (nie <code>url</code>, który jest dla starszych serwerów SSE):</p>
+<pre><code>{ "mcpServers": { "gencost": { "httpUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Inni klienci MCP</h2>
+<p>Działa każdy klient obsługujący zdalne serwery MCP przez Streamable HTTP: użyj adresu <code>https://getgencost.com/mcp</code>. Nie jest potrzebny klucz API ani logowanie.</p>
 <h2>Narzędzia</h2>
 <div class="table-scroll no-live"><table>
 <thead><tr><th>Narzędzie</th><th>Co robi</th></tr></thead>
@@ -170,11 +188,15 @@
 <div>
 <h4>GenCost</h4>
 <ul>
-<li><a href="/pl/ai.html">Użyj w Claude i ChatGPT</a></li>
+<li><a href="/pl/ai.html">Użyj w asystentach AI</a></li>
+<li><a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" rel="noopener" target="_blank">Wyszukiwarka cen AI (Hugging Face)</a></li>
 <li><a href="/pl/about.html">O GenCost</a></li>
 <li><a href="/pl/order.html">Zamów pakiet</a></li>
 <li><a href="/pl/how-we-verify.html">Jak weryfikujemy ceny</a></li>
 <li><a href="/pl/changelog.html">Dziennik zmian cen</a></li>
+<li><a href="/pl/live.html">Obejrzyj sprawdzanie cen</a></li>
+<li><a href="/pl/radar.html">Radar AI (na żywo)</a></li>
+<li><a href="/pl/exchange.html">Giełda cen AI</a></li>
 <li><a href="mailto:bitbooz@protonmail.com">Kontakt</a></li>
 </ul>
 </div>

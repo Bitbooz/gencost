@@ -83,6 +83,7 @@
 <li><a data-section="/sv/image" href="/sv/image.html">Bild</a></li>
 <li><a href="/sv/compare.html">Jämför</a></li>
 <li><a href="/sv/calculator.html">Kalkylatorer</a></li>
+<li><a href="/sv/ai.html">AI-anslutning</a></li>
 <li><a href="/sv/#articles">Artiklar</a></li>
 </ul>
 <div class="nav-right">
@@ -118,9 +119,26 @@
 <pre><code>claude mcp add --transport http gencost https://getgencost.com/mcp</code></pre>
 <h2>ChatGPT</h2>
 <p>Där din ChatGPT-plan stöder anpassade connectors (utvecklarläge), lägg till en ny connector och klistra in serveradressen. Ingen autentisering behövs.</p>
-<h2>Cursor, VS Code och andra MCP-klienter</h2>
-<p>Lägg till detta i din MCP-konfiguration (för Cursor, <code>~/.cursor/mcp.json</code>):</p>
+<h2>Cursor</h2>
+<p>Lägg till detta i <code>~/.cursor/mcp.json</code>:</p>
 <pre><code>{ "mcpServers": { "gencost": { "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>VS Code (GitHub Copilot)</h2>
+<p>Lägg till detta i <code>.vscode/mcp.json</code> i ditt projekt, eller till din användarkonfiguration (kommandopalett: <em>MCP: Öppna användarkonfiguration</em>). VS Code använder <code>servers</code>, inte <code>mcpServers</code>:</p>
+<pre><code>{ "servers": { "gencost": { "type": "http", "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Codex (CLI, IDE-tillägg och ChatGPT-skrivbord)</h2>
+<p>Kör:</p>
+<pre><code>codex mcp add gencost --url https://getgencost.com/mcp</code></pre>
+<p>eller lägg till detta i <code>~/.codex/config.toml</code>:</p>
+<pre><code>[mcp_servers.gencost]
+url = "https://getgencost.com/mcp"</code></pre>
+<h2>Windsurf</h2>
+<p>I Cascade-panelen, öppna <em>MCPs</em> och välj <em>Visa rå konfig</em> för att öppna <code>mcp_config.json</code>, lägg till detta, tryck sedan uppdatera:</p>
+<pre><code>{ "mcpServers": { "gencost": { "serverUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Gemini CLI</h2>
+<p>Lägg till detta i <code>~/.gemini/settings.json</code>. Använd <code>httpUrl</code> (inte <code>url</code>, som är för äldre SSE-servrar):</p>
+<pre><code>{ "mcpServers": { "gencost": { "httpUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Andra MCP-klienter</h2>
+<p>Alla klienter som stödjer fjärr-MCP-servrar över Streamable HTTP fungerar: använd adressen <code>https://getgencost.com/mcp</code>. Ingen API-nyckel eller inloggning behövs.</p>
 <h2>Verktygen</h2>
 <div class="table-scroll no-live"><table>
 <thead><tr><th>Verktyg</th><th>Vad det gör</th></tr></thead>
@@ -170,11 +188,15 @@
 <div>
 <h4>GenCost</h4>
 <ul>
-<li><a href="/sv/ai.html">Använd i Claude &amp; ChatGPT</a></li>
+<li><a href="/sv/ai.html">Använd i AI-assistenter</a></li>
+<li><a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" rel="noopener" target="_blank">AI-prisfinnare (Hugging Face)</a></li>
 <li><a href="/sv/about.html">Om GenCost</a></li>
 <li><a href="/sv/order.html">Beställ ett paket</a></li>
 <li><a href="/sv/how-we-verify.html">Hur vi verifierar priser</a></li>
 <li><a href="/sv/changelog.html">Logg över prisförändringar</a></li>
+<li><a href="/sv/live.html">Se priskollen</a></li>
+<li><a href="/sv/radar.html">AI-radar (live)</a></li>
+<li><a href="/sv/exchange.html">AI-prisutbyte</a></li>
 <li><a href="mailto:bitbooz@protonmail.com">Kontakt</a></li>
 </ul>
 </div>

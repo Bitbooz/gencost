@@ -83,6 +83,7 @@
 <li><a data-section="/tr/image" href="/tr/image.html">Görsel</a></li>
 <li><a href="/tr/compare.html">Karşılaştır</a></li>
 <li><a href="/tr/calculator.html">Hesaplayıcılar</a></li>
+<li><a href="/tr/ai.html">AI bağlayıcı</a></li>
 <li><a href="/tr/#articles">Makaleler</a></li>
 </ul>
 <div class="nav-right">
@@ -118,9 +119,26 @@
 <pre><code>claude mcp add --transport http gencost https://getgencost.com/mcp</code></pre>
 <h2>ChatGPT</h2>
 <p>ChatGPT planın özel bağlayıcıları destekliyorsa (geliştirici modu), yeni bir bağlayıcı ekle ve sunucu adresini yapıştır. Kimlik doğrulama gerekmez.</p>
-<h2>Cursor, VS Code ve diğer MCP istemcileri</h2>
-<p>Bunu MCP yapılandırmana ekle (Cursor için, <code>~/.cursor/mcp.json</code>):</p>
+<h2>Cursor</h2>
+<p>Bunu şuna ekle <code>~/.cursor/mcp.json</code>:</p>
 <pre><code>{ "mcpServers": { "gencost": { "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>VS Code (GitHub Copilot)</h2>
+<p>Bunu şuna ekle <code>.vscode/mcp.json</code> projenize veya kullanıcı yapılandırmanıza (komut paleti: <em>MCP: Kullanıcı Yapılandırmasını Aç</em>). VS Code kullanır <code>servers</code>, değil <code>mcpServers</code>:</p>
+<pre><code>{ "servers": { "gencost": { "type": "http", "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Codex (CLI, IDE extension and ChatGPT desktop)</h2>
+<p>Çalıştır:</p>
+<pre><code>codex mcp add gencost --url https://getgencost.com/mcp</code></pre>
+<p>veya bunu şuna ekle <code>~/.codex/config.toml</code>:</p>
+<pre><code>[mcp_servers.gencost]
+url = "https://getgencost.com/mcp"</code></pre>
+<h2>Windsurf</h2>
+<p>Cascade panelinde aç <em>MCP'ler</em> ve seç <em>Ham yapılandırmayı görüntüle</em> açmak için <code>mcp_config.json</code>, bunu ekle, sonra yenile'ye bas:</p>
+<pre><code>{ "mcpServers": { "gencost": { "serverUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Gemini CLI</h2>
+<p>Bunu şuna ekle <code>~/.gemini/settings.json</code>. Kullan <code>httpUrl</code> (değil <code>url</code>, eski SSE sunucuları için olan):</p>
+<pre><code>{ "mcpServers": { "gencost": { "httpUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Diğer MCP istemcileri</h2>
+<p>Streamable HTTP üzerinden uzak MCP sunucularını destekleyen herhangi bir istemci çalışır: adresi kullan <code>https://getgencost.com/mcp</code>. API anahtarı veya giriş gerekmez.</p>
 <h2>Araçlar</h2>
 <div class="table-scroll no-live"><table>
 <thead><tr><th>Araç</th><th>Ne işe yarar</th></tr></thead>
@@ -170,11 +188,15 @@
 <div>
 <h4>GenCost</h4>
 <ul>
-<li><a href="/tr/ai.html">Claude &amp; ChatGPT'te kullan</a></li>
+<li><a href="/tr/ai.html">AI asistanlarında kullan</a></li>
+<li><a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" rel="noopener" target="_blank">AI Fiyat Bulucu (Hugging Face)</a></li>
 <li><a href="/tr/about.html">GenCost hakkında</a></li>
 <li><a href="/tr/order.html">Bir paket sipariş et</a></li>
 <li><a href="/tr/how-we-verify.html">Fiyatları nasıl doğruluyoruz</a></li>
 <li><a href="/tr/changelog.html">Fiyat değişiklikleri günlüğü</a></li>
+<li><a href="/tr/live.html">Fiyat kontrolünü izle</a></li>
+<li><a href="/tr/radar.html">AI radarı (canlı)</a></li>
+<li><a href="/tr/exchange.html">AI fiyat borsası</a></li>
 <li><a href="mailto:bitbooz@protonmail.com">İletişim</a></li>
 </ul>
 </div>

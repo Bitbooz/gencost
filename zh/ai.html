@@ -83,6 +83,7 @@
 <li><a data-section="/zh/image" href="/zh/image.html">图像</a></li>
 <li><a href="/zh/compare.html">对比</a></li>
 <li><a href="/zh/calculator.html">计算器</a></li>
+<li><a href="/zh/ai.html">AI 连接器</a></li>
 <li><a href="/zh/#articles">文章</a></li>
 </ul>
 <div class="nav-right">
@@ -118,9 +119,26 @@
 <pre><code>claude mcp add --transport http gencost https://getgencost.com/mcp</code></pre>
 <h2>ChatGPT</h2>
 <p>如果你的 ChatGPT 方案支持自定义连接器（开发者模式），添加新连接器并粘贴服务器地址。无需身份验证。</p>
-<h2>Cursor、VS Code 和其他 MCP 客户端</h2>
-<p>将此添加到你的 MCP 配置中（适用于 Cursor， <code>~/.cursor/mcp.json</code>):</p>
+<h2>Cursor</h2>
+<p>添加此项到 <code>~/.cursor/mcp.json</code>:</p>
 <pre><code>{ "mcpServers": { "gencost": { "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>VS Code (GitHub Copilot)</h2>
+<p>添加此项到 <code>.vscode/mcp.json</code> 到你的项目，或用户配置（命令面板： <em>MCP：打开用户配置</em>）。VS Code 使用 <code>servers</code>，而非 <code>mcpServers</code>:</p>
+<pre><code>{ "servers": { "gencost": { "type": "http", "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Codex (CLI、IDE 扩展和 ChatGPT 桌面版)</h2>
+<p>运行：</p>
+<pre><code>codex mcp add gencost --url https://getgencost.com/mcp</code></pre>
+<p>或添加此项到 <code>~/.codex/config.toml</code>:</p>
+<pre><code>[mcp_servers.gencost]
+url = "https://getgencost.com/mcp"</code></pre>
+<h2>Windsurf</h2>
+<p>在 Cascade 面板中，打开 <em>MCPs</em> 并选择 <em>查看原始配置</em> 以打开 <code>mcp_config.json</code>，添加此项，然后按刷新：</p>
+<pre><code>{ "mcpServers": { "gencost": { "serverUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Gemini CLI</h2>
+<p>添加此项到 <code>~/.gemini/settings.json</code>。使用 <code>httpUrl</code> （而非 <code>url</code>，后者用于旧版 SSE 服务器）：</p>
+<pre><code>{ "mcpServers": { "gencost": { "httpUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>其他 MCP 客户端</h2>
+<p>任何支持通过 Streamable HTTP 的远程 MCP 服务器的客户端均可：使用地址 <code>https://getgencost.com/mcp</code>。无需 API 密钥或登录。</p>
 <h2>工具</h2>
 <div class="table-scroll no-live"><table>
 <thead><tr><th>工具</th><th>功能</th></tr></thead>
@@ -170,11 +188,15 @@
 <div>
 <h4>GenCost</h4>
 <ul>
-<li><a href="/zh/ai.html">在 Claude 与 ChatGPT 中使用</a></li>
+<li><a href="/zh/ai.html">在 AI 助手中使用</a></li>
+<li><a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" rel="noopener" target="_blank">AI 价格查找器 (Hugging Face)</a></li>
 <li><a href="/zh/about.html">关于 GenCost</a></li>
 <li><a href="/zh/order.html">订购套餐</a></li>
 <li><a href="/zh/how-we-verify.html">我们如何验证价格</a></li>
 <li><a href="/zh/changelog.html">价格变更日志</a></li>
+<li><a href="/zh/live.html">观看价格检查</a></li>
+<li><a href="/zh/radar.html">AI 雷达（实时）</a></li>
+<li><a href="/zh/exchange.html">AI 价格交易所</a></li>
 <li><a href="mailto:bitbooz@protonmail.com">联系</a></li>
 </ul>
 </div>

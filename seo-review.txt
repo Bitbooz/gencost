@@ -1,9 +1,89 @@
-SEO check 2026-11-18 06:39
-143 pages checked, 116 changed today, 117 in sitemap.xml, 25 marked noindex
-Made by this script: 112 canonical links, 24 descriptions; today: 0 links moved to the main page, 0 titles fixed
+SEO check 2026-11-19 06:36
+149 pages checked, 75 changed today, 123 in sitemap.xml, 25 marked noindex
+Made by this script: 118 canonical links, 24 descriptions; today: 0 links moved to the main page, 0 titles fixed
 
 Links to pages that don't exist (fix or remove these links):
+  /ar/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /ar/live.html  <- on 1 page(s), e.g. live.html
+  /ar/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /ar/radar.html  <- on 1 page(s), e.g. radar.html
+  /de/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /de/live.html  <- on 1 page(s), e.g. live.html
+  /de/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /de/radar.html  <- on 1 page(s), e.g. radar.html
+  /es/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /es/live.html  <- on 1 page(s), e.g. live.html
+  /es/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /es/radar.html  <- on 1 page(s), e.g. radar.html
+  /fr/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /fr/live.html  <- on 1 page(s), e.g. live.html
+  /fr/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /fr/radar.html  <- on 1 page(s), e.g. radar.html
+  /he/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /he/live.html  <- on 1 page(s), e.g. live.html
+  /he/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /he/radar.html  <- on 1 page(s), e.g. radar.html
+  /hi/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /hi/live.html  <- on 1 page(s), e.g. live.html
+  /hi/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /hi/radar.html  <- on 1 page(s), e.g. radar.html
+  /id/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /id/live.html  <- on 1 page(s), e.g. live.html
+  /id/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /id/radar.html  <- on 1 page(s), e.g. radar.html
+  /it/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /it/live.html  <- on 1 page(s), e.g. live.html
+  /it/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /it/radar.html  <- on 1 page(s), e.g. radar.html
+  /ja/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /ja/live.html  <- on 1 page(s), e.g. live.html
+  /ja/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /ja/radar.html  <- on 1 page(s), e.g. radar.html
+  /ko/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /ko/live.html  <- on 1 page(s), e.g. live.html
+  /ko/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /ko/radar.html  <- on 1 page(s), e.g. radar.html
+  /no/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /no/live.html  <- on 1 page(s), e.g. live.html
+  /no/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /no/radar.html  <- on 1 page(s), e.g. radar.html
   /pages/is-the-bigger-ai-plan-cheaper-price-per-credit-2026.html  <- on 1 page(s), e.g. pages/kling-4-0-price-per-second-every-plan-2026.html
+  /pl/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /pl/live.html  <- on 1 page(s), e.g. live.html
+  /pl/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /pl/radar.html  <- on 1 page(s), e.g. radar.html
+  /pt/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /pt/live.html  <- on 1 page(s), e.g. live.html
+  /pt/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /pt/radar.html  <- on 1 page(s), e.g. radar.html
+  /ru/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /ru/live.html  <- on 1 page(s), e.g. live.html
+  /ru/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /ru/radar.html  <- on 1 page(s), e.g. radar.html
+  /sv/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /sv/live.html  <- on 1 page(s), e.g. live.html
+  /sv/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /sv/radar.html  <- on 1 page(s), e.g. radar.html
+  /tr/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /tr/live.html  <- on 1 page(s), e.g. live.html
+  /tr/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /tr/radar.html  <- on 1 page(s), e.g. radar.html
+  /uk/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /uk/live.html  <- on 1 page(s), e.g. live.html
+  /uk/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /uk/radar.html  <- on 1 page(s), e.g. radar.html
+  /vi/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /vi/live.html  <- on 1 page(s), e.g. live.html
+  /vi/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /vi/radar.html  <- on 1 page(s), e.g. radar.html
+  /zh-tw/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /zh-tw/live.html  <- on 1 page(s), e.g. live.html
+  /zh-tw/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /zh-tw/radar.html  <- on 1 page(s), e.g. radar.html
+  /zh/exchange.html  <- on 1 page(s), e.g. exchange.html
+  /zh/live.html  <- on 1 page(s), e.g. live.html
+  /zh/pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html  <- on 1 page(s), e.g. pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html
+  /zh/radar.html  <- on 1 page(s), e.g. radar.html
 
 Needs a human:
   ai.html: title is 76 characters (Google shows about 60)
@@ -11,6 +91,9 @@ Needs a human:
   pages/cheapest-way-to-make-a-60-second-ai-video-2026.html: title is 71 characters (Google shows about 60)
   pages/emerging.html: title is 73 characters (Google shows about 60)
   pages/firefly.html: title is 71 characters (Google shows about 60)
+  pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html: title is 84 characters (Google shows about 60)
+  pages/higgsfield-vs-kling-pricing-2026.html: title is 72 characters (Google shows about 60)
+  pages/midjourney-vs-firefly-vs-gpt-image-cost-per-image-2026.html: title is 71 characters (Google shows about 60)
   pages/sample-package-youtube-ai-tools.html: empty file (delete it on GitHub, or leave it - it is marked noindex)
   pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026-final.html: title is 75 characters (Google shows about 60)
   pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026-test.html: no </head>, SEO tags not added

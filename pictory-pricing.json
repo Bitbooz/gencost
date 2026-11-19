@@ -3,29 +3,29 @@
   "plans": [
     {
       "name": "Starter",
-      "monthly_price_usd": 29.0,
+      "monthly_price_usd": 29,
+      "yearly_price_usd": 12.5,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "",
-      "yearly_price_usd": 25.0
+      "offer": "Black Friday Offer"
     },
     {
       "name": "Professional",
-      "monthly_price_usd": 59.0,
+      "monthly_price_usd": 59,
+      "yearly_price_usd": 17.5,
       "credits_or_minutes": 6000,
       "unit": "credits",
-      "offer": "",
-      "yearly_price_usd": 29.5
+      "offer": "Black Friday Offer"
     },
     {
       "name": "Teams",
-      "monthly_price_usd": 199.0,
+      "monthly_price_usd": 199,
+      "yearly_price_usd": 59.5,
       "credits_or_minutes": 18000,
       "unit": "credits",
-      "offer": "",
-      "yearly_price_usd": 119.0
+      "offer": "Black Friday Offer"
     }
   ],
   "source": "https://pictory.ai/pricing",
-  "last_checked": "2026-11-18 06:29"
+  "last_checked": "2026-11-19 06:28"
 }

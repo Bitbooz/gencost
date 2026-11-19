@@ -83,6 +83,7 @@
 <li><a data-section="/no/image" href="/no/image.html">Bilde</a></li>
 <li><a href="/no/compare.html">Sammenlign</a></li>
 <li><a href="/no/calculator.html">Kalkulatorer</a></li>
+<li><a href="/no/ai.html">AI-kobling</a></li>
 <li><a href="/no/#articles">Artikler</a></li>
 </ul>
 <div class="nav-right">
@@ -118,9 +119,26 @@
 <pre><code>claude mcp add --transport http gencost https://getgencost.com/mcp</code></pre>
 <h2>ChatGPT</h2>
 <p>Der ChatGPT-planen din støtter egendefinerte koblinger (utviklermodus), legg til en ny kobling og lim inn serveradressen. Ingen autentisering kreves.</p>
-<h2>Cursor, VS Code og andre MCP-klienter</h2>
-<p>Legg dette til i MCP-konfigurasjonen din (for Cursor, <code>~/.cursor/mcp.json</code>):</p>
+<h2>Cursor</h2>
+<p>Legg til dette i <code>~/.cursor/mcp.json</code>:</p>
 <pre><code>{ "mcpServers": { "gencost": { "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>VS Code (GitHub Copilot)</h2>
+<p>Legg til dette i <code>.vscode/mcp.json</code> i prosjektet ditt, eller i brukerinnstillingene dine (kommandopalett: <em>MCP: Åpne brukerinnstillingene</em>). VS Code bruker <code>servers</code>, ikke <code>mcpServers</code>:</p>
+<pre><code>{ "servers": { "gencost": { "type": "http", "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Codex (CLI, IDE extension and ChatGPT desktop)</h2>
+<p>Kjør:</p>
+<pre><code>codex mcp add gencost --url https://getgencost.com/mcp</code></pre>
+<p>eller legg til dette i <code>~/.codex/config.toml</code>:</p>
+<pre><code>[mcp_servers.gencost]
+url = "https://getgencost.com/mcp"</code></pre>
+<h2>Windsurf</h2>
+<p>I Cascade-panelet, åpne <em>MCPs</em> og velg <em>Vis råkonfig</em> for å åpne <code>mcp_config.json</code>, legg til dette, og trykk oppdater:</p>
+<pre><code>{ "mcpServers": { "gencost": { "serverUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Gemini CLI</h2>
+<p>Legg til dette i <code>~/.gemini/settings.json</code>. Bruk <code>httpUrl</code> (ikke <code>url</code>, som er for eldre SSE-servere):</p>
+<pre><code>{ "mcpServers": { "gencost": { "httpUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Andre MCP-klienter</h2>
+<p>Enhver klient som støtter eksterne MCP-servere over Streamable HTTP fungerer: bruk adressen <code>https://getgencost.com/mcp</code>. Ingen API-nøkkel eller innlogging kreves.</p>
 <h2>Verktøyene</h2>
 <div class="table-scroll no-live"><table>
 <thead><tr><th>Verktøy</th><th>Hva det gjør</th></tr></thead>
@@ -170,11 +188,15 @@
 <div>
 <h4>GenCost</h4>
 <ul>
-<li><a href="/no/ai.html">Bruk i Claude &amp; ChatGPT</a></li>
+<li><a href="/no/ai.html">Bruk i AI-assistenter</a></li>
+<li><a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" rel="noopener" target="_blank">AI-prisfinner (Hugging Face)</a></li>
 <li><a href="/no/about.html">Om GenCost</a></li>
 <li><a href="/no/order.html">Bestill en pakke</a></li>
 <li><a href="/no/how-we-verify.html">Hvordan vi verifiserer priser</a></li>
 <li><a href="/no/changelog.html">Logg over prisendringer</a></li>
+<li><a href="/no/live.html">Se prissjekken</a></li>
+<li><a href="/no/radar.html">AI-radar (live)</a></li>
+<li><a href="/no/exchange.html">AI-prisbørs</a></li>
 <li><a href="mailto:bitbooz@protonmail.com">Kontakt</a></li>
 </ul>
 </div>

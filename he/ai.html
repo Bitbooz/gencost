@@ -83,6 +83,7 @@
 <li><a data-section="/he/image" href="/he/image.html">תמונה</a></li>
 <li><a href="/he/compare.html">השוואה</a></li>
 <li><a href="/he/calculator.html">מחשבונים</a></li>
+<li><a href="/he/ai.html">מחבר AI</a></li>
 <li><a href="/he/#articles">מאמרים</a></li>
 </ul>
 <div class="nav-right">
@@ -118,9 +119,26 @@
 <pre><code>claude mcp add --transport http gencost https://getgencost.com/mcp</code></pre>
 <h2>ChatGPT</h2>
 <p>במקום שבו תוכנית ChatGPT תומכת במחברים מותאמים אישית (מצב מפתחים), מוסיפים מחבר חדש ומדביקים את כתובת השרת. אין צורך באימות.</p>
-<h2>Cursor, VS Code ולקוחות MCP אחרים</h2>
-<p>מוסיפים את זה להגדרות ה-MCP (עבור Cursor, <code>~/.cursor/mcp.json</code>):</p>
+<h2>Cursor</h2>
+<p>הוסף את זה ל- <code>~/.cursor/mcp.json</code>:</p>
 <pre><code>{ "mcpServers": { "gencost": { "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>VS Code (GitHub Copilot)</h2>
+<p>הוסף את זה ל- <code>.vscode/mcp.json</code> בפרויקט שלך, או להגדרות המשתמש (פלטת הפקודות: <em>MCP: פתח הגדרות משתמש</em>). VS Code משתמש ב- <code>servers</code>, לא ב- <code>mcpServers</code>:</p>
+<pre><code>{ "servers": { "gencost": { "type": "http", "url": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Codex (CLI, תוסף IDE ו-ChatGPT desktop)</h2>
+<p>הרץ:</p>
+<pre><code>codex mcp add gencost --url https://getgencost.com/mcp</code></pre>
+<p>או הוסף את זה ל- <code>~/.codex/config.toml</code>:</p>
+<pre><code>[mcp_servers.gencost]
+url = "https://getgencost.com/mcp"</code></pre>
+<h2>Windsurf</h2>
+<p>בפאנל Cascade, פתח <em>MCPs</em> ובחר <em>View raw config</em> כדי לפתוח <code>mcp_config.json</code>, הוסף את זה, ואז לחץ רענן:</p>
+<pre><code>{ "mcpServers": { "gencost": { "serverUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>Gemini CLI</h2>
+<p>הוסף את זה ל- <code>~/.gemini/settings.json</code>. השתמש ב- <code>httpUrl</code> (לא ב- <code>url</code>, שמיועד לשרתי SSE ישנים):</p>
+<pre><code>{ "mcpServers": { "gencost": { "httpUrl": "https://getgencost.com/mcp" } } }</code></pre>
+<h2>לקוחות MCP אחרים</h2>
+<p>כל לקוח שתומך בשרתי MCP מרוחקים דרך Streamable HTTP עובד: השתמש בכתובת <code>https://getgencost.com/mcp</code>. אין צורך במפתח API או התחברות.</p>
 <h2>הכלים</h2>
 <div class="table-scroll no-live"><table>
 <thead><tr><th>כלי</th><th>מה הוא עושה</th></tr></thead>
@@ -170,11 +188,15 @@
 <div>
 <h4>GenCost</h4>
 <ul>
-<li><a href="/he/ai.html">שימוש ב-Claude ו-ChatGPT</a></li>
+<li><a href="/he/ai.html">שימוש בעוזרי AI</a></li>
+<li><a href="https://huggingface.co/spaces/Bitbooz/ai-price-finder" rel="noopener" target="_blank">AI Price Finder (Hugging Face)</a></li>
 <li><a href="/he/about.html">אודות GenCost</a></li>
 <li><a href="/he/order.html">הזמן חבילה</a></li>
 <li><a href="/he/how-we-verify.html">איך אנחנו מאמתים מחירים</a></li>
 <li><a href="/he/changelog.html">יומן שינויי מחירים</a></li>
+<li><a href="/he/live.html">צפה בבדיקת המחירים</a></li>
+<li><a href="/he/radar.html">רדאר AI (לייב)</a></li>
+<li><a href="/he/exchange.html">בורסת מחירי AI</a></li>
 <li><a href="mailto:bitbooz@protonmail.com">צור קשר</a></li>
 </ul>
 </div>

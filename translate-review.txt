@@ -1,25 +1,35 @@
-2026-11-18 05:55  Español (/es/): 116 of 117 pages, stored translations: 3867, JavaScript texts: 465/465
-2026-11-18 05:55  Português (/pt/): 116 of 117 pages, stored translations: 3869, JavaScript texts: 465/465
-2026-11-18 05:55  Deutsch (/de/): 116 of 117 pages, stored translations: 3849, JavaScript texts: 465/465
-2026-11-18 05:55  Français (/fr/): 116 of 117 pages, stored translations: 3858, JavaScript texts: 465/465
-2026-11-18 05:55  العربية (/ar/): 116 of 117 pages, stored translations: 3848, JavaScript texts: 465/465
-2026-11-18 05:55  עברית (/he/): 116 of 117 pages, stored translations: 3813, JavaScript texts: 465/465
-  - translation did not keep the tags or numbers, kept English: <t0>[[0]]-[[1]]-[[2]]</t0> Captions Frontier: [[3]] → [[4]] a month, c
-2026-11-18 05:55  Italiano (/it/): 116 of 117 pages, stored translations: 3816, JavaScript texts: 465/465
-  - translation did not keep the tags or numbers, kept English: <t0>[[0]]-[[1]]-[[2]]</t0> Captions Frontier: [[3]] → [[4]] a month, c
-2026-11-18 05:55  日本語 (/ja/): 116 of 117 pages, stored translations: 3822, JavaScript texts: 465/465
-  - translation did not keep the tags or numbers, kept English: <t0>[[0]]-[[1]]-[[2]]</t0> Captions Frontier: [[3]] → [[4]] a month, c
-2026-11-18 05:55  Русский (/ru/): 116 of 117 pages, stored translations: 3824, JavaScript texts: 465/465
-2026-11-18 05:55  繁體中文 (/zh-tw/): 116 of 117 pages, stored translations: 3837, JavaScript texts: 465/465
-2026-11-18 05:55  한국어 (/ko/): 116 of 117 pages, stored translations: 3808, JavaScript texts: 465/465
-2026-11-18 05:55  Bahasa Indonesia (/id/): 116 of 117 pages, stored translations: 3824, JavaScript texts: 465/465
-  - translation did not keep the tags or numbers, kept English: <t0>[[0]]-[[1]]-[[2]]</t0> Captions Frontier: [[3]] → [[4]] a month, c
-2026-11-18 05:55  Türkçe (/tr/): 116 of 117 pages, stored translations: 3832, JavaScript texts: 465/465
-  - translation did not keep the tags or numbers, kept English: GenCost tested it on [[0]]-[[1]]-[[2]]: three short videos with the pu
-2026-11-18 05:55  हिन्दी (/hi/): 116 of 117 pages, stored translations: 3793, JavaScript texts: 465/465
-2026-11-18 05:55  Tiếng Việt (/vi/): 116 of 117 pages, stored translations: 3834, JavaScript texts: 465/465
-2026-11-18 05:55  Polski (/pl/): 116 of 117 pages, stored translations: 3833, JavaScript texts: 465/465
-2026-11-18 05:55  Українська (/uk/): 116 of 117 pages, stored translations: 3827, JavaScript texts: 465/465
-2026-11-18 05:55  简体中文 (/zh/): 116 of 117 pages, stored translations: 3830, JavaScript texts: 465/465
-2026-11-18 05:55  Norsk (/no/): 116 of 117 pages, stored translations: 3604, JavaScript texts: 465/465
-2026-11-18 05:55  Svenska (/sv/): 116 of 117 pages, stored translations: 3604, JavaScript texts: 465/465
+2026-11-19 06:52  Español (/es/): 122 of 123 pages, stored translations: 4142, JavaScript texts: 541/541
+2026-11-19 06:52  Português (/pt/): 122 of 123 pages, stored translations: 4144, JavaScript texts: 541/541
+2026-11-19 06:52  Deutsch (/de/): 122 of 123 pages, stored translations: 4124, JavaScript texts: 541/541
+2026-11-19 06:52  Français (/fr/): 122 of 123 pages, stored translations: 4133, JavaScript texts: 541/541
+2026-11-19 06:52  العربية (/ar/): 122 of 123 pages, stored translations: 4122, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: Higgsfield's yearly prices are much lower than its monthly ones: Plus 
+2026-11-19 06:52  עברית (/he/): 122 of 123 pages, stored translations: 4087, JavaScript texts: 540/541
+  - translation did not keep the tags or numbers, kept English: Higgsfield's yearly prices are much lower than its monthly ones: Plus 
+  - translation did not keep the tags or numbers, kept English: [[0]] first [[1]] months
+2026-11-19 06:52  Italiano (/it/): 122 of 123 pages, stored translations: 4092, JavaScript texts: 541/541
+2026-11-19 06:52  日本語 (/ja/): 120 of 123 pages, stored translations: 4094, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and cre
+  - translation did not keep the tags or numbers, kept English: Higgsfield puts Kling, Seedance, Veo and its own tools in one app with
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and how
+  - translation did not keep the tags or numbers, kept English: OpenAI's GPT Image [[0]] models, released on November [[1]], [[2]], co
+  - pages/higgsfield-vs-kling-pricing-2026.html: only 87% translated, not published yet
+  - pages/midjourney-vs-firefly-vs-gpt-image-cost-per-image-2026.html: only 89% translated, not published yet
+2026-11-19 06:52  Русский (/ru/): 122 of 123 pages, stored translations: 4100, JavaScript texts: 541/541
+2026-11-19 06:52  繁體中文 (/zh-tw/): 122 of 123 pages, stored translations: 4113, JavaScript texts: 541/541
+2026-11-19 06:52  한국어 (/ko/): 121 of 123 pages, stored translations: 4082, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and cre
+  - translation did not keep the tags or numbers, kept English: Higgsfield puts Kling, Seedance, Veo and its own tools in one app with
+  - pages/higgsfield-vs-kling-pricing-2026.html: only 87% translated, not published yet
+2026-11-19 06:52  Bahasa Indonesia (/id/): 122 of 123 pages, stored translations: 4100, JavaScript texts: 541/541
+2026-11-19 06:52  Türkçe (/tr/): 122 of 123 pages, stored translations: 4109, JavaScript texts: 541/541
+2026-11-19 06:52  हिन्दी (/hi/): 122 of 123 pages, stored translations: 4069, JavaScript texts: 541/541
+2026-11-19 06:52  Tiếng Việt (/vi/): 122 of 123 pages, stored translations: 4109, JavaScript texts: 540/541
+  - translation did not keep the tags or numbers, kept English: [[0]] first [[1]] months
+2026-11-19 06:52  Polski (/pl/): 122 of 123 pages, stored translations: 4109, JavaScript texts: 541/541
+2026-11-19 06:52  Українська (/uk/): 122 of 123 pages, stored translations: 4102, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: Higgsfield's yearly prices are much lower than its monthly ones: Plus 
+2026-11-19 06:52  简体中文 (/zh/): 122 of 123 pages, stored translations: 4105, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and cre
+2026-11-19 06:52  Norsk (/no/): 122 of 123 pages, stored translations: 3880, JavaScript texts: 541/541
+2026-11-19 06:52  Svenska (/sv/): 122 of 123 pages, stored translations: 3880, JavaScript texts: 541/541
