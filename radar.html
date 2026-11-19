@@ -170,10 +170,12 @@
     ar: [[24, 45], [26.8, 30.8], [32, -6], [33.9, 35.5]], he: [[31.5, 34.9]], it: [[42.8, 12.5]], ja: [[36.2, 138.3]],
     ru: [[55.7, 37.6], [56, 60], [55, 83]], "zh-tw": [[23.7, 121]], ko: [[36.4, 127.9]], id: [[-2.5, 118], [-6.2, 106.8]],
     tr: [[39, 35], [41, 29]], hi: [[23.3, 79], [28.6, 77.2], [19.1, 72.9]], vi: [[16, 107.8], [21, 105.8]], pl: [[52, 19.4]],
-    uk: [[49, 31.5]], zh: [[34.5, 104], [31.2, 121.5], [23.1, 113.3]], no: [[60.5, 9]], sv: [[62, 15.5]] };
+    uk: [[49, 31.5]], zh: [[34.5, 104], [31.2, 121.5], [23.1, 113.3]], no: [[60.5, 9]], sv: [[62, 15.5]],
+    da: [[56, 9.5]], fi: [[62.5, 26]], nl: [[52.2, 5.3], [50.8, 4.4]], th: [[15, 101]], tl: [[12.5, 122], [14.6, 121]], bn: [[23.7, 90.4], [22.6, 88.4]] };
   const LNAME = { en: "English", es: "Spanish", pt: "Portuguese", de: "German", fr: "French", ar: "Arabic", he: "Hebrew", it: "Italian",
     ja: "Japanese", ru: "Russian", "zh-tw": "Traditional Chinese", ko: "Korean", id: "Indonesian", tr: "Turkish", hi: "Hindi",
-    vi: "Vietnamese", pl: "Polish", uk: "Ukrainian", zh: "Chinese", no: "Norwegian", sv: "Swedish" };
+    vi: "Vietnamese", pl: "Polish", uk: "Ukrainian", zh: "Chinese", no: "Norwegian", sv: "Swedish",
+    da: "Danish", fi: "Finnish", nl: "Dutch", th: "Thai", tl: "Filipino", bn: "Bengali" };
   const GENCOST = [59.91, 10.75];  // Oslo
   const TOOL = { list_tools: "which tools GenCost tracks", get_prices: "today's prices", find_cheapest: "the cheapest option", compare_tools: "a price comparison" };
   const color = (e) => e.tool ? "#f472b6" : e.asked ? "#22d3ee" : "#a78bfa";
@@ -181,7 +183,7 @@
   const brand = (who) => who.replace(/ \(.*\)$/, "").replace(/ crawler$/i, "");
   const pick = (a) => a[Math.floor(Math.random() * a.length)];
   const nice = (page) => {
-    let p = page.replace(/^\/(es|pt|de|fr|ar|he|it|ja|ru|zh-tw|ko|id|tr|hi|vi|pl|uk|zh|no|sv)(?=\/|$)/, "") || "/";
+    let p = page.replace(/^\/(es|pt|de|fr|ar|he|it|ja|ru|zh-tw|ko|id|tr|hi|vi|pl|uk|zh|no|sv|da|fi|nl|th|tl|bn)(?=\/|$)/, "") || "/";
     if (p === "/" || p === "/index.html") return "the front page";
     if (/^\/compare/.test(p)) return "the price comparison";
     if (/^\/calculator|^\/clip/.test(p)) return "the price calculator";

@@ -6,7 +6,7 @@ import { getStore } from "@netlify/blobs";
 
 const MINUTES = 20;
 const MAX = 80;
-const LANGS = ["es", "pt", "de", "fr", "ar", "he", "it", "ja", "ru", "zh-tw", "ko", "id", "tr", "hi", "vi", "pl", "uk", "zh", "no", "sv"];
+const LANGS = ["es", "pt", "de", "fr", "ar", "he", "it", "ja", "ru", "zh-tw", "ko", "id", "tr", "hi", "vi", "pl", "uk", "zh", "no", "sv", "da", "fi", "nl", "th", "tl", "bn"];
 
 export default async () => {
   const store = getStore("radar");

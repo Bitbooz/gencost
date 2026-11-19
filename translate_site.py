@@ -103,6 +103,26 @@ LANGS = {
     "sv": {"html": "sv", "hreflang": "sv", "name": "Svenska", "label": "SV",
            "rules": 'Write natural Swedish, as Swedish tech sites do. Use "du". Keep tool, model and plan names as they are.',
            "words": '"credits" -> "krediter". "/mo" -> "/mån", "per month" -> "per månad", "billed yearly"/"paid yearly" -> "vid årsbetalning". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 oktober 2026".'},
+    "da": {"html": "da", "hreflang": "da", "name": "Dansk", "label": "DA",
+           "rules": 'Write natural Danish, as Danish tech sites do. Use "du". Keep tool, model and plan names as they are.',
+           "words": '"credits" -> "kreditter". "/mo" -> "/md.", "per month" -> "om måneden", "billed yearly"/"paid yearly" -> "ved årlig betaling". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15. oktober 2026".'},
+    "fi": {"html": "fi", "hreflang": "fi", "name": "Suomi", "label": "FI",
+           "rules": 'Write natural Finnish, as Finnish tech sites do. Use the informal "sinä" form. Keep tool, model and plan names as they are.',
+           "words": '"credits" -> "krediitit". "/mo" -> "/kk", "per month" -> "kuukaudessa", "billed yearly"/"paid yearly" -> "vuosilaskutuksella". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15. lokakuuta 2026".'},
+    "nl": {"html": "nl", "hreflang": "nl", "name": "Nederlands", "label": "NL",
+           "rules": 'Write natural Dutch for the Netherlands and Flanders, as Dutch tech sites do. Use "je". Keep tool, model and plan names as they are.',
+           "words": '"credits" -> "credits". "/mo" -> "/mnd", "per month" -> "per maand", "billed yearly"/"paid yearly" -> "bij jaarlijkse betaling". Prices stay in US dollars. Dates in running text: "October 15, 2026" -> "15 oktober 2026".'},
+    "th": {"html": "th", "hreflang": "th", "name": "ไทย", "label": "TH",
+           "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap",
+           "rules": 'Write natural, friendly Thai as Thai tech and creator sites do. Keep tool, model and plan names in Latin letters.',
+           "words": '"credits" -> "เครดิต". "/mo" -> "/เดือน", "per month" -> "ต่อเดือน", "billed yearly"/"paid yearly" -> "เมื่อชำระรายปี". Prices stay in US dollars, written with the [[n]] tokens.'},
+    "tl": {"html": "fil", "hreflang": "fil", "also": ["tl"], "name": "Filipino", "label": "FIL",
+           "rules": 'Write natural Filipino (Tagalog) as Filipino creators and tech sites do; common English tech words (AI, video, plan, credits) may stay in English, as is normal in Taglish. Use "ka"/"mo". Keep tool, model and plan names as they are.',
+           "words": '"credits" -> "credits". "/mo" -> "/buwan", "per month" -> "kada buwan", "billed yearly"/"paid yearly" -> "kapag taunang bayad". Prices stay in US dollars.'},
+    "bn": {"html": "bn", "hreflang": "bn", "name": "বাংলা", "label": "BN",
+           "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;700&display=swap",
+           "rules": 'Write simple, natural Bengali (Bangla) as Bangladeshi and Indian tech sites write. Common English tech words (AI, video, plan, app) may stay in English where Bengali readers use them. Keep tool, model and plan names in Latin letters.',
+           "words": '"credits" -> "ক্রেডিট". "/mo" -> "/মাস", "per month" -> "প্রতি মাসে", "billed yearly"/"paid yearly" -> "বার্ষিক পেমেন্টে". Prices stay in US dollars, written with the [[n]] tokens.'},
 }
 CODE = LANG = OUT = CACHE_FILE = UI_FILE = None
 
@@ -371,7 +391,7 @@ def grok_translate(items):
         model=MODEL, temperature=0,
         messages=[{"role": "user", "content": PROMPT.format(language={"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew", "it": "Italian", "ja": "Japanese", "ru": "Russian", "zh-tw": "Traditional Chinese (Taiwan and Hong Kong)",
                                                                      "ko": "Korean", "id": "Indonesian", "tr": "Turkish", "hi": "Hindi",
-                                                                     "vi": "Vietnamese", "pl": "Polish", "uk": "Ukrainian", "zh": "Simplified Chinese", "no": "Norwegian (Bokmål)", "sv": "Swedish"}.get(CODE, LANGS[CODE]["name"]),
+                                                                     "vi": "Vietnamese", "pl": "Polish", "uk": "Ukrainian", "zh": "Simplified Chinese", "no": "Norwegian (Bokmål)", "sv": "Swedish", "da": "Danish", "fi": "Finnish", "nl": "Dutch", "th": "Thai", "tl": "Filipino (Tagalog)", "bn": "Bengali"}.get(CODE, LANGS[CODE]["name"]),
                                                             rules=LANGS[CODE]["rules"], words=LANGS[CODE]["words"])
                    + json.dumps(items, ensure_ascii=False)}])
     text = r.choices[0].message.content.strip()

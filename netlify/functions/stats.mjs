@@ -7,7 +7,8 @@ const KEY_SHA256 = "7645ccca618d5385e7ad81f66763f780d7c9054f09900adaabcdf174cf87
 const KEEP_DAYS = 90;
 const LANGS = { es: "Spanish", pt: "Portuguese", de: "German", fr: "French", ar: "Arabic", he: "Hebrew", it: "Italian",
   ja: "Japanese", ru: "Russian", "zh-tw": "Chinese (Traditional)", ko: "Korean", id: "Indonesian", tr: "Turkish",
-  hi: "Hindi", vi: "Vietnamese", pl: "Polish", uk: "Ukrainian", zh: "Chinese (Simplified)", no: "Norwegian", sv: "Swedish" };
+  hi: "Hindi", vi: "Vietnamese", pl: "Polish", uk: "Ukrainian", zh: "Chinese (Simplified)", no: "Norwegian", sv: "Swedish",
+  da: "Danish", fi: "Finnish", nl: "Dutch", th: "Thai", tl: "Filipino", bn: "Bengali" };
 const langOf = (page) => LANGS[(page.split("/")[1] || "").toLowerCase()] || "English";
 
 async function sha256(text) {

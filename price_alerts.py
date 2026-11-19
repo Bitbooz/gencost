@@ -34,7 +34,8 @@ MAX_PER_RUN = 90  # Resend's free plan sends at most 100 emails a day
 LANG_NAMES = {"es": "Spanish", "pt": "Portuguese", "de": "German", "fr": "French", "ar": "Arabic", "he": "Hebrew",
               "it": "Italian", "ja": "Japanese", "ru": "Russian", "zh-tw": "Traditional Chinese", "ko": "Korean",
               "id": "Indonesian", "tr": "Turkish", "hi": "Hindi", "vi": "Vietnamese", "pl": "Polish", "uk": "Ukrainian",
-              "zh": "Simplified Chinese", "no": "Norwegian (Bokmål)", "sv": "Swedish"}
+              "zh": "Simplified Chinese", "no": "Norwegian (Bokmål)", "sv": "Swedish",
+              "da": "Danish", "fi": "Finnish", "nl": "Dutch", "th": "Thai", "tl": "Filipino", "bn": "Bengali"}
 
 
 def log(msg):
