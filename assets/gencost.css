@@ -605,3 +605,14 @@ main.page { padding-bottom: 24px; }
 .radar-pill .live-dot { background: #f43f5e; animation-name: radarPulse; }
 @keyframes radarPulse { 70% { box-shadow: 0 0 0 10px rgba(244,63,94,0); } 100% { box-shadow: 0 0 0 0 rgba(244,63,94,0); } }
 @media (max-width: 640px) { .radar-pill { margin-left: 0; } }
+
+/* Front page: three live buttons, same size (2026-11-19) */
+.live-pills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 18px; max-width: 660px; }
+.live-pills .live-pill { margin: 0; justify-content: center; white-space: nowrap; padding: 10px 8px; gap: 8px; font-size: 0.86rem; }
+.live-pills .radar-pill { margin-left: 0; }
+.exch-pill { border-color: rgba(255,176,32,0.5); background: linear-gradient(90deg, rgba(255,176,32,0.14), rgba(244,63,94,0.08)); box-shadow: 0 0 24px rgba(255,176,32,0.16); color: #fff4dd; }
+.exch-pill:hover { border-color: #ffb020; box-shadow: 0 0 30px rgba(255,176,32,0.38); }
+.exch-pill .live-dot { background: #ffb020; animation-name: exchPulse; }
+@keyframes exchPulse { 70% { box-shadow: 0 0 0 10px rgba(255,176,32,0); } 100% { box-shadow: 0 0 0 0 rgba(255,176,32,0); } }
+@media (max-width: 640px) { .live-pills { grid-template-columns: 1fr; max-width: none; } }
+@media (max-width: 1180px) and (min-width: 641px) { .live-pills .live-pill { font-size: 0.82rem; padding: 10px 6px; gap: 6px; } .live-pills .arrow { display: none; } }
