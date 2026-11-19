@@ -1,8 +1,8 @@
 """
-Publishes one queued article a day (runs at the start of the daily GitHub workflow).
+Publishes PER_DAY queued articles a day (runs at the start of the daily GitHub workflow).
 
 queue/queue.json lists the waiting articles in order. Each run:
-  - stops if an article was already published today (Norwegian date), or nothing is waiting
+  - stops when PER_DAY articles were already published today (Norwegian date), or nothing is waiting
   - copies the next article from queue/ to its place in pages/
   - adds its card at the top of the article list on the homepage
   - writes today's date as 'published'
@@ -20,6 +20,7 @@ from zoneinfo import ZoneInfo
 HERE = os.path.dirname(os.path.abspath(__file__))
 QUEUE = os.path.join(HERE, "queue", "queue.json")
 INDEX = os.path.join(HERE, "index.html")
+PER_DAY = 2  # articles a day (more pages for AI search to index; 2026-11-19)
 MARK = "<!-- ARTICLES:START (new article cards are added just above ARTICLES:END) -->"
 
 
@@ -32,21 +33,24 @@ def main():
         print("No article queue.")
         return
     items = q.get("items", [])
-    if any(i.get("published") == today for i in items):
-        print("An article was already published today.")
+    done = sum(1 for i in items if i.get("published") == today)
+    if done >= PER_DAY:
+        print(f"{done} article(s) already published today.")
         return
-    nxt = next((i for i in items if not i.get("published")), None)
-    if not nxt:
-        print("The article queue is empty.")
-        return
-    src, dst = os.path.join(HERE, nxt["file"]), os.path.join(HERE, nxt["page"])
-    if not os.path.exists(src):
-        print(f"Queued file missing: {nxt['file']} (skipped)")
-        nxt["published"] = "missing"
-    elif os.path.exists(dst):
-        print(f"{nxt['page']} already exists, so it was not overwritten (skipped)")
-        nxt["published"] = "exists"
-    else:
+    while done < PER_DAY:
+        nxt = next((i for i in items if not i.get("published")), None)
+        if not nxt:
+            print("The article queue is empty.")
+            break
+        src, dst = os.path.join(HERE, nxt["file"]), os.path.join(HERE, nxt["page"])
+        if not os.path.exists(src):
+            print(f"Queued file missing: {nxt['file']} (skipped)")
+            nxt["published"] = "missing"
+            continue
+        if os.path.exists(dst):
+            print(f"{nxt['page']} already exists, so it was not overwritten (skipped)")
+            nxt["published"] = "exists"
+            continue
         shutil.copyfile(src, dst)
         raw = open(INDEX, encoding="utf-8").read()
         href = 'href="/' + nxt["page"] + '"'
@@ -55,6 +59,7 @@ def main():
             with open(INDEX, "w", encoding="utf-8", newline="") as f:
                 f.write(raw)
         nxt["published"] = today
+        done += 1
         print(f"Published {nxt['page']}")
     with open(QUEUE, "w", encoding="utf-8") as f:
         json.dump(q, f, indent=1, ensure_ascii=False)
