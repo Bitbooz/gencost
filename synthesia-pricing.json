@@ -6,7 +6,7 @@
       "monthly_price_usd": 0,
       "credits_or_minutes": 500,
       "unit": "credits",
-      "offer": "1 Syren video - limited promo"
+      "offer": ""
     },
     {
       "name": "Starter",
@@ -14,7 +14,7 @@
       "yearly_price_usd": 14,
       "credits_or_minutes": 1250,
       "unit": "credits",
-      "offer": "first month $9"
+      "offer": "$9 first month"
     },
     {
       "name": "Pro",
@@ -22,9 +22,9 @@
       "yearly_price_usd": 59,
       "credits_or_minutes": 6000,
       "unit": "credits",
-      "offer": "first month $49"
+      "offer": "$49 first month"
     }
   ],
   "source": "https://www.synthesia.io/pricing",
-  "last_checked": "2026-11-19 06:25"
+  "last_checked": "2026-11-20 06:22"
 }

@@ -1,6 +1,6 @@
 {
  "category": "music",
- "updated": "2026-11-19 06:36",
+ "updated": "2026-11-20 06:32",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -18,13 +18,13 @@
    "name": "Suno",
    "page": "/pages/music/suno.html",
    "source": "https://suno.com/pricing",
-   "checked": "2026-11-19 06:31",
+   "checked": "2026-11-20 06:28",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
      "credits_or_minutes": 50,
-     "unit": "credits",
+     "unit": "credits per day",
      "offer": "",
      "credits_period": "month"
     },
@@ -65,14 +65,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-19 06:31",
-   "price_verified": "2026-11-19 06:31"
+   "source_checked": "2026-11-20 06:28",
+   "price_verified": "2026-11-20 06:28"
   },
   {
    "name": "Udio",
    "page": "/pages/music/udio.html",
    "source": "https://www.udio.com/pricing",
-   "checked": "2026-11-19 06:32",
+   "checked": "2026-11-20 06:28",
    "plans": [
     {
      "name": "Free",
@@ -110,21 +110,19 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-19 06:32",
-   "price_verified": "2026-11-19 06:32"
+   "source_checked": "2026-11-20 06:28",
+   "price_verified": "2026-11-20 06:28"
   },
   {
    "name": "Soundraw",
    "page": "/pages/music/soundraw.html",
    "source": "https://soundraw.io/pricing",
-   "checked": "2026-11-19 06:32",
+   "checked": "2026-11-20 06:28",
    "plans": [
     {
      "name": "Creator",
      "monthly_price_usd": 16.99,
      "yearly_price_usd": 11.04,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": "",
      "credits_period": "month"
     },
@@ -132,8 +130,6 @@
      "name": "Artist Starter",
      "monthly_price_usd": 29.99,
      "yearly_price_usd": 19.49,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": "",
      "credits_period": "month"
     },
@@ -141,8 +137,6 @@
      "name": "Artist Pro",
      "monthly_price_usd": 35.99,
      "yearly_price_usd": 23.39,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": "",
      "credits_period": "month"
     },
@@ -150,8 +144,6 @@
      "name": "Artist Unlimited",
      "monthly_price_usd": 50,
      "yearly_price_usd": 32.5,
-     "credits_or_minutes": 0,
-     "unit": "",
      "offer": "",
      "credits_period": "month"
     }
@@ -165,30 +157,36 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-19 06:32",
-   "price_verified": "2026-11-19 06:32"
+   "source_checked": "2026-11-20 06:28",
+   "price_verified": "2026-11-20 06:28"
   },
   {
    "name": "AIVA",
    "page": "/pages/music/aiva.html",
    "source": "https://www.aiva.ai/pricing",
-   "checked": "2026-11-19 06:33",
+   "checked": "2026-11-20 06:29",
    "plans": [
     {
      "name": "Free",
      "monthly_price_usd": 0,
-     "offer": "monthly price not shown",
+     "credits_or_minutes": 3,
+     "unit": "downloads",
+     "offer": "",
      "credits_period": "month"
     },
     {
      "name": "Standard",
      "monthly_price_usd": 12.29,
+     "credits_or_minutes": 15,
+     "unit": "downloads",
      "offer": "monthly price not shown; €11 on the official page, converted at 1 EUR = 1.117 USD",
      "credits_period": "month"
     },
     {
      "name": "Pro",
      "monthly_price_usd": 36.86,
+     "credits_or_minutes": 300,
+     "unit": "downloads",
      "offer": "monthly price not shown; €33 on the official page, converted at 1 EUR = 1.117 USD",
      "credits_period": "month"
     }
@@ -203,14 +201,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-19 06:33",
-   "price_verified": "2026-11-19 06:33"
+   "source_checked": "2026-11-20 06:29",
+   "price_verified": "2026-11-20 06:29"
   },
   {
    "name": "Boomy",
    "page": "/pages/music/boomy.html",
    "source": "https://boomy.com/pricing",
-   "checked": "2026-11-19 06:33",
+   "checked": "2026-11-20 06:29",
    "plans": [
     {
      "name": "Free",
@@ -239,14 +237,14 @@
     "checked": "2026-11-07",
     "official": true
    },
-   "source_checked": "2026-11-19 06:33",
-   "price_verified": "2026-11-19 06:33"
+   "source_checked": "2026-11-20 06:29",
+   "price_verified": "2026-11-20 06:29"
   },
   {
    "name": "Stable Audio",
    "page": "/pages/stable-audio.html",
    "source": "https://stableaudio.com/pricing",
-   "checked": "2026-11-19 06:33",
+   "checked": "2026-11-20 06:29",
    "plans": [
     {
      "name": "Free",
@@ -289,28 +287,28 @@
      "credits_period": "month"
     }
    ],
-   "source_checked": "2026-11-19 06:33",
-   "price_verified": "2026-11-19 06:33"
+   "source_checked": "2026-11-20 06:29",
+   "price_verified": "2026-11-20 06:29"
   },
   {
    "name": "Mureka",
    "page": "/pages/mureka.html",
    "source": "https://www.mureka.ai/subscribe",
-   "checked": "2026-11-19 06:34",
+   "checked": "2026-11-20 06:30",
    "plans": [
     {
      "name": "Pro",
      "monthly_price_usd": 8,
-     "credits_or_minutes": 500,
-     "unit": "songs",
+     "credits_or_minutes": 5000,
+     "unit": "gold",
      "offer": "",
      "credits_period": "month"
     },
     {
      "name": "Premier",
      "monthly_price_usd": 24,
-     "credits_or_minutes": 2000,
-     "unit": "songs",
+     "credits_or_minutes": 20000,
+     "unit": "gold",
      "offer": "",
      "credits_period": "month"
     }
@@ -323,8 +321,8 @@
     "checked": "2026-11-08",
     "official": true
    },
-   "source_checked": "2026-11-19 06:34",
-   "price_verified": "2026-11-19 06:34"
+   "source_checked": "2026-11-20 06:30",
+   "price_verified": "2026-11-20 06:30"
   }
  ]
 }

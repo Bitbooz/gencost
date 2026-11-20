@@ -1,24 +1,24 @@
 {
  "about": "What GenCost's morning price check did today. Written by run_log.py; shown on /live.html.",
- "date": "2026-11-19",
- "started": "06:22",
- "finished": "06:36",
+ "date": "2026-11-20",
+ "started": "06:20",
+ "finished": "06:32",
  "totals": {
   "tools": 50,
-  "read": 44,
-  "changed": 0,
-  "kept": 2,
+  "read": 43,
+  "changed": 1,
+  "kept": 3,
   "manual": 4,
-  "waiting": 8
+  "waiting": 5
  },
  "articles": [
   {
-   "title": "Midjourney vs Firefly vs GPT Image",
-   "url": "/pages/midjourney-vs-firefly-vs-gpt-image-cost-per-image-2026.html"
+   "title": "Best Runway Alternatives",
+   "url": "/pages/best-runway-alternatives-2026.html"
   },
   {
-   "title": "Higgsfield vs Kling",
-   "url": "/pages/higgsfield-vs-kling-pricing-2026.html"
+   "title": "Best Suno Alternatives",
+   "url": "/pages/best-suno-alternatives-2026.html"
   }
  ],
  "tools": [
@@ -28,18 +28,9 @@
    "page": "/pages/hailuo.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:22",
+   "time": "06:20",
    "status": "kept",
    "note": "The page couldn't be read today, so yesterday's prices were kept"
-  },
-  {
-   "name": "HeyGen",
-   "cat": "video",
-   "page": "/pages/heygen.html",
-   "changes": [],
-   "waiting": 0,
-   "time": "06:23",
-   "status": "ok"
   },
   {
    "name": "Google Veo",
@@ -47,7 +38,16 @@
    "page": "/pages/veo.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:23",
+   "time": "06:20",
+   "status": "ok"
+  },
+  {
+   "name": "HeyGen",
+   "cat": "video",
+   "page": "/pages/heygen.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:21",
    "status": "ok"
   },
   {
@@ -55,8 +55,8 @@
    "cat": "video",
    "page": "/pages/vidu.html",
    "changes": [],
-   "waiting": 0,
-   "time": "06:23",
+   "waiting": 1,
+   "time": "06:21",
    "status": "ok"
   },
   {
@@ -64,8 +64,8 @@
    "cat": "video",
    "page": "/pages/krea.html",
    "changes": [],
-   "waiting": 3,
-   "time": "06:23",
+   "waiting": 2,
+   "time": "06:21",
    "status": "ok"
   },
   {
@@ -74,7 +74,7 @@
    "page": "/pages/higgsfield.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:24",
+   "time": "06:22",
    "status": "ok"
   },
   {
@@ -83,7 +83,7 @@
    "page": "/pages/runway.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:24",
+   "time": "06:22",
    "status": "ok"
   },
   {
@@ -92,7 +92,7 @@
    "page": "/pages/kling.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:25",
+   "time": "06:22",
    "status": "ok"
   },
   {
@@ -101,7 +101,7 @@
    "page": "/pages/synthesia.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:25",
+   "time": "06:22",
    "status": "ok"
   },
   {
@@ -110,7 +110,7 @@
    "page": "/pages/pika.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:25",
+   "time": "06:22",
    "status": "ok"
   },
   {
@@ -119,7 +119,7 @@
    "page": "/pages/luma.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:25",
+   "time": "06:22",
    "status": "ok"
   },
   {
@@ -128,7 +128,7 @@
    "page": "/pages/viggle.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:25",
+   "time": "06:23",
    "status": "ok"
   },
   {
@@ -136,8 +136,8 @@
    "cat": "video",
    "page": "/pages/invideo.html",
    "changes": [],
-   "waiting": 1,
-   "time": "06:26",
+   "waiting": 2,
+   "time": "06:23",
    "status": "ok"
   },
   {
@@ -146,7 +146,7 @@
    "page": "/pages/capcut.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:26",
+   "time": "06:23",
    "status": "ok"
   },
   {
@@ -155,7 +155,7 @@
    "page": "/pages/ltx.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:26",
+   "time": "06:23",
    "status": "ok"
   },
   {
@@ -164,8 +164,9 @@
    "page": "/pages/pixverse.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:27",
-   "status": "ok"
+   "time": "06:24",
+   "status": "kept",
+   "note": "The page couldn't be read today, so yesterday's prices were kept"
   },
   {
    "name": "D-ID",
@@ -173,7 +174,7 @@
    "page": "/pages/d-id.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:27",
+   "time": "06:24",
    "status": "ok"
   },
   {
@@ -182,7 +183,7 @@
    "page": "/pages/colossyan.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:27",
+   "time": "06:24",
    "status": "ok"
   },
   {
@@ -191,7 +192,7 @@
    "page": "/pages/opusclip.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:27",
+   "time": "06:25",
    "status": "ok"
   },
   {
@@ -200,7 +201,7 @@
    "page": "/pages/captions.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:28",
+   "time": "06:25",
    "status": "ok"
   },
   {
@@ -208,8 +209,8 @@
    "cat": "video",
    "page": "/pages/pictory.html",
    "changes": [],
-   "waiting": 3,
-   "time": "06:28",
+   "waiting": 0,
+   "time": "06:25",
    "status": "ok"
   },
   {
@@ -218,7 +219,7 @@
    "page": "/pages/veed.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:28",
+   "time": "06:25",
    "status": "ok"
   },
   {
@@ -227,17 +228,23 @@
    "page": "/pages/dreamina.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:28",
+   "time": "06:25",
    "status": "ok"
   },
   {
    "name": "Magic Hour",
    "cat": "video",
    "page": "/pages/magic-hour.html",
-   "changes": [],
-   "waiting": 1,
-   "time": "06:29",
-   "status": "ok"
+   "changes": [
+    {
+     "plan": "Creator",
+     "old": 19.0,
+     "new": 24.0
+    }
+   ],
+   "waiting": 0,
+   "time": "06:26",
+   "status": "changed"
   },
   {
    "name": "Elyum",
@@ -245,7 +252,7 @@
    "page": "/pages/elyum.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:29",
+   "time": "06:26",
    "status": "ok"
   },
   {
@@ -254,7 +261,7 @@
    "page": "/pages/wan.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:29",
+   "time": "06:26",
    "status": "ok"
   },
   {
@@ -263,7 +270,7 @@
    "page": "/pages/voice/elevenlabs.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:29",
+   "time": "06:26",
    "status": "ok"
   },
   {
@@ -272,7 +279,7 @@
    "page": "/pages/voice/murf.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:30",
+   "time": "06:27",
    "status": "ok"
   },
   {
@@ -281,7 +288,7 @@
    "page": "/pages/voice/cartesia.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:30",
+   "time": "06:27",
    "status": "ok"
   },
   {
@@ -290,7 +297,7 @@
    "page": "/pages/voice/speechify.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:30",
+   "time": "06:27",
    "status": "ok"
   },
   {
@@ -299,16 +306,7 @@
    "page": "/pages/voice/descript.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:30",
-   "status": "ok"
-  },
-  {
-   "name": "Fliki",
-   "cat": "voice",
-   "page": "/pages/voice/fliki.html",
-   "changes": [],
-   "waiting": 0,
-   "time": "06:31",
+   "time": "06:27",
    "status": "ok"
   },
   {
@@ -317,7 +315,16 @@
    "page": "/pages/fish-audio.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:31",
+   "time": "06:27",
+   "status": "ok"
+  },
+  {
+   "name": "Fliki",
+   "cat": "voice",
+   "page": "/pages/voice/fliki.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:28",
    "status": "ok"
   },
   {
@@ -326,7 +333,7 @@
    "page": "/pages/voice/minimax.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:31",
+   "time": "06:28",
    "status": "ok"
   },
   {
@@ -335,7 +342,7 @@
    "page": "/pages/music/suno.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:31",
+   "time": "06:28",
    "status": "ok"
   },
   {
@@ -344,7 +351,7 @@
    "page": "/pages/music/udio.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:32",
+   "time": "06:28",
    "status": "ok"
   },
   {
@@ -353,7 +360,7 @@
    "page": "/pages/music/soundraw.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:32",
+   "time": "06:28",
    "status": "ok"
   },
   {
@@ -362,7 +369,7 @@
    "page": "/pages/music/aiva.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:33",
+   "time": "06:29",
    "status": "ok"
   },
   {
@@ -371,7 +378,7 @@
    "page": "/pages/music/boomy.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:33",
+   "time": "06:29",
    "status": "ok"
   },
   {
@@ -380,7 +387,7 @@
    "page": "/pages/stable-audio.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:33",
+   "time": "06:29",
    "status": "ok"
   },
   {
@@ -389,7 +396,7 @@
    "page": "/pages/midjourney.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:34",
+   "time": "06:30",
    "status": "ok"
   },
   {
@@ -398,7 +405,7 @@
    "page": "/pages/mureka.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:34",
+   "time": "06:30",
    "status": "ok"
   },
   {
@@ -407,7 +414,7 @@
    "page": "/pages/ideogram.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:35",
+   "time": "06:31",
    "status": "kept",
    "note": "The page couldn't be read today, so yesterday's prices were kept"
   },
@@ -417,7 +424,7 @@
    "page": "/pages/recraft.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:35",
+   "time": "06:31",
    "status": "ok"
   },
   {
@@ -426,7 +433,7 @@
    "page": "/pages/freepik.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:36",
+   "time": "06:32",
    "status": "ok"
   },
   {
@@ -435,7 +442,7 @@
    "page": "/pages/openart.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:36",
+   "time": "06:32",
    "status": "ok"
   },
   {
@@ -479,209 +486,263 @@
    "note": "This tool blocks automatic reading; its prices are checked by hand"
   }
  ],
- "translated": "06:52",
+ "translated": "07:24",
  "lang_baseline": {
-  "es": 3867,
-  "pt": 3869,
-  "de": 3849,
-  "fr": 3858,
-  "ar": 3848,
-  "he": 3813,
-  "it": 3816,
-  "ja": 3822,
-  "ru": 3824,
-  "zh-tw": 3837,
-  "ko": 3808,
-  "id": 3824,
-  "tr": 3832,
-  "hi": 3793,
-  "vi": 3834,
-  "pl": 3833,
-  "uk": 3827,
-  "zh": 3830,
-  "no": 3604,
-  "sv": 3604
+  "es": 4142,
+  "pt": 4144,
+  "de": 4124,
+  "fr": 4133,
+  "ar": 4122,
+  "he": 4087,
+  "it": 4092,
+  "ja": 4094,
+  "ru": 4100,
+  "zh-tw": 4113,
+  "ko": 4082,
+  "id": 4100,
+  "tr": 4109,
+  "hi": 4069,
+  "vi": 4109,
+  "pl": 4109,
+  "uk": 4102,
+  "zh": 4105,
+  "no": 3880,
+  "sv": 3880
  },
  "languages": [
   {
    "code": "es",
    "name": "Español",
-   "pages": 122,
-   "of": 123,
-   "stored": 4142,
-   "baseline": 3867,
-   "new": 275
+   "pages": 126,
+   "of": 127,
+   "stored": 4281,
+   "baseline": 4142,
+   "new": 139
   },
   {
    "code": "pt",
    "name": "Português",
-   "pages": 122,
-   "of": 123,
-   "stored": 4144,
-   "baseline": 3869,
-   "new": 275
+   "pages": 126,
+   "of": 127,
+   "stored": 4283,
+   "baseline": 4144,
+   "new": 139
   },
   {
    "code": "de",
    "name": "Deutsch",
-   "pages": 122,
-   "of": 123,
-   "stored": 4124,
-   "baseline": 3849,
-   "new": 275
+   "pages": 126,
+   "of": 127,
+   "stored": 4263,
+   "baseline": 4124,
+   "new": 139
   },
   {
    "code": "fr",
    "name": "Français",
-   "pages": 122,
-   "of": 123,
-   "stored": 4133,
-   "baseline": 3858,
-   "new": 275
+   "pages": 126,
+   "of": 127,
+   "stored": 4272,
+   "baseline": 4133,
+   "new": 139
   },
   {
    "code": "ar",
    "name": "العربية",
-   "pages": 122,
-   "of": 123,
-   "stored": 4122,
-   "baseline": 3848,
-   "new": 274
+   "pages": 126,
+   "of": 127,
+   "stored": 4262,
+   "baseline": 4122,
+   "new": 140
   },
   {
    "code": "he",
    "name": "עברית",
-   "pages": 122,
-   "of": 123,
-   "stored": 4087,
-   "baseline": 3813,
-   "new": 274
+   "pages": 126,
+   "of": 127,
+   "stored": 4227,
+   "baseline": 4087,
+   "new": 140
   },
   {
    "code": "it",
    "name": "Italiano",
-   "pages": 122,
-   "of": 123,
-   "stored": 4092,
-   "baseline": 3816,
-   "new": 276
+   "pages": 126,
+   "of": 127,
+   "stored": 4230,
+   "baseline": 4092,
+   "new": 138
   },
   {
    "code": "ja",
    "name": "日本語",
-   "pages": 120,
-   "of": 123,
-   "stored": 4094,
-   "baseline": 3822,
-   "new": 272
+   "pages": 125,
+   "of": 127,
+   "stored": 4234,
+   "baseline": 4094,
+   "new": 140
   },
   {
    "code": "ru",
    "name": "Русский",
-   "pages": 122,
-   "of": 123,
-   "stored": 4100,
-   "baseline": 3824,
-   "new": 276
+   "pages": 126,
+   "of": 127,
+   "stored": 4239,
+   "baseline": 4100,
+   "new": 139
   },
   {
    "code": "zh-tw",
    "name": "繁體中文",
-   "pages": 122,
-   "of": 123,
-   "stored": 4113,
-   "baseline": 3837,
-   "new": 276
+   "pages": 126,
+   "of": 127,
+   "stored": 4250,
+   "baseline": 4113,
+   "new": 137
   },
   {
    "code": "ko",
    "name": "한국어",
-   "pages": 121,
-   "of": 123,
-   "stored": 4082,
-   "baseline": 3808,
-   "new": 274
+   "pages": 126,
+   "of": 127,
+   "stored": 4222,
+   "baseline": 4082,
+   "new": 140
   },
   {
    "code": "id",
    "name": "Bahasa Indonesia",
-   "pages": 122,
-   "of": 123,
-   "stored": 4100,
-   "baseline": 3824,
-   "new": 276
+   "pages": 126,
+   "of": 127,
+   "stored": 4240,
+   "baseline": 4100,
+   "new": 140
   },
   {
    "code": "tr",
    "name": "Türkçe",
-   "pages": 122,
-   "of": 123,
-   "stored": 4109,
-   "baseline": 3832,
-   "new": 277
+   "pages": 126,
+   "of": 127,
+   "stored": 4248,
+   "baseline": 4109,
+   "new": 139
   },
   {
    "code": "hi",
    "name": "हिन्दी",
-   "pages": 122,
-   "of": 123,
-   "stored": 4069,
-   "baseline": 3793,
-   "new": 276
+   "pages": 126,
+   "of": 127,
+   "stored": 4208,
+   "baseline": 4069,
+   "new": 139
   },
   {
    "code": "vi",
    "name": "Tiếng Việt",
-   "pages": 122,
-   "of": 123,
-   "stored": 4109,
-   "baseline": 3834,
-   "new": 275
+   "pages": 126,
+   "of": 127,
+   "stored": 4248,
+   "baseline": 4109,
+   "new": 139
   },
   {
    "code": "pl",
    "name": "Polski",
-   "pages": 122,
-   "of": 123,
-   "stored": 4109,
-   "baseline": 3833,
-   "new": 276
+   "pages": 126,
+   "of": 127,
+   "stored": 4247,
+   "baseline": 4109,
+   "new": 138
   },
   {
    "code": "uk",
    "name": "Українська",
-   "pages": 122,
-   "of": 123,
-   "stored": 4102,
-   "baseline": 3827,
-   "new": 275
+   "pages": 126,
+   "of": 127,
+   "stored": 4242,
+   "baseline": 4102,
+   "new": 140
   },
   {
    "code": "zh",
    "name": "简体中文",
-   "pages": 122,
-   "of": 123,
-   "stored": 4105,
-   "baseline": 3830,
-   "new": 275
+   "pages": 126,
+   "of": 127,
+   "stored": 4245,
+   "baseline": 4105,
+   "new": 140
   },
   {
    "code": "no",
    "name": "Norsk",
-   "pages": 122,
-   "of": 123,
-   "stored": 3880,
-   "baseline": 3604,
-   "new": 276
+   "pages": 126,
+   "of": 127,
+   "stored": 4030,
+   "baseline": 3880,
+   "new": 150
   },
   {
    "code": "sv",
    "name": "Svenska",
-   "pages": 122,
-   "of": 123,
-   "stored": 3880,
-   "baseline": 3604,
-   "new": 276
+   "pages": 126,
+   "of": 127,
+   "stored": 4030,
+   "baseline": 3880,
+   "new": 150
+  },
+  {
+   "code": "da",
+   "name": "Dansk",
+   "pages": 126,
+   "of": 127,
+   "stored": 3819,
+   "baseline": 3819,
+   "new": 0
+  },
+  {
+   "code": "fi",
+   "name": "Suomi",
+   "pages": 126,
+   "of": 127,
+   "stored": 3820,
+   "baseline": 3820,
+   "new": 0
+  },
+  {
+   "code": "nl",
+   "name": "Nederlands",
+   "pages": 126,
+   "of": 127,
+   "stored": 3819,
+   "baseline": 3819,
+   "new": 0
+  },
+  {
+   "code": "th",
+   "name": "ไทย",
+   "pages": 124,
+   "of": 127,
+   "stored": 3816,
+   "baseline": 3816,
+   "new": 0
+  },
+  {
+   "code": "tl",
+   "name": "Filipino",
+   "pages": 126,
+   "of": 127,
+   "stored": 3815,
+   "baseline": 3815,
+   "new": 0
+  },
+  {
+   "code": "bn",
+   "name": "বাংলা",
+   "pages": 125,
+   "of": 127,
+   "stored": 3816,
+   "baseline": 3816,
+   "new": 0
   }
  ]
 }

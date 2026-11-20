@@ -13,30 +13,30 @@
       "monthly_price_usd": 36,
       "credits_or_minutes": 3885,
       "unit": "credits",
-      "offer": "First month $0.29"
+      "offer": ""
     },
     {
       "name": "Advanced",
       "monthly_price_usd": 79,
       "credits_or_minutes": 8645,
       "unit": "credits",
-      "offer": "First month $0.29"
+      "offer": ""
     },
     {
       "name": "Advanced higher credit tier",
       "monthly_price_usd": 159,
       "credits_or_minutes": 17600,
       "unit": "credits",
-      "offer": "First month $0.29"
+      "offer": ""
     },
     {
       "name": "Ultra",
       "monthly_price_usd": 520,
       "credits_or_minutes": 59000,
       "unit": "credits",
-      "offer": "First month $0.29"
+      "offer": ""
     }
   ],
   "source": "https://dreamina.capcut.com/pricing/dreamina-price",
-  "last_checked": "2026-11-19 06:28"
+  "last_checked": "2026-11-20 06:25"
 }

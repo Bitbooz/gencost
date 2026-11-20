@@ -2,6 +2,13 @@
   "platform": "elevenlabs",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 10000,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
       "name": "Starter",
       "monthly_price_usd": 6,
       "yearly_price_usd": 5,
@@ -15,7 +22,7 @@
       "yearly_price_usd": 18.33,
       "credits_or_minutes": 121000,
       "unit": "credits",
-      "offer": "$8.25/mo first year"
+      "offer": "$8.25/mo first year (until Dec 1)"
     },
     {
       "name": "Pro",
@@ -23,7 +30,7 @@
       "yearly_price_usd": 82.5,
       "credits_or_minutes": 600000,
       "unit": "credits",
-      "offer": "$37.13/mo first year"
+      "offer": "$37.13/mo first year (until Dec 1)"
     },
     {
       "name": "Scale",
@@ -43,5 +50,5 @@
     }
   ],
   "source": "https://elevenlabs.io/pricing",
-  "last_checked": "2026-11-19 06:29"
+  "last_checked": "2026-11-20 06:26"
 }

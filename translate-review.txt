@@ -1,35 +1,59 @@
-2026-11-19 06:52  Español (/es/): 122 of 123 pages, stored translations: 4142, JavaScript texts: 541/541
-2026-11-19 06:52  Português (/pt/): 122 of 123 pages, stored translations: 4144, JavaScript texts: 541/541
-2026-11-19 06:52  Deutsch (/de/): 122 of 123 pages, stored translations: 4124, JavaScript texts: 541/541
-2026-11-19 06:52  Français (/fr/): 122 of 123 pages, stored translations: 4133, JavaScript texts: 541/541
-2026-11-19 06:52  العربية (/ar/): 122 of 123 pages, stored translations: 4122, JavaScript texts: 541/541
-  - translation did not keep the tags or numbers, kept English: Higgsfield's yearly prices are much lower than its monthly ones: Plus 
-2026-11-19 06:52  עברית (/he/): 122 of 123 pages, stored translations: 4087, JavaScript texts: 540/541
-  - translation did not keep the tags or numbers, kept English: Higgsfield's yearly prices are much lower than its monthly ones: Plus 
-  - translation did not keep the tags or numbers, kept English: [[0]] first [[1]] months
-2026-11-19 06:52  Italiano (/it/): 122 of 123 pages, stored translations: 4092, JavaScript texts: 541/541
-2026-11-19 06:52  日本語 (/ja/): 120 of 123 pages, stored translations: 4094, JavaScript texts: 541/541
-  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and cre
-  - translation did not keep the tags or numbers, kept English: Higgsfield puts Kling, Seedance, Veo and its own tools in one app with
+2026-11-20 07:24  Español (/es/): 126 of 127 pages, stored translations: 4281, JavaScript texts: 541/541
+2026-11-20 07:24  Português (/pt/): 126 of 127 pages, stored translations: 4283, JavaScript texts: 541/541
+2026-11-20 07:24  Deutsch (/de/): 126 of 127 pages, stored translations: 4263, JavaScript texts: 541/541
+2026-11-20 07:24  Français (/fr/): 126 of 127 pages, stored translations: 4272, JavaScript texts: 541/541
+2026-11-20 07:24  العربية (/ar/): 126 of 127 pages, stored translations: 4262, JavaScript texts: 541/541
+2026-11-20 07:24  עברית (/he/): 126 of 127 pages, stored translations: 4227, JavaScript texts: 541/541
+2026-11-20 07:24  Italiano (/it/): 126 of 127 pages, stored translations: 4230, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> The <t2>AI radar</t2> is a live [[0]]D glob
+2026-11-20 07:24  日本語 (/ja/): 125 of 127 pages, stored translations: 4234, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its cr
   - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and how
   - translation did not keep the tags or numbers, kept English: OpenAI's GPT Image [[0]] models, released on November [[1]], [[2]], co
-  - pages/higgsfield-vs-kling-pricing-2026.html: only 87% translated, not published yet
   - pages/midjourney-vs-firefly-vs-gpt-image-cost-per-image-2026.html: only 89% translated, not published yet
-2026-11-19 06:52  Русский (/ru/): 122 of 123 pages, stored translations: 4100, JavaScript texts: 541/541
-2026-11-19 06:52  繁體中文 (/zh-tw/): 122 of 123 pages, stored translations: 4113, JavaScript texts: 541/541
-2026-11-19 06:52  한국어 (/ko/): 121 of 123 pages, stored translations: 4082, JavaScript texts: 541/541
+2026-11-20 07:24  Русский (/ru/): 126 of 127 pages, stored translations: 4239, JavaScript texts: 541/541
+2026-11-20 07:24  繁體中文 (/zh-tw/): 126 of 127 pages, stored translations: 4250, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its cr
+  - translation did not keep the tags or numbers, kept English: <t0>All [[0]] "listings"</t0> with [[1]]-day, [[2]]-day and since-star
+2026-11-20 07:24  한국어 (/ko/): 126 of 127 pages, stored translations: 4222, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its cr
+2026-11-20 07:24  Bahasa Indonesia (/id/): 126 of 127 pages, stored translations: 4240, JavaScript texts: 541/541
+2026-11-20 07:24  Türkçe (/tr/): 126 of 127 pages, stored translations: 4248, JavaScript texts: 541/541
+2026-11-20 07:24  हिन्दी (/hi/): 126 of 127 pages, stored translations: 4208, JavaScript texts: 541/541
+2026-11-20 07:24  Tiếng Việt (/vi/): 126 of 127 pages, stored translations: 4248, JavaScript texts: 541/541
+2026-11-20 07:24  Polski (/pl/): 126 of 127 pages, stored translations: 4247, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: <t0>All [[0]] "listings"</t0> with [[1]]-day, [[2]]-day and since-star
+2026-11-20 07:24  Українська (/uk/): 126 of 127 pages, stored translations: 4242, JavaScript texts: 541/541
+2026-11-20 07:24  简体中文 (/zh/): 126 of 127 pages, stored translations: 4245, JavaScript texts: 541/541
+2026-11-20 07:24  Norsk (/no/): 126 of 127 pages, stored translations: 4030, JavaScript texts: 541/541
+2026-11-20 07:24  Svenska (/sv/): 126 of 127 pages, stored translations: 4030, JavaScript texts: 541/541
+2026-11-20 07:24  Dansk (/da/): 126 of 127 pages, stored translations: 3819, JavaScript texts: 541/541
   - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and cre
-  - translation did not keep the tags or numbers, kept English: Higgsfield puts Kling, Seedance, Veo and its own tools in one app with
-  - pages/higgsfield-vs-kling-pricing-2026.html: only 87% translated, not published yet
-2026-11-19 06:52  Bahasa Indonesia (/id/): 122 of 123 pages, stored translations: 4100, JavaScript texts: 541/541
-2026-11-19 06:52  Türkçe (/tr/): 122 of 123 pages, stored translations: 4109, JavaScript texts: 541/541
-2026-11-19 06:52  हिन्दी (/hi/): 122 of 123 pages, stored translations: 4069, JavaScript texts: 541/541
-2026-11-19 06:52  Tiếng Việt (/vi/): 122 of 123 pages, stored translations: 4109, JavaScript texts: 540/541
-  - translation did not keep the tags or numbers, kept English: [[0]] first [[1]] months
-2026-11-19 06:52  Polski (/pl/): 122 of 123 pages, stored translations: 4109, JavaScript texts: 541/541
-2026-11-19 06:52  Українська (/uk/): 122 of 123 pages, stored translations: 4102, JavaScript texts: 541/541
-  - translation did not keep the tags or numbers, kept English: Higgsfield's yearly prices are much lower than its monthly ones: Plus 
-2026-11-19 06:52  简体中文 (/zh/): 122 of 123 pages, stored translations: 4105, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: <t0>Business</t0>: [[0]]/mo · [[1]] credits
+2026-11-20 07:24  Suomi (/fi/): 126 of 127 pages, stored translations: 3820, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: <t0>Business</t0>: [[0]]/mo · [[1]] credits
+2026-11-20 07:24  Nederlands (/nl/): 126 of 127 pages, stored translations: 3819, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: <t0>Business</t0>: [[0]]/mo · [[1]] credits
+  - translation did not keep the tags or numbers, kept English: <t0>Wonder</t0>: [[0]]/mo · [[1]] credits
+2026-11-20 07:24  ไทย (/th/): 124 of 127 pages, stored translations: 3816, JavaScript texts: 540/541
+  - translation did not keep the tags or numbers, kept English: Top [[0]] Cheap AI Video Tools for YouTube
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its cr
+  - translation did not keep the tags or numbers, kept English: "Free" in voice cloning usually means one of two things: a capped free
+  - translation did not keep the tags or numbers, kept English: You don't need a [[0]]/month tool pile to make clickable thumbnails an
+  - translation did not keep the tags or numbers, kept English: Kling [[0]]: [[1]] credits per [[2]]s. Higgsfield's own estimates: abo
+  - pages/samples/best-free-ai-voice-cloning-tools-for-youtube-2026.html: only 59% translated, not published yet
+  - pages/samples/cheapest-ai-tools-for-youtube-thumbnails-and-titles-in-2026.html: only 67% translated, not published yet
+2026-11-20 07:24  Filipino (/tl/): 126 of 127 pages, stored translations: 3815, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price, its cr
   - translation did not keep the tags or numbers, kept English: Worked out on [[0]]-[[1]]-[[2]] from each plan's monthly price and cre
-2026-11-19 06:52  Norsk (/no/): 122 of 123 pages, stored translations: 3880, JavaScript texts: 541/541
-2026-11-19 06:52  Svenska (/sv/): 122 of 123 pages, stored translations: 3880, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: Yes. The Starter plan costs [[0]] and includes [[1]] minutes. The Star
+  - translation did not keep the tags or numbers, kept English: Yes. The Free plan costs [[0]]. The Free plan makes up to [[1]] videos
+  - translation did not keep the tags or numbers, kept English: <t0>Business</t0>: [[0]]/mo · [[1]] credits
+  - translation did not keep the tags or numbers, kept English: Yes. The Free plan costs [[0]]. The Free plan has no watermark, but no
+2026-11-20 07:24  বাংলা (/bn/): 125 of 127 pages, stored translations: 3816, JavaScript texts: 541/541
+  - translation did not keep the tags or numbers, kept English: Top [[0]] Cheap AI Video Tools for YouTube
+  - translation did not keep the tags or numbers, kept English: [[0]] credits per second at [[1]]p, with audio
+  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> Cheapest Kling [[0]]: <t2>Kling AI Standard
+  - translation did not keep the tags or numbers, kept English: <t0>[[0]]</t0>The [[1]] Best Free AI Thumbnail Tools, Ranked
+  - translation did not keep the tags or numbers, kept English: <t0>Quick answer</t0><t1/> You can't subscribe to Seedance itself: you
+  - pages/seedance.html: only 83% translated, not published yet

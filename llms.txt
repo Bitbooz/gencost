@@ -2,7 +2,7 @@
 
 > GenCost compares the prices of AI video, avatar, image, voice and music tools in US dollars. Every price is read from each tool's official pricing page every morning and checked before it goes live. Pages also show the real cost of one video clip (from each tool's own credits per clip) and hidden costs such as watermarks, expiring credits and commercial-use rules.
 
-Prices last updated: 2026-11-19. How prices are checked: https://getgencost.com/how-we-verify.html
+Prices last updated: 2026-11-20. How prices are checked: https://getgencost.com/how-we-verify.html
 
 ## Price lists
 - [AI video, avatar and image tools](https://getgencost.com/): every plan, monthly and yearly, with cost per clip
@@ -20,6 +20,8 @@ Prices last updated: 2026-11-19. How prices are checked: https://getgencost.com/
 - [Best Cheap AI Video Tools for YouTube in 2026](https://getgencost.com/pages/best-cheap-ai-video-tools-for-youtube-2026.html)
 - [Best Free AI Image Generators in 2026: What the Free Plans Really Give You](https://getgencost.com/pages/best-free-ai-image-generators-2026.html)
 - [Best Free AI Video Tools in 2026: Kling, Runway, Pika, Luma & More Compared](https://getgencost.com/pages/best-free-ai-video-tools-2026.html)
+- [Best Runway Alternatives in 2026: Cheaper AI Video per Clip](https://getgencost.com/pages/best-runway-alternatives-2026.html)
+- [Best Suno Alternatives in 2026: Udio, Mureka, Stable Audio and More](https://getgencost.com/pages/best-suno-alternatives-2026.html)
 - [Cheaper ElevenLabs Alternatives in 2026: Real Cost per Hour of Speech](https://getgencost.com/pages/best-elevenlabs-alternatives-2026.html)
 - [Cheaper HeyGen Alternatives in 2026: AI Avatar Videos for Less](https://getgencost.com/pages/best-heygen-alternatives-2026.html)
 - [Cheaper Midjourney Alternatives in 2026: Private Images for Less](https://getgencost.com/pages/best-midjourney-alternatives-2026.html)

@@ -1,5 +1,9 @@
-Price changes in the last 7 days (for the price alert email), made 2026-11-19
+Price changes in the last 7 days (for the price alert email), made 2026-11-20
 
+2026-11-20  Pictory Teams: paid yearly $119 → $59.50
+2026-11-20  Pictory Starter: paid yearly $25 → $12.50
+2026-11-20  Pictory Professional: paid yearly $29.50 → $17.50
+2026-11-20  Magic Hour Creator: $19 → $24 a month, paid yearly $12 → $15, credits 12,000 → 15,000, so the price per credit hardly changed
 2026-11-18  OpenArt Wonder: paid yearly $175 → $144
 2026-11-18  OpenArt Starter: paid yearly $13 → $11
 2026-11-18  OpenArt Pro: paid yearly $44 → $36
@@ -11,5 +15,3 @@ Price changes in the last 7 days (for the price alert email), made 2026-11-19
 2026-11-17  Higgsfield Ultra: paid yearly $65 → $50
 2026-11-17  Higgsfield Plus: paid yearly $35 → $33
 2026-11-15  Dreamina Advanced: $159 → $79 a month, credits 17,600 → 8,645, so the price per credit hardly changed
-2026-11-12  Higgsfield Ultra: paid yearly $99 → $65
-2026-11-12  Higgsfield Plus: paid yearly $47 → $35

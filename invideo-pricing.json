@@ -11,21 +11,21 @@
     },
     {
       "name": "Plus",
-      "monthly_price_usd": 60,
-      "yearly_price_usd": 24,
-      "credits_or_minutes": 2000,
+      "monthly_price_usd": 150,
+      "yearly_price_usd": 60,
+      "credits_or_minutes": 5000,
       "unit": "credits",
       "offer": "60% off Limited offer"
     },
     {
       "name": "Max",
-      "monthly_price_usd": 150,
-      "yearly_price_usd": 75,
-      "credits_or_minutes": 5000,
+      "monthly_price_usd": 250,
+      "yearly_price_usd": 62.5,
+      "credits_or_minutes": 8000,
       "unit": "credits",
-      "offer": "50% off Best value"
+      "offer": "Pay for 12 months, get 24"
     }
   ],
   "source": "https://invideo.io/pricing",
-  "last_checked": "2026-11-19 06:26"
+  "last_checked": "2026-11-20 06:23"
 }
