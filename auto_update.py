@@ -93,7 +93,9 @@ VOICE = {
 }
 IMAGE = {  # added 2026-11-08. Leonardo, Adobe Firefly and NightCafe block automated reading: their files in image/ are kept by hand
     "midjourney": ["https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"],
-    "ideogram": ["https://docs.ideogram.ai/plans-and-pricing/personal-plans", "https://ideogram.ai/pricing"],
+    # Ideogram's own docs serve a clean Markdown copy of the plans page (append .md); the app page blocks robots
+    "ideogram": ["https://docs.ideogram.ai/plans-and-billing/available-plans.md",
+                 "https://docs.ideogram.ai/plans-and-pricing/available-plans", "https://ideogram.ai/pricing"],
     "recraft": ["https://www.recraft.ai/pricing", "https://www.recraft.ai/docs/plans-and-billing/paid-plans"],
     "freepik": ["https://www.freepik.com/pricing", "https://www.freepik.com/ai/docs/plans-and-pricing"],
     "openart": ["https://openart.ai/pricing"],
@@ -217,6 +219,12 @@ HINTS = {
         "note": "HeyGen shows the monthly-billing price on the cards (Creator $29/mo). The yearly price is in the text "
                 "as '$24/month if you pay annually': that is yearly_price_usd. If no lower yearly price is written, "
                 "leave yearly_price_usd out. Never copy the monthly price into yearly_price_usd.",
+    },
+    "hailuo": {
+        "focus": ["Standard", "Pro", "Master", "Max", "credits", "/month"],
+        "note": "Hailuo's paid plans are named Standard, Pro, Master and Max (top to bottom by price). Every plan must have "
+                "one of these names; skip cards without a plan name (credit packs, banners). The bigger crossed-out or "
+                "'billed monthly' number is monthly_price_usd; the lower 'per month, billed yearly' one is yearly_price_usd.",
     },
     "captions": {
         "focus": ["/mo", "credits", "Frontier"],
