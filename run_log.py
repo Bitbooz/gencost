@@ -96,7 +96,7 @@ def build(day=None):
             for plan, rows in (hist.get(cat, {}).get(name) or {}).items():
                 if len(rows) > 1 and rows[-1][0] == day and rows[-1][1] != rows[-2][1]:
                     old, new = rows[-2][1], rows[-1][1]
-                    if old and abs(new - old) / old > 0.5:
+                    if old and abs(new - old) / old >= 0.5:
                         t["note"] = "A big price change was seen; it's being checked by hand before it's shown"
                         continue  # same rule as price_news.py: more often a misreading or a sale than a real change
                     t["changes"].append({"plan": plan, "old": old, "new": new})
