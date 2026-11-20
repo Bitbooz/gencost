@@ -616,3 +616,11 @@ main.page { padding-bottom: 24px; }
 @keyframes exchPulse { 70% { box-shadow: 0 0 0 10px rgba(255,176,32,0); } 100% { box-shadow: 0 0 0 0 rgba(255,176,32,0); } }
 @media (max-width: 640px) { .live-pills { grid-template-columns: 1fr; max-width: none; } }
 @media (max-width: 1180px) and (min-width: 641px) { .live-pills .live-pill { font-size: 0.82rem; padding: 10px 6px; gap: 6px; } .live-pills .arrow { display: none; } }
+
+/* Front page: fourth button, "Price my video"; the four sit in a 2 x 2 grid (2026-11-20) */
+.live-pills { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 520px; }
+.est-pill { border-color: rgba(34,211,238,0.5); background: linear-gradient(90deg, rgba(34,211,238,0.14), rgba(52,211,153,0.08)); box-shadow: 0 0 24px rgba(34,211,238,0.16); color: #e6fbff; }
+.est-pill:hover { border-color: #22d3ee; box-shadow: 0 0 30px rgba(34,211,238,0.38); }
+.est-pill .live-dot { background: #22d3ee; }
+@media (max-width: 1180px) and (min-width: 641px) { .live-pills .arrow { display: inline; } .live-pills .live-pill { font-size: 0.86rem; padding: 10px 8px; } }
+@media (max-width: 640px) { .live-pills { grid-template-columns: 1fr; max-width: none; } }
