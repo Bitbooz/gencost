@@ -119,6 +119,10 @@ def doubtful(g, offer_map):
     cred = next((c for c in g["parts"] if c["kind"] == "credits"), None)
     if any(abs(c["new"] - c["old"]) / c["old"] >= 0.5 for c in price):
         return "the price moved 50% or more, which is more often a misreading or a sale than a real change"
+    mo = next((c for c in price if c["how"] == "a month"), None)
+    yr = next((c for c in price if c["how"] != "a month"), None)
+    if mo and yr and (mo["new"] - mo["old"]) * (yr["new"] - yr["old"]) < 0:
+        return "the monthly and yearly prices moved in opposite directions, which usually means two plan sizes were mixed up"
     if price and cred:
         lead = next((c for c in price if c["how"] == "a month"), price[0])
         po, pn = lead["old"] / cred["old"], lead["new"] / cred["new"]

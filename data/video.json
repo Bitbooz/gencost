@@ -1122,8 +1122,8 @@
     },
     {
      "name": "Max",
-     "monthly_price_usd": 140,
-     "yearly_price_usd": 42,
+     "monthly_price_usd": 105,
+     "yearly_price_usd": 63,
      "credits_or_minutes": 60000,
      "unit": "units",
      "offer": "",

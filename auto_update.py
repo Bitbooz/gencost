@@ -181,6 +181,15 @@ def load_existing(path):
 # Extra help for pages where the prices are easy to misread.
 # "focus": lines with these words (and the lines around them) are put first, so they are never cut off.
 HINTS = {
+    "krea": {
+        "focus": ["/mo", "billed", "units", "Basic", "Pro", "Max"],
+        "note": "Krea: plans Free, Basic, Pro and Max (leave out Business and Enterprise). The Max card has a slider for its "
+                "size (40,000 to 100,000 compute units a month), and its price changes with the slider. Always give Max for "
+                "60,000 units: monthly_price_usd, yearly_price_usd and credits_or_minutes must all be for that SAME size "
+                "(it was $105 a month, $63 a month billed yearly, 60,000 units). If the page only shows another Max size, "
+                "give that size's monthly price, yearly price and units together. monthly_price_usd = price when billed "
+                "monthly; yearly_price_usd = the per-month price when billed yearly. Free = 100 units a day.",
+    },
     "wan": {
         "focus": ["/ month", "Billed", "Credits per month", "Pro", "Premium"],
         "note": "Wan (Alibaba): plans Pro and Premium. Each card shows the yearly-billed price per month (Pro US$5) and the "
