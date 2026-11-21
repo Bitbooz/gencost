@@ -1,0 +1,20 @@
+{
+ "about": "Price changes posted by price_news.py.",
+ "posted": {
+  "video|Krea|Max|a month|2026-11-21": {
+   "date": "2026-11-21",
+   "x": "https://x.com/i/status/2124017457903866319",
+   "bluesky": "https://bsky.app/profile/cludden.bsky.social/post/3n2sfraxzvl2m"
+  },
+  "video|Krea|Max|a month when paid yearly|2026-11-21": {
+   "date": "2026-11-21",
+   "x": "https://x.com/i/status/2124017457903866319",
+   "bluesky": "https://bsky.app/profile/cludden.bsky.social/post/3n2sfraxzvl2m"
+  },
+  "video|Krea|Pro|a month|2026-11-21": {
+   "date": "2026-11-21",
+   "x": "https://x.com/i/status/2124017466888073312",
+   "bluesky": "https://bsky.app/profile/cludden.bsky.social/post/3n2sfrcyv432b"
+  }
+ }
+}
