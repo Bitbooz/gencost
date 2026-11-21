@@ -1,6 +1,6 @@
 {
  "category": "voice",
- "updated": "2026-11-21 15:54",
+ "updated": "2026-11-21 15:57",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",

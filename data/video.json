@@ -1,6 +1,6 @@
 {
  "category": "video",
- "updated": "2026-11-21 15:54",
+ "updated": "2026-11-21 15:57",
  "fields": {
   "monthly_price_usd": "Confirmed price per month when billed monthly, US dollars, before tax",
   "yearly_price_usd": "Confirmed price per month when billed yearly (multiply by 12 for the yearly charge)",
@@ -1113,7 +1113,7 @@
     },
     {
      "name": "Pro",
-     "monthly_price_usd": 42,
+     "monthly_price_usd": 35,
      "yearly_price_usd": 21,
      "credits_or_minutes": 20000,
      "unit": "units",
@@ -1123,7 +1123,7 @@
     {
      "name": "Max",
      "monthly_price_usd": 105,
-     "yearly_price_usd": 63,
+     "yearly_price_usd": 42,
      "credits_or_minutes": 60000,
      "unit": "units",
      "offer": "",

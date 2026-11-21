@@ -1,4 +1,4 @@
-Article prices updated 2026-11-21 15:54 (price data from 2026-11-21 15:54)
+Article prices updated 2026-11-21 15:57 (price data from 2026-11-21 15:57)
 
 pages/best-cheap-ai-video-tools-for-youtube-2026.html: 7 live prices (0 new, 0 changed today) · box: CapCut, Kling AI, ElevenLabs, Runway, Pika, Luma, Captions
 pages/best-elevenlabs-alternatives-2026.html: 6 live prices (0 new, 0 changed today) · box: ElevenLabs, Murf AI, Cartesia
@@ -48,4 +48,4 @@ pages/runway-vs-luma-pricing-2026.html: 5 live prices (0 new, 0 changed today) �
 pages/stable-audio-vs-mureka-pricing-2026.html: 6 live prices (0 new, 0 changed today) · box: Stable Audio, Mureka
 pages/suno-vs-udio-pricing-2026.html: 4 live prices (0 new, 0 changed today) · box: Suno, Udio
 Related guides and tool-page fallbacks: 1 pages updated
-pages/emerging.html: emerging tools rebuilt
+changelog.html: price log updated

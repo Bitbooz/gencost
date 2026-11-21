@@ -182,13 +182,14 @@ def load_existing(path):
 # "focus": lines with these words (and the lines around them) are put first, so they are never cut off.
 HINTS = {
     "krea": {
-        "focus": ["/mo", "billed", "units", "Basic", "Pro", "Max"],
-        "note": "Krea: plans Free, Basic, Pro and Max (leave out Business and Enterprise). The Max card has a slider for its "
-                "size (40,000 to 100,000 compute units a month), and its price changes with the slider. Always give Max for "
-                "60,000 units: monthly_price_usd, yearly_price_usd and credits_or_minutes must all be for that SAME size "
-                "(it was $105 a month, $63 a month billed yearly, 60,000 units). If the page only shows another Max size, "
-                "give that size's monthly price, yearly price and units together. monthly_price_usd = price when billed "
-                "monthly; yearly_price_usd = the per-month price when billed yearly. Free = 100 units a day.",
+        "focus": ["USD", "billed yearly", "compared to monthly", "units", "Basic", "Pro", "Max"],
+        "note": "Krea: plans Free, Basic, Pro and Max (leave out Business and Enterprise). The page shows the YEARLY view: "
+                "each card has a crossed-out list price (Pro 42 USD, Max 140 USD) that is NOT the monthly price, then the "
+                "per-month price when billed yearly (Pro 21 USD/month), the yearly total ('$252 billed yearly') and 'Save $X "
+                "compared to monthly'. yearly_price_usd = the per-month price when billed yearly. monthly_price_usd = "
+                "(yearly total + the 'Save' amount) / 12, e.g. Pro (252 + 168) / 12 = 35, Max (504 + 756) / 12 = 105, "
+                "Basic (60 + 48) / 12 = 9. The Max card has a size slider (40k to 100k units): give Max for 60,000 units. "
+                "Free = 100 units a day.",
     },
     "wan": {
         "focus": ["/ month", "Billed", "Credits per month", "Pro", "Premium"],
