@@ -157,7 +157,7 @@ body.rd-video .rd-mark{display:block;position:absolute;left:50%;top:18px;transfo
     <div id="rdGlobe" aria-label="A globe with lines from AI companies to the language regions of the pages they read"></div>
     <div class="rd-stats">
       <div class="rd-stat"><b id="rdTotal">0</b><span>AI reads, last 20 minutes</span></div>
-      <div class="rd-stat"><b id="rdAsked">0</b><span>while answering someone</span></div>
+      <div class="rd-stat"><b id="rdAsked">0</b><span>AI answers today</span></div>
     </div>
     <aside class="rd-side"><h2>Just now</h2><div class="rd-feed" id="rdFeed"></div></aside>
     <div class="rd-now" id="rdNow"></div>
@@ -166,10 +166,10 @@ body.rd-video .rd-mark{display:block;position:absolute;left:50%;top:18px;transfo
   </div>
   <div class="rd-legend">
     <span><i style="background:#22d3ee"></i>An AI answering someone ("a user asked")</span>
-    <span><i style="background:#a78bfa"></i>An AI learning (crawling)</span>
+    <span><i style="background:#a78bfa"></i>An AI reading the prices, to use them in later answers</span>
     <span><i style="background:#f472b6"></i>Someone's AI asked the GenCost connector</span>
   </div>
-  <p class="rd-note">Each line runs from the AI company's home to the region where the page's language is spoken. It shows <b>who</b> read <b>what</b>, in <b>which language</b>, not where any person is: GenCost stores nothing about people. <a href="/ai.html">Use GenCost in your AI assistant</a> · <a href="/radar.html">Watch this morning's price check</a></p>
+  <p class="rd-note"><b>Most AI answers come from pages the AI has already read (purple), so only some show up as blue.</b><br>Each line runs from the AI company's home to the region where the page's language is spoken. It shows <b>who</b> read <b>what</b>, in <b>which language</b>, not where any person is: GenCost stores nothing about people. <a href="/ai.html">Use GenCost in your AI assistant</a> · <a href="/live.html">Watch this morning's price check</a></p>
 </div>
 <script src="https://unpkg.com/globe.gl@2"></script>
 <script>
@@ -247,8 +247,8 @@ body.rd-video .rd-mark{display:block;position:absolute;left:50%;top:18px;transfo
     setTimeout(() => { arcs = arcs.filter((a) => a.id !== id); rings = rings.filter((r) => r.id !== id); globe.arcsData(arcs); globe.ringsData(rings); }, 4200);
     const text = e.tool
       ? `Someone's AI ${Date.now() - e.t < 90000 ? "just " : ""}asked <b>GenCost's connector</b> for <b>${TOOL[e.tool] || e.tool}</b>`
-      : `<span class="ai" style="color:${c}">${esc(brand(e.who))}</span> ${e.asked ? "read" : "learned"} <b>${esc(nice(e.page))}</b>` +
-        (e.asked ? ` while answering someone in <b>${LNAME[e.lang]}</b>` : ` in ${LNAME[e.lang]}`);
+      : `<span class="ai" style="color:${c}">${esc(brand(e.who))}</span> read <b>${esc(nice(e.page))}</b>` +
+        (e.asked ? ` while answering someone in <b>${LNAME[e.lang]}</b>` : ` in ${LNAME[e.lang]}, for later answers`);
     const now = $("rdNow");
     now.innerHTML = text + `<small>${ago(e.t)}</small>`; now.classList.add("on");
     clearTimeout(show.h); show.h = setTimeout(() => now.classList.remove("on"), 3600);
@@ -270,7 +270,7 @@ body.rd-video .rd-mark{display:block;position:absolute;left:50%;top:18px;transfo
     try {
       const d = await fetch("/api/radar", { cache: "no-cache" }).then((r) => r.json());
       pool = d.events.slice().reverse();
-      $("rdTotal").textContent = d.total; $("rdAsked").textContent = d.events.filter((e) => e.asked).length;
+      $("rdTotal").textContent = d.total; $("rdAsked").textContent = d.answers_today != null ? d.answers_today : d.events.filter((e) => e.asked).length;
       const fresh = d.events.filter((e) => !seen.has(e.t + e.who + e.page + e.tool));
       fresh.forEach((e) => seen.add(e.t + e.who + e.page + e.tool));
       const add = (first ? fresh.slice(0, 16) : fresh).reverse();  // oldest first, so they play in order

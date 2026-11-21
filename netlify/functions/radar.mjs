@@ -8,6 +8,20 @@ const MINUTES = 20;
 const MAX = 80;
 const LANGS = ["es", "pt", "de", "fr", "ar", "he", "it", "ja", "ru", "zh-tw", "ko", "id", "tr", "hi", "vi", "pl", "uk", "zh", "no", "sv", "da", "fi", "nl", "th", "tl", "bn"];
 
+// "AI answers today": every live read while answering someone (ChatGPT-User, Claude-User, ...) plus every
+// question to the GenCost AI connector, since midnight UTC. Counted from the visitor counter's keys and kept
+// for 5 minutes, so it costs one extra list now and then.
+let today = { day: "", n: 0, at: 0 };
+async function answersToday(now) {
+  const day = new Date(now).toISOString().slice(0, 10);
+  if (today.day === day && now - today.at < 300000) return today.n;
+  const stats = getStore("stats");
+  const [ai, mcp] = await Promise.all([stats.list({ prefix: day + "/ai|" }), stats.list({ prefix: day + "/mcp|" })]);
+  const n = ai.blobs.filter((b) => /a.user.asked/i.test(b.key.split("|")[1] || "")).length + mcp.blobs.length;
+  today = { day, n, at: now };
+  return n;
+}
+
 export default async () => {
   const store = getStore("radar");
   const now = Date.now();
@@ -33,7 +47,8 @@ export default async () => {
     const old = new Date(now - 2 * 86400000).toISOString().slice(0, 16) + "/";
     store.list({ prefix: old }).then(({ blobs }) => Promise.all(blobs.map((b) => store.delete(b.key)))).catch(() => {});
   }
-  return new Response(JSON.stringify({ now, minutes: MINUTES, total: events.length, events: events.slice(0, MAX) }), {
+  const answers = await answersToday(now).catch(() => null);
+  return new Response(JSON.stringify({ now, minutes: MINUTES, total: events.length, answers_today: answers, events: events.slice(0, MAX) }), {
     headers: {
       "Content-Type": "application/json; charset=utf-8",
       "Cache-Control": "public, max-age=0, must-revalidate",
