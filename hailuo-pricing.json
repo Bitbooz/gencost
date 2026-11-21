@@ -30,9 +30,9 @@
       "monthly_price_usd": 184,
       "credits_or_minutes": 27000,
       "unit": "credits",
-      "offer": "monthly price not shown"
+      "offer": ""
     }
   ],
   "source": "https://hailuoai.video/pricing",
-  "last_checked": "2026-11-16 06:18"
+  "last_checked": "2026-11-21 06:18"
 }

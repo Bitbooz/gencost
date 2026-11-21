@@ -137,6 +137,15 @@
 .rd-legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
 .rd-note{color:#8a93a6;font-size:.86rem;text-align:center;max-width:760px;margin:14px auto 0}
 .rd-quiet{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;color:var(--mut);font-size:.95rem;text-align:center;display:none}
+.rd-mark{display:none}
+/* Video mode (radar.html?video=1): only the globe, full screen, faster, for screen recordings */
+body.rd-video nav.top,body.rd-video header.page-head,body.rd-video footer.site,body.rd-video .rd-head,body.rd-video .rd-legend,body.rd-video .rd-note{display:none!important}
+body.rd-video .rd-wrap{max-width:none;padding:0}
+body.rd-video .rd-stage{height:100vh;margin:0}
+body.rd-video #rdGlobe{border-radius:0}
+body.rd-video .rd-mark{display:block;position:absolute;left:50%;top:18px;transform:translateX(-50%);z-index:4;text-align:center}
+.rd-mark b{display:block;font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-.01em;background:linear-gradient(90deg,var(--c1),var(--c2) 50%,var(--c3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.rd-mark span{color:#cbd5e1;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase}
 @media(max-width:860px){.rd-side{display:none}.rd-stats{grid-template-columns:1fr 1fr;right:14px}.rd-stat{min-width:0}.rd-stage{height:70vh}}
 </style>
 <div class="rd-wrap">
@@ -149,18 +158,21 @@
 <div aria-label="Maapallo, jossa viivoja tekoälyyrityksistä niiden lukemien sivujen kielialueille" id="rdGlobe"></div>
 <div class="rd-stats">
 <div class="rd-stat"><b id="rdTotal">0</b><span>AI-lukua, viimeiset 20 minuuttia</span></div>
-<div class="rd-stat"><b id="rdAsked">0</b><span>vastatessaan jollekulle</span></div>
+<div class="rd-stat"><b id="rdAsked">0</b><span>AI vastauksia tänään</span></div>
 </div>
 <aside class="rd-side"><h2>Juuri nyt</h2><div class="rd-feed" id="rdFeed"></div></aside>
 <div class="rd-now" id="rdNow"></div>
+<div class="rd-mark"><b>AI tutka</b><span>getgencost.com/radar</span></div>
 <div class="rd-quiet" id="rdQuiet">Hiljainen hetki… odotetaan seuraavaa tekoälyä 🛰️</div>
 </div>
-<div class="rd-legend"><span><i style="background:#22d3ee"></i>Tekoäly vastaa jollekulle ("käyttäjä kysyi")</span> <span><i style="background:#a78bfa"></i>Tekoäly oppii (crawling)</span> <span><i style="background:#f472b6"></i>Jonkun tekoäly kysyi GenCost-yhteyttä</span></div>
-<p class="rd-note">Jokainen viiva kulkee tekoälyyrityksen kotisivulta sivun kielen puhutulle alueelle. Se näyttää <b>kenen</b> lukeman <b>minkä</b>, <b>millä kielellä</b>, ei missä henkilö on: GenCost ei tallenna mitään ihmisistä. <a href="/fi/ai.html">Käytä GenCostia tekoälyavustajassasi</a> · <a href="/fi/radar.html">Katso tämän aamun hintatarkistus</a></p>
+<div class="rd-legend"><span><i style="background:#22d3ee"></i>AI vastaamassa jollekulle ("käyttäjä kysyi")</span> <span><i style="background:#a78bfa"></i>AI lukemassa hintoja, käyttääkseen niitä myöhemmissä vastauksissa</span> <span><i style="background:#f472b6"></i>Jonkun AI kysyi GenCost-yhteyttä</span></div>
+<p class="rd-note"><b>Useimmat AI vastaukset tulevat sivuilta jotka AI on jo lukenut (violetti), joten vain osa näkyy sinisenä.</b><br/>Jokainen viiva kulkee AI yrityksen kotisivulta alueelle jossa sivun kieli puhutaan. Se näyttää <b>kenen</b> lukeneen <b>mitä</b>, <b>millä kielellä</b>, ei missä henkilö on: GenCost ei tallenna mitään ihmisistä. <a href="/fi/ai.html">Käytä GenCostia AI avustajassasi</a> · <a href="/fi/live.html">Katso tämän aamun hintatarkistus</a></p>
 </div>
 <script src="https://unpkg.com/globe.gl@2"></script>
 <script>
 (function () {
+  const VIDEO = /[?&#]video\b/.test(location.search + location.hash);
+  if (VIDEO) document.body.classList.add("rd-video");
   const $ = (id) => document.getElementById(id);
   const HOME = { "ChatGPT": [37.77, -122.42], "OpenAI": [37.77, -122.42], "Claude": [37.79, -122.40], "Anthropic": [37.79, -122.40],
     "Perplexity": [37.78, -122.39], "Meta": [37.48, -122.15], "Amazon": [47.61, -122.33], "Apple": [37.33, -122.01],
@@ -223,7 +235,7 @@
   const ctl = globe.controls(); ctl.autoRotate = true; ctl.autoRotateSpeed = 0.45; ctl.enableZoom = false;
 
   let arcs = [], rings = [], seen = new Set(), queue = [], last = [];
-  function show(e) {
+  function show(e, again) {
     const c = color(e), to = e.tool ? GENCOST : pick(LANG[e.lang] || LANG.en), from = e.tool ? pick(Object.values(LANG).flat()) : home(e.who);
     const id = Math.random();
     arcs.push({ id, startLat: from[0], startLng: from[1], endLat: to[0], endLng: to[1], c });
@@ -231,22 +243,31 @@
     globe.arcsData(arcs.slice(-24)); globe.ringsData(rings.slice(-12));
     setTimeout(() => { arcs = arcs.filter((a) => a.id !== id); rings = rings.filter((r) => r.id !== id); globe.arcsData(arcs); globe.ringsData(rings); }, 4200);
     const text = e.tool
-      ? `Someone's AI just asked <b>GenCost's connector</b> for <b>${TOOL[e.tool] || e.tool}</b>`
-      : `<span class="ai" style="color:${c}">${esc(brand(e.who))}</span> ${e.asked ? "read" : "learned"} <b>${esc(nice(e.page))}</b>` +
-        (e.asked ? ` while answering someone in <b>${LNAME[e.lang]}</b>` : ` in ${LNAME[e.lang]}`);
+      ? `Someone's AI ${Date.now() - e.t < 90000 ? "just " : ""}asked <b>GenCost's connector</b> for <b>${TOOL[e.tool] || e.tool}</b>`
+      : `<span class="ai" style="color:${c}">${esc(brand(e.who))}</span> read <b>${esc(nice(e.page))}</b>` +
+        (e.asked ? ` while answering someone in <b>${LNAME[e.lang]}</b>` : ` in ${LNAME[e.lang]}, for later answers`);
     const now = $("rdNow");
     now.innerHTML = text + `<small>${ago(e.t)}</small>`; now.classList.add("on");
     clearTimeout(show.h); show.h = setTimeout(() => now.classList.remove("on"), 3600);
+    if (again) return;  // a replayed visit is already in the list
     const row = document.createElement("div");
     row.innerHTML = `<i style="background:${c};box-shadow:0 0 8px ${c}"></i><span>${e.tool ? "AI connector · " + esc(e.tool.replace(/_/g, " ")) : esc(brand(e.who)) + " · " + esc(nice(e.page))}</span><em>${LNAME[e.lang] ? e.lang.toUpperCase() : "★"}</em>`;
     const feed = $("rdFeed"); feed.prepend(row); while (feed.children.length > 14) feed.lastChild.remove();
   }
-  function tick() { const e = queue.shift(); if (e) { $("rdQuiet").style.display = "none"; show(e); } }
-  setInterval(tick, 1100);
+  // When no new AI visit is waiting, replay the visits of the last 20 minutes (each still shows its real time,
+  // e.g. "6 min ago"), so the globe never stands still between visits.
+  let pool = [], replay = 0;
+  function tick() {
+    let e = queue.shift(), again = false;
+    if (!e && pool.length) { e = pool[replay++ % pool.length]; again = true; }
+    if (e) { $("rdQuiet").style.display = "none"; show(e, again); }
+  }
+  setInterval(tick, VIDEO ? 650 : 1100);
   async function poll(first) {
     try {
       const d = await fetch("/api/radar", { cache: "no-cache" }).then((r) => r.json());
-      $("rdTotal").textContent = d.total; $("rdAsked").textContent = d.events.filter((e) => e.asked).length;
+      pool = d.events.slice().reverse();
+      $("rdTotal").textContent = d.total; $("rdAsked").textContent = d.answers_today != null ? d.answers_today : d.events.filter((e) => e.asked).length;
       const fresh = d.events.filter((e) => !seen.has(e.t + e.who + e.page + e.tool));
       fresh.forEach((e) => seen.add(e.t + e.who + e.page + e.tool));
       const add = (first ? fresh.slice(0, 16) : fresh).reverse();  // oldest first, so they play in order
@@ -298,6 +319,9 @@
 <li><a href="/fi/how-we-verify.html">Miten varmistamme hinnat</a></li>
 <li><a href="/fi/changelog.html">Hinnanmuutosloki</a></li>
 <li><a href="/fi/live.html">Katso hintatarkistus</a></li>
+<li><a href="/fi/radar.html">AI-tutka (live)</a></li>
+<li><a href="/fi/exchange.html">AI-hintapörssi</a></li>
+<li><a href="/fi/estimate.html">Hinnoittele videoni</a></li>
 <li><a href="mailto:bitbooz@protonmail.com">Yhteystiedot</a></li>
 </ul>
 </div>

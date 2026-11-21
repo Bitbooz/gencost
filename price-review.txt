@@ -1,50 +1,40 @@
-2026-11-20 06:20  hailuo  (https://hailuoai.video/pricing)
-    - a plan has no name (the page may not be the pricing page)
-    -> kept the previous prices
-
-2026-11-20 06:22  higgsfield  (https://higgsfield.ai/pricing)
-    - Starter: yearly price equals the monthly price, left out
+2026-11-21 06:18  hailuo  (https://hailuoai.video/pricing)
+    - Max: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-20 06:24  pixverse  (https://app.pixverse.ai/subscribe)
-    - [https://app.pixverse.ai/subscribe] download: pricing page returned almost no text (HTTP 403)
-    - [https://app.pixverse.ai/subscribe] browser: no plans found
-    - [https://pixverse.ai/pricing] download: no plans found
-    - [https://pixverse.ai/pricing] browser: no plans found
-    - [https://pixverse.ai/en/pricing] download: no plans found
-    - [https://pixverse.ai/en/pricing] browser: no plans found
+2026-11-21 06:19  higgsfield  (https://higgsfield.ai/pricing)
+    - no plans found
+    - browser also got almost no text
     -> kept the previous prices
 
-2026-11-20 06:24  colossyan  (https://www.colossyan.com/pricing)
+2026-11-21 06:22  colossyan  (https://www.colossyan.com/pricing)
     - Professional: yearly price equals the monthly price, left out
-    - Starter: no credits found today, kept yesterday's 20
-    - Professional: no credits found today, kept yesterday's 30
     -> saved the monthly prices
 
-2026-11-20 06:25  veed  (https://www.veed.io/pricing)
+2026-11-21 06:22  veed  (https://www.veed.io/pricing)
     - Creator: yearly price equals the monthly price, left out
     - Pro: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-20 06:27  murf  (https://murf.ai/pricing)
+2026-11-21 06:24  murf  (https://murf.ai/pricing)
     - Creator: yearly price equals the monthly price, left out
     - Business: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-20 06:29  aiva  (https://www.aiva.ai/pricing)
+2026-11-21 06:25  suno  (https://suno.com/pricing)
+    - Free: no credits found today, kept yesterday's 50
+    - Pro: no credits found today, kept yesterday's 2,500
+    - Premier: no credits found today, kept yesterday's 10,000
+    - Platinum: no credits found today, kept yesterday's 15,000
+    -> saved the monthly prices
+
+2026-11-21 06:26  aiva  (https://www.aiva.ai/pricing)
     - Standard: yearly price equals the monthly price, left out
     - Pro: yearly price equals the monthly price, left out
     -> saved the monthly prices
 
-2026-11-20 06:30  mureka  (https://www.mureka.ai/subscribe)
+2026-11-21 06:27  mureka  (https://www.mureka.ai/subscribe)
     - Pro: yearly price equals the monthly price, left out
     - Premier: yearly price equals the monthly price, left out
     -> saved the monthly prices
-
-2026-11-20 06:31  ideogram  (https://docs.ideogram.ai/plans-and-pricing/personal-plans)
-    - [https://docs.ideogram.ai/plans-and-pricing/personal-plans] download: no plans found
-    - [https://docs.ideogram.ai/plans-and-pricing/personal-plans] browser: no plans found
-    - [https://ideogram.ai/pricing] download: pricing page returned almost no text (HTTP 403)
-    - [https://ideogram.ai/pricing] browser: no plans found
-    -> kept the previous prices
 

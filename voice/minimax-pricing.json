@@ -20,7 +20,7 @@
     {
       "name": "Pro",
       "monthly_price_usd": 99,
-      "yearly_price_usd": 79.16666666666667,
+      "yearly_price_usd": 79.17,
       "credits_or_minutes": 1100000,
       "unit": "credits",
       "offer": ""
@@ -28,7 +28,7 @@
     {
       "name": "Scale",
       "monthly_price_usd": 249,
-      "yearly_price_usd": 199.16666666666666,
+      "yearly_price_usd": 199.17,
       "credits_or_minutes": 3300000,
       "unit": "credits",
       "offer": ""
@@ -36,12 +36,12 @@
     {
       "name": "Business",
       "monthly_price_usd": 999,
-      "yearly_price_usd": 799.1666666666666,
+      "yearly_price_usd": 799.17,
       "credits_or_minutes": 20000000,
       "unit": "credits",
       "offer": ""
     }
   ],
   "source": "https://platform.minimax.io/docs/guides/pricing-speech.md",
-  "last_checked": "2026-11-20 06:28"
+  "last_checked": "2026-11-21 06:25"
 }

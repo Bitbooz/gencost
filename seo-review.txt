@@ -1,9 +1,35 @@
-SEO check 2026-11-20 06:32
-153 pages checked, 76 changed today, 127 in sitemap.xml, 25 marked noindex
-Made by this script: 122 canonical links, 24 descriptions; today: 0 links moved to the main page, 0 titles fixed
+SEO check 2026-11-21 06:29
+157 pages checked, 82 changed today, 131 in sitemap.xml, 25 marked noindex
+Made by this script: 126 canonical links, 24 descriptions; today: 0 links moved to the main page, 0 titles fixed
 
 Links to pages that don't exist (fix or remove these links):
+  /ar/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /bn/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /da/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /de/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /es/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /fi/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /fr/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /he/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /hi/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /id/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /it/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /ja/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /ko/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /nl/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /no/estimate.html  <- on 1 page(s), e.g. estimate.html
   /pages/is-the-bigger-ai-plan-cheaper-price-per-credit-2026.html  <- on 1 page(s), e.g. pages/kling-4-0-price-per-second-every-plan-2026.html
+  /pl/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /pt/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /ru/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /sv/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /th/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /tl/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /tr/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /uk/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /vi/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /zh-tw/estimate.html  <- on 1 page(s), e.g. estimate.html
+  /zh/estimate.html  <- on 1 page(s), e.g. estimate.html
 
 Needs a human:
   ai.html: title is 76 characters (Google shows about 60)
@@ -13,9 +39,11 @@ Needs a human:
   pages/cheapest-way-to-make-a-60-second-ai-video-2026.html: title is 71 characters (Google shows about 60)
   pages/emerging.html: title is 73 characters (Google shows about 60)
   pages/firefly.html: title is 71 characters (Google shows about 60)
+  pages/free-ai-price-box-for-your-website-2026.html: title is 84 characters (Google shows about 60)
   pages/gencost-ai-connector-and-hugging-face-price-finder-2026.html: title is 84 characters (Google shows about 60)
   pages/gencost-ai-radar-watch-ai-assistants-read-prices-live-2026.html: title is 87 characters (Google shows about 60)
   pages/higgsfield-vs-kling-pricing-2026.html: title is 72 characters (Google shows about 60)
+  pages/kling-3-0-vs-kling-4-0-cost-per-clip-2026.html: title is 79 characters (Google shows about 60)
   pages/midjourney-vs-firefly-vs-gpt-image-cost-per-image-2026.html: title is 71 characters (Google shows about 60)
   pages/sample-package-youtube-ai-tools.html: empty file (delete it on GitHub, or leave it - it is marked noindex)
   pages/samples/best-free-ai-tools-for-youtube-thumbnails-2026-final.html: title is 75 characters (Google shows about 60)

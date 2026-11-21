@@ -7,7 +7,7 @@
       "yearly_price_usd": 10,
       "credits_or_minutes": 1000,
       "unit": "credits",
-      "offer": "40% off first year of new yearly plan"
+      "offer": "40% off first year (Black Friday)"
     },
     {
       "name": "Pro",
@@ -15,9 +15,9 @@
       "yearly_price_usd": 16,
       "credits_or_minutes": 2000,
       "unit": "credits",
-      "offer": "40% off first year of new yearly plan"
+      "offer": "40% off first year (Black Friday)"
     }
   ],
   "source": "https://www.recraft.ai/pricing",
-  "last_checked": "2026-11-20 06:31"
+  "last_checked": "2026-11-21 06:28"
 }

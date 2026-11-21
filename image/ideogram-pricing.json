@@ -2,6 +2,13 @@
   "platform": "Ideogram",
   "plans": [
     {
+      "name": "Free",
+      "monthly_price_usd": 0,
+      "credits_or_minutes": 30,
+      "unit": "credits",
+      "offer": ""
+    },
+    {
       "name": "Plus",
       "monthly_price_usd": 20,
       "yearly_price_usd": 15,
@@ -18,6 +25,6 @@
       "offer": ""
     }
   ],
-  "source": "https://ideogram.ai/pricing",
-  "last_checked": "2026-11-16 06:30"
+  "source": "https://docs.ideogram.ai/plans-and-billing/available-plans.md",
+  "last_checked": "2026-11-21 06:28"
 }

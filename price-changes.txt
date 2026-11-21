@@ -1,5 +1,8 @@
-Price changes in the last 7 days (for the price alert email), made 2026-11-20
+Price changes in the last 7 days (for the price alert email), made 2026-11-21
 
+2026-11-21  Krea Pro: $35 → $42 a month
+2026-11-21  Krea Max: $105 → $140 a month, paid yearly $63 → $42
+2026-11-21  InVideo Max: $150 → $250 a month, paid yearly $75 → $62.50, credits 5,000 → 8,000, so the price per credit hardly changed
 2026-11-20  Pictory Teams: paid yearly $119 → $59.50
 2026-11-20  Pictory Starter: paid yearly $25 → $12.50
 2026-11-20  Pictory Professional: paid yearly $29.50 → $17.50

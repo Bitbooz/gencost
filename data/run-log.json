@@ -1,24 +1,28 @@
 {
  "about": "What GenCost's morning price check did today. Written by run_log.py; shown on /live.html.",
- "date": "2026-11-20",
- "started": "06:20",
- "finished": "06:32",
+ "date": "2026-11-21",
+ "started": "06:18",
+ "finished": "06:29",
  "totals": {
   "tools": 50,
-  "read": 43,
+  "read": 45,
   "changed": 1,
-  "kept": 3,
+  "kept": 1,
   "manual": 4,
-  "waiting": 5
+  "waiting": 1
  },
  "articles": [
   {
-   "title": "Best Runway Alternatives",
-   "url": "/pages/best-runway-alternatives-2026.html"
+   "title": "ElevenLabs vs Murf",
+   "url": "/pages/elevenlabs-vs-murf-pricing-2026.html"
   },
   {
-   "title": "Best Suno Alternatives",
-   "url": "/pages/best-suno-alternatives-2026.html"
+   "title": "Kling 3.0 vs Kling 4.0",
+   "url": "/pages/kling-3-0-vs-kling-4-0-cost-per-clip-2026.html"
+  },
+  {
+   "title": "Free AI price box",
+   "url": "/pages/free-ai-price-box-for-your-website-2026.html"
   }
  ],
  "tools": [
@@ -28,9 +32,8 @@
    "page": "/pages/hailuo.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:20",
-   "status": "kept",
-   "note": "The page couldn't be read today, so yesterday's prices were kept"
+   "time": "06:18",
+   "status": "ok"
   },
   {
    "name": "Google Veo",
@@ -38,7 +41,7 @@
    "page": "/pages/veo.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:20",
+   "time": "06:18",
    "status": "ok"
   },
   {
@@ -47,25 +50,7 @@
    "page": "/pages/heygen.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:21",
-   "status": "ok"
-  },
-  {
-   "name": "Vidu",
-   "cat": "video",
-   "page": "/pages/vidu.html",
-   "changes": [],
-   "waiting": 1,
-   "time": "06:21",
-   "status": "ok"
-  },
-  {
-   "name": "Krea",
-   "cat": "video",
-   "page": "/pages/krea.html",
-   "changes": [],
-   "waiting": 2,
-   "time": "06:21",
+   "time": "06:19",
    "status": "ok"
   },
   {
@@ -74,8 +59,9 @@
    "page": "/pages/higgsfield.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:22",
-   "status": "ok"
+   "time": "06:19",
+   "status": "kept",
+   "note": "The page couldn't be read today, so yesterday's prices were kept"
   },
   {
    "name": "Runway",
@@ -83,8 +69,37 @@
    "page": "/pages/runway.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:22",
+   "time": "06:19",
    "status": "ok"
+  },
+  {
+   "name": "Vidu",
+   "cat": "video",
+   "page": "/pages/vidu.html",
+   "changes": [],
+   "waiting": 1,
+   "time": "06:19",
+   "status": "ok"
+  },
+  {
+   "name": "Krea",
+   "cat": "video",
+   "page": "/pages/krea.html",
+   "changes": [
+    {
+     "plan": "Pro",
+     "old": 35.0,
+     "new": 42.0
+    },
+    {
+     "plan": "Max",
+     "old": 105.0,
+     "new": 140.0
+    }
+   ],
+   "waiting": 0,
+   "time": "06:19",
+   "status": "changed"
   },
   {
    "name": "Kling AI",
@@ -92,7 +107,7 @@
    "page": "/pages/kling.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:22",
+   "time": "06:20",
    "status": "ok"
   },
   {
@@ -101,7 +116,7 @@
    "page": "/pages/synthesia.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:22",
+   "time": "06:20",
    "status": "ok"
   },
   {
@@ -110,7 +125,7 @@
    "page": "/pages/pika.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:22",
+   "time": "06:20",
    "status": "ok"
   },
   {
@@ -119,7 +134,7 @@
    "page": "/pages/luma.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:22",
+   "time": "06:20",
    "status": "ok"
   },
   {
@@ -128,7 +143,7 @@
    "page": "/pages/viggle.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:23",
+   "time": "06:20",
    "status": "ok"
   },
   {
@@ -136,9 +151,10 @@
    "cat": "video",
    "page": "/pages/invideo.html",
    "changes": [],
-   "waiting": 2,
-   "time": "06:23",
-   "status": "ok"
+   "waiting": 0,
+   "time": "06:21",
+   "status": "ok",
+   "note": "A big price change was seen; it's being checked by hand before it's shown"
   },
   {
    "name": "CapCut",
@@ -146,7 +162,7 @@
    "page": "/pages/capcut.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:23",
+   "time": "06:21",
    "status": "ok"
   },
   {
@@ -155,7 +171,7 @@
    "page": "/pages/ltx.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:23",
+   "time": "06:21",
    "status": "ok"
   },
   {
@@ -164,9 +180,8 @@
    "page": "/pages/pixverse.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:24",
-   "status": "kept",
-   "note": "The page couldn't be read today, so yesterday's prices were kept"
+   "time": "06:21",
+   "status": "ok"
   },
   {
    "name": "D-ID",
@@ -174,7 +189,7 @@
    "page": "/pages/d-id.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:24",
+   "time": "06:21",
    "status": "ok"
   },
   {
@@ -183,7 +198,7 @@
    "page": "/pages/colossyan.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:24",
+   "time": "06:22",
    "status": "ok"
   },
   {
@@ -192,7 +207,7 @@
    "page": "/pages/opusclip.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:25",
+   "time": "06:22",
    "status": "ok"
   },
   {
@@ -201,7 +216,7 @@
    "page": "/pages/captions.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:25",
+   "time": "06:22",
    "status": "ok"
   },
   {
@@ -210,7 +225,7 @@
    "page": "/pages/pictory.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:25",
+   "time": "06:22",
    "status": "ok"
   },
   {
@@ -219,7 +234,7 @@
    "page": "/pages/veed.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:25",
+   "time": "06:22",
    "status": "ok"
   },
   {
@@ -228,23 +243,17 @@
    "page": "/pages/dreamina.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:25",
+   "time": "06:22",
    "status": "ok"
   },
   {
    "name": "Magic Hour",
    "cat": "video",
    "page": "/pages/magic-hour.html",
-   "changes": [
-    {
-     "plan": "Creator",
-     "old": 19.0,
-     "new": 24.0
-    }
-   ],
+   "changes": [],
    "waiting": 0,
-   "time": "06:26",
-   "status": "changed"
+   "time": "06:23",
+   "status": "ok"
   },
   {
    "name": "Elyum",
@@ -252,7 +261,7 @@
    "page": "/pages/elyum.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:26",
+   "time": "06:23",
    "status": "ok"
   },
   {
@@ -261,7 +270,7 @@
    "page": "/pages/wan.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:26",
+   "time": "06:23",
    "status": "ok"
   },
   {
@@ -270,7 +279,7 @@
    "page": "/pages/voice/elevenlabs.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:26",
+   "time": "06:23",
    "status": "ok"
   },
   {
@@ -279,7 +288,7 @@
    "page": "/pages/voice/murf.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:27",
+   "time": "06:24",
    "status": "ok"
   },
   {
@@ -288,7 +297,7 @@
    "page": "/pages/voice/cartesia.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:27",
+   "time": "06:24",
    "status": "ok"
   },
   {
@@ -297,7 +306,7 @@
    "page": "/pages/voice/speechify.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:27",
+   "time": "06:24",
    "status": "ok"
   },
   {
@@ -306,7 +315,7 @@
    "page": "/pages/voice/descript.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:27",
+   "time": "06:24",
    "status": "ok"
   },
   {
@@ -315,7 +324,7 @@
    "page": "/pages/fish-audio.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:27",
+   "time": "06:24",
    "status": "ok"
   },
   {
@@ -324,7 +333,7 @@
    "page": "/pages/voice/fliki.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:28",
+   "time": "06:25",
    "status": "ok"
   },
   {
@@ -333,7 +342,7 @@
    "page": "/pages/voice/minimax.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:28",
+   "time": "06:25",
    "status": "ok"
   },
   {
@@ -342,7 +351,7 @@
    "page": "/pages/music/suno.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:28",
+   "time": "06:25",
    "status": "ok"
   },
   {
@@ -351,7 +360,7 @@
    "page": "/pages/music/udio.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:28",
+   "time": "06:26",
    "status": "ok"
   },
   {
@@ -360,7 +369,7 @@
    "page": "/pages/music/soundraw.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:28",
+   "time": "06:26",
    "status": "ok"
   },
   {
@@ -369,7 +378,7 @@
    "page": "/pages/music/aiva.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:29",
+   "time": "06:26",
    "status": "ok"
   },
   {
@@ -378,16 +387,7 @@
    "page": "/pages/music/boomy.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:29",
-   "status": "ok"
-  },
-  {
-   "name": "Stable Audio",
-   "cat": "music",
-   "page": "/pages/stable-audio.html",
-   "changes": [],
-   "waiting": 0,
-   "time": "06:29",
+   "time": "06:26",
    "status": "ok"
   },
   {
@@ -396,7 +396,16 @@
    "page": "/pages/midjourney.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:30",
+   "time": "06:27",
+   "status": "ok"
+  },
+  {
+   "name": "Stable Audio",
+   "cat": "music",
+   "page": "/pages/stable-audio.html",
+   "changes": [],
+   "waiting": 0,
+   "time": "06:27",
    "status": "ok"
   },
   {
@@ -405,7 +414,7 @@
    "page": "/pages/mureka.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:30",
+   "time": "06:27",
    "status": "ok"
   },
   {
@@ -414,9 +423,8 @@
    "page": "/pages/ideogram.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:31",
-   "status": "kept",
-   "note": "The page couldn't be read today, so yesterday's prices were kept"
+   "time": "06:28",
+   "status": "ok"
   },
   {
    "name": "Recraft",
@@ -424,7 +432,7 @@
    "page": "/pages/recraft.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:31",
+   "time": "06:28",
    "status": "ok"
   },
   {
@@ -433,7 +441,7 @@
    "page": "/pages/freepik.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:32",
+   "time": "06:29",
    "status": "ok"
   },
   {
@@ -442,7 +450,7 @@
    "page": "/pages/openart.html",
    "changes": [],
    "waiting": 0,
-   "time": "06:32",
+   "time": "06:29",
    "status": "ok"
   },
   {
@@ -486,263 +494,269 @@
    "note": "This tool blocks automatic reading; its prices are checked by hand"
   }
  ],
- "translated": "07:24",
+ "translated": "06:47",
  "lang_baseline": {
-  "es": 4142,
-  "pt": 4144,
-  "de": 4124,
-  "fr": 4133,
-  "ar": 4122,
-  "he": 4087,
-  "it": 4092,
-  "ja": 4094,
-  "ru": 4100,
-  "zh-tw": 4113,
-  "ko": 4082,
-  "id": 4100,
-  "tr": 4109,
-  "hi": 4069,
-  "vi": 4109,
-  "pl": 4109,
-  "uk": 4102,
-  "zh": 4105,
-  "no": 3880,
-  "sv": 3880
+  "es": 4281,
+  "pt": 4283,
+  "de": 4263,
+  "fr": 4272,
+  "ar": 4262,
+  "he": 4227,
+  "it": 4230,
+  "ja": 4234,
+  "ru": 4239,
+  "zh-tw": 4250,
+  "ko": 4222,
+  "id": 4240,
+  "tr": 4248,
+  "hi": 4208,
+  "vi": 4248,
+  "pl": 4247,
+  "uk": 4242,
+  "zh": 4245,
+  "no": 4030,
+  "sv": 4030,
+  "da": 3819,
+  "fi": 3820,
+  "nl": 3819,
+  "th": 3816,
+  "tl": 3815,
+  "bn": 3816
  },
  "languages": [
   {
    "code": "es",
    "name": "Español",
-   "pages": 126,
-   "of": 127,
-   "stored": 4281,
-   "baseline": 4142,
-   "new": 139
+   "pages": 130,
+   "of": 131,
+   "stored": 4418,
+   "baseline": 4281,
+   "new": 137
   },
   {
    "code": "pt",
    "name": "Português",
-   "pages": 126,
-   "of": 127,
-   "stored": 4283,
-   "baseline": 4144,
-   "new": 139
+   "pages": 130,
+   "of": 131,
+   "stored": 4420,
+   "baseline": 4283,
+   "new": 137
   },
   {
    "code": "de",
    "name": "Deutsch",
-   "pages": 126,
-   "of": 127,
-   "stored": 4263,
-   "baseline": 4124,
-   "new": 139
+   "pages": 130,
+   "of": 131,
+   "stored": 4400,
+   "baseline": 4263,
+   "new": 137
   },
   {
    "code": "fr",
    "name": "Français",
-   "pages": 126,
-   "of": 127,
-   "stored": 4272,
-   "baseline": 4133,
-   "new": 139
+   "pages": 130,
+   "of": 131,
+   "stored": 4409,
+   "baseline": 4272,
+   "new": 137
   },
   {
    "code": "ar",
    "name": "العربية",
-   "pages": 126,
-   "of": 127,
-   "stored": 4262,
-   "baseline": 4122,
-   "new": 140
+   "pages": 130,
+   "of": 131,
+   "stored": 4399,
+   "baseline": 4262,
+   "new": 137
   },
   {
    "code": "he",
    "name": "עברית",
-   "pages": 126,
-   "of": 127,
-   "stored": 4227,
-   "baseline": 4087,
-   "new": 140
+   "pages": 130,
+   "of": 131,
+   "stored": 4364,
+   "baseline": 4227,
+   "new": 137
   },
   {
    "code": "it",
    "name": "Italiano",
-   "pages": 126,
-   "of": 127,
-   "stored": 4230,
-   "baseline": 4092,
-   "new": 138
+   "pages": 130,
+   "of": 131,
+   "stored": 4367,
+   "baseline": 4230,
+   "new": 137
   },
   {
    "code": "ja",
    "name": "日本語",
-   "pages": 125,
-   "of": 127,
-   "stored": 4234,
-   "baseline": 4094,
-   "new": 140
+   "pages": 129,
+   "of": 131,
+   "stored": 4370,
+   "baseline": 4234,
+   "new": 136
   },
   {
    "code": "ru",
    "name": "Русский",
-   "pages": 126,
-   "of": 127,
-   "stored": 4239,
-   "baseline": 4100,
-   "new": 139
+   "pages": 130,
+   "of": 131,
+   "stored": 4377,
+   "baseline": 4239,
+   "new": 138
   },
   {
    "code": "zh-tw",
    "name": "繁體中文",
-   "pages": 126,
-   "of": 127,
-   "stored": 4250,
-   "baseline": 4113,
-   "new": 137
+   "pages": 130,
+   "of": 131,
+   "stored": 4389,
+   "baseline": 4250,
+   "new": 139
   },
   {
    "code": "ko",
    "name": "한국어",
-   "pages": 126,
-   "of": 127,
-   "stored": 4222,
-   "baseline": 4082,
-   "new": 140
+   "pages": 129,
+   "of": 131,
+   "stored": 4359,
+   "baseline": 4222,
+   "new": 137
   },
   {
    "code": "id",
    "name": "Bahasa Indonesia",
-   "pages": 126,
-   "of": 127,
-   "stored": 4240,
-   "baseline": 4100,
-   "new": 140
+   "pages": 130,
+   "of": 131,
+   "stored": 4378,
+   "baseline": 4240,
+   "new": 138
   },
   {
    "code": "tr",
    "name": "Türkçe",
-   "pages": 126,
-   "of": 127,
-   "stored": 4248,
-   "baseline": 4109,
-   "new": 139
+   "pages": 130,
+   "of": 131,
+   "stored": 4386,
+   "baseline": 4248,
+   "new": 138
   },
   {
    "code": "hi",
    "name": "हिन्दी",
-   "pages": 126,
-   "of": 127,
-   "stored": 4208,
-   "baseline": 4069,
-   "new": 139
+   "pages": 130,
+   "of": 131,
+   "stored": 4345,
+   "baseline": 4208,
+   "new": 137
   },
   {
    "code": "vi",
    "name": "Tiếng Việt",
-   "pages": 126,
-   "of": 127,
-   "stored": 4248,
-   "baseline": 4109,
-   "new": 139
+   "pages": 130,
+   "of": 131,
+   "stored": 4386,
+   "baseline": 4248,
+   "new": 138
   },
   {
    "code": "pl",
    "name": "Polski",
-   "pages": 126,
-   "of": 127,
-   "stored": 4247,
-   "baseline": 4109,
-   "new": 138
+   "pages": 130,
+   "of": 131,
+   "stored": 4386,
+   "baseline": 4247,
+   "new": 139
   },
   {
    "code": "uk",
    "name": "Українська",
-   "pages": 126,
-   "of": 127,
-   "stored": 4242,
-   "baseline": 4102,
-   "new": 140
+   "pages": 130,
+   "of": 131,
+   "stored": 4380,
+   "baseline": 4242,
+   "new": 138
   },
   {
    "code": "zh",
    "name": "简体中文",
-   "pages": 126,
-   "of": 127,
-   "stored": 4245,
-   "baseline": 4105,
-   "new": 140
+   "pages": 130,
+   "of": 131,
+   "stored": 4383,
+   "baseline": 4245,
+   "new": 138
   },
   {
    "code": "no",
    "name": "Norsk",
-   "pages": 126,
-   "of": 127,
-   "stored": 4030,
-   "baseline": 3880,
-   "new": 150
+   "pages": 130,
+   "of": 131,
+   "stored": 4174,
+   "baseline": 4030,
+   "new": 144
   },
   {
    "code": "sv",
    "name": "Svenska",
-   "pages": 126,
-   "of": 127,
-   "stored": 4030,
-   "baseline": 3880,
-   "new": 150
+   "pages": 130,
+   "of": 131,
+   "stored": 4174,
+   "baseline": 4030,
+   "new": 144
   },
   {
    "code": "da",
    "name": "Dansk",
-   "pages": 126,
-   "of": 127,
-   "stored": 3819,
+   "pages": 130,
+   "of": 131,
+   "stored": 3984,
    "baseline": 3819,
-   "new": 0
+   "new": 165
   },
   {
    "code": "fi",
    "name": "Suomi",
-   "pages": 126,
-   "of": 127,
-   "stored": 3820,
+   "pages": 130,
+   "of": 131,
+   "stored": 3984,
    "baseline": 3820,
-   "new": 0
+   "new": 164
   },
   {
    "code": "nl",
    "name": "Nederlands",
-   "pages": 126,
-   "of": 127,
-   "stored": 3819,
+   "pages": 130,
+   "of": 131,
+   "stored": 3984,
    "baseline": 3819,
-   "new": 0
+   "new": 165
   },
   {
    "code": "th",
    "name": "ไทย",
-   "pages": 124,
-   "of": 127,
-   "stored": 3816,
+   "pages": 130,
+   "of": 131,
+   "stored": 3982,
    "baseline": 3816,
-   "new": 0
+   "new": 166
   },
   {
    "code": "tl",
    "name": "Filipino",
-   "pages": 126,
-   "of": 127,
-   "stored": 3815,
+   "pages": 130,
+   "of": 131,
+   "stored": 3983,
    "baseline": 3815,
-   "new": 0
+   "new": 168
   },
   {
    "code": "bn",
    "name": "বাংলা",
-   "pages": 125,
-   "of": 127,
-   "stored": 3816,
+   "pages": 130,
+   "of": 131,
+   "stored": 3983,
    "baseline": 3816,
-   "new": 0
+   "new": 167
   }
  ]
 }

@@ -2,7 +2,7 @@
 
 > GenCost compares the prices of AI video, avatar, image, voice and music tools in US dollars. Every price is read from each tool's official pricing page every morning and checked before it goes live. Pages also show the real cost of one video clip (from each tool's own credits per clip) and hidden costs such as watermarks, expiring credits and commercial-use rules.
 
-Prices last updated: 2026-11-20. How prices are checked: https://getgencost.com/how-we-verify.html
+Prices last updated: 2026-11-21. How prices are checked: https://getgencost.com/how-we-verify.html
 
 ## Price lists
 - [AI video, avatar and image tools](https://getgencost.com/): every plan, monthly and yearly, with cost per clip
@@ -33,10 +33,12 @@ Prices last updated: 2026-11-20. How prices are checked: https://getgencost.com/
 - [Cheapest AI Voice Cloning Tools 2026](https://getgencost.com/pages/cheapest-ai-voice-cloning-tools-2026.html)
 - [Cheapest AI Voice Tools in 2026](https://getgencost.com/pages/cheapest-ai-voice-tools-in-2026.html)
 - [ElevenLabs vs Cartesia Pricing Comparison 2026](https://getgencost.com/pages/elevenlabs-vs-cartesia-pricing-2026.html)
+- [ElevenLabs vs Murf: Cost per Minute of AI Voice (2026)](https://getgencost.com/pages/elevenlabs-vs-murf-pricing-2026.html)
 - [HeyGen vs CapCut Pricing Comparison 2026](https://getgencost.com/pages/heygen-vs-capcut-pricing-2026.html)
 - [HeyGen vs Synthesia Pricing Comparison 2026](https://getgencost.com/pages/heygen-vs-synthesia-pricing-2026.html)
 - [Higgsfield vs Kling: Which Is Cheaper for Kling Videos? (2026)](https://getgencost.com/pages/higgsfield-vs-kling-pricing-2026.html)
 - [How Much Does AI Video Cost per Second? 11 Tools Compared (2026)](https://getgencost.com/pages/cheapest-ai-video-cost-per-second-2026.html)
+- [Kling 3.0 vs Kling 4.0: How Much More Does the New Model Cost? (2026)](https://getgencost.com/pages/kling-3-0-vs-kling-4-0-cost-per-clip-2026.html)
 - [Kling 4.0 vs Seedance 2.5: Which Is Cheaper per Clip? (2026)](https://getgencost.com/pages/kling-4-0-vs-seedance-2-5-cost-per-clip-2026.html)
 - [Kling vs Hailuo Pricing Comparison 2026](https://getgencost.com/pages/kling-vs-hailuo-pricing-2026.html)
 - [Kling vs Veo Pricing 2026: Which Costs Less per Video?](https://getgencost.com/pages/kling-vs-veo-pricing-2026.html)

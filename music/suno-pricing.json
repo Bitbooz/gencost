@@ -4,35 +4,35 @@
     {
       "name": "Free",
       "monthly_price_usd": 0,
+      "offer": "",
       "credits_or_minutes": 50,
-      "unit": "credits per day",
-      "offer": ""
+      "unit": "credits per day"
     },
     {
       "name": "Pro",
       "monthly_price_usd": 10,
       "yearly_price_usd": 8,
+      "offer": "",
       "credits_or_minutes": 2500,
-      "unit": "credits",
-      "offer": ""
+      "unit": "credits"
     },
     {
       "name": "Premier",
       "monthly_price_usd": 30,
       "yearly_price_usd": 24,
+      "offer": "",
       "credits_or_minutes": 10000,
-      "unit": "credits",
-      "offer": ""
+      "unit": "credits"
     },
     {
       "name": "Platinum",
       "monthly_price_usd": 120,
       "yearly_price_usd": 100,
+      "offer": "",
       "credits_or_minutes": 15000,
-      "unit": "credits",
-      "offer": ""
+      "unit": "credits"
     }
   ],
   "source": "https://suno.com/pricing",
-  "last_checked": "2026-11-20 06:28"
+  "last_checked": "2026-11-21 06:25"
 }
